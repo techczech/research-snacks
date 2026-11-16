@@ -82,3 +82,10 @@ header.site{background:rgba(20,23,31,.96)}
 .entry img{background:#fff}
 .body-md pre{background:var(--card)}
 }
+
+.entry table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0;display:block;overflow-x:auto}
+.entry th,.entry td{border-bottom:1px solid var(--bd);padding:5px 8px;text-align:left;vertical-align:top}
+.entry td.num,.entry th.num{text-align:right;white-space:nowrap}
+.refs{padding-left:20px;font-size:14px}.refs li{margin:6px 0;overflow-wrap:anywhere}
+.cite{border:1px solid var(--bd);border-radius:6px;padding:4px 16px 8px;margin-top:32px;font-size:14px;overflow-wrap:anywhere}
+.cite h2{font-size:18px;margin:12px 0 4px}.cite .hint{color:var(--mut);font-size:13px}

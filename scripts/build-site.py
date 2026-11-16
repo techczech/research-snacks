@@ -6,6 +6,7 @@
 """Build site/ from entries/<id>/index.md. Run: uv run scripts/build-site.py"""
 import re
 import shutil
+from urllib.parse import urlencode
 import sys
 from datetime import date
 from html import escape
@@ -20,6 +21,7 @@ SISTER = "https://datapoints.semanticmachines.fyi"
 SM_HOME = "https://semanticmachines.fyi"
 NAME = "Research Snacks"
 TAGLINE = "Small research experiments with AI agents: how fast can a claim be checked?"
+AUTHOR = "Dominik Lukeš"  # default; an entry may set author: (one name or a list)
 
 REQUIRED = ["id", "title", "date", "claim", "claim_source", "verdict", "time_taken",
             "human_time", "tools", "data_sources", "summary"]
@@ -78,6 +80,9 @@ def parse(folder):
     for k in LISTS:
         if not isinstance(fm[k], list):
             errors.append(f"{name}/index.md: {k} must be a list")
+    refs = fm.get("references") or []
+    if not isinstance(refs, list) or any(not isinstance(r, dict) or not r.get("title") for r in refs):
+        errors.append(f"{name}/index.md: references must be a list of mappings, each with a title")
     if not str(fm["claim_source"]).startswith("http"):
         errors.append(f"{name}/index.md: claim_source must be a URL starting with http")
     for f in sorted(folder.rglob("*")):
@@ -108,10 +113,17 @@ def first_paragraph(md_text):
     return ""
 
 
+BARE_URL = re.compile(r"(?<!\]\()(?<![\w/\[])(https?://[^\s)\]]+?)([.,;:]?)(?=\s|$|\))")
+
+
 def render_md(text):
     # raw HTML in Markdown is escaped, as on the sister site
-    html = markdown.markdown(text.replace("&", "&amp;").replace("<", "&lt;"),
-                             extensions=["tables", "fenced_code"])
+    text = text.replace("&", "&amp;").replace("<", "&lt;")
+    # every bare URL becomes a link (skips URLs already inside [text](url))
+    text = BARE_URL.sub(lambda m: f"[{m.group(1)}]({m.group(1)}){m.group(2)}", text)
+    html = markdown.markdown(text, extensions=["tables", "fenced_code"])
+    # right-align cells that hold numbers (counts, years, percentages, dashes)
+    html = re.sub(r"<(td|th)>([−\-–+]?[\d,.]+%?(?: \(\d{4}\))?|–|0)</\1>", r'<\1 class="num">\2</\1>', html)
     # make every image open the full-size file on click
     html = re.sub(r'<img ([^>]*?)src="([^"]+)"([^>]*?)/?>',
                   r'<a class="imglink" href="\2"><img \1src="\2"\3 loading="lazy"></a>', html)
@@ -152,6 +164,100 @@ def linkify(s):
     return f'<a href="{e(s)}">{e(s)}</a>' if s.startswith("http") else e(s)
 
 
+# ---- citations: COinS spans (Zotero and other reference managers) + formatted text ----
+def names(v):
+    return [v] if isinstance(v, str) else list(v or [])
+
+
+def surname_first(n):
+    n = n.strip()
+    if "," in n or " " not in n:
+        return n
+    first, last = n.rsplit(" ", 1)
+    return f"{last}, {first}"
+
+
+def coins(ref):
+    """ref keys: type (article|report|dataset|webpage|video|post), authors, title, year/date,
+    container, volume, issue, pages, publisher, place, url, doi."""
+    t = ref.get("type", "webpage")
+    date_ = str(ref.get("date") or ref.get("year") or "")
+    kv = [("ctx_ver", "Z39.88-2004")]
+    aus = names(ref.get("authors"))
+    if not ref.get("corporate"):
+        aus = [surname_first(a) for a in aus]
+    if t == "article":
+        kv += [("rft_val_fmt", "info:ofi/fmt:kev:mtx:journal"), ("rft.genre", "article"),
+               ("rft.atitle", ref["title"]), ("rft.jtitle", ref.get("container", ""))]
+        for k in ("volume", "issue"):
+            if ref.get(k):
+                kv.append((f"rft.{k}", str(ref[k])))
+        if ref.get("pages"):
+            kv.append(("rft.pages", str(ref["pages"])))
+        kv += [("rft.au", a) for a in aus]
+    elif t in ("report", "dataset"):
+        kv += [("rft_val_fmt", "info:ofi/fmt:kev:mtx:book"), ("rft.genre", "report" if t == "report" else "document"),
+               ("rft.btitle", ref["title"])]
+        for k, f in (("publisher", "rft.pub"), ("place", "rft.place"), ("container", "rft.series")):
+            if ref.get(k):
+                kv.append((f, str(ref[k])))
+        kv += [("rft.au", a) for a in aus]
+    else:  # webpage, video, post: Dublin Core, which Zotero imports as a web page
+        kv += [("rft_val_fmt", "info:ofi/fmt:kev:mtx:dc"), ("rft.type", ref.get("dctype", "webpage")),
+               ("rft.title", ref["title"])]
+        if ref.get("publisher") or ref.get("container"):
+            kv.append(("rft.publisher", str(ref.get("publisher") or ref.get("container"))))
+        if ref.get("description"):
+            kv.append(("rft.description", ref["description"]))
+        kv += [("rft.creator", a) for a in aus]
+        if ref.get("url"):
+            kv.append(("rft.identifier", ref["url"]))
+    if date_:
+        kv.append(("rft.date", date_))
+    if ref.get("doi"):
+        kv.append(("rft_id", f"info:doi/{ref['doi']}"))
+    if ref.get("url"):
+        kv.append(("rft_id", ref["url"]))
+    return f'<span class="Z3988" title="{e(urlencode(kv))}"></span>'
+
+
+def cite_text(ref):
+    aus = names(ref.get("authors"))
+    if ref.get("corporate") or not aus:
+        who = ", ".join(aus) or ref.get("publisher", "")
+    else:
+        aus = [surname_first(aus[0])] + aus[1:]
+        who = aus[0] if len(aus) == 1 else ", ".join(aus[:-1]) + " and " + aus[-1]
+    yr = str(ref.get("year") or str(ref.get("date", ""))[:4])
+    title = e(ref["title"])
+    stop = "" if title[-1:] in "?!." else "."
+    title = f"&ldquo;{title}{stop}&rdquo;" if ref.get("type") == "article" else f"<i>{title}</i>{stop}"
+    bits = [f"{e(who)} ({e(yr)}).", title]
+    if ref.get("container"):
+        c = e(ref["container"])
+        if ref.get("type") == "article":
+            c = f"<i>{c}</i>"
+            if ref.get("volume"):
+                c += f" {e(ref['volume'])}" + (f"({e(ref['issue'])})" if ref.get("issue") else "")
+            if ref.get("pages"):
+                c += f": {e(ref['pages'])}"
+        bits.append(c + ".")
+    if ref.get("note"):
+        bits.append(e(ref["note"]) + ".")
+    if ref.get("publisher") and ref.get("type") != "article":
+        bits.append((e(ref["place"]) + ": " if ref.get("place") else "") + e(ref["publisher"]) + ".")
+    link = f"https://doi.org/{ref['doi']}" if ref.get("doi") else ref.get("url")
+    if link:
+        bits.append(f'<a href="{e(link)}">{e(link)}</a>')
+    return " ".join(bits)
+
+
+def self_ref(x):
+    return {"type": "webpage", "authors": names(x.get("author") or AUTHOR), "title": x["title"],
+            "date": x["date"].isoformat(), "publisher": NAME,
+            "url": f'{BASE}/{x["id"]}/', "description": x["summary"]}
+
+
 def first_chart(x):
     charts = sorted((x["_folder"] / "charts").glob("*")) if (x["_folder"] / "charts").is_dir() else []
     charts = [c for c in charts if c.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp", ".svg")]
@@ -174,19 +280,36 @@ def entry_page(x):
         if files:
             assets += f'<h3>{label}</h3><ul class="assets">' + "".join(
                 f'<li><a href="{sub}/{e(f)}" download>{sub}/{e(f)}</a></li>' for f in files) + "</ul>"
+    me = self_ref(x)
+    authors = ", ".join(names(x.get("author") or AUTHOR))
+    cite = (f'<section class="cite"><h2>Cite this page</h2>{coins(me)}<p>{cite_text(me)}</p>'
+            '<p class="hint">Reference managers such as Zotero pick this page and every reference below up '
+            'from the browser (the citation is embedded as COinS and citation metadata).</p></section>')
+    refs = x.get("references") or []
+    refs_html = ("<h2>References</h2><ol class=\"refs\">" + "".join(
+        f"<li>{coins(r)}{cite_text(r)}</li>" for r in refs) + "</ol>") if refs else ""
     body = f"""<main class="wrap entry" style="padding-top:40px">
-<div class="legend">{long_date(x["date"])}</div>
+<div class="legend">{long_date(x["date"])} · {e(authors)}</div>
 <h1>{e(x["title"])}</h1>
 {facts}
 <div class="body-md">{render_md(x["_body"])}</div>
+{refs_html}
 {"<h2>Files</h2>" + assets if assets else ""}
+{cite}
 </main>"""
     ch = first_chart(x)
     url = f'{BASE}/{x["id"]}/'
     head = (f'<link rel="canonical" href="{e(url)}"><meta property="og:type" content="article">'
             f'<meta property="og:site_name" content="{NAME}"><meta property="og:title" content="{e(x["title"])}">'
             f'<meta property="og:description" content="{e(x["summary"])}"><meta property="og:url" content="{e(url)}">'
-            f'<meta name="twitter:title" content="{e(x["title"])}"><meta name="twitter:description" content="{e(x["summary"])}">')
+            f'<meta name="twitter:title" content="{e(x["title"])}"><meta name="twitter:description" content="{e(x["summary"])}">'
+            f'<meta name="citation_title" content="{e(x["title"])}">'
+            + "".join(f'<meta name="citation_author" content="{e(surname_first(a))}">' for a in names(x.get("author") or AUTHOR))
+            + f'<meta name="citation_publication_date" content="{x["date"].strftime("%Y/%m/%d")}">'
+            f'<meta name="citation_public_url" content="{e(url)}">'
+            f'<meta name="DC.title" content="{e(x["title"])}"><meta name="DC.date" content="{x["date"].isoformat()}">'
+            f'<meta name="DC.publisher" content="{NAME}"><meta name="DC.type" content="Text">'
+            + "".join(f'<meta name="DC.creator" content="{e(surname_first(a))}">' for a in names(x.get("author") or AUTHOR)))
     if ch:
         img = f'{BASE}/{x["id"]}/charts/{ch}'
         head += (f'<meta property="og:image" content="{e(img)}"><meta name="twitter:card" content="summary_large_image">'
