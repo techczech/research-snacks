@@ -116,19 +116,79 @@ def first_paragraph(md_text):
 BARE_URL = re.compile(r"(?<!\]\()(?<![\w/\[])(https?://[^\s)\]]+?)([.,;:]?)(?=\s|$|\))")
 
 
-def render_md(text):
+def render_md(text, folder=None):
     # raw HTML in Markdown is escaped, as on the sister site
     text = text.replace("&", "&amp;").replace("<", "&lt;")
     # every bare URL becomes a link (skips URLs already inside [text](url))
     text = BARE_URL.sub(lambda m: f"[{m.group(1)}]({m.group(1)}){m.group(2)}", text)
-    html = markdown.markdown(text, extensions=["tables", "fenced_code"])
+    html = markdown.markdown(text, extensions=["tables", "fenced_code", "toc"])
     # right-align cells that hold numbers (counts, years, percentages, dashes)
     html = re.sub(r"<(td|th)>([−\-–+]?[\d,.]+%?(?: \(\d{4}\))?|–|0)</\1>", r'<\1 class="num">\2</\1>', html)
     # make every image open the full-size file on click
     html = re.sub(r'<img ([^>]*?)src="([^"]+)"([^>]*?)/?>',
                   r'<a class="imglink" href="\2"><img \1src="\2"\3 loading="lazy"></a>', html)
     html = re.sub(r"<p>(<a class=\"imglink\".*?</a>)</p>", r"\1", html, flags=re.S)
+    if folder is not None:
+        html = re.sub(r'<a class="imglink" href="(charts/([^"/]+))\.png"><img [^>]*?alt="([^"]*)"[^>]*></a>',
+                      lambda m: interactive_figure(folder, m) or m.group(0), html)
     return html
+
+
+VEGA = ('<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>'
+        '<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>'
+        '<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>'
+        """<script>document.querySelectorAll('.vl[data-spec]').forEach(function(el){fetch(el.dataset.spec).then(function(r){return r.json()})
+.then(function(spec){return vegaEmbed(el,spec,{renderer:'svg',actions:{export:true,source:false,compiled:false,editor:true},
+downloadFileName:el.dataset.name})}).then(function(){el.closest('figure').classList.add('live')}).catch(function(){})});</script>""")
+
+
+def interactive_figure(folder, m):
+    """charts/NAME.png with charts/NAME.vl.json beside it: an interactive Vega-Lite chart, its data as CSV,
+    and the PNG as the fallback (no JavaScript) and as the static download."""
+    path, name, alt = m.group(1), m.group(2), m.group(3)
+    if not (folder / "charts" / f"{name}.vl.json").exists():
+        return None
+    links = [f'<a href="charts/{name}.csv" download>Data (CSV)</a>'] if (folder / "charts" / f"{name}.csv").exists() else []
+    links += [f'<a href="{path}.png">Image (PNG)</a>', f'<a href="charts/{name}.vl.json">Chart spec (Vega-Lite)</a>']
+    return (f'<figure class="ichart"><div class="vl" data-spec="charts/{name}.vl.json" data-name="{name}" role="img" aria-label="{alt}">'
+            f'<img class="fallback" src="{path}.png" alt="{alt}" loading="lazy"></div>'
+            f'<figcaption>Interactive: hover for numbers; click the legend to pick a group; ⋯ menu saves SVG or PNG. '
+            f'{" · ".join(links)}</figcaption></figure>')
+
+
+def slug(t):
+    return re.sub(r"[^a-z0-9]+", "-", re.sub(r"<[^>]+>", "", t).lower()).strip("-") or "section"
+
+
+def with_toc(main_html, title):
+    """Give every h2/h3 an id and lay the page out with a sticky contents sidebar
+    (a collapsible list above the text on narrow screens)."""
+    items, used = [], set()
+
+    def add_id(m):
+        tag, attrs, inner = m.group(1), m.group(2) or "", m.group(3)
+        idm = re.search(r'id="([^"]+)"', attrs)
+        hid = idm.group(1) if idm else slug(inner)
+        while hid in used:
+            hid += "-2"
+        used.add(hid)
+        if not idm:
+            attrs += f' id="{hid}"'
+        items.append((tag, hid, re.sub(r"<[^>]+>", "", inner)))
+        return f"<{tag}{attrs}>{inner}</{tag}>"
+    main_html = re.sub(r"<(h2|h3)((?:\s[^>]*)?)>(.*?)</\1>", add_id, main_html, flags=re.S)
+    if len(items) < 3:
+        return f'<main class="wrap entry" style="padding-top:40px">{main_html}</main>'
+    lis = "".join(f'<li class="{t}"><a href="#{h}">{text}</a></li>' for t, h, text in items)
+    nav = f'<li class="h2"><a href="#top">{e(title)}</a></li>{lis}'
+    return f"""<div class="wrap withtoc" id="top">
+<aside class="toc"><nav aria-label="Contents"><div class="toc-h">Contents</div><ol>{nav}</ol></nav></aside>
+<details class="toc-m"><summary>Contents</summary><ol>{nav}</ol></details>
+<main class="entry">{main_html}</main></div>
+<script>(function(){{var l=[].slice.call(document.querySelectorAll('.toc a[href^="#"]'));var m={{}};l.forEach(function(a){{m[a.getAttribute('href').slice(1)]=a}});
+var hs=[].slice.call(document.querySelectorAll('main.entry h2[id],main.entry h3[id]'));function on(){{var cur=null;hs.forEach(function(h){{if(h.getBoundingClientRect().top<120)cur=h.id}});
+l.forEach(function(a){{a.classList.remove('on')}});if(cur&&m[cur])m[cur].classList.add('on');}}addEventListener('scroll',on,{{passive:true}});on();
+document.querySelectorAll('.toc-m a').forEach(function(a){{a.addEventListener('click',function(){{a.closest('details').open=false}})}});}})();</script>"""
 
 
 def page(title, body, desc, nav_on="", extra_head=""):
@@ -288,15 +348,13 @@ def entry_page(x):
     refs = x.get("references") or []
     refs_html = ("<h2>References</h2><ol class=\"refs\">" + "".join(
         f"<li>{coins(r)}{cite_text(r)}</li>" for r in refs) + "</ol>") if refs else ""
-    body = f"""<main class="wrap entry" style="padding-top:40px">
-<div class="legend">{long_date(x["date"])} · {e(authors)}</div>
+    body = with_toc(f"""<div class="legend">{long_date(x["date"])} · {e(authors)}</div>
 <h1>{e(x["title"])}</h1>
 {facts}
-<div class="body-md">{render_md(x["_body"])}</div>
+<div class="body-md">{render_md(x["_body"], x["_folder"])}</div>
 {refs_html}
 {"<h2>Files</h2>" + assets if assets else ""}
-{cite}
-</main>"""
+{cite}""", x["title"]) + (VEGA if 'class="vl"' in render_md(x["_body"], x["_folder"]) else "")
     ch = first_chart(x)
     url = f'{BASE}/{x["id"]}/'
     head = (f'<link rel="canonical" href="{e(url)}"><meta property="og:type" content="article">'
@@ -349,7 +407,7 @@ def main():
     (out / "index.html").write_text(index_page(entries, first_paragraph(about_md)), encoding="utf-8")
     (out / "about").mkdir()
     (out / "about/index.html").write_text(
-        page(f"About · {NAME}", f'<main class="wrap entry" style="padding-top:40px"><div class="body-md">{render_md(about_md)}</div></main>',
+        page(f"About · {NAME}", with_toc(f'<div class="body-md">{render_md(about_md)}</div>', "About"),
              f"About {NAME}", "about"), encoding="utf-8")
     for x in entries:
         dest = out / x["id"]

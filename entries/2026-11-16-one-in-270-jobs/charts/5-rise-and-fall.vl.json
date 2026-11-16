@@ -1,0 +1,127 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "config": {
+  "font": "Inter, system-ui, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#e4e3df"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 13,
+   "symbolSize": 160
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 13
+  }
+ },
+ "title": {
+  "text": "Jobs that technology created, then took away",
+  "subtitle": [
+   "US workers. Hover a point for the number.",
+   "Source: IPUMS USA (www.ipums.org), employed persons."
+  ]
+ },
+ "facet": {
+  "field": "occupation",
+  "type": "nominal",
+  "sort": [
+   "Computer operators",
+   "Data-entry keyers",
+   "Typists",
+   "Telephone operators",
+   "Photo-lab workers",
+   "Stenographers"
+  ],
+  "title": null,
+  "header": {
+   "labelFontSize": 14,
+   "labelFontWeight": "bold",
+   "labelAnchor": "start"
+  }
+ },
+ "columns": 3,
+ "resolve": {
+  "scale": {
+   "y": "independent"
+  }
+ },
+ "spec": {
+  "width": 165,
+  "height": 140,
+  "encoding": {
+   "x": {
+    "field": "year",
+    "type": "quantitative",
+    "scale": {
+     "domain": [
+      1950,
+      2019
+     ]
+    },
+    "axis": {
+     "format": "d",
+     "values": [
+      1950,
+      1970,
+      1990,
+      2010
+     ],
+     "title": null
+    }
+   },
+   "y": {
+    "field": "workers",
+    "type": "quantitative",
+    "axis": {
+     "format": "~s",
+     "title": null
+    }
+   },
+   "tooltip": [
+    {
+     "field": "occupation"
+    },
+    {
+     "field": "year",
+     "title": "Year"
+    },
+    {
+     "field": "workers",
+     "title": "Workers",
+     "format": ","
+    }
+   ]
+  },
+  "layer": [
+   {
+    "mark": {
+     "type": "line",
+     "color": "#2a78d6",
+     "strokeWidth": 2.4
+    }
+   },
+   {
+    "mark": {
+     "type": "point",
+     "filled": true,
+     "color": "#2a78d6",
+     "size": 50
+    }
+   }
+  ]
+ },
+ "data": {
+  "url": "charts/5-rise-and-fall.csv"
+ }
+}

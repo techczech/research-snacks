@@ -8,8 +8,8 @@ claim_source: https://x.com/emollick/status/2122176524610884061
 verdict: The number seems to come from a paper that counted jobs eliminated by automation, not jobs that are obsolete. At least 15 more 1950 jobs are gone, many more collapsed, and most of today's work did not exist in 1950, so the claim understates how much work has changed.
 time_taken: About 30 minutes from question to charts; 45 with the first follow-up; about an hour more for the revision with the 1972 film
 human_time: About 5 minutes (registering for a free IPUMS account), plus reading the outputs and steering
-tools: [Claude Code (Claude Opus 5.5, with Claude Sonnet 5.5 and Claude Haiku 5.5 subagents), IPUMS USA API, Python, yt-dlp]
-data_sources: [IPUMS USA, 1950–2019 census and American Community Survey microdata]
+tools: ["Claude Code (Claude Opus 5.5, with Claude Sonnet 5.5 and Claude Haiku 5.5 subagents)", IPUMS USA API, Python, yt-dlp]
+data_sources: ["IPUMS USA: 1950–2019 census and American Community Survey microdata"]
 summary: A post said only one of the 270 occupations in the 1950 US census is now obsolete, and used that to argue that work has been stable since the 1950s. Census microdata shows about 16 jobs gone or nearly gone, many more collapsed, and new kinds of work that a list of 1950 jobs cannot show.
 references:
   - type: post
@@ -80,43 +80,43 @@ The 1950 census had 268 occupation categories with employed workers (58.9 millio
 
 ### Jobs that are gone or nearly gone
 
-| Occupation in 1950 | Workers in 1950 | What removed it |
-|---|---|---|
-| Elevator operators | 92,779 | Automatic lifts |
-| Locomotive firemen | 58,557 | Diesel engines |
-| Blacksmiths | 43,915 | Motor vehicles, factory-made tools |
-| Telegraph operators | 36,105 | Telephone and teleprinter |
-| Boarding-house keepers | 28,106 | Falling demand |
-| Teamsters (horse and wagon) | 24,639 | Motor vehicles |
-| Electrotypers and stereotypers | 19,996 | Offset printing |
-| Railway mail clerks and express messengers | 19,672 | Changes in mail transport |
-| Milliners | 17,553 | Falling demand for hats |
-| Bootblacks | 15,725 | Falling demand |
-| Furriers | 13,906 | Falling demand |
-| Bus and streetcar conductors | 12,903 | One-person buses |
-| Crossing watchmen and bridge tenders | 12,852 | Automatic crossing gates |
-| Telegraph messengers | 8,134 | Telephone |
-| Baggagemen | 7,789 | Changes in rail travel |
-| Photoengravers | in a category shared with lithographers | Offset printing |
+| Occupation in 1950 | Workers in 1950 | Share of all workers, 1950 | What removed it |
+|---|---|---|---|
+| Elevator operators | 92,779 | 0.16% | Automatic lifts |
+| Locomotive firemen | 58,557 | 0.099% | Diesel engines |
+| Blacksmiths | 43,915 | 0.075% | Motor vehicles, factory-made tools |
+| Telegraph operators | 36,105 | 0.061% | Telephone and teleprinter |
+| Boarding-house keepers | 28,106 | 0.048% | Falling demand |
+| Teamsters (horse and wagon) | 24,639 | 0.042% | Motor vehicles |
+| Electrotypers and stereotypers | 19,996 | 0.034% | Offset printing |
+| Railway mail clerks and express messengers | 19,672 | 0.033% | Changes in mail transport |
+| Milliners | 17,553 | 0.030% | Falling demand for hats |
+| Bootblacks | 15,725 | 0.027% | Falling demand |
+| Furriers | 13,906 | 0.024% | Falling demand |
+| Bus and streetcar conductors | 12,903 | 0.022% | One-person buses |
+| Crossing watchmen and bridge tenders | 12,852 | 0.022% | Automatic crossing gates |
+| Telegraph messengers | 8,134 | 0.014% | Telephone |
+| Baggagemen | 7,789 | 0.013% | Changes in rail travel |
+| Photoengravers | in a category shared with lithographers | – | Offset printing |
 
 ![Bar chart of 15 occupations of 1950 that have disappeared or nearly disappeared, by number of workers in 1950, coloured by whether technology or falling demand removed them](charts/2-jobs-that-disappeared.png)
 
 ### Jobs that survived on the list but collapsed
 
-| Occupation | 1950 | 2010 | Change |
-|---|---|---|---|
-| Railway brakemen | 78,981 | 5,368 | −93% |
-| Textile weavers | 104,840 | 8,899 | −92% |
-| Pattern and model makers | 53,407 | 5,121 | −90% |
-| Farmers (owners and tenants) | 4,369,267 | 618,867 | −86% |
-| Compositors and typesetters | 181,886 | 35,462 | −81% |
-| Paperhangers | 24,576 | 4,802 | −80% |
-| Telephone operators | 384,440 | 89,392 | −77% |
-| Stationary firemen | 135,712 | 33,280 | −75% |
-| Sawyers | 98,645 | 29,794 | −70% |
-| Metal filers, grinders and polishers | 156,782 | 47,912 | −69% |
+| Occupation | Workers 1950 | Workers 2010 | Change | Share of all workers 1950 | Share of all workers 2010 |
+|---|---|---|---|---|---|
+| Railway brakemen | 78,981 | 5,368 | −93% | 0.13% | 0.004% |
+| Textile weavers | 104,840 | 8,899 | −92% | 0.18% | 0.006% |
+| Pattern and model makers | 53,407 | 5,121 | −90% | 0.091% | 0.004% |
+| Farmers (owners and tenants) | 4,369,267 | 618,867 | −86% | 7.41% | 0.44% |
+| Compositors and typesetters | 181,886 | 35,462 | −81% | 0.31% | 0.025% |
+| Paperhangers | 24,576 | 4,802 | −80% | 0.042% | 0.003% |
+| Telephone operators | 384,440 | 89,392 | −77% | 0.65% | 0.064% |
+| Stationary firemen | 135,712 | 33,280 | −75% | 0.23% | 0.024% |
+| Sawyers | 98,645 | 29,794 | −70% | 0.17% | 0.021% |
+| Metal filers, grinders and polishers | 156,782 | 47,912 | −69% | 0.27% | 0.034% |
 
-Total employment more than doubled over the same years, so as a share of all work these falls are larger still.
+Total employment more than doubled over the same years (58.9 million employed people in 1950, 140.2 million in 2010), so as a share of all work the falls are starker still. In 1950 about one worker in 13 was a farmer; in 2010 it was about one in 230. The shares are of all employed people in each year.
 
 ![Bar chart of ten occupations that stayed on the census list but lost 69 to 93 percent of their workers between 1950 and 2010, led by railway brakemen and textile weavers](charts/3-survived-but-collapsed.png)
 

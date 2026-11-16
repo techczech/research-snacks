@@ -1,0 +1,133 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "config": {
+  "font": "Inter, system-ui, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#e4e3df"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 13,
+   "symbolSize": 160
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 13
+  }
+ },
+ "title": {
+  "text": "Meanwhile: work nobody did in 1950",
+  "subtitle": [
+   "US workers in two computing occupations that were not census categories before 1970",
+   "Source: IPUMS USA (www.ipums.org), employed persons."
+  ]
+ },
+ "height": 320,
+ "params": [
+  {
+   "name": "pick",
+   "select": {
+    "type": "point",
+    "fields": [
+     "occupation"
+    ]
+   },
+   "bind": "legend"
+  }
+ ],
+ "encoding": {
+  "x": {
+   "field": "year",
+   "type": "quantitative",
+   "axis": {
+    "format": "d",
+    "values": [
+     1970,
+     1980,
+     1990,
+     2000,
+     2010,
+     2019
+    ],
+    "title": null
+   },
+   "scale": {
+    "domain": [
+     1970,
+     2019
+    ]
+   }
+  },
+  "y": {
+   "field": "workers",
+   "type": "quantitative",
+   "axis": {
+    "format": "~s",
+    "title": "Workers"
+   }
+  },
+  "color": {
+   "field": "occupation",
+   "type": "nominal",
+   "scale": {
+    "range": [
+     "#2a78d6",
+     "#eb6834"
+    ]
+   },
+   "legend": {
+    "labelLimit": 360
+   }
+  },
+  "opacity": {
+   "condition": {
+    "param": "pick",
+    "value": 1
+   },
+   "value": 0.18
+  },
+  "tooltip": [
+   {
+    "field": "occupation",
+    "title": "Occupation"
+   },
+   {
+    "field": "year",
+    "title": "Year"
+   },
+   {
+    "field": "workers",
+    "title": "Workers",
+    "format": ","
+   }
+  ]
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "line",
+    "strokeWidth": 2.6
+   }
+  },
+  {
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 60
+   }
+  }
+ ],
+ "data": {
+  "url": "charts/6-new-work.csv"
+ }
+}

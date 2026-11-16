@@ -1,0 +1,144 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "config": {
+  "font": "Inter, system-ui, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#e4e3df"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 13,
+   "symbolSize": 160
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 13
+  }
+ },
+ "title": {
+  "text": "The jobs of 1950 that have (nearly) disappeared",
+  "subtitle": [
+   "US workers in each occupation in 1950",
+   "Source: IPUMS USA (www.ipums.org), employed persons."
+  ]
+ },
+ "height": {
+  "step": 26
+ },
+ "encoding": {
+  "y": {
+   "field": "occupation",
+   "type": "nominal",
+   "sort": {
+    "field": "workers_1950",
+    "order": "descending"
+   },
+   "title": null,
+   "axis": {
+    "labelLimit": 280
+   }
+  },
+  "x": {
+   "field": "workers_1950",
+   "type": "quantitative",
+   "title": "Workers in 1950",
+   "axis": {
+    "format": "~s"
+   }
+  },
+  "tooltip": [
+   {
+    "field": "occupation",
+    "title": "Occupation"
+   },
+   {
+    "field": "workers_1950",
+    "title": "Workers 1950",
+    "format": ","
+   },
+   {
+    "field": "share_of_all_workers_1950_pct",
+    "title": "Share of all workers 1950 (%)"
+   },
+   {
+    "field": "workers_2010",
+    "title": "Workers 2010",
+    "format": ","
+   },
+   {
+    "field": "removed_by",
+    "title": "Removed by"
+   }
+  ]
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+   },
+   "params": [
+    {
+     "name": "pick",
+     "select": {
+      "type": "point",
+      "fields": [
+       "removed_by"
+      ]
+     },
+     "bind": "legend"
+    }
+   ],
+   "encoding": {
+    "color": {
+     "field": "removed_by",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Technology",
+       "Falling demand"
+      ],
+      "range": [
+       "#2a78d6",
+       "#eb6834"
+      ]
+     }
+    },
+    "opacity": {
+     "condition": {
+      "param": "pick",
+      "value": 1
+     },
+     "value": 0.18
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 4,
+    "color": "#52514e"
+   },
+   "encoding": {
+    "text": {
+     "field": "workers_1950",
+     "format": ","
+    }
+   }
+  }
+ ],
+ "data": {
+  "url": "charts/2-jobs-that-disappeared.csv"
+ }
+}

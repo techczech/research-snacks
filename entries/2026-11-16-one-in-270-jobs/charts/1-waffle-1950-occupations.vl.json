@@ -1,0 +1,121 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "config": {
+  "font": "Inter, system-ui, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#e4e3df"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 13,
+   "symbolSize": 160
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 13
+  }
+ },
+ "title": {
+  "text": "“Only 1 of 270 jobs from 1950 is obsolete”?",
+  "subtitle": "Each square is one of the 268 occupation categories of the 1950 US census. Hover for the job."
+ },
+ "params": [
+  {
+   "name": "pick",
+   "select": {
+    "type": "point",
+    "fields": [
+     "status"
+    ]
+   },
+   "bind": "legend"
+  }
+ ],
+ "height": {
+  "step": 26
+ },
+ "mark": {
+  "type": "rect",
+  "cornerRadius": 2
+ },
+ "encoding": {
+  "x": {
+   "field": "col",
+   "type": "ordinal",
+   "axis": null,
+   "scale": {
+    "paddingInner": 0.15
+   }
+  },
+  "y": {
+   "field": "row",
+   "type": "ordinal",
+   "axis": null,
+   "scale": {
+    "paddingInner": 0.15
+   }
+  },
+  "color": {
+   "field": "status",
+   "type": "nominal",
+   "scale": {
+    "domain": [
+     "Gone through automation (elevator operator)",
+     "Also gone or nearly gone",
+     "Lost only through reclassification",
+     "Still a category in 2010"
+    ],
+    "range": [
+     "#1d2433",
+     "#2a78d6",
+     "#dddcd6",
+     "#a9a8a2"
+    ]
+   },
+   "legend": {
+    "columns": 1,
+    "labelLimit": 320
+   }
+  },
+  "opacity": {
+   "condition": {
+    "param": "pick",
+    "value": 1
+   },
+   "value": 0.18
+  },
+  "tooltip": [
+   {
+    "field": "occupation",
+    "title": "Occupation"
+   },
+   {
+    "field": "status",
+    "title": "In 2010"
+   },
+   {
+    "field": "workers_1950",
+    "title": "Workers 1950",
+    "format": ","
+   },
+   {
+    "field": "workers_2010",
+    "title": "Workers 2010",
+    "format": ","
+   }
+  ]
+ },
+ "data": {
+  "url": "charts/1-waffle-1950-occupations.csv"
+ }
+}

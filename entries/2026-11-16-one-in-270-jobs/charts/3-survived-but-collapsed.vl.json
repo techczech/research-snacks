@@ -1,0 +1,121 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": "container",
+ "config": {
+  "font": "Inter, system-ui, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#e4e3df"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 13,
+   "symbolSize": 160
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 13
+  }
+ },
+ "title": {
+  "text": "Still on the list, mostly gone from the workforce",
+  "subtitle": [
+   "Change in US employment 1950–2010",
+   "Source: IPUMS USA (www.ipums.org), employed persons."
+  ]
+ },
+ "height": {
+  "step": 30
+ },
+ "encoding": {
+  "y": {
+   "field": "occupation",
+   "type": "nominal",
+   "sort": {
+    "field": "change_pct",
+    "order": "ascending"
+   },
+   "title": null,
+   "axis": {
+    "labelLimit": 280
+   }
+  },
+  "x": {
+   "field": "change_pct",
+   "type": "quantitative",
+   "title": "Change 1950–2010 (%)",
+   "scale": {
+    "domain": [
+     -100,
+     0
+    ]
+   }
+  },
+  "tooltip": [
+   {
+    "field": "occupation",
+    "title": "Occupation"
+   },
+   {
+    "field": "workers_1950",
+    "title": "Workers 1950",
+    "format": ","
+   },
+   {
+    "field": "workers_2010",
+    "title": "Workers 2010",
+    "format": ","
+   },
+   {
+    "field": "change_pct",
+    "title": "Change (%)"
+   },
+   {
+    "field": "share_of_all_workers_1950_pct",
+    "title": "Share of all workers 1950 (%)"
+   },
+   {
+    "field": "share_of_all_workers_2010_pct",
+    "title": "Share of all workers 2010 (%)"
+   }
+  ]
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "color": "#2a78d6",
+    "cornerRadiusEnd": 3
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 6,
+    "color": "white",
+    "fontWeight": "bold"
+   },
+   "encoding": {
+    "x": {
+     "field": "change_pct",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "label"
+    }
+   }
+  }
+ ],
+ "data": {
+  "url": "charts/3-survived-but-collapsed.csv"
+ }
+}
