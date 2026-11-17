@@ -1,6 +1,6 @@
 <div id="sickly-kwic" class="sickly-kwic">
 <style>
-.sickly-kwic{font-size:.85rem}.sickly-kwic .controls{display:flex;gap:.8rem;flex-wrap:wrap;align-items:end;margin-block:1rem}
+.sickly-kwic{font-size:.85rem;color:#1d2433;color-scheme:light}.sickly-kwic table{color:inherit}.sickly-kwic a{color:#17618b}.sickly-kwic .controls{display:flex;gap:.8rem;flex-wrap:wrap;align-items:end;margin-block:1rem}
 .sickly-kwic .controls[hidden]{display:none}.sickly-kwic label{display:grid;gap:.25rem}.sickly-kwic input,.sickly-kwic select,.sickly-kwic button{font:inherit;color:inherit;background:transparent;border:1px solid #888;border-radius:4px;padding:.35rem .5rem}
 .sickly-kwic .scroll{max-height:28rem;overflow:auto;border:1px solid #888}.sickly-kwic table{margin:0;min-width:64rem;width:100%}
 .sickly-kwic th{position:sticky;top:0;background:Canvas;z-index:1}.sickly-kwic th button{border:0;font-weight:600;cursor:pointer}
@@ -75,9 +75,7 @@
  root.querySelector('#sickly-export').addEventListener('click',()=>{
    const fields=Object.keys(source[0]), quote=v=>'"'+String(v).replaceAll('"','""')+'"';
    const visible=Array.from(tbody.rows).filter(tr=>!tr.hidden).map(tr=>records.get(tr));
-   const csv=[fields.map(quote).join(','),...visible.map(r=>fields.map(f=>quote(r[f])).join(','))].join('
-')+'
-';
+   const csv=[fields.map(quote).join(','),...visible.map(r=>fields.map(f=>quote(r[f])).join(','))].join('\r\n')+'\r\n';
    const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');
    a.href=url;a.download='sickly-visible-examples.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
  });

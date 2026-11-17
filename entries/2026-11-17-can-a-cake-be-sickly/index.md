@@ -8,7 +8,7 @@ tags: [linguistics, corpus-linguistics, English-usage, sickly]
 claim: 'Can “sickly” describe food and other inanimate things, before a noun or after a verb, as the only adjective? Is there a British–American difference?'
 claim_source: https://researchsnacks.semanticmachines.fyi/2026-11-17-can-a-cake-be-sickly/data/original-sickly-report.html
 verdict: Both uses occur without another adjective; the American sample is too sparse to establish a British–American difference.
-time_taken: 11.9 minutes to the usage snapshot on 17 November 2026; subsequent publication and live checks excluded. Original study duration was not recorded.
+time_taken: 19.1 minutes to the usage snapshot on 17 November 2026; subsequent publication and live checks excluded. Original study duration was not recorded.
 human_time: Not measured for repackaging; the human supplied the question, existing report and publication brief.
 tools: ['Codex (gpt-6.1-sol)', Python, Sketch Engine (original study), Vega-Lite]
 data_sources: ['British National Corpus (BNC)', 'Open American National Corpus (OANC/MASC)', 'ukWaC and enTenTen13 (supplementary historical web examples)']
@@ -142,7 +142,7 @@ The full report’s [collocation tables](data/original-sickly-report.html) disti
 
 ### Timeline
 
-The corpus study was run on **7 October 2026** and repackaged on **17 November 2026**. No new corpus searches were made for this snack. The original records do not give the run’s elapsed time. The repackaging snapshot covers **08:23:25–08:35:18 UK time on 17 November 2026** (11.9 minutes); deployment and subsequent live checks fall outside it.
+The corpus study was run on **7 October 2026** and repackaged on **17 November 2026**. No new corpus searches were made for this snack. The original records do not give the run’s elapsed time. The repackaging snapshot covers **08:23:25–08:42:31 UK time on 17 November 2026** (19.1 minutes); deployment and subsequent live checks fall outside it.
 
 ### Data and method
 
@@ -154,7 +154,7 @@ The full offline HTML report, canonical Markdown, three notes, evidence, method,
 
 | Model or run | Role | Calls | Tokens read | Tokens written |
 |---|---|---:|---:|---:|
-| gpt-6.1-sol (Codex), repackaging | Shortening, page and chart implementation, verification | 23 | 2,318,175 | 16,676 |
+| gpt-6.1-sol (Codex), repackaging | Shortening, page and chart implementation, verification | 45 | 5,951,264 | 29,178 |
 | Codex, original study | Retrieval, interpretation and report | Not recorded | Not recorded | Not recorded |
 
 The original records name Codex but do not record its model version or token totals. Repackaging counts come from this implementation session’s transcript, exported by the supplied Codex usage script. Calls count distinct cumulative usage events. The [usage snapshot](data/repackaging-usage-sickly.json) records its coverage. Tokens read include cached history; cached input is part of the input total, not added twice. Tokens written include reasoning. Python, Vega-Lite, the static-site builder and Cloudflare Pages were the other tools.

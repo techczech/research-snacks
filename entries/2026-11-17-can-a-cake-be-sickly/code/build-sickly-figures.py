@@ -95,9 +95,9 @@ for row in rows:
     body.append(f'<tr data-corpus="{escape(row["corpus"])}">' + ''.join(cells) + '</tr>')
 head = ''.join(f'<th scope="col" aria-sort="none"><button type="button" data-sort="{i}">{label}</button></th>' for i, (_, label) in enumerate(COLS))
 options = '<option value="">All corpora</option>' + ''.join(f'<option>{escape(c)}</option>' for c in dict.fromkeys(r['corpus'] for r in rows))
-html = '''<div id="sickly-kwic" class="sickly-kwic">
+html = r'''<div id="sickly-kwic" class="sickly-kwic">
 <style>
-.sickly-kwic{font-size:.85rem}.sickly-kwic .controls{display:flex;gap:.8rem;flex-wrap:wrap;align-items:end;margin-block:1rem}
+.sickly-kwic{font-size:.85rem;color:#1d2433;color-scheme:light}.sickly-kwic table{color:inherit}.sickly-kwic a{color:#17618b}.sickly-kwic .controls{display:flex;gap:.8rem;flex-wrap:wrap;align-items:end;margin-block:1rem}
 .sickly-kwic .controls[hidden]{display:none}.sickly-kwic label{display:grid;gap:.25rem}.sickly-kwic input,.sickly-kwic select,.sickly-kwic button{font:inherit;color:inherit;background:transparent;border:1px solid #888;border-radius:4px;padding:.35rem .5rem}
 .sickly-kwic .scroll{max-height:28rem;overflow:auto;border:1px solid #888}.sickly-kwic table{margin:0;min-width:64rem;width:100%}
 .sickly-kwic th{position:sticky;top:0;background:Canvas;z-index:1}.sickly-kwic th button{border:0;font-weight:600;cursor:pointer}
