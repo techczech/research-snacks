@@ -117,3 +117,7 @@ figure.ichart .fallback{border:0;margin:0}
 figure.ichart figcaption{font-size:12.5px;color:var(--mut);border-top:1px solid var(--bd);margin-top:8px;padding-top:6px}
 #vg-tooltip-element{font:13px Inter,system-ui,sans-serif}
 figure.ichart .vl{overflow-x:auto}
+
+.cite button{font:inherit;color:var(--primary);background:var(--card);border:1px solid var(--bd);border-radius:4px;padding:6px 12px;cursor:pointer;margin-bottom:8px}
+.cite button:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+#copy-status{font-size:14px;color:var(--mut)}

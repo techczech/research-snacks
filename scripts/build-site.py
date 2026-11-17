@@ -6,7 +6,6 @@
 """Build site/ from entries/<id>/index.md. Run: uv run scripts/build-site.py"""
 import re
 import shutil
-from urllib.parse import urlencode
 import sys
 from datetime import date
 from html import escape
@@ -14,6 +13,8 @@ from pathlib import Path
 
 import markdown
 import yaml
+
+from kit.citation import citation_head, cite_block, surname_first
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = "https://researchsnacks.semanticmachines.fyi"
@@ -191,11 +192,13 @@ l.forEach(function(a){{a.classList.remove('on')}});if(cur&&m[cur])m[cur].classLi
 document.querySelectorAll('.toc-m a').forEach(function(a){{a.addEventListener('click',function(){{a.closest('details').open=false}})}});}})();</script>"""
 
 
-def page(title, body, desc, nav_on="", extra_head=""):
+def page(title, body, desc, nav_on="", extra_head="", citation=None):
+    citation = citation or {"title": title, "url": BASE + ("/about/" if nav_on == "about" else "/"),
+                            "site": NAME, "authors": [AUTHOR]}
     def a(key, href, label):
         return f'<a{" class=on" if nav_on == key else ""} href="{href}">{label}</a>'
     nav = a("entries", "/", "Entries") + a("about", "/about/", "About") + f'<a href="{SISTER}">Model Data Points</a>'
-    return f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>{e(title)}</title><meta name="description" content="{e(desc)}">{extra_head}<link rel="stylesheet" href="/style.css"></head><body><header class="site"><div class="wrap"><a class="logo" href="/"><b>RS</b><span>{NAME}</span></a>
+    return f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{e(citation["url"])}">{citation_head(citation)}{extra_head}<link rel="stylesheet" href="/style.css"></head><body><header class="site"><div class="wrap"><a class="logo" href="/"><b>RS</b><span>{NAME}</span></a>
 <nav class="main">{nav}</nav></div></header>
 {body}
 <footer><div class="wrap"><p>{NAME} · researchsnacks.semanticmachines.fyi · Sister site: <a href="{SISTER}">Model Data Points</a> (datapoints.semanticmachines.fyi) · <a href="{SM_HOME}">Semantic Machines</a></p>
@@ -224,61 +227,44 @@ def linkify(s):
     return f'<a href="{e(s)}">{e(s)}</a>' if s.startswith("http") else e(s)
 
 
-# ---- citations: COinS spans (Zotero and other reference managers) + formatted text ----
+# ---- references: formatted text and a separate RIS download ----
 def names(v):
     return [v] if isinstance(v, str) else list(v or [])
 
 
-def surname_first(n):
-    n = n.strip()
-    if "," in n or " " not in n:
-        return n
-    first, last = n.rsplit(" ", 1)
-    return f"{last}, {first}"
+def references_ris(refs):
+    """Export the reference dictionaries without competing with page metadata."""
+    types = {"article": "JOUR", "report": "RPRT", "dataset": "DATA",
+             "webpage": "ELEC", "post": "ELEC", "video": "VIDEO"}
+    records = []
+    for ref in refs:
+        lines = []
 
+        def add(tag, value):
+            if value is not None and str(value).strip():
+                # RIS fields occupy one line; YAML folded/literal values must not create records.
+                lines.append(f"{tag}  - {' '.join(str(value).splitlines()).strip()}")
 
-def coins(ref):
-    """ref keys: type (article|report|dataset|webpage|video|post), authors, title, year/date,
-    container, volume, issue, pages, publisher, place, url, doi."""
-    t = ref.get("type", "webpage")
-    date_ = str(ref.get("date") or ref.get("year") or "")
-    kv = [("ctx_ver", "Z39.88-2004")]
-    aus = names(ref.get("authors"))
-    if not ref.get("corporate"):
-        aus = [surname_first(a) for a in aus]
-    if t == "article":
-        kv += [("rft_val_fmt", "info:ofi/fmt:kev:mtx:journal"), ("rft.genre", "article"),
-               ("rft.atitle", ref["title"]), ("rft.jtitle", ref.get("container", ""))]
-        for k in ("volume", "issue"):
-            if ref.get(k):
-                kv.append((f"rft.{k}", str(ref[k])))
+        add("TY", types.get(ref.get("type", "webpage"), "ELEC"))
+        for author in names(ref.get("authors")):
+            add("AU", author if ref.get("corporate") else surname_first(author))
+        add("TI", ref["title"])
+        add("T2", ref.get("container"))
+        published = str(ref.get("date") or ref.get("year") or "")
+        add("PY", published[:4])
+        if ref.get("date"):
+            add("DA", published.replace("-", "/"))
+        for tag, key in (("VL", "volume"), ("IS", "issue"), ("PB", "publisher"),
+                         ("CY", "place"), ("UR", "url"), ("DO", "doi"), ("N1", "note")):
+            add(tag, ref.get(key))
         if ref.get("pages"):
-            kv.append(("rft.pages", str(ref["pages"])))
-        kv += [("rft.au", a) for a in aus]
-    elif t in ("report", "dataset"):
-        kv += [("rft_val_fmt", "info:ofi/fmt:kev:mtx:book"), ("rft.genre", "report" if t == "report" else "document"),
-               ("rft.btitle", ref["title"])]
-        for k, f in (("publisher", "rft.pub"), ("place", "rft.place"), ("container", "rft.series")):
-            if ref.get(k):
-                kv.append((f, str(ref[k])))
-        kv += [("rft.au", a) for a in aus]
-    else:  # webpage, video, post: Dublin Core, which Zotero imports as a web page
-        kv += [("rft_val_fmt", "info:ofi/fmt:kev:mtx:dc"), ("rft.type", ref.get("dctype", "webpage")),
-               ("rft.title", ref["title"])]
-        if ref.get("publisher") or ref.get("container"):
-            kv.append(("rft.publisher", str(ref.get("publisher") or ref.get("container"))))
-        if ref.get("description"):
-            kv.append(("rft.description", ref["description"]))
-        kv += [("rft.creator", a) for a in aus]
-        if ref.get("url"):
-            kv.append(("rft.identifier", ref["url"]))
-    if date_:
-        kv.append(("rft.date", date_))
-    if ref.get("doi"):
-        kv.append(("rft_id", f"info:doi/{ref['doi']}"))
-    if ref.get("url"):
-        kv.append(("rft_id", ref["url"]))
-    return f'<span class="Z3988" title="{e(urlencode(kv))}"></span>'
+            pages = re.split(r"[–—-]", str(ref["pages"]), maxsplit=1)
+            add("SP", pages[0])
+            if len(pages) == 2:
+                add("EP", pages[1])
+        lines.append("ER  - ")
+        records.append("\n".join(lines))
+    return "\n\n".join(records) + "\n"
 
 
 def cite_text(ref):
@@ -314,7 +300,7 @@ def cite_text(ref):
 
 def self_ref(x):
     return {"type": "webpage", "authors": names(x.get("author") or AUTHOR), "title": x["title"],
-            "date": x["date"].isoformat(), "publisher": NAME,
+            "date": x["date"].isoformat(), "site": NAME,
             "url": f'{BASE}/{x["id"]}/', "description": x["summary"]}
 
 
@@ -342,39 +328,29 @@ def entry_page(x):
                 f'<li><a href="{sub}/{e(f)}" download>{sub}/{e(f)}</a></li>' for f in files) + "</ul>"
     me = self_ref(x)
     authors = ", ".join(names(x.get("author") or AUTHOR))
-    cite = (f'<section class="cite"><h2>Cite this page</h2>{coins(me)}<p>{cite_text(me)}</p>'
-            '<p class="hint">Reference managers such as Zotero pick this page and every reference below up '
-            'from the browser (the citation is embedded as COinS and citation metadata).</p></section>')
+    cite = cite_block(me)
     refs = x.get("references") or []
     refs_html = ("<h2>References</h2><ol class=\"refs\">" + "".join(
-        f"<li>{coins(r)}{cite_text(r)}</li>" for r in refs) + "</ol>") if refs else ""
+        f"<li>{cite_text(r)}</li>" for r in refs) + "</ol>"
+        '<p><a href="references.ris">Add these references to your reference manager (RIS)</a></p>') if refs else ""
     body = with_toc(f"""<div class="legend">{long_date(x["date"])} · {e(authors)}</div>
 <h1>{e(x["title"])}</h1>
 {facts}
 <div class="body-md">{render_md(x["_body"], x["_folder"])}</div>
 {refs_html}
 {"<h2>Files</h2>" + assets if assets else ""}
-{cite}""", x["title"]) + (VEGA if 'class="vl"' in render_md(x["_body"], x["_folder"]) else "")
+{cite}<p id="copy-status" role="status" aria-live="polite"></p>""", x["title"]) + (VEGA if 'class="vl"' in render_md(x["_body"], x["_folder"]) else "")
     ch = first_chart(x)
-    url = f'{BASE}/{x["id"]}/'
-    head = (f'<link rel="canonical" href="{e(url)}"><meta property="og:type" content="article">'
-            f'<meta property="og:site_name" content="{NAME}"><meta property="og:title" content="{e(x["title"])}">'
-            f'<meta property="og:description" content="{e(x["summary"])}"><meta property="og:url" content="{e(url)}">'
-            f'<meta name="twitter:title" content="{e(x["title"])}"><meta name="twitter:description" content="{e(x["summary"])}">'
-            f'<meta name="citation_title" content="{e(x["title"])}">'
-            + "".join(f'<meta name="citation_author" content="{e(surname_first(a))}">' for a in names(x.get("author") or AUTHOR))
-            + f'<meta name="citation_publication_date" content="{x["date"].strftime("%Y/%m/%d")}">'
-            f'<meta name="citation_public_url" content="{e(url)}">'
-            f'<meta name="DC.title" content="{e(x["title"])}"><meta name="DC.date" content="{x["date"].isoformat()}">'
-            f'<meta name="DC.publisher" content="{NAME}"><meta name="DC.type" content="Text">'
-            + "".join(f'<meta name="DC.creator" content="{e(surname_first(a))}">' for a in names(x.get("author") or AUTHOR)))
+    head = ('<script src="/copy.js" defer></script><meta property="og:type" content="article">'
+            f'<meta property="og:description" content="{e(x["summary"])}">'
+            f'<meta name="twitter:title" content="{e(x["title"])}"><meta name="twitter:description" content="{e(x["summary"])}">')
     if ch:
         img = f'{BASE}/{x["id"]}/charts/{ch}'
         head += (f'<meta property="og:image" content="{e(img)}"><meta name="twitter:card" content="summary_large_image">'
                  f'<meta name="twitter:image" content="{e(img)}">')
     else:
         head += '<meta name="twitter:card" content="summary">'
-    return page(f'{x["title"]} · {NAME}', body, x["summary"], extra_head=head)
+    return page(f'{x["title"]} · {NAME}', body, x["summary"], extra_head=head, citation=me)
 
 
 def main():
@@ -403,7 +379,8 @@ def main():
     if out.exists():
         shutil.rmtree(out)
     out.mkdir()
-    shutil.copy(ROOT / "scripts/assets/style.css", out / "style.css")
+    for asset in ("style.css", "copy.js", "_headers"):
+        shutil.copy(ROOT / "scripts/assets" / asset, out / asset)
     (out / "index.html").write_text(index_page(entries, first_paragraph(about_md)), encoding="utf-8")
     (out / "about").mkdir()
     (out / "about/index.html").write_text(
@@ -413,6 +390,8 @@ def main():
         dest = out / x["id"]
         shutil.copytree(x["_folder"], dest, ignore=shutil.ignore_patterns("index.md", "__pycache__", ".DS_Store"))
         (dest / "index.html").write_text(entry_page(x), encoding="utf-8")
+        if x.get("references"):
+            (dest / "references.ris").write_text(references_ris(x["references"]), encoding="utf-8")
     print(f"Built {len(entries)} entries into {out}")
 
 
