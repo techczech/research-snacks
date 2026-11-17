@@ -122,7 +122,7 @@ Total employment more than doubled over the same years (58.9 million employed pe
 
 ### Jobs that technology created and then took away
 
-This was a follow-up question. After seeing the first results, I remembered a [1972 Univac educational film on office automation and clerical careers](https://www.youtube.com/watch?v=eorxtvnyGBY), which shows jobs that existed for only a few decades. Using eight census and survey years from 1950 to 2019, six office and communication jobs rose and then fell (thousands of workers; – means no comparable category that year):
+This was a follow-up question. After seeing the first results, I remembered a [1972 educational film on office automation and clerical careers](https://www.youtube.com/watch?v=eorxtvnyGBY) from an [earlier experiment on historical views of computers](https://viewfromhistory.semanticmachines.fyi/), which shows jobs that existed for only a few decades. Using eight census and survey years from 1950 to 2019, six office and communication jobs rose and then fell (thousands of workers; – means no comparable category that year):
 
 | Occupation | 1960 | 1970 | 1980 | 1990 | 2000 | 2010 | 2019 |
 |---|---|---|---|---|---|---|---|
@@ -135,9 +135,11 @@ This was a follow-up question. After seeing the first results, I remembered a [1
 
 ![Six small line charts of jobs that technology created and then took away: computer operators, data-entry keyers, typists, telephone operators, photo-lab workers and stenographers](charts/5-rise-and-fall.png)
 
-### The jobs in the 1972 film
+### Vision of future jobs from 1972
 
-The film is a careers guide for school leavers. We extracted its narration and listed every job it names. The computer jobs it describes are keypunch operators (who coded data onto punched cards), data typists (who coded it onto paper tape), console operators and computer operators. The census has no separate category for these: punched-card and tape work falls under data-entry keyers, and console and tape-handling work under computer operators. The table maps each job in the film to the closest census category (thousands of workers).
+The film is [Office Automation, Clerical Careers](https://www.youtube.com/watch?v=eorxtvnyGBY), a seven-minute educational film from 1972 for school leavers, filmed around a Univac 9400 computer and now on YouTube through the Computer History Archives Project. It walks through the office jobs open to a young person and presents computer work as the fast-growing future of the clerical field. I first came across it in an earlier experiment, [People and Computers: Views from History](https://viewfromhistory.semanticmachines.fyi/), where AI models analysed historical films about computers and how people talked about them; this film is one of its sources.
+
+Here, the agent downloaded the film's subtitles and listed every job the narration names. The computer jobs it describes are keypunch operators (who coded data onto punched cards), data typists (who coded it onto paper tape), console operators and computer operators. The census has no separate category for these: punched-card and tape work falls under data-entry keyers, and console and tape-handling work under computer operators. The table maps each job in the film to the closest census category (thousands of workers).
 
 | Job named in the film | Census category | 1970 | Peak | 2019 |
 |---|---|---|---|---|
@@ -181,7 +183,7 @@ The point of this series is how quickly a claim can be checked now. This one too
 - **~08:02**: I had registered a free IPUMS account and an API key (about five minutes of my time; the key is in a password manager). The AI agent submitted the first data extract.
 - **08:03**: The data came back, and the agent aggregated it in seconds.
 - **08:11**: First charts.
-- **08:26**: Looking at the first results, I remembered the 1972 film and asked which jobs rose and fell. A second extract answered it.
+- **08:26**: Looking at the first results, I remembered the 1972 film from the earlier history experiment and asked which jobs rose and fell. A second extract answered it.
 - **~09:40**: The site and this write-up were live.
 - **~11:00**: Revision: the agent downloaded the film's subtitles, listed the jobs it names and mapped them to census categories; it also added the tables and the references.
 
