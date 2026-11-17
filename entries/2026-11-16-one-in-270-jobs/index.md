@@ -5,7 +5,7 @@ date: 2026-11-16
 author: Dominik Lukeš
 claim: "Only 1 job out of 270 in the 1950 census is now obsolete (elevator operator)"
 claim_source: https://x.com/emollick/status/2122176524610884061
-verdict: The number seems to come from a paper that counted jobs eliminated by automation, not jobs that are obsolete. At least 15 more 1950 jobs are gone, many more collapsed, and most of today's work did not exist in 1950, so the claim understates how much work has changed.
+verdict: The number comes from a paper that counted jobs eliminated by automation, not jobs that are obsolete. At least 15 more 1950 jobs are gone, many more collapsed, and most of today's work did not exist in 1950, so the claim understates how much work has changed.
 time_taken: About 30 minutes from question to charts; 45 with the first follow-up; about an hour more for the revision with the 1972 film
 human_time: About 5 minutes (registering for a free IPUMS account), plus reading the outputs and steering
 tools: ["Claude Code (Claude Opus 5.5, with Claude Sonnet 5.5 and Claude Haiku 5.5 subagents)", IPUMS USA API, Python, yt-dlp]
@@ -22,8 +22,9 @@ references:
     authors: [James Bessen]
     title: "How Computer Automation Affects Occupations: Technology, Jobs, and Skills"
     year: 2016
-    container: Boston University School of Law, Law and Economics Research Paper No. 15-49
+    container: Boston University School of Law, Law and Economics Working Paper No. 15-49 (revised October 2016)
     publisher: SSRN
+    doi: 10.2139/ssrn.2690435
     url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2690435
   - type: article
     authors: [David Autor, Caroline Chin, Anna Salomons, Bryan Seegmiller]
@@ -66,9 +67,13 @@ On 16 November 2026 [Ethan Mollick posted](https://x.com/emollick/status/2122176
 
 There are two claims here. One is a fact about a list: only one of the 270 jobs in the 1950 census is obsolete. The other is about the scope of change: people working in the West have lived through a stable period, and the job list is the evidence.
 
-### Where the number seems to come from
+### Where the number comes from
 
-The post gives no source, but the number seems to come from a paper by the economist James Bessen, [How Computer Automation Affects Occupations](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2690435) (2016). We could read its summary and how others quote it, but not the full text. As quoted, Bessen says that of the 270 detailed occupations in the 1950 census, only one, elevator operator, was eliminated *by automation*. Other occupations disappeared for other reasons, such as falling demand. That is a narrower statement than "only one is now obsolete".
+The post gives no source, but the number comes from a paper by the economist James Bessen, [How Computer Automation Affects Occupations](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2690435) (revised October 2016). On page 5 he writes:
+
+> Consider what happened to the 271 detailed occupations used in the 1950 Census by 2010. Many occupations were eliminated for a variety of reasons. In many cases, demand for the occupational services declined (e.g., boardinghouse keepers); in some cases, demand declined because of technological obsolescence (e.g., telegraph operators). This, however, is not the same as automation. In only one case—elevator operators—can the decline and disappearance of an occupation be largely attributed to automation.
+
+So Bessen says the opposite of "only one is now obsolete": many 1950 occupations were eliminated, and elevator operator is the only one whose disappearance he puts down to *automation*, as distinct from falling demand or technological obsolescence. His point is that automation is usually partial: machines take over some tasks of a job rather than the whole job. He used the same IPUMS mapping of 1950 occupations to later classifications that this check uses (his footnote 3), and he does not list the eliminated occupations or give their number, so the list below is our own reconstruction.
 
 ## The answer
 
@@ -195,7 +200,7 @@ The wider literature puts the scale of new work higher. [Autor, Chin, Salomons a
 - Zeros are classification facts, not head counts.
 - The sort of the 86 zero categories into gone and reclassified is a judgement. It has not been checked by a labour historian.
 - Some odd points are mapping artefacts: the bump in typists in 2010, computer operators' 2019 zero (left out), and stenographers disappearing into secretaries after 1990.
-- We could not read the full Bessen paper, so what it says is taken from its summary and how others quote it.
+- Bessen does not list the occupations he counts as eliminated, so our list of 16 cannot be checked against his.
 - The data covers the US only.
 - The 1950 categories can only show losses, never new work.
 
@@ -207,13 +212,14 @@ The point of this series is how quickly a claim can be checked now. This one too
 
 - **07:43**: I asked the question.
 - **~07:47**: A first pass with web search had found where the claim seems to come from and the related literature.
-- **Dead end**: Reading the source paper failed. The publisher and the repository block automated access, and the 1950 occupation index is a scanned 395-page document with no text layer. So we decided to go to the primary census data instead.
+- **Dead end**: Reading the source paper failed at first. The publisher and the repository block automated access, and the 1950 occupation index is a scanned 395-page document with no text layer. So we decided to go to the primary census data instead.
 - **~08:02**: I had registered a free IPUMS account and an API key (about five minutes of my time; the key is in a password manager). The AI agent submitted the first data extract.
 - **08:03**: The data came back, and the agent aggregated it in seconds.
 - **08:11**: First charts.
 - **08:26**: Looking at the first results, I remembered the 1972 film from the earlier history experiment and asked which jobs rose and fell. A second extract answered it.
 - **~09:40**: The site and this write-up were live.
 - **~11:00**: Revision: the agent downloaded the film's subtitles, listed the jobs it names and mapped them to census categories; it also added the tables and the references.
+- **17 November, ~00:20**: I saved Bessen's 2016 paper to my reference manager; the agent fetched it from there and checked the passage, which is now quoted above.
 
 ### Data and method
 
