@@ -1,0 +1,232 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "config": {
+  "font": "Inter, Helvetica, Arial, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#cfcdc6"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 12,
+   "labelLimit": 300
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 12.5
+  }
+ },
+ "title": {
+  "text": "How much the US job mix changed in each decade",
+  "subtitle": [
+   "Share of workers who would have to change category to make one census look like the next (dissimilarity index, %). Below: key events; hover for names.",
+   "Source: IPUMS USA (www.ipums.org), census 1900–2000 and American Community Survey 2010, 2024."
+  ]
+ },
+ "vconcat": [
+  {
+   "width": "container",
+   "height": 230,
+   "transform": [
+    {
+     "filter": "datum.row == 'change'"
+    }
+   ],
+   "params": [
+    {
+     "name": "pick",
+     "select": {
+      "type": "point",
+      "fields": [
+       "measure"
+      ]
+     },
+     "bind": "legend"
+    }
+   ],
+   "mark": {
+    "type": "rule",
+    "strokeWidth": 5,
+    "strokeCap": "round"
+   },
+   "encoding": {
+    "x": {
+     "field": "from",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1900,
+       2026
+      ]
+     },
+     "axis": {
+      "format": "d",
+      "title": null,
+      "values": [
+       1900,
+       1910,
+       1920,
+       1930,
+       1940,
+       1950,
+       1960,
+       1970,
+       1980,
+       1990,
+       2000,
+       2010,
+       2020
+      ]
+     }
+    },
+    "x2": {
+     "field": "to"
+    },
+    "y": {
+     "field": "value",
+     "type": "quantitative",
+     "title": "% of workers",
+     "scale": {
+      "domain": [
+       0,
+       20
+      ]
+     }
+    },
+    "color": {
+     "field": "measure",
+     "type": "nominal",
+     "scale": {
+      "range": [
+       "#2a78d6",
+       "#eb6834"
+      ]
+     }
+    },
+    "opacity": {
+     "condition": {
+      "param": "pick",
+      "value": 1
+     },
+     "value": 0.15
+    },
+    "tooltip": [
+     {
+      "field": "measure",
+      "title": "Measure"
+     },
+     {
+      "field": "from",
+      "title": "From"
+     },
+     {
+      "field": "to",
+      "title": "To"
+     },
+     {
+      "field": "value",
+      "title": "% of workers"
+     }
+    ]
+   }
+  },
+  {
+   "width": "container",
+   "height": 70,
+   "transform": [
+    {
+     "filter": "datum.row == 'event'"
+    }
+   ],
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 90,
+    "opacity": 0.9
+   },
+   "encoding": {
+    "x": {
+     "field": "from",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       1900,
+       2026
+      ]
+     },
+     "axis": {
+      "format": "d",
+      "title": null,
+      "values": [
+       1900,
+       1910,
+       1920,
+       1930,
+       1940,
+       1950,
+       1960,
+       1970,
+       1980,
+       1990,
+       2000,
+       2010,
+       2020
+      ]
+     }
+    },
+    "y": {
+     "field": "kind",
+     "type": "nominal",
+     "title": null,
+     "axis": {
+      "labelLimit": 140
+     }
+    },
+    "color": {
+     "field": "kind",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "Technology",
+       "Economy",
+       "War and politics"
+      ],
+      "range": [
+       "#1f9e89",
+       "#c9a227",
+       "#8f8e88"
+      ]
+     },
+     "legend": null
+    },
+    "tooltip": [
+     {
+      "field": "from",
+      "title": "Year"
+     },
+     {
+      "field": "event",
+      "title": "Event"
+     }
+    ]
+   }
+  }
+ ],
+ "resolve": {
+  "scale": {
+   "color": "independent"
+  }
+ },
+ "data": {
+  "url": "charts/1-change-per-decade.csv"
+ }
+}

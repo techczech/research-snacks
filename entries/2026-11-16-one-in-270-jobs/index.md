@@ -65,6 +65,8 @@ On 16 November 2026 [Ethan Mollick posted](https://x.com/emollick/status/2122176
 >
 > 2026 is similar to 1957 in a way that 1969 was not from 1900.
 
+The third line, that 2026 is closer to 1957 than 1969 was to 1900, has its own snack: [Did work change more from 1900 to 1969 than from 1957 to 2026?](/2026-11-17-pace-of-change-1900-2026/)
+
 There are two claims here. One is a fact about a list: only one of the 270 jobs in the 1950 census is obsolete. The other is about the scope of change: people working in the West have lived through a stable period, and the job list is the evidence.
 
 ### Where the number comes from

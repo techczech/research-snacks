@@ -1,0 +1,102 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "config": {
+  "font": "Inter, Helvetica, Arial, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#cfcdc6"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 12,
+   "labelLimit": 300
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 12.5
+  }
+ },
+ "title": {
+  "text": "When new job titles took off in print",
+  "subtitle": [
+   "Year a title first reached 10% of its peak frequency in Google Books (English, 1880–2022). Hover for the peak year.",
+   "Source: Google Books Ngram Viewer. Titles chosen in advance, two lists of 25; seven with scanning noise left out."
+  ]
+ },
+ "width": "container",
+ "height": {
+  "step": 15
+ },
+ "mark": {
+  "type": "point",
+  "filled": true,
+  "size": 70
+ },
+ "encoding": {
+  "x": {
+   "field": "take_off_year",
+   "type": "quantitative",
+   "scale": {
+    "domain": [
+     1890,
+     2025
+    ]
+   },
+   "axis": {
+    "format": "d",
+    "title": "Take-off year"
+   }
+  },
+  "y": {
+   "field": "title",
+   "type": "nominal",
+   "sort": {
+    "field": "take_off_year"
+   },
+   "title": null,
+   "axis": {
+    "labelLimit": 220
+   }
+  },
+  "color": {
+   "field": "group",
+   "type": "nominal",
+   "scale": {
+    "range": [
+     "#eb6834",
+     "#2a78d6"
+    ]
+   }
+  },
+  "tooltip": [
+   {
+    "field": "title",
+    "title": "Title"
+   },
+   {
+    "field": "take_off_year",
+    "title": "Take-off"
+   },
+   {
+    "field": "peak_year",
+    "title": "Peak"
+   },
+   {
+    "field": "group",
+    "title": "List"
+   }
+  ]
+ },
+ "data": {
+  "url": "charts/5-new-job-titles.csv"
+ }
+}

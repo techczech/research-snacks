@@ -1,0 +1,123 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "config": {
+  "font": "Inter, Helvetica, Arial, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#cfcdc6"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 12,
+   "labelLimit": 300
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 12.5
+  }
+ },
+ "title": {
+  "text": "Beyond jobs: farms, women's work, school, migration",
+  "subtitle": [
+   "% of people or workers. Each panel has its own scale. Hover for values.",
+   "Source: IPUMS USA (www.ipums.org), census 1900–2000 and American Community Survey 2010, 2024."
+  ]
+ },
+ "facet": {
+  "field": "measure",
+  "type": "nominal",
+  "sort": [
+   "Living on farms",
+   "Married women in work",
+   "Women's share of workers",
+   "Self-employed",
+   "Teenagers 14–17 in school",
+   "Born abroad",
+   "College graduates (25+)"
+  ],
+  "title": null,
+  "header": {
+   "labelFontSize": 12.5,
+   "labelFontWeight": "bold",
+   "labelAnchor": "start",
+   "labelLimit": 230
+  }
+ },
+ "columns": 3,
+ "resolve": {
+  "scale": {
+   "y": "independent"
+  }
+ },
+ "spec": {
+  "width": 200,
+  "height": 120,
+  "layer": [
+   {
+    "mark": {
+     "type": "line",
+     "color": "#2a78d6",
+     "strokeWidth": 2.2,
+     "point": {
+      "color": "#2a78d6",
+      "size": 25
+     }
+    },
+    "encoding": {
+     "x": {
+      "field": "year",
+      "type": "quantitative",
+      "scale": {
+       "domain": [
+        1900,
+        2024
+       ]
+      },
+      "axis": {
+       "format": "d",
+       "title": null,
+       "values": [
+        1900,
+        1950,
+        2000
+       ]
+      }
+     },
+     "y": {
+      "field": "pct",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+       "zero": true
+      }
+     },
+     "tooltip": [
+      {
+       "field": "measure"
+      },
+      {
+       "field": "year",
+       "title": "Year"
+      },
+      {
+       "field": "pct",
+       "title": "%"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "data": {
+  "url": "charts/4-life-beyond-jobs.csv"
+ }
+}

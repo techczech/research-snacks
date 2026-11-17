@@ -1,0 +1,125 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "config": {
+  "font": "Inter, Helvetica, Arial, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#cfcdc6"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 12,
+   "labelLimit": 300
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 12.5
+  }
+ },
+ "title": {
+  "text": "What kind of work people did, 1900–2024",
+  "subtitle": [
+   "Share of workers in each major occupation group (%). Click the legend to pick a group.",
+   "Source: IPUMS USA (www.ipums.org), census 1900–2000 and American Community Survey 2010, 2024."
+  ]
+ },
+ "width": "container",
+ "height": 340,
+ "params": [
+  {
+   "name": "pick",
+   "select": {
+    "type": "point",
+    "fields": [
+     "group"
+    ]
+   },
+   "bind": "legend"
+  }
+ ],
+ "mark": {
+  "type": "line",
+  "point": {
+   "size": 30,
+   "filled": true
+  },
+  "strokeWidth": 2.2
+ },
+ "encoding": {
+  "x": {
+   "field": "year",
+   "type": "quantitative",
+   "axis": {
+    "format": "d",
+    "title": null
+   },
+   "scale": {
+    "domain": [
+     1900,
+     2024
+    ]
+   }
+  },
+  "y": {
+   "field": "share_pct",
+   "type": "quantitative",
+   "title": "% of workers"
+  },
+  "color": {
+   "field": "group",
+   "type": "nominal",
+   "legend": {
+    "columns": 3,
+    "symbolType": "stroke"
+   },
+   "scale": {
+    "range": [
+     "#1d2433",
+     "#2a78d6",
+     "#7fb0ea",
+     "#eb6834",
+     "#f4a77f",
+     "#1f9e89",
+     "#8fd1c5",
+     "#c9a227",
+     "#e6d38f",
+     "#8f8e88",
+     "#c9c7c0"
+    ]
+   }
+  },
+  "opacity": {
+   "condition": {
+    "param": "pick",
+    "value": 1
+   },
+   "value": 0.1
+  },
+  "tooltip": [
+   {
+    "field": "group",
+    "title": "Group"
+   },
+   {
+    "field": "year",
+    "title": "Year"
+   },
+   {
+    "field": "share_pct",
+    "title": "% of workers"
+   }
+  ]
+ },
+ "data": {
+  "url": "charts/3-occupation-groups.csv"
+ }
+}

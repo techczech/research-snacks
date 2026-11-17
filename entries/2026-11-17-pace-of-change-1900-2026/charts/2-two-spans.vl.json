@@ -1,0 +1,130 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "config": {
+  "font": "Inter, Helvetica, Arial, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelColor": "#52514e",
+   "titleColor": "#52514e",
+   "gridColor": "#e4e3df",
+   "domainColor": "#cfcdc6"
+  },
+  "legend": {
+   "orient": "top",
+   "title": null,
+   "labelFontSize": 12,
+   "labelLimit": 300
+  },
+  "title": {
+   "anchor": "start",
+   "fontSize": 17,
+   "subtitleColor": "#52514e",
+   "subtitleFontSize": 12.5
+  }
+ },
+ "title": {
+  "text": "Two long spans: how different was the end from the start?",
+  "subtitle": [
+   "Share of workers who would have to change category to make the later year look like the earlier one (%)",
+   "Source: IPUMS USA (www.ipums.org), census 1900–2000 and American Community Survey 2010, 2024."
+  ]
+ },
+ "width": "container",
+ "height": {
+  "step": 13
+ },
+ "encoding": {
+  "y": {
+   "field": "measure",
+   "type": "nominal",
+   "title": null,
+   "sort": [
+    "Occupations (about 270)",
+    "Industries (about 150)",
+    "Occupation groups (11)",
+    "Sectors (3)"
+   ],
+   "axis": {
+    "labelLimit": 200
+   }
+  },
+  "yOffset": {
+   "field": "span",
+   "sort": [
+    "1900 to 1970 (70 years)",
+    "1950 to 2024 (74 years)",
+    "1960 to 2024 (64 years)"
+   ]
+  },
+  "x": {
+   "field": "pct",
+   "type": "quantitative",
+   "title": "% of workers",
+   "scale": {
+    "domain": [
+     0,
+     60
+    ]
+   }
+  },
+  "color": {
+   "field": "span",
+   "type": "nominal",
+   "sort": [
+    "1900 to 1970 (70 years)",
+    "1950 to 2024 (74 years)",
+    "1960 to 2024 (64 years)"
+   ],
+   "scale": {
+    "range": [
+     "#eb6834",
+     "#7fb0ea",
+     "#2a78d6"
+    ]
+   }
+  },
+  "tooltip": [
+   {
+    "field": "span",
+    "title": "Span"
+   },
+   {
+    "field": "measure",
+    "title": "Measure"
+   },
+   {
+    "field": "pct",
+    "title": "% of workers"
+   }
+  ]
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 4,
+    "color": "#52514e",
+    "fontSize": 11
+   },
+   "encoding": {
+    "text": {
+     "field": "pct",
+     "format": ".0f"
+    }
+   }
+  }
+ ],
+ "data": {
+  "url": "charts/2-two-spans.csv"
+ }
+}
