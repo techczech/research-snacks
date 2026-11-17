@@ -229,7 +229,8 @@ def index_page(entries, intro):
     cards = []
     for x in entries:
         cards.append(
-            f'<a class="card" href="/{e(x["id"])}/"><div class="meta"><span>{nice_date(x["date"])}</span></div>'
+            f'<a class="card" href="/{e(x["id"])}/"><div class="meta"><span>{nice_date(x["date"])}</span>'
+            f'{" · " + e(str(x["category"]).capitalize()) if x.get("category") else ""}</div>'
             f'<h3>{e(x["title"])}</h3><p class="claim">&ldquo;{e(x["claim"])}&rdquo;</p>'
             f'<p class="verdict"><b>Verdict:</b> {e(x["verdict"])}</p>'
             f'<div class="tt"><b>Time taken:</b> {e(x["time_taken"])}</div>'

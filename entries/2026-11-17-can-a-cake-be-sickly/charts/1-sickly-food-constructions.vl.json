@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "system-ui, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 17,
+      "subtitleFontSize": 12
+    }
+  },
+  "width": "container",
+  "height": 215,
+  "title": {
+    "text": "Sickly can be the only adjective",
+    "subtitle": [
+      "15 selected BNC food/drink cases; not population proportions.",
+      "Explicit complements include object predication."
+    ]
+  },
+  "params": [
+    {
+      "name": "pick",
+      "select": {
+        "type": "point",
+        "fields": [
+          "coordination"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "cases",
+      "type": "quantitative",
+      "title": "Selected cases",
+      "scale": {
+        "domain": [
+          0,
+          4
+        ]
+      },
+      "axis": {
+        "tickMinStep": 1
+      }
+    },
+    "y": {
+      "field": "construction",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Attributive",
+        "Explicit verbal complement",
+        "Ellipsis or supplement"
+      ],
+      "axis": {
+        "labelLimit": 165
+      }
+    },
+    "yOffset": {
+      "field": "coordination",
+      "sort": [
+        "Sole adjective",
+        "Coordinated"
+      ]
+    },
+    "color": {
+      "field": "coordination",
+      "scale": {
+        "domain": [
+          "Sole adjective",
+          "Coordinated"
+        ],
+        "range": [
+          "#2679a4",
+          "#ca641f"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "pick",
+        "value": 1
+      },
+      "value": 0.18
+    },
+    "tooltip": [
+      {
+        "field": "construction",
+        "title": "Construction"
+      },
+      {
+        "field": "coordination",
+        "title": "Adjectives"
+      },
+      {
+        "field": "cases",
+        "title": "Selected cases",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "data": {
+    "url": "charts/1-sickly-food-constructions.csv"
+  }
+}

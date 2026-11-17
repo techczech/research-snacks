@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "system-ui, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 17,
+      "subtitleFontSize": 12
+    }
+  },
+  "width": 830,
+  "height": {
+    "step": 24
+  },
+  "title": {
+    "text": "39 curated examples of sickly",
+    "subtitle": "Selected illustrations and diagnostic exclusions, not a random sample."
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "row"
+        }
+      ]
+    },
+    {
+      "calculate": "datum.corpus + ' | ' + datum.referent + ' | ' + datum.left + ' ' + datum.node + ' ' + datum.right",
+      "as": "excerpt"
+    }
+  ],
+  "mark": {
+    "type": "text",
+    "align": "left",
+    "baseline": "middle",
+    "limit": 820,
+    "fontSize": 12
+  },
+  "encoding": {
+    "x": {
+      "value": 0
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null
+    },
+    "text": {
+      "field": "excerpt"
+    },
+    "tooltip": [
+      {
+        "field": "corpus"
+      },
+      {
+        "field": "referent"
+      },
+      {
+        "field": "construction"
+      },
+      {
+        "field": "coordination"
+      },
+      {
+        "field": "reading"
+      },
+      {
+        "field": "left"
+      },
+      {
+        "field": "node"
+      },
+      {
+        "field": "right"
+      },
+      {
+        "field": "reference"
+      },
+      {
+        "field": "token"
+      }
+    ]
+  },
+  "data": {
+    "url": "charts/2-sickly-kwic.csv"
+  }
+}
