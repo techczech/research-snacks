@@ -192,13 +192,18 @@ l.forEach(function(a){{a.classList.remove('on')}});if(cur&&m[cur])m[cur].classLi
 document.querySelectorAll('.toc-m a').forEach(function(a){{a.addEventListener('click',function(){{a.closest('details').open=false}})}});}})();</script>"""
 
 
+import hashlib
+# version stamp so browsers fetch the new stylesheet after every change
+CSS_V = hashlib.sha1((ROOT / "scripts/assets/style.css").read_bytes()).hexdigest()[:8]
+
+
 def page(title, body, desc, nav_on="", extra_head="", citation=None):
     citation = citation or {"title": title, "url": BASE + ("/about/" if nav_on == "about" else "/"),
                             "site": NAME, "authors": [AUTHOR]}
     def a(key, href, label):
         return f'<a{" class=on" if nav_on == key else ""} href="{href}">{label}</a>'
     nav = a("entries", "/", "Entries") + a("about", "/about/", "About") + f'<a href="{SISTER}">Model Data Points</a>'
-    return f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{e(citation["url"])}">{citation_head(citation)}{extra_head}<link rel="stylesheet" href="/style.css"></head><body><header class="site"><div class="wrap"><a class="logo" href="/"><b>RS</b><span>{NAME}</span></a>
+    return f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{e(citation["url"])}">{citation_head(citation)}{extra_head}<link rel="stylesheet" href="/style.css?v={CSS_V}"></head><body><header class="site"><div class="wrap"><a class="logo" href="/"><b>RS</b><span>{NAME}</span></a>
 <nav class="main">{nav}</nav></div></header>
 {body}
 <footer><div class="wrap"><p>{NAME} · researchsnacks.semanticmachines.fyi · Sister site: <a href="{SISTER}">Model Data Points</a> (datapoints.semanticmachines.fyi) · <a href="{SM_HOME}">Semantic Machines</a></p>
