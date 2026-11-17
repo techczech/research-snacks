@@ -35,11 +35,11 @@ for r in observations:
  assert 0<=r['share_pct']<=100
 series=list(dict.fromkeys(r['series'] for r in observations))
 chart('1-observed-transitions', observations, {
- 'title':{'text':'Observed changes in different systems','subtitle':['Each line starts at its first observation here, not at invention.','Different denominators: power, people, fund assets and trading volume.']},
+ 'title':{'text':'Observed changes','subtitle':['Different denominators:','power, people, assets, turnover.','Clock starts at first point shown.']},
  'params':[{'name':'pick','select':{'type':'point','fields':['series']},'bind':'legend'}],
  'mark':{'type':'line','point':{'filled':True,'size':65},'strokeWidth':2.5},
  'encoding':{
-  'x':{'field':'years_from_first_observation','type':'quantitative','title':'Years from first observation shown','scale':{'domain':[0,30]},'axis':{'tickMinStep':1}},
+  'x':{'field':'years_from_first_observation','type':'quantitative','title':'Years since first point','scale':{'domain':[0,30]},'axis':{'tickMinStep':1}},
   'y':{'field':'share_pct','type':'quantitative','title':'Reported percentage','scale':{'domain':[0,100]}},
   'color':{'field':'series','type':'nominal','scale':{'domain':series,'range':PALETTE}},
   'opacity':{'condition':{'param':'pick','value':1},'value':0.15},
@@ -49,11 +49,11 @@ for r in payments:r['share_pct']=float(r['share_pct']);r['year']=int(r['year'])
 for measure in ['Number','Value']:
  assert abs(sum(r['share_pct'] for r in payments if r['measure']==measure)-100)<0.015
 chart('2-payments-denominators',payments,{
- 'title':{'text':'Most payments can mean different things','subtitle':'US core noncash payments, 2020. Federal Reserve Payments Study.'},
+ 'title':{'text':'Payment count and value','subtitle':['US core noncash payments, 2020.','Federal Reserve Payments Study.']},
  'params':[{'name':'pick','select':{'type':'point','fields':['measure']},'bind':'legend'}],
  'mark':{'type':'bar','cornerRadiusEnd':3},
  'encoding':{'x':{'field':'instrument','type':'nominal','title':None,'sort':['Card','ACH','Cheque'],'axis':{'labelAngle':0}},
- 'y':{'field':'share_pct','type':'quantitative','title':'Share of core noncash payments (%)','scale':{'domain':[0,100]}},
+ 'y':{'field':'share_pct','type':'quantitative','title':'Share of payments (%)','scale':{'domain':[0,100]}},
  'xOffset':{'field':'measure','sort':['Number','Value']},
  'color':{'field':'measure','type':'nominal','scale':{'domain':['Number','Value'],'range':PALETTE[:2]}},
  'opacity':{'condition':{'param':'pick','value':1},'value':0.15},

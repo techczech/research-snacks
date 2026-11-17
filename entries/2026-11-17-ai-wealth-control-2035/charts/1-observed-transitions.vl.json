@@ -35,10 +35,11 @@
     }
   },
   "title": {
-    "text": "Observed changes in different systems",
+    "text": "Observed changes",
     "subtitle": [
-      "Each line starts at its first observation here, not at invention.",
-      "Different denominators: power, people, fund assets and trading volume."
+      "Different denominators:",
+      "power, people, assets, turnover.",
+      "Clock starts at first point shown."
     ]
   },
   "params": [
@@ -65,7 +66,7 @@
     "x": {
       "field": "years_from_first_observation",
       "type": "quantitative",
-      "title": "Years from first observation shown",
+      "title": "Years since first point",
       "scale": {
         "domain": [
           0,

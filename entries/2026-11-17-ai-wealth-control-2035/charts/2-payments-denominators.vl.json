@@ -35,8 +35,11 @@
     }
   },
   "title": {
-    "text": "Most payments can mean different things",
-    "subtitle": "US core noncash payments, 2020. Federal Reserve Payments Study."
+    "text": "Payment count and value",
+    "subtitle": [
+      "US core noncash payments, 2020.",
+      "Federal Reserve Payments Study."
+    ]
   },
   "params": [
     {
@@ -71,7 +74,7 @@
     "y": {
       "field": "share_pct",
       "type": "quantitative",
-      "title": "Share of core noncash payments (%)",
+      "title": "Share of payments (%)",
       "scale": {
         "domain": [
           0,

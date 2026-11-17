@@ -16,12 +16,14 @@ references:
     authors: [davidad]
     title: "By 2050, more wealth will be under effective AI control than is currently under human control, almost surely."
     container: X
+    year: n.d.
     url: https://x.com/davidad
     note: "Source is a screenshot supplied by Dominik and the full sentence in his accompanying reply. Original post URL and publication date unverified. Link is the author's profile only."
   - type: report
     authors: [US Bureau of the Census]
     corporate: true
     title: "Census of Manufactures: 1929. Chapter VI.—Power Equipment"
+    year: n.d.
     pages: 111–112
     url: https://www2.census.gov/prod2/decennial/documents/03450419v1ch06.pdf
     note: "Table 2, printed page 112; scanned page inspected directly."
@@ -41,6 +43,7 @@ references:
     authors: [International Telecommunication Union]
     corporate: true
     title: The ITU ICT SDG indicators
+    year: n.d.
     url: https://www.itu.int/en/ITU-D/Statistics/Pages/SDGs-ITU-ICT-indicators.aspx
     note: "Indicator 17.8.1; 2015 and 2024 estimates as retrieved on 17 November 2026."
   - type: report
@@ -78,6 +81,7 @@ references:
     corporate: true
     title: "Financial Accounts of the United States - Z.1. B.101 Households and nonprofit organizations"
     url: https://www.federalreserve.gov/releases/z1/preview/html/b101.htm
+    year: n.d.
     note: "Accounting categories only; no numerical wealth baseline is taken from this preview table."
 ---
 
@@ -109,7 +113,7 @@ These are predictions, with no dataset attached. There are separate claims about
 
 Here, **effective control** means discretion over consequential investments or operating uses of assets, plus authority to execute the resulting exchanges within a human mandate. People may retain ownership, broad objectives and removal powers. A system executing a human's selected trade, following a fixed index rule or recommending a property valuation does not qualify merely because it uses a computer. Capital allocation and running the underlying business are different measures; they must not be added together.
 
-**Wealth** means global household net worth: real assets and financial or business claims, less liabilities. The [Fed's balance-sheet categories](https://www.federalreserve.gov/releases/z1/preview/html/b101.htm) illustrate this accounting approach, although that table also includes nonprofit organisations. This check includes illiquid property and excludes human capital, state assets and unpriced favours. It is a narrower accounting proxy for my original definition. Count ultimate household claims once, with funds and companies looked through rather than added again. Attribute only the net exposure over which AI has discretion, using consistent prices and exchange rates across years.
+**Wealth** means global household net worth: real assets and financial or business claims, less liabilities. The [Fed's balance-sheet categories](https://www.federalreserve.gov/releases/z1/preview/html/b101.htm) illustrate this accounting approach, although that table also includes nonprofit organisations. This check includes illiquid property and excludes human capital, state assets and unpriced favours. It is a narrower accounting proxy for my original definition. Count ultimate household claims once, with funds and companies looked through instead of added again. Attribute only the net exposure over which AI has discretion, using consistent prices and exchange rates across years.
 
 “More than humans currently control” compares **AI's future stock with humans' present stock**. It does not necessarily mean a future majority. For this check, “present” is a fixed 2026 baseline because the post's date is unverified. The condition is:
 
@@ -181,11 +185,11 @@ There is no measured starting share of global wealth under the definition of AI 
 
 The research run began at 08:21:57 on 17 November 2026 (UK time, then GMT). The agent reused an earlier exploration, its historical source notes and its model's distinction between stock and turnover. It searched for the original post, checked selected primary sources, inspected the scanned census table and produced the charts. The first complete draft and usage snapshot were recorded at 08:36:53, 14.9 minutes after the start; rendering and publication checks followed.
 
-A follow-up check added index funds because most of the original examples measured activity rather than assets. The direct ICI download returned an access error; its alternative publisher URL worked. The JavaScript-only BCB page was replaced by the readable BIS paper co-authored with central-bank staff.
+A follow-up check added index funds because most of the original examples measured activity instead of assets. The direct ICI download returned an access error; its alternative publisher URL worked. The JavaScript-only BCB page was replaced by the readable BIS paper co-authored with central-bank staff.
 
 ### Data and method
 
-The agent selected the cases and judged which kinds of control they represent. These are interpretation steps. Python copied the checked observations into charts, calculated elapsed intervals and checked payment-share totals. No diffusion curve was fitted. The chart uses ICI's published combined index shares, rather than adding rounded components. Source titles follow the providers' publications; sources without a supplied dataset citation are cited as reports or webpages.
+The agent selected the cases and judged which kinds of control they represent. These are interpretation steps. Python copied the checked observations into charts, calculated elapsed intervals and checked payment-share totals. No diffusion curve was fitted. The chart uses ICI's published combined index shares, instead of adding rounded components. Source titles follow the providers' publications; sources without a supplied dataset citation are cited as reports or webpages.
 
 The entry reuses the existing site design. Every chart has tooltips, a clickable legend, an export menu, the exact plotted CSV, a Vega-Lite specification and a PNG fallback. No new council or model experiment was run.
 
