@@ -113,6 +113,7 @@ figure.ichart{margin:20px 0;border:1px solid var(--bd);border-radius:8px;backgro
 figure.ichart .vl{width:100%;min-height:120px}
 figure.ichart .vl .vega-embed{width:100%}
 figure.ichart.live .fallback{display:none}
+figure.ichart:not(.live) .vl{min-height:0}
 figure.ichart .fallback{border:0;margin:0}
 figure.ichart figcaption{font-size:12.5px;color:var(--mut);border-top:1px solid var(--bd);margin-top:8px;padding-top:6px}
 #vg-tooltip-element{font:13px Inter,system-ui,sans-serif}
@@ -121,3 +122,37 @@ figure.ichart .vl{overflow-x:auto}
 .cite button{font:inherit;color:var(--primary);background:var(--card);border:1px solid var(--bd);border-radius:4px;padding:6px 12px;cursor:pointer;margin-bottom:8px}
 .cite button:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
 #copy-status{font-size:14px;color:var(--mut)}
+
+/* contents: sections, with subsections opened for the section being read */
+.toc li.h2>a{font-weight:600;color:var(--fg)}
+.toc li.top>a{font-weight:400;color:var(--mut)}
+.toc li.h2>ol{display:none;margin:2px 0 6px}
+.toc li.h2.open>ol{display:block}
+.toc li.h3 a{padding-left:22px;font-size:12.5px;font-weight:400}
+.toc li.making{margin-top:14px;padding-top:10px;border-top:1px solid var(--bd)}
+.toc-m li.h2>ol{display:none}
+/* the closing "How this was made" part reads as an appendix, not the argument */
+section.making{margin-top:48px;padding:8px 20px 16px;background:var(--card);border:1px solid var(--bd);border-radius:10px;font-size:15px}
+section.making h2.making-h{margin-top:16px}
+section.making .making-intro{color:var(--mut);margin-top:0}
+section.making h3{font-size:18px;margin:26px 0 6px}
+section.making h4{font-size:15px;margin:14px 0 4px}
+section.making section.cite{margin-top:26px;background:#fff}
+section.making .body-md p,section.making .body-md li{font-size:15px}
+.body-md h3{font-size:19px;margin:26px 0 6px}
+.entry .body-md h2{margin-top:44px;padding-top:16px;border-top:1px solid var(--bd)}
+
+/* HTML infographics */
+figure.infographic{margin:20px 0;border:1px solid var(--bd);border-radius:10px;background:#fff;padding:24px 26px 10px}
+.ig-kicker{font:700 21px/1.25 Inter,system-ui,sans-serif;margin:0}
+.ig-kicker span{display:block;font-weight:400;color:var(--mut);margin-top:4px}
+.ig-big{display:flex;align-items:center;gap:22px;margin:22px 0;flex-wrap:wrap}
+.ig-num{font:800 72px/1 Inter,system-ui,sans-serif;color:#2a78d6;letter-spacing:-.03em}
+.ig-big p{margin:0;font-size:18px;max-width:380px}
+.ig-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:8px 0 14px}
+.ig-cols div{background:var(--card);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.35}
+.ig-cols b{display:block;font:700 26px/1.1 Inter,system-ui,sans-serif;margin-bottom:4px}
+.ig-cols .lost b{color:#1d2433}.ig-cols .shrank b{color:#eb6834}.ig-cols .new b{color:#2a78d6}
+.ig-src{font-size:12px;color:var(--mut);margin:6px 0 0}
+figure.infographic figcaption{font-size:12.5px;color:var(--mut);border-top:1px solid var(--bd);margin-top:10px;padding-top:6px}
+@media(max-width:640px){.ig-cols{grid-template-columns:1fr}.ig-num{font-size:56px}}

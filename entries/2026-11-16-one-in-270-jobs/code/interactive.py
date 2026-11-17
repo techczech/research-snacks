@@ -129,11 +129,12 @@ NEW = [(229, "Software developers", (1950, 1960)), (64, "Computer systems analys
 data = long(NEW)
 write("6-new-work", list(data[0]), data, {
     "title": {"text": "Meanwhile: work nobody did in 1950", "subtitle": ["US workers in two computing occupations that were not census categories before 1970", SRC2]},
-    "height": 320, "params": legend_select("occupation"),
+    "height": 320,
     "encoding": {"x": {"field": "year", "type": "quantitative", "axis": {"format": "d", "values": YRS[2:], "title": None}, "scale": {"domain": [1970, 2019]}},
                  "y": {"field": "workers", "type": "quantitative", "axis": {"format": "~s", "title": "Workers"}},
                  "color": {"field": "occupation", "type": "nominal", "scale": {"range": [TECH, DEMAND]}, "legend": {"labelLimit": 360}},
                  "opacity": fade,
                  "tooltip": [{"field": "occupation", "title": "Occupation"}, {"field": "year", "title": "Year"}, {"field": "workers", "title": "Workers", "format": ","}]},
-    "layer": [{"mark": {"type": "line", "strokeWidth": 2.6}}, {"mark": {"type": "point", "filled": True, "size": 60}}]})
+    "layer": [{"mark": {"type": "line", "strokeWidth": 2.6}, "params": legend_select("occupation")},
+              {"mark": {"type": "point", "filled": True, "size": 60}}]})
 print("ok")

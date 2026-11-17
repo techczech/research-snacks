@@ -147,12 +147,16 @@ def interactive_figure(folder, m):
     """charts/NAME.png with charts/NAME.vl.json beside it: an interactive Vega-Lite chart, its data as CSV,
     and the PNG as the fallback (no JavaScript) and as the static download."""
     path, name, alt = m.group(1), m.group(2), m.group(3)
+    html_card = folder / "charts" / f"{name}.html"
+    if html_card.exists():  # an HTML infographic written for the entry; the PNG stays for sharing
+        return (f'<figure class="infographic" aria-label="{alt}">{html_card.read_text(encoding="utf-8")}'
+                f'<figcaption><a href="{path}.png">Image (PNG)</a></figcaption></figure>')
     if not (folder / "charts" / f"{name}.vl.json").exists():
         return None
     links = [f'<a href="charts/{name}.csv" download>Data (CSV)</a>'] if (folder / "charts" / f"{name}.csv").exists() else []
     links += [f'<a href="{path}.png">Image (PNG)</a>', f'<a href="charts/{name}.vl.json">Chart spec (Vega-Lite)</a>']
-    return (f'<figure class="ichart"><div class="vl" data-spec="charts/{name}.vl.json" data-name="{name}" role="img" aria-label="{alt}">'
-            f'<img class="fallback" src="{path}.png" alt="{alt}" loading="lazy"></div>'
+    return (f'<figure class="ichart"><div class="vl" data-spec="charts/{name}.vl.json" data-name="{name}" role="img" aria-label="{alt}"></div>'
+            f'<img class="fallback" src="{path}.png" alt="{alt}" loading="lazy">'
             f'<figcaption>Interactive: hover for numbers; click the legend to pick a group; ⋯ menu saves SVG or PNG. '
             f'{" · ".join(links)}</figcaption></figure>')
 
@@ -180,15 +184,25 @@ def with_toc(main_html, title):
     main_html = re.sub(r"<(h2|h3)((?:\s[^>]*)?)>(.*?)</\1>", add_id, main_html, flags=re.S)
     if len(items) < 3:
         return f'<main class="wrap entry" style="padding-top:40px">{main_html}</main>'
-    lis = "".join(f'<li class="{t}"><a href="#{h}">{text}</a></li>' for t, h, text in items)
-    nav = f'<li class="h2"><a href="#top">{e(title)}</a></li>{lis}'
+    groups = []
+    for t, h, text in items:
+        if t == "h2" or not groups:
+            groups.append([(h, text, "making" if text == "How this was made" else ""), []])
+        else:
+            groups[-1][1].append((h, text))
+    lis = "".join(
+        f'<li class="h2 {cls}"><a href="#{h}">{text}</a>'
+        + ("<ol>" + "".join(f'<li class="h3"><a href="#{sh}">{st}</a></li>' for sh, st in subs) + "</ol>" if subs else "")
+        + "</li>" for (h, text, cls), subs in groups)
+    nav = f'<li class="h2 top"><a href="#top">{e(title)}</a></li>{lis}'
     return f"""<div class="wrap withtoc" id="top">
 <aside class="toc"><nav aria-label="Contents"><div class="toc-h">Contents</div><ol>{nav}</ol></nav></aside>
 <details class="toc-m"><summary>Contents</summary><ol>{nav}</ol></details>
 <main class="entry">{main_html}</main></div>
 <script>(function(){{var l=[].slice.call(document.querySelectorAll('.toc a[href^="#"]'));var m={{}};l.forEach(function(a){{m[a.getAttribute('href').slice(1)]=a}});
 var hs=[].slice.call(document.querySelectorAll('main.entry h2[id],main.entry h3[id]'));function on(){{var cur=null;hs.forEach(function(h){{if(h.getBoundingClientRect().top<120)cur=h.id}});
-l.forEach(function(a){{a.classList.remove('on')}});if(cur&&m[cur])m[cur].classList.add('on');}}addEventListener('scroll',on,{{passive:true}});on();
+l.forEach(function(a){{a.classList.remove('on')}});document.querySelectorAll('.toc li.h2').forEach(function(li){{li.classList.remove('open')}});
+if(cur&&m[cur]){{m[cur].classList.add('on');var g=m[cur].closest('li.h2');if(g)g.classList.add('open');}}}}addEventListener('scroll',on,{{passive:true}});on();
 document.querySelectorAll('.toc-m a').forEach(function(a){{a.addEventListener('click',function(){{a.closest('details').open=false}})}});}})();</script>"""
 
 
@@ -329,22 +343,31 @@ def entry_page(x):
         d = x["_folder"] / sub
         files = sorted(f.name for f in d.iterdir() if f.is_file()) if d.is_dir() else []
         if files:
-            assets += f'<h3>{label}</h3><ul class="assets">' + "".join(
+            assets += f'<h4>{label}</h4><ul class="assets">' + "".join(
                 f'<li><a href="{sub}/{e(f)}" download>{sub}/{e(f)}</a></li>' for f in files) + "</ul>"
     me = self_ref(x)
     authors = ", ".join(names(x.get("author") or AUTHOR))
     cite = cite_block(me)
     refs = x.get("references") or []
-    refs_html = ("<h2>References</h2><ol class=\"refs\">" + "".join(
+    refs_html = ("<h3>References</h3><ol class=\"refs\">" + "".join(
         f"<li>{cite_text(r)}</li>" for r in refs) + "</ol>"
         '<p><a href="references.ris">Add these references to your reference manager (RIS)</a></p>') if refs else ""
+    # The argument comes first; everything about how the check was made (the entry's own
+    # "How this was made" section, references, files and the citation) goes in a separate closing section.
+    body_html = render_md(x["_body"], x["_folder"])
+    parts = re.split(r'<h2[^>]*>How this was made</h2>', body_html, maxsplit=1)
+    argument, making = parts[0], (parts[1] if len(parts) > 1 else "")
+    cite = re.sub(r"<h2( [^>]*)?>Cite this page</h2>", r"<h3\1>Cite this page</h3>", cite)
     body = with_toc(f"""<div class="legend">{long_date(x["date"])} · {e(authors)}</div>
 <h1>{e(x["title"])}</h1>
 {facts}
-<div class="body-md">{render_md(x["_body"], x["_folder"])}</div>
+<div class="body-md">{argument}</div>
+<section class="making"><h2 class="making-h">How this was made</h2>
+<p class="making-intro">How the check was done, what it cost, and the sources, data and code behind it.</p>
+<div class="body-md">{making}</div>
 {refs_html}
-{"<h2>Files</h2>" + assets if assets else ""}
-{cite}<p id="copy-status" role="status" aria-live="polite"></p>""", x["title"]) + (VEGA if 'class="vl"' in render_md(x["_body"], x["_folder"]) else "")
+{"<h3>Files</h3>" + assets if assets else ""}
+{cite}<p id="copy-status" role="status" aria-live="polite"></p></section>""", x["title"]) + (VEGA if 'class="vl"' in render_md(x["_body"], x["_folder"]) else "")
     ch = first_chart(x)
     head = ('<script src="/copy.js" defer></script><meta property="og:type" content="article">'
             f'<meta property="og:description" content="{e(x["summary"])}">'

@@ -54,6 +54,8 @@ references:
 
 ## The claim
 
+### What was said
+
 On 16 November 2026 [Ethan Mollick posted](https://x.com/emollick/status/2122176524610884061):
 
 > I think often about the fact that almost everyone working in the West has lived in a quite stable socio-technical period
@@ -64,15 +66,23 @@ On 16 November 2026 [Ethan Mollick posted](https://x.com/emollick/status/2122176
 
 There are two claims here. One is a fact about a list: only one of the 270 jobs in the 1950 census is obsolete. The other is about the scope of change: people working in the West have lived through a stable period, and the job list is the evidence.
 
+### Where the number seems to come from
+
 The post gives no source, but the number seems to come from a paper by the economist James Bessen, [How Computer Automation Affects Occupations](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2690435) (2016). We could read its summary and how others quote it, but not the full text. As quoted, Bessen says that of the 270 detailed occupations in the 1950 census, only one, elevator operator, was eliminated *by automation*. Other occupations disappeared for other reasons, such as falling demand. That is a narrower statement than "only one is now obsolete".
 
-## The short answer
+## The answer
+
+### In short
 
 The fact is wrong as stated. Elevator operator is the one job the paper counts as eliminated by automation, but it is not the only obvious automation casualty: telephone switchboard operators lost most of their jobs to automatic exchanges. In the census data about 15 more 1950 categories are gone or nearly gone, and many others lost 70–93% of their workers.
 
+### Two halves of change
+
 Few jobs disappeared completely, but many became museum pieces: there are still elevator operators. Counting what survives from a 1950 list also measures only half the change. The other half is work that did not exist in 1950. One major study finds that about 60% of US employment in 2018 was in job titles that did not exist in 1940. The change should be measured by both together, and on that measure the period does not look stable.
 
-## What the data shows
+## What happened to the jobs of 1950
+
+### The 1950 list in 2010
 
 The 1950 census had 268 occupation categories with employed workers (58.9 million people; 140.2 million in 2010). 86 of them show zero workers in 2010. That number is misleading, because IPUMS maps every 2010 job code into some 1950 category and some 1950 categories receive none. Mathematicians, athletes, college professors by subject and apprentices all show zero, and all still exist. Sorting the 86 by judgement gave about 16 genuinely gone or nearly gone and about 70 artefacts of reclassification.
 
@@ -120,7 +130,9 @@ Total employment more than doubled over the same years (58.9 million employed pe
 
 ![Bar chart of ten occupations that stayed on the census list but lost 69 to 93 percent of their workers between 1950 and 2010, led by railway brakemen and textile weavers](charts/3-survived-but-collapsed.png)
 
-### Jobs that technology created and then took away
+## Jobs that came and went
+
+### Office and communication jobs, 1960–2019
 
 This was a follow-up question. After seeing the first results, I remembered a [1972 educational film on office automation and clerical careers](https://www.youtube.com/watch?v=eorxtvnyGBY) from an [earlier experiment on historical views of computers](https://viewfromhistory.semanticmachines.fyi/), which shows jobs that existed for only a few decades. Using eight census and survey years from 1950 to 2019, six office and communication jobs rose and then fell (thousands of workers; – means no comparable category that year):
 
@@ -163,17 +175,33 @@ Here, the agent downloaded the film's subtitles and listed every job the narrati
 
 The film's jobs split in two. The ones defined by a machine (keypunch, tape, console, typewriter, shorthand, switchboard, tabulator) rose and then collapsed. The ones defined by dealing with people or goods (receptionist, cashier, stock clerk) grew. The film says computer operation "is a fast-growing field" in which "employment is expected to increase very rapidly". That held for about 20 years.
 
-### New work
+## New work
+
+### Computing jobs since 1970
 
 Over the same years new work appeared. Software developers went from 168,000 in 1970 to 2.1 million in 2019, and computer systems analysts and scientists from 89,000 to 2.8 million.
 
 ![Line chart of software developers and computer systems analysts and scientists in the US, 1970 to 2019](charts/6-new-work.png)
 
+### The wider literature
+
 The wider literature puts the scale of new work higher. [Autor, Chin, Salomons and Seegmiller (2024)](https://doi.org/10.1093/qje/qjae008) find that about 60% of US employment in 2018 was in job titles that did not exist in 1940. They used about 30,000 detailed job titles from the Census Alphabetical Index, not the roughly 270 broad categories used here. A broad category such as "computer operators" can hide many new titles inside it, so counting broad categories understates new work in the same way that it understates lost work.
 
 ![The figure of about 60% of US employment in 2018 being in work that did not exist in 1940, with the 1950 results summarised beneath it](charts/4-headline-new-work.png)
 
-## How it was done
+## Limits of this check
+
+- The samples are 1% samples, so small categories are noisy.
+- Zeros are classification facts, not head counts.
+- The sort of the 86 zero categories into gone and reclassified is a judgement. It has not been checked by a labour historian.
+- Some odd points are mapping artefacts: the bump in typists in 2010, computer operators' 2019 zero (left out), and stenographers disappearing into secretaries after 1990.
+- We could not read the full Bessen paper, so what it says is taken from its summary and how others quote it.
+- The data covers the US only.
+- The 1950 categories can only show losses, never new work.
+
+## How this was made
+
+### Timeline
 
 The point of this series is how quickly a claim can be checked now. This one took about 30 minutes from question to charts and 45 with the first follow-up. Times are 16 November 2026, UK time.
 
@@ -187,21 +215,15 @@ The point of this series is how quickly a claim can be checked now. This one too
 - **~09:40**: The site and this write-up were live.
 - **~11:00**: Revision: the agent downloaded the film's subtitles, listed the jobs it names and mapped them to census categories; it also added the tables and the references.
 
+### Data and method
+
 The data is IPUMS USA microdata. The first extract has the 1950 1% census sample and the 2010 American Community Survey, with the harmonised 1950 occupation code (OCC1950), employment status and person weights. The agent counted employed people in each 1950 category in each year. The second extract has the 1% census samples for 1950, 1960, 1970, 1980, 1990 and 2000 and the American Community Survey for 2010 and 2019, with the harmonised 1990 occupation code (OCC1990).
 
 The agent wrote about 150 lines of Python. I read the outputs and steered. The main judgement step was sorting the 86 zero-worker categories into genuinely gone and reclassified, which the agent did by judgement. Mapping the film's jobs to census categories was also a judgement.
 
-## What this does not show
+The census data is from IPUMS USA, University of Minnesota, [www.ipums.org](https://www.ipums.org). The data, code and chart files are listed under Files below, and the full citation is under References.
 
-- The samples are 1% samples, so small categories are noisy.
-- Zeros are classification facts, not head counts.
-- The sort of the 86 zero categories into gone and reclassified is a judgement. It has not been checked by a labour historian.
-- Some odd points are mapping artefacts: the bump in typists in 2010, computer operators' 2019 zero (left out), and stenographers disappearing into secretaries after 1990.
-- We could not read the full Bessen paper, so what it says is taken from its summary and how others quote it.
-- The data covers the US only.
-- The 1950 categories can only show losses, never new work.
-
-## Models, tools and tokens
+### Models, tools and tokens
 
 | Model | Role | Calls | Tokens read | Tokens written |
 |---|---|---|---|---|
@@ -212,20 +234,3 @@ The agent wrote about 150 lines of Python. I read the outputs and steered. The m
 Tokens read include the conversation history the model re-reads on every call, most of it from cache; that is why the number is large compared with what was written. The counts come from the agent's session logs and cover the whole session up to this revision (about 11:05). Publishing steps after that are not counted.
 
 Other tools: the IPUMS USA API (data extracts), Python with matplotlib (analysis and charts), yt-dlp (the film's subtitles), web search, and Cloudflare Pages with wrangler (hosting).
-
-## Data and code
-
-Data:
-
-- [occ1950_1950_vs_2010.csv](data/occ1950_1950_vs_2010.csv)
-- [occ1990_by_year.csv](data/occ1990_by_year.csv)
-
-Code:
-
-- [extract.py](code/extract.py)
-- [extract2.py](code/extract2.py)
-- [analyse.py](code/analyse.py)
-- [analyse2.py](code/analyse2.py)
-- [charts.py](code/charts.py)
-
-The census data is from IPUMS USA, University of Minnesota, [www.ipums.org](https://www.ipums.org); the full citation is in the references below.
