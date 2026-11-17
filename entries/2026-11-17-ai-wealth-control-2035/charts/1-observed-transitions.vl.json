@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 310,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "background": "#faf9f6",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#44443e",
+      "titleColor": "#44443e",
+      "gridColor": "#e3e1d9",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "bottom",
+      "columns": 1,
+      "labelFontSize": 12,
+      "labelLimit": 420,
+      "title": null
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 18,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#55554f",
+      "offset": 16
+    }
+  },
+  "title": {
+    "text": "Observed changes in different systems",
+    "subtitle": [
+      "Each line starts at its first observation here, not at invention.",
+      "Different denominators: power, people, fund assets and trading volume."
+    ]
+  },
+  "params": [
+    {
+      "name": "pick",
+      "select": {
+        "type": "point",
+        "fields": [
+          "series"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 65
+    },
+    "strokeWidth": 2.5
+  },
+  "encoding": {
+    "x": {
+      "field": "years_from_first_observation",
+      "type": "quantitative",
+      "title": "Years from first observation shown",
+      "scale": {
+        "domain": [
+          0,
+          30
+        ]
+      },
+      "axis": {
+        "tickMinStep": 1
+      }
+    },
+    "y": {
+      "field": "share_pct",
+      "type": "quantitative",
+      "title": "Reported percentage",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      }
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "US factory electric motors",
+          "World internet users",
+          "US index funds",
+          "Electronic spot FX"
+        ],
+        "range": [
+          "#216d68",
+          "#b36b21",
+          "#426b97",
+          "#6b6c65"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "pick",
+        "value": 1
+      },
+      "value": 0.15
+    },
+    "tooltip": [
+      {
+        "field": "series",
+        "title": "Measure"
+      },
+      {
+        "field": "year",
+        "title": "Year",
+        "format": "d"
+      },
+      {
+        "field": "share_pct",
+        "title": "Reported percentage",
+        "format": ".0f"
+      },
+      {
+        "field": "denominator",
+        "title": "Denominator"
+      },
+      {
+        "field": "source_url",
+        "title": "Primary source"
+      }
+    ]
+  },
+  "data": {
+    "url": "charts/1-observed-transitions.csv"
+  }
+}

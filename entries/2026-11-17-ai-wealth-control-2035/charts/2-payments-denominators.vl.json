@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 310,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "background": "#faf9f6",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#44443e",
+      "titleColor": "#44443e",
+      "gridColor": "#e3e1d9",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "bottom",
+      "columns": 1,
+      "labelFontSize": 12,
+      "labelLimit": 420,
+      "title": null
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 18,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#55554f",
+      "offset": 16
+    }
+  },
+  "title": {
+    "text": "Most payments can mean different things",
+    "subtitle": "US core noncash payments, 2020. Federal Reserve Payments Study."
+  },
+  "params": [
+    {
+      "name": "pick",
+      "select": {
+        "type": "point",
+        "fields": [
+          "measure"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "instrument",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Card",
+        "ACH",
+        "Cheque"
+      ],
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "share_pct",
+      "type": "quantitative",
+      "title": "Share of core noncash payments (%)",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      }
+    },
+    "xOffset": {
+      "field": "measure",
+      "sort": [
+        "Number",
+        "Value"
+      ]
+    },
+    "color": {
+      "field": "measure",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Number",
+          "Value"
+        ],
+        "range": [
+          "#216d68",
+          "#b36b21"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "pick",
+        "value": 1
+      },
+      "value": 0.15
+    },
+    "tooltip": [
+      {
+        "field": "instrument",
+        "title": "Instrument"
+      },
+      {
+        "field": "measure",
+        "title": "Denominator"
+      },
+      {
+        "field": "share_pct",
+        "title": "Share (%)",
+        "format": ".2f"
+      },
+      {
+        "field": "year",
+        "title": "Year",
+        "format": "d"
+      }
+    ]
+  },
+  "data": {
+    "url": "charts/2-payments-denominators.csv"
+  }
+}
