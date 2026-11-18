@@ -1,4 +1,5 @@
-// Adapted from web-design-elements kit: copy.ts v1 (plain JavaScript).
+// Legacy standalone copy handler, retained at /copy.js for existing URLs.
+// Astro pages use the unchanged TypeScript kit through the bundled site script.
 function legacyCopy(text) {
   const ta = document.createElement('textarea');
   ta.value = text;

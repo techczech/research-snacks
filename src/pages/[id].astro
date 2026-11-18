@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntries, entryHTML, firstChart, BASE, NAME } from '../lib/content';
+export function getStaticPaths() { return getEntries().map(entry => ({params:{id:entry.id},props:{entry}})); }
+const {entry} = Astro.props;
+const chart = firstChart(entry);
+const record = {...entry,image: chart ? `${BASE}/${entry.id}/charts/${chart}` : undefined};
+---
+<BaseLayout title={`${entry.title} · ${NAME}`} description={entry.summary} entry={record}><Fragment set:html={entryHTML(entry)} /></BaseLayout>

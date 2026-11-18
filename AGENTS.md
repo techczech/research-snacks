@@ -1,7 +1,7 @@
 # AGENTS.md (research-snacks)
 
 - Register: FOR AGENTS. Public repo: nothing private, ever.
-- What: one folder per experiment in `entries/` -> static site in `site/` via `uv run scripts/build-site.py`. Live: researchsnacks.semanticmachines.fyi. Sister site: model-data-points (datapoints.semanticmachines.fyi).
+- What: one folder per experiment in `entries/` -> static site in `site/` via `bun run build` (Astro + bun). Live: researchsnacks.semanticmachines.fyi. Sister site: model-data-points (datapoints.semanticmachines.fyi).
 
 ## Add an entry
 
@@ -9,10 +9,18 @@
 2. Facts only from the run's own records; every number traceable to `data/` or `code/`. Time taken is measured; human time is an estimate and says so.
 3. Privacy check before commit: no personal names, machine nicknames/hostnames, file paths, email addresses, account or plan details, private document titles or content. The build rejects local paths, emails and hostnames in every text file under `entries/`; it cannot catch the rest, so read the entry.
 4. Prose: short and literal, British spelling; `dominik-writer` for longer write-ups.
-5. `uv run scripts/build-site.py`, open the entry page, check charts render and data/code links resolve. Commit, push, `scripts/deploy.sh` (needs `CLOUDFLARE_ACCOUNT_ID=b6ae5bced06492ee6f0c8f92776804da` if several accounts). Check the entry URL (https://researchsnacks.semanticmachines.fyi/<id>/) returns 200.
+5. `bun run check`, then check the entry headlessly (`bun run check:release`). Check charts and data/code links. Commit, push, `scripts/deploy.sh --production` from clean `main` (needs `CLOUDFLARE_ACCOUNT_ID=b6ae5bced06492ee6f0c8f92776804da` if several accounts). Check the entry URL (https://researchsnacks.semanticmachines.fyi/<id>/) returns 200.
 
 ## Notes
 
 - Id (with its date) is the URL; keep it stable.
 - `site/` git-ignored. Licence: content CC BY 4.0, code MIT.
 - One-off setup (Pages project, custom domain, DNS) is not scripted.
+
+## Astro and shared web patterns
+
+- `src/lib/content.ts` owns frontmatter/privacy validation, Markdown, references, figures and TOC. `scripts/prepare-site.ts` copies assets to ignored `.generated/public/`; Astro writes `site/`. `entries/` and `content/about.md` stay canonical.
+- Kit copies in `src/scripts/kit/` and `src/styles/kit/dialog.css` are unchanged. Wrap them in the site script; never edit a copy. The legacy `/copy.js` URL is retained, while new pages use the bundled kit.
+- `/rss.xml` contains complete entry summaries, dates, links and category/tag labels. Every Astro page advertises it. Markdown counterparts, `/llms.txt`, JSON-LD and `/search-index.json` serve agents.
+- `bun run check` builds and checks types, citations, RIS, privacy, local links/anchors and RSS. `bun run check:release [preview-url]` runs headless Chromium checks; nothing visible may launch. `scripts/deploy.sh --preview` publishes the feature branch; production requires clean `main`.
+- Migration contract and evidence: `docs/parity-research-snacks-astro.md`. Baseline source: commit `9af527d`; all existing output paths must remain valid. Keep source entry files and their downloadable assets unchanged during framework work.

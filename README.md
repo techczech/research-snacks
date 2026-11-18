@@ -17,19 +17,30 @@ The [research-snacks-data repository](https://github.com/techczech/research-snac
 
 ## Build
 
-Needs [uv](https://docs.astral.sh/uv/):
+Needs [bun](https://bun.sh/). The site uses Astro, with the same stack as dlnet and compatible security patch versions:
 
 ```sh
-uv run scripts/build-site.py
+bun install --frozen-lockfile
+bun run build
 ```
 
-Run the citation, RIS and privacy regression checks with `uv run scripts/test-build-site.py`.
+Run `bun run check` for the build, TypeScript, citations, RIS, privacy, local links/anchors and RSS checks. Run `bun run check:release` for the headless browser release checks. The old Python build/test paths are compatibility launchers for these commands.
 
 Writes the static site to `site/` (git-ignored); the intro text comes from `content/about.md`. Preview with `python3 -m http.server -d site`.
 
 ## Deploy
 
-`scripts/deploy.sh` builds and publishes `site/` to the Cloudflare Pages project `research-snacks` with wrangler.
+`scripts/deploy.sh --preview` checks, builds and publishes the current feature branch to a Cloudflare Pages preview. Compare it with the current site before merging. `scripts/deploy.sh --production` (the default) publishes clean `main` to the `research-snacks` project with wrangler. Set `CLOUDFLARE_ACCOUNT_ID=b6ae5bced06492ee6f0c8f92776804da` when several accounts are available.
+
+## Subscribe and search
+
+Subscribe at [researchsnacks.semanticmachines.fyi/rss.xml](https://researchsnacks.semanticmachines.fyi/rss.xml). The RSS 2.0 feed includes each entry's complete summary, title, publication date, canonical link and category/tag labels. The footer and About page link to the feed, and every page supports feed autodiscovery.
+
+Search is available at `/search/`, from the footer, with `/`, or with ⌘K / Ctrl+K. The keyboard sheet (`?`, also in the footer) can disable single-key shortcuts. The site follows the system theme by default and offers System, Light and Dark controls. Content and downloads remain available without JavaScript.
+
+Agents can use `/llms.txt`, `/search-index.json`, JSON-LD and each page's `index.md` counterpart. Human-authored content remains in `entries/<id>/index.md` and `content/about.md`; generated files are not an additional editorial source.
+
+The complete migration inventory, URL comparison and release evidence are in [the parity record](docs/parity-research-snacks-astro.md).
 
 ## Licence
 

@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntries, getAbout, firstParagraph, renderMarkdown, dateLabel, NAME, TAGLINE } from '../lib/content';
+const entries = getEntries();
+const categories = [...new Set(entries.map(x => x.category).filter(Boolean))];
+---
+<BaseLayout title={NAME} description={TAGLINE} active="entries" cite>
+  <section class="hero"><div class="wrap"><h1>{NAME}</h1><p class="tagline">{TAGLINE}</p><div class="intro" set:html={renderMarkdown(firstParagraph(getAbout()))}></div></div></section>
+  <main id="main" class="wrap"><h2 class="sec">Entries</h2>
+    <form class="filters js-only" data-list-filter><label>Find an entry<input type="search" name="q" /></label><label>Category<select name="cat"><option value="">All categories</option>{categories.map(c => <option value={c}>{c[0].toUpperCase()+c.slice(1)}</option>)}</select></label><button type="reset">Clear filters</button><span data-list-count role="status">{entries.length} entries</span></form>
+    <div class="list">{entries.map(x => <a class="card" href={`/${x.id}/`} data-category={x.category || ''} data-search={[x.title,x.claim,x.verdict,x.summary,...(x.tags || [])].join(' ')}><div class="meta"><span>{dateLabel(x.date,'short')}</span>{x.category && ` · ${x.category[0].toUpperCase()+x.category.slice(1)}`}</div><h3>{x.title}</h3><p class="claim">“{x.claim}”</p><p class="verdict"><b>Verdict:</b> {x.verdict}</p><div class="tt"><b>Time taken:</b> {x.time_taken}</div><p>{x.summary}</p></a>)}</div>
+    <div class="no-results" hidden><h3>No entries match these filters</h3><p>Try another search or <button type="button" data-clear-filters>show every entry</button>.</p></div>
+  </main>
+</BaseLayout>

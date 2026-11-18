@@ -1,0 +1,6 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAbout, renderMarkdown, withTOC } from '../lib/content';
+const body = withTOC(`<div class="body-md">${renderMarkdown(getAbout())}<h2>Subscribe</h2><p><a href="/rss.xml">Subscribe (RSS)</a> to receive new Research Snacks in your feed reader.</p></div>`,'About');
+---
+<BaseLayout title="About · Research Snacks" description="About Research Snacks" active="about" cite><Fragment set:html={body} /></BaseLayout>
