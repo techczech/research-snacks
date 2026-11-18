@@ -69,4 +69,8 @@ The dlnet stack is retained (Astro + bun, micromark/GFM and unchanged kit). The 
 
 ## Preview and production
 
-Preview deployment, final visual inspection and live URL results will be recorded below before completion.
+Preview: https://bacd3707.research-snacks.pages.dev (implementation commit `573e31a`). The full headless suite passed against the deployed preview, including the six-route × two-width old/new matrix, all Vega charts and KWIC controls. Three real Zotero saves passed (home, About, sickly entry): one webpage, surname/given name split, correct Website Title and dates. The installed translation-server was used temporarily and will be stopped at completion.
+
+Three ignored comparison sheets are retained in `.check/comparisons/`: `all-pages-1280.png`, `all-pages-390.png` (old left, new right; all six routes), and `dark-forced.png`. They were inspected directly. The article column, header, cream/navy/amber palette, facts, tables and charts remain. The required balanced headings slightly change wrapping; JS-off TOC subsections are expanded for findability. About adds subscription; home adds filters with JS on; footer adds house controls and feed/agent links. Raw screenshots are deleted at completion.
+
+Production URL checks and final commit are recorded after release. `scripts/check-live.py` curls every baseline public path plus canonical pages and new feed/agent routes, requiring HTTP 200 and exact built bytes rather than accepting a soft 404.
