@@ -2,6 +2,10 @@
 
 Small research experiments with AI agents: how fast can a claim be checked? Each entry takes a public claim, checks it against public data with an AI agent, and records the verdict, the time taken and how long a person would have needed. Published at https://researchsnacks.semanticmachines.fyi. Sister site: [Model Data Points](https://datapoints.semanticmachines.fyi).
 
+## Check the research
+
+The [research-snacks-data repository](https://github.com/techczech/research-snacks-data) holds shareable inputs, methods, rerunnable code and expected tables. This repo remains the website. The build derives a “Check it yourself” link from every entry id: `snacks/<id>/` in the checking repo. Prepare that folder and pass its clean-clone rerun before publishing a new entry.
+
 ## Add an entry
 
 1. Create `entries/YYYY-MM-DD-short-slug/index.md`: YAML frontmatter plus a Markdown body. The folder name is the id and the URL.

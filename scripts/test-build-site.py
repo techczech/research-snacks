@@ -64,6 +64,16 @@ class CitationTests(unittest.TestCase):
         self.assertIn('href="references.ris"', html)
         self.assertIn("Add these references to your reference manager (RIS)", html)
 
+    def test_every_entry_links_to_its_checking_folder(self):
+        for folder in build.ENTRIES.iterdir():
+            if not folder.is_dir():
+                continue
+            entry, errors = build.parse(folder)
+            self.assertEqual(errors, [])
+            html = build.entry_page(entry)
+            self.assertIn('Check it yourself', html)
+            self.assertIn(f'href="https://github.com/techczech/research-snacks-data/tree/main/snacks/{entry["id"]}"', html)
+
     def test_home_is_undated_webpage(self):
         self.check_page(build.index_page([self.entry], "Intro"), build.NAME, build.BASE + "/")
 

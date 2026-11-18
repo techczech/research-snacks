@@ -11,3 +11,7 @@ AI agents change that. A check that once needed a specialist's toolkit can now b
 ## Sister site
 
 This is the sister site to [datapoints.semanticmachines.fyi](https://datapoints.semanticmachines.fyi), which collects small experiments with AI models: what was tested, on which models, and what happened. Research Snacks use AI to check claims about the world; Model Data Points check the models themselves.
+
+## Check it yourself
+
+[The public checking repository](https://github.com/techczech/research-snacks-data) holds the shareable data, code, methods and expected tables for each snack. Clone it and run the checks with uv. Each entry links to its own folder. Where a source licence prevents redistribution, the folder explains how to obtain the source yourself and what can be checked from the included aggregates.

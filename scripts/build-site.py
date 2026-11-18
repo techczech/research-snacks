@@ -346,6 +346,10 @@ def entry_page(x):
         if files:
             assets += f'<h4>{label}</h4><ul class="assets">' + "".join(
                 f'<li><a href="{sub}/{e(f)}" download>{sub}/{e(f)}</a></li>' for f in files) + "</ul>"
+    check_url = f'https://github.com/techczech/research-snacks-data/tree/main/snacks/{x["id"]}'
+    check_link = (f'<h3>Check it yourself</h3><p><a href="{e(check_url)}">'
+                  'Clone the data, code and method for this snack</a>. '
+                  'The checking repository includes the shareable inputs, expected tables and rerun instructions.</p>')
     me = self_ref(x)
     authors = ", ".join(names(x.get("author") or AUTHOR))
     cite = cite_block(me)
@@ -366,6 +370,7 @@ def entry_page(x):
 <section class="making"><h2 class="making-h">How this was made</h2>
 <p class="making-intro">How the check was done, what it cost, and the sources, data and code behind it.</p>
 <div class="body-md">{making}</div>
+{check_link}
 {refs_html}
 {"<h3>Files</h3>" + assets if assets else ""}
 {cite}<p id="copy-status" role="status" aria-live="polite"></p></section>""", x["title"]) + (VEGA if 'class="vl"' in render_md(x["_body"], x["_folder"]) else "")
