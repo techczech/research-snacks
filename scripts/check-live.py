@@ -3,6 +3,7 @@
 import concurrent.futures
 import hashlib
 import json
+import re
 from pathlib import Path
 import subprocess
 import sys
@@ -27,11 +28,18 @@ def check(item):
     code,mime,effective=meta.decode().split('|',2)
     expected=(ROOT/'site'/rel).read_bytes()
     same=hashlib.sha256(body).digest()==hashlib.sha256(expected).digest()
-    return {'path':path,'status':int(code),'mime':mime,'effective':effective,'matches_build':same,'ok':code=='200' and same}
+    upgraded=False
+    if not same and 'text/html' in mime:
+        attr=re.compile(rb"((?:href|src)=[\"'])https?://([^\"']+)([\"'])")
+        old=list(attr.finditer(expected)); new=list(attr.finditer(body))
+        def normalise(data): return attr.sub(lambda m:m.group(0).replace(b'http://',b'https://',1),data)
+        # Permit only one-way HTTPS upgrades in URL attributes. Every other byte must match.
+        upgraded=(len(old)==len(new) and normalise(expected)==normalise(body) and all(b.group(0)==a.group(0) or (b'http://' in a.group(0) and b.group(0)==a.group(0).replace(b'http://',b'https://',1)) for a,b in zip(old,new)))
+    return {'path':path,'status':int(code),'mime':mime,'effective':effective,'matches_build':same,'https_attribute_upgrades_only':upgraded,'ok':code=='200' and (same or upgraded)}
 with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool: results=list(pool.map(check,sorted(urls.items())))
 failures=[r for r in results if not r['ok']]
 report={'base':BASE,'count':len(results),'baseline_public_paths':len(manifest)-1,'failures':failures,'results':results}
 out=ROOT/'.check';out.mkdir(exist_ok=True);(out/'live-check.json').write_text(json.dumps(report,indent=2)+'\n')
-print(f'{"PASS" if not failures else "FAIL"}: {len(results)} URLs; {len(manifest)-1} baseline public paths; {len(failures)} failures. HTTP 200 and exact built bytes required.')
+print(f'{"PASS" if not failures else "FAIL"}: {len(results)} URLs; {len(manifest)-1} baseline public paths; {len(failures)} failures. HTTP 200 and built bytes required; one-way HTTPS attribute upgrades allowed and reported.')
 for r in failures: print(json.dumps(r))
 raise SystemExit(bool(failures))

@@ -54,7 +54,7 @@ There are 13 added files: seven Markdown copies (home, About, search and four en
 | 200% text | PASS: body doubles from 16 to 32 CSS pixels on six routes, at desktop and phone widths, without page overflow. Wide tables remain locally scrollable. |
 | Dark/forced colours | PASS: screenshots captured and inspected; explicit light overrides dark system. |
 | Storage blocked | PASS: throwing localStorage does not break theme, shortcuts off switch or search. |
-| Kit drift | PASS: unchanged TypeScript/CSS/Python kit modules. Root check rerun after temporary baseline cleanup. |
+| Kit drift | PASS: unchanged TypeScript/CSS/Python kit modules. The final whole-repository check reports all 11 copies `same` after temporary baseline cleanup. |
 | Citations | PASS: built home/About/entry static shared checker; live shared checker recorded below. |
 | Charts/KWIC/copy | PASS: every Vega plot and export control; 39-row KWIC search/filter/sort/export; API/fallback/failure copy states. |
 | RSS | PASS: well-formed RSS 2.0, required channel/item fields, canonical self link, unique permanent GUIDs, UTC RFC 822 dates, complete summaries, ordered dates and category labels. |
@@ -73,4 +73,17 @@ Preview: https://bacd3707.research-snacks.pages.dev (implementation commit `573e
 
 Three ignored comparison sheets are retained in `.check/comparisons/`: `all-pages-1280.png`, `all-pages-390.png` (old left, new right; all six routes), and `dark-forced.png`. They were inspected directly. The article column, header, cream/navy/amber palette, facts, tables and charts remain. The required balanced headings slightly change wrapping; JS-off TOC subsections are expanded for findability. About adds subscription; home adds filters with JS on; footer adds house controls and feed/agent links. Raw screenshots are deleted at completion.
 
-Production URL checks and final commit are recorded after release. `scripts/check-live.py` curls every baseline public path plus canonical pages and new feed/agent routes, requiring HTTP 200 and exact built bytes rather than accepting a soft 404.
+Production URL checks and final commit are recorded after release. `scripts/check-live.py` curls every baseline public path plus canonical pages and new feed/agent routes, requiring HTTP 200 and built bytes (allowing only reported one-way HTTP-to-HTTPS URL-attribute upgrades) rather than accepting a soft 404.
+
+
+### Final deployment and live checks (18 November 2026)
+
+- Final preview: https://b6584e5d.research-snacks.pages.dev, commit `716b246`; 128 curl checks passed with exact built bytes before the merge. It differs from the fully browser-tested preview only in the completed Markdown copies and verification documentation/tools; the HTML/CSS/JS output is identical.
+- Merged by fast-forward into `main` and pushed. Production deployment: https://3068c8f3.research-snacks.pages.dev, serving https://researchsnacks.semanticmachines.fyi, built from `716b246`.
+- Live curl: **128/128 HTTP 200**, including **111/111 baseline public paths**, canonical page aliases, RSS, all Markdown copies, llms.txt and the search index. `_headers` is the 112th old output file and is consumed by Pages as configuration; it was never a public asset URL.
+- The custom domain upgrades the previousmagazine.com link attribute from HTTP to HTTPS in the sickly entry and its original-report download (also observed through the entry's index.html alias). That is the sole byte difference in those three responses. The other **125/128 responses match exactly**, including all PNG/CSV/spec/code/RIS downloads and the feed. The live checker permits only one-way HTTPS URL-attribute upgrades and still rejects any changed text, data or script. No source file or hosting security setting was changed to remove the transformation.
+- Live shared citation check and real Zotero saves passed on home, About and the sickly entry: exactly one webpage each; `Lukeš, Dominik`; Website Title `Research Snacks`; entries dated, home/About undated.
+- Feed: https://researchsnacks.semanticmachines.fyi/rss.xml. Live MIME type is `application/rss+xml; charset=utf-8`; all four full summaries and expected category/tag labels are included. The local RSS 2.0 validator, local links/anchors, citation/RIS/privacy regression suite and TypeScript check pass.
+- The maintainer skill has the new build/feed workflow, and its existing installation reflects the canonical update. The web-elements adoption record flags the second-active-Astro shared-package revisit trigger; no shared package was built.
+
+- The complete headless release suite also passed on the production custom domain after deployment. All temporary browser contexts and servers were closed. Only the three ignored comparison sheets remain; raw screenshots and the copied baseline were removed after comparison.
