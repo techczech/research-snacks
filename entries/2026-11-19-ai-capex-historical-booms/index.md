@@ -493,6 +493,8 @@ It does not work the other way either. [Odlyzko finds that the earlier British r
 
 ## Limits of this check
 
+Follow-up: [Canals and nuclear: smaller booms, long earnings and expensive failures](https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/).
+
 ### Missing figures are not zero
 
 [Ginarlis and Pollard's canal investment reconstruction](https://ideas.repec.org/b/oxp/obooks/9780198284086.html) and [Arnold and McCartney's returns study](https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0289.2010.00541.x) yielded no national annual spending series here. Dividends are not investment returns.

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#343d46",
+      "titleColor": "#343d46",
+      "gridColor": "#dedfdc",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 450
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 18,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#4b5563"
+    }
+  },
+  "width": 600,
+  "height": 250,
+  "title": {
+    "text": "US nuclear construction spending fell after the early 1980s",
+    "subtitle": [
+      "Investor-owned utilities only, 1979–1990; accounting expenditure includes financing.",
+      "Public utilities and 1965–1978 are absent. This is not a complete national peak search."
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 45
+    },
+    "color": "#126782"
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1
+      }
+    },
+    "y": {
+      "field": "share_gdp_pct",
+      "type": "quantitative",
+      "title": "Construction accounting expenditure / GDP (%)",
+      "scale": {
+        "domain": [
+          0,
+          0.55
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year"
+      },
+      {
+        "field": "construction_usd_m",
+        "type": "quantitative",
+        "title": "USD million",
+        "format": ",.0f"
+      },
+      {
+        "field": "share_gdp_pct",
+        "type": "quantitative",
+        "title": "GDP share (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "data": {
+    "url": "charts/3-nuclear-construction.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "construction_usd_m": "number",
+        "nominal_gdp_usd_m": "number",
+        "share_gdp_pct": "number"
+      }
+    }
+  }
+}

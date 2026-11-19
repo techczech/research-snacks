@@ -1,0 +1,165 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#343d46",
+      "titleColor": "#343d46",
+      "gridColor": "#dedfdc",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 450
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 18,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#4b5563"
+    }
+  },
+  "width": 490,
+  "height": {
+    "step": 40
+  },
+  "title": {
+    "text": "Canals and nuclear add smaller spending comparisons",
+    "subtitle": [
+      "Annual spending / GDP (%), with different coverage marked.",
+      "Canals: period mean, not peak. France: approximate point. AI: global-company proxy."
+    ]
+  },
+  "encoding": {
+    "y": {
+      "field": "label",
+      "type": "nominal",
+      "sort": [
+        "UK railways (1847)",
+        "US railways, 1870s (1871)",
+        "US railways, antebellum (1854)",
+        "Five technology firms, reported proxy (2026 YTD)",
+        "US railways, 1900-1914 (1910)",
+        "US broadband providers (2000)",
+        "US nuclear, investor-owned utilities (1983)",
+        "France nuclear, direct construction (1983)",
+        "GB canals and waterways, annual mean (1791-1801)"
+      ],
+      "title": null,
+      "axis": {
+        "labelLimit": 335
+      }
+    },
+    "x": {
+      "field": "spend_gdp_pct",
+      "type": "quantitative",
+      "title": "Spending / GDP (%)",
+      "scale": {
+        "domain": [
+          0,
+          7
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "label",
+        "title": "Case"
+      },
+      {
+        "field": "spend_gdp_pct",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Approximate GDP share (%)"
+      },
+      {
+        "field": "basis"
+      },
+      {
+        "field": "qualification"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 2
+      },
+      "params": [
+        {
+          "name": "kindpick",
+          "select": {
+            "type": "point",
+            "fields": [
+              "basis"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "basis",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Historical annual reconstruction",
+              "Partial nuclear coverage",
+              "Approximate single observation",
+              "Period mean, not annual peak",
+              "Global company proxy"
+            ],
+            "range": [
+              "#126782",
+              "#527969",
+              "#77858a",
+              "#bc8e29",
+              "#b86412"
+            ]
+          },
+          "legend": {
+            "direction": "vertical"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "kindpick",
+            "value": 1
+          },
+          "value": 0.2
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "color": "#253341"
+      },
+      "encoding": {
+        "text": {
+          "field": "spend_gdp_pct",
+          "format": ".1f"
+        }
+      }
+    }
+  ],
+  "data": {
+    "url": "charts/1-spending-comparison.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "spend_gdp_pct": "number"
+      }
+    }
+  }
+}

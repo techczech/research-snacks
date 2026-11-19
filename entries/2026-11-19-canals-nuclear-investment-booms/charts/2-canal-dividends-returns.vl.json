@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#343d46",
+      "titleColor": "#343d46",
+      "gridColor": "#dedfdc",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 450
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 18,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#4b5563"
+    }
+  },
+  "width": 560,
+  "height": 290,
+  "title": {
+    "text": "High canal dividends could overstate equity returns",
+    "subtitle": [
+      "Company means over available periods within 1770–1855 (%).",
+      "Five surviving major-company archives; not a representative national sample."
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 2
+  },
+  "params": [
+    {
+      "name": "returnpick",
+      "select": {
+        "type": "point",
+        "fields": [
+          "measure"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "company",
+      "type": "nominal",
+      "sort": [
+        "Birmingham",
+        "Oxford",
+        "Leeds and Liverpool",
+        "Lancaster",
+        "Kennet and Avon"
+      ],
+      "title": null,
+      "axis": {
+        "labelLimit": 170
+      }
+    },
+    "yOffset": {
+      "field": "measure"
+    },
+    "x": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": "Annual mean (%)"
+    },
+    "color": {
+      "field": "measure",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Return on equity",
+          "Dividend / nominal share capital"
+        ],
+        "range": [
+          "#126782",
+          "#b86412"
+        ]
+      },
+      "legend": {
+        "direction": "vertical"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "returnpick",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "company"
+      },
+      {
+        "field": "measure"
+      },
+      {
+        "field": "percent",
+        "format": ".1f"
+      }
+    ]
+  },
+  "data": {
+    "url": "charts/2-canal-dividends-returns.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "percent": "number"
+      }
+    }
+  }
+}

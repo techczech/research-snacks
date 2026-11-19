@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#343d46",
+      "titleColor": "#343d46",
+      "gridColor": "#dedfdc",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 450
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 18,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#4b5563"
+    }
+  },
+  "title": {
+    "text": "The operating nuclear fleet kept producing more electricity",
+    "subtitle": [
+      "Selected US observations; later performance does not measure early investor returns.",
+      "Capacity factor unavailable for 1965 and 1970: those points are absent, not zero."
+    ]
+  },
+  "facet": {
+    "row": {
+      "field": "measure",
+      "type": "nominal",
+      "sort": [
+        "Electricity generated",
+        "Capacity factor"
+      ],
+      "header": {
+        "labelFontSize": 14,
+        "labelFontWeight": "bold",
+        "labelAngle": 0,
+        "title": null
+      }
+    }
+  },
+  "spec": {
+    "width": 560,
+    "height": 155,
+    "mark": {
+      "type": "line",
+      "point": true,
+      "color": "#126782"
+    },
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year",
+        "axis": {
+          "format": "d"
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": null,
+        "scale": {
+          "zero": true
+        }
+      },
+      "tooltip": [
+        {
+          "field": "year"
+        },
+        {
+          "field": "measure"
+        },
+        {
+          "field": "value",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        {
+          "field": "unit"
+        }
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "data": {
+    "url": "charts/4-nuclear-output-use.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "value": "number"
+      }
+    }
+  }
+}
