@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#343d46",
+      "titleColor": "#343d46",
+      "gridColor": "#dedfdc",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 500
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 20,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#4b5563"
+    },
+    "background": "#fbfaf7"
+  },
+  "title": {
+    "text": "Revenue growth can coexist with overbuilding",
+    "subtitle": [
+      "Both series start at 100; UK 1844, US telecom 1997.",
+      "Telecom: end-user receipts / broader provider spending; imperfect cohort match."
+    ]
+  },
+  "facet": {
+    "row": {
+      "field": "precedent",
+      "type": "nominal",
+      "header": {
+        "labelFontSize": 15,
+        "labelFontWeight": "bold",
+        "labelAngle": 0,
+        "labelAlign": "left",
+        "title": null
+      },
+      "sort": [
+        "UK railways",
+        "US telecom"
+      ]
+    }
+  },
+  "spec": {
+    "width": "container",
+    "height": 170,
+    "mark": {
+      "type": "line",
+      "point": {
+        "filled": true,
+        "size": 45
+      }
+    },
+    "params": [
+      {
+        "name": "seriespick",
+        "select": {
+          "type": "point",
+          "fields": [
+            "series"
+          ]
+        },
+        "bind": "legend"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "years_from_first_observation",
+        "type": "quantitative",
+        "title": "Years after the first displayed observation",
+        "axis": {
+          "tickMinStep": 1
+        }
+      },
+      "y": {
+        "field": "index_first_observation_100",
+        "type": "quantitative",
+        "title": "Index (first year = 100)",
+        "scale": {
+          "zero": true
+        }
+      },
+      "color": {
+        "field": "series",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Annual capex",
+            "Gross revenue",
+            "End-user revenue"
+          ],
+          "range": [
+            "#b86412",
+            "#126782",
+            "#126782"
+          ]
+        }
+      },
+      "strokeDash": {
+        "condition": {
+          "test": "datum.series === 'Annual capex'",
+          "value": [
+            1,
+            0
+          ]
+        },
+        "value": [
+          7,
+          2
+        ]
+      },
+      "opacity": {
+        "condition": {
+          "param": "seriespick",
+          "value": 1
+        },
+        "value": 0.2
+      },
+      "tooltip": [
+        {
+          "field": "precedent"
+        },
+        {
+          "field": "year"
+        },
+        {
+          "field": "series"
+        },
+        {
+          "field": "index_first_observation_100",
+          "title": "Index",
+          "format": ".1f"
+        }
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "data": {
+    "url": "charts/2-revenue-and-capex.csv",
+    "format": {
+      "type": "csv",
+      "parse": "auto"
+    }
+  }
+}

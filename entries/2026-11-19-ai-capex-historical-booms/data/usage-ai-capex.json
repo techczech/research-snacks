@@ -1,0 +1,14 @@
+{
+  "model": "gpt-6.1-sol",
+  "role": "Research, analysis and drafting",
+  "session_started_utc": "2026-11-19T08:51:55.180Z",
+  "snapshot_utc": "2026-11-19T09:19:33.987Z",
+  "last_usage_event_utc": "2026-11-19T09:19:00.846Z",
+  "elapsed_seconds_to_snapshot": 1659,
+  "calls_with_recorded_usage": 54,
+  "tokens_read": 12644918,
+  "cached_input_tokens_included": 12309632,
+  "tokens_written": 56251,
+  "reasoning_output_tokens_included": 12265,
+  "scope": "Implementation session through this snapshot, including loaded instructions and cached history; excludes subsequent publication and live checks."
+}

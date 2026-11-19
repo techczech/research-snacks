@@ -1,0 +1,163 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#343d46",
+      "titleColor": "#343d46",
+      "gridColor": "#dedfdc",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 500
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 20,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#4b5563"
+    },
+    "background": "#fbfaf7"
+  },
+  "title": {
+    "text": "Railway booms were larger shares of GDP",
+    "subtitle": [
+      "Annual nominal spending / same-country, same-year nominal GDP (%)",
+      "AI is the article’s global-company YTD proxy; historical scopes differ."
+    ]
+  },
+  "height": {
+    "step": 36
+  },
+  "encoding": {
+    "y": {
+      "field": "precedent",
+      "type": "nominal",
+      "sort": [
+        "UK railways",
+        "US railways, 1870s",
+        "US railways, 1880s",
+        "Five tech firms, 2026 YTD",
+        "US broadband providers",
+        "US private electricity",
+        "Apollo including overhead",
+        "US federal interstates",
+        "Manhattan Project"
+      ],
+      "title": null,
+      "axis": {
+        "labelLimit": 235
+      }
+    },
+    "x": {
+      "field": "peak_spend_pct_gdp",
+      "type": "quantitative",
+      "title": "Annual spending as a share of GDP (%)",
+      "scale": {
+        "domain": [
+          0,
+          7
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "precedent",
+        "title": "Comparison"
+      },
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "peak_spend_pct_gdp",
+        "title": "Share of GDP (%)",
+        "format": ".2f"
+      },
+      {
+        "field": "scope",
+        "title": "Coverage"
+      },
+      {
+        "field": "status",
+        "title": "Evidence"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 2
+      },
+      "params": [
+        {
+          "name": "pick",
+          "select": {
+            "type": "point",
+            "fields": [
+              "status"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Reconstructed historical share",
+              "Reported global-company proxy"
+            ],
+            "range": [
+              "#126782",
+              "#ce7515"
+            ]
+          },
+          "legend": {
+            "direction": "vertical"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "pick",
+            "value": 1
+          },
+          "value": 0.2
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "fontSize": 12,
+        "color": "#253341"
+      },
+      "encoding": {
+        "text": {
+          "field": "peak_spend_pct_gdp",
+          "format": ".2f"
+        }
+      }
+    }
+  ],
+  "data": {
+    "url": "charts/1-spending-gdp.csv",
+    "format": {
+      "type": "csv",
+      "parse": "auto"
+    }
+  }
+}
