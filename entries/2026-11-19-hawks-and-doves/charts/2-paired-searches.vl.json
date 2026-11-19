@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "data": {
+    "url": "charts/2-paired-searches.csv"
+  },
+  "title": {
+    "text": "Bird elaboration occurs in paired mentions",
+    "subtitle": [
+      "Each bar uses all annotated policy units in its source and decade.",
+      "Different retrieval units: these are not comparable population rates."
+    ],
+    "anchor": "start"
+  },
+  "facet": {
+    "column": {
+      "field": "collection",
+      "type": "nominal",
+      "title": null
+    }
+  },
+  "spec": {
+    "width": 285,
+    "height": 260,
+    "mark": {
+      "type": "bar",
+      "color": "#246b8e"
+    },
+    "encoding": {
+      "x": {
+        "field": "decade",
+        "type": "ordinal",
+        "title": "Publication decade",
+        "axis": {
+          "labelAngle": -45
+        }
+      },
+      "y": {
+        "field": "elaboration_share_percent",
+        "type": "quantitative",
+        "title": "Elaborated policy units (%)",
+        "scale": {
+          "domain": [
+            0,
+            30
+          ]
+        }
+      },
+      "tooltip": [
+        {
+          "field": "source"
+        },
+        {
+          "field": "decade"
+        },
+        {
+          "field": "elaborated_units",
+          "type": "quantitative"
+        },
+        {
+          "field": "political_units",
+          "type": "quantitative"
+        },
+        {
+          "field": "elaboration_share_percent",
+          "type": "quantitative"
+        }
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "x": "independent"
+    }
+  },
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "data": {
+    "url": "charts/1-news-sample.csv"
+  },
+  "width": 600,
+  "height": 280,
+  "title": {
+    "text": "Most sampled policy uses are conventional labels",
+    "subtitle": [
+      "Random sample of 160 hawk/dove forms in SiBol; 50 policy tokens",
+      "Two tokens add bird behaviour. Counts concern the saved sample."
+    ],
+    "anchor": "start"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "params": [
+    {
+      "name": "pick",
+      "select": {
+        "type": "point",
+        "fields": [
+          "category"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "decade",
+      "type": "ordinal",
+      "title": "Publication decade (uneven corpus coverage)",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Sampled lexical tokens"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Other sense",
+          "Conventional policy use",
+          "Bird elaboration"
+        ],
+        "range": [
+          "#bdc6cb",
+          "#246b8e",
+          "#d48b20"
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "vertical"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "pick",
+        "value": 1
+      },
+      "value": 0.18
+    },
+    "tooltip": [
+      {
+        "field": "category"
+      },
+      {
+        "field": "count",
+        "type": "quantitative"
+      },
+      {
+        "field": "political_hits_in_decade",
+        "type": "quantitative"
+      },
+      {
+        "field": "all_lexical_hits_in_decade",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  }
+}
