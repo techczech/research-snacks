@@ -239,13 +239,13 @@ Kappa adjusts agreement for the category frequencies of these two readings. It i
 
 There were 22 identification disagreements. Of the 51 common metaphor units, 42 had a functional disagreement. The [disagreement register](data/disagreements.csv) contains 64 unique units with any scored disagreement; several dimensions can differ on one unit.
 
-| Case | Pass A | Pass B | Unresolved rule |
-|---|---|---|---|
-| AI | “Hallucination” is attributive: the passage calls it a loose analogy and imports no human mental mechanism. | Constitutive/explanative: the next sentence explicitly relates false AI output to false human percepts. | How much source structure is enough? Both assign exegetic, declarative and passage-wide use. |
-| Base | “Cornerstone” is constitutive; links back to “based upon”. | Constitutive; no specific textual tie. | When does shared support imagery create binding? B also adds figurative use. |
-| Race | “Falling behind” is constitutive and declarative. | Constitutive, declarative and figurative. | Familiarity does not settle expressive function. |
-| NASA | “Blanket” is constitutive/explanative; no binding. | Same cognitive reading, plus figurative and cataphoric use because heat retention follows. | What counts as subsequent development? |
-| Files | “Files” is constitutive, without binding. | Constitutive, with a forward tie followed by a backward tie. | Distinguish repetition from metaphorically organised cohesion. |
+| Pass A | Pass B | Unresolved rule |
+|---|---|---|
+| “Hallucination” is attributive: the passage calls it a loose analogy and imports no human mental mechanism. | Constitutive/explanative: the next sentence explicitly relates false AI output to false human percepts. | How much source structure is enough? Both assign exegetic, declarative and passage-wide use. |
+| “Cornerstone” is constitutive; links back to “based upon”. | Constitutive; no specific textual tie. | When does shared support imagery create binding? B also adds figurative use. |
+| “Falling behind” is constitutive and declarative. | Constitutive, declarative and figurative. | Familiarity does not settle expressive function. |
+| “Blanket” is constitutive/explanative; no binding. | Same cognitive reading, plus figurative and cataphoric use because heat retention follows. | What counts as subsequent development? |
+| “Files” is constitutive, without binding. | Constitutive, with a forward tie followed by a backward tie. | Distinguish repetition from metaphorically organised cohesion. |
 
 Some uncertainty precedes functional coding. B questioned whether “mission” and “home” have ordinary contemporary senses sufficient for their contexts. NASA’s “enveloping” can describe gases physically surrounding Earth. The final human “hallucination” was literal for A and uncertain for B because it names the source of an overt comparison. Use, mention and analogy need clearer separation.
 
