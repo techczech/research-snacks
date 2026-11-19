@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
   "config": {
     "font": "Arial, sans-serif",
     "view": {
@@ -17,78 +16,75 @@
       "orient": "top",
       "title": null,
       "labelFontSize": 12,
-      "labelLimit": 500
+      "labelLimit": 530
     },
     "title": {
       "anchor": "start",
-      "fontSize": 20,
+      "fontSize": 19,
       "subtitleFontSize": 12,
       "subtitleColor": "#4b5563"
     },
     "background": "#fbfaf7"
   },
-  "title": {
-    "text": "Railway booms were larger shares of GDP",
-    "subtitle": [
-      "Annual nominal spending / same-country, same-year nominal GDP (%)",
-      "AI is the article’s global-company YTD proxy; historical scopes differ."
-    ]
-  },
+  "width": 610,
   "height": {
-    "step": 36
+    "step": 32
+  },
+  "title": {
+    "text": "A close twentieth-century precedent; larger earlier booms",
+    "subtitle": [
+      "Annual spending / GDP (%). Historical domestic series versus global company proxy.",
+      "AI allocation and pace are scenarios, not bounds on measured domestic AI investment."
+    ]
   },
   "encoding": {
     "y": {
-      "field": "precedent",
+      "field": "label",
       "type": "nominal",
       "sort": [
-        "UK railways",
-        "US railways, 1870s",
-        "US railways, 1880s",
-        "Five tech firms, 2026 YTD",
-        "US broadband providers",
-        "US private electricity",
-        "Apollo including overhead",
-        "US federal interstates",
-        "Manhattan Project"
+        "UK railways (1847)",
+        "US railways, 1870s (1871)",
+        "US railways, 1880s (1881)",
+        "AI: Q3 cash pace (2026)",
+        "AI: reported proxy (2026)",
+        "US railways, 1900-1914 (1910)",
+        "AI: 70% allocation scenario (2026)",
+        "US broadband providers (2000)",
+        "US private electricity (1924)",
+        "Apollo including overhead (1964)",
+        "US federal interstates (1964)",
+        "Manhattan Project (1944)"
       ],
       "title": null,
       "axis": {
-        "labelLimit": 235
+        "labelLimit": 270
       }
     },
     "x": {
       "field": "peak_spend_pct_gdp",
       "type": "quantitative",
-      "title": "Annual spending as a share of GDP (%)",
+      "title": "Spending as a share of GDP (%)",
       "scale": {
         "domain": [
           0,
-          7
+          7.1
         ]
       }
     },
     "tooltip": [
       {
-        "field": "precedent",
-        "title": "Comparison"
-      },
-      {
-        "field": "year",
-        "title": "Year"
+        "field": "label",
+        "title": "Case"
       },
       {
         "field": "peak_spend_pct_gdp",
-        "title": "Share of GDP (%)",
-        "format": ".2f"
+        "type": "quantitative",
+        "format": ".2f",
+        "title": "GDP share (%)"
       },
       {
         "field": "scope",
         "title": "Coverage"
-      },
-      {
-        "field": "status",
-        "title": "Evidence"
       }
     ]
   },
@@ -116,12 +112,16 @@
           "type": "nominal",
           "scale": {
             "domain": [
-              "Reconstructed historical share",
-              "Reported global-company proxy"
+              "Historical private industry",
+              "Public programme",
+              "Article proxy",
+              "AI scenario"
             ],
             "range": [
               "#126782",
-              "#ce7515"
+              "#89969d",
+              "#b86412",
+              "#cf9a45"
             ]
           },
           "legend": {
@@ -142,13 +142,12 @@
         "type": "text",
         "align": "left",
         "dx": 5,
-        "fontSize": 12,
         "color": "#253341"
       },
       "encoding": {
         "text": {
           "field": "peak_spend_pct_gdp",
-          "format": ".2f"
+          "format": ".1f"
         }
       }
     }
@@ -156,7 +155,11 @@
   "data": {
     "url": "charts/1-spending-gdp.csv",
     "format": {
-      "type": "csv"
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "peak_spend_pct_gdp": "number"
+      }
     }
   }
 }

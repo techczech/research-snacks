@@ -16,48 +16,50 @@
       "orient": "top",
       "title": null,
       "labelFontSize": 12,
-      "labelLimit": 500
+      "labelLimit": 530
     },
     "title": {
       "anchor": "start",
-      "fontSize": 20,
+      "fontSize": 19,
       "subtitleFontSize": 12,
       "subtitleColor": "#4b5563"
     },
     "background": "#fbfaf7"
   },
   "title": {
-    "text": "Revenue growth can coexist with overbuilding",
+    "text": "Growth paths for railways, telecom and AI",
     "subtitle": [
-      "Both series start at 100; UK 1844, US telecom 1997.",
-      "Telecom: end-user receipts / broader provider spending; imperfect cohort match."
+      "Each series starts at 100 independently; common logarithmic scale.",
+      "AI: October revenue run rate and Q3 capex estimates; adjacent periods, different cohort."
     ]
   },
   "facet": {
     "row": {
       "field": "precedent",
       "type": "nominal",
+      "sort": [
+        "UK railways",
+        "US railways",
+        "US telecom",
+        "AI: estimates"
+      ],
       "header": {
         "labelFontSize": 15,
         "labelFontWeight": "bold",
         "labelAngle": 0,
         "labelAlign": "left",
         "title": null
-      },
-      "sort": [
-        "UK railways",
-        "US telecom"
-      ]
+      }
     }
   },
   "spec": {
     "width": 560,
-    "height": 170,
+    "height": 135,
     "mark": {
       "type": "line",
       "point": {
         "filled": true,
-        "size": 45
+        "size": 38
       }
     },
     "params": [
@@ -74,19 +76,32 @@
     ],
     "encoding": {
       "x": {
-        "field": "years_from_first_observation",
-        "type": "quantitative",
-        "title": "Years after the first displayed observation",
+        "field": "period",
+        "type": "ordinal",
+        "title": "Calendar year",
         "axis": {
-          "tickMinStep": 1
+          "labelAngle": 0
         }
       },
       "y": {
         "field": "index_first_observation_100",
         "type": "quantitative",
-        "title": "Index (first year = 100)",
+        "title": "Index; first value = 100 (log)",
         "scale": {
-          "zero": true
+          "type": "log",
+          "domain": [
+            45,
+            1000
+          ]
+        },
+        "axis": {
+          "values": [
+            50,
+            100,
+            200,
+            500,
+            1000
+          ]
         }
       },
       "color": {
@@ -94,20 +109,18 @@
         "type": "nominal",
         "scale": {
           "domain": [
-            "Annual capex",
-            "Gross revenue",
-            "End-user revenue"
+            "Capex",
+            "Revenue"
           ],
           "range": [
             "#b86412",
-            "#126782",
             "#126782"
           ]
         }
       },
       "strokeDash": {
         "condition": {
-          "test": "datum.series === 'Annual capex'",
+          "test": "datum.series === 'Capex'",
           "value": [
             1,
             0
@@ -130,28 +143,37 @@
           "field": "precedent"
         },
         {
-          "field": "year"
+          "field": "period",
+          "title": "Year"
         },
         {
           "field": "series"
         },
         {
           "field": "index_first_observation_100",
-          "title": "Index",
-          "format": ".1f"
+          "type": "quantitative",
+          "format": ".1f",
+          "title": "Index"
+        },
+        {
+          "field": "basis"
         }
       ]
     }
   },
   "resolve": {
     "scale": {
-      "y": "independent"
+      "x": "independent"
     }
   },
   "data": {
     "url": "charts/2-revenue-and-capex.csv",
     "format": {
-      "type": "csv"
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "index_first_observation_100": "number"
+      }
     }
   }
 }

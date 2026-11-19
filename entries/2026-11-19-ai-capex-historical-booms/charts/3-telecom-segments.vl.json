@@ -1,0 +1,135 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#343d46",
+      "titleColor": "#343d46",
+      "gridColor": "#dedfdc",
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 530
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 19,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#4b5563"
+    },
+    "background": "#fbfaf7"
+  },
+  "width": 560,
+  "height": 230,
+  "title": {
+    "text": "Telecom revenue moved between businesses",
+    "subtitle": [
+      "FCC end-user revenue, 2000 = 100. Toll is broader than a fibre-only cohort."
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "params": [
+    {
+      "name": "segmentpick",
+      "select": {
+        "type": "point",
+        "fields": [
+          "series"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1
+      }
+    },
+    "y": {
+      "field": "index_2000_100",
+      "type": "quantitative",
+      "title": "Revenue index (2000 = 100)",
+      "scale": {
+        "domain": [
+          60,
+          155
+        ]
+      }
+    },
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Long-distance / toll",
+          "Wireless",
+          "Local",
+          "Total end-user"
+        ],
+        "range": [
+          "#b86412",
+          "#126782",
+          "#4d8060",
+          "#6c747b"
+        ]
+      },
+      "legend": {
+        "direction": "vertical"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "segmentpick",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "year"
+      },
+      {
+        "field": "series"
+      },
+      {
+        "field": "revenue_bn",
+        "type": "quantitative",
+        "title": "Revenue USD bn",
+        "format": ".3f"
+      },
+      {
+        "field": "change_from_2000_pct",
+        "type": "quantitative",
+        "title": "Change since 2000 (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "data": {
+    "url": "charts/3-telecom-segments.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "revenue_bn": "number",
+        "index_2000_100": "number",
+        "change_from_2000_pct": "number"
+      }
+    }
+  }
+}
