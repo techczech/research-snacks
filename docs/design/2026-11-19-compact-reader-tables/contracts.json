@@ -27,84 +27,48 @@
   "journey": [
     {
       "n": 1,
-      "step": "Read the verdict",
+      "step": "Get the verdict in a minute",
       "screens": [
         "verdict"
       ]
     },
     {
       "n": 2,
-      "step": "Trace 48.4%",
+      "step": "Trace one number to its source and data",
       "screens": [
         "number"
       ]
     },
     {
       "n": 3,
-      "step": "Compare rows",
+      "step": "Compare rows by sorting and filtering",
       "screens": [
-        "compare"
-      ]
-    },
-    {
-      "n": 4,
-      "step": "Read the matching rows",
-      "screens": [
-        "filtered"
-      ]
-    },
-    {
-      "n": 5,
-      "step": "Recover from no matches",
-      "screens": [
-        "empty"
-      ]
-    },
-    {
-      "n": 6,
-      "step": "Read a wide table",
-      "screens": [
-        "full"
-      ]
-    },
-    {
-      "n": 7,
-      "step": "Choose visible columns",
-      "screens": [
+        "compare",
+        "filtered",
+        "empty",
+        "full",
         "columns"
       ]
     },
     {
-      "n": 8,
-      "step": "Browse figures and tables",
+      "n": 4,
+      "step": "Read only the figures and tables",
       "screens": [
         "figures"
       ]
     },
     {
-      "n": 9,
-      "step": "Find a snack",
+      "n": 5,
+      "step": "Find a topic by search and category",
       "screens": [
-        "home"
-      ]
-    },
-    {
-      "n": 10,
-      "step": "Search by topic",
-      "screens": [
-        "search"
-      ]
-    },
-    {
-      "n": 11,
-      "step": "Browse a category",
-      "screens": [
+        "home",
+        "search",
         "category"
       ]
     },
     {
-      "n": 12,
-      "step": "Jump between sections",
+      "n": 6,
+      "step": "Jump between sections using Contents",
       "screens": [
         "sidebar"
       ]
@@ -164,10 +128,15 @@
         }
       ],
       "evaluate": [
-        "The original claim and verdict are visible before the narrative."
+        "The original claim and verdict are visible before the narrative.",
+        "The page-height comparison remains failed for five desktop page/width pairs; do not infer owner readiness from a working section jump."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-sidebar"
+      "evidence": "preview-sidebar",
+      "checks": [
+        "C1",
+        "C4"
+      ]
     },
     {
       "id": "number",
@@ -195,7 +164,8 @@
         }
       ],
       "know": [
-        "They need to know what the percentage counts."
+        "They need to know what the percentage counts.",
+        "The DOI reaches the OUP article address; an automated-browser challenge prevented reading the external article in this check. The complete displayed table is available as CSV."
       ],
       "steps": [
         {
@@ -225,7 +195,10 @@
         "The label stays adjacent to 48.4%; the CSV contains the four original rows."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-sources"
+      "evidence": "preview-sources",
+      "checks": [
+        "C2"
+      ]
     },
     {
       "id": "compare",
@@ -283,7 +256,11 @@
         "aria-sort is ascending, only matching complete rows remain, and matches are highlighted."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-coding"
+      "evidence": "preview-compare-start",
+      "checks": [
+        "C2",
+        "C3"
+      ]
     },
     {
       "id": "filtered",
@@ -341,7 +318,11 @@
         "Reset restores canonical row order; clear restores all 26 rows."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-filtered"
+      "evidence": "preview-filtered",
+      "checks": [
+        "C2",
+        "C3"
+      ]
     },
     {
       "id": "empty",
@@ -399,7 +380,11 @@
         "The original complete table returns and focus goes to the filter."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-empty"
+      "evidence": "preview-empty",
+      "checks": [
+        "C2",
+        "C3"
+      ]
     },
     {
       "id": "full",
@@ -457,7 +442,11 @@
         "Escape closes the view and returns focus to Full view without losing table state."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-full"
+      "evidence": "preview-full",
+      "checks": [
+        "C2",
+        "C3"
+      ]
     },
     {
       "id": "columns",
@@ -515,7 +504,11 @@
         "The chosen column hides/restores as a whole and focus returns to Columns."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-columns"
+      "evidence": "preview-columns",
+      "checks": [
+        "C2",
+        "C3"
+      ]
     },
     {
       "id": "figures",
@@ -573,7 +566,10 @@
         "The return URL names the exact article visual; figures Markdown and data are reachable without JS."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-figures"
+      "evidence": "preview-figures",
+      "checks": [
+        "C2"
+      ]
     },
     {
       "id": "home",
@@ -631,7 +627,10 @@
         "Two complete entries fit at 950×800 and three at 1440×900."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-home"
+      "evidence": "preview-home",
+      "checks": [
+        "C4"
+      ]
     },
     {
       "id": "search",
@@ -689,7 +688,10 @@
         "A selected result navigates to its canonical snack URL and keyboard focus stays inside the dialog."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-search"
+      "evidence": "preview-search",
+      "checks": [
+        "C2"
+      ]
     },
     {
       "id": "category",
@@ -747,7 +749,10 @@
         "Five linguistics entries appear; Back returns to the previous feed."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-category"
+      "evidence": "preview-category",
+      "checks": [
+        "C2"
+      ]
     },
     {
       "id": "sidebar",
@@ -775,7 +780,8 @@
         }
       ],
       "know": [
-        "The outline is available at 950px; the phone has a Contents disclosure after facts."
+        "The outline is available at 950px; the phone has a Contents disclosure after facts.",
+        "At 950px and on the phone, the methods jump was observed at #how-this-was-made; the current marker followed and the phone disclosure closed."
       ],
       "steps": [
         {
@@ -802,10 +808,15 @@
         }
       ],
       "evaluate": [
-        "The target jumps at once, its marker updates, and the phone disclosure closes after selection."
+        "The target jumps at once, its marker updates, and the phone disclosure closes after selection.",
+        "The page-height comparison remains failed for five desktop page/width pairs; do not infer owner readiness from a working section jump."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
-      "evidence": "preview-sidebar-jump"
+      "evidence": "preview-sidebar-jump",
+      "checks": [
+        "C1",
+        "C4"
+      ]
     }
   ]
 }
