@@ -5,7 +5,7 @@ from datetime import timezone
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin, urlparse, unquote
+from urllib.parse import urljoin, urlparse, unquote, quote
 import json
 import xml.etree.ElementTree as ET
 
@@ -33,31 +33,34 @@ class Page(HTMLParser):
 
 index=json.loads((OUT/'search-index.json').read_text())
 paths=['/','/about/','/search/']+[x['u'] for x in index['items'] if x['s']=='entries']
+paths += [x['u']+'figures/' for x in index['items'] if x['s']=='entries']
+paths += ['/'+str(f.parent.relative_to(OUT))+'/' for f in sorted((OUT/'tags').glob('*/index.html'))]
 parsed={}
 for path in paths:
     file=OUT/(path.strip('/')+'/index.html' if path!='/' else 'index.html')
     text=file.read_text(); page=Page(text); parsed[path]=page
-    title=next(x['t'] for x in index['items'] if x['u']==path)
+    public_path=quote(path,safe='/')
+    title=next((x['t'] for x in index['items'] if x['u']==path),page.meta['citation_title'][0])
     if path=='/about/': title='About · Research Snacks'
     if path=='/search/': title='Search · Research Snacks'
-    expected={'citation_title':title,'citation_author':'Lukeš, Dominik','citation_public_url':BASE+path,'citation_language':'en','DC.type':'webpage','DC.title':title,'DC.creator':'Lukeš, Dominik','DC.publisher':'Research Snacks','DC.language':'en-GB','og:site_name':'Research Snacks','og:title':title,'og:url':BASE+path}
+    expected={'citation_title':title,'citation_author':'Lukeš, Dominik','citation_public_url':BASE+public_path,'citation_language':'en','DC.type':'webpage','DC.title':title,'DC.creator':'Lukeš, Dominik','DC.publisher':'Research Snacks','DC.language':'en-GB','og:site_name':'Research Snacks','og:title':title,'og:url':BASE+public_path}
     for tag,value in expected.items(): assert page.meta[tag]==[value],(path,tag,page.meta[tag])
-    assert page.canonical==[BASE+path]
+    assert page.canonical==[BASE+public_path]
     assert len(page.meta['description'])==1
-    date=path.strip('/')[:10] if path not in ('/','/about/','/search/') else None
+    date=path.strip('/')[:10] if path not in ('/','/about/','/search/') and '/figures/' not in path and not path.startswith('/tags/') else None
     assert page.meta['DC.date']==([date] if date else [])
     assert page.meta['citation_publication_date']==([date.replace('-','/')] if date else [])
     assert 'Z3988' not in text and 'citation_journal_title' not in text
     assert 'data-copy="#cite-text"' in text and 'Cite this page' in text
     assert page.feedlinks==['/rss.xml'] and 'Subscribe (RSS)' in text
-    assert page.jsonld and page.jsonld[0]['url']==BASE+path
+    assert page.jsonld and page.jsonld[0]['url']==BASE+public_path
     assert len(page.ids)==len(set(page.ids)),(path,'duplicate ids')
     assert 'main' in page.ids
     if date:
         assert page.meta['og:type']==['article'] and len(page.meta['og:image'])==1
         assert f'https://github.com/techczech/research-snacks-data/tree/main/snacks/{path.strip("/")}' in text
     for link in page.links:
-        u=urlparse(urljoin(BASE+path,link))
+        u=urlparse(urljoin(BASE+public_path,link))
         if u.scheme not in ('http','https') or u.netloc!='researchsnacks.semanticmachines.fyi': continue
         rel=unquote(u.path).lstrip('/'); target=OUT/rel
         if u.path.endswith('/'): target=target/'index.html'

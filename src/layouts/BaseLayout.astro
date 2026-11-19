@@ -1,5 +1,5 @@
 ---
-import '../styles/house.css';
+
 import '../styles/kit/dialog.css';
 import { themePrepaint } from '../scripts/kit/theme';
 import { citationHead, citeBlockHtml } from '../scripts/kit/citation';
@@ -26,16 +26,18 @@ const jsonld = {'@context':'https://schema.org','@type': entry ? 'Article' : 'We
   <script is:inline set:html={JSON.stringify(jsonld).replaceAll('<','\\u003c')} type="application/ld+json"></script>
   <script is:inline set:html={themePrepaint()}></script>
   <link rel="stylesheet" href={`/style.css?v=${cssVersion}`} />
+  <link rel="stylesheet" href="/house.css" />
+  <link rel="stylesheet" href="/compact.css" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site"><div class="wrap"><a class="logo" href="/"><b>RS</b><span>{NAME}</span></a><nav class="main" aria-label="Main">
     <a class:list={[{on:active==='entries'}]} href="/">Entries</a><a class:list={[{on:active==='about'}]} href="/about/">About</a><a href="https://datapoints.semanticmachines.fyi">Model Data Points</a>
-  </nav></div></header>
+  <a class="search-trigger" href="/search/" data-open-search aria-label="Search (/ or ⌘K)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg><span>Search</span><kbd>/</kbd></a></nav></div></header>
   <slot />
   {cite && <div class="wrap page-cite"><Fragment set:html={citeBlockHtml(citation)} /></div>}
   <footer><div class="wrap">
-    <div class="house-controls"><a href="/rss.xml">Subscribe (RSS)</a><a href="/search/" data-open-search>Search</a><button type="button" class="js-only" data-open-keys>Keyboard shortcuts <kbd>?</kbd></button><div class="theme-switch js-only" role="group" aria-label="Colour theme">{['system','light','dark'].map(t => <button type="button" data-theme-set={t} aria-pressed={t==='system'}>{t[0].toUpperCase()+t.slice(1)}</button>)}</div><button type="button" class="js-only" data-top>Back to top</button></div>
+    <div class="house-controls"><a href="/rss.xml">Subscribe (RSS)</a><button type="button" class="js-only" data-open-keys>Keyboard shortcuts <kbd>?</kbd></button><div class="theme-switch js-only" role="group" aria-label="Colour theme">{['system','light','dark'].map(t => <button type="button" data-theme-set={t} aria-pressed={t==='system'}>{t[0].toUpperCase()+t.slice(1)}</button>)}</div><button type="button" class="js-only" data-top>Back to top</button></div>
     <p>{NAME} · researchsnacks.semanticmachines.fyi · Sister site: <a href="https://datapoints.semanticmachines.fyi">Model Data Points</a> (datapoints.semanticmachines.fyi) · <a href="https://semanticmachines.fyi">Semantic Machines</a></p>
     <p>Content CC BY 4.0, code MIT. Data citations are in each entry.</p>
     <p><a href={markdown}>Markdown version</a> · <a href="/llms.txt">For agents</a></p>

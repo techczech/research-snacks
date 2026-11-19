@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EntryFeed from '../../components/EntryFeed.astro';
+import CategoryLinks from '../../components/CategoryLinks.astro';
+import {getEntries,names} from '../../lib/content';
+import {primaryCategory} from '../../lib/feed';
+import {tagLabel} from '../../lib/labels';
+export function getStaticPaths(){const all=getEntries();return [...new Set(all.flatMap(x=>[primaryCategory(x),...names(x.tags)]))].map(tag=>({params:{tag},props:{tag,entries:all.filter(x=>primaryCategory(x)===tag||names(x.tags).includes(tag))}}));}
+const {tag,entries}=Astro.props;
+---
+<BaseLayout title={`${tagLabel(tag)} · Research Snacks`} description={`Research Snacks: ${tagLabel(tag)}.`} cite><main id="main" class="wrap tag-page"><a href="/">All entries</a><h1>{tagLabel(tag)}</h1><CategoryLinks selected={tag}/><EntryFeed entries={entries}/></main></BaseLayout>

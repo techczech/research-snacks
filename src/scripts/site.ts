@@ -1,3 +1,4 @@
+import {initTables} from './tables';
 import { initDialogs, openDialog, closeDialog, isOpen } from './kit/dialog';
 import { initKeyboard, bindSingleKeysSwitch } from './kit/keys';
 import { cycleTheme } from './kit/theme';
@@ -7,7 +8,7 @@ import { scrollToSafe } from './kit/motion';
 import { h, terms, matchesAll, highlight, listboxNav, loadJSON } from './kit/search';
 import { keyMap } from '../lib/keys';
 
-initDialogs(); initCopy();
+initDialogs(); initCopy(); initTables();
 const search = document.querySelector<HTMLDialogElement>('#search-dlg')!;
 const keys = document.querySelector<HTMLDialogElement>('#keys-dlg')!;
 const input = search.querySelector<HTMLInputElement>('input')!;
@@ -65,23 +66,6 @@ initKeyboard({search:openSearch,toggleSearch:()=>isOpen(search)?closeDialog(sear
 document.querySelectorAll('[data-top]').forEach(b=>b.addEventListener('click',actions.top));
 if(location.pathname.replace(/\/$/,'')==='/search') {input.value=new URLSearchParams(location.search).get('q') || '';openSearch();}
 
-// One home-list filter, with query/category URL state and browser Back/Forward support.
-const form=document.querySelector<HTMLFormElement>('.filters');
-if(form) {
-  const query=form.querySelector<HTMLInputElement>('[name=q]')!, cat=form.querySelector<HTMLSelectElement>('[name=cat]')!;
-  const cards=Array.from(document.querySelectorAll<HTMLElement>('.card'));
-  function filter(write=true) {
-    const ts=terms(query.value); let n=0;
-    for(const card of cards) {card.hidden=!(matchesAll(card.dataset.search || '',ts)&&(!cat.value||card.dataset.category===cat.value));if(!card.hidden)n++;}
-    form!.querySelector('[role=status]')!.textContent=`${n} ${n===1?'entry':'entries'}`;
-    document.querySelector<HTMLElement>('.no-results')!.hidden=n!==0;
-    if(write){const u=new URL(location.href);for(const [key,value] of [['q',query.value],['cat',cat.value]])value?u.searchParams.set(key,value):u.searchParams.delete(key);history.pushState(null,'',u);}
-  }
-  function restore(){const p=new URLSearchParams(location.search);query.value=p.get('q') || '';cat.value=p.get('cat') || '';filter(false);}
-  const clear=()=>{query.value='';cat.value='';filter();query.focus();};
-  query.addEventListener('input',()=>filter());cat.addEventListener('change',()=>filter());form.addEventListener('reset',()=>queueMicrotask(()=>filter()));form.addEventListener('submit',e=>{e.preventDefault();filter();});document.querySelector('[data-clear-filters]')?.addEventListener('click',clear);addEventListener('popstate',restore);restore();
-}
-
 const headings=Array.from(document.querySelectorAll<HTMLElement>('main.entry h2[id],main.entry h3[id]'));
 const tocLinks=Array.from(document.querySelectorAll<HTMLAnchorElement>('.toc a[href^="#"],.toc-m a[href^="#"]'));
 if(headings.length && 'IntersectionObserver' in window) {
@@ -103,7 +87,10 @@ async function charts() {
   function load(src:string){return new Promise<void>((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=()=>resolve();s.onerror=reject;document.head.append(s);});}
   try {
     await load('https://cdn.jsdelivr.net/npm/vega@5.30.0');await load('https://cdn.jsdelivr.net/npm/vega-lite@5.21.0');await load('https://cdn.jsdelivr.net/npm/vega-embed@6.26.0');
-    await Promise.all(elements.map(async el=>{try{const r=await fetch(el.dataset.spec!);if(!r.ok)throw new Error('Chart not available');const spec=await r.json();await (window as any).vegaEmbed(el,spec,{renderer:'svg',actions:{export:true,source:false,compiled:false,editor:true},downloadFileName:el.dataset.name});el.closest('figure')!.classList.add('live');}catch{/* PNG fallback remains. */}}));
+    await Promise.all(elements.map(async el=>{try{const r=await fetch(el.dataset.spec!);if(!r.ok)throw new Error('Chart not available');const spec=await r.json();
+      const entryRoot=new URL(el.dataset.spec!,location.href);entryRoot.pathname=entryRoot.pathname.split('/charts/')[0]+'/';
+      const assets=(node:any)=>{if(!node||typeof node!=='object')return;for(const [key,value] of Object.entries(node)){if(key==='url'&&typeof value==='string'&&!/^(https?:|\/|data:)/.test(value))node[key]=new URL(value,entryRoot).href;else if(value&&typeof value==='object')assets(value);}};assets(spec);
+      await (window as any).vegaEmbed(el,spec,{renderer:'svg',actions:{export:true,source:false,compiled:false,editor:true},downloadFileName:el.dataset.name});el.closest('figure')!.classList.add('live');}catch{/* PNG fallback remains. */}}));
   }catch{/* All PNG fallbacks remain. */}
 }
 void charts();

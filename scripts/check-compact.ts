@@ -1,0 +1,43 @@
+import assert from 'node:assert/strict';
+import type {Browser} from 'playwright-core';
+import {getEntries} from '../src/lib/content';
+export async function checkCompact(browser:Browser,base:string){
+ const nojs=await browser.newContext({javaScriptEnabled:false});const p=await nojs.newPage();
+ for(const width of [950,1440,390]){await p.setViewportSize({width,height:900});
+  for(const x of getEntries())for(const suffix of ['', 'figures/']){const r=await p.goto(`${base}/${x.id}/${suffix}`);assert.equal(r?.status(),200);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`${x.id}/${suffix} no-JS overflow at ${width}`);assert.equal(await p.locator('table').evaluateAll(ts=>ts.some(t=>getComputedStyle(t).fontSize!=='16px')),false,`${x.id} table font`);}
+ }
+ await nojs.close();
+ const ctx=await browser.newContext({reducedMotion:'reduce'}),page=await ctx.newPage();
+ await page.setViewportSize({width:950,height:800});await page.goto(base);
+ assert.equal(await page.locator('.filters,.hero').count(),0);
+ assert(await page.locator('.home-heading').evaluate(e=>e.getBoundingClientRect().height<=150));
+ for(const [width,height,n] of [[950,800,2],[1440,900,3]]){await page.setViewportSize({width,height});assert(await page.locator('.feed-entry').nth(n-1).evaluate(e=>e.getBoundingClientRect().bottom<=innerHeight),`${n} complete home entries at ${width}`);}
+ await page.setViewportSize({width:950,height:800});await page.goto(base+'/2026-11-19-revolution-speed-2011-redo/');
+ assert(await page.locator('.toc').isVisible());
+ const small=page.locator('#table-1');
+ assert(await small.locator('table').evaluate(t=>t.getBoundingClientRect().width<t.closest('main')!.getBoundingClientRect().width-30),'two-column table must not stretch');
+ assert.equal(await small.locator('input').count(),0);
+ const values=await small.locator('tbody tr').allTextContents();
+ const sort=small.locator('thead th').nth(1).locator('button');await sort.focus();await page.keyboard.press('Enter');assert.equal(await small.locator('th').nth(1).getAttribute('aria-sort'),'ascending');
+ await page.keyboard.press('Space');assert.equal(await small.locator('th').nth(1).getAttribute('aria-sort'),'descending');
+ await page.keyboard.press('Enter');assert.deepEqual(await small.locator('tbody tr').allTextContents(),values);assert.equal(await small.locator('.table-source-order').isVisible(),false);
+ const full=small.getByRole('button',{name:'Full view',exact:true});await full.focus();await page.keyboard.press('Enter');assert(await small.evaluate(e=>e.matches(':popover-open')));await page.keyboard.press('Escape');assert.equal(await small.evaluate(e=>e.matches(':popover-open')),false);assert(await full.evaluate(e=>e===document.activeElement));
+ for(const width of [950,390]){await page.setViewportSize({width,height:800});await page.goto(base+'/2026-11-19-decipherment-methods-and-agents/');
+  assert.equal(await page.locator('.toc').isVisible(),width>=760);
+  if(width<760)assert(await page.locator('.toc-m').evaluate(e=>e.previousElementSibling?.matches('.facts')));
+  const table=page.locator('#table-2'),input=table.getByRole('searchbox',{name:'Filter rows'});
+  await table.locator('.table-sort').first().focus();await page.keyboard.press('Enter');assert.equal(await table.locator('th').first().getAttribute('aria-sort'),'ascending');
+  await input.focus();await page.keyboard.type('Young; Champollion');assert.equal(await table.locator('tbody tr:visible').count(),1);assert(await table.locator('mark').count());assert((await table.locator('.table-count').innerText()).includes('1 of 20'));
+  await input.fill('not-a-real-script');assert(await table.getByText('No rows match.',{exact:false}).isVisible());await table.getByRole('button',{name:'Clear',exact:true}).focus();await page.keyboard.press('Enter');assert.equal(await table.locator('tbody tr:visible').count(),20);
+  await table.getByRole('button',{name:'Source order',exact:true}).focus();await page.keyboard.press('Enter');assert((await table.locator('tbody tr').first().innerText()).includes('Egyptian'));
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+ }
+ // Exercise column selection with a real eligible five-column table when present.
+ let exercised=false;
+ for(const x of getEntries()){
+  await page.goto(`${base}/${x.id}/`);const buttons=page.getByRole('button',{name:'Columns',exact:true});
+  if(!await buttons.count())continue;await buttons.first().focus();await page.keyboard.press('Enter');const chooser=page.locator('.table-columns:popover-open');assert(await chooser.isVisible());const box=chooser.locator('input:not(:disabled)').first();await box.focus();await page.keyboard.press('Space');assert.equal(await box.isChecked(),false);await page.keyboard.press('Space');assert(await box.isChecked());await page.keyboard.press('Escape');exercised=true;break;
+ }
+ assert(exercised,'a real column chooser must be covered');
+ await ctx.close();console.log('PASS Compact table keyboard sort/filter/reset/columns/full-view, 950px sidebar, home density, all no-JS article/figures widths');
+}
