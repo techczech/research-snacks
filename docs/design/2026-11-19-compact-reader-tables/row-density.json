@@ -1,0 +1,620 @@
+{
+  "counts": {
+    "tables": 255,
+    "rows": 1782
+  },
+  "mismatches": [
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 5,
+      "row": 1,
+      "label": "All selected departures and the Libya proxy",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 5,
+      "row": 2,
+      "label": "Exclude France, Russia, Romania, Libya and Yemen for armed revolt, mutiny or war",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 5,
+      "row": 3,
+      "label": "Also exclude Philippines’ military split and Sudan’s coup",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 1,
+      "label": "Cataphoric",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 2,
+      "label": "Exophoric",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 4,
+      "label": "Exegetic",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 5,
+      "label": "Conventionality",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 6,
+      "label": "Explanative",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 7,
+      "label": "Prevaricative",
+      "before": 54.390625,
+      "after": 74.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 11,
+      "row": 9,
+      "label": "12:47",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 11,
+      "row": 10,
+      "label": "13:05",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 12,
+      "row": 5,
+      "label": "Requested gemini-4-neon; returned Gemini 4 Neon (High)",
+      "before": 54.390625,
+      "after": 74.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 2,
+      "label": "Egyptian Demotic",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 3,
+      "label": "Old Persian cuneiform",
+      "before": 76.0859375,
+      "after": 97.375
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 5,
+      "label": "Sumerian cuneiform",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 6,
+      "label": "Elamite cuneiform",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 8,
+      "label": "Luwian hieroglyphs",
+      "before": 97.78125,
+      "after": 118.96875
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 9,
+      "label": "Ugaritic alphabetic cuneiform",
+      "before": 76.0859375,
+      "after": 97.375
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 16,
+      "label": "Kharosthi",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 18,
+      "label": "Carian",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 3,
+      "label": "Iberian script",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 4,
+      "label": "Oracle-bone script",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 5,
+      "label": "Tocharian",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 7,
+      "label": "Urartian",
+      "before": 54.390625,
+      "after": 74.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 7,
+      "row": 2,
+      "label": "Pure phonography",
+      "before": 54.390625,
+      "after": 97.375
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 7,
+      "row": 3,
+      "label": "Descent from proto-Elamite",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 7,
+      "row": 4,
+      "label": "Provenance and authenticity",
+      "before": 76.0859375,
+      "after": 96.375
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 1,
+      "label": "UK railways",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 3,
+      "label": "US railways",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 7,
+      "label": "US investor-owned nuclear",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 9,
+      "row": 3,
+      "label": "13:24–13:31",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 9,
+      "row": 5,
+      "label": "13:41:38",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 11,
+      "row": 1,
+      "label": "UK railway mania",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 11,
+      "row": 2,
+      "label": "US railways",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 11,
+      "row": 3,
+      "label": "US telecom",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 1,
+      "label": "08:51:55",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 2,
+      "label": "08:53–09:10",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 3,
+      "label": "09:10–09:19:33",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 4,
+      "label": "09:19:33",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 5,
+      "label": "19 November",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 6,
+      "row": 1,
+      "label": "Claude Opus 5.5",
+      "before": 54.390625,
+      "after": 74.78125
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 5,
+      "row": 1,
+      "label": "Claude Opus 5.5",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 5,
+      "row": 3,
+      "label": "Claude Haiku 5.5",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 1440,
+      "table": 5,
+      "row": 1,
+      "label": "All selected departures and the Libya proxy",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 1440,
+      "table": 5,
+      "row": 2,
+      "label": "Exclude France, Russia, Romania, Libya and Yemen for armed revolt, mutiny or war",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 1440,
+      "table": 5,
+      "row": 3,
+      "label": "Also exclude Philippines’ military split and Sudan’s coup",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 6,
+      "row": 1,
+      "label": "Cataphoric",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 6,
+      "row": 2,
+      "label": "Exophoric",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 6,
+      "row": 4,
+      "label": "Exegetic",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 6,
+      "row": 5,
+      "label": "Conventionality",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 6,
+      "row": 7,
+      "label": "Prevaricative",
+      "before": 54.390625,
+      "after": 74.78125
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 11,
+      "row": 10,
+      "label": "13:05",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 4,
+      "row": 4,
+      "label": "Oracle-bone script",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 4,
+      "row": 5,
+      "label": "Tocharian",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 7,
+      "row": 2,
+      "label": "Pure phonography",
+      "before": 76.0859375,
+      "after": 97.375
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 7,
+      "row": 3,
+      "label": "Descent from proto-Elamite",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 7,
+      "row": 4,
+      "label": "Provenance and authenticity",
+      "before": 76.0859375,
+      "after": 96.375
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 8,
+      "row": 1,
+      "label": "UK railways",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 8,
+      "row": 3,
+      "label": "US railways",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 8,
+      "row": 7,
+      "label": "US investor-owned nuclear",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 9,
+      "row": 3,
+      "label": "13:24–13:31",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 12,
+      "row": 1,
+      "label": "08:51:55",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 12,
+      "row": 2,
+      "label": "08:53–09:10",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 12,
+      "row": 3,
+      "label": "09:10–09:19:33",
+      "before": 32.6953125,
+      "after": 54.1875
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 12,
+      "row": 5,
+      "label": "19 November",
+      "before": 32.6953125,
+      "after": 53.1875
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 1440,
+      "table": 6,
+      "row": 1,
+      "label": "Claude Opus 5.5",
+      "before": 54.390625,
+      "after": 74.78125
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 5,
+      "row": 1,
+      "label": "Claude Opus 5.5",
+      "before": 54.390625,
+      "after": 75.78125
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 6,
+      "row": 2,
+      "label": "Capital including construction in progress",
+      "before": 32.6953125,
+      "after": 54.1875
+    }
+  ]
+}
