@@ -156,8 +156,7 @@
   "data": {
     "url": "charts/1-spending-gdp.csv",
     "format": {
-      "type": "csv",
-      "parse": "auto"
+      "type": "csv"
     }
   }
 }

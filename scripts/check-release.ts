@@ -4,6 +4,7 @@ import { join, extname } from 'node:path';
 import { homedir } from 'node:os';
 import assert from 'node:assert/strict';
 import { getEntries, ROOT } from '../src/lib/content';
+import { inspectEntryCharts } from './check-charts';
 const dir=join(ROOT,'.check/release');mkdirSync(dir,{recursive:true});
 const servers:any[]=[];
 function serve(root:string){const s=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(req){let p=decodeURIComponent(new URL(req.url).pathname);if(p.endsWith('/'))p+='index.html';const f=Bun.file(join(root,p));return await f.exists()?new Response(f):new Response('Not found',{status:404});}});servers.push(s);return `http://127.0.0.1:${s.port}`;}
@@ -16,6 +17,10 @@ const passed=(name:string,detail:any=true)=>{records.checks.push({name,passed:tr
 const paths=['/','/about/',...getEntries().map(x=>`/${x.id}/`)];
 const label=(path:string)=>path==='/'?'home':path.split('/').filter(Boolean)[0];
 try {
+  records.charts = await inspectEntryCharts(browser,current,getEntries().map(entry=>`/${entry.id}/`));
+  const chartFailures = records.charts.filter((result:any)=>result.errors.length);
+  assert.deepEqual(chartFailures,[],`Vega-Lite chart failures: ${JSON.stringify(chartFailures,null,2)}`);
+  passed('Every entry at desktop/phone widths: Vega-Lite renders without errors, draws data marks and has no undefined labels',records.charts);
   // Capture all six original routes at desktop and phone widths, with JS off so the same PNGs are compared.
   const nojs=await browser.newContext({javaScriptEnabled:false,colorScheme:'light'});
   const p=await nojs.newPage();
@@ -54,11 +59,6 @@ try {
   await page.locator('.filters [name=cat]').selectOption('linguistics');assert.equal(await page.locator('.card:visible').count(),1);assert(new URL(page.url()).searchParams.get('cat')==='linguistics');await page.goBack();assert.equal(await page.locator('.card:visible').count(),getEntries().length);passed('Home filters: query/category URL state, count, no results, clear, Back');
   assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'auto');await page.locator('[data-open-keys]').click();assert.equal(await page.locator('#keys-dlg').evaluate(d=>getComputedStyle(d).animationName),'none');await page.keyboard.press('Escape');
   await page.locator('[data-open-keys]').click();assert.equal(await page.locator('#keys-dlg').evaluate(el=>getComputedStyle(el).animationName),'none');await page.keyboard.press('Escape');passed('Reduced motion: instant scrolling and no dialog animation');
-  for(const entry of getEntries()){
-    await page.goto(current+'/'+entry.id+'/');const n=await page.locator('figure.ichart').count();
-    if(n){await page.waitForFunction(n=>document.querySelectorAll('figure.ichart.live').length===n,n,{timeout:30000});assert.equal(await page.locator('figure.ichart .vega-embed svg.marks').count(),n);assert.equal(await page.locator('figure.ichart .vega-actions').count(),n);}
-  }
-  passed('Every entry: Vega-Lite SVG enhancement and export actions render');
   await page.goto(current+'/2026-11-17-can-a-cake-be-sickly/');
   const kwic=page.locator('#sickly-kwic');assert.equal(await kwic.locator('tbody tr').count(),39);
   await kwic.locator('input').fill('chocolate');let count=await kwic.locator('tbody tr:visible').count();assert(count>0&&count<39);

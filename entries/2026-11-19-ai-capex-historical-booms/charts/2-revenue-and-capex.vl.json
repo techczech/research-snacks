@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container",
   "config": {
     "font": "Arial, sans-serif",
     "view": {
@@ -52,7 +51,7 @@
     }
   },
   "spec": {
-    "width": "container",
+    "width": 560,
     "height": 170,
     "mark": {
       "type": "line",
@@ -152,8 +151,7 @@
   "data": {
     "url": "charts/2-revenue-and-capex.csv",
     "format": {
-      "type": "csv",
-      "parse": "auto"
+      "type": "csv"
     }
   }
 }
