@@ -85,6 +85,7 @@ Dates mark selected stages, including language recoveries within shared scripts.
 | Usable known linguistic comparator | 18 | 0 | 2 | 0 |
 | Broad script type before mapping | 7 | 11 | 2 | 0 |
 | Proper names as entry point | 14 | 2 | 1 | 3 |
+
 The parallel codes require readable evidence at the selected productive stage: unread trilingual versions and conjectured toponyms are no; restricted alphabet keys, names and contextual parallels are partial. Later confirming bilinguals are not backdated. The prior-identity column is stricter than the eventual-comparator column: descendant/continuity clues are partial; an identity recovered during the work is no. The [method](data/METHOD.md) states the rule and stage choices; every headline cell has an individual rationale in the [evidence CSV](data/decipherment-cell-evidence.csv).
 
 ![Counts of evidence codes across twenty selected historical recovery stages](charts/2-shared-preconditions.png)
@@ -97,6 +98,7 @@ The parallel codes require readable evidence at the selected productive stage: u
 | Every target language was independently known before recovery | 15 | Old Persian cuneiform; Akkadian / Babylonian / Assyrian; Sumerian cuneiform; Elamite cuneiform; Hittite language in cuneiform; Luwian hieroglyphs; Ugaritic alphabetic cuneiform; Linear B / Mycenaean Greek; Cypriot syllabary (Greek texts); Early Brahmi; Kharosthi; Old Turkic runiform; Carian; Old South Arabian monumental script; Tangut |
 | Every success had a known linguistic relative/comparator | 2 | Sumerian cuneiform; Elamite cuneiform |
 | No success lacked both a parallel and a known linguistic comparator | 0 | None in this selected sample; this is not proof of a universal rule. |
+
 
 Old Persian, Linear B and Ugaritic lack readable parallel keys at their coded breakthroughs. Sumerian and cuneiform Elamite lack demonstrated known relatives but have bilingual evidence. Historical stages and related recoveries are not independent trials, and the categories do not prove that a future script cannot be recovered with different evidence.
 
@@ -172,6 +174,7 @@ These are my agent’s judgements, not a specialist consensus or probabilities o
 | 17. Olmec / Cascajal block [source](https://www.mesoweb.org/reports/Cascajal.pdf) | 0 | 1 | 0 | 1 | 1 | 0 | 3 |
 | 18. Phaistos disc [source](https://mnamon.sns.it/index.php?page=Scrittura&id=22&lang=en) | 0 | 1 | 0 | 0 | 1 | 0 | 2 |
 
+
 ### Readable, with remaining language or character gaps
 
 These tasks extend existing readings. Jurchen’s glossary tradition, Etruscan/Meroitic language gaps, mostly readable Iberian scripts and Chinese character gaps are different from an unknown-script starting point. Tangut’s inclusion among historical recoveries also allows remaining gaps.
@@ -184,6 +187,7 @@ These tasks extend existing readings. Jurchen’s glossary tradition, Etruscan/M
 | 4. Iberian language [source](https://aclanthology.org/2021.tacl-1.5/) | 2 | 2 | 0 | 2 | 3 | 2 | 11 |
 | 5. Meroitic language [source](https://journal.mu.edu.et/pdfs/ityopis/v1/ITYOPIS-I-Rilly.pdf) | 2 | 1 | 2 | 2 | 2 | 2 | 11 |
 
+
 ### What the first five could deliver
 
 | Case | What the loop could add | What remains missing |
@@ -194,6 +198,7 @@ These tasks extend existing readings. Jurchen’s glossary tradition, Etruscan/M
 | Proto-Sinaitic gaps | Compare acrophonic mappings; test direction, word boundaries and names against dated archaeological context | Undamaged original surfaces or a uniquely recoverable reading from ambiguous scratches [source](https://mnamon.sns.it/index.php?page=Scrittura&id=25&lang=en) |
 | Ancient Zapotec writing | Align genealogies, calendars and place signs; compare allographs; test constrained phonetic hypotheses with Zapotec specialists | A full ancient lexicon or guaranteed modern-language match; non-phonetic encoding may be extensive [source](https://research.famsi.org/zapotecwriting/index.html) |
 
+
 | Sensitivity: double linguistic weight | Base rank | Reweighted rank |
 | --- | --- | --- |
 | Proto-Elamite | 1 | 4 |
@@ -201,6 +206,7 @@ These tasks extend existing readings. Jurchen’s glossary tradition, Etruscan/M
 | Linear A | 3 | 7 |
 | Proto-Sinaitic gaps | 4 | 2 |
 | Ancient Zapotec writing | 5 | 3 |
+
 
 Proto-Elamite’s arithmetic earns anchors once; its independent-check score concerns withheld documents, not another arithmetic reward. A digital-access score of 1 means digitisation/rights preparation comes before a corpus-wide loop. Stronger linguistic weighting changes the order, as the table shows. New bilinguals, texts, licences or corrected signs could change it again. Vinča is probably non-writing and remains unranked.
 
@@ -253,6 +259,7 @@ That procedure can also test published claimed decipherments: implement their ru
 | CuneiML: A Cuneiform Dataset for Machine Learning (2023) [source](https://github.com/taineleau/CuneiML/) | Danlu Chen et al.; Journal of Open Humanities Data 9 (2023) | Cuneiform data resource and classification: Packages material for machine-learning tasks; documents rights and splits | Source images and current dehydrated release have separate access requirements; not a decipherment result. |
 | Entropy, the Indus Script, and Language: A Reply to R. Sproat (2010) [source](https://aclanthology.org/J10-4016/) | Rajesh P. N. Rao et al.; Computational Linguistics 36(4), 795–805 | Statistical-method reply: Argues entropy contributes evidence with other properties; does not alone prove language | A disputed inferential argument, not a phonetic decipherment or identification of the language. |
 | Decoding Anagrammed Texts Written in an Unknown Language and Script (2016) [source](https://aclanthology.org/Q16-1006/) | Bradley Hauer & Grzegorz Kondrak; TACL 4, 75–86 | Cipher language identification and anagram decoding: Reports successful controlled cipher experiments and a Hebrew suggestion for Voynich | Authors explicitly allow the Voynich result to be an artefact of anagramming and language models; not a validated Voynich decipherment. |
+
 
 The 2024–2026 search now includes oracle-bone character proposals and LMM evaluation, Cypro-Minoan sign classification, Oxford’s LingOly reasoning puzzles and the Bodleian scroll-title recovery. They test different components: reading, sign organisation and clue-supplied induction do not establish an unknown-language decipherment. DescryptTool supplies a relevant agent architecture for known-language historical ciphers. Recent unreviewed repositories/deposits remain claims. This bounded search found no specialist-validated complete ancient unknown-language decipherment by an autonomous LLM agent.
 
