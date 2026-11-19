@@ -25,8 +25,10 @@ test('frontmatter validation and recursive privacy checks fail before output',()
  const original=readFileSync(join(entry._folder,'index.md'),'utf8');
  try{
   writeFileSync(join(dir,'index.md'),original);expect(parseEntry(dir).id).toBe(entry.id);
-  for(const [before,after] of [[`id: ${entry.id}`,'id: different'],['title:','missing_title:'],[`date: ${entry.date}`,'date: 2026-02-30'],['tools:','wrong_tools:'],['claim_source:','missing_claim_source:']]){
-   writeFileSync(join(dir,'index.md'),original.replace(before,after));expect(()=>parseEntry(dir)).toThrow();
+  const mutations: [string | RegExp,string][] = [[`id: ${entry.id}`,'id: different'],['title:','missing_title:'],[/^date:.*$/m,'date: 2026-02-30'],['tools:','wrong_tools:'],['claim_source:','missing_claim_source:']];
+  for(const [before,after] of mutations){
+   const changed=original.replace(before,after);expect(changed).not.toBe(original);
+   writeFileSync(join(dir,'index.md'),changed);expect(()=>parseEntry(dir)).toThrow();
   }
   writeFileSync(join(dir,'index.md'),original);mkdirSync(join(dir,'data'));writeFileSync(join(dir,'data/private.csv'),'value\nprivate@example.org');expect(()=>parseEntry(dir)).toThrow('email address');
  }finally{rmSync(temp,{recursive:true});}
