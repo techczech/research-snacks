@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelColor": "#26333d",
+      "titleColor": "#26333d",
+      "gridColor": "#e2e1dc"
+    },
+    "view": {
+      "stroke": null
+    },
+    "legend": {
+      "orient": "bottom",
+      "title": null
+    }
+  },
+  "data": {
+    "url": "charts/3-function-comparison.csv"
+  },
+  "title": {
+    "text": "Emphasis and nonliteral meaning are different counts",
+    "subtitle": "Points with nominal 95% Wilson intervals; 60 occurrences per corpus"
+  },
+  "facet": {
+    "row": {
+      "field": "measure",
+      "type": "nominal",
+      "title": null,
+      "header": {
+        "labelOrient": "top",
+        "labelAnchor": "start"
+      }
+    }
+  },
+  "spec": {
+    "width": 550,
+    "height": 100,
+    "encoding": {
+      "y": {
+        "field": "corpus",
+        "type": "nominal",
+        "title": null,
+        "sort": [
+          "BNC1994",
+          "Spoken BNC2014",
+          "enTenTen21"
+        ]
+      },
+      "color": {
+        "field": "measure",
+        "type": "nominal",
+        "scale": {
+          "range": [
+            "#176b99",
+            "#b76810"
+          ]
+        },
+        "legend": null
+      },
+      "tooltip": [
+        {
+          "field": "corpus"
+        },
+        {
+          "field": "measure"
+        },
+        {
+          "field": "count"
+        },
+        {
+          "field": "percent",
+          "format": ".1f"
+        },
+        {
+          "field": "lower",
+          "format": ".1f"
+        },
+        {
+          "field": "upper",
+          "format": ".1f"
+        }
+      ]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "rule",
+          "strokeWidth": 2
+        },
+        "encoding": {
+          "x": {
+            "field": "lower",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                100
+              ]
+            },
+            "title": "Percentage of all sampled occurrences"
+          },
+          "x2": {
+            "field": "upper"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 85
+        },
+        "encoding": {
+          "x": {
+            "field": "percent",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                100
+              ]
+            },
+            "title": "Percentage of all sampled occurrences"
+          }
+        }
+      }
+    ]
+  }
+}

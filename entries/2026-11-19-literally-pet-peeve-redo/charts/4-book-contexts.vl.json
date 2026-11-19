@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelColor": "#26333d",
+      "titleColor": "#26333d",
+      "gridColor": "#e2e1dc"
+    },
+    "view": {
+      "stroke": null
+    },
+    "legend": {
+      "orient": "bottom",
+      "title": null
+    }
+  },
+  "title": {
+    "text": "Phrase frequencies are not sense frequencies",
+    "subtitle": "English books, 2019 dataset; each panel uses its own vertical scale"
+  },
+  "data": {
+    "url": "charts/4-book-contexts.csv"
+  },
+  "facet": {
+    "field": "construction",
+    "type": "nominal",
+    "title": null
+  },
+  "columns": 2,
+  "spec": {
+    "width": 285,
+    "height": 150,
+    "mark": {
+      "type": "line",
+      "color": "#176b99"
+    },
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "quantitative",
+        "axis": {
+          "format": "d"
+        },
+        "title": "Year"
+      },
+      "y": {
+        "field": "per_million_bigrams",
+        "type": "quantitative",
+        "title": "Per million bigrams"
+      },
+      "tooltip": [
+        {
+          "field": "construction"
+        },
+        {
+          "field": "year",
+          "format": "d"
+        },
+        {
+          "field": "per_million_bigrams",
+          "format": ".4f"
+        }
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelColor": "#26333d",
+      "titleColor": "#26333d",
+      "gridColor": "#e2e1dc"
+    },
+    "view": {
+      "stroke": null
+    },
+    "legend": {
+      "orient": "bottom",
+      "title": null
+    }
+  },
+  "width": 650,
+  "height": 180,
+  "title": {
+    "text": "Factual readings form the largest group",
+    "subtitle": "60 random occurrences per corpus; agent annotation, with uncertain cases retained"
+  },
+  "data": {
+    "url": "charts/2-reading-distribution.csv"
+  },
+  "params": [
+    {
+      "name": "readings",
+      "select": {
+        "type": "point",
+        "fields": [
+          "reading"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "corpus",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "BNC1994",
+        "Spoken BNC2014",
+        "enTenTen21"
+      ]
+    },
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "Occurrences out of 60"
+    },
+    "color": {
+      "field": "reading",
+      "type": "nominal",
+      "sort": [
+        "factual",
+        "figurative",
+        "metalinguistic",
+        "dual",
+        "uncertain",
+        "mention_or_error"
+      ],
+      "scale": {
+        "domain": [
+          "factual",
+          "figurative",
+          "metalinguistic",
+          "dual",
+          "uncertain",
+          "mention_or_error"
+        ],
+        "range": [
+          "#176b99",
+          "#b76810",
+          "#247a60",
+          "#8a5b32",
+          "#858b91",
+          "#a4b5bf"
+        ]
+      }
+    },
+    "order": {
+      "field": "reading"
+    },
+    "opacity": {
+      "condition": {
+        "param": "readings",
+        "value": 1
+      },
+      "value": 0.15
+    },
+    "tooltip": [
+      {
+        "field": "corpus"
+      },
+      {
+        "field": "reading"
+      },
+      {
+        "field": "count"
+      },
+      {
+        "field": "percent",
+        "format": ".1f"
+      }
+    ]
+  }
+}

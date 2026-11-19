@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelColor": "#26333d",
+      "titleColor": "#26333d",
+      "gridColor": "#e2e1dc"
+    },
+    "view": {
+      "stroke": null
+    },
+    "legend": {
+      "orient": "bottom",
+      "title": null
+    }
+  },
+  "width": 650,
+  "height": 280,
+  "title": {
+    "text": "Literally became more frequent in books",
+    "subtitle": "Unsmoothed annual frequency, 2019 Google Books datasets; case-insensitive"
+  },
+  "data": {
+    "url": "charts/1-book-frequency.csv"
+  },
+  "params": [
+    {
+      "name": "series",
+      "select": {
+        "type": "point",
+        "fields": [
+          "corpus"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "strokeWidth": 1.5
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Publication year",
+      "axis": {
+        "format": "d"
+      }
+    },
+    "y": {
+      "field": "per_million_words",
+      "type": "quantitative",
+      "title": "Occurrences per million words"
+    },
+    "color": {
+      "field": "corpus",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "#176b99",
+          "#b76810",
+          "#247a60"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "series",
+        "value": 1
+      },
+      "value": 0.12
+    },
+    "tooltip": [
+      {
+        "field": "corpus"
+      },
+      {
+        "field": "year",
+        "format": "d"
+      },
+      {
+        "field": "per_million_words",
+        "format": ".2f"
+      }
+    ]
+  }
+}
