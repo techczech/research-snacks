@@ -285,6 +285,13 @@ references:
     pages: 214–236
     doi: 10.1111/j.1468-0289.2010.00541.x
     url: https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0289.2010.00541.x
+  - type: report
+    authors: [U.S. Bureau of the Census]
+    corporate: true
+    title: Statistical Abstract of the United States, 1937
+    year: 1938
+    url: https://www2.census.gov/library/publications/1938/compendia/statab/59ed/1937-15.pdf
+    note: "Table 434, Receiverships of Railways."
 ---
 
 ## The claim
@@ -305,7 +312,7 @@ The revenue estimate comes from [Exponential View’s 2 November brief](https://
 
 ### The twentieth-century comparison is close
 
-**US railway spending reached about 2.2% of GDP in 1910, close to the article's 2.3%.** It is just below that broad company-spending proxy, so it does not establish an earlier expenditure share above it. It does exceed a scenario allocating 70% of today's proxy to the US. “No precedent” is too categorical for such a close comparison; a strict claim that today's 2.3% exceeds this particular case holds. A complete twentieth-century search remains unfinished.
+**US railway spending reached 2.19% of GDP in 1910: a close twentieth-century precedent.** The article's 2.3% exceeds it; a scenario allocating 70% of today's proxy to the US does not. “No precedent” is too categorical for this close comparison. A complete century-wide search remains unfinished.
 
 The broader comparison is clearer. Nineteenth-century railway manias absorbed much larger shares of their economies, both annually and over the boom.
 
@@ -329,7 +336,7 @@ Cash purchases of property and equipment in the five firms' [filings and earning
 | Latest-quarter cash purchases at an annual pace | 2.79% | A spending pace, not a full-year forecast |
 | Exponential View's estimated AI cloud spending, Q3 pace | 2.13% | Different estimated company group; still not US-only |
 
-The useful scenario range is therefore **about 1.6–2.8%, alongside the article's 2.3%**. It is not a confidence interval for domestic AI investment. The article's [US share of installed compute](https://epoch.ai/data/ai-chip-imports) does not measure the domestic share of this year's spending, or how much of each firm's spending is for AI. Other investors are missing too.
+The scenario range is **about 1.6–2.8%, alongside the article's 2.3%**. It does not bound domestic AI investment. The article's [US share of installed compute](https://epoch.ai/data/ai-chip-imports) identifies neither this year's domestic spending nor its AI fraction; other investors are missing too.
 
 ### Annual spending against GDP
 
@@ -352,13 +359,13 @@ Ulmer's railway table gives **$740m in 1910** against [MeasuringWorth GDP of $33
 | [Federal interstate programme, FY1956–1976](https://www.fhwa.dot.gov/ohim/summary95/fa203.pdf) | FY1964 | 0.44% |
 | [Manhattan Project, 1942–1946](https://www.energy.gov/sites/default/files/2013/08/f2/HewlettandAndersonNewWorldNoBookmarks.pdf) | 1944 | 0.42% |
 
-These programmes compare resource commitments. They were not commercial businesses expected to pay investors from sales.
+The public programmes compare resource commitments; commercial-return ratios do not apply.
 
 ![Spending shares, with a close twentieth-century railway comparison and larger nineteenth-century booms.](charts/1-spending-gdp.png)
 
 ### Spending over the boom
 
-Adding the spending over each window gives another sense of scale. Each sum is divided by **one reference year's GDP**, named in the table. This is neither the share of GDP over the whole period nor an inflation-adjusted comparison; the windows have different lengths.
+Each cumulative sum is divided by **one reference year's GDP**, named below. The windows differ in length; the comparison is nominal, not inflation-adjusted.
 
 | Boom window | Cumulative spending | Reference GDP | Sum / one year's GDP |
 |---|---:|---|---:|
@@ -383,7 +390,7 @@ The last row is global company cash spending, with Oracle's window a month early
 | All AI layers, same estimate | $345bn run rate | $563bn infrastructure in service | 61.3% |
 | AI infrastructure, including construction | $255bn run rate | $915bn deployed | 27.9% |
 
-The railway figures use [Odlyzko](https://www-users.cse.umn.edu/~odlyzko/doc/hallucinations.pdf) and [Poor's accounts reproduced in the Statistical Abstract](https://fraser.stlouisfed.org/files/docs/publications/stat_abstract/sa_1888.pdf). They are gross receipts against financed capital, not profits. The AI figures use [Exponential View's model](https://www.investmentbrief.ai/p/ai-investment-brief-monday-7). Infrastructure revenue is the closer match; including downstream sales without downstream costs flatters coverage.
+The railway figures are gross receipts against financed capital, from [Odlyzko](https://www-users.cse.umn.edu/~odlyzko/doc/hallucinations.pdf) and [Poor's accounts](https://fraser.stlouisfed.org/files/docs/publications/stat_abstract/sa_1888.pdf). [Exponential View's infrastructure revenue](https://www.investmentbrief.ai/p/ai-investment-brief-monday-7) is the closer AI match; downstream sales also bring downstream costs.
 
 Asset life matters. The brief assumes compute equipment earns for **5–6 years**. [Alphabet describes servers and networking equipment with six-year useful lives, and data centres with much longer lives](https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/). Railway civil works served for decades. Land, buildings and power connections should not be written off at the same rate as chips.
 
@@ -402,13 +409,13 @@ Exponential View charges the capital already in service for depreciation, runnin
 | Infrastructure revenue / hurdle | 1.42× |
 | All-stack revenue / hurdle | 1.92× |
 
-This reproduces the model's arithmetic, with rounding differences from its published coverage percentages. It does not audit the estimates: the capital valuation, depreciation, operating-cost boundary and company group still need checking. The source describes its return convention as 15% ROIC excluding WACC; it is not a fully reconstructed financing-cost account.
+The arithmetic agrees to rounding. Capital valuation, depreciation, operating costs and company coverage remain unaudited. The source describes its required return as 15% ROIC excluding WACC; financing costs are not fully reconstructed.
 
 The same brief estimates annual costs of **$475bn for capital committed over the next twelve months** and **$703bn over twenty-four months**, once in service. It says infrastructure revenue must grow at **22% or 36% a year**, respectively, throughout the equipment's life. Those are the source model's conditions, not forecasts established by this check.
 
 ### How the assumptions change the result
 
-Here is a deliberately hypothetical equipment cohort: $100bn installed, earning $60bn a year at full utilisation and the starting price. Cash operating margin is measured before depreciation. Coverage divides cash operating surplus by straight-line depreciation plus a 15% return on the original equipment cost. Buildings, land, taxes and financing are excluded. Each row changes one assumption.
+For a **hypothetical** $100bn equipment cohort earning $60bn at full utilisation/base price, coverage is cash operating surplus divided by straight-line depreciation plus a 15% return on original cost. Margin is before depreciation; buildings, land, tax and financing are excluded. Each row changes one assumption.
 
 | Assumption | Equipment life | Utilisation | Price vs base | Cash margin | Cost coverage |
 |---|---:|---:|---:|---:|---:|
@@ -419,7 +426,7 @@ Here is a deliberately hypothetical equipment cohort: $100bn installed, earning 
 | Lower realised price | 6 years | 100% | 0.8× | 60% | 0.91× |
 | Lower margin | 6 years | 100% | 1.0× | 40% | 0.76× |
 
-The numbers are illustrations, not estimates of today's fleet. A shorter life, idle capacity or lower prices can remove apparent coverage even while revenue remains substantial.
+Shorter life, idle capacity or lower prices can remove coverage even while revenue remains substantial.
 
 ### One company's operating result
 
@@ -429,7 +436,7 @@ The numbers are illustrations, not estimates of today's fleet. A shorter life, i
 |---|---:|---:|---:|---:|
 | Anthropic | $16.956bn | $9.863bn | −$0.567bn (−3.3%) | $2.463bn (14.5%) |
 
-The adjustment excludes $1.070bn stock compensation and $1.960bn non-cash charitable contributions. Revenue above compute expense still has to cover personnel and other operations. This is one company; it does not validate the ecosystem estimate.
+The adjustment excludes $1.070bn stock compensation and $1.960bn non-cash charitable contributions. Sales above compute cost still pay for personnel and other operations. One company does not validate the aggregate.
 
 ## Growth paths tell us more than a third-year ranking
 
@@ -444,7 +451,7 @@ The adjustment excludes $1.070bn stock compensation and $1.960bn non-cash charit
 
 ![Actual-year growth paths for railway, telecom and AI revenue and capex, with each series starting at 100.](charts/2-revenue-and-capex.png)
 
-AI is the case where reported revenue grew faster than estimated spending. That is a real difference in the optimistic argument's favour. Its chart uses October revenue run rates and Q3 capex estimates, with changing company coverage. The historical lines contain established businesses as well as new assets; telecom receipts exclude some providers included in capex. These are growth paths, not matched returns or equivalent stages of development. The logarithmic scale is common; each series starts independently at 100.
+AI revenue grew faster than estimated spending: a real difference in the optimistic argument's favour. Its October run rates and Q3 capex estimates have adjacent timing and changing coverage. Historical lines include established businesses; telecom receipts omit some providers included in capex. These paths cannot rank returns or equal stages of development. Each series starts at 100 on a common logarithmic scale.
 
 ### Telecom growth moved between businesses
 
@@ -465,7 +472,7 @@ Toll is broader than a pure long-distance fibre cohort. Still, growing wireless 
 | Precedent | Investor outcome |
 |---|---|
 | UK railway mania | [Railway share prices collapsed in 1847–1850](https://www-users.cse.umn.edu/~odlyzko/doc/hallucinations.pdf), while traffic receipts continued to grow. |
-| US railways | [Receiverships and reorganisations spread in 1893–1894](https://fraser.stlouisfed.org/title/commercial-financial-chronicle-1339/financial-review-583855/fulltext). That is a later financial crisis, not a measured return for the earlier spending cohort. |
+| US railways | Receiverships spread in [1893](https://fraser.stlouisfed.org/title/commercial-financial-chronicle-1339/financial-review-583855/fulltext) and [1894](https://www2.census.gov/library/publications/1938/compendia/statab/59ed/1937-15.pdf). This later crisis does not measure returns for the earlier spending cohort. |
 | US telecom | [Bankruptcies in 2001–2002 accompanied the investment collapse](https://www.richmondfed.org/-/media/RichmondFedOrg/publications/research/economic_quarterly/2003/fall/pdf/wolman.pdf), including Global Crossing and WorldCom. |
 
 It does not work the other way either. [Odlyzko finds that the earlier British railway mania of the 1830s rewarded original investors](https://www-users.cse.umn.edu/~odlyzko/doc/mania01.pdf). Infrastructure booms do not all end the same way.
@@ -474,15 +481,15 @@ It does not work the other way either. [Odlyzko finds that the earlier British r
 
 ### Missing figures are not zero
 
-The canal sources named by the reviews — Ginarlis and Pollard's investment reconstruction and [Arnold and McCartney's returns study](https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0289.2010.00541.x) — did not yield a national annual spending series in this revision. Dividend rates are not investment returns.
+Ginarlis and Pollard's canal investment reconstruction and [Arnold and McCartney's returns study](https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0289.2010.00541.x) yielded no national annual spending series here. Dividends are not investment returns.
 
-For US railways in the 1850s, Fishlow's reconstruction and [Historical Statistics table Df891–900](https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdDf891-900.html) remain leads; the accessible table showed headings, not the observations needed. [Wicker's measurement objections](https://www.nber.org/system/files/chapters/c2488/c2488.pdf) still apply.
+Fishlow's reconstruction and [Historical Statistics Df891–900](https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdDf891-900.html) remain leads for 1850s US railways; the accessible table exposed headings only. [Wicker's objections](https://www.nber.org/system/files/chapters/c2488/c2488.pdf) still apply.
 
 For nuclear power, the reviews identify EIA's *Nuclear Power Plant Construction Activity 1986* and *An Analysis of Nuclear Power Plant Construction Costs*. The [construction report download](https://www.osti.gov/servlets/purl/6259203) failed. No annual national spending-and-revenue series is inferred from plant costs or general retail electricity prices.
 
 ### What these comparisons cannot settle
 
-The electricity search covers private utilities through 1950, not the whole century or public power. A valid [BEA detailed investment workbook](https://apps.bea.gov/national/FA2004/Details/Index.htm) was downloaded after the earlier supposed spreadsheet proved to be HTML; it has not yet supplied a consistent full-century infrastructure comparison. All-government highways and wartime industrial facilities remain additional candidates. The article's electricity bar and its Apollo bar are not fully reconstructed.
+Electricity covers private utilities through 1950. A valid [BEA investment workbook](https://apps.bea.gov/national/FA2004/Details/Index.htm) replaced the earlier HTML response, but a full-century comparison including public power remains unfinished. All-government highways and wartime facilities are further candidates. The article's electricity and Apollo bars are not fully reconstructed.
 
 Historical capital accounts have different coverage. Peak shares depend on the window, GDP geography and price basis. Global companies' purchases include imports, land and non-AI assets; they cannot be equated with domestic AI fixed investment. The allocation scenarios do not bound the whole AI sector.
 
@@ -515,7 +522,7 @@ All amounts are cash purchases of property and equipment, in US$bn. New finance-
 | [Oracle](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx) | 63.627 | 28.499 | December–August; June–August |
 | Total | 560.350 | 230.467 | Oracle remains one month early |
 
-The [BEA/FRED current-dollar GDP vintage of 29 October 2026](https://fred.stlouisfed.org/series/GDP) gives the following annual rates.
+[BEA/FRED GDP, 29 October 2026 vintage](https://fred.stlouisfed.org/series/GDP), gives these annual rates.
 
 | Calendar quarter | GDP, US$bn at annual rate |
 |---|---:|
@@ -523,7 +530,7 @@ The [BEA/FRED current-dollar GDP vintage of 29 October 2026](https://fred.stloui
 | Q2 2026 | 32,563.030 |
 | Q3 2026 | 33,010.036 |
 
-Nine-month GDP is their sum divided by four: $24,369.835bn. The share is 560.350 / 24,369.835 × 100. The Q3 pace is 230.467 × 4 / 33,010.036 × 100. For Oracle's calendar estimate, two-thirds of December–February plus March–May and June–August, plus a September at the June–August monthly pace, gives $66.915bn. This is an assumption, not disclosed September cash spending.
+Nine-month GDP is their sum divided by four: $24,369.835bn. The share is 560.350 / 24,369.835 × 100; Q3 pace is 230.467 × 4 / 33,010.036 × 100. Oracle's calendar estimate prorates December–February and carries June–August's monthly pace into September: $66.915bn. The checking package gives the full formula.
 
 ### Data and method
 
@@ -546,4 +553,4 @@ Judgement steps include the boom windows, cumulative reference years, calendar a
 | Web retrieval, Python, Poppler, Vega-Lite and vl-convert | Source extraction, arithmetic and original charts | — | — | — |
 | Astro, headless Chromium and Cloudflare Pages | Build, page checks and publication | — | — | — |
 
-The recorded token counts cover the original research-and-draft session up to its snapshot. Tokens read include cached history and loaded instructions; cached tokens are counted once. Review, revision and release token counts were not available for this table; a dash means unrecorded, not zero.
+Counts cover the original research/draft snapshot, including cached history and instructions. Review, revision and release counts were unavailable; a dash means unrecorded, not zero.
