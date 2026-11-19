@@ -8,7 +8,7 @@ claim_source: https://x.com/davidad
 verdict: "2035 is plausible as an aggressive scenario for delegated capital allocation. Historical transitions do not establish a global wealth crossover or support almost-sure confidence."
 time_taken: "14.9 minutes from start to the first complete draft and usage snapshot; publication checks followed"
 human_time: "A few minutes to specify the question and supply the earlier work (estimate); the earlier exploration is additional, unmeasured time."
-tools: ["Codex (gpt-6.1-sol)", Web search, Python, Poppler, Vega-Lite, vl-convert, Cloudflare Pages]
+tools: ["Codex (gpt-6.1-sol)", Web search, Python, Poppler, Vega-Lite, vl-convert]
 data_sources: ["US Census of Manufactures 1929", "AT&T Annual Report 1952", "ITU ICT SDG indicators", "BIS Markets Committee and Pix studies", "Federal Reserve Payments Study", "ICI 2025 Investment Company Fact Book"]
 summary: "Machines have taken over specific functions within months, while changes to installed systems have taken decades. That makes 2035 conceivable for delegated financial decisions. It does not show that AI will control a net wealth stock larger than today's human-controlled stock."
 references:
@@ -201,4 +201,4 @@ Usage is recorded from the current Codex transcript through 08:36:53 GMT on 17 N
 |---|---|---|---|---|
 | gpt-6.1-sol | Source checking, analysis, drafting and publication | 30 | 4,016,524 | 21,530 |
 
-Other tools: web search and retrieval, Python, Poppler, Vega-Lite, vl-convert, Git and Cloudflare Pages. Human time is an estimate; the time spent on the earlier exploration is not included in this run's duration.
+Other tools: web search and retrieval, Python, Poppler, Vega-Lite and vl-convert. Human time is an estimate; the time spent on the earlier exploration is not included in this run's duration.

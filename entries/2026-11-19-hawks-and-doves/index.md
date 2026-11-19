@@ -24,10 +24,7 @@
     "Hansard API",
     "govinfo API",
     "Google Books Ngram",
-    "Vega-Lite",
-    "Astro",
-    "bun",
-    "headless Chromium"
+    "Vega-Lite"
   ],
   "data_sources": [
     "Hansard spoken contributions",
@@ -353,4 +350,4 @@ Short Hansard paraphrases and references are attributed under the [Open Parliame
 
 The count uses distinct cumulative usage events in the Codex transcript. The site's supplied usage script handles Claude transcripts, so a Codex adapter exported the [usage snapshot](data/usage-snapshot.json).
 
-Tokens read include cached history, counted within input rather than added twice. Tokens written include reasoning. The usage snapshot covers this research and drafting session up to its stated timestamp; later checks and publication are excluded. Other tools were Python, Sketch Engine, public APIs, web search, Vega-Lite, Astro, bun, headless Chromium, Git and Cloudflare Pages.
+Tokens read include cached history, counted within input rather than added twice. Tokens written include reasoning. The usage snapshot covers this research and drafting session up to its stated timestamp; later checks and publication are excluded. Other tools were Python, Sketch Engine, public APIs, web search and Vega-Lite.

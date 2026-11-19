@@ -20,7 +20,8 @@ kbd{font:inherit;font-size:.85em;border:1px solid var(--mut);border-radius:.2rem
 /* Without enhancement every subsection remains visible and findable. */
 html:not(.js) .toc li.h2>ol{display:block}.toc-m li.h2>ol{display:block}
 .entry{overflow-wrap:anywhere}.entry img{height:auto}.entry table{max-width:100%}
-@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+/* Long-page contents links and in-page anchors must jump immediately. */
+html{scroll-behavior:auto}
 @media(max-width:40rem){.dlg{--kit-dlg-gutter:.75rem;--kit-dlg-top:1rem;--kit-dlg-max-h:calc(100dvh - 2rem)}.house-controls{gap:.7rem}.key-list div{flex-wrap:wrap;gap:.4rem}.entry .facts{grid-template-columns:1fr}}
 @media(forced-colors:active){.card,.keys-switch,.theme-switch [aria-pressed=true],.search-results [aria-selected=true],.no-results{border:1px solid CanvasText}.theme-switch [aria-pressed=true],.search-results [aria-selected=true]{outline:2px solid Highlight}a{color:LinkText}.toc a[aria-current=location]{border-color:Highlight}}
 @media print{header.site,footer,.toc,.toc-m,.skip,dialog,.toast,.house-controls,button,.filters{display:none!important}.withtoc{display:block;padding:0}.entry{max-width:none}a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em}figure,li{break-inside:avoid}figure.ichart .fallback{display:block!important}figure.ichart .vl{display:none}}

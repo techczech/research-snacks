@@ -12,8 +12,6 @@ tools:
   - Web retrieval and archived source documents
   - Python and Poppler
   - Vega-Lite and vl-convert
-  - Astro and headless Chromium
-  - Cloudflare Pages
 data_sources:
   - Arnold and McCartney canal accounts and investment tables
   - Bank of England millennium macroeconomic data
@@ -405,6 +403,5 @@ The [checking package’s source register](https://github.com/techczech/research
 | Codex, gpt-6.1-sol | Research, arithmetic, charts, draft and initial checks | 71 | 18,861,448 | 57,619 |
 | Web retrieval, Python and Poppler | Source access and extraction | — | — | — |
 | Vega-Lite and vl-convert | Original charts and interactive specifications | — | — | — |
-| Astro, headless Chromium and Cloudflare Pages | Build, release checks and publication | — | — | — |
 
 Token counts come from the research session transcript, including cached input history and loaded instructions. The snapshot includes initial checks and excludes subsequent rebase, production release and live verification. A dash means unrecorded, not zero.

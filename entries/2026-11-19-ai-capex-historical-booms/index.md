@@ -8,7 +8,7 @@ claim_source: https://www.understandingai.org/p/19-charts-that-explain-the-state
 verdict: "A close twentieth-century precedent: US railways reached 2.19% of GDP in 1910, just below the reproduced 2.3% global-company proxy. Fast revenue growth and estimated in-service cost coverage support optimism, conditional on asset life, costs and future demand."
 time_taken: "27.6 minutes from session start to the completed research draft and usage snapshot; release checks and deployment followed"
 human_time: "About 5–10 minutes to specify the questions and supply the screenshot (estimate); no additional human research time measured."
-tools: ["Codex (gpt-6.1-sol)", Web search, Python, Poppler, Vega-Lite, vl-convert, Astro, Chromium, Cloudflare Pages]
+tools: ["Codex (gpt-6.1-sol)", Web search, Python, Poppler, Vega-Lite, vl-convert]
 data_sources: ["Understanding AI and Exponential View", "NBER historical investment estimates", "Bank of England millennium dataset", "MeasuringWorth", "BEA and OMB", "NASA budget documents via The Planetary Society", "FHWA", "FCC and USTelecom", "Anthropic IPO Fact Sheet", "EIA"]
 summary: "The five firms’ cash purchases reproduce 2.3% of US GDP to rounding, with Oracle’s reporting periods a month early; an illustrative allocation-to-pace range is 1.6–2.8%, not a measured domestic AI share. US railways reached 2.19% in 1910; nineteenth-century railway manias were larger. Exponential View’s rounded inputs give 1.42× infrastructure coverage of in-service capital costs, but the inputs and future payoff remain conditional."
 references:
@@ -567,6 +567,5 @@ Judgement steps include the boom windows, cumulative reference years, calendar a
 | Claude Fable 5.2 | Independent review supplied for this revision | — | — | — |
 | Codex, gpt-6.1-sol | Apply reviews, rebuild inputs and verify publication | — | — | — |
 | Web retrieval, Python, Poppler, Vega-Lite and vl-convert | Source extraction, arithmetic and original charts | — | — | — |
-| Astro, headless Chromium and Cloudflare Pages | Build, page checks and publication | — | — | — |
 
 Counts cover the original research/draft snapshot, including cached history and instructions. Review, revision and release counts were unavailable; a dash means unrecorded, not zero.

@@ -49,6 +49,7 @@ export function parseEntry(folder: string): Entry {
   if (!/^\d{4}-\d{2}-\d{2}-.+$/.test(String(fm.id))) errors.push(`${id}: id must look like YYYY-MM-DD-slug`);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(String(fm.date)) || !Number.isFinite(Date.parse(fm.date)) || new Date(fm.date).toISOString().slice(0,10) !== fm.date) errors.push(`${id}: date must be YYYY-MM-DD`);
   for (const k of ['tools','data_sources']) if (!Array.isArray(fm[k])) errors.push(`${id}: ${k} must be a list`);
+  if (Array.isArray(fm.tools) && fm.tools.some((tool: unknown) => /\b(?:Astro|bun|Cloudflare|Chromium|wrangler|Playwright|static[- ]site builder)\b/i.test(String(tool)))) errors.push(`${id}: tools must list research tools, not page build, rendering or publishing tools`);
   if (fm.references != null && (!Array.isArray(fm.references) || fm.references.some((r: any) => !r || Array.isArray(r) || typeof r !== 'object' || !r.title))) errors.push(`${id}: references must be a list of mappings, each with a title`);
   if (!/^https?:\/\//.test(String(fm.claim_source))) errors.push(`${id}: claim_source must be an HTTP URL`);
   for (const file of files(folder)) if (TEXT_EXT.has(extname(file).toLowerCase())) errors.push(...privacyErrors(readFileSync(file,'utf8'),`${id}/${relative(folder,file)}`));

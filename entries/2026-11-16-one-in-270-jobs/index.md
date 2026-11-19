@@ -241,4 +241,4 @@ The census data is from IPUMS USA, University of Minnesota, [www.ipums.org](http
 
 Tokens read include the conversation history the model re-reads on every call, most of it from cache; that is why the number is large compared with what was written. The counts come from the agent's session logs and cover the whole session up to this revision (about 11:05). Publishing steps after that are not counted.
 
-Other tools: the IPUMS USA API (data extracts), Python with matplotlib (analysis and charts), yt-dlp (the film's subtitles), web search, and Cloudflare Pages with wrangler (hosting).
+Other tools: the IPUMS USA API (data extracts), Python with matplotlib (analysis and charts), yt-dlp (the film's subtitles), and web search.

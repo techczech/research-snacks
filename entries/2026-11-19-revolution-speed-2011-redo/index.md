@@ -18,10 +18,6 @@ tools:
   - Poppler
   - Vega-Lite
   - vl-convert
-  - Astro
-  - bun
-  - Headless Chromium
-  - Cloudflare Pages
 data_sources:
   - NAVCO 1.3 preliminary campaign list and codebook
   - Primary and standard historical chronologies
@@ -421,4 +417,4 @@ Snapshot: **2026-11-19 11:35:40 UTC**, 16.7 minutes after session start.
 
 Tokens read include cached history already counted within the Codex input total; the cached subset is not added again. Counts cover this research session through the recorded snapshot, including its supplied context and tools. Output tokens include reasoning where the runtime reports it. The Claude transcript counter supplied by the site does not parse Codex records, so a small Codex adapter reads the session’s reported cumulative usage. Transcripts and account records are not published.
 
-Other tools were web search, public-source downloads, Python, Poppler, Vega-Lite, vl-convert, Astro, bun, headless Chromium and Cloudflare Pages. The agent performed the source checks, calculations, draft and a separate self-review; no independent reviewer was used. Human time is an estimate for specifying the task, not a measured research session.
+Other tools were web search, public-source downloads, Python, Poppler, Vega-Lite and vl-convert. The agent performed the source checks, calculations, draft and a separate self-review; no independent reviewer was used. Human time is an estimate for specifying the task, not a measured research session.

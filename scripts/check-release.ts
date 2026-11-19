@@ -40,6 +40,13 @@ try {
     }
   }
   await nojs.close();passed('JavaScript off: six routes render, all PNGs load; no page overflow on desktop/phone');
+  const jumping=await browser.newContext({reducedMotion:'no-preference'});const jump=await jumping.newPage();
+  await jump.goto(current+'/2026-11-19-decipherment-methods-and-agents/');
+  assert.equal(await jump.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'auto');
+  await jump.locator('.toc a[href="#how-this-was-made"]').click();
+  await jump.waitForFunction(()=>document.querySelector('.toc a[href="#how-this-was-made"]')?.getAttribute('aria-current')==='location');
+  assert(await jump.locator('#how-this-was-made').evaluate(el=>Math.abs(el.getBoundingClientRect().top)<250));
+  await jumping.close();passed('Long-page contents jump immediately with motion enabled; section highlighting follows the jump');
   const ctx=await browser.newContext({colorScheme:'light',reducedMotion:'reduce'});const page=await ctx.newPage();const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(current);await page.locator('.js').waitFor();
   // keyboard open/containment/Esc/focus return for both dialogs.

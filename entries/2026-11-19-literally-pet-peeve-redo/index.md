@@ -10,7 +10,7 @@ claim_source: https://metaphorhacker.net/2011/02/literally-triumph-of-pet-peeve-
 verdict: 'Right about established emphatic usage and overlapping functions; too categorical about register and grammar. The old frequency comparisons and claims about confusion remain unproved.'
 time_taken: '21.4 minutes to the research and draft snapshot on 19 November 2026; later clean-clone, release and publication checks excluded.'
 human_time: 'Not measured. Estimated at 5–10 minutes to select the post and prepare the research brief; no human annotation or review was supplied during this run.'
-tools: ['Codex (gpt-6.1-sol)', Python, 'Sketch Engine API', 'Google Books Ngram Viewer', Vega-Lite, Astro, bun]
+tools: ['Codex (gpt-6.1-sol)', Python, 'Sketch Engine API', 'Google Books Ngram Viewer', Vega-Lite]
 data_sources: ['BNC1994 (CLAWS version)', 'Spoken BNC2014', 'enTenTen21', 'Google Books 2019 datasets', 'Merriam-Webster', 'Kostadinova (2018)']
 summary: 'A new check of my 2011 literally post finds broad emphasis in 70–90% of three small random samples, but clearly figurative readings in only 1.7–10%. These are different measurements: a factually true statement can be intensified. The historical argument holds up; categorical grammar claims and Google hit-count evidence do not. Old TIME and COCA figures cannot be reproduced from the surviving post.'
 references:
@@ -260,4 +260,4 @@ Google requests used unsmoothed, case-insensitive 2019 datasets for 1800–2019.
 
 The site's Claude-transcript usage script produced no rows for this Codex transcript. A supplementary parser counted distinct cumulative Codex usage events from the measured interval above. Calls mean recorded model-completion events. Tokens read include cached history; cached input is already included, not added again. Tokens written include reasoning. Counts cover this implementation session to the snapshot, excluding later verification and deployment. The underlying transcript and account records are private.
 
-Python, Sketch Engine, Google Books Ngram Viewer and Vega-Lite supplied retrieval and analysis. Astro and bun built the page; headless Chromium checked rendering; Cloudflare Pages published it. No separate writer or independent research reviewer took part.
+Python, Sketch Engine, Google Books Ngram Viewer and Vega-Lite supplied retrieval and analysis. No separate writer or independent research reviewer took part.
