@@ -1,0 +1,811 @@
+{
+  "title": "Research Snacks: compact reading journeys",
+  "status": "Coordinator inspection first; not ready for an owner decision while height targets fail",
+  "purpose": "Check a public claim quickly, compare its evidence and follow a number to its source.",
+  "user": "Existing readers, sceptics, visual browsers and phone readers.",
+  "commitments": [
+    {
+      "id": "C1",
+      "text": "Keep the live cream publication and left sidebar at 950px."
+    },
+    {
+      "id": "C2",
+      "text": "Preserve every source table cell, link and original order."
+    },
+    {
+      "id": "C3",
+      "text": "Make comparison faster with compact reversible table views."
+    },
+    {
+      "id": "C4",
+      "text": "Do not increase page height: five desktop comparisons currently fail; owner review is held."
+    }
+  ],
+  "today": {
+    "text": "The live outline, facts, references, data, citation, RSS and Markdown work. Its home wastes vertical space and its general tables have no sort/filter/full-view tools. The first redesign was rejected for worsening navigation and density."
+  },
+  "journey": [
+    {
+      "n": 1,
+      "step": "Read the verdict",
+      "screens": [
+        "verdict"
+      ]
+    },
+    {
+      "n": 2,
+      "step": "Trace 48.4%",
+      "screens": [
+        "number"
+      ]
+    },
+    {
+      "n": 3,
+      "step": "Compare rows",
+      "screens": [
+        "compare"
+      ]
+    },
+    {
+      "n": 4,
+      "step": "Read the matching rows",
+      "screens": [
+        "filtered"
+      ]
+    },
+    {
+      "n": 5,
+      "step": "Recover from no matches",
+      "screens": [
+        "empty"
+      ]
+    },
+    {
+      "n": 6,
+      "step": "Read a wide table",
+      "screens": [
+        "full"
+      ]
+    },
+    {
+      "n": 7,
+      "step": "Choose visible columns",
+      "screens": [
+        "columns"
+      ]
+    },
+    {
+      "n": 8,
+      "step": "Browse figures and tables",
+      "screens": [
+        "figures"
+      ]
+    },
+    {
+      "n": 9,
+      "step": "Find a snack",
+      "screens": [
+        "home"
+      ]
+    },
+    {
+      "n": 10,
+      "step": "Search by topic",
+      "screens": [
+        "search"
+      ]
+    },
+    {
+      "n": 11,
+      "step": "Browse a category",
+      "screens": [
+        "category"
+      ]
+    },
+    {
+      "n": 12,
+      "step": "Jump between sections",
+      "screens": [
+        "sidebar"
+      ]
+    }
+  ],
+  "screens": [
+    {
+      "id": "verdict",
+      "name": "Read the verdict",
+      "viewer": "A reader opens a shared hawks-and-doves link.",
+      "arrives_knowing": "The title, claim and verdict are needed before the method.",
+      "expects": [
+        "Date, title and the existing Claim/Verdict facts; one 64px site header at desktop."
+      ],
+      "purpose": "Read the verdict",
+      "why_here": "A reader opens a shared hawks-and-doves link.",
+      "achieve": "The original claim and verdict are visible before the narrative.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "Date, title and the existing Claim/Verdict facts; one 64px site header at desktop."
+        },
+        {
+          "part": "next",
+          "text": "Open a table"
+        }
+      ],
+      "know": [
+        "The title, claim and verdict are needed before the method."
+      ],
+      "steps": [
+        {
+          "do": "Read the verdict before choosing a section.",
+          "goto": "number"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "Date, title and the existing Claim/Verdict facts; one 64px site header at desktop."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "The original claim and verdict are visible before the narrative."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-sidebar"
+    },
+    {
+      "id": "number",
+      "name": "Trace 48.4%",
+      "viewer": "A sceptic has reached the first information-source table.",
+      "arrives_knowing": "They need to know what the percentage counts.",
+      "expects": [
+        "Face-to-face conversation beside 48.4%; four source rows; compact Full view and CSV."
+      ],
+      "purpose": "Trace 48.4%",
+      "why_here": "A sceptic has reached the first information-source table.",
+      "achieve": "The label stays adjacent to 48.4%; the CSV contains the four original rows.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "Face-to-face conversation beside 48.4%; four source rows; compact Full view and CSV."
+        },
+        {
+          "part": "next",
+          "text": "Compare evidence"
+        }
+      ],
+      "know": [
+        "They need to know what the percentage counts."
+      ],
+      "steps": [
+        {
+          "do": "Follow the authored Tufekci and Wilson source link in the adjoining paragraph.",
+          "goto": "compare"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "Face-to-face conversation beside 48.4%; four source rows; compact Full view and CSV."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "The label stays adjacent to 48.4%; the CSV contains the four original rows."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-sources"
+    },
+    {
+      "id": "compare",
+      "name": "Compare rows",
+      "viewer": "A reader opens the 26-row corpus-description table.",
+      "arrives_knowing": "They know the records are in source order.",
+      "expects": [
+        "Case / Dated corpus description / Main limit / Sources; Filter rows and 26 of 26."
+      ],
+      "purpose": "Compare rows",
+      "why_here": "A reader opens the 26-row corpus-description table.",
+      "achieve": "aria-sort is ascending, only matching complete rows remain, and matches are highlighted.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "Case / Dated corpus description / Main limit / Sources; Filter rows and 26 of 26."
+        },
+        {
+          "part": "next",
+          "text": "Sort and filter"
+        }
+      ],
+      "know": [
+        "They know the records are in source order."
+      ],
+      "steps": [
+        {
+          "do": "Activate Case, then enter documents in Filter rows.",
+          "goto": "filtered"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "Case / Dated corpus description / Main limit / Sources; Filter rows and 26 of 26."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "aria-sort is ascending, only matching complete rows remain, and matches are highlighted."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-coding"
+    },
+    {
+      "id": "filtered",
+      "name": "Read the matching rows",
+      "viewer": "The reader has sorted Case and filtered documents.",
+      "arrives_knowing": "The visible records are a temporary projection, not a new dataset.",
+      "expects": [
+        "The row count, highlighted documents, sort arrow and Source order."
+      ],
+      "purpose": "Read the matching rows",
+      "why_here": "The reader has sorted Case and filtered documents.",
+      "achieve": "Reset restores canonical row order; clear restores all 26 rows.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "The row count, highlighted documents, sort arrow and Source order."
+        },
+        {
+          "part": "next",
+          "text": "Check the empty state"
+        }
+      ],
+      "know": [
+        "The visible records are a temporary projection, not a new dataset."
+      ],
+      "steps": [
+        {
+          "do": "Use Source order or clear the filter; open Full view when more columns are needed.",
+          "goto": "empty"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "The row count, highlighted documents, sort arrow and Source order."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "Reset restores canonical row order; clear restores all 26 rows."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-filtered"
+    },
+    {
+      "id": "empty",
+      "name": "Recover from no matches",
+      "viewer": "A search term matches no corpus records.",
+      "arrives_knowing": "The table exists but the term found no rows.",
+      "expects": [
+        "No rows match with Clear; column headers remain."
+      ],
+      "purpose": "Recover from no matches",
+      "why_here": "A search term matches no corpus records.",
+      "achieve": "The original complete table returns and focus goes to the filter.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "No rows match with Clear; column headers remain."
+        },
+        {
+          "part": "next",
+          "text": "Read the full table"
+        }
+      ],
+      "know": [
+        "The table exists but the term found no rows."
+      ],
+      "steps": [
+        {
+          "do": "Activate Clear.",
+          "goto": "full"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "No rows match with Clear; column headers remain."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "The original complete table returns and focus goes to the filter."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-empty"
+    },
+    {
+      "id": "full",
+      "name": "Read a wide table",
+      "viewer": "The reader has opened Full view.",
+      "arrives_knowing": "The ordinary evidence surface is too narrow for all columns.",
+      "expects": [
+        "A full-view popover in the same cream theme with Close full view and complete cells."
+      ],
+      "purpose": "Read a wide table",
+      "why_here": "The reader has opened Full view.",
+      "achieve": "Escape closes the view and returns focus to Full view without losing table state.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "A full-view popover in the same cream theme with Close full view and complete cells."
+        },
+        {
+          "part": "next",
+          "text": "Choose columns"
+        }
+      ],
+      "know": [
+        "The ordinary evidence surface is too narrow for all columns."
+      ],
+      "steps": [
+        {
+          "do": "Scroll inside the table, then press Escape.",
+          "goto": "columns"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "A full-view popover in the same cream theme with Close full view and complete cells."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "Escape closes the view and returns focus to Full view without losing table state."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-full"
+    },
+    {
+      "id": "columns",
+      "name": "Choose visible columns",
+      "viewer": "A comparison table has at least five columns.",
+      "arrives_knowing": "The identity column must remain available.",
+      "expects": [
+        "Visible columns checkboxes, with the first identity column fixed."
+      ],
+      "purpose": "Choose visible columns",
+      "why_here": "A comparison table has at least five columns.",
+      "achieve": "The chosen column hides/restores as a whole and focus returns to Columns.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "Visible columns checkboxes, with the first identity column fixed."
+        },
+        {
+          "part": "next",
+          "text": "Browse visual evidence"
+        }
+      ],
+      "know": [
+        "The identity column must remain available."
+      ],
+      "steps": [
+        {
+          "do": "Hide a non-key column, restore it, then press Escape.",
+          "goto": "figures"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "Visible columns checkboxes, with the first identity column fixed."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "The chosen column hides/restores as a whole and focus returns to Columns."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-columns"
+    },
+    {
+      "id": "figures",
+      "name": "Browse figures and tables",
+      "viewer": "A reader wants the visual evidence without the narrative.",
+      "arrives_knowing": "The snack has a Figures and tables link in its meta and sidebar.",
+      "expects": [
+        "The original charts and main tables, a compact index, notes, downloads and return links."
+      ],
+      "purpose": "Browse figures and tables",
+      "why_here": "A reader wants the visual evidence without the narrative.",
+      "achieve": "The return URL names the exact article visual; figures Markdown and data are reachable without JS.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "The original charts and main tables, a compact index, notes, downloads and return links."
+        },
+        {
+          "part": "next",
+          "text": "Find another topic"
+        }
+      ],
+      "know": [
+        "The snack has a Figures and tables link in its meta and sidebar."
+      ],
+      "steps": [
+        {
+          "do": "Open a table or chart and follow Back to this place in the text.",
+          "goto": "home"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "The original charts and main tables, a compact index, notes, downloads and return links."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "The return URL names the exact article visual; figures Markdown and data are reachable without JS."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-figures"
+    },
+    {
+      "id": "home",
+      "name": "Find a snack",
+      "viewer": "A topic reader opens the home page.",
+      "arrives_knowing": "They want a topic, not a long publication introduction.",
+      "expects": [
+        "One header with Search; plain title; category counts; RSS; a rule-separated feed."
+      ],
+      "purpose": "Find a snack",
+      "why_here": "A topic reader opens the home page.",
+      "achieve": "Two complete entries fit at 950×800 and three at 1440×900.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "One header with Search; plain title; category counts; RSS; a rule-separated feed."
+        },
+        {
+          "part": "next",
+          "text": "Search by topic"
+        }
+      ],
+      "know": [
+        "They want a topic, not a long publication introduction."
+      ],
+      "steps": [
+        {
+          "do": "Open Search by the button or / or Cmd/Ctrl-K.",
+          "goto": "search"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "One header with Search; plain title; category counts; RSS; a rule-separated feed."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "Two complete entries fit at 950×800 and three at 1440×900."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-home"
+    },
+    {
+      "id": "search",
+      "name": "Search by topic",
+      "viewer": "The reader has opened the existing search dialog.",
+      "arrives_knowing": "Titles, claims, verdicts, tags and body text are searchable.",
+      "expects": [
+        "A combobox with metaphor results and keyboard hints."
+      ],
+      "purpose": "Search by topic",
+      "why_here": "The reader has opened the existing search dialog.",
+      "achieve": "A selected result navigates to its canonical snack URL and keyboard focus stays inside the dialog.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "A combobox with metaphor results and keyboard hints."
+        },
+        {
+          "part": "next",
+          "text": "Browse by category"
+        }
+      ],
+      "know": [
+        "Titles, claims, verdicts, tags and body text are searchable."
+      ],
+      "steps": [
+        {
+          "do": "Type metaphor; use arrow keys and Enter to open a result; Escape returns to reading.",
+          "goto": "category"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "A combobox with metaphor results and keyboard hints."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "A selected result navigates to its canonical snack URL and keyboard focus stays inside the dialog."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-search"
+    },
+    {
+      "id": "category",
+      "name": "Browse a category",
+      "viewer": "The reader follows Linguistics 5.",
+      "arrives_knowing": "Category links open ordinary pages, including without JavaScript.",
+      "expects": [
+        "Linguistics, selected category and five complete feed entries."
+      ],
+      "purpose": "Browse a category",
+      "why_here": "The reader follows Linguistics 5.",
+      "achieve": "Five linguistics entries appear; Back returns to the previous feed.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "Linguistics, selected category and five complete feed entries."
+        },
+        {
+          "part": "next",
+          "text": "Jump within a long snack"
+        }
+      ],
+      "know": [
+        "Category links open ordinary pages, including without JavaScript."
+      ],
+      "steps": [
+        {
+          "do": "Choose a snack or return to All.",
+          "goto": "sidebar"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "Linguistics, selected category and five complete feed entries."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "Five linguistics entries appear; Back returns to the previous feed."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-category"
+    },
+    {
+      "id": "sidebar",
+      "name": "Jump between sections",
+      "viewer": "A returning reader wants the historical coding section.",
+      "arrives_knowing": "The outline is available at 950px; the phone has a Contents disclosure after facts.",
+      "expects": [
+        "The live two-level outline, current-section marker and Figures and tables link."
+      ],
+      "purpose": "Jump between sections",
+      "why_here": "A returning reader wants the historical coding section.",
+      "achieve": "The target jumps at once, its marker updates, and the phone disclosure closes after selection.",
+      "sees": [
+        {
+          "part": "header",
+          "text": "One site header; local table tools share one compact row when present."
+        },
+        {
+          "part": "content",
+          "text": "The live two-level outline, current-section marker and Figures and tables link."
+        },
+        {
+          "part": "next",
+          "text": "Return to the verdict"
+        }
+      ],
+      "know": [
+        "The outline is available at 950px; the phone has a Contents disclosure after facts."
+      ],
+      "steps": [
+        {
+          "do": "Choose Provisional historical coding, then How this was made.",
+          "goto": "verdict"
+        }
+      ],
+      "extra": [
+        {
+          "text": "The rejected coloured redesign and card grid",
+          "fate": "removed; the live publication remains the design"
+        }
+      ],
+      "states": [
+        {
+          "id": "desktop",
+          "label": "950px",
+          "text": "The live two-level outline, current-section marker and Figures and tables link."
+        },
+        {
+          "id": "phone",
+          "label": "390px phone",
+          "text": "The same real-page journey on a phone; wide tables scroll inside their own frame."
+        }
+      ],
+      "evaluate": [
+        "The target jumps at once, its marker updates, and the phone disclosure closes after selection."
+      ],
+      "replaces": "The corresponding live Research Snacks reading route.",
+      "evidence": "preview-sidebar-jump"
+    }
+  ]
+}

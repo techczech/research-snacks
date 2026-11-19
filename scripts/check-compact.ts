@@ -31,6 +31,17 @@ export async function checkCompact(browser:Browser,base:string){
   await input.fill('not-a-real-script');assert(await table.getByText('No rows match.',{exact:false}).isVisible());await table.getByRole('button',{name:'Clear',exact:true}).focus();await page.keyboard.press('Enter');assert.equal(await table.locator('tbody tr:visible').count(),20);
   await table.getByRole('button',{name:'Source order',exact:true}).focus();await page.keyboard.press('Enter');assert((await table.locator('tbody tr').first().innerText()).includes('Egyptian'));
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+  const escaped=await page.locator('#table-3 :is(th,td)').evaluateAll(cells=>cells.flatMap(cell=>{const bounds=cell.getBoundingClientRect(),style=getComputedStyle(cell),right=bounds.right-parseFloat(style.paddingRight)+1,left=bounds.left+parseFloat(style.paddingLeft)-1;const walker=document.createTreeWalker(cell,NodeFilter.SHOW_TEXT);const escaped:string[]=[];while(walker.nextNode()){if(!walker.currentNode.textContent?.trim())continue;const range=document.createRange();range.selectNodeContents(walker.currentNode);if([...range.getClientRects()].some(r=>r.width>0&&(r.right>right||r.left<left)))escaped.push(cell.textContent||'');}return escaped;}));
+  assert.deepEqual(escaped,[],`coding text escapes its cell at ${width}`);
+ }
+ for(const theme of ['light','dark']){
+  await page.emulateMedia({colorScheme:theme as 'light'|'dark'});
+  await page.goto(base+'/2026-11-19-decipherment-methods-and-agents/');
+  const contrast=await page.locator('#table-3 .count-cell').evaluateAll(cells=>{
+   const canvas=document.createElement('canvas');canvas.width=1;canvas.height=1;const c=canvas.getContext('2d')!;
+   const luminance=(color:string)=>{c.clearRect(0,0,1,1);c.fillStyle=color;c.fillRect(0,0,1,1);const rgb=[...c.getImageData(0,0,1,1).data].slice(0,3).map(v=>{const n=v/255;return n<=.04045?n/12.92:((n+.055)/1.055)**2.4;});return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};
+   return Math.min(...cells.map(cell=>{const style=getComputedStyle(cell),a=luminance(style.color),b=luminance(style.backgroundColor);return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);}));
+  });assert(contrast>=4.5,`${theme} count-cell contrast ${contrast}`);
  }
  // Exercise column selection with a real eligible five-column table when present.
  let exercised=false;

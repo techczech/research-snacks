@@ -50,7 +50,7 @@ export function readingSurfaces(html:string,entryId:string):Reading {
       if(counts)cells.slice(1).forEach(r=>r.slice(1).forEach(c=>{c.classList.add('count-cell');c.style.setProperty('--cell-tint',`${Number(plain(c))/20*22}%`);}));
       csv=values.map(r=>r.map(v=>'"'+v.replaceAll('"','""')+'"').join(',')).join('\r\n')+'\r\n';
       tableMarkdown=markdown(node);
-      const wrapper=document.createElement('figure');wrapper.className='reader-table';wrapper.dataset.rows=String(rows);
+      const wrapper=document.createElement('figure');wrapper.className='reader-table'+(counts?' count-matrix':'');wrapper.dataset.rows=String(rows);
       const caption=document.createElement('figcaption');caption.id=`${id}-caption`;caption.textContent=title;caption.className='sr-only';
       node.setAttribute('aria-labelledby',caption.id);
       const tools=document.createElement('div');tools.className='table-tools';

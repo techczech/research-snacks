@@ -53,3 +53,18 @@ figure.infographic{--mut:inherit;--primary:inherit;--card:inherit;--fg:inherit;c
 .entry .reader-table .short-col{white-space:nowrap}
 @media(max-width:759px){.entry .reader-table.wide-table tr>:first-child:not(.nowrap){white-space:normal;min-width:14ch;max-width:22ch}}
 @media(max-width:759px){header.site nav.main{flex:1;min-width:0}}
+
+/* Sticky labels must wrap inside their cells rather than draw over a numeric neighbour. */
+.entry .reader-table .short-col{max-width:none}
+.entry .reader-table.wide-table tr>:first-child:not(.nowrap){white-space:normal}
+.entry .reader-table.count-matrix tr>:first-child{min-width:26rem;max-width:none;white-space:normal}
+@media(max-width:759px){.entry .reader-table.count-matrix tr>:first-child{min-width:14ch;max-width:22ch}}
+
+.dlg .search-field{gap:.6rem}.search-field>svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:2}.dlg .search-field .search-input{flex:1;min-width:0;width:auto;margin:0}.search-results [role=option] span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.35}.search-results [role=option]{line-height:1.35}.search-results h3{margin:.5rem 0}
+
+.entry .reader-table.count-matrix tr>:first-child{min-width:0;max-width:none;white-space:nowrap}
+@media(max-width:759px){.entry .reader-table.count-matrix tr>:first-child{min-width:22ch;max-width:22ch;white-space:normal}}
+.entry .reader-table.count-matrix tr>:first-child:not(.nowrap){white-space:nowrap}
+@media(max-width:759px){.entry .reader-table.count-matrix tr>:first-child:not(.nowrap){white-space:normal}}
+.entry .reader-table.count-matrix tbody tr>td.count-cell{background:color-mix(in srgb,var(--primary) var(--cell-tint),var(--bg));color:var(--fg)}
+@media(forced-colors:active){.entry .reader-table.count-matrix tbody tr>td.count-cell{background:Canvas;color:CanvasText}}

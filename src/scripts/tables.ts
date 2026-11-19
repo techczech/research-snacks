@@ -48,10 +48,10 @@ export function initTables(root:ParentNode=document){
           return collator.compare(av,bv)*direction||rows.indexOf(a)-rows.indexOf(b);
         });}
       for(const row of ordered)table.tBodies[0].append(row);
-      headers.forEach((h,i)=>{h.setAttribute('aria-sort',i===sortColumn?(direction===1?'ascending':'descending'):'none');const arrow=h.querySelector('.sort-arrow');if(arrow)arrow.textContent=i===sortColumn?(direction===1?' ↑':' ↓'):' ↕';});
+      headers.forEach((h,i)=>{h.setAttribute('aria-sort',i===sortColumn?(direction===1?'ascending':'descending'):'none');const arrow=h.querySelector('.sort-arrow');if(arrow)arrow.textContent=i===sortColumn?(direction===1?' ↑':' ↓'):'';});
       reset.hidden=direction===0;applyFilter();
     }
-    if(regular&&rows.length>=3)headers.forEach((h,i)=>{const old=h.querySelector('button');const sourceSort=old?.getAttribute('data-sort');if(old)old.replaceWith(...old.childNodes);const b=document.createElement('button');b.type='button';b.className='table-sort';if(sourceSort!==null&&sourceSort!==undefined)b.dataset.sort=sourceSort;while(h.firstChild)b.append(h.firstChild);const arrow=document.createElement('span');arrow.className='sort-arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent=' ↕';b.append(arrow);b.title=`Sort by ${titles[i]}`;b.addEventListener('click',()=>sort(i));h.append(b);h.setAttribute('aria-sort','none');});
+    if(regular&&rows.length>=3)headers.forEach((h,i)=>{const old=h.querySelector('button');const sourceSort=old?.getAttribute('data-sort');if(old)old.replaceWith(...old.childNodes);const b=document.createElement('button');b.type='button';b.className='table-sort';if(sourceSort!==null&&sourceSort!==undefined)b.dataset.sort=sourceSort;while(h.firstChild)b.append(h.firstChild);const arrow=document.createElement('span');arrow.className='sort-arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent='';b.append(arrow);b.title=`Sort by ${titles[i]}`;b.addEventListener('click',()=>sort(i));h.append(b);h.setAttribute('aria-sort','none');});
     // Keep the identity column visible. Native popovers provide Escape and light dismissal.
     if(regular&&rows.length>=8&&headers.length>=5){
       const chooser=document.createElement('div');chooser.className='table-columns';chooser.id=`table-columns-${index}`;chooser.setAttribute('popover','auto');

@@ -26,7 +26,7 @@ async function renderSearch() {
     const index=await loadJSON<Index>('/search-index.json'); if(id!==renderId)return;
     results.replaceChildren(); let count=0;
     for(const section of index.sections) {
-      const all=index.items.filter(x=>x.s===section.slug && matchesAll(`${x.t} ${x.d} ${x.k || ''}`,ts));
+      const all=index.items.filter(x=>x.s===section.slug && matchesAll(`${x.t} ${x.d} ${x.k || ''}`,ts)).sort((a,b)=>Number(matchesAll(b.t,ts))-Number(matchesAll(a.t,ts)));
       if(!all.length)continue;
       const group=h('div',{role:'group','aria-label':`${section.name}: ${all.length} results`});
       group.append(h('h3',{},`${section.name} (${all.length})`));
