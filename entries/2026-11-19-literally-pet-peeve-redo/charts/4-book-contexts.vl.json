@@ -26,7 +26,10 @@
   "facet": {
     "field": "construction",
     "type": "nominal",
-    "title": null
+    "title": null,
+    "header": {
+      "labelExpr": "datum.label === 'literally _ADJ_' ? 'literally + adjective' : datum.label"
+    }
   },
   "columns": 2,
   "spec": {

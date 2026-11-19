@@ -83,6 +83,9 @@
           "#858b91",
           "#a4b5bf"
         ]
+      },
+      "legend": {
+        "labelExpr": "datum.label === 'mention_or_error' ? 'Mention or error' : datum.label"
       }
     },
     "order": {
