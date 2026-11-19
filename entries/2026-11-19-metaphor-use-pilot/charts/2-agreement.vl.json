@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 520,
-  "height": 230,
+  "width": 560,
+  "height": 280,
   "background": "#fbfaf7",
   "config": {
     "font": "Arial",
@@ -9,47 +9,41 @@
       "labelFontSize": 12,
       "titleFontSize": 13
     },
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12
+    },
     "view": {
       "stroke": null
     }
   },
   "title": {
-    "text": "Agreement depends on the dimension",
-    "subtitle": "Common metaphor-marked units only; exact label-set agreement"
+    "text": "Raw agreement can hide poor replication",
+    "subtitle": [
+      "n = 51 common metaphor-marked word units",
+      "Labels show raw agreement and Cohen’s κ; bars show raw agreement"
+    ]
   },
   "data": {
     "url": "charts/2-agreement.csv"
   },
-  "mark": {
-    "type": "bar",
-    "color": "#26755b"
-  },
   "encoding": {
     "y": {
-      "field": "dimension",
+      "field": "display",
       "type": "nominal",
       "sort": [
-        "cognitive",
-        "social",
-        "binding",
-        "scope"
+        "Cognitive use",
+        "Figurative appeal",
+        "Social label sets",
+        "Textual binding",
+        "Scope in excerpt"
       ],
       "title": null
     },
-    "x": {
-      "field": "agreement_percent",
-      "type": "quantitative",
-      "scale": {
-        "domain": [
-          0,
-          100
-        ]
-      },
-      "title": "Exact agreement (%)"
-    },
     "tooltip": [
       {
-        "field": "dimension"
+        "field": "display",
+        "title": "Dimension"
       },
       {
         "field": "n",
@@ -69,12 +63,52 @@
       {
         "field": "agreement_percent",
         "type": "quantitative",
-        "title": "Exact agreement (%)"
+        "title": "Raw agreement (%)"
       },
       {
         "field": "kappa",
         "title": "Cohen’s kappa"
       }
     ]
-  }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#26755b"
+      },
+      "encoding": {
+        "x": {
+          "field": "agreement_percent",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "title": "Exact agreement (%)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "white"
+      },
+      "encoding": {
+        "x": {
+          "value": 8
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
 }

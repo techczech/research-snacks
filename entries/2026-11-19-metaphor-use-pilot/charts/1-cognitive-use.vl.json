@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 520,
-  "height": 230,
+  "width": 560,
+  "height": 240,
   "background": "#fbfaf7",
   "config": {
     "font": "Arial",
@@ -9,13 +9,20 @@
       "labelFontSize": 12,
       "titleFontSize": 13
     },
+    "title": {
+      "fontSize": 16,
+      "subtitleFontSize": 12
+    },
     "view": {
       "stroke": null
     }
   },
   "title": {
-    "text": "Cognitive use: two independent readings",
-    "subtitle": "Word units marked as metaphor: 59 in A, 58 in B"
+    "text": "Cognitive use: two passes of the same model",
+    "subtitle": [
+      "The same 51 metaphor-marked word units in both passes",
+      "Pass A had manuscript/codebook context; Pass B started fresh"
+    ]
   },
   "data": {
     "url": "charts/1-cognitive-use.csv"
@@ -55,7 +62,7 @@
     "y": {
       "field": "units",
       "type": "quantitative",
-      "title": "Metaphor-marked units",
+      "title": "Units among the common 51",
       "axis": {
         "tickMinStep": 1
       }
@@ -97,9 +104,14 @@
         "title": "Units"
       },
       {
+        "field": "n",
+        "type": "quantitative",
+        "title": "Common metaphor units"
+      },
+      {
         "field": "documents",
         "type": "quantitative",
-        "title": "Passages containing this label"
+        "title": "Passages"
       }
     ]
   }
