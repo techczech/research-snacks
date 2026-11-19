@@ -27,7 +27,7 @@ export function privacyErrors(text: string, label: string): string[] {
   ];
   return text.split('\n').flatMap((line,i) => {
     // Public URL paths are not filesystem paths; still scan their hosts and other private content.
-    const withoutHttpURLs = line.replace(/https?:\/\/[^\s<>"'`]+/gi, '');
+    const withoutHttpURLs = line.replace(/https?:\/\/[^\s<>"'`),;\]}]+/gi, '');
     return patterns.filter(([rx,,skipHttpURLs]) => rx.test(skipHttpURLs ? withoutHttpURLs : line))
       .map(([,what]) => `${label}:${i+1}: contains ${what}; private material cannot ship`);
   });

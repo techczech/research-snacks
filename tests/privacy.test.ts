@@ -22,3 +22,10 @@ test('public URLs do not hide adjacent real paths or other privacy violations', 
   }
   expect(privacyErrors(`safe\n${url} /home/person/private`, 'fixture')[0]).toContain('fixture:2:');
 });
+
+test('URL matching stops at CSV and Markdown boundaries before a local path', () => {
+  for (const value of [
+    'source,local\nhttps://example.org/home/public,/home/person/private',
+    '[public](https://example.org/home/public)/Users/example/private',
+  ]) expect(privacyErrors(value, 'fixture').some(error => error.includes('path'))).toBe(true);
+});
