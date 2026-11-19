@@ -3,225 +3,241 @@ id: 2026-11-19-revolution-speed-2011-redo
 title: Revolution speed and a 2011 claim
 date: 2026-11-19
 author: Dominik Lukeš
-claim: 'Faster communication makes little difference to how quickly regimes fall: Egypt in 2011 took 17 days and
-  Czechoslovakia in 1989 took 23.'
+claim: "Faster communication makes little difference to how quickly regimes fall: Egypt in 2011 took 17 days
+  and Czechoslovakia in 1989 took 23."
 claim_source: https://metaphorhacker.net/2011/05/the-natural-logistics-of-life-the-internet-really-changes-almost-nothing/
-verdict: The warning against equating communication speed with political speed holds up. The gap was six days, not
-  five; neither two cases nor this selected wider comparison establishes that technology has no effect.
-time_taken: 16.7 minutes from session start to saved draft and usage snapshot; reproduction, release checks and
-  deployment followed
+verdict: The warning against equating communication speed with political speed holds up. The gap was six days,
+  not five; neither two cases nor this selected wider comparison establishes that technology has no effect.
+time_taken: 16.7 minutes from session start to saved draft and usage snapshot; reproduction, release checks
+  and deployment followed
 human_time: About 5–10 minutes to formulate the research brief (estimate); no additional human research time measured.
 tools:
-- Codex (gpt-6.1-sol)
-- Web search
-- Python
-- Poppler
-- Vega-Lite
-- vl-convert
-- Astro
-- bun
-- Headless Chromium
-- Cloudflare Pages
+  - Codex (gpt-6.1-sol)
+  - Web search
+  - Python
+  - Poppler
+  - Vega-Lite
+  - vl-convert
+  - Astro
+  - bun
+  - Headless Chromium
+  - Cloudflare Pages
 data_sources:
-- NAVCO 1.3 preliminary campaign list and codebook
-- Primary and standard historical chronologies
-- UN reports and parliamentary records
-- Tufekci and Wilson’s Tahrir protester survey
+  - NAVCO 1.3 preliminary campaign list and codebook
+  - Primary and standard historical chronologies
+  - UN reports and parliamentary records
+  - Tufekci and Wilson’s Tahrir protester survey
 category: History
 tags:
-- Political change
-- Internet
-- Civil resistance
-- Checking my old writing
-summary: The original dates give 23 and 17 elapsed days, a six-day gap. Sixteen selected departures contain quick
-  and slow cases across eras, but changing the treatment of armed and military cases reverses the median comparison.
-  NAVCO 1.3 records 33.7% full success among nonviolent campaigns peaking in the 2010s, or 46.6% after excluding
-  campaigns still ongoing in 2019. This supports caution about technological inevitability without establishing
-  that communication technology has no effect.
+  - Political change
+  - Internet
+  - Civil resistance
+  - Checking my old writing
+summary: The original dates give 23 and 17 elapsed days, a six-day gap. Sixteen selected departures contain
+  quick and slow cases across eras, but changing the treatment of armed and military cases reverses the median
+  comparison. NAVCO 1.3 records 33.7% full success among nonviolent campaigns peaking in the 2010s, or 46.6%
+  after excluding campaigns still ongoing in 2019. This supports caution about technological inevitability
+  without establishing that communication technology has no effect.
 references:
-- type: post
-  title: 'The natural logistics of life: The Internet really changes almost nothing'
-  url: https://metaphorhacker.net/2011/05/the-natural-logistics-of-life-the-internet-really-changes-almost-nothing/
-  authors:
-  - Dominik Lukeš
-  year: 2011
-- type: webpage
-  title: 'Chronologie: listopad 1989'
-  url: https://www.ustrcr.cz/uvod/listopad-1989/chronologie/
-  authors:
-  - Ústav pro studium totalitních režimů
-- type: report
-  title: 'Egypt: The January 25 Uprising and Implications for U.S. Foreign Policy'
-  url: https://www.everycrsreport.com/files/20110211_RL33003_db7b105c210af3966a794ef1f73ba0268f00e7b4.html
-  authors:
-  - Jeremy M. Sharp
-  year: 2011
-- type: article
-  title: 'Social Media and the Decision to Participate in Political Protest: Observations From Tahrir Square'
-  url: https://doi.org/10.1111/j.1460-2466.2012.01629.x
-  authors:
-  - Zeynep Tufekci
-  - Christopher Wilson
-  year: 2012
-  container: Journal of Communication
-  volume: '62'
-  issue: '2'
-  pages: 363–379
-  note: Accepted manuscript read, including method and findings. Convenience/snowball sample; representativeness
-    unknown.
-- type: webpage
-  title: '1848 : la deuxième République met en place le suffrage universel masculin'
-  url: https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/le-suffrage-universel/la-republique-et-le-suffrage-universel/1848-la-deuxieme-republique-met-en-place-le-suffrage-universel-masculin
-  authors:
-  - Assemblée nationale
-- type: report
-  title: Consul Winship to the Secretary of State, Petrograd, March 20, 1917
-  url: https://history.state.gov/historicaldocuments/frus1917/d1454
-  authors:
-  - North Winship
-  year: 1917
-- type: webpage
-  title: Chronology of Iranian History Part 4
-  url: https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-4/
-  authors:
-  - Ehsan Yarshater
-- type: webpage
-  title: Proclamation No. 59, s. 1987
-  url: https://www.lawphil.net/executive/proc/proc1987/proc_59_1987.html
-  authors:
-  - Republic of the Philippines
-  year: 1987
-- type: webpage
-  title: LeMO Jahreschronik 1989
-  url: https://www.hdg.de/lemo/jahreschronik/1989.html
-  authors:
-  - Stiftung Haus der Geschichte
-- type: webpage
-  title: The Unique Experience of Romania
-  url: https://1989.rrchnm.org/exhibits/unique-experience-of-romania/introduction.html
-  authors:
-  - George Mason University
-- type: article
-  title: Newsline, September 28, 2000
-  url: https://www.rferl.org/a/1142249.html
-  authors:
-  - Radio Free Europe/Radio Liberty
-  year: 2000
-- type: report
-  title: 'Nonviolent Struggle: 50 Crucial Points'
-  url: https://www.nonviolent-conflict.org/wp-content/uploads/2016/03/nonviolent_eng5.pdf
-  authors:
-  - Srdja Popovic
-  - Andrej Milivojevic
-  - Slobodan Djinovic
-  year: 2006
-  note: Appendix, printed pp. 168–179; October 6 concession on p. 179.
-- type: webpage
-  title: Georgian Parliament 2003 General
-  url: https://electionguide.org/elections/id/1372/
-  authors:
-  - International Foundation for Electoral Systems
-  year: 2003
-- type: webpage
-  title: 'Background Note: Tunisia'
-  url: https://2009-2017.state.gov/outofdate/bgn/tunisia/196390.htm
-  authors:
-  - U.S. Department of State
-  year: 2012
-- type: report
-  title: Report of the International Commission of Inquiry on Libya, A/HRC/19/68
-  url: https://digitallibrary.un.org/record/766468/files/A_HRC_19_68-EN.pdf
-  authors:
-  - United Nations Human Rights Council
-  year: 2012
-- type: report
-  title: 'Yemen: Background and U.S. Relations, RL34170'
-  url: https://www.everycrsreport.com/files/20120410_RL34170_b67faa7e7c65c81c776612e3ed4c444d4fb80225.html
-  authors:
-  - Jeremy M. Sharp
-  year: 2012
-- type: report
-  title: 'Sudan: joint urgent appeal, UA SDN 1/2019'
-  url: https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=24348
-  authors:
-  - United Nations Special Procedures
-  year: 2019
-- type: report
-  title: Sudan (Darfur), June 2019 Monthly Forecast
-  url: https://www.securitycouncilreport.org/monthly-forecast/2019-06/sudan-darfur-5.php
-  authors:
-  - Security Council Report
-  year: 2019
-- type: webpage
-  title: 'Sri Lanka: UN experts condemn crackdown on protests'
-  url: https://www.ohchr.org/en/press-releases/2022/04/sri-lanka-un-experts-condemn-crackdown-protests
-  authors:
-  - OHCHR
-  year: 2022
-- type: webpage
-  title: Minutes of Parliament, Saturday, July 16, 2022
-  url: https://www.parliament.lk/uploads/documents/minutesofparliament/1669809562054006.pdf
-  authors:
-  - Parliament of Sri Lanka
-  year: 2022
-- type: report
-  title: 'Bangladesh: joint allegation letter, AL BGD 6/2024'
-  url: https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=29229
-  authors:
-  - United Nations Special Procedures
-  year: 2024
-- type: report
-  title: Human Rights Violations and Abuses related to the Protests of July and August 2024 in Bangladesh
-  url: https://www.ohchr.org/sites/default/files/documents/countries/bangladesh/ohchr-fftb-hr-violations-bd.pdf
-  authors:
-  - OHCHR
-  year: 2025
-- type: dataset
-  title: List of Campaigns in NAVCO 1.3
-  url: https://doi.org/10.7910/DVN/ON9XND
-  authors:
-  - Erica Chenoweth
-  - Christopher Wiley Shay
-  year: 2020
-  publisher: Harvard Dataverse
-  doi: 10.7910/DVN/ON9XND
-  note: 'Provider citation (verbatim): Chenoweth, Erica; Christopher Wiley Shay, 2020, "List of Campaigns in NAVCO
-    1.3", https://doi.org/10.7910/DVN/ON9XND, Harvard Dataverse, V1, UNF:6:GD3vspZ7XK7H7KFdiKFICw== [fileUNF]. CC0
-    1.0. Preliminary campaign list; outcomes through 2019.'
-- type: article
-  title: The Future of Nonviolent Resistance
-  url: https://www.journalofdemocracy.org/articles/the-future-of-nonviolent-resistance-2/
-  authors:
-  - Erica Chenoweth
-  year: 2020
-- type: webpage
-  title: Global Instances of Coups, 1950–Present
-  url: https://jonathanmpowell.com/coups/
-  authors:
-  - Jonathan Powell
-- type: webpage
-  title: Revolutions of 1989 Chronology
-  url: https://libraries.indiana.edu/revolutions-1989-chronology
-  authors:
-  - Indiana University Libraries
-  year: 2010
-- type: article
-  title: 'Resisting Stolen Elections: Lessons from the Philippines, Serbia, Ukraine, and Gambia'
-  url: https://www.nonviolent-conflict.org/blog_post/resisting-stolen-elections-lessons-from-the-philippines-serbia-ukraine-and-gambia/
-  authors:
-  - Stephen Zunes
-  year: 2020
-- type: webpage
-  title: Archigos political leaders data, Version 4.1
-  url: https://rochester.edu/college/faculty/hgoemans/data.htm
-  authors:
-  - H. E. Goemans
-- type: dataset
-  title: Checking material for Revolution speed and a 2011 claim
-  url: https://github.com/techczech/research-snacks-data/tree/main/snacks/2026-11-19-revolution-speed-2011-redo
-  authors:
-  - Dominik Lukeš
-  year: 2026
+  - type: post
+    title: "The natural logistics of life: The Internet really changes almost nothing"
+    url: https://metaphorhacker.net/2011/05/the-natural-logistics-of-life-the-internet-really-changes-almost-nothing/
+    authors:
+      - Dominik Lukeš
+    year: 2011
+  - type: webpage
+    title: "Chronologie: listopad 1989"
+    url: https://www.ustrcr.cz/uvod/listopad-1989/chronologie/
+    authors:
+      - Ústav pro studium totalitních režimů
+    corporate: true
+  - type: report
+    title: "Egypt: The January 25 Uprising and Implications for U.S. Foreign Policy"
+    url: https://www.everycrsreport.com/files/20110211_RL33003_db7b105c210af3966a794ef1f73ba0268f00e7b4.html
+    authors:
+      - Jeremy M. Sharp
+    year: 2011
+  - type: article
+    title: "Social Media and the Decision to Participate in Political Protest: Observations From Tahrir Square"
+    url: https://doi.org/10.1111/j.1460-2466.2012.01629.x
+    authors:
+      - Zeynep Tufekci
+      - Christopher Wilson
+    year: 2012
+    container: Journal of Communication
+    volume: "62"
+    issue: "2"
+    pages: 363–379
+    note: Accepted manuscript read, including method and findings. Convenience/snowball sample; representativeness
+      unknown.
+  - type: webpage
+    title: "1848 : la deuxième République met en place le suffrage universel masculin"
+    url: https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/le-suffrage-universel/la-republique-et-le-suffrage-universel/1848-la-deuxieme-republique-met-en-place-le-suffrage-universel-masculin
+    authors:
+      - Assemblée nationale
+    corporate: true
+  - type: report
+    title: Consul Winship to the Secretary of State, Petrograd, March 20, 1917
+    url: https://history.state.gov/historicaldocuments/frus1917/d1454
+    authors:
+      - North Winship
+    year: 1917
+  - type: webpage
+    title: Chronology of Iranian History Part 4
+    url: https://www.iranicaonline.org/articles/chronology-of-iranian-history-part-4/
+    authors:
+      - Ehsan Yarshater
+  - type: webpage
+    title: Proclamation No. 59, s. 1987
+    url: https://www.lawphil.net/executive/proc/proc1987/proc_59_1987.html
+    authors:
+      - Republic of the Philippines
+    year: 1987
+    corporate: true
+  - type: webpage
+    title: LeMO Jahreschronik 1989
+    url: https://www.hdg.de/lemo/jahreschronik/1989.html
+    authors:
+      - Stiftung Haus der Geschichte
+    corporate: true
+  - type: webpage
+    title: The Unique Experience of Romania
+    url: https://1989.rrchnm.org/exhibits/unique-experience-of-romania/introduction.html
+    authors:
+      - George Mason University
+    corporate: true
+  - type: article
+    title: Newsline, September 28, 2000
+    url: https://www.rferl.org/a/1142249.html
+    authors:
+      - Radio Free Europe/Radio Liberty
+    year: 2000
+    corporate: true
+  - type: report
+    title: "Nonviolent Struggle: 50 Crucial Points"
+    url: https://www.nonviolent-conflict.org/wp-content/uploads/2016/03/nonviolent_eng5.pdf
+    authors:
+      - Srdja Popovic
+      - Andrej Milivojevic
+      - Slobodan Djinovic
+    year: 2006
+    note: Appendix, printed pp. 168–179; October 6 concession on p. 179.
+  - type: webpage
+    title: Georgian Parliament 2003 General
+    url: https://electionguide.org/elections/id/1372/
+    authors:
+      - International Foundation for Electoral Systems
+    year: 2003
+    corporate: true
+  - type: webpage
+    title: "Background Note: Tunisia"
+    url: https://2009-2017.state.gov/outofdate/bgn/tunisia/196390.htm
+    authors:
+      - U.S. Department of State
+    year: 2012
+    corporate: true
+  - type: report
+    title: Report of the International Commission of Inquiry on Libya, A/HRC/19/68
+    url: https://digitallibrary.un.org/record/766468/files/A_HRC_19_68-EN.pdf
+    authors:
+      - United Nations Human Rights Council
+    year: 2012
+    corporate: true
+  - type: report
+    title: "Yemen: Background and U.S. Relations, RL34170"
+    url: https://www.everycrsreport.com/files/20120410_RL34170_b67faa7e7c65c81c776612e3ed4c444d4fb80225.html
+    authors:
+      - Jeremy M. Sharp
+    year: 2012
+  - type: report
+    title: "Sudan: joint urgent appeal, UA SDN 1/2019"
+    url: https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=24348
+    authors:
+      - United Nations Special Procedures
+    year: 2019
+    corporate: true
+  - type: report
+    title: Sudan (Darfur), June 2019 Monthly Forecast
+    url: https://www.securitycouncilreport.org/monthly-forecast/2019-06/sudan-darfur-5.php
+    authors:
+      - Security Council Report
+    year: 2019
+    corporate: true
+  - type: webpage
+    title: "Sri Lanka: UN experts condemn crackdown on protests"
+    url: https://www.ohchr.org/en/press-releases/2022/04/sri-lanka-un-experts-condemn-crackdown-protests
+    authors:
+      - OHCHR
+    year: 2022
+    corporate: true
+  - type: webpage
+    title: Minutes of Parliament, Saturday, July 16, 2022
+    url: https://www.parliament.lk/uploads/documents/minutesofparliament/1669809562054006.pdf
+    authors:
+      - Parliament of Sri Lanka
+    year: 2022
+    corporate: true
+  - type: report
+    title: "Bangladesh: joint allegation letter, AL BGD 6/2024"
+    url: https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=29229
+    authors:
+      - United Nations Special Procedures
+    year: 2024
+    corporate: true
+  - type: report
+    title: Human Rights Violations and Abuses related to the Protests of July and August 2024 in Bangladesh
+    url: https://www.ohchr.org/sites/default/files/documents/countries/bangladesh/ohchr-fftb-hr-violations-bd.pdf
+    authors:
+      - OHCHR
+    year: 2025
+    corporate: true
+  - type: dataset
+    title: List of Campaigns in NAVCO 1.3
+    url: https://doi.org/10.7910/DVN/ON9XND
+    authors:
+      - Erica Chenoweth
+      - Christopher Wiley Shay
+    year: 2020
+    publisher: Harvard Dataverse
+    doi: 10.7910/DVN/ON9XND
+    note: 'Provider citation (verbatim): Chenoweth, Erica; Christopher Wiley Shay, 2020, "List of Campaigns in
+      NAVCO 1.3", https://doi.org/10.7910/DVN/ON9XND, Harvard Dataverse, V1, UNF:6:GD3vspZ7XK7H7KFdiKFICw==
+      [fileUNF]. CC0 1.0. Preliminary campaign list; outcomes through 2019.'
+  - type: article
+    title: The Future of Nonviolent Resistance
+    url: https://www.journalofdemocracy.org/articles/the-future-of-nonviolent-resistance-2/
+    authors:
+      - Erica Chenoweth
+    year: 2020
+  - type: webpage
+    title: Global Instances of Coups, 1950–Present
+    url: https://jonathanmpowell.com/coups/
+    authors:
+      - Jonathan Powell
+  - type: webpage
+    title: Revolutions of 1989 Chronology
+    url: https://libraries.indiana.edu/revolutions-1989-chronology
+    authors:
+      - Indiana University Libraries
+    year: 2010
+    corporate: true
+  - type: article
+    title: "Resisting Stolen Elections: Lessons from the Philippines, Serbia, Ukraine, and Gambia"
+    url: https://www.nonviolent-conflict.org/blog_post/resisting-stolen-elections-lessons-from-the-philippines-serbia-ukraine-and-gambia/
+    authors:
+      - Stephen Zunes
+    year: 2020
+  - type: webpage
+    title: Archigos political leaders data, Version 4.1
+    url: https://rochester.edu/college/faculty/hgoemans/data.htm
+    authors:
+      - H. E. Goemans
+  - type: dataset
+    title: Checking material for Revolution speed and a 2011 claim
+    url: https://github.com/techczech/research-snacks-data/tree/main/snacks/2026-11-19-revolution-speed-2011-redo
+    authors:
+      - Dominik Lukeš
+    year: 2026
 ---
 
 ## The claim
