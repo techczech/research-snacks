@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 520,
+  "height": 230,
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "title": {
+    "text": "Agreement depends on the dimension",
+    "subtitle": "Common metaphor-marked units only; exact label-set agreement"
+  },
+  "data": {
+    "url": "charts/2-agreement.csv"
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#26755b"
+  },
+  "encoding": {
+    "y": {
+      "field": "dimension",
+      "type": "nominal",
+      "sort": [
+        "cognitive",
+        "social",
+        "binding",
+        "scope"
+      ],
+      "title": null
+    },
+    "x": {
+      "field": "agreement_percent",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      },
+      "title": "Exact agreement (%)"
+    },
+    "tooltip": [
+      {
+        "field": "dimension"
+      },
+      {
+        "field": "n",
+        "type": "quantitative",
+        "title": "Paired units"
+      },
+      {
+        "field": "agree",
+        "type": "quantitative",
+        "title": "Agree"
+      },
+      {
+        "field": "disagree",
+        "type": "quantitative",
+        "title": "Disagree"
+      },
+      {
+        "field": "agreement_percent",
+        "type": "quantitative",
+        "title": "Exact agreement (%)"
+      },
+      {
+        "field": "kappa",
+        "title": "Cohen’s kappa"
+      }
+    ]
+  }
+}

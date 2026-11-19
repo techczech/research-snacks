@@ -1,0 +1,47 @@
+{
+  "runs": [
+    {
+      "model": "gpt-6.1-sol",
+      "role": "Coordinator and pass A",
+      "session_started_utc": "2026-11-19T11:19:27.019Z",
+      "snapshot_utc": "2026-11-19T11:41:02.818Z",
+      "last_usage_event_utc": "2026-11-19T11:40:29.401Z",
+      "elapsed_seconds_to_snapshot": 1296,
+      "calls_with_recorded_usage": 64,
+      "tokens_read": 11409136,
+      "cached_input_tokens_included": 11197952,
+      "tokens_written": 44253,
+      "reasoning_output_tokens_included": 12905,
+      "scope": "Implementation session through this snapshot, including loaded instructions and cached history; excludes subsequent publication and live checks."
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "role": "Fresh-context pass B",
+      "session_started_utc": "2026-11-19T11:25:48.646Z",
+      "snapshot_utc": "2026-11-19T11:30:57.998Z",
+      "last_usage_event_utc": "2026-11-19T11:30:57.977Z",
+      "elapsed_seconds_to_snapshot": 309,
+      "calls_with_recorded_usage": 8,
+      "tokens_read": 360226,
+      "cached_input_tokens_included": 315648,
+      "tokens_written": 10714,
+      "reasoning_output_tokens_included": 4087,
+      "scope": "Implementation session through this snapshot, including loaded instructions and cached history; excludes subsequent publication and live checks."
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "role": "Writer",
+      "session_started_utc": "2026-11-19T11:33:00.291Z",
+      "snapshot_utc": "2026-11-19T11:40:04.535Z",
+      "last_usage_event_utc": "2026-11-19T11:40:04.519Z",
+      "elapsed_seconds_to_snapshot": 424,
+      "calls_with_recorded_usage": 25,
+      "tokens_read": 1953408,
+      "cached_input_tokens_included": 1886848,
+      "tokens_written": 13920,
+      "reasoning_output_tokens_included": 2911,
+      "scope": "Implementation session through this snapshot, including loaded instructions and cached history; excludes subsequent publication and live checks."
+    }
+  ],
+  "coverage": "Snapshots before source review completion, release checks and publication; tokens include cached history. Native child configuration is inherited; no independent provider-reported model ID. Gemini source critic usage is not reported by this exporter."
+}

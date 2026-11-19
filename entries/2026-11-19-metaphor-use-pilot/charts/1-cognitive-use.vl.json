@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 520,
+  "height": 230,
+  "background": "#fbfaf7",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "title": {
+    "text": "Cognitive use: two independent readings",
+    "subtitle": "Word units marked as metaphor: 59 in A, 58 in B"
+  },
+  "data": {
+    "url": "charts/1-cognitive-use.csv"
+  },
+  "params": [
+    {
+      "name": "pass_select",
+      "select": {
+        "type": "point",
+        "fields": [
+          "pass_id"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Assigned cognitive use",
+      "sort": [
+        "attributive",
+        "constitutive",
+        "mixed",
+        "uncertain"
+      ],
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "xOffset": {
+      "field": "pass_id",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "units",
+      "type": "quantitative",
+      "title": "Metaphor-marked units",
+      "axis": {
+        "tickMinStep": 1
+      }
+    },
+    "color": {
+      "field": "pass_id",
+      "type": "nominal",
+      "title": "Pass",
+      "scale": {
+        "domain": [
+          "A",
+          "B"
+        ],
+        "range": [
+          "#176a8a",
+          "#c36b20"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "pass_select",
+        "value": 1
+      },
+      "value": 0.25
+    },
+    "tooltip": [
+      {
+        "field": "pass_id",
+        "title": "Pass"
+      },
+      {
+        "field": "category",
+        "title": "Cognitive use"
+      },
+      {
+        "field": "units",
+        "type": "quantitative",
+        "title": "Units"
+      },
+      {
+        "field": "documents",
+        "type": "quantitative",
+        "title": "Passages containing this label"
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 ---
 id: 2026-11-19-revolution-speed-2011-redo
 title: Revolution speed and a 2011 claim
-date: '2026-11-19'
+date: 2026-11-19
 author: Dominik Lukeš
 claim: 'Faster communication makes little difference to how quickly regimes fall: Egypt in 2011 took 17 days and
   Czechoslovakia in 1989 took 23.'
@@ -159,7 +159,7 @@ references:
   - OHCHR
   year: 2022
 - type: webpage
-  title: Business of the House for July 16, 2022
+  title: Minutes of Parliament, Saturday, July 16, 2022
   url: https://www.parliament.lk/uploads/documents/minutesofparliament/1669809562054006.pdf
   authors:
   - Parliament of Sri Lanka
@@ -385,7 +385,7 @@ NAVCO starts Egypt’s anti-Mubarak campaign in 2007. Its longer campaign is com
 
 Research started at **11:19 UK time on 19 November 2026**. The agent read the complete 2011 post, checked its dates and obtained the NAVCO list and codebook. Initial calculations exposed the difference between counting ongoing campaigns as unsuccessful and excluding them.
 
-The next checks concerned the clocks themselves: Georgia’s election day versus protest onset; Sri Lanka’s effective resignation versus its announcement; Yemen’s agreement, inauguration and handover; and the start of Bangladesh’s protests versus the later demand for the prime minister to leave. These were agent follow-up questions within the original brief. No new human follow-up was received.
+The next checks concerned the clocks themselves: Georgia’s election day versus protest onset; Sri Lanka’s effective resignation versus its announcement; Yemen’s agreement, inauguration and handover; and the start of Bangladesh’s protests versus the later demand for the prime minister to leave. These were agent follow-up questions within the original brief. No additional human research question arrived before the draft snapshot.
 
 The final timing and usage snapshot below ends at the saved draft. Build, browser checks and publication followed. Failed source requests and the selected alternatives remain in the private research record.
 
