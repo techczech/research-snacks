@@ -292,6 +292,20 @@ references:
     year: 1938
     url: https://www2.census.gov/library/publications/1938/compendia/statab/59ed/1937-15.pdf
     note: "Table 434, Receiverships of Railways."
+  - type: report
+    authors: [C. H. Feinstein, Sidney Pollard]
+    title: Studies in Capital Formation in the United Kingdom 1750–1920
+    year: 1988
+    publisher: Clarendon Press
+    url: https://ideas.repec.org/b/oxp/obooks/9780198284086.html
+    note: "Ginarlis and Pollard, Roads and Waterways, 1750–1850; source lead, not an extracted national series."
+  - type: report
+    authors: [Albert Fishlow]
+    title: American Railroads and the Transformation of the Antebellum Economy
+    year: 1965
+    publisher: Harvard University Press
+    url: https://www.si.edu/object/american-railroads-and-transformation-antebellum-economy%3Asiris_sil_431447
+    note: "Bibliographic lead; annual national observations not extracted in this revision."
 ---
 
 ## The claim
@@ -481,9 +495,9 @@ It does not work the other way either. [Odlyzko finds that the earlier British r
 
 ### Missing figures are not zero
 
-Ginarlis and Pollard's canal investment reconstruction and [Arnold and McCartney's returns study](https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0289.2010.00541.x) yielded no national annual spending series here. Dividends are not investment returns.
+[Ginarlis and Pollard's canal investment reconstruction](https://ideas.repec.org/b/oxp/obooks/9780198284086.html) and [Arnold and McCartney's returns study](https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0289.2010.00541.x) yielded no national annual spending series here. Dividends are not investment returns.
 
-Fishlow's reconstruction and [Historical Statistics Df891–900](https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdDf891-900.html) remain leads for 1850s US railways; the accessible table exposed headings only. [Wicker's objections](https://www.nber.org/system/files/chapters/c2488/c2488.pdf) still apply.
+[Fishlow's reconstruction](https://www.si.edu/object/american-railroads-and-transformation-antebellum-economy%3Asiris_sil_431447) and [Historical Statistics Df891–900](https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdDf891-900.html) remain leads for 1850s US railways; the accessible table exposed headings only. [Wicker's objections](https://www.nber.org/system/files/chapters/c2488/c2488.pdf) still apply.
 
 For nuclear power, the reviews identify EIA's *Nuclear Power Plant Construction Activity 1986* and *An Analysis of Nuclear Power Plant Construction Costs*. The [construction report download](https://www.osti.gov/servlets/purl/6259203) failed. No annual national spending-and-revenue series is inferred from plant costs or general retail electricity prices.
 
@@ -536,7 +550,7 @@ Nine-month GDP is their sum divided by four: $24,369.835bn. The share is 560.350
 
 US calendar GDP is [BEA’s GDPA](https://fred.stlouisfed.org/series/GDPA); fiscal GDP is [OMB Table 10.1](https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/); early US GDP is [MeasuringWorth](https://www.measuringworth.com/datasets/usgdp/); UK GDP is the [Bank of England’s historical-boundary series](https://www.bankofengland.co.uk/statistics/research-datasets). The UK annual peak is 6.48% at market prices, including Ireland, or 7.27% against Odlyzko's older factor-cost GDP. These are different definitions, not confidence bounds.
 
-The Apollo workbook gives 0.48% for programme costs plus overhead in FY1964 and 0.74% for **all NASA obligations**. I have removed the unsourced numerical reading of the article's Apollo bar. Ulmer D-1, current-dollar column, gives $2,075.7m private electricity spending in 1949; dividing by $272,475m GDP gives 0.76%. Extending the GDP series back changes the window's peak to 1924.
+The Apollo workbook gives 0.48% for programme costs plus overhead in FY1964 and 0.74% for **all NASA obligations**. The article's Apollo bar remains unreproduced. Ulmer D-1, current-dollar column, gives $2,075.7m private electricity spending in 1949; dividing by $272,475m GDP gives 0.76%. Extending the GDP series back changes the window's peak to 1924.
 
 The old trailing-revenue/current-quarter-spending ratio has been removed: its periods did not match. The reported $188bn trailing revenue remains a source estimate, alongside the $345bn October run rate. [Exponential View's 21 September breakdown](https://www.investmentbrief.ai/p/ai-investment-brief-a-sample) explains the layers; model-provider sales cannot be added to the cloud payments they fund.
 
