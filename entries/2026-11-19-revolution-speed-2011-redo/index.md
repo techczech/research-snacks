@@ -160,7 +160,7 @@ references:
   year: 2022
 - type: webpage
   title: Business of the House for July 16, 2022
-  url: https://www.parliament.lk/en/home/business-of-the-house/view/2655
+  url: https://www.parliament.lk/uploads/documents/minutesofparliament/1669809562054006.pdf
   authors:
   - Parliament of Sri Lanka
   year: 2022
@@ -306,7 +306,7 @@ This is a small, selected set of well-known departures from the historical perio
 | [Libya 2011](https://digitallibrary.un.org/record/766468/files/A_HRC_19_68-EN.pdf) | 15 February 2011, Benghazi protest | 23 August, loss of Tripoli compound, **proxy** | 189 |
 | [Yemen 2011–12](https://www.everycrsreport.com/files/20120410_RL34170_b67faa7e7c65c81c776612e3ed4c444d4fb80225.html) | 27 January 2011, large Sana’a demonstration | 25 February 2012, successor inaugurated | 394 |
 | [Sudan 2018–19](https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=24348) | 19 December 2018, protest wave | [11 April 2019, military removes al-Bashir](https://www.securitycouncilreport.org/monthly-forecast/2019-06/sudan-darfur-5.php) | 113 |
-| [Sri Lanka 2022](https://www.ohchr.org/en/press-releases/2022/04/sri-lanka-un-experts-condemn-crackdown-protests) | 31 March 2022, presidential-residence protest | [14 July, resignation effective](https://www.parliament.lk/en/home/business-of-the-house/view/2655) | 105 |
+| [Sri Lanka 2022](https://www.ohchr.org/en/press-releases/2022/04/sri-lanka-un-experts-condemn-crackdown-protests) | 31 March 2022, presidential-residence protest | [14 July, resignation effective](https://www.parliament.lk/uploads/documents/minutesofparliament/1669809562054006.pdf) | 105 |
 | [Bangladesh 2024](https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=29229) | 1 July 2024, student protest wave | [5 August, Hasina flees](https://www.ohchr.org/sites/default/files/documents/countries/bangladesh/ohchr-fftb-hr-violations-bd.pdf) | 35 |
 
 ![Selected protest-to-departure clocks, with quick and slow episodes before and after the internet. The horizontal axis is logarithmic.](charts/1-selected-clocks.png)
@@ -325,7 +325,15 @@ The broad comparison gives longer median intervals after 1990. Removing armed an
 
 These exclusions are recorded judgements, not labels imported from a coup dataset. The [Powell–Thyne project](https://jonathanmpowell.com/coups/) distinguishes coups by attempts from within the state apparatus; protest followed by military removal needs special care. Even the last row leaves mixed mechanisms, including the army’s role in Egypt and elite replacement in East Germany.
 
-The technology periods are also crude. Among all selected cases, median days were 7 before 1990, 14.5 in 1990–2009 and 105 from 2010 onward, with group sizes of 7, 2 and 7. Those periods do not measure access to telephones, the internet or a particular platform. **This check cannot distinguish a technology effect from case selection and political context.**
+The technology periods are also crude. Splitting the selected cases into three eras gives:
+
+| Onset period | Selected episodes | Median days |
+|---|---:|---:|
+| Before 1990 | 7 | 7 |
+| 1990–2009 | 2 | 14.5 |
+| 2010–2024 | 7 | 105 |
+
+Those periods do not measure access to telephones, the internet or a particular platform. **This check cannot distinguish a technology effect from case selection and political context.**
 
 ## Success became less common in NAVCO
 
@@ -351,7 +359,13 @@ This broadly reproduces the decline described in [Erica Chenoweth’s 2020 artic
 
 NAVCO codes ongoing campaigns as failures at its cutoff. In the 2010s row, excluding those cases changes 34 out of 101 to 34 out of 73. The decline remains relative to the 1990s and 2000s, but is smaller. Excluding unfinished cases also selects on how quickly campaigns resolve; neither denominator fixes unequal follow-up.
 
-Grouping by onset instead of peak, campaigns beginning in 2010–14 had 18 successes among 45 campaigns, or 40.0%. Six were still ongoing in 2019; excluding them gives 46.2%. The checking material also repeats the analysis for regime-change campaigns alone. These are sensitivity checks, not evidence that internet use caused failure.
+Grouping by onset instead of peak gives another check on the cutoff:
+
+| Onset cohort | Campaigns | Full successes | Ongoing at end of 2019 | Success / all | Success / resolved only |
+|---|---:|---:|---:|---:|---:|
+| 2010–14 | 45 | 18 | 6 | 40.0% | 46.2% |
+
+The checking material also repeats the analysis for regime-change campaigns alone. These are sensitivity checks, not evidence that internet use caused failure.
 
 ## Limits of this check
 
