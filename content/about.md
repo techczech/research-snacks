@@ -14,4 +14,4 @@ This is the sister site to [datapoints.semanticmachines.fyi](https://datapoints.
 
 ## Check it yourself
 
-[The public checking repository](https://github.com/techczech/research-snacks-data) holds the shareable data, code, methods and expected tables for each snack. Clone it and run the checks with uv. Each entry links to its own folder. Where a source licence prevents redistribution, the folder explains how to obtain the source yourself and what can be checked from the included aggregates.
+[The public checking repository](https://github.com/techczech/research-snacks-data) holds the shareable data, code, methods and expected tables for each snack. Clone it and run the checks with uv. Each entry links to its own folder. Where a source licence prevents redistribution, the folder explains how to obtain the source yourself and what can be checked from the included aggregates. Each release is archived on Zenodo, so the data and code can be cited: [doi:10.5281/zenodo.24370344](https://doi.org/10.5281/zenodo.24370344) always points to the latest version.
