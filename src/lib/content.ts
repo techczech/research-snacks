@@ -19,13 +19,18 @@ export function files(dir: string): string[] {
 }
 const TEXT_EXT = new Set(['.md','.csv','.py','.txt','.json','.yaml','.yml','.tsv','.html','.sh']);
 export function privacyErrors(text: string, label: string): string[] {
-  const patterns: [RegExp,string][] = [
-    [/\/Users\/|~\/|\/home\/|[A-Za-z]:\\/, 'an absolute or home path'],
+  const patterns: [RegExp,string,boolean?][] = [
+    [/\/Users\/|~\/|\/home\/|[A-Za-z]:\\/, 'an absolute or home path', true],
     [/[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+/, 'an email address'],
     [/\b[\w-]+\.(local|lan|internal|home|localdomain)\b|\bmacbook[\w-]*\b|\bmac-?studio[\w-]*\b/i, 'a hostname'],
     [/javascript:|data:text\/html/i, 'a script URL'],
   ];
-  return text.split('\n').flatMap((line,i) => patterns.filter(([rx]) => rx.test(line)).map(([,what]) => `${label}:${i+1}: contains ${what}; private material cannot ship`));
+  return text.split('\n').flatMap((line,i) => {
+    // Public URL paths are not filesystem paths; still scan their hosts and other private content.
+    const withoutHttpURLs = line.replace(/https?:\/\/[^\s<>"'`]+/gi, '');
+    return patterns.filter(([rx,,skipHttpURLs]) => rx.test(skipHttpURLs ? withoutHttpURLs : line))
+      .map(([,what]) => `${label}:${i+1}: contains ${what}; private material cannot ship`);
+  });
 }
 export function parseEntry(folder: string): Entry {
   const id = folder.split('/').at(-1)!;
