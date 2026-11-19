@@ -68,3 +68,4 @@ figure.infographic{--mut:inherit;--primary:inherit;--card:inherit;--fg:inherit;c
 @media(max-width:759px){.entry .reader-table.count-matrix tr>:first-child:not(.nowrap){white-space:normal}}
 .entry .reader-table.count-matrix tbody tr>td.count-cell{background:color-mix(in srgb,var(--primary) var(--cell-tint),var(--bg));color:var(--fg)}
 @media(forced-colors:active){.entry .reader-table.count-matrix tbody tr>td.count-cell{background:Canvas;color:CanvasText}}
+@media(max-width:759px){.entry .reader-table.count-matrix tr>:first-child:not(.nowrap){min-width:26ch;max-width:26ch;white-space:normal}}
