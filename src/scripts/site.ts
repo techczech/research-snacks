@@ -30,12 +30,11 @@ async function renderSearch() {
       if(!all.length)continue;
       const group=h('div',{role:'group','aria-label':`${section.name}: ${all.length} results`});
       group.append(h('h3',{},`${section.name} (${all.length})`));
-      for(const x of all.slice(0,6)) {
+      for(const x of all) {
         const url=safeURL(x.u); if(!url)continue;
         const link=h('a',{href:url,role:'option',id:`search-result-${count++}`,'data-source':x.x ? safeURL(x.x) : null},h('strong',{},highlight(x.t,ts)),h('span',{},highlight(x.d,ts)));
         group.append(link);
       }
-      if(all.length>6)group.append(h('a',{href:`${section.href}?q=${encodeURIComponent(q)}`},`All ${all.length} in ${section.name}`));
       results.append(group);
     }
     status.textContent = count ? q ? `${count} results for “${q}”` : 'Search entry titles, summaries and text. Try “jobs”, “cake” or “wealth”.' : `No results for “${q}”. Try a different search.`;
