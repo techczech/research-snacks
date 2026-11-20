@@ -76,4 +76,4 @@ The [classified file inventory](inventory-research-asset-files-2026-11-20.csv) r
 - Every authored Markdown table was compared cell for cell with the pre-migration source: all 72 are unchanged.
 - Every generated HTML and Markdown link is checked for a removed site data/code target; none remains.
 
-All 175 distinct GitHub blob URLs found in the generated HTML, Markdown, RIS and JSON returned HTTP 200. This includes every one of the 172 mapped research-file URLs and three additional method/guide links. Production verification will be recorded after deployment.
+All 175 distinct GitHub blob URLs found in the generated HTML, Markdown, RIS and JSON returned HTTP 200. This includes every one of the 172 mapped research-file URLs and three additional method/guide links. Production verification will be recorded after deployment. Explicit 302 redirects preserve all 189 retired data/code URLs: 172 point to their GitHub files and 17 withheld/working artifacts go home. This also overrides a stale removed Markdown response found in the custom-domain cache; the deployment credential has no zone cache-purge access.

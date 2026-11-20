@@ -11,6 +11,9 @@ test('research links share one mapping in authored text, HTML and Files lists',(
  expect(()=>researchAssetURL('data/not-published.csv',id)).toThrow('no public research-file mapping');
  expect(renderMarkdown('[Totals](data/source-totals.csv)','entries/'+id)).toContain(`href="${url}"`);
  expect(getEntries().flatMap(x=>researchFiles(x.id))).toHaveLength(172);
+ const redirects=readFileSync('scripts/assets/_redirects','utf8');
+ for(const entry of getEntries())for(const file of researchFiles(entry.id))expect(redirects).toContain(`/${entry.id}/${file.path} ${file.url} 302\n`);
+ expect(redirects).toContain('/2026-11-17-ai-wealth-control-2035/data/claim-source.md / 302\n');
 });
 
 test('the public sickly table contains all 39 stand-off locators without concordance fields',()=>{
