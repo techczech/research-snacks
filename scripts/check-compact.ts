@@ -60,7 +60,7 @@ export async function checkCompact(browser:Browser,base:string){
    const failures=await page.locator('.reader-table').evaluateAll(wrappers=>wrappers.flatMap(w=>{
     const frame=w.querySelector<HTMLElement>('.table-scroll')!,tools=w.querySelector<HTMLElement>('.table-tools')!,hint=w.querySelector<HTMLElement>('.table-hint')!;
     const wide=frame.scrollWidth>frame.clientWidth+1,rows=w.querySelectorAll('tbody tr').length;
-    return [hint.hidden===wide?'incorrect overflow hint':null,tools.hidden!==(rows<8&&!wide)?'incorrect tool row':null,hint.parentElement!==tools?'hint outside tools':null].filter(Boolean).map(f=>`${w.id}: ${f}`);
+    return [hint.hidden===wide?'incorrect overflow hint':null,tools.hidden!==(rows<8&&!wide)?'incorrect tool row':null,hint.parentElement!==tools?'hint outside tools':null,frame.scrollHeight>frame.clientHeight+1?'vertical table scroll':null].filter(Boolean).map(f=>`${w.id}: ${f}`);
    }));assert.deepEqual(failures,[],`${x.id} at ${width}`);
   }
  }
@@ -68,6 +68,14 @@ export async function checkCompact(browser:Browser,base:string){
  for(const id of ['table-4','table-5'])assert(await page.locator(`#${id} .table-scroll`).evaluate(e=>e.scrollWidth<=e.clientWidth+1),`${id} text and headers fit at 950px`);
  await page.goto(base+'/2026-11-19-hawks-and-doves/');
  assert(await page.locator('#table-1 .table-scroll').evaluate(e=>e.scrollWidth<=e.clientWidth+1),'linked sources wrap and all four examples columns fit');
+ assert.equal(await page.locator('#table-1 tbody tr').count(),7);
+ const passageLines=await page.locator('#table-1 tbody tr td:nth-child(3)').evaluateAll(cells=>cells.map(c=>{
+  const walker=document.createTreeWalker(c,NodeFilter.SHOW_TEXT),ys=new Set<number>();
+  while(walker.nextNode()){const node=walker.currentNode;for(let i=0;i<(node.textContent||'').length;i++){
+   if(!node.textContent![i].trim())continue;const range=document.createRange();range.setStart(node,i);range.setEnd(node,i+1);ys.add(Math.round(range.getBoundingClientRect().top));
+  }}return ys.size;
+ }));
+ assert(passageLines.every(n=>n>=2&&n<=3),`hawks passage lines: ${passageLines}`);
  await page.goto(base+'/2026-11-19-decipherment-methods-and-agents/figures/');
  assert.equal(await page.locator('h1').innerText(),'Figures and tables');
  assert((await page.locator('.figure-index a').first().innerText()).startsWith('Table 1: '));

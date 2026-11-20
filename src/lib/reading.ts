@@ -46,6 +46,14 @@ export function readingSurfaces(html:string,entryId:string):Reading {
         if(data.some(isNumericText)&&data.every(v=>isNumericText(v)||/^[—–-]$/.test(v)))cells.forEach(r=>r[i]?.classList.add('num'));
         cells.slice(1).forEach(r=>{const v=plain(r[i]);if(isNumericText(v)||isShortCode(v)||/^[—–-]$/.test(v))r[i].classList.add('nowrap');if(/^\d{1,2} [A-Za-z]+ \d{4}$/.test(v))r[i].classList.add('full-date');});
       });
+      // A slash between words is a legitimate wrapping boundary, not a split within a word.
+      for(const cell of cells.flat()){
+        const walker=document.createTreeWalker(cell,4),texts:any[]=[];while(walker.nextNode())texts.push(walker.currentNode);
+        for(const text of texts)if(text.textContent.includes('/')){
+          const parts=text.textContent.split('/'),fragment=document.createDocumentFragment();
+          parts.forEach((part:string,i:number)=>{if(i){fragment.append('/');fragment.append(document.createElement('wbr'));}fragment.append(part);});text.replaceWith(fragment);
+        }
+      }
       const counts=entryId==='2026-11-19-decipherment-methods-and-agents'&&title==='Provisional historical coding'&&headers.join('|')==='Provisional code at the selected stage|Yes|Partial|No|Uncertain'&&values.slice(1).every(r=>r.slice(1).every(v=>/^\d+$/.test(v))&&r.slice(1).reduce((s,v)=>s+Number(v),0)===20);
       if(counts)cells.slice(1).forEach(r=>r.slice(1).forEach(c=>{c.classList.add('count-cell');c.style.setProperty('--cell-tint',`${Number(plain(c))/20*22}%`);}));
       csv=values.map(r=>r.map(v=>'"'+v.replaceAll('"','""')+'"').join(',')).join('\r\n')+'\r\n';

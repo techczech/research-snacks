@@ -1,4 +1,5 @@
 import {tableValue} from '../lib/table-values';
+import {balanceTableWidths} from './table-widths';
 
 // Adapted from the Online Reader Framework table-surface: native tables remain the source.
 export function initTables(root:ParentNode=document){
@@ -16,14 +17,18 @@ export function initTables(root:ParentNode=document){
     // if doing so avoids sideways scrolling. Text and every header wrap from the outset.
     const dates=[...table.querySelectorAll<HTMLElement>('td.full-date')];
     for(const cell of dates){if(cell.childNodes.length!==1||cell.firstChild?.nodeType!==Node.TEXT_NODE)continue;const date=cell.textContent!.trim(),space=date.lastIndexOf(' '),dayMonth=document.createElement('span');dayMonth.className='date-day-month';dayMonth.textContent=date.slice(0,space);cell.replaceChildren(dayMonth,document.createTextNode(date.slice(space)));}
+    let layoutKey='';
     const updateOverflow=()=>{
       wrapper.classList.remove('wrap-dates');
       if(scroll.scrollWidth>scroll.clientWidth+1)wrapper.classList.add('wrap-dates');
+      const key=`${innerWidth}:${wrapper.classList.contains('table-full')}:${headers.map(h=>h.hidden).join()}`;
+      if(regular&&key!==layoutKey){layoutKey=key;balanceTableWidths(table);}
       const wide=scroll.scrollWidth>scroll.clientWidth+1;
       hint.hidden=!wide;wrapper.classList.toggle('wide-table',wide);
       tools.hidden=rows.length<8&&!wide&&!wrapper.classList.contains('table-full');
     };
     new ResizeObserver(updateOverflow).observe(scroll);new ResizeObserver(updateOverflow).observe(table);
+    document.fonts.ready.then(()=>{layoutKey='';updateOverflow();});
     const kwic=wrapper.closest<HTMLElement>('#sickly-kwic');
     const corpus=kwic?.querySelector<HTMLSelectElement>('#sickly-corpus');
     let filter:HTMLInputElement|undefined;
