@@ -44,7 +44,7 @@ export function readingSurfaces(html:string,entryId:string):Reading {
         else if(data.some(v=>v.length>65))cells.forEach(r=>r[i]?.classList.add('text-col'));
         else cells.forEach(r=>r[i]?.classList.add('short-col'));
         if(data.some(isNumericText)&&data.every(v=>isNumericText(v)||/^[—–-]$/.test(v)))cells.forEach(r=>r[i]?.classList.add('num'));
-        if(data.every(v=>isNumericText(v)||isShortCode(v)||/^[—–-]$/.test(v)))cells.forEach(r=>r[i]?.classList.add('nowrap'));
+        cells.slice(1).forEach(r=>{const v=plain(r[i]);if(isNumericText(v)||isShortCode(v)||/^[—–-]$/.test(v))r[i].classList.add('nowrap');if(/^\d{1,2} [A-Za-z]+ \d{4}$/.test(v))r[i].classList.add('full-date');});
       });
       const counts=entryId==='2026-11-19-decipherment-methods-and-agents'&&title==='Provisional historical coding'&&headers.join('|')==='Provisional code at the selected stage|Yes|Partial|No|Uncertain'&&values.slice(1).every(r=>r.slice(1).every(v=>/^\d+$/.test(v))&&r.slice(1).reduce((s,v)=>s+Number(v),0)===20);
       if(counts)cells.slice(1).forEach(r=>r.slice(1).forEach(c=>{c.classList.add('count-cell');c.style.setProperty('--cell-tint',`${Number(plain(c))/20*22}%`);}));
@@ -53,11 +53,11 @@ export function readingSurfaces(html:string,entryId:string):Reading {
       const wrapper=document.createElement('figure');wrapper.className='reader-table'+(counts?' count-matrix':'');wrapper.dataset.rows=String(rows);
       const caption=document.createElement('figcaption');caption.id=`${id}-caption`;caption.textContent=title;caption.className='sr-only';
       node.setAttribute('aria-labelledby',caption.id);
-      const tools=document.createElement('div');tools.className='table-tools';
+      const tools=document.createElement('div');tools.className='table-tools';tools.hidden=rows<8;
       tools.innerHTML=`<a href="/${escape(entryId)}/tables/${id}.csv" download title="Download the complete table in source order">CSV</a>`;
-      const hint=document.createElement('p');hint.className='table-hint';hint.textContent='Scroll sideways for more columns';
+      const hint=document.createElement('span');hint.className='table-hint';hint.textContent='Scroll sideways for more columns';hint.hidden=true;tools.append(hint);
       const scroll=document.createElement('div');scroll.className='table-scroll';scroll.tabIndex=0;scroll.setAttribute('role','region');scroll.setAttribute('aria-label',title);if(rows>=8)scroll.classList.add('long-table');
-      node.replaceWith(wrapper);scroll.append(node);wrapper.append(caption,tools,hint,scroll);visual=wrapper;
+      node.replaceWith(wrapper);scroll.append(node);wrapper.append(caption,tools,scroll);visual=wrapper;
     }else if(node.tagName!=='FIGURE'){
       const wrapper=document.createElement('figure');wrapper.className='reading-image';node.replaceWith(wrapper);wrapper.append(node);visual=wrapper;
     }
@@ -81,7 +81,7 @@ export function figuresHTML(reading:Reading,id:string):string {
   return reading.visuals.filter(v=>!v.appendix).map(v=>{
     const {document}=parseHTML(`<html><body>${v.html}</body></html>`);
     const visual=document.body.firstElementChild!;visual.removeAttribute('id');
-    return `<section class="gallery-item" id="${v.id}"><h2>${escape(v.title)}</h2>${absoluteAssets(visual.outerHTML+`<div class="source-note">${v.note}</div>`,id)}<p class="figure-back"><a href="/${id}/#${v.id}">Back to this place in the text</a></p></section>`;
+    return `<section class="gallery-item" id="${v.id}"><h2>${escape(v.title)}</h2>${absoluteAssets(visual.outerHTML+`<div class="source-note">${v.note}</div>`,id)}<p class="figure-back">${v.csv?`<a href="/${id}/tables/${v.id}.csv" download>CSV</a> · `:''}<a href="/${id}/#${v.id}">Back to this place in the text</a></p></section>`;
   }).join('');
 }
 export function figuresMarkdown(reading:Reading,id:string,title:string):string {

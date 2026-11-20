@@ -12,7 +12,17 @@ export function initTables(root:ParentNode=document){
     const control=(label:string,action:()=>void)=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.addEventListener('click',action);tools.append(b);return b;};
     const status=document.createElement('span');status.className='table-count';status.setAttribute('role','status');
     const hint=wrapper.querySelector<HTMLElement>('.table-hint')!;
-    const updateOverflow=()=>{const wide=scroll.scrollWidth>scroll.clientWidth+1;hint.hidden=!wide;wrapper.classList.toggle('wide-table',wide);};
+    // Restore the natural atomic date before measuring, then let it break before the year
+    // if doing so avoids sideways scrolling. Text and every header wrap from the outset.
+    const dates=[...table.querySelectorAll<HTMLElement>('td.full-date')];
+    for(const cell of dates){if(cell.childNodes.length!==1||cell.firstChild?.nodeType!==Node.TEXT_NODE)continue;const date=cell.textContent!.trim(),space=date.lastIndexOf(' '),dayMonth=document.createElement('span');dayMonth.className='date-day-month';dayMonth.textContent=date.slice(0,space);cell.replaceChildren(dayMonth,document.createTextNode(date.slice(space)));}
+    const updateOverflow=()=>{
+      wrapper.classList.remove('wrap-dates');
+      if(scroll.scrollWidth>scroll.clientWidth+1)wrapper.classList.add('wrap-dates');
+      const wide=scroll.scrollWidth>scroll.clientWidth+1;
+      hint.hidden=!wide;wrapper.classList.toggle('wide-table',wide);
+      tools.hidden=rows.length<8&&!wide&&!wrapper.classList.contains('table-full');
+    };
     new ResizeObserver(updateOverflow).observe(scroll);new ResizeObserver(updateOverflow).observe(table);
     const kwic=wrapper.closest<HTMLElement>('#sickly-kwic');
     const corpus=kwic?.querySelector<HTMLSelectElement>('#sickly-corpus');
@@ -66,6 +76,6 @@ export function initTables(root:ParentNode=document){
     focusButton=control('Full view',()=>{if(wrapper.classList.contains('table-full')){closeFull();return;}wrapper.classList.add('table-full');wrapper.setAttribute('popover','manual');wrapper.showPopover();focusButton.textContent='Close full view';focusButton.setAttribute('aria-pressed','true');updateOverflow();});focusButton.setAttribute('aria-pressed','false');
     wrapper.addEventListener('keydown',e=>{if(e.key==='Escape'&&!wrapper.querySelector('.table-columns:popover-open')){if(wrapper.classList.contains('table-full')){e.preventDefault();closeFull();}else if(e.target===filter&&filter.value){filter.value='';applyFilter();}}});
     // CSV stays the complete canonical table, regardless of the reader's temporary projection.
-    tools.append(tools.querySelector('a[download]')!);updateOverflow();
+    tools.append(tools.querySelector('a[download]')!,hint);updateOverflow();
   });
 }

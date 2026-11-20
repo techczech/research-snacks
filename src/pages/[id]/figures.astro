@@ -8,10 +8,9 @@ const reading=readingSurfaces(renderMarkdown(entry._body,entry._folder),entry.id
 ---
 <BaseLayout title={`Figures and tables: ${entry.title} · ${NAME}`} description={`Charts and main tables from ${entry.title}, with source context and downloads.`} cite>
   <main id="main" class="wrap figures-page entry">
-    <a class="back-link" href={`/${entry.id}/`}>← Read the complete snack</a>
-    <p class="page-label">Figures and tables</p><h1>{entry.title}</h1>
-    <p class="gallery-summary">The visual evidence in its original order. Each item links to the sources and its place in the text.</p>
-    <nav class="figure-index" aria-label="Figures and tables">{reading.visuals.filter(v=>!v.appendix).map((v,i)=><a href={`#${v.id}`}><span class="visual-kind">{v.kind==='table'?'Table':'Figure'} {v.id.split('-')[1]}</span>{v.title}</a>)}</nav>
+    <h1>Figures and tables</h1>
+    <p><a href={`/${entry.id}/`}>{entry.title}</a></p>
+    <nav class="figure-index" aria-label="Figures and tables">{reading.visuals.filter(v=>!v.appendix).map((v,i)=><a href={`#${v.id}`}><span class="visual-kind">{v.kind==='table'?'Table':'Figure'} {v.id.split('-')[1]}: </span>{v.title}</a>)}</nav>
     <Fragment set:html={figuresHTML(reading,entry.id)} />
   </main>
 </BaseLayout>

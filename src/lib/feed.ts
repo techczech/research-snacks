@@ -6,5 +6,5 @@ export function shortTime(x:Entry):string {
   const s=String(x.time_taken);const minutes=/^(?:About\s+)?(\d+(?:\.\d+)?)\s+minutes/i.exec(s);
   if(minutes)return `${Math.round(Number(minutes[1]))} min`;
   if(/^About an hour/i.test(s))return 'about 1 hr';
-  return 'timing in article';
+  return '';
 }

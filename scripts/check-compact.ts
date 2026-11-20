@@ -21,7 +21,9 @@ export async function checkCompact(browser:Browser,base:string){
  const sort=small.locator('thead th').nth(1).locator('button');await sort.focus();await page.keyboard.press('Enter');assert.equal(await small.locator('th').nth(1).getAttribute('aria-sort'),'ascending');
  await page.keyboard.press('Space');assert.equal(await small.locator('th').nth(1).getAttribute('aria-sort'),'descending');
  await page.keyboard.press('Enter');assert.deepEqual(await small.locator('tbody tr').allTextContents(),values);assert.equal(await small.locator('.table-source-order').isVisible(),false);
- const full=small.getByRole('button',{name:'Full view',exact:true});await full.focus();await page.keyboard.press('Enter');assert(await small.evaluate(e=>e.matches(':popover-open')));await page.keyboard.press('Escape');assert.equal(await small.evaluate(e=>e.matches(':popover-open')),false);assert(await full.evaluate(e=>e===document.activeElement));
+ assert.equal(await small.locator('.table-tools').isVisible(),false,'small fitting table has no tool row');
+ const fullTable=page.locator('#table-4');
+ const full=fullTable.getByRole('button',{name:'Full view',exact:true});await full.focus();await page.keyboard.press('Enter');assert(await fullTable.evaluate(e=>e.matches(':popover-open')));await page.keyboard.press('Escape');assert.equal(await fullTable.evaluate(e=>e.matches(':popover-open')),false);assert(await full.evaluate(e=>e===document.activeElement));
  for(const width of [950,390]){await page.setViewportSize({width,height:800});await page.goto(base+'/2026-11-19-decipherment-methods-and-agents/');
   assert.equal(await page.locator('.toc').isVisible(),width>=760);
   if(width<760)assert(await page.locator('.toc-m').evaluate(e=>e.previousElementSibling?.matches('.facts')));
@@ -50,5 +52,25 @@ export async function checkCompact(browser:Browser,base:string){
   if(!await buttons.count())continue;await buttons.first().focus();await page.keyboard.press('Enter');const chooser=page.locator('.table-columns:popover-open');assert(await chooser.isVisible());const box=chooser.locator('input:not(:disabled)').first();await box.focus();await page.keyboard.press('Space');assert.equal(await box.isChecked(),false);await page.keyboard.press('Space');assert(await box.isChecked());await page.keyboard.press('Escape');exercised=true;break;
  }
  assert(exercised,'a real column chooser must be covered');
+ // Overflow cues and compact controls must follow the actual frame, including after resize.
+ for(const x of getEntries()){
+  await page.goto(`${base}/${x.id}/`);
+  for(const width of [950,1440,390,950]){
+   await page.setViewportSize({width,height:800});await page.waitForTimeout(75);
+   const failures=await page.locator('.reader-table').evaluateAll(wrappers=>wrappers.flatMap(w=>{
+    const frame=w.querySelector<HTMLElement>('.table-scroll')!,tools=w.querySelector<HTMLElement>('.table-tools')!,hint=w.querySelector<HTMLElement>('.table-hint')!;
+    const wide=frame.scrollWidth>frame.clientWidth+1,rows=w.querySelectorAll('tbody tr').length;
+    return [hint.hidden===wide?'incorrect overflow hint':null,tools.hidden!==(rows<8&&!wide)?'incorrect tool row':null,hint.parentElement!==tools?'hint outside tools':null].filter(Boolean).map(f=>`${w.id}: ${f}`);
+   }));assert.deepEqual(failures,[],`${x.id} at ${width}`);
+  }
+ }
+ await page.setViewportSize({width:950,height:800});await page.goto(base+'/2026-11-19-revolution-speed-2011-redo/');
+ for(const id of ['table-4','table-5'])assert(await page.locator(`#${id} .table-scroll`).evaluate(e=>e.scrollWidth<=e.clientWidth+1),`${id} text and headers fit at 950px`);
+ await page.goto(base+'/2026-11-19-hawks-and-doves/');
+ assert(await page.locator('#table-1 .table-scroll').evaluate(e=>e.scrollWidth<=e.clientWidth+1),'linked sources wrap and all four examples columns fit');
+ await page.goto(base+'/2026-11-19-decipherment-methods-and-agents/figures/');
+ assert.equal(await page.locator('h1').innerText(),'Figures and tables');
+ assert((await page.locator('.figure-index a').first().innerText()).startsWith('Table 1: '));
+ assert(await page.locator('#table-1 .figure-back a[download]').count(),'small table CSV remains available in gallery');
  await ctx.close();console.log('PASS Compact table keyboard sort/filter/reset/columns/full-view, 950px sidebar, home density, all no-JS article/figures widths');
 }
