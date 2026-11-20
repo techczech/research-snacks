@@ -148,7 +148,7 @@ The corpus study was run on **7 October 2026** and repackaged on **17 November 2
 
 The original study retrieved exact-form *sickly*, examined wider contexts, and classified construction, coordination and reading. Sketch Engine supplied concordances, grammatical relations and collocation statistics. The judgement steps were selecting examples and interpreting their syntax and sense. Repackaging preserved those labels and counts; Python grouped the existing food annotations and generated the figure and table. The BNC credit in References is copied verbatim from the provider’s documentation.
 
-The checking repository preserves stand-off food annotations, example locators, aggregate statistics, query settings and the current method. Earlier report drafts, working notes and run records are not distributed. A checksum manifest identifies the original source copies without distributing them. The chart CSV contains exactly the six plotted construction counts; the example table on this page shows the 39 corpus lines; the checking repository's locator CSV identifies the same 39 examples by corpus position.
+The checking repository preserves the food annotations with their contexts, the curated example lines, example locators, aggregate statistics, query settings and the current method. Earlier report drafts, working notes and run records are not distributed. A checksum manifest identifies the original source copies without distributing them. The chart CSV contains exactly the six plotted construction counts; the example table on this page shows the 39 corpus lines, and the checking repository holds the same lines with their corpus positions.
 
 ### Models, tools and tokens
 
