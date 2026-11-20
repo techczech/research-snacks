@@ -90,4 +90,19 @@ for item,entry in zip(items,expected):
 assert len(guids)==len(set(guids)) and dates==sorted(dates,reverse=True)
 assert (OUT/'llms.txt').is_file()
 for path in paths: assert (OUT/path.strip('/')/'index.md').is_file()
+for entry in expected:
+    root=OUT/entry['u'].strip('/')
+    assert not (root/'data').exists() and not (root/'code').exists(),entry['u']
+for file in OUT.rglob('*'):
+    if not file.is_file() or file.suffix not in ('.html','.md'): continue
+    text=file.read_text()
+    if file.suffix=='.html': links=Page(text).links
+    else:
+        import re
+        links=re.findall(r'\]\(([^\s)]+)',text)
+    for link in links:
+        u=urlparse(urljoin(BASE+'/'+str(file.relative_to(OUT)),link))
+        if u.netloc=='researchsnacks.semanticmachines.fyi':
+            parts=unquote(u.path).strip('/').split('/')
+            assert len(parts)<2 or parts[1] not in ('data','code'),(file,link,'removed site research path')
 print(f'PASS: {len(paths)} Astro pages, citations, canonical/social/agent metadata, local files/anchors; RSS 2.0 with {len(items)} complete summaries.')

@@ -25,8 +25,8 @@
     "step": 24
   },
   "title": {
-    "text": "39 curated examples of sickly",
-    "subtitle": "Selected illustrations and diagnostic exclusions, not a random sample."
+    "text": "39 curated sickly example locators",
+    "subtitle": "Corpus text withheld; recover contexts through licensed access."
   },
   "transform": [
     {
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "calculate": "datum.corpus + ' | ' + datum.referent + ' | ' + datum.left + ' ' + datum.node + ' ' + datum.right",
+      "calculate": "datum.corpus + ' | ' + datum.document_id + ' | ' + datum.token + ' | ' + datum.construction + ' | ' + datum.reading",
       "as": "excerpt"
     }
   ],
@@ -47,7 +47,7 @@
     "align": "left",
     "baseline": "middle",
     "limit": 820,
-    "fontSize": 12
+    "fontSize": 16
   },
   "encoding": {
     "x": {
@@ -63,10 +63,16 @@
     },
     "tooltip": [
       {
+        "field": "example"
+      },
+      {
         "field": "corpus"
       },
       {
-        "field": "referent"
+        "field": "token"
+      },
+      {
+        "field": "document_id"
       },
       {
         "field": "construction"
@@ -76,21 +82,6 @@
       },
       {
         "field": "reading"
-      },
-      {
-        "field": "left"
-      },
-      {
-        "field": "node"
-      },
-      {
-        "field": "right"
-      },
-      {
-        "field": "reference"
-      },
-      {
-        "field": "token"
       }
     ]
   },

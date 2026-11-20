@@ -71,10 +71,10 @@ try {
   await page.locator('[data-open-keys]').click();assert.equal(await page.locator('#keys-dlg').evaluate(el=>getComputedStyle(el).animationName),'none');await page.keyboard.press('Escape');passed('Reduced motion: instant scrolling and no dialog animation');
   await page.goto(current+'/2026-11-17-can-a-cake-be-sickly/');
   const kwic=page.locator('#sickly-kwic');assert.equal(await kwic.locator('tbody tr').count(),39);
-  await kwic.locator('input[type=search]').fill('chocolate');let count=await kwic.locator('tbody tr:visible').count();assert(count>0&&count<39);
+  await kwic.locator('input[type=search]').fill('sole');let count=await kwic.locator('tbody tr:visible').count();assert(count>0&&count<39);
   await kwic.locator('input[type=search]').fill('');await kwic.locator('select').selectOption('OANC');assert.equal(await kwic.locator('tbody tr:visible').count(),6);
   await kwic.locator('[data-sort="0"]').click();assert.equal(await kwic.locator('th').first().getAttribute('aria-sort'),'ascending');
-  const download=page.waitForEvent('download');await kwic.locator('#sickly-export').click();const saved=await download;await saved.saveAs(join(dir,'sickly-filtered.csv'));const csv=readFileSync(join(dir,'sickly-filtered.csv'),'utf8');assert.equal(csv.trim().split('\n').length,7);assert(csv.includes('OANC'));passed('KWIC: 39 rows, search, corpus filter, sorting and six-row CSV export');
+  const download=page.waitForEvent('download');await kwic.locator('#sickly-export').click();const saved=await download;await saved.saveAs(join(dir,'sickly-filtered.csv'));const csv=readFileSync(join(dir,'sickly-filtered.csv'),'utf8');assert.equal(csv.trim().split('\n').length,7);assert(csv.includes('OANC'));passed('Stand-off locators: 39 rows, search, corpus filter, sorting and six-row CSV export');
   await page.locator('#how-this-was-made').scrollIntoViewIfNeeded();await page.waitForFunction(()=>!!document.querySelector('.toc [aria-current="location"]'));assert.equal(await page.locator('.toc [aria-current="location"]').count(),1);assert.equal(await page.locator('.toc li.h2.open').count(),1);passed('TOC observer marks current heading and opens its H3 group');
   // Copy: API success, API rejection + legacy success, total failure visible.
   for(const mode of ['success','fallback','failure']){

@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { getEntries, getAbout, referencesRIS, ROOT, renderMarkdown } from '../src/lib/content';
 import {readingSurfaces} from '../src/lib/reading';
@@ -8,7 +8,10 @@ rmSync(dest,{recursive:true,force:true}); mkdirSync(dest,{recursive:true});
 for (const asset of ['style.css','copy.js','_headers','_redirects']) cpSync(join(ROOT,'scripts/assets',asset),join(dest,asset));
 for(const name of ['house','compact'])cpSync(join(ROOT,'src/styles',name+'.css'),join(dest,name+'.css'));
 for (const x of entries) {
-  cpSync(x._folder,join(dest,x.id),{recursive:true,filter:src => !['index.md','__pycache__','.DS_Store'].includes(src.split('/').at(-1)!)});
+  const unexpected=readdirSync(x._folder).filter(n=>!['index.md','charts','.DS_Store'].includes(n));
+  if(unexpected.length)throw new Error(`${x.id}: entries contain only index.md and charts/; put research files in the checking repository`);
+  mkdirSync(join(dest,x.id),{recursive:true});
+  if(existsSync(join(x._folder,'charts')))cpSync(join(x._folder,'charts'),join(dest,x.id,'charts'),{recursive:true});
   const reading=readingSurfaces(renderMarkdown(x._body,x._folder),x.id);
   mkdirSync(join(dest,x.id,'tables'),{recursive:true});
   for(const v of reading.visuals)if(v.csv)writeFileSync(join(dest,x.id,'tables',v.id+'.csv'),v.csv);

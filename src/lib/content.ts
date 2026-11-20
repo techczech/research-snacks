@@ -6,6 +6,7 @@ import { parse as yaml } from 'yaml';
 import { micromark } from 'micromark';
 import { gfm, gfmHtml } from 'micromark-extension-gfm';
 import { citeBlockHtml, surnameFirst } from '../scripts/kit/citation';
+import researchAssets from './research-assets.json';
 
 export const BASE = 'https://researchsnacks.semanticmachines.fyi';
 export const NAME = 'Research Snacks';
@@ -15,6 +16,23 @@ export const ROOT = process.cwd();
 export const e = (v: unknown) => String(v).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#x27;');
 export const names = (v: any): string[] => typeof v === 'string' ? [v] : [...(v || [])];
 export type Entry = Record<string, any> & { id: string; title: string; date: string; _body: string; _folder: string };
+const researchMap: Record<string,Record<string,string>> = researchAssets;
+export function researchFiles(id: string): {path:string;url:string}[] {
+  return Object.entries(researchMap[id] || {}).sort(([a],[b])=>a.localeCompare(b)).map(([path,target])=>({path,url:`https://github.com/techczech/research-snacks-data/blob/main/${target.split('/').map(encodeURIComponent).join('/')}`}));
+}
+export function researchAssetURL(url:string,entryId:string):string {
+  const resolved=new URL(url,`${BASE}/${entryId}/`);
+  if(resolved.origin!==BASE)return url;
+  const [,id,...parts]=decodeURIComponent(resolved.pathname).split('/');
+  if(!['data','code'].includes(parts[0]))return url;
+  const asset=researchFiles(id).find(f=>f.path===parts.join('/'));
+  if(!asset)throw new Error(`${id}: no public research-file mapping for ${parts.join('/')}`);
+  return asset.url+resolved.search+resolved.hash;
+}
+export function rewriteResearchLinks(text:string,id:string):string {
+  return text.replace(/(\]\(|\b(?:href|src|data-spec)=["'])([^\s"'<>)]*)/g,(_,prefix,url)=>prefix+researchAssetURL(url,id))
+    .replace(/https?:\/\/researchsnacks\.semanticmachines\.fyi\/[^\s<>"')\]]+/g,url=>researchAssetURL(url,id));
+}
 export function files(dir: string): string[] {
   return existsSync(dir) ? readdirSync(dir).sort().flatMap(n => statSync(join(dir,n)).isDirectory() ? files(join(dir,n)) : [join(dir,n)]) : [];
 }
@@ -55,7 +73,8 @@ export function parseEntry(folder: string): Entry {
   if (!/^https?:\/\//.test(String(fm.claim_source))) errors.push(`${id}: claim_source must be an HTTP URL`);
   for (const file of files(folder)) if (TEXT_EXT.has(extname(file).toLowerCase())) errors.push(...privacyErrors(readFileSync(file,'utf8'),`${id}/${relative(folder,file)}`));
   if (errors.length) throw new Error(`BUILD FAILED:\n  ${errors.join('\n  ')}`);
-  return {...fm, date: String(fm.date), _body:m[2].trim(), _folder:folder};
+  const rewriteValue=(value:any):any=>typeof value==='string'?rewriteResearchLinks(value,id):Array.isArray(value)?value.map(rewriteValue):value&&typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,rewriteValue(v)])):value;
+  return {...rewriteValue(fm), date: String(fm.date), _body:rewriteResearchLinks(m[2].trim(),id), _folder:folder};
 }
 export function getEntries(): Entry[] {
   const root = join(ROOT,'entries');
@@ -132,7 +151,7 @@ export function renderMarkdown(text: string,folder?: string): string {
     const base = inner.replace(/<[^>]+>/g,'').normalize('NFKD').replace(/[^\x00-\x7f]/g,'').toLowerCase().replace(/[^\w\s-]/g,'').trim().replace(/[\s-]+/g,'-');
     let id=base, n=1; while (used.has(id)) id=`${base}_${n++}`; used.add(id); return `<${tag} id="${id}">${inner}</${tag}>`;
   });
-  return html;
+  return folder?rewriteResearchLinks(html,folder.split('/').at(-1)!):html;
 }
 export function withTOC(html: string,title: string,entryId?:string): string {
   const items: {tag:string;id:string;text:string}[] = [], used = new Set<string>();
@@ -161,9 +180,8 @@ export function entryHTML(x: Entry): string {
   const making = split ? rendered.slice(split.index+split[0].length) : '';
   const refs = (x.references || []).map((r: any) => `<li>${referenceText(r)}</li>`).join('');
   const assets = [['data','Data'],['code','Code']].map(([sub,label]) => {
-    const dir = join(x._folder,sub);
-    const listed = existsSync(dir) ? readdirSync(dir).sort().filter(n => statSync(join(dir,n)).isFile()) : [];
-    return listed.length ? `<h4>${label}</h4><ul class="assets">${listed.map(n => `<li><a href="${sub}/${e(n)}" download>${sub}/${e(n)}</a></li>`).join('')}</ul>` : '';
+    const listed=researchFiles(x.id).filter(f=>f.path.startsWith(sub+'/'));
+    return listed.length ? `<h4>${label}</h4><ul class="assets">${listed.map(f => `<li><a href="${e(f.url)}">${e(f.path)}</a></li>`).join('')}</ul>` : '';
   }).join('');
   const cite = citeBlockHtml(pageCitation(x.title,`/${x.id}/`,x)).replace(/<h2( [^>]*)?>Cite this page<\/h2>/,'<h3$1>Cite this page</h3>');
   return withTOC(`<div class="legend">${dateLabel(x.date)} · ${e(names(x.author || AUTHOR).join(', '))}</div><h1>${e(x.title)}</h1><div class="meta-links"><a href="figures/">Figures and tables</a></div>${facts}<!--mobile-contents--><div class="body-md">${argument}</div><section class="making"><h2 class="making-h">How this was made</h2><p class="making-intro">How the check was done, what it cost, and the sources, data and code behind it.</p><div class="body-md">${making}</div><h3>Check it yourself</h3><p><a href="https://github.com/techczech/research-snacks-data/tree/main/snacks/${e(x.id)}">Clone the data, code and method for this snack</a>. The checking repository includes the shareable inputs, expected tables and rerun instructions. The whole collection is archived on Zenodo: <a href="https://doi.org/10.5281/zenodo.24370344">doi:10.5281/zenodo.24370344</a>.</p>${refs ? `<h3>References</h3><ol class="refs">${refs}</ol><p><a href="references.ris">Add these references to your reference manager (RIS)</a></p>` : ''}${assets ? '<h3>Files</h3>'+assets : ''}${cite}</section>`,x.title,x.id);
