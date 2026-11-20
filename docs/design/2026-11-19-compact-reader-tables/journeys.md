@@ -29,9 +29,14 @@ Each journey is walked on real pages at 950px and 390px. One header bar plus the
 
 # Density decisions
 
-Tables use 16px type, 1.35 line height and 5px vertical padding, approximately the live single-line row height. Natural-width tables keep numbers next to labels. Long tables have their own bounded scroll surface and full view, so evidence remains complete with compact local controls. This follows the reference reader table rather than increasing row padding. All transforms are reversible local views; source cells, Markdown and downloaded source CSV remain in source order. Merged cells disable row transforms.
+Tables use 16px type, 1.35 line height and 5px vertical padding, approximately the live single-line row height. Natural-width tables keep numbers next to labels. Every table row remains in normal page flow; tables scroll only sideways when necessary. Full view alone may scroll vertically. This follows the reference reader table rather than increasing row padding. All transforms are reversible local views; source cells, Markdown and downloaded source CSV remain in source order. Merged cells disable row transforms.
 
 
 # Coordinator revision, 20 November
 
 The page-height target was withdrawn in chat; keep the 60–72 character prose measure. Prefer fitting tables by wrapping headers, links and mixed date/text cells before allowing sideways scrolling. Pure full dates may break before the year. Only the seven-column concordance still overflows at 950 and 1440px because of long source identifiers. Small fitting tables have no tools row; their CSV remains on the gallery. Overflow hints share the tool line, follow actual overflow, and update on resize. Measurements remain informational; see verification.md and the three JSON inventories. The prepared review remains held for coordinator inspection, with the same decision block.
+
+
+# Complete table flow, later 20 November
+
+Remove every vertical table cap in article and figures views, and drop sticky table headers there because the horizontal frame prevents page-relative stickiness. Full view alone retains scrolling and its sticky header. Short columns size to their word/value minima; prose takes the remaining width. Content-measured spare width is redistributed on resize. Every hawks passage uses two or three lines at 950px. Full-table captures now show all seven examples, sixteen episodes and twenty historical stages at 950 and 1440px. The column audit found no remaining four-plus-line table paired with at least 8px of reusable width elsewhere. Page-height and row differences remain informational.

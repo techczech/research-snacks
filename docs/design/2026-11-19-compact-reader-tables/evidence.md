@@ -16,3 +16,6 @@ Machine-readable page-height and row-density results are in page-heights.json an
 
 
 The 20 November coordinator round replaced the current preview pictures with captures from the new immutable deployment. It adds the episodes and selection tables at all three widths, shows the wrapped four-column examples and actual overflow hints, and regenerates every state in the walkthrough. The same decision block and archived lifecycle remain. The page-height ceiling was explicitly withdrawn; heights and the 543 row-width differences are informational. Table-overflow.json lists the sole remaining desktop overflow: the seven-column concordance, whose long source identifiers exceed the combined word minima. No screenshot review by another model was performed in this round.
+
+
+The later 20 November round removes all inner vertical table scrolling. Six tall captures show the complete examples, episodes and historical-stage tables at 950 and 1440px. Other affected table pictures and all affected walkthrough states were refreshed. Column-audit.json records all 255 article table/width combinations and the no-JS figures/article clipping check. All heights now include every table row in page flow. The same prepared review and decision block remain archived for coordinator inspection.
