@@ -23,11 +23,10 @@ test('research links share one mapping in authored text, HTML and Files lists',(
  expect(redirects).toContain('/2026-11-17-ai-wealth-control-2035/data/claim-source.md / 302\n');
 });
 
-test('the public sickly table contains all 39 stand-off locators without concordance fields',()=>{
+test('the public sickly table shows all 39 curated corpus lines',()=>{
  const text=readFileSync('entries/2026-11-17-can-a-cake-be-sickly/charts/2-sickly-kwic.csv','utf8');
  expect(text.trim().split(/\r?\n/)).toHaveLength(40);
- expect(text.split(/\r?\n/)[0]).toBe('example,corpus,token,document_id,construction,coordination,reading');
+ expect(text.split(/\r?\n/)[0]).toBe('corpus,referent,construction,coordination,reading,left,node,right,reference,token');
  const html=readFileSync('entries/2026-11-17-can-a-cake-be-sickly/charts/2-sickly-kwic.html','utf8');
- expect(html).not.toContain('datum.left');
  expect(html).not.toContain('original-sickly-report.html');
 });

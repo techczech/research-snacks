@@ -88,13 +88,13 @@ The study classified fifteen BNC food and drink examples after reading their wid
 
 ![Selected BNC food and drink cases by construction and coordination; these counts do not estimate population proportions.](charts/1-sickly-food-constructions.png)
 
-The sole attributive cases include breakfast mix and shortbread buttons. Sole predicates include chocolate cake and chocolates. Degree expressions such as *a bit* are not second adjectives. The stand-off annotations identify the cases; their corpus lines are withheld for licensing.
+The sole attributive cases include **“the sickly breakfast mix”** and **“sickly shortbread buttons”**. Sole predicates include a chocolate cake that **“looked a little sickly”** and chocolates described as **“a bit sickly”**. Degree expressions such as *a bit* are not second adjectives.
 
 The verbal-complement row includes object predication, such as finding a drink sickly. Fragments and supplements are separate: their five cases cannot be counted as five full “the food is sickly” clauses.
 
 ### The same cake, in both positions
 
-One supplementary enTenTen13 passage describes a cake attributively and later predicatively with *sickly*. Both descriptions concern the same cake and neither coordinates another adjective. The two stand-off records share the retrieved passage’s anchor, not the later predicate’s own token position. Corpus lines are withheld for licensing; a licensed reader can rebuild the contexts using the [query settings and example locators](https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/README.md).
+One supplementary enTenTen13 passage describes **“a very sickly cake”**, followed later by **“that cake was so sickly!”** Both descriptions concern the same cake and neither coordinates another adjective. The [example table](charts/2-sickly-kwic.csv) retains the original web reference; the two rows share the retrieved passage’s anchor, not the later predicate’s own token position.
 
 ## The context determines the reading
 
@@ -106,9 +106,9 @@ Food *sickly* can mean cloying, excessively rich or unpleasantly intense. The se
 
 ### Explore the examples
 
-The table contains the stand-off locators and annotations for all **39 curated examples**, including diagnostic exclusions and supplementary web evidence. Search, filter or sort it, then export the visible rows. Corpus lines are withheld for licensing. A licensed reader can rebuild the contexts using the [corpus versions, query settings and anchors](https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/README.md).
+The table contains all **39 curated key-word-in-context (KWIC) rows**, including diagnostic exclusions and supplementary web evidence. Search, filter or sort it, then export the visible rows. The complete table can be downloaded as CSV.
 
-![Locators for the 39 curated sickly examples, with corpus, construction, reading and token anchors; corpus text withheld.](charts/2-sickly-kwic.png)
+![The 39 curated sickly examples, with corpus, construction, reading and source references.](charts/2-sickly-kwic.png)
 
 ## The American evidence is too small
 
@@ -148,7 +148,7 @@ The corpus study was run on **7 October 2026** and repackaged on **17 November 2
 
 The original study retrieved exact-form *sickly*, examined wider contexts, and classified construction, coordination and reading. Sketch Engine supplied concordances, grammatical relations and collocation statistics. The judgement steps were selecting examples and interpreting their syntax and sense. Repackaging preserved those labels and counts; Python grouped the existing food annotations and generated the figure and table. The BNC credit in References is copied verbatim from the provider’s documentation.
 
-The checking repository preserves stand-off food annotations, example locators, aggregate statistics, query settings and the current method. Earlier report drafts, working notes and run records are not distributed. A checksum manifest identifies the original source copies without distributing them. The chart CSV contains exactly the six plotted construction counts; the locator CSV contains all 39 stand-off records without corpus lines.
+The checking repository preserves stand-off food annotations, example locators, aggregate statistics, query settings and the current method. Earlier report drafts, working notes and run records are not distributed. A checksum manifest identifies the original source copies without distributing them. The chart CSV contains exactly the six plotted construction counts; the example table on this page shows the 39 corpus lines; the checking repository's locator CSV identifies the same 39 examples by corpus position.
 
 ### Models, tools and tokens
 
