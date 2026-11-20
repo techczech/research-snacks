@@ -2,59 +2,66 @@
 title: Compact Research Snacks preview verification
 register: FOR AGENTS
 date: 2026-11-19
-status: functional checks pass; density targets unmet; coordinator inspection first
+updated: 2026-11-20
+status: functional checks pass; prepared review held for coordinator inspection
 provenance: Live and preview browser measurements at 950, 1440 and 390px; source-preservation and headless release checks.
 ---
 
 # Outcome
 
-[Preview](https://2915770a.research-snacks.pages.dev/). Preserve the live cream palette, fonts, masthead, facts and appendix. The sidebar stays visible at 950px and down to 760px. Compact tables add sort/filter/source order, column selection, full view and complete-table CSV; the home feed replaces the hero and inline filters. No entry source or research-data repository changed. The rejected design remains unmerged. No sub-agents or other models were used.
+[Updated preview](https://07add71d.research-snacks.pages.dev/). The live cream palette, fonts, masthead, facts, appendix and sidebar remain. Text and links now wrap normally, all headers wrap, and pure full dates can break before the year if that avoids sideways scrolling. The 16-row episodes and selection tables fit at 950px. Small fitting tables have no tools line; their CSV is on the figures page. Tables with at least eight body rows or actual horizontal overflow retain one compact tools line, with the overflow hint on that line only while needed. Resize updates both controls and hint. The sticky header is opaque in both themes.
 
-# Page heights
+The figures page starts with one “Figures and tables” heading, the linked snack title at body size, then the index with “Table 1: …” labels. Table-filter and site-search matches share the same gold background and dark text in both themes. Missing total times are omitted from feed metadata. No entry source or research-data repository changed. No sub-agents or other models were used; nothing was merged or published to production.
 
-Measured after fonts, images and interactive charts settled, in source order with no table filters. Long tables have a bounded internal scroll surface; all cells remain reachable. Page height measures the document, not the cumulative internal table scroll distance.
+# Reading measure and the revised instruction
+
+The owner withdrew the page-height ceiling: “I don't mind longer pages, why is that a target”. Prose remains at 34rem (544 CSS px at the live 16px size), approximately 60–72 characters with line-height 1.55. It was not widened for this preview. Heights and row differences below are information, not pass/fail gates. Component padding remains 5px vertically, with no fixed row heights or empty filler rows.
+
+# Tables still scrolling sideways
+
+All 85 article tables, including the embedded concordance, were inspected at both widths. There is one distinct table:
+
+| Snack and table | Columns | 950px | 1440px | Reason |
+| --- | ---: | --- | --- | --- |
+| [Can a cake be sickly? — concordance](https://07add71d.research-snacks.pages.dev/2026-11-17-can-a-cake-be-sickly/#figure-2) | 7 | 1,398px table inside 648px frame | 1,398px table inside 704px frame | Long source URLs and classification identifiers plus the other columns exceed the combined unbroken-word minima. Headers and prose already wrap; the former 64rem minimum has been removed. |
+
+No other table scrolls sideways at 950px or 1440px. Wide phone tables remain confined to their own frames. The original source strings and links are preserved; words are not split to conceal overflow. Machine-readable details are in table-overflow.json.
+
+# Page heights — information
+
+Measured after fonts, images and charts settled, in source order without filtering. These are document heights; cumulative scrolling inside bounded table frames is not included.
 
 | Page | Width | Live px | Preview px | Change |
 | --- | ---: | ---: | ---: | ---: |
 | Home | 950 | 4,493 | 2,665 | -1,828 |
-| Revolution speed | 950 | 10,288 | 12,205 | +1,917 |
-| Hawks and doves | 950 | 9,076 | 10,434 | +1,358 |
-| Decipherment | 950 | 25,615 | 26,267 | +652 |
+| Revolution speed | 950 | 10,288 | 11,894 | +1,606 |
+| Hawks and doves | 950 | 9,076 | 10,353 | +1,277 |
+| Decipherment | 950 | 25,615 | 26,075 | +460 |
 | Home | 1440 | 4,136 | 2,557 | -1,579 |
-| Revolution speed | 1440 | 11,544 | 12,114 | +570 |
-| Hawks and doves | 1440 | 9,707 | 10,343 | +636 |
-| Decipherment | 1440 | 28,963 | 25,503 | -3,460 |
+| Revolution speed | 1440 | 11,544 | 11,807 | +263 |
+| Hawks and doves | 1440 | 9,707 | 10,258 | +551 |
+| Decipherment | 1440 | 28,963 | 25,316 | -3,647 |
 | Home | 390 | 8,271 | 3,518 | -4,753 |
-| Revolution speed | 390 | 18,972 | 17,072 | -1,900 |
-| Hawks and doves | 390 | 15,291 | 13,691 | -1,600 |
-| Decipherment | 390 | 54,264 | 41,294 | -12,970 |
+| Revolution speed | 390 | 18,972 | 17,449 | -1,523 |
+| Hawks and doves | 390 | 15,291 | 13,896 | -1,395 |
+| Decipherment | 390 | 54,264 | 41,374 | -12,890 |
 
-Five desktop comparisons exceed live. The narrower prose measure and retained sidebar contribute; this is an observed failure of the requested limit, not an approved trade-off. The home is 38–57% shorter and meets the first-screen target; all three phone articles are shorter.
+The home is substantially shorter. Some articles are longer, which is now permitted.
 
-# Row density
+# Row-height differences — information
 
-All 85 article tables (84 Markdown tables and the concordance) were compared at all three widths: 255 table-width and 1,782 row-width measurements, including headers. There are 68 taller rows beyond a 1px tolerance: 43 at 950px, 24 at 1440px and one at 390px. Complete examples and their old/new heights are in row-density.json. The strict per-row ceiling is unmet. The coding matrix's checked first rows match or improve on live density and do not contain bars or overlapping labels.
+543 of 1,782 row-width comparisons are taller by more than 1px: 264 at 950px, 137 at 1440px and 142 at 390px. 51 are header rows; the other 492 are body rows.
+
+The differences reflect the required 16px table type (live general tables use 14px), wrapping complete words and headers into the frame beside the retained sidebar, and keeping dates, numbers and short codes intact. They are not added padding: the single-line body row remains approximately 32.6px, compared with approximately 32.7px live. For example, the episodes table's “22 February 1848, banquet protest” changes from one line to two at 950px; the selection headers use two lines and their values remain adjacent to their labels. Full row-by-row measurements, labels, causes and source comparisons are in row-density.json. At this width the live page collapses its sidebar and gives tables a 918px main column; this preview retains a 704px main column beside the sidebar. At 1440px both retain a sidebar.
 
 # Functional verification
 
 - bun run check passed: 48 pages, TypeScript, 11 tests with 327 assertions, privacy, citations, RIS, metadata, links, anchors and RSS.
-- bun run check:release passed locally and on the deployed preview. All eleven article and figures routes were checked without JavaScript at 950, 1440 and 390px. Tables remain complete, table text is 16px and the page does not overflow horizontally.
-- Keyboard events exercised sort ascending/descending/source order, row filtering and recovery, column hiding/restoring, full view and Escape/focus return, search/selection, category navigation and Contents jumps. Numeric/date/currency/year-range comparators have source-value tests. Header states expose aria-sort.
-- Exact source cell strings, inline links and order are preserved in all Markdown tables plus the embedded concordance. CSV is generated from the canonical cells, independent of temporary reader filters.
-- Light and dark count-cell contrast is at least 4.5:1. Numeric text is tabular and right-aligned. Forced-colours and 200% text, blocked storage, chart-CDN fallback, copy fallback and the existing concordance export passed.
-- Real-page journeys were walked at 950px and on a phone viewport. At both widths the methods jump reached #how-this-was-made, its current marker followed, and the phone disclosure closed. The interactive walkthrough contains actual captured states for all six journeys.
+- The complete headless release suite passed locally and on this immutable preview: no-JS tables/figures, keyboard sort/filter/reset/columns/full view/search, CSVs and concordance export, category links, Contents jumps/markers, dark/forced colours, 200% text, blocked storage, citation copying and chart fallbacks.
+- Every table's actual overflow hint and tool-row eligibility were checked after resizing through 950, 1440, 390 and back to 950px. The linked-source examples and both annotated revolution tables have explicit fit assertions.
+- Every Markdown table retains its exact cells, links and source order. Count-cell contrast remains at least 4.5:1 in light and dark; both match surfaces use the same gold/dark-text pair at approximately 10.47:1 contrast.
+- Real preview pictures were recaptured at 950, 1440 and 390px, including both newly annotated revolution tables. The existing prepared review and its walkthrough were updated and remain held for coordinator inspection. All twelve walkthrough screens load their current desktop/phone pictures, switch state and navigate to the next step without console errors.
 
-# Limits and exceptions
+# Limits
 
-The page-height and row-height limits above remain unmet and block an owner-ready claim. The decipherment time field gives the initial survey start and separate review rounds, without one complete elapsed total; its feed says “timing in article” rather than inventing a short total. Original chart typography and presentation are retained; this parcel does not repeat the rejected chart redesign. The Tufekci/Wilson DOI reaches the OUP article address but the external page presented an automated-browser challenge, so its content was not rechecked. No physical phone, screen reader or actual Zotero connector save was tested. No independent model verdict is claimed; the parcel forbids other models.
-
-# Review boundary
-
-The original rejection is recorded in its agent-owned resolution marker, including all three messages. A new review with paired live/preview pictures, all requested widths and the interactive walkthrough is prepared in DTC and archived pending coordinator inspection. It is not an owner approval request yet. Production is unchanged.
-
-
-# Final comparator check
-
-The published financial tables use compact currency units. The comparator also recognises bn, mn, tn/trn and the displayed About prefix without changing source strings. In the deployed canals/nuclear table, ascending currency sort placed $3.8bn first and $18.2bn last, exposed aria-sort=ascending and right-aligned the currency column. The source-value unit suite now has 327 assertions. The final comparator correction does not change the height of the four pages in the measurement table; the review pictures retain the same relevant rendering.
-
-The walkthrough is registered in ReportScout and archived pending coordinator inspection. Its contract checks name every commitment, including the explicitly failed height condition. The original rejection resolution, new held review and all captured images remain in the private review record; no private estate paths are stored in this public repository.
+No physical phone, screen reader, real Zotero connector save or independent model review was performed. The previous source check reached the OUP article address but an automated-browser challenge prevented reading its content; external article content was not rechecked in this round. Original chart presentation remains as live. Page and row measurements describe the tested Chromium layout and can vary slightly with browser font metrics.

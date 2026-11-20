@@ -3,84 +3,84 @@
     "slug": "home",
     "width": 950,
     "height": 2665,
-    "overflow": false,
-    "before": 4493
+    "before": 4493,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-revolution-speed-2011-redo",
     "width": 950,
-    "height": 12205,
-    "overflow": false,
-    "before": 10288
+    "height": 11894,
+    "before": 10288,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-hawks-and-doves",
     "width": 950,
-    "height": 10434,
-    "overflow": false,
-    "before": 9076
+    "height": 10353,
+    "before": 9076,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-decipherment-methods-and-agents",
     "width": 950,
-    "height": 26267,
-    "overflow": false,
-    "before": 25615
+    "height": 26075,
+    "before": 25615,
+    "overflow": false
   },
   {
     "slug": "home",
     "width": 1440,
     "height": 2557,
-    "overflow": false,
-    "before": 4136
+    "before": 4136,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-revolution-speed-2011-redo",
     "width": 1440,
-    "height": 12114,
-    "overflow": false,
-    "before": 11544
+    "height": 11807,
+    "before": 11544,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-hawks-and-doves",
     "width": 1440,
-    "height": 10343,
-    "overflow": false,
-    "before": 9707
+    "height": 10258,
+    "before": 9707,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-decipherment-methods-and-agents",
     "width": 1440,
-    "height": 25503,
-    "overflow": false,
-    "before": 28963
+    "height": 25316,
+    "before": 28963,
+    "overflow": false
   },
   {
     "slug": "home",
     "width": 390,
     "height": 3518,
-    "overflow": false,
-    "before": 8271
+    "before": 8271,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-revolution-speed-2011-redo",
     "width": 390,
-    "height": 17072,
-    "overflow": false,
-    "before": 18972
+    "height": 17449,
+    "before": 18972,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-hawks-and-doves",
     "width": 390,
-    "height": 13691,
-    "overflow": false,
-    "before": 15291
+    "height": 13896,
+    "before": 15291,
+    "overflow": false
   },
   {
     "slug": "2026-11-19-decipherment-methods-and-agents",
     "width": 390,
-    "height": 41294,
-    "overflow": false,
-    "before": 54264
+    "height": 41374,
+    "before": 54264,
+    "overflow": false
   }
 ]

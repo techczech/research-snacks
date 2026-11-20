@@ -1,0 +1,38 @@
+{
+  "preview": "https://07add71d.research-snacks.pages.dev",
+  "widths": [
+    950,
+    1440
+  ],
+  "tablesPerWidth": 85,
+  "scrolling": [
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "viewport": 950,
+      "table": 2,
+      "headers": "Corpus | Referent | Construction | Coordination | Context | Reading | Source and anchor",
+      "width": 1398.15625,
+      "frame": 648,
+      "nowrap": [
+        "BNC",
+        "OANC"
+      ],
+      "columnCount": 7,
+      "reason": "Seven columns include long unbroken source URLs and classification identifiers. Their combined word minima exceed the frame after all headers and text wrap; no arbitrary minimum width remains."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "viewport": 1440,
+      "table": 2,
+      "headers": "Corpus | Referent | Construction | Coordination | Context | Reading | Source and anchor",
+      "width": 1398.15625,
+      "frame": 704,
+      "nowrap": [
+        "BNC",
+        "OANC"
+      ],
+      "columnCount": 7,
+      "reason": "Seven columns include long unbroken source URLs and classification identifiers. Their combined word minima exceed the frame after all headers and text wrap; no arbitrary minimum width remains."
+    }
+  ]
+}

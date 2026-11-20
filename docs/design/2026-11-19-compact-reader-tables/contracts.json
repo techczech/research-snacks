@@ -1,6 +1,6 @@
 {
   "title": "Research Snacks: compact reading journeys",
-  "status": "Coordinator inspection first; not ready for an owner decision while height targets fail",
+  "status": "Coordinator inspection first; owner decision not requested yet",
   "purpose": "Check a public claim quickly, compare its evidence and follow a number to its source.",
   "user": "Existing readers, sceptics, visual browsers and phone readers.",
   "commitments": [
@@ -18,7 +18,7 @@
     },
     {
       "id": "C4",
-      "text": "Do not increase page height: five desktop comparisons currently fail; owner review is held."
+      "text": "Keep compact components and a 60–72 character prose measure; report heights as information."
     }
   ],
   "today": {
@@ -129,7 +129,7 @@
       ],
       "evaluate": [
         "The original claim and verdict are visible before the narrative.",
-        "The page-height comparison remains failed for five desktop page/width pairs; do not infer owner readiness from a working section jump."
+        "The sidebar remains visible at 950px and the current-section marker follows the jump; page height is informational."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
       "evidence": "preview-sidebar",
@@ -144,11 +144,11 @@
       "viewer": "A sceptic has reached the first information-source table.",
       "arrives_knowing": "They need to know what the percentage counts.",
       "expects": [
-        "Face-to-face conversation beside 48.4%; four source rows; compact Full view and CSV."
+        "Face-to-face conversation beside 48.4%; four source rows; the authored source paragraph and Figures and tables link."
       ],
       "purpose": "Trace 48.4%",
       "why_here": "A sceptic has reached the first information-source table.",
-      "achieve": "The label stays adjacent to 48.4%; the CSV contains the four original rows.",
+      "achieve": "The label stays adjacent to 48.4%; the figures-page CSV contains the four original rows.",
       "sees": [
         {
           "part": "header",
@@ -156,7 +156,7 @@
         },
         {
           "part": "content",
-          "text": "Face-to-face conversation beside 48.4%; four source rows; compact Full view and CSV."
+          "text": "Face-to-face conversation beside 48.4%; four source rows; the authored source paragraph and Figures and tables link."
         },
         {
           "part": "next",
@@ -165,7 +165,7 @@
       ],
       "know": [
         "They need to know what the percentage counts.",
-        "The DOI reaches the OUP article address; an automated-browser challenge prevented reading the external article in this check. The complete displayed table is available as CSV."
+        "The DOI reaches the OUP article address; an automated-browser challenge prevented reading the external article in this check. The complete displayed table is available as CSV on Figures and tables."
       ],
       "steps": [
         {
@@ -183,7 +183,7 @@
         {
           "id": "desktop",
           "label": "950px",
-          "text": "Face-to-face conversation beside 48.4%; four source rows; compact Full view and CSV."
+          "text": "Face-to-face conversation beside 48.4%; four source rows; the authored source paragraph and Figures and tables link."
         },
         {
           "id": "phone",
@@ -192,7 +192,7 @@
         }
       ],
       "evaluate": [
-        "The label stays adjacent to 48.4%; the CSV contains the four original rows."
+        "The label stays adjacent to 48.4%; the figures-page CSV contains the four original rows."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
       "evidence": "preview-sources",
@@ -809,7 +809,7 @@
       ],
       "evaluate": [
         "The target jumps at once, its marker updates, and the phone disclosure closes after selection.",
-        "The page-height comparison remains failed for five desktop page/width pairs; do not infer owner readiness from a working section jump."
+        "The sidebar remains visible at 950px and the current-section marker follows the jump; page height is informational."
       ],
       "replaces": "The corresponding live Research Snacks reading route.",
       "evidence": "preview-sidebar-jump",
