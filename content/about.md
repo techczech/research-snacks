@@ -8,6 +8,21 @@ The model is Mark Liberman's [Breakfast Experiments™](https://languagelog.ldc.
 
 AI agents change that. A check that once needed a specialist's toolkit can now be run by anyone who can state the question clearly and judge the answer. These snacks are my attempt to show what that looks like in practice, including where the AI needed correcting.
 
+## How the agents are instructed
+
+There is no long prompt behind each snack. I say what I want checked in a chat with a coordinating agent. It hands the research to other agents and asks models from other companies to review the result. The standing instructions come from skills: instruction files that agents load when a task calls for them. These are the skills behind the research and the writing. Names with links are public.
+
+- **[research-snack](https://github.com/techczech/dominiks-agent-skills/tree/main/research/research-snack)**: the house rules (split the claim, find the source, test the word "only", go to the primary data, make every number checkable, show me each snack before it goes live) and the page structure.
+- **[research-reproducibility](https://github.com/techczech/dominiks-agent-skills/tree/main/research/research-reproducibility)**: keeps the sources, scripts and decisions so that the check can be rebuilt.
+- **[archive-scout](https://github.com/techczech/dominiks-agent-skills/tree/main/research/archive-scout) (general version)**: searches an archive of my posts and notes when a snack checks something I wrote.
+- **model-council (not yet public)**: sends a draft to models from other companies for independent review.
+- **[writing-modes](https://github.com/techczech/dominiks-agent-skills/tree/main/philosophy-for-agents/writing-modes)**: decides who a text is for and in whose name it speaks.
+- **[expository-writing](https://github.com/techczech/dominiks-agent-skills/tree/main/philosophy-for-agents/expository-writing)**: keeps the prose literal and specific.
+- **unslop (not yet public)**: checks the prose for padding and empty phrases.
+- **dominik-lukes-voice (private)**: my voice, for text written in my name.
+
+The agents also use general skills for delegating work, building this site and keeping API keys out of the code; none of them is specific to the snacks. The whole public collection is at [techczech.github.io/dominiks-agent-skills](https://techczech.github.io/dominiks-agent-skills/). The "How this was made" section of each snack lists the models used, what each one did and how many tokens it used.
+
 ## Sister site
 
 This is the sister site to [datapoints.semanticmachines.fyi](https://datapoints.semanticmachines.fyi), which collects small experiments with AI models: what was tested, on which models, and what happened. Research Snacks use AI to check claims about the world; Model Data Points check the models themselves.
