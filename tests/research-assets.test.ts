@@ -12,7 +12,14 @@ test('research links share one mapping in authored text, HTML and Files lists',(
  expect(renderMarkdown('[Totals](data/source-totals.csv)','entries/'+id)).toContain(`href="${url}"`);
  expect(getEntries().flatMap(x=>researchFiles(x.id))).toHaveLength(172);
  const redirects=readFileSync('scripts/assets/_redirects','utf8');
- for(const entry of getEntries())for(const file of researchFiles(entry.id))expect(redirects).toContain(`/${entry.id}/${file.path} ${file.url} 302\n`);
+ const rules=redirects.trim().split('\n').map(line=>line.split(' '));
+ expect(rules.length).toBeLessThanOrEqual(100);
+ for(const entry of getEntries())for(const file of researchFiles(entry.id)){
+  const path=`/${entry.id}/${file.path}`;
+  const rule=rules.find(([source])=>source===path||source.endsWith('*')&&path.startsWith(source.slice(0,-1)))!;
+  expect(rule).toBeDefined();
+  expect(rule[1].replace(':splat',path.slice(rule[0].length-1))).toBe(file.url);
+ }
  expect(redirects).toContain('/2026-11-17-ai-wealth-control-2035/data/claim-source.md / 302\n');
 });
 
