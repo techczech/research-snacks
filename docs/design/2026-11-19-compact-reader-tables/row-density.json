@@ -1,0 +1,5109 @@
+{
+  "counts": {
+    "tables": 255,
+    "rows": 1782
+  },
+  "comparison": "Informational; differences over 1px. All rows remain in normal page flow.",
+  "mismatches": [
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 2,
+      "row": 0,
+      "label": "Episode",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 0,
+      "label": "Episode and source",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 1,
+      "label": "France 1848",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 2,
+      "label": "Russia 1917",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 3,
+      "label": "Iran 1978\u201379",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 4,
+      "label": "Philippines 1986",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 5,
+      "label": "East Germany 1989",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 6,
+      "label": "Czechoslovakia 1989",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 7,
+      "label": "Romania 1989",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 8,
+      "label": "Serbia 2000",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 9,
+      "label": "Georgia 2003",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 10,
+      "label": "Tunisia 2010\u201311",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 11,
+      "label": "Egypt 2011",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 12,
+      "label": "Libya 2011",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 13,
+      "label": "Yemen 2011\u201312",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 14,
+      "label": "Sudan 2018\u201319",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 15,
+      "label": "Sri Lanka 2022",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 16,
+      "label": "Bangladesh 2024",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 5,
+      "row": 1,
+      "label": "All selected departures and the Libya proxy",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 5,
+      "row": 2,
+      "label": "Exclude France, Russia, Romania, Libya and Yemen for armed revolt, mutiny or war",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 5,
+      "row": 3,
+      "label": "Also exclude Philippines\u2019 military split and Sudan\u2019s coup",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 7,
+      "row": 0,
+      "label": "Peak decade",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 8,
+      "row": 0,
+      "label": "Onset cohort",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 9,
+      "row": 0,
+      "label": "Model",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 950,
+      "table": 9,
+      "row": 1,
+      "label": "Codex, gpt-6.1-sol",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 2,
+      "row": 1,
+      "label": "Hansard, King\u2019s Speech, 17 July 2024",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 2,
+      "row": 2,
+      "label": "AI Opportunities Action Plan, 13 January 2025",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 2,
+      "row": 3,
+      "label": "Wikipedia contributors, AI hallucination, fixed revision",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 2,
+      "row": 4,
+      "label": "Wikinews, English local elections, 6 May 2025",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 2,
+      "row": 5,
+      "label": "NASA, greenhouse effect, updated 23 October 2024",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 2,
+      "row": 7,
+      "label": "Total",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 1,
+      "label": "Cataphoric",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 2,
+      "label": "Exophoric",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 4,
+      "label": "Exegetic",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 5,
+      "label": "Conventionality",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 6,
+      "label": "Explanative",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 6,
+      "row": 7,
+      "label": "Prevaricative",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 10,
+      "row": 1,
+      "label": "Field (W003; one unit): constitutive.",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 10,
+      "row": 2,
+      "label": "AI hallucination (W009/W012; two units): attributive; no binding.",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 10,
+      "row": 3,
+      "label": "Cornerstone (H034; one unit): constitutive; backward tie to \u201cbased upon\u201d.",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 10,
+      "row": 4,
+      "label": "Falling behind (P056/P057; two units): constitutive and declarative.",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 10,
+      "row": 5,
+      "label": "Blanket (S027; one unit): constitutive/explanative, no tie.",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 10,
+      "row": 6,
+      "label": "Files (E034/E043; two units): constitutive, no binding.",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 11,
+      "row": 0,
+      "label": "UK time, 19 November 2026",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 11,
+      "row": 9,
+      "label": "12:47",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 11,
+      "row": 10,
+      "label": "13:05",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 12,
+      "row": 1,
+      "label": "gpt-6.1-sol, configured",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 12,
+      "row": 2,
+      "label": "gpt-6.1-sol, same configuration",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 12,
+      "row": 3,
+      "label": "gpt-6.1-sol, configured",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 12,
+      "row": 4,
+      "label": "Requested gemini-4-neon; no returned identity established",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 950,
+      "table": 12,
+      "row": 5,
+      "label": "Requested gemini-4-neon; returned Gemini 4 Neon (High)",
+      "before": 54.375,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 950,
+      "table": 2,
+      "row": 0,
+      "label": "Collection",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 950,
+      "table": 2,
+      "row": 1,
+      "label": "BNC1994, CLAWS",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 950,
+      "table": 2,
+      "row": 2,
+      "label": "Spoken BNC2014",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 950,
+      "table": 2,
+      "row": 3,
+      "label": "enTenTen21",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 0,
+      "label": "Collection",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 950,
+      "table": 4,
+      "row": 2,
+      "label": "Spoken BNC2014",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 950,
+      "table": 6,
+      "row": 0,
+      "label": "Model",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 950,
+      "table": 6,
+      "row": 1,
+      "label": "gpt-6.1-sol (Codex)",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 1,
+      "row": 2,
+      "label": "5 April 1966",
+      "before": 54.375,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 1,
+      "row": 3,
+      "label": "8 May 1968",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 1,
+      "row": 4,
+      "label": "28 January 1980",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 1,
+      "row": 5,
+      "label": "23 January 1993",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 1,
+      "row": 6,
+      "label": "25 June 2005",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 1,
+      "row": 7,
+      "label": "11 January 2010",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 2,
+      "row": 0,
+      "label": "Publication decade",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 3,
+      "row": 0,
+      "label": "Source and decade",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 4,
+      "row": 1,
+      "label": "Google Books Ngram",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 4,
+      "row": 2,
+      "label": "US Congressional Record / govinfo",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 5,
+      "row": 0,
+      "label": "Model",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 950,
+      "table": 5,
+      "row": 1,
+      "label": "gpt-6.1-sol (Codex)",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 1,
+      "row": 2,
+      "label": "Restoration",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 1,
+      "row": 3,
+      "label": "Translation",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 1,
+      "row": 4,
+      "label": "Decipherment",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 1,
+      "label": "Egyptian hieroglyphs",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 2,
+      "label": "Egyptian Demotic",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 3,
+      "label": "Old Persian cuneiform",
+      "before": 76.0625,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 4,
+      "label": "Akkadian / Babylonian / Assyrian",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 5,
+      "label": "Sumerian cuneiform",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 6,
+      "label": "Elamite cuneiform",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 7,
+      "label": "Hittite language in cuneiform",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 8,
+      "label": "Luwian hieroglyphs",
+      "before": 97.75,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 9,
+      "label": "Ugaritic alphabetic cuneiform",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 10,
+      "label": "Linear B / Mycenaean Greek",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 12,
+      "label": "Maya hieroglyphs",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 13,
+      "label": "Phoenician",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 14,
+      "label": "Palmyrene Aramaic",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 15,
+      "label": "Early Brahmi",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 16,
+      "label": "Kharosthi",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 17,
+      "label": "Old Turkic runiform",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 18,
+      "label": "Carian",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 2,
+      "row": 20,
+      "label": "Tangut",
+      "before": 97.75,
+      "after": 117.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 2,
+      "label": "Meroitic script",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 3,
+      "label": "Iberian script",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 4,
+      "label": "Oracle-bone script",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 5,
+      "label": "Tocharian",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 6,
+      "label": "Lycian",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 4,
+      "row": 7,
+      "label": "Urartian",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 5,
+      "row": 1,
+      "label": "Structure without language",
+      "before": 141.125,
+      "after": 226.9375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 5,
+      "row": 2,
+      "label": "Partly read, with a language to test against",
+      "before": 141.125,
+      "after": 183.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 5,
+      "row": 3,
+      "label": "Audit of a published proposal",
+      "before": 97.75,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 5,
+      "row": 6,
+      "label": "Limited by evidence",
+      "before": 141.125,
+      "after": 225.9375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 1,
+      "label": "Linear A",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 2,
+      "label": "Cretan hieroglyphs",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 3,
+      "label": "Phaistos disc",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 4,
+      "label": "Cypro-Minoan",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 5,
+      "label": "Indus signs",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 6,
+      "label": "Proto-Elamite",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 7,
+      "label": "Rongorongo",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 8,
+      "label": "Byblos pseudo-hieroglyphic / syllabary",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 9,
+      "label": "Isthmian / Epi-Olmec",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 10,
+      "label": "Ancient Zapotec writing",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 11,
+      "label": "Khitan small script",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 12,
+      "label": "Khitan large script",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 13,
+      "label": "Meroitic language",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 14,
+      "label": "Etruscan language",
+      "before": 76.0625,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 15,
+      "label": "Voynich manuscript",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 16,
+      "label": "Vin\u010da symbols",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 17,
+      "label": "Proto-Sinaitic gaps",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 18,
+      "label": "Olmec / Cascajal block",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 19,
+      "label": "Singapore Stone",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 20,
+      "label": "Jurchen",
+      "before": 76.0625,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 21,
+      "label": "Linear Elamite",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 22,
+      "label": "Eteocypriot",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 23,
+      "label": "Oracle bone Chinese: remaining character gaps",
+      "before": 76.0625,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 24,
+      "label": "Iberian language",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 25,
+      "label": "Issyk-Kushan",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 6,
+      "row": 26,
+      "label": "Khipu (comparison)",
+      "before": 54.375,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 7,
+      "row": 2,
+      "label": "Pure phonography",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 7,
+      "row": 3,
+      "label": "Descent from proto-Elamite",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 7,
+      "row": 4,
+      "label": "Provenance and authenticity",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 1,
+      "label": "A Statistical Model for Lost Language Decipherment (2010) source",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 2,
+      "label": "Neural Decipherment via Minimum-Cost Flow: from Ugaritic to Linear B (2019) source",
+      "before": 97.75,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 3,
+      "label": "Simple Effective Decipherment via Combinatorial Optimization (2011) source",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 4,
+      "label": "Sign Clustering and Topic Extraction in Proto-Elamite (2019) source",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 5,
+      "label": "Compositionality of Complex Graphemes in the Undeciphered Proto-Elamite Script using Image and Text Embedding Models (2021) source",
+      "before": 97.75,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 6,
+      "label": "Sequence Models for Document Structure Identification in an Undeciphered Script (2022) source",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 7,
+      "label": "Disambiguating Numeral Sequences to Decipher Ancient Accounting Corpora (2025) source",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 8,
+      "label": "LINGOLY: A Benchmark of Olympiad-Level Linguistic Reasoning Puzzles in Low-Resource and Extinct Languages (2024) source",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 9,
+      "label": "A Computational Approach to Deciphering Unknown Scripts (1999) source",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 10,
+      "label": "The mathematical values of fraction signs in the Linear A script: A computational, statistical and typological approach (2021) source",
+      "before": 97.75,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 8,
+      "row": 11,
+      "label": "Electronic Babylonian Literature (eBL) (n.d.) source",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 9,
+      "row": 1,
+      "label": "gpt-6.1-sol",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 9,
+      "row": 2,
+      "label": "Requested: gemini-4-neon; returned: Gemini 4 Neon",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 950,
+      "table": 9,
+      "row": 6,
+      "label": "gpt-6.1-sol",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 1,
+      "row": 0,
+      "label": "Spending period",
+      "before": 32.6875,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 2,
+      "row": 0,
+      "label": "Five-company sample period",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 0,
+      "label": "Case",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 1,
+      "label": "UK railways",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 2,
+      "label": "US railways",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 3,
+      "label": "US railways",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 5,
+      "label": "US railways",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 6,
+      "label": "US broadband providers",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 7,
+      "label": "US investor-owned nuclear",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 9,
+      "row": 3,
+      "label": "13:24\u201313:31",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 9,
+      "row": 5,
+      "label": "13:41:38",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 10,
+      "row": 0,
+      "label": "Model or tool",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 10,
+      "row": 1,
+      "label": "Codex, gpt-6.1-sol",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 10,
+      "row": 2,
+      "label": "Web retrieval, Python and Poppler",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 950,
+      "table": 10,
+      "row": 3,
+      "label": "Vega-Lite and vl-convert",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 1,
+      "row": 1,
+      "label": "Five firms' nine-month cash purchases",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 1,
+      "row": 3,
+      "label": "Allocate 70% of reported cash to the US",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 1,
+      "row": 4,
+      "label": "Latest-quarter cash purchases at an annual pace",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 4,
+      "row": 0,
+      "label": "Boom window",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 4,
+      "row": 4,
+      "label": "Five technology firms, 2024\u2013September 2026",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 5,
+      "row": 0,
+      "label": "Case",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 5,
+      "row": 2,
+      "label": "US railways, 1882",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 5,
+      "row": 3,
+      "label": "AI infrastructure, 2 November estimate",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 5,
+      "row": 4,
+      "label": "All AI layers, same estimate",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 5,
+      "row": 5,
+      "label": "AI infrastructure, including construction",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 7,
+      "row": 0,
+      "label": "Assumption",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 7,
+      "row": 3,
+      "label": "Faster replacement",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 7,
+      "row": 5,
+      "label": "Lower realised price",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 0,
+      "label": "Q3 2026",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 8,
+      "row": 1,
+      "label": "Anthropic",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 11,
+      "row": 1,
+      "label": "UK railway mania",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 11,
+      "row": 2,
+      "label": "US railways",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 11,
+      "row": 3,
+      "label": "US telecom",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 0,
+      "label": "Time, 19 November 2026 (UK/UTC)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 1,
+      "label": "08:51:55",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 2,
+      "label": "08:53\u201309:10",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 3,
+      "label": "09:10\u201309:19:33",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 4,
+      "label": "09:19:33",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 12,
+      "row": 5,
+      "label": "19 November",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 13,
+      "row": 0,
+      "label": "Company",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 13,
+      "row": 1,
+      "label": "Microsoft",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 13,
+      "row": 4,
+      "label": "Alphabet",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 15,
+      "row": 0,
+      "label": "Model or tool",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 15,
+      "row": 1,
+      "label": "Codex, gpt-6.1-sol",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 15,
+      "row": 2,
+      "label": "GPT-6 Astra",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 15,
+      "row": 3,
+      "label": "Claude Fable 5.2",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 15,
+      "row": 4,
+      "label": "Codex, gpt-6.1-sol",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 950,
+      "table": 15,
+      "row": 5,
+      "label": "Web retrieval, Python, Poppler, Vega-Lite and vl-convert",
+      "before": 54.375,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 3,
+      "row": 1,
+      "label": "Tractors and mechanised farming",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 3,
+      "row": 2,
+      "label": "Motor car, assembly line, factories",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 3,
+      "row": 3,
+      "label": "Typewriter, telephone, office machines; then the PC",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 3,
+      "row": 4,
+      "label": "Mass college education",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 3,
+      "row": 5,
+      "label": "Globalisation, China, automation",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 3,
+      "row": 6,
+      "label": "Services growth (Baumol's cost disease)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 3,
+      "row": 7,
+      "label": "Household appliances; then services",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 4,
+      "row": 2,
+      "label": "Married women 16\u201364 in the labour force",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 4,
+      "row": 3,
+      "label": "Women as share of the labour force",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 4,
+      "row": 4,
+      "label": "Workers self-employed (1910 for 1900)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 4,
+      "row": 5,
+      "label": "Teenagers 14\u201317 in school (1960 for 1970)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 4,
+      "row": 7,
+      "label": "Adults 25+ with four or more years of college (1940 for 1900)",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 950,
+      "table": 6,
+      "row": 1,
+      "label": "Claude Opus 5.5",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 950,
+      "table": 2,
+      "row": 23,
+      "label": "OANC",
+      "before": 76.0625,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 950,
+      "table": 2,
+      "row": 31,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 950,
+      "table": 2,
+      "row": 33,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 950,
+      "table": 2,
+      "row": 35,
+      "label": "enTenTen13",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 950,
+      "table": 2,
+      "row": 38,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 950,
+      "table": 4,
+      "row": 1,
+      "label": "gpt-6.1-sol (Codex), repackaging",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 1,
+      "row": 0,
+      "label": "Case",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 1,
+      "row": 1,
+      "label": "US factory electrification",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 1,
+      "row": 2,
+      "label": "Bell automatic switching",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 1,
+      "row": 3,
+      "label": "World internet use",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 1,
+      "row": 5,
+      "label": "US index funds",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 1,
+      "row": 6,
+      "label": "Brazil's Pix",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 2,
+      "row": 1,
+      "label": "Factory electric motor horsepower / primary horsepower",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 2,
+      "row": 2,
+      "label": "Index share of long-term fund assets",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 4,
+      "row": 0,
+      "label": "Model",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 950,
+      "table": 4,
+      "row": 1,
+      "label": "gpt-6.1-sol",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 1,
+      "row": 4,
+      "label": "Telegraph operators",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 1,
+      "row": 6,
+      "label": "Teamsters (horse and wagon)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 1,
+      "row": 7,
+      "label": "Electrotypers and stereotypers",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 1,
+      "row": 9,
+      "label": "Milliners",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 1,
+      "row": 12,
+      "label": "Bus and streetcar conductors",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 1,
+      "row": 13,
+      "label": "Crossing watchmen and bridge tenders",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 1,
+      "row": 15,
+      "label": "Baggagemen",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 2,
+      "row": 0,
+      "label": "Occupation",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 2,
+      "row": 3,
+      "label": "Pattern and model makers",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 2,
+      "row": 4,
+      "label": "Farmers (owners and tenants)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 2,
+      "row": 5,
+      "label": "Compositors and typesetters",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 1,
+      "label": "Keypunch operator, data typist (paper tape)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 2,
+      "label": "Console operator, computer operator",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 3,
+      "label": "Typist, typing supervisor",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 4,
+      "label": "Stenographer, court reporter",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 5,
+      "label": "Telephone operator",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 6,
+      "label": "Office machine operator (tabulating machines)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 7,
+      "label": "File clerk",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 8,
+      "label": "Bookkeeper",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 9,
+      "label": "Secretary",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 10,
+      "label": "Bank teller",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 11,
+      "label": "Office machine operator (billing machines)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 12,
+      "label": "Mail carrier",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 13,
+      "label": "Shipping and receiving clerk",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 14,
+      "label": "Receptionist",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 15,
+      "label": "Stock clerk",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 16,
+      "label": "Cashier",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 4,
+      "row": 17,
+      "label": "Programmer (the film's promotion route)",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 5,
+      "row": 1,
+      "label": "Claude Opus 5.5",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 950,
+      "table": 5,
+      "row": 3,
+      "label": "Claude Haiku 5.5",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 1440,
+      "table": 4,
+      "row": 1,
+      "label": "France 1848",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 1440,
+      "table": 4,
+      "row": 2,
+      "label": "Russia 1917",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 1440,
+      "table": 4,
+      "row": 3,
+      "label": "Iran 1978\u201379",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 1440,
+      "table": 4,
+      "row": 16,
+      "label": "Bangladesh 2024",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 1440,
+      "table": 5,
+      "row": 3,
+      "label": "Also exclude Philippines\u2019 military split and Sudan\u2019s coup",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 2,
+      "row": 2,
+      "label": "AI Opportunities Action Plan, 13 January 2025",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 2,
+      "row": 4,
+      "label": "Wikinews, English local elections, 6 May 2025",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 6,
+      "row": 2,
+      "label": "Exophoric",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 6,
+      "row": 4,
+      "label": "Exegetic",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 6,
+      "row": 5,
+      "label": "Conventionality",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 10,
+      "row": 1,
+      "label": "Field (W003; one unit): constitutive.",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 10,
+      "row": 2,
+      "label": "AI hallucination (W009/W012; two units): attributive; no binding.",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 10,
+      "row": 3,
+      "label": "Cornerstone (H034; one unit): constitutive; backward tie to \u201cbased upon\u201d.",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 1440,
+      "table": 10,
+      "row": 4,
+      "label": "Falling behind (P056/P057; two units): constitutive and declarative.",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 1440,
+      "table": 2,
+      "row": 0,
+      "label": "Collection",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 1440,
+      "table": 2,
+      "row": 1,
+      "label": "BNC1994, CLAWS",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 1440,
+      "table": 2,
+      "row": 2,
+      "label": "Spoken BNC2014",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 1440,
+      "table": 2,
+      "row": 3,
+      "label": "enTenTen21",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 1440,
+      "table": 4,
+      "row": 0,
+      "label": "Collection",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 1440,
+      "table": 4,
+      "row": 2,
+      "label": "Spoken BNC2014",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 1440,
+      "table": 1,
+      "row": 2,
+      "label": "5 April 1966",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 1440,
+      "table": 1,
+      "row": 5,
+      "label": "23 January 1993",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 1440,
+      "table": 1,
+      "row": 6,
+      "label": "25 June 2005",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 1,
+      "row": 2,
+      "label": "Restoration",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 2,
+      "label": "Egyptian Demotic",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 3,
+      "label": "Old Persian cuneiform",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 8,
+      "label": "Luwian hieroglyphs",
+      "before": 119.4375,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 10,
+      "label": "Linear B / Mycenaean Greek",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 13,
+      "label": "Phoenician",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 14,
+      "label": "Palmyrene Aramaic",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 17,
+      "label": "Old Turkic runiform",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 18,
+      "label": "Carian",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 2,
+      "row": 20,
+      "label": "Tangut",
+      "before": 97.75,
+      "after": 117.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 4,
+      "row": 3,
+      "label": "Iberian script",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 4,
+      "row": 4,
+      "label": "Oracle-bone script",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 4,
+      "row": 5,
+      "label": "Tocharian",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 5,
+      "row": 1,
+      "label": "Structure without language",
+      "before": 162.8125,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 5,
+      "row": 2,
+      "label": "Partly read, with a language to test against",
+      "before": 141.125,
+      "after": 183.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 5,
+      "row": 6,
+      "label": "Limited by evidence",
+      "before": 162.8125,
+      "after": 182.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 1,
+      "label": "Linear A",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 3,
+      "label": "Phaistos disc",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 4,
+      "label": "Cypro-Minoan",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 11,
+      "label": "Khitan small script",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 13,
+      "label": "Meroitic language",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 14,
+      "label": "Etruscan language",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 15,
+      "label": "Voynich manuscript",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 16,
+      "label": "Vin\u010da symbols",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 17,
+      "label": "Proto-Sinaitic gaps",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 20,
+      "label": "Jurchen",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 21,
+      "label": "Linear Elamite",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 22,
+      "label": "Eteocypriot",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 23,
+      "label": "Oracle bone Chinese: remaining character gaps",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 25,
+      "label": "Issyk-Kushan",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 6,
+      "row": 26,
+      "label": "Khipu (comparison)",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 7,
+      "row": 4,
+      "label": "Provenance and authenticity",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 8,
+      "row": 2,
+      "label": "Neural Decipherment via Minimum-Cost Flow: from Ugaritic to Linear B (2019) source",
+      "before": 119.4375,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 8,
+      "row": 5,
+      "label": "Compositionality of Complex Graphemes in the Undeciphered Proto-Elamite Script using Image and Text Embedding Models (2021) source",
+      "before": 119.4375,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 8,
+      "row": 6,
+      "label": "Sequence Models for Document Structure Identification in an Undeciphered Script (2022) source",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 1440,
+      "table": 9,
+      "row": 1,
+      "label": "gpt-6.1-sol",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 8,
+      "row": 1,
+      "label": "UK railways",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 8,
+      "row": 7,
+      "label": "US investor-owned nuclear",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 9,
+      "row": 3,
+      "label": "13:24\u201313:31",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 10,
+      "row": 0,
+      "label": "Model or tool",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 10,
+      "row": 1,
+      "label": "Codex, gpt-6.1-sol",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 1440,
+      "table": 10,
+      "row": 2,
+      "label": "Web retrieval, Python and Poppler",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 1,
+      "row": 1,
+      "label": "Five firms' nine-month cash purchases",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 1,
+      "row": 3,
+      "label": "Allocate 70% of reported cash to the US",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 5,
+      "row": 0,
+      "label": "Case",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 5,
+      "row": 3,
+      "label": "AI infrastructure, 2 November estimate",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 5,
+      "row": 4,
+      "label": "All AI layers, same estimate",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 5,
+      "row": 5,
+      "label": "AI infrastructure, including construction",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 8,
+      "row": 0,
+      "label": "Q3 2026",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 12,
+      "row": 2,
+      "label": "08:53\u201309:10",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 12,
+      "row": 3,
+      "label": "09:10\u201309:19:33",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 1440,
+      "table": 12,
+      "row": 5,
+      "label": "19 November",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 1440,
+      "table": 3,
+      "row": 4,
+      "label": "Mass college education",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 1440,
+      "table": 3,
+      "row": 7,
+      "label": "Household appliances; then services",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 1440,
+      "table": 4,
+      "row": 2,
+      "label": "Married women 16\u201364 in the labour force",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 1440,
+      "table": 4,
+      "row": 3,
+      "label": "Women as share of the labour force",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 1440,
+      "table": 4,
+      "row": 4,
+      "label": "Workers self-employed (1910 for 1900)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 1440,
+      "table": 4,
+      "row": 5,
+      "label": "Teenagers 14\u201317 in school (1960 for 1970)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 1440,
+      "table": 2,
+      "row": 23,
+      "label": "OANC",
+      "before": 76.0625,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 1440,
+      "table": 2,
+      "row": 31,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 1440,
+      "table": 2,
+      "row": 33,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 1440,
+      "table": 2,
+      "row": 35,
+      "label": "enTenTen13",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 1440,
+      "table": 2,
+      "row": 38,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 1440,
+      "table": 4,
+      "row": 1,
+      "label": "gpt-6.1-sol (Codex), repackaging",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 1440,
+      "table": 1,
+      "row": 0,
+      "label": "Case",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 1440,
+      "table": 1,
+      "row": 1,
+      "label": "US factory electrification",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 1440,
+      "table": 1,
+      "row": 2,
+      "label": "Bell automatic switching",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 1440,
+      "table": 1,
+      "row": 3,
+      "label": "World internet use",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 1440,
+      "table": 2,
+      "row": 1,
+      "label": "Factory electric motor horsepower / primary horsepower",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 1440,
+      "table": 2,
+      "row": 2,
+      "label": "Index share of long-term fund assets",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 1440,
+      "table": 4,
+      "row": 0,
+      "label": "Model",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "width": 1440,
+      "table": 4,
+      "row": 1,
+      "label": "gpt-6.1-sol",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 1,
+      "row": 6,
+      "label": "Teamsters (horse and wagon)",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 1,
+      "row": 7,
+      "label": "Electrotypers and stereotypers",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 1,
+      "row": 9,
+      "label": "Milliners",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 1,
+      "row": 12,
+      "label": "Bus and streetcar conductors",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 3,
+      "label": "Typist, typing supervisor",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 5,
+      "label": "Telephone operator",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 7,
+      "label": "File clerk",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 9,
+      "label": "Secretary",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 10,
+      "label": "Bank teller",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 12,
+      "label": "Mail carrier",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 14,
+      "label": "Receptionist",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 15,
+      "label": "Stock clerk",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "width": 1440,
+      "table": 4,
+      "row": 16,
+      "label": "Cashier",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 390,
+      "table": 1,
+      "row": 0,
+      "label": "First source of information about the protests",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 390,
+      "table": 3,
+      "row": 2,
+      "label": "Constitutional leading role of the Communist Party removed",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 390,
+      "table": 5,
+      "row": 1,
+      "label": "All selected departures and the Libya proxy",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 390,
+      "table": 5,
+      "row": 2,
+      "label": "Exclude France, Russia, Romania, Libya and Yemen for armed revolt, mutiny or war",
+      "before": 119.4375,
+      "after": 226.9375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 390,
+      "table": 5,
+      "row": 3,
+      "label": "Also exclude Philippines\u2019 military split and Sudan\u2019s coup",
+      "before": 97.75,
+      "after": 161.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "width": 390,
+      "table": 6,
+      "row": 0,
+      "label": "Onset period",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 2,
+      "row": 0,
+      "label": "Source or edition",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 2,
+      "row": 1,
+      "label": "Hansard, King\u2019s Speech, 17 July 2024",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 2,
+      "row": 2,
+      "label": "AI Opportunities Action Plan, 13 January 2025",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 2,
+      "row": 3,
+      "label": "Wikipedia contributors, AI hallucination, fixed revision",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 2,
+      "row": 5,
+      "label": "NASA, greenhouse effect, updated 23 October 2024",
+      "before": 119.4375,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 2,
+      "row": 6,
+      "label": "Python tutorial, footer updated 18 November 2026, 23:07 UTC",
+      "before": 119.4375,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 3,
+      "row": 0,
+      "label": "Category",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 6,
+      "row": 1,
+      "label": "Cataphoric",
+      "before": 119.4375,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 6,
+      "row": 2,
+      "label": "Exophoric",
+      "before": 119.4375,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 6,
+      "row": 3,
+      "label": "Conceptual/declarative",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 6,
+      "row": 4,
+      "label": "Exegetic",
+      "before": 141.125,
+      "after": 226.9375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 6,
+      "row": 5,
+      "label": "Conventionality",
+      "before": 141.125,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 6,
+      "row": 6,
+      "label": "Explanative",
+      "before": 97.75,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 6,
+      "row": 7,
+      "label": "Prevaricative",
+      "before": 119.4375,
+      "after": 182.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 7,
+      "row": 3,
+      "label": "Elaboration: same recoding",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 7,
+      "row": 5,
+      "label": "Social functions: exact label sets",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 7,
+      "row": 6,
+      "label": "Binding: exact label sets",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 7,
+      "row": 7,
+      "label": "Scope: local / passage-wide",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 10,
+      "row": 0,
+      "label": "Pass A",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 10,
+      "row": 1,
+      "label": "Field (W003; one unit): constitutive.",
+      "before": 162.8125,
+      "after": 270.125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 10,
+      "row": 2,
+      "label": "AI hallucination (W009/W012; two units): attributive; no binding.",
+      "before": 184.5,
+      "after": 270.125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 10,
+      "row": 6,
+      "label": "Files (E034/E043; two units): constitutive, no binding.",
+      "before": 119.4375,
+      "after": 139.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 11,
+      "row": 2,
+      "label": "11:24:27",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 11,
+      "row": 4,
+      "label": "11:27:17",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 11,
+      "row": 6,
+      "label": "11:31:27",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 11,
+      "row": 9,
+      "label": "12:47",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-metaphor-use-pilot/",
+      "width": 390,
+      "table": 11,
+      "row": 10,
+      "label": "13:05",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "width": 390,
+      "table": 4,
+      "row": 0,
+      "label": "Collection",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 1,
+      "row": 0,
+      "label": "Date",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 1,
+      "row": 1,
+      "label": "17 December 1964",
+      "before": 141.125,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 1,
+      "row": 2,
+      "label": "5 April 1966",
+      "before": 162.8125,
+      "after": 291.71875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 1,
+      "row": 3,
+      "label": "8 May 1968",
+      "before": 97.75,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 1,
+      "row": 4,
+      "label": "28 January 1980",
+      "before": 119.4375,
+      "after": 183.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 1,
+      "row": 5,
+      "label": "23 January 1993",
+      "before": 119.4375,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 1,
+      "row": 6,
+      "label": "25 June 2005",
+      "before": 141.125,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 1,
+      "row": 7,
+      "label": "11 January 2010",
+      "before": 162.8125,
+      "after": 204.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 4,
+      "row": 1,
+      "label": "Google Books Ngram",
+      "before": 141.125,
+      "after": 313.3125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 4,
+      "row": 2,
+      "label": "US Congressional Record / govinfo",
+      "before": 162.8125,
+      "after": 291.71875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 4,
+      "row": 3,
+      "label": "GDELT",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "width": 390,
+      "table": 4,
+      "row": 4,
+      "label": "Quora short link",
+      "before": 97.75,
+      "after": 139.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 1,
+      "row": 0,
+      "label": "Task",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 1,
+      "row": 2,
+      "label": "Restoration",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 1,
+      "row": 3,
+      "label": "Translation",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 1,
+      "row": 4,
+      "label": "Decipherment",
+      "before": 119.4375,
+      "after": 139.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 1,
+      "label": "Egyptian hieroglyphs",
+      "before": 141.125,
+      "after": 248.53125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 2,
+      "label": "Egyptian Demotic",
+      "before": 162.8125,
+      "after": 270.125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 3,
+      "label": "Old Persian cuneiform",
+      "before": 206.1875,
+      "after": 356.5,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 4,
+      "label": "Akkadian / Babylonian / Assyrian",
+      "before": 184.5,
+      "after": 291.71875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 5,
+      "label": "Sumerian cuneiform",
+      "before": 141.125,
+      "after": 270.125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 6,
+      "label": "Elamite cuneiform",
+      "before": 141.125,
+      "after": 248.53125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 7,
+      "label": "Hittite language in cuneiform",
+      "before": 162.8125,
+      "after": 270.125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 8,
+      "label": "Luwian hieroglyphs",
+      "before": 249.5625,
+      "after": 486.0625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 9,
+      "label": "Ugaritic alphabetic cuneiform",
+      "before": 206.1875,
+      "after": 356.5,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 10,
+      "label": "Linear B / Mycenaean Greek",
+      "before": 162.8125,
+      "after": 291.71875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 11,
+      "label": "Cypriot syllabary (Greek texts)",
+      "before": 184.5,
+      "after": 313.3125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 12,
+      "label": "Maya hieroglyphs",
+      "before": 249.5625,
+      "after": 313.3125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 13,
+      "label": "Phoenician",
+      "before": 119.4375,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 14,
+      "label": "Palmyrene Aramaic",
+      "before": 119.4375,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 15,
+      "label": "Early Brahmi",
+      "before": 227.875,
+      "after": 291.71875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 16,
+      "label": "Kharosthi",
+      "before": 141.125,
+      "after": 248.53125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 17,
+      "label": "Old Turkic runiform",
+      "before": 141.125,
+      "after": 226.9375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 18,
+      "label": "Carian",
+      "before": 162.8125,
+      "after": 291.71875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 19,
+      "label": "Old South Arabian monumental script",
+      "before": 227.875,
+      "after": 270.125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 2,
+      "row": 20,
+      "label": "Tangut",
+      "before": 227.875,
+      "after": 377.09375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 3,
+      "row": 0,
+      "label": "Provisional code at the selected stage",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 3,
+      "row": 1,
+      "label": "Readable parallel or key",
+      "before": 32.6875,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 3,
+      "row": 2,
+      "label": "Language or close relative documented at stage",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 3,
+      "row": 3,
+      "label": "Language proposed for inscriptions before breakthrough",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 3,
+      "row": 4,
+      "label": "Usable known linguistic comparator at stage",
+      "before": 54.375,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 3,
+      "row": 5,
+      "label": "Broad script type before mapping",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 3,
+      "row": 6,
+      "label": "Proper names as entry point",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 4,
+      "row": 1,
+      "label": "Sasanian and Parthian inscriptions",
+      "before": 162.8125,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 4,
+      "row": 2,
+      "label": "Meroitic script",
+      "before": 119.4375,
+      "after": 226.9375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 4,
+      "row": 3,
+      "label": "Iberian script",
+      "before": 162.8125,
+      "after": 270.125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 4,
+      "row": 4,
+      "label": "Oracle-bone script",
+      "before": 141.125,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 4,
+      "row": 5,
+      "label": "Tocharian",
+      "before": 141.125,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 4,
+      "row": 6,
+      "label": "Lycian",
+      "before": 97.75,
+      "after": 183.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 4,
+      "row": 7,
+      "label": "Urartian",
+      "before": 141.125,
+      "after": 182.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 5,
+      "row": 1,
+      "label": "Structure without language",
+      "before": 379.6875,
+      "after": 723.59375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 5,
+      "row": 2,
+      "label": "Partly read, with a language to test against",
+      "before": 314.625,
+      "after": 658.8125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 5,
+      "row": 3,
+      "label": "Audit of a published proposal",
+      "before": 249.5625,
+      "after": 486.0625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 5,
+      "row": 4,
+      "label": "Script readable, language not understood",
+      "before": 271.25,
+      "after": 378.09375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 5,
+      "row": 5,
+      "label": "Language known, individual signs unread",
+      "before": 271.25,
+      "after": 356.5,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 5,
+      "row": 6,
+      "label": "Limited by evidence",
+      "before": 423.0625,
+      "after": 657.8125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 1,
+      "label": "Linear A",
+      "before": 206.1875,
+      "after": 226.9375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 9,
+      "label": "Isthmian / Epi-Olmec",
+      "before": 141.125,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 12,
+      "label": "Khitan large script",
+      "before": 141.125,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 13,
+      "label": "Meroitic language",
+      "before": 162.8125,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 14,
+      "label": "Etruscan language",
+      "before": 249.5625,
+      "after": 291.71875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 15,
+      "label": "Voynich manuscript",
+      "before": 162.8125,
+      "after": 183.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 16,
+      "label": "Vin\u010da symbols",
+      "before": 141.125,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 20,
+      "label": "Jurchen",
+      "before": 227.875,
+      "after": 248.53125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 21,
+      "label": "Linear Elamite",
+      "before": 162.8125,
+      "after": 183.75,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 23,
+      "label": "Oracle bone Chinese: remaining character gaps",
+      "before": 227.875,
+      "after": 248.53125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 6,
+      "row": 26,
+      "label": "Khipu (comparison)",
+      "before": 141.125,
+      "after": 161.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 7,
+      "row": 0,
+      "label": "Issue",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 7,
+      "row": 2,
+      "label": "Pure phonography",
+      "before": 141.125,
+      "after": 205.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 7,
+      "row": 3,
+      "label": "Descent from proto-Elamite",
+      "before": 97.75,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 7,
+      "row": 4,
+      "label": "Provenance and authenticity",
+      "before": 141.125,
+      "after": 204.34375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "width": 390,
+      "table": 8,
+      "row": 2,
+      "label": "Neural Decipherment via Minimum-Cost Flow: from Ugaritic to Linear B (2019) source",
+      "before": 292.9375,
+      "after": 378.09375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 390,
+      "table": 4,
+      "row": 0,
+      "label": "Year",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 390,
+      "table": 6,
+      "row": 0,
+      "label": "Columbia, year ended June 2009",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 390,
+      "table": 9,
+      "row": 1,
+      "label": "13:15:13",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 390,
+      "table": 9,
+      "row": 2,
+      "label": "13:17\u201313:24",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 390,
+      "table": 9,
+      "row": 3,
+      "label": "13:24\u201313:31",
+      "before": 119.4375,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "width": 390,
+      "table": 9,
+      "row": 5,
+      "label": "13:41:38",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 1,
+      "row": 0,
+      "label": "Measure",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 1,
+      "row": 1,
+      "label": "Five firms' nine-month cash purchases",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 1,
+      "row": 2,
+      "label": "Calendar-alignment estimate",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 2,
+      "row": 0,
+      "label": "Commercial industry and search window",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 2,
+      "row": 5,
+      "label": "US broadband providers, 1996\u20132013",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 2,
+      "row": 6,
+      "label": "US private electricity, 1900\u20131950",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 3,
+      "row": 0,
+      "label": "Public programme and search window",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 3,
+      "row": 1,
+      "label": "Apollo including overhead, FY1960\u20131973",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 4,
+      "row": 1,
+      "label": "UK railways, 1845\u20131850",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 4,
+      "row": 2,
+      "label": "US railways, 1870\u20131873",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 4,
+      "row": 3,
+      "label": "US railways, 1880\u20131883",
+      "before": 54.375,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 4,
+      "row": 4,
+      "label": "Five technology firms, 2024\u2013September 2026",
+      "before": 119.4375,
+      "after": 139.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 6,
+      "row": 2,
+      "label": "Capital including construction in progress",
+      "before": 32.6875,
+      "after": 54.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 9,
+      "row": 1,
+      "label": "UK railways",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 9,
+      "row": 2,
+      "label": "US railways",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 9,
+      "row": 3,
+      "label": "US telecom",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 10,
+      "row": 1,
+      "label": "Long-distance / toll",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 11,
+      "row": 2,
+      "label": "US railways",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 11,
+      "row": 3,
+      "label": "US telecom",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 12,
+      "row": 2,
+      "label": "08:53\u201309:10",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 12,
+      "row": 3,
+      "label": "09:10\u201309:19:33",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 12,
+      "row": 4,
+      "label": "09:19:33",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 12,
+      "row": 5,
+      "label": "19 November",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 13,
+      "row": 5,
+      "label": "Oracle",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "width": 390,
+      "table": 13,
+      "row": 6,
+      "label": "Total",
+      "before": 76.0625,
+      "after": 96.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 390,
+      "table": 5,
+      "row": 1,
+      "label": "Motor car and lorry",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 390,
+      "table": 5,
+      "row": 3,
+      "label": "Powered machines",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 390,
+      "table": 5,
+      "row": 4,
+      "label": "Telephone and office machines",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 390,
+      "table": 5,
+      "row": 6,
+      "label": "New services",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "width": 390,
+      "table": 5,
+      "row": 8,
+      "label": "The New Deal",
+      "before": 54.375,
+      "after": 74.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 390,
+      "table": 1,
+      "row": 2,
+      "label": "Explicit verbal complement",
+      "before": 54.375,
+      "after": 75.78125,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 390,
+      "table": 1,
+      "row": 4,
+      "label": "Total selected",
+      "before": 32.6875,
+      "after": 53.1875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 390,
+      "table": 2,
+      "row": 23,
+      "label": "OANC",
+      "before": 76.0625,
+      "after": 140.5625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 390,
+      "table": 2,
+      "row": 31,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 390,
+      "table": 2,
+      "row": 33,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 162.15625,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 390,
+      "table": 2,
+      "row": 35,
+      "label": "enTenTen13",
+      "before": 76.0625,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 390,
+      "table": 2,
+      "row": 38,
+      "label": "enTenTen13",
+      "before": 97.75,
+      "after": 118.96875,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "width": 390,
+      "table": 3,
+      "row": 0,
+      "label": "Collection",
+      "before": 76.0625,
+      "after": 97.375,
+      "cause": "Native text wrapping at 16px with 0.6rem side padding, complete words and protected atomic values."
+    }
+  ]
+}

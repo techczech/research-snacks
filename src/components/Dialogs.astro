@@ -2,8 +2,8 @@
 import { keyMap } from '../lib/keys';
 ---
 <dialog class="kit-dlg dlg" id="search-dlg" aria-labelledby="search-title">
-  <div class="dialog-head"><h2 id="search-title">Search Research Snacks</h2><button type="button" data-close aria-label="Close search">Close</button></div>
-  <div class="dialog-body"><label for="search-input">Search entries and pages</label><input class="search-input" id="search-input" type="search" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list" autocomplete="off" /></div>
+  <h2 id="search-title" class="sr-only">Search Research Snacks</h2>
+  <div class="dialog-head search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg><label class="sr-only" for="search-input">Search entries and pages</label><input class="search-input" id="search-input" type="search" placeholder="Search Research Snacks…" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list" autocomplete="off"/><button type="button" data-close aria-label="Close search">Close</button></div>
   <p class="search-status" role="status"></p><div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
   <div class="dialog-foot"><kbd>↑</kbd> <kbd>↓</kbd> move · <kbd>Enter</kbd> open · <kbd>Shift+Enter</kbd> source · <kbd>Esc</kbd> close<br /><a href="/search-index.json">Public search index</a> · <a href="/search/">All entries and pages</a></div>
 </dialog>

@@ -1,0 +1,7 @@
+---
+import {categoryGroups} from '../lib/feed';
+import {getEntries} from '../lib/content';
+import {tagLabel} from '../lib/labels';
+const {selected=''}=Astro.props;
+---
+<nav class="category-links" aria-label="Categories"><a href="/" aria-current={selected===''?'page':undefined}>All {getEntries().length}</a>{categoryGroups().map(({category,count})=><><span aria-hidden="true">·</span><a href={`/tags/${encodeURIComponent(category)}/`} aria-current={selected===category?'page':undefined}>{tagLabel(category)} {count}</a></>)}</nav>

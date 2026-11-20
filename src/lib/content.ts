@@ -1,3 +1,4 @@
+import {readingSurfaces} from './reading';
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, relative, extname } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -133,7 +134,7 @@ export function renderMarkdown(text: string,folder?: string): string {
   });
   return html;
 }
-export function withTOC(html: string,title: string): string {
+export function withTOC(html: string,title: string,entryId?:string): string {
   const items: {tag:string;id:string;text:string}[] = [], used = new Set<string>();
   html = html.replace(/<(h2|h3)((?:\s[^>]*?)?)>([\s\S]*?)<\/\1>/g,(_,tag,attrs,inner) => {
     const found = /id="([^"]+)"/.exec(attrs);
@@ -142,17 +143,19 @@ export function withTOC(html: string,title: string): string {
     items.push({tag,id,text:inner.replace(/<[^>]+>/g,'')});
     return `<${tag}${found ? attrs : attrs+` id="${id}"`}>${inner}</${tag}>`;
   });
-  if (items.length<3) return `<main id="main" class="wrap entry" style="padding-top:40px">${html}</main>`;
+  if (items.length<3) return `<main id="main" class="wrap entry" style="padding-top:40px">${html.replace('<!--mobile-contents-->','')}</main>`;
   const groups: {head:typeof items[number]; subs: typeof items}[] = [];
   for (const item of items) { if (item.tag==='h2' || !groups.length) groups.push({head:item,subs:[]}); else groups.at(-1)!.subs.push(item); }
   const lis = groups.map(({head,subs}) => `<li class="h2 ${head.text==='How this was made' ? 'making' : ''}"><a href="#${head.id}">${head.text}</a>${subs.length ? '<ol>'+subs.map(s=>`<li class="h3"><a href="#${s.id}">${s.text}</a></li>`).join('')+'</ol>' : ''}</li>`).join('');
   const nav=`<li class="h2 top"><a href="#top">${e(title)}</a></li>${lis}`;
-  return `<div class="wrap withtoc" id="top"><aside class="toc"><nav aria-label="Contents"><div class="toc-h">Contents</div><ol>${nav}</ol></nav></aside><details class="toc-m"><summary>Contents</summary><ol>${nav}</ol></details><main id="main" class="entry">${html}</main></div>`;
+  const compact=`<details class="toc-m"><summary>Contents</summary><ol>${nav}</ol></details>`;
+  html=html.includes('<!--mobile-contents-->')?html.replace('<!--mobile-contents-->',compact):compact+html;
+  return `<div class="wrap withtoc" id="top"><aside class="toc"><nav aria-label="Contents"><div class="toc-h">Contents</div><ol>${nav}</ol>${entryId?`<p class="figures-link"><a href="/${entryId}/figures/">Figures and tables</a></p>`:''}</nav></aside><main id="main" class="entry">${html}</main></div>`;
 }
 export function entryHTML(x: Entry): string {
   const ul = (items: any[]) => '<ul>'+items.map(i => `<li>${String(i).startsWith('http') ? `<a href="${e(i)}">${e(i)}</a>` : e(i)}</li>`).join('')+'</ul>';
   const facts = `<dl class="facts"><dt>Claim</dt><dd>&ldquo;${e(x.claim)}&rdquo; (<a href="${e(x.claim_source)}">source</a>)</dd><dt>Verdict</dt><dd>${e(x.verdict)}</dd><dt>Time taken</dt><dd>${e(x.time_taken)}</dd><dt>Human time</dt><dd>${e(x.human_time)}</dd><dt>Tools</dt><dd>${ul(x.tools)}</dd><dt>Data sources</dt><dd>${ul(x.data_sources)}</dd></dl>`;
-  let rendered = renderMarkdown(x._body,x._folder);
+  let rendered = readingSurfaces(renderMarkdown(x._body,x._folder),x.id).html;
   const split = /<h2[^>]*>How this was made<\/h2>/.exec(rendered);
   const argument = split ? rendered.slice(0,split.index) : rendered;
   const making = split ? rendered.slice(split.index+split[0].length) : '';
@@ -163,6 +166,6 @@ export function entryHTML(x: Entry): string {
     return listed.length ? `<h4>${label}</h4><ul class="assets">${listed.map(n => `<li><a href="${sub}/${e(n)}" download>${sub}/${e(n)}</a></li>`).join('')}</ul>` : '';
   }).join('');
   const cite = citeBlockHtml(pageCitation(x.title,`/${x.id}/`,x)).replace(/<h2( [^>]*)?>Cite this page<\/h2>/,'<h3$1>Cite this page</h3>');
-  return withTOC(`<div class="legend">${dateLabel(x.date)} · ${e(names(x.author || AUTHOR).join(', '))}</div><h1>${e(x.title)}</h1>${facts}<div class="body-md">${argument}</div><section class="making"><h2 class="making-h">How this was made</h2><p class="making-intro">How the check was done, what it cost, and the sources, data and code behind it.</p><div class="body-md">${making}</div><h3>Check it yourself</h3><p><a href="https://github.com/techczech/research-snacks-data/tree/main/snacks/${e(x.id)}">Clone the data, code and method for this snack</a>. The checking repository includes the shareable inputs, expected tables and rerun instructions. The whole collection is archived on Zenodo: <a href="https://doi.org/10.5281/zenodo.24370344">doi:10.5281/zenodo.24370344</a>.</p>${refs ? `<h3>References</h3><ol class="refs">${refs}</ol><p><a href="references.ris">Add these references to your reference manager (RIS)</a></p>` : ''}${assets ? '<h3>Files</h3>'+assets : ''}${cite}</section>`,x.title);
+  return withTOC(`<div class="legend">${dateLabel(x.date)} · ${e(names(x.author || AUTHOR).join(', '))}</div><h1>${e(x.title)}</h1><div class="meta-links"><a href="figures/">Figures and tables</a></div>${facts}<!--mobile-contents--><div class="body-md">${argument}</div><section class="making"><h2 class="making-h">How this was made</h2><p class="making-intro">How the check was done, what it cost, and the sources, data and code behind it.</p><div class="body-md">${making}</div><h3>Check it yourself</h3><p><a href="https://github.com/techczech/research-snacks-data/tree/main/snacks/${e(x.id)}">Clone the data, code and method for this snack</a>. The checking repository includes the shareable inputs, expected tables and rerun instructions. The whole collection is archived on Zenodo: <a href="https://doi.org/10.5281/zenodo.24370344">doi:10.5281/zenodo.24370344</a>.</p>${refs ? `<h3>References</h3><ol class="refs">${refs}</ol><p><a href="references.ris">Add these references to your reference manager (RIS)</a></p>` : ''}${assets ? '<h3>Files</h3>'+assets : ''}${cite}</section>`,x.title,x.id);
 }
 export function categories(x: Entry): string[] { return [...new Set([...(x.category ? [String(x.category)] : []),...names(x.tags)])]; }

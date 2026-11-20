@@ -5,6 +5,7 @@ import { homedir } from 'node:os';
 import assert from 'node:assert/strict';
 import { getEntries, ROOT } from '../src/lib/content';
 import { inspectEntryCharts } from './check-charts';
+import {checkCompact} from './check-compact';
 const dir=join(ROOT,'.check/release');mkdirSync(dir,{recursive:true});
 const servers:any[]=[];
 function serve(root:string){const s=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(req){let p=decodeURIComponent(new URL(req.url).pathname);if(p.endsWith('/'))p+='index.html';const f=Bun.file(join(root,p));return await f.exists()?new Response(f):new Response('Not found',{status:404});}});servers.push(s);return `http://127.0.0.1:${s.port}`;}
@@ -17,6 +18,7 @@ const passed=(name:string,detail:any=true)=>{records.checks.push({name,passed:tr
 const paths=['/','/about/',...getEntries().map(x=>`/${x.id}/`)];
 const label=(path:string)=>path==='/'?'home':path.split('/').filter(Boolean)[0];
 try {
+  await checkCompact(browser,current);
   records.charts = await inspectEntryCharts(browser,current,getEntries().map(entry=>`/${entry.id}/`));
   const chartFailures = records.charts.filter((result:any)=>result.errors.length);
   assert.deepEqual(chartFailures,[],`Vega-Lite chart failures: ${JSON.stringify(chartFailures,null,2)}`);
@@ -62,14 +64,15 @@ try {
   await page.locator('[data-open-keys]').click();await page.locator('[data-single-keys]').check();await page.keyboard.press('Escape');passed('Single-key off switch stops /, ?, m; Ctrl+K still works');
   await page.keyboard.press('/');await page.locator('#search-input').fill('cake');await page.waitForFunction(()=>document.querySelectorAll('#search-results [role=option]').length===1);assert((await page.locator('#search-results').innerText()).includes('Can a cake be sickly?'));await page.keyboard.press('ArrowDown');assert(await page.locator('#search-input').getAttribute('aria-activedescendant'));await page.keyboard.press('Escape');
   passed('Build-time search returns grouped results with combobox selection');
-  await page.locator('.filters [name=q]').fill('zz-no-match');assert.equal(await page.locator('.card:visible').count(),0);assert(await page.locator('.no-results').isVisible());await page.locator('[data-clear-filters]').click();assert.equal(await page.locator('.card:visible').count(),getEntries().length);
-  await page.locator('.filters [name=cat]').selectOption('linguistics');assert.equal(await page.locator('.card:visible').count(),getEntries().filter(entry=>entry.category==='linguistics').length);assert(new URL(page.url()).searchParams.get('cat')==='linguistics');await page.goBack();assert.equal(await page.locator('.card:visible').count(),getEntries().length);passed('Home filters: query/category URL state, count, no results, clear, Back');
+  await page.getByRole('navigation',{name:'Categories',exact:true}).getByRole('link',{name:/Linguistics/}).click();
+  assert.equal(await page.locator('.feed-entry').count(),getEntries().filter(x=>x.category==='linguistics').length);
+  await page.goBack();assert.equal(await page.locator('.feed-entry').count(),getEntries().length);passed('Category links work as full pages and Back returns to the feed');
   assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'auto');await page.locator('[data-open-keys]').click();assert.equal(await page.locator('#keys-dlg').evaluate(d=>getComputedStyle(d).animationName),'none');await page.keyboard.press('Escape');
   await page.locator('[data-open-keys]').click();assert.equal(await page.locator('#keys-dlg').evaluate(el=>getComputedStyle(el).animationName),'none');await page.keyboard.press('Escape');passed('Reduced motion: instant scrolling and no dialog animation');
   await page.goto(current+'/2026-11-17-can-a-cake-be-sickly/');
   const kwic=page.locator('#sickly-kwic');assert.equal(await kwic.locator('tbody tr').count(),39);
-  await kwic.locator('input').fill('chocolate');let count=await kwic.locator('tbody tr:visible').count();assert(count>0&&count<39);
-  await kwic.locator('input').fill('');await kwic.locator('select').selectOption('OANC');assert.equal(await kwic.locator('tbody tr:visible').count(),6);
+  await kwic.locator('input[type=search]').fill('chocolate');let count=await kwic.locator('tbody tr:visible').count();assert(count>0&&count<39);
+  await kwic.locator('input[type=search]').fill('');await kwic.locator('select').selectOption('OANC');assert.equal(await kwic.locator('tbody tr:visible').count(),6);
   await kwic.locator('[data-sort="0"]').click();assert.equal(await kwic.locator('th').first().getAttribute('aria-sort'),'ascending');
   const download=page.waitForEvent('download');await kwic.locator('#sickly-export').click();const saved=await download;await saved.saveAs(join(dir,'sickly-filtered.csv'));const csv=readFileSync(join(dir,'sickly-filtered.csv'),'utf8');assert.equal(csv.trim().split('\n').length,7);assert(csv.includes('OANC'));passed('KWIC: 39 rows, search, corpus filter, sorting and six-row CSV export');
   await page.locator('#how-this-was-made').scrollIntoViewIfNeeded();await page.waitForFunction(()=>!!document.querySelector('.toc [aria-current="location"]'));assert.equal(await page.locator('.toc [aria-current="location"]').count(),1);assert.equal(await page.locator('.toc li.h2.open').count(),1);passed('TOC observer marks current heading and opens its H3 group');

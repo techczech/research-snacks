@@ -1,0 +1,7 @@
+---
+import {dateLabel} from '../lib/content';
+import {primaryCategory,shortTime,entryTags} from '../lib/feed';
+import {tagLabel} from '../lib/labels';
+const {entries}=Astro.props;
+---
+<div class="feed">{entries.map(x=><article class="feed-entry"><div class="meta">{dateLabel(x.date,'short')} · {tagLabel(primaryCategory(x))}{shortTime(x)&&<> · <span title={x.time_taken}>{shortTime(x)}</span></>}</div><h3><a href={`/${x.id}/`}>{x.title}</a></h3><p class="claim">“{x.claim}”</p><p class="verdict"><b>Verdict:</b> {x.verdict}</p><div class="tag-links">{entryTags(x).map(tag=><a href={`/tags/${encodeURIComponent(tag)}/`}>{tagLabel(tag)}</a>)}</div></article>)}</div>

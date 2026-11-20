@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getEntries, renderMarkdown, NAME, pageCitation } from '../../lib/content';
+import { readingSurfaces, figuresHTML } from '../../lib/reading';
+export function getStaticPaths(){return getEntries().map(entry=>({params:{id:entry.id},props:{entry}}));}
+const {entry}=Astro.props;
+const reading=readingSurfaces(renderMarkdown(entry._body,entry._folder),entry.id);
+---
+<BaseLayout title={`Figures and tables: ${entry.title} · ${NAME}`} description={`Charts and main tables from ${entry.title}, with source context and downloads.`} cite>
+  <main id="main" class="wrap figures-page entry">
+    <h1>Figures and tables</h1>
+    <p><a href={`/${entry.id}/`}>{entry.title}</a></p>
+    <nav class="figure-index" aria-label="Figures and tables">{reading.visuals.filter(v=>!v.appendix).map((v,i)=><a href={`#${v.id}`}><span class="visual-kind">{v.kind==='table'?'Table':'Figure'} {v.id.split('-')[1]}: </span>{v.title}</a>)}</nav>
+    <Fragment set:html={figuresHTML(reading,entry.id)} />
+  </main>
+</BaseLayout>
