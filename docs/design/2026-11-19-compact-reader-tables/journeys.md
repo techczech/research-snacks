@@ -2,7 +2,7 @@
 title: Compact tables and the existing reading journeys
 register: FOR AGENTS
 date: 2026-11-19
-status: implementation from the owner’s replacement brief; coordinator review first
+status: ready for the owner’s publication decision
 provenance: Owner rejection and replacement parcel; live page measurements; Online Reader Framework table surface.
 ---
 
@@ -40,3 +40,8 @@ The page-height target was withdrawn in chat; keep the 60–72 character prose m
 # Complete table flow, later 20 November
 
 Remove every vertical table cap in article and figures views, and drop sticky table headers there because the horizontal frame prevents page-relative stickiness. Full view alone retains scrolling and its sticky header. Short columns size to their word/value minima; prose takes the remaining width. Content-measured spare width is redistributed on resize. Every hawks passage uses two or three lines at 950px. Full-table captures now show all seven examples, sixteen episodes and twenty historical stages at 950 and 1440px. The column audit found no remaining four-plus-line table paired with at least 8px of reusable width elsewhere. Page-height and row differences remain informational.
+
+
+# Final balance, 20 November
+
+The owner requested undoing the previous width over-correction. Remove runtime spare-width redistribution and forced minimum-width short columns; restore 0.6rem side padding. Use native auto layout, with the authorised square-root character-count fallback only on the hawks examples, where native layout did not meet the hoped-for line counts. Source and Judgement are less squeezed, but the longest passage remains five lines at 950px; disclose that in the publication decision. No table newly scrolls sideways. Keep all rows in normal flow. The same review now goes to the owner with publish / change the preview / keep live choices, with 950px live/new pairs first.

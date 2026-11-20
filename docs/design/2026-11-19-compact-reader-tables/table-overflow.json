@@ -1,38 +1,39 @@
 {
-  "preview": "https://e20a8c89.research-snacks.pages.dev",
+  "preview": "https://aa9779d5.research-snacks.pages.dev",
   "widths": [
     950,
     1440
   ],
   "tablesPerWidth": 85,
+  "newSidewaysTables": [],
   "scrolling": [
     {
       "path": "/2026-11-17-can-a-cake-be-sickly/",
       "viewport": 950,
       "table": 2,
       "headers": "Corpus | Referent | Construction | Coordination | Context | Reading | Source and anchor",
-      "width": 928.671875,
+      "width": 1006.984375,
       "frame": 648,
       "nowrap": [
         "BNC",
         "OANC"
       ],
       "columnCount": 7,
-      "reason": "Seven columns include long unbroken source classification identifiers. The word minima still exceed the frame after wrapping headers, prose and slash boundaries."
+      "reason": "Existing concordance: long unbroken source classification identifiers and seven columns exceed the frame. Restored padding increases width, without adding a newly scrolling table."
     },
     {
       "path": "/2026-11-17-can-a-cake-be-sickly/",
       "viewport": 1440,
       "table": 2,
       "headers": "Corpus | Referent | Construction | Coordination | Context | Reading | Source and anchor",
-      "width": 928.671875,
+      "width": 1006.984375,
       "frame": 704,
       "nowrap": [
         "BNC",
         "OANC"
       ],
       "columnCount": 7,
-      "reason": "Seven columns include long unbroken source classification identifiers. The word minima still exceed the frame after wrapping headers, prose and slash boundaries."
+      "reason": "Existing concordance: long unbroken source classification identifiers and seven columns exceed the frame. Restored padding increases width, without adding a newly scrolling table."
     }
   ]
 }

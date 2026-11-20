@@ -1,67 +1,61 @@
 ---
-title: Complete table flow and content-width verification
+title: Final table-balance preview verification
 register: FOR AGENTS
 date: 2026-11-19
 updated: 2026-11-20
-status: checks passed; prepared review held for coordinator inspection
-provenance: All article tables at 950, 1440 and 390px; no-JS article and figures routes; live/source comparisons and current preview pictures.
+status: ready for the owner's publication decision; no production deployment
+provenance: All article tables at 950, 1440 and 390px; no-JS article/figures routes; headless release checks and current live/preview pictures.
 ---
 
 # Outcome
 
-[Current preview](https://e20a8c89.research-snacks.pages.dev/). Every article and figures table now has all rows in normal page flow. All table height caps and inner vertical scrolling have been removed. The seven hawks examples, sixteen episodes and twenty historical-stage rows are visible in the new full-table captures. Full view alone may scroll vertically. Table headers are static in the article and gallery, since horizontal scroll frames cannot make them stick to the page; Full view retains its own sticky header.
+[Final preview](https://aa9779d5.research-snacks.pages.dev/). The runtime spare-width redistribution module and the forced narrow short-column rule are removed. Tables use native auto layout and 0.6rem horizontal padding (9.6px at the base size), with 5px vertical padding. Only pure dates, numbers, percentages, amounts and short codes receive single-line protection. All text and headers wrap. Every row remains in normal page flow, with no inner vertical scrolling except in Full view.
 
-Native auto layout sizes date/value and short-label columns to their word or value minima, leaving prose the remaining room. Cell padding is 5px vertically and 4px horizontally, with 16px text and 1.35 line-height. A slash between words gains a wrapping opportunity without changing any source text. A small progressive enhancement moves only measured unused text-line space to columns with four-plus-line cells; its responsive proportions are recalculated from content on resize, font readiness and column/full-view changes. No column uses a hand-set pixel width, equal share or fixed table layout. JavaScript-off tables remain complete native tables.
+Native layout was inspected first on the hawks examples. It left the longest passage at five lines at 950px, so the authorised fallback is applied to that table: relative column preferences proportional to the square root of the longest source cell's character count. Native auto layout still respects word/date minima. There are no hand-set pixel column widths, equal shares or fixed table layout; no client-side width redistribution remains. Other tables retain native auto layout.
 
-The cream palette, site header, reading font, article structure, sidebar, search, home feed and prose measure remain. Prose is 34rem, approximately 60–72 characters at the live 16px size, with 1.55 line-height. No source findings, cells, links or research data changed. No sub-agents or other models were used. Nothing was merged or deployed to production.
+# Remaining wrapping limit
 
-# Width and vertical-flow audit
+At 950px the hawks Source cells use 2–3 lines, Judgement uses 2–4, and the passage uses 3–5. Three longer passages remain at four or five lines, so the hoped-for two-to-three-line range is not met in every row. This is shown in the owner review; it is not represented as a complete match to that expectation. The longest reprinted Knight passage remains five lines. Source and Judgement are no longer squeezed to their previous narrowest widths. Source text is intact, dates remain protected, and the table fits beside the sidebar.
 
-All 85 article tables were checked at 950, 1440 and 390px: 255 table-width comparisons. There are no vertically clipped table frames. All 66 JavaScript-off article/figures route-width combinations also have no vertical table clipping. The headless release checks additionally cover the actual overflow hints and compact controls after resizing.
+# Horizontal scrolling and completeness
 
-At 950px the hawks passage column uses 2, 3, 2, 2, 3, 3 and 2 lines. At 1440px it uses 2, 3, 2, 2, 2, 2 and 2. The date column accommodates its longest full date, and the passage column has the greatest width.
+No table newly needs sideways scrolling after restoring padding. Across all 85 article tables at 950 and 1440px, the only scrolling table remains the seven-column concordance on [Can a cake be sickly?](https://aa9779d5.research-snacks.pages.dev/2026-11-17-can-a-cake-be-sickly/#figure-2). It is approximately 1,007px wide inside 648px and 704px frames; the earlier 4px-padding version was approximately 929px. Long unbroken source identifiers and the seven columns set the minimum width. All other tables, including the examples, episodes, historical stages and selection tables, fit at both desktop widths. Full inventories are in table-overflow.json and column-audit.json.
 
-**Remaining tables with four-plus-line cells and reusable width elsewhere: none found.** The scan flags at least 8px of reusable width, measured across every cell in the prospective donor column. Before refinement six table/width combinations met this condition; afterwards none do. The largest residual slack in any desktop table with a four-plus-line cell is 7.24px. The full per-column widths, text-line counts and spare-space readings are in column-audit.json.
-
-Some long cells still need four or more lines. In the hawks examples, some Source cells use four lines and Judgement cells use up to five: their longest complete words set the narrow-column minima, while the passage already uses its space. Blank space beside one short date is not transferable because another row contains the longest date. The twenty-stage table also has long evidence descriptions. All such text remains intact and every row remains on the page.
-
-# Sideways scrolling
-
-Only the seven-column concordance on [Can a cake be sickly?](https://e20a8c89.research-snacks.pages.dev/2026-11-17-can-a-cake-be-sickly/#figure-2) still scrolls at 950px and 1440px: approximately 929px of minimum content inside 648px and 704px frames. Long unbroken source classification identifiers plus the other columns cause this. Headers, prose and slash boundaries wrap. No other desktop table scrolls sideways; phone tables can still need horizontal scrolling.
+There is no vertical table clipping in 255 article table/width checks, or the 66 JavaScript-off article/figures route-width combinations. Full captures at 950 and 1440px include every requested row. Article/gallery headers remain static; Full view alone retains internal scrolling and sticky headers.
 
 # Page heights — information
 
-Every table row is now included in normal document height. There are no bounded table frames whose extra vertical travel is omitted. The live column remains wider at 950px because live collapses its sidebar; this preview retains it.
+All rows contribute to document height. Prose remains 34rem, approximately 60–72 characters at the live 16px size, with 1.55 line-height. Page height is not an acceptance ceiling.
 
 | Page | Width | Live px | Preview px | Change |
 | --- | ---: | ---: | ---: | ---: |
 | Home | 950 | 4,493 | 2,665 | -1,828 |
-| Revolution speed | 950 | 10,288 | 12,330 | +2,042 |
-| Hawks and doves | 950 | 9,076 | 10,573 | +1,497 |
-| Decipherment | 950 | 25,615 | 31,126 | +5,511 |
+| Revolution speed | 950 | 10,288 | 12,416 | +2,128 |
+| Hawks and doves | 950 | 9,076 | 10,595 | +1,519 |
+| Decipherment | 950 | 25,615 | 31,817 | +6,202 |
 | Home | 1440 | 4,136 | 2,557 | -1,579 |
-| Revolution speed | 1440 | 11,544 | 12,222 | +678 |
-| Hawks and doves | 1440 | 9,707 | 10,465 | +758 |
-| Decipherment | 1440 | 28,963 | 29,827 | +864 |
+| Revolution speed | 1440 | 11,544 | 12,265 | +721 |
+| Hawks and doves | 1440 | 9,707 | 10,444 | +737 |
+| Decipherment | 1440 | 28,963 | 30,345 | +1,382 |
 | Home | 390 | 8,271 | 3,518 | -4,753 |
-| Revolution speed | 390 | 18,972 | 18,573 | -399 |
-| Hawks and doves | 390 | 15,291 | 15,630 | +339 |
-| Decipherment | 390 | 54,264 | 56,694 | +2,430 |
+| Revolution speed | 390 | 18,972 | 18,717 | -255 |
+| Hawks and doves | 390 | 15,291 | 15,824 | +533 |
+| Decipherment | 390 | 54,264 | 58,436 | +4,172 |
 
-# Row density — information
+# Row differences — information
 
-417 of 1,782 row-width comparisons are taller by more than 1px: 225 at 950px, 80 at 1440px and 112 at 390px. These are information; the page-height ceiling remains withdrawn.
+510 of 1,782 row-width comparisons are taller by more than 1px: 252 at 950px, 108 at 1440px and 150 at 390px. These are informational.
 
-The required 16px table type replaces 14px in live general tables. Complete words and headers wrap, while atomic values stay intact. Vertical padding remains 5px; there are no filler rows or fixed row heights. The single-line body row remains approximately 32.6px versus 32.7px live. Complete differences and causes are in row-density.json.
+The required table size is 16px; live general tables use 14px. Complete words, balanced widths and restored side padding affect wrapping, while vertical padding stays at 5px. There are no fixed row heights or filler rows. The complete comparison is in row-density.json.
 
-# Checks and evidence
+# Checks and hand-back
 
 - bun run check passed: 48 pages, TypeScript, 11 tests and 327 assertions, privacy, citations, RIS, metadata, links, anchors and RSS.
-- The full headless release suite passed locally and on this immutable preview: no-JS content, sorting/filtering/reset/columns/full view, CSVs and concordance export, search/category, Contents jumps/markers, dark and forced colours, 200% text, blocked storage, citation copy and chart fallback.
-- New release assertions check every article table for vertical clipping after resize, all seven source rows and two-to-three-line passage cells at 950px. The independent layout scan covers the no-JS article and figures routes too.
-- Full-table pictures at 950 and 1440px include all seven examples, sixteen episodes and twenty historical stages; their last row is inside the captured viewport. Other affected table pictures and walkthrough states were replaced in the same prepared review, with the decision block retained and owner review still held.
-- All original Markdown cells, links and source order remain exact; the added wrapping opportunities contribute no characters. Tables and their controls remain 16px. The count shading and shared match colour remain unchanged.
+- The full headless release suite passed locally and on this immutable preview: no-JS content, keyboard sort/filter/reset/columns/full view/search, complete CSVs and concordance export, category navigation, Contents jumps/marker, dark and forced colours, 200% text, blocked storage, citation copy and chart fallback.
+- Every original Markdown cell, link and source order is preserved. No entry source or research-data repository changed.
+- Current captures at 950 and 1440px cover full examples, episodes, historical stages and selection tables. Live/new examples and First source of information pairs were recaptured. Other affected table pictures and walkthrough states were replaced.
+- The same DTC record is ready for the owner with three choices: publish this version; keep the preview and change it; keep the live site as it is. The 950px comparisons come first. No production deployment or merge has occurred.
 
 # Limits
 
-No physical phone, screen reader, real Zotero save or independent model review was run. External source article content was not rechecked; the previous OUP challenge remains a source-check limitation. Original chart presentation remains as live. Small font-metric differences between browsers can change line breaks.
+The exact two-to-three-line hope remains partly unmet as described above. No physical-phone, screen-reader, real Zotero-save or independent-model review was run. External source article content was not rechecked; the previous OUP challenge remains a source-check limitation. No sub-agents or other models were used. Original chart presentation is retained.
