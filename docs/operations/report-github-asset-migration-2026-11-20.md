@@ -1,7 +1,7 @@
 ---
 title: Research Snacks GitHub asset migration
 date: 2026-11-20
-status: verified-build-awaiting-production
+status: live-and-verified
 provenance: Coordinator classification instructions, existing source licences, file hashes and numerical/site checks
 ---
 
@@ -76,4 +76,12 @@ The [classified file inventory](inventory-research-asset-files-2026-11-20.csv) r
 - Every authored Markdown table was compared cell for cell with the pre-migration source: all 72 are unchanged.
 - Every generated HTML and Markdown link is checked for a removed site data/code target; none remains.
 
-All 175 distinct GitHub blob URLs found in the generated HTML, Markdown, RIS and JSON returned HTTP 200. This includes every one of the 172 mapped research-file URLs and three additional method/guide links. Production verification will be recorded after deployment. Explicit 302 redirects preserve all 189 retired data/code URLs: 172 point to their GitHub files and 17 withheld/working artifacts go home. This also overrides a stale removed Markdown response found in the custom-domain cache; the deployment credential has no zone cache-purge access.
+All 175 distinct GitHub blob URLs found in the generated HTML, Markdown, RIS and JSON returned HTTP 200. This includes every one of the 172 mapped research-file URLs and three additional method/guide links. Live verification confirms all 189 retired data/code URLs return the expected 302: 172 go to their GitHub files and 17 withheld/working artifacts go home. Routing uses 88 rules, within the observed 100-rule deployment limit. These redirects also prevent stale removed Markdown files from being served from the custom-domain cache.
+
+## Production receipt
+
+[Production deployment](https://5cfb6522.research-snacks.pages.dev) was built from a fresh, clean clone of remote main at [site source 3bf2928](https://github.com/techczech/research-snacks/commit/3bf2928f0702114ecc3a53669e0e8385397feff3). Build, type, unit, generated-site and headless release checks passed in that clone. All production and integration clones were removed after verification.
+
+All 98 live HTML, Markdown and RIS routes match the checked build. Home, all ten snacks, decipherment figures, RSS, search index, llms and sitemap return 200. The four replacement locator assets match their local files byte for byte. All 189 retired file URLs redirect as mapped. The pilot root and six representative descendants remain 302 to home; 92 generated live routes exclude it, and home/search/RSS each list ten entries. The rejected redesign remains unmerged.
+
+[Machine-readable verification receipt](verification-github-assets-2026-11-20.json) records route hashes, all 175 GitHub URL statuses and all 189 redirect targets. No data release was tagged or sent to Zenodo.

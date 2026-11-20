@@ -7,6 +7,8 @@ provenance: Git source, clean production builds, live HTTP checks and public Git
 
 # Publication and asset inventory
 
+The inventory stop recorded below was resolved by the coordinator. See the [completed GitHub asset migration](report-github-asset-migration-2026-11-20.md) for the subsequent classification, publication and live verification.
+
 The approved compact reading design is live. The metaphor-use pilot is withdrawn. The data/code migration stopped at its required inventory gate: 26 files have no counterpart in the public checking repository, and one script has different contents. No data/code links or folders were changed for this migration.
 
 ## Published stages

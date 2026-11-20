@@ -1,0 +1,2888 @@
+{
+  "verified_at": "2026-11-20T02:47:58.975501+00:00",
+  "deployment": "https://5cfb6522.research-snacks.pages.dev",
+  "site_source_commit": "3bf2928f0702114ecc3a53669e0e8385397feff3",
+  "data_commit": "2e33acb0c3a357bcefe165466975eebee308abeb",
+  "build_and_release": {
+    "passed": true,
+    "unit_tests": 13,
+    "unit_assertions": 654,
+    "authored_tables_preserved": 72,
+    "numerical_expected_tables": 99,
+    "numerical_packages": 11
+  },
+  "github_checked_at": "2026-11-20T02:28:04.120044+00:00",
+  "github_urls": [
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/analyse.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/analyse2.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/charts.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/extract.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/extract2.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/interactive.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/data/occ1950_1950_vs_2010.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/data/occ1990_by_year.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-ai-wealth-control-2035/code/analyse.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-ai-wealth-control-2035/data/historical-observations.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-ai-wealth-control-2035/data/payment-shares.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-ai-wealth-control-2035/data/source-manifest.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/METHOD.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/README.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/code/build-sickly-figures.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/data/collocations-bnc.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/data/collocations-oanc.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/data/source-manifest-sickly.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/data/word-sketch.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/analyse.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/charts.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/college.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/extract.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/ngrams.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/robustness.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/spec-1900-2024.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/spec-educ-1940-2024.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/spec-occ1990-2010.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/spec-occstr-1900-1940.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/written_titles.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/college.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/dissimilarity.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/dissimilarity_robustness.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/dist_ind1950.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/dist_occ1950.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/events.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/groups.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/indicators.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/ngram_takeoff.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/written_titles_judgement.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/written_titles_new_by_1940.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/code/charts-ai-capex.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/code/reproduce.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/ai-revenue-inputs.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/company-cash-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/company-prior-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/cumulative-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/gdp-2026-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/historical-sensitivity-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/revenue-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/sensitivity-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/spending-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/telecom-segments-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/uk-gdp-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/1-spending-gdp.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/2-revenue-and-capex.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/3-telecom-segments.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/ai-capital-cost.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/ai-metrics.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/ai-sensitivity.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/ai-spending-shares.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/anthropic-q3.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/capital-in-service.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/company-annual-cash.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/company-reconciliation.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/cumulative-spending.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/growth-comparison.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/historical-checks.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/revenue-ratios.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/telecom-segments.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/uk-gdp-sensitivity.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/DATA-SOURCES.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/code/charts-canals-nuclear.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/code/reproduce.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/canal-company-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/canal-period-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/canal-turnover-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/cumulative-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/france-gdp-quarter-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/nuclear-outcome-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/parent-ai-inputs.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/parent-ai-scenario-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/parent-comparison-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/us-nuclear-investment-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/us-nuclear-operation-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/us-rail-1850s-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/us-rail-annual-investment-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/1-spending-comparison.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/2-canal-dividends-returns.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/3-nuclear-construction.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/4-nuclear-output-use.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/ai-scenarios.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/canal-periods.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/canal-returns.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/canal-turnover.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/comparison.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/cumulative.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/nuclear-annual.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/nuclear-economics.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/nuclear-operations.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/rail-1850s.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/code/charts-decipherment.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/code/reproduce.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/code/session-usage-codex.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/1-timeline.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/2-preconditions-counts.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/3-preconditions-matrix.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/4-agent-ranking.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/5-corpus-availability.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/6-claim-tests.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/7-survey-size.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/8-task-groups.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/9-historical-lineages.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/DATA-SOURCES.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/METHOD.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/REVIEW-RESPONSE-COUNCIL.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/REVIEW-RESPONSE.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/VALIDATION.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-authored-decisions-council.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-cases.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-cell-evidence.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-computational-work.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-sources.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-task-groups.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/DATA-SOURCES.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/METHOD.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/code/charts.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/code/reproduce.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/code/session-usage-codex.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/annotations.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/ngram-query-status.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/ngram-series.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/predation-query.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/queries.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/query-controls.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/usage-snapshot.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/news-domains.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/news-sample.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/ngram-decades.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/ngram-query-summary.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/source-decades.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/source-totals.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/code/make-charts.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/code/reproduce.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/2011-claim-inventory.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/2011-historical-collocates.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/2011-other-reported-numbers.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/american-english-ngram.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/british-english-ngram.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/english-ngram.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-annotations.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-corpora.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-corpus-requests.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-followup-queries.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-input-hashes.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-second-reading.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/ngram-requests.json",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/provider-citations.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/1-book-frequency.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/2-reading-distribution.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/3-function-comparison.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/4-book-contexts.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-ambiguity-bounds.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-book-periods.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-corpus-rates.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-followup-counts.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-second-reading-summary.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/code/charts.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/code/reproduce.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/code/session_usage_codex.py",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/alternative-dates.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/boundaries.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/cases.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/egypt-survey-inputs.csv",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/navco-1.3.tab",
+      "status": 200
+    }
+  ],
+  "verified_pages_and_ris": [
+    {
+      "path": "/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "2961ad39cf3884477a2ebca08729c9362243cff537a7db86a0408c5ba3b6957d"
+    },
+    {
+      "path": "/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "f8a3e474d2bffdbceea920ce2e5b5e1660f04d6a5c52e1cc0aedf3aef8124c08"
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "f34334a05a8dff22af89d9c010ddd2456a5c7f87a61faad4c62ba0c061c8b3e5"
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "03d7f4f717371147ebf8d973d2998f31ccdf669bb7fc0bb04725eb68988824cd"
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "87e3ee1d087105058f0f76623d969634829fca4348f834df3fad4469b95faaa6"
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "2a516d7743fc4cfea6cedc4780d04b952b21b9bc5652ea0c11004a2b3619a677"
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "d2179a697bfdaea8df96b563c2960b3b54303fac64fbd49292c634165a47fc4d"
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "2af864958c94fdb30e517c7ee69835d09fd9b5a6cf1a84691b76cd00c57b50e4"
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "37dae89987cd35e1609f4f4475b4ff67ec7934f8085d2b1e2828e6e2953a03fd"
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "9aef562f94320da7ef3078c2f392ee8bb16899e4886cf87ff14c29a58e1370c1"
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "45367ba984860318e254697230b801fd5db94d2f6c7036b3a26d57bfaf73581a"
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "f7982d08900d66f8efecbf94300784a946a6270854375f42f446d07f237c2286"
+    },
+    {
+      "path": "/about/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "b4b405a1a3d3f70fe5691680dd430c5afffa5416f6bd77bca4ed293b3878c505"
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "040b846457b5d9d17260d6bc9a55a484b2c934f401f54421decceb1f2f0ddbb4"
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "af90551f53faf6e64b2d6a59902421eed8a48c148f15e9b46d28da20c286989e"
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "5e341851b96ff450d05ce9061253201232071f14484a0b6fbf5df63553208711"
+    },
+    {
+      "path": "/search/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "3faf280e068dea9320a0752b67dc3095cd23fe5e172d5b8de77f9c95aa55032b"
+    },
+    {
+      "path": "/search/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "53a8b9f97ecebc4d909dc946396cbc723ebd3284bce2d13ede9501a2d204b902"
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "8c99f709bcdadfe4177218864b219edf9f4e1e0e33db8f0a0de0964d50400242"
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "97621efab8af20fb487e3f4ac1b1f50a0f71084c490e493bc0a8220b611e6901"
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "c36270000d7ef2a0811fee4b80a1632d1fabb8e6ea2a818d7431672a7cff01a7"
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "f198504b64c33ca982ac1cea6ac6180df565f7a70b67d1403297034cc527662a"
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "4fb3cc27b2ef1050e33f3a619e83fb00220a1562d1444134a720363db2d58c26"
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "e7ea8aa85db8385fc3eb9e2aadd7f108b23b130c507df07883ed6dc55e8d7087"
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "8f67246bf5f0072ad3b3788a213522017f9b405616b256551a08d04bc310daad"
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "2891e75609a7ea5189b935ef2c31acc37769525c0f11853b6a00191fad27d4ed"
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "8e989bdd8b3503394b315f94b11bd542289f848e385c9ace56f38f8769794fd8"
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "d92249b425f715ed3c912d48f5701cc250975fa2d99d83c94bdf19628bdc0cf6"
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "5dc836532bfdd41eb30609d930e044444b3d42dab0c0c99d1637d8e3601530c2"
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "f8b0ff400469be01bd6ef4067a00ea53ca08a289800e03d73b13352619d9fc5b"
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "734226ac35758866df1ad411c331bcac575db3b568e42739707790137dc82ebb"
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "8509c9d0fe33bb5b2783a53f21a8fb438c92010e6c2e4c78c1bafdcbd4c02cbd"
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "c5b24b075be9ce3690c25f9d725a70ab5e72ef684e994abd08dc12a6a59c04fa"
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "06cc2febb9ec9565595cff596575e66753a4e635d24be8548eb13bf426c78ead"
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/references.ris",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "b0b9e0868fd92f2a763dcb49334e3dfc785bea87b7e6135422555963974aac79"
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "35504a233ea8700055817e3e90e07bffe71b0ed42f4730a39da74224500fda10"
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "14305aedfc30605c8771f9cf60a93bf365d938f92f2c64edff4e3cb7bfe2b080"
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "ba18fa8da91a82382334b817d1b77c25323ae59655d80ae15a5384264a9ead59"
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "57f2aadf786549a240c1e0f72e2310e333b9695a347185a57ba1f7a0537f826b"
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "f95ab42d01690d197ca09c3757e6f7ea7ed2363daa583e68f946b7eaea0dc6db"
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "1993030214a2ca511d22f543e64a7a7f3976dd1f7bc9f9e0d91adb34ada5663d"
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "ceea19dc08b93ada51f6c2a492726bb9c33478153c6ca23776528c3b2809712d"
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/charts/4-headline-new-work.html",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "99c08cb97bce8f8993a7a979a7f10ccdce44acb35a36684f62d937343792d880"
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "b925b493bfe96a02f0f9ad7b7fad6027b0298dde1612a03ab1c3ab0d0d4b9d23"
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "99f1569f929d77ffbffa7a0d2620fd686e75bc3e01bec6684a328421836e30e9"
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "d764c1d21c096600a79a67fc3e0b0e046331b9a4c5138a161dec336fb6157465"
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "9c2018af0385ea4813a254d60aab8103a2f994690dd9ba7a743bf48abf235870"
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "a6d20f929b679cabf0b512ff430f794ca1c3e73ec459bbd106565cd19b3aa088"
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "61be4f3b5a6518a2d7925f7fc6481790405b538c1348d62513ad965a1d649b33"
+    },
+    {
+      "path": "/tags/Research/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "6dfaa662f7026bc7768d101b3d7af379722024b2aba62313bfba9450cd2eeaa4"
+    },
+    {
+      "path": "/tags/Research/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "7e9d719be20e1b09f9098d9d2e07fc4933bc773009bf41f8a7cf4a5612d9ae8a"
+    },
+    {
+      "path": "/tags/literally/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "cec14d1f3b5cc15ba12dee811323d9db9533f331c36a068258dac3a5e6a868e3"
+    },
+    {
+      "path": "/tags/literally/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "62a9c68c585036311689304697b3e84ccc99daf241b9284e5ca04d61f6c3b718"
+    },
+    {
+      "path": "/tags/metaphor/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "c25c5796dc3eb7461bf1cf552a58822edf3962cc0d84f0896443ecea82629b68"
+    },
+    {
+      "path": "/tags/metaphor/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "4bedf21d7fefc2008b19b8859fa48d03cf3ef567e67dbc0643330698bc1392b6"
+    },
+    {
+      "path": "/tags/monetary-policy/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "0e8795e21ec2917097595503c6154b18b5b3dfb51c2f60c6d78442152e36cda1"
+    },
+    {
+      "path": "/tags/monetary-policy/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "5251154e79eb9d040c8620acb5ad6d26987c5140224ef23ce2332353e263ee2b"
+    },
+    {
+      "path": "/tags/Civil resistance/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "2237c148831857aca31f542ce06e3c0027e50940c8075bae5de5de67e4c92303"
+    },
+    {
+      "path": "/tags/Civil resistance/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "66d7114e5e4fa796df17bb9f106d2a0b4e88bcb41e175391e3c87a2baef56dea"
+    },
+    {
+      "path": "/tags/Checking my old writing/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "677b24e0a2c27e8cc0daba55eb5970f7a2516ba98fa53dc1ab6b3078f8fe4c75"
+    },
+    {
+      "path": "/tags/Checking my old writing/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "1adafe759152feab708be6dbbb26a6d6bfb8562623efeaa1ff45f2f624a095d8"
+    },
+    {
+      "path": "/tags/sickly/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "660eba25b871c7976b1aa7eae17048566e702c2b54e6a36b4dc5d48b5d55413f"
+    },
+    {
+      "path": "/tags/sickly/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "2fd24f104aac696ef5e965e6a51f7b0d58a96a548e800a55d3d6c4226d005034"
+    },
+    {
+      "path": "/tags/retrospective/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "b8dbeb0a0b0a40a69132dd09554b96d41ab4298e7d716e62211900e068819d92"
+    },
+    {
+      "path": "/tags/retrospective/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "5892cc2ed4a9d9a5a53512e2887ff5256ff23d728b6229df1b2acc7c58dd3e69"
+    },
+    {
+      "path": "/tags/Political change/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "07327f745309635e234ca182229c8f1b093dbee4cf93a104ccab2511abb2b63f"
+    },
+    {
+      "path": "/tags/Political change/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "a9548cba8b4b93d23d68e807b7a108a80624f47ac00ebc423afe388866157e8b"
+    },
+    {
+      "path": "/tags/politics/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "1593916b1216e546741a383e79c1094ce11170eedebdbeadbec57aeb031769e9"
+    },
+    {
+      "path": "/tags/politics/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "51c597c104c80e456de9ce81a1128c30c35b2a168185f478340cce4e887053ea"
+    },
+    {
+      "path": "/tags/ancient languages/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "58e96e4d546c6f3bbd6839b56e4a05bf99d7b399b0bed15a59fc7e05352438fc"
+    },
+    {
+      "path": "/tags/ancient languages/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "757329ed457e0d79f6264e6ba435525fa7012cffe2475df67511801a1f19b820"
+    },
+    {
+      "path": "/tags/decipherment/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "b5dcd8ab7510a3d5c33e0e23a53a7fd62d0be5a5ea66992518d6dd3c2f49c635"
+    },
+    {
+      "path": "/tags/decipherment/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "d285d68976f27a0c32983f9c9c95c50f89ea05803f3c8cfd2862f21e60d9634b"
+    },
+    {
+      "path": "/tags/Internet/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "74d086d5470bde2aa7a93b7beafcdd04777c4d03ead37a5b24e2cb0cf7f48c63"
+    },
+    {
+      "path": "/tags/Internet/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "af855079cfd03f3391b600949e47f25992a315a4be6a7495ce9f12ac09c899fd"
+    },
+    {
+      "path": "/tags/Ars Inquirendi/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "5170f8b46f83db579187da531d656e143881c1d6797cd096ad40f6128fbdeb80"
+    },
+    {
+      "path": "/tags/Ars Inquirendi/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "3a5de40be4f3ba06141d84d0481635ff316150a012a656d6df7ccceb8d64244a"
+    },
+    {
+      "path": "/tags/History/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "142df56f70af64ee6b0fa2ccefa0072bd3f4c73ef4546680532fca29dcf25519"
+    },
+    {
+      "path": "/tags/History/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "7c48ee853c5a6d0c7980130e003772cf4b759e41aedeba09ff689e85cb1a6f45"
+    },
+    {
+      "path": "/tags/linguistics/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "896e377d9459ff1164c3a7d072953647ea4ab7a990e670df9e4b76265b7c054e"
+    },
+    {
+      "path": "/tags/linguistics/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "7c49b1f97a9b27845c05152f9870dee11ad6bd751f966d0a72a415c414c300e4"
+    },
+    {
+      "path": "/tags/corpus-linguistics/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "36be32253814a491bc9ddb3116b8e20c6dbf6ed38bba23cd85d4dfd3f2320d49"
+    },
+    {
+      "path": "/tags/corpus-linguistics/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "f1313bebf483f0034f04aac1777ec2ceda0d39d32a2439b16d2f689514c83761"
+    },
+    {
+      "path": "/tags/research methods/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "517b87ab1bc2523b653e91ad9f94ecd97f889559fe010f462f5eb17cd862d804"
+    },
+    {
+      "path": "/tags/research methods/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "0eccbd6d1c83c3b45e23452f38e55ec1ab4bcf50856462cacfa7d112944caf40"
+    },
+    {
+      "path": "/tags/English-usage/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "80f41df9e3517e299c39a5be68f0c10c8c53d01026bff0d7ac087a03417c9fdd"
+    },
+    {
+      "path": "/tags/English-usage/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "1aedad9bc672663822a111774d5af9b51af4f11ab7b45a17cd60689b25e94966"
+    },
+    {
+      "path": "/tags/AI agents/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "9cc9e46433ac6e897d4d02e12579f0d83d98048b4d18de60542d2eba82fb7130"
+    },
+    {
+      "path": "/tags/AI agents/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "88194b7772fc61b7ae0377529d5e276a2d4b48511e0dbbfa0d88424fd83050f6"
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "3a3d0154ab0f13057ec80e31b7e66079e7fd1f865df12b8de704d88140d9eafb"
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "cbf4c2e9985eaaf18cb935d9f89def3139573122ecb15866c70101f3972c28ff"
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "cd1f59deff7ab6da47f480ab6dd15879bf173b306c3e591fb4788a12e4e9bd43"
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "33ac1aafa9b0cc00cac391f3d915f040b568b54875879c7d75258b5bb5c44a8f"
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "3b5fd9e71a128f7f6ed7c4894044e85eab4ea03365438a4e487879afded89842"
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "7905b84bc1e517f668a05c7fc2a53f2d01d9df30c49341f0c386ee8cd1a7ab7a"
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/charts/2-sickly-kwic.html",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "6db8ead6bf1e570f050475830907e59182eb190941815353fba51a9e2abc6e39"
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/figures/",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "d9648d5bbbc1050768635762d6e38a766e7f6c917bacdd8c9d2051f1d2249d14"
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/figures/index.md",
+      "status": 200,
+      "matches": true,
+      "edge_https_rewrite": false,
+      "sha256": "32ea7530e491d0337f9ea84d246bd4b5288ae8da1b57647772a3135ec5ebc8d2"
+    }
+  ],
+  "retired_file_redirects": [
+    {
+      "path": "/2026-11-16-one-in-270-jobs/data/occ1950_1950_vs_2010.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/data/occ1950_1950_vs_2010.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/data/occ1990_by_year.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/data/occ1990_by_year.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/code/analyse.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/analyse.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/code/analyse2.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/analyse2.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/code/charts.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/charts.py",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/code/extract.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/extract.py",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/code/extract2.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/extract2.py",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-16-one-in-270-jobs/code/interactive.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-16-one-in-270-jobs/code/interactive.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/data/claim-source.md",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "2",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/data/historical-observations.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-ai-wealth-control-2035/data/historical-observations.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/data/payment-shares.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-ai-wealth-control-2035/data/payment-shares.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/data/source-manifest.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-ai-wealth-control-2035/data/source-manifest.json",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/data/usage-snapshot.json",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/code/analyse.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-ai-wealth-control-2035/code/analyse.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-ai-wealth-control-2035/code/usage.py",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/20261007-160001-food-constructions.md",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/20261007-160002-collocation-measures.md",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/20261007-160003-american-sparsity-and-tags.md",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/_REPORT-sickly-inanimate-predication.md",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/analysis-bnc-sickly-food-constructions.csv",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "2",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/collocations-bnc.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/data/collocations-bnc.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/collocations-oanc.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/data/collocations-oanc.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/kwic.json",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "2",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/original-sickly-evidence.md",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/original-sickly-method.md",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/original-sickly-report.html",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/repackaging-usage-sickly.json",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/sickly-kwic.csv",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "2",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/source-manifest-sickly.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/data/source-manifest-sickly.json",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/data/word-sketch.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/data/word-sketch.json",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/code/build-sickly-figures.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-can-a-cake-be-sickly/code/build-sickly-figures.py",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/code/session-usage-codex.py",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/college.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/college.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/dissimilarity.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/dissimilarity.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/dissimilarity_robustness.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/dissimilarity_robustness.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/dist_ind1950.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/dist_ind1950.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/dist_occ1950.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/dist_occ1950.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/events.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/events.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/groups.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/groups.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/indicators.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/indicators.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/ngram_takeoff.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/ngram_takeoff.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/written_titles_judgement.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/written_titles_judgement.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/data/written_titles_new_by_1940.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/data/written_titles_new_by_1940.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/analyse.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/analyse.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/charts.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/charts.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/college.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/college.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/extract.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/extract.py",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/ngrams.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/ngrams.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/robustness.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/robustness.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/spec-1900-2024.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/spec-1900-2024.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/spec-educ-1940-2024.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/spec-educ-1940-2024.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/spec-occ1990-2010.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/spec-occ1990-2010.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/spec-occstr-1900-1940.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/spec-occstr-1900-1940.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-17-pace-of-change-1900-2026/code/written_titles.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-17-pace-of-change-1900-2026/code/written_titles.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/1-spending-gdp.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/1-spending-gdp.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/2-revenue-and-capex.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/2-revenue-and-capex.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/3-telecom-segments.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/3-telecom-segments.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/ai-capital-cost.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/ai-capital-cost.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/ai-metrics.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/ai-metrics.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/ai-revenue-inputs.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/ai-revenue-inputs.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/ai-sensitivity.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/ai-sensitivity.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/ai-spending-shares.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/ai-spending-shares.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/anthropic-q3.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/anthropic-q3.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/capital-in-service.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/capital-in-service.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/company-annual-cash.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/company-annual-cash.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/company-cash-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/company-cash-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/company-prior-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/company-prior-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/company-reconciliation.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/company-reconciliation.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/cumulative-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/cumulative-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/cumulative-spending.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/cumulative-spending.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/gdp-2026-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/gdp-2026-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/growth-comparison.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/growth-comparison.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/historical-checks.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/historical-checks.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/historical-sensitivity-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/historical-sensitivity-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/revenue-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/revenue-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/revenue-ratios.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/revenue-ratios.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/sensitivity-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/sensitivity-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/spending-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/spending-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/telecom-segments-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/telecom-segments-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/telecom-segments.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/telecom-segments.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/uk-gdp-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/data/uk-gdp-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/uk-gdp-sensitivity.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/expected/uk-gdp-sensitivity.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/data/usage-ai-capex.json",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/code/charts-ai-capex.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/code/charts-ai-capex.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/code/reproduce.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-ai-capex-historical-booms/code/reproduce.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-ai-capex-historical-booms/code/session-usage-codex.py",
+      "status": 302,
+      "location": "https://researchsnacks.semanticmachines.fyi/",
+      "class": "3",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/1-spending-comparison.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/1-spending-comparison.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/2-canal-dividends-returns.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/2-canal-dividends-returns.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/3-nuclear-construction.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/3-nuclear-construction.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/4-nuclear-output-use.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/4-nuclear-output-use.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/ai-scenarios.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/ai-scenarios.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/canal-company-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/canal-company-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/canal-period-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/canal-period-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/canal-periods.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/canal-periods.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/canal-returns.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/canal-returns.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/canal-turnover-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/canal-turnover-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/canal-turnover.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/canal-turnover.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/comparison.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/comparison.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/cumulative-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/cumulative-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/cumulative.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/cumulative.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/france-gdp-quarter-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/france-gdp-quarter-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/nuclear-annual.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/nuclear-annual.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/nuclear-economics.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/nuclear-economics.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/nuclear-operations.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/nuclear-operations.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/nuclear-outcome-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/nuclear-outcome-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/parent-ai-inputs.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/parent-ai-inputs.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/parent-ai-scenario-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/parent-ai-scenario-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/parent-comparison-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/parent-comparison-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/rail-1850s.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/expected/rail-1850s.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/us-nuclear-investment-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/us-nuclear-investment-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/us-nuclear-operation-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/us-nuclear-operation-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/us-rail-1850s-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/us-rail-1850s-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/data/us-rail-annual-investment-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/data/us-rail-annual-investment-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/code/charts-canals-nuclear.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/code/charts-canals-nuclear.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-canals-nuclear-investment-booms/code/reproduce.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-canals-nuclear-investment-booms/code/reproduce.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/1-timeline.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/1-timeline.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/2-preconditions-counts.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/2-preconditions-counts.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/3-preconditions-matrix.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/3-preconditions-matrix.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/4-agent-ranking.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/4-agent-ranking.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/5-corpus-availability.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/5-corpus-availability.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/6-claim-tests.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/6-claim-tests.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/7-survey-size.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/7-survey-size.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/8-task-groups.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/8-task-groups.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/9-historical-lineages.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/9-historical-lineages.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/DATA-SOURCES.md",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/DATA-SOURCES.md",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/METHOD.md",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/METHOD.md",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/REVIEW-RESPONSE-COUNCIL.md",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/REVIEW-RESPONSE-COUNCIL.md",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/REVIEW-RESPONSE.md",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/REVIEW-RESPONSE.md",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/VALIDATION.md",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/VALIDATION.md",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/decipherment-authored-decisions-council.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-authored-decisions-council.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/decipherment-cases.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-cases.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/decipherment-cell-evidence.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-cell-evidence.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/decipherment-computational-work.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-computational-work.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/decipherment-sources.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-sources.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/data/decipherment-task-groups.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/data/decipherment-task-groups.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/code/charts-decipherment.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/code/charts-decipherment.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/code/reproduce.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/code/reproduce.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-decipherment-methods-and-agents/code/session-usage-codex.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-decipherment-methods-and-agents/code/session-usage-codex.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/DATA-SOURCES.md",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/DATA-SOURCES.md",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/METHOD.md",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/METHOD.md",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/annotations.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/annotations.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/news-domains.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/news-domains.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/news-sample.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/news-sample.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/ngram-decades.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/ngram-decades.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/ngram-query-status.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/ngram-query-status.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/ngram-query-summary.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/ngram-query-summary.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/ngram-series.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/ngram-series.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/predation-query.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/predation-query.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/queries.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/queries.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/query-controls.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/query-controls.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/source-decades.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/source-decades.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/source-totals.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/expected/source-totals.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/data/usage-snapshot.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/data/usage-snapshot.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/code/charts.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/code/charts.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/code/reproduce.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/code/reproduce.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-hawks-and-doves/code/session-usage-codex.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-hawks-and-doves/code/session-usage-codex.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/2011-claim-inventory.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/2011-claim-inventory.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/2011-historical-collocates.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/2011-historical-collocates.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/2011-other-reported-numbers.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/2011-other-reported-numbers.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/american-english-ngram.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/american-english-ngram.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/british-english-ngram.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/british-english-ngram.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/english-ngram.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/english-ngram.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/1-book-frequency.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/1-book-frequency.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/2-reading-distribution.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/2-reading-distribution.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/3-function-comparison.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/3-function-comparison.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/4-book-contexts.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/4-book-contexts.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/literally-ambiguity-bounds.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-ambiguity-bounds.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/literally-book-periods.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-book-periods.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/literally-corpus-rates.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-corpus-rates.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/literally-followup-counts.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-followup-counts.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/expected/literally-second-reading-summary.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/expected/literally-second-reading-summary.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/literally-annotations.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-annotations.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/literally-corpora.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-corpora.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/literally-corpus-requests.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-corpus-requests.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/literally-followup-queries.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-followup-queries.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/literally-input-hashes.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-input-hashes.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/literally-second-reading.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/literally-second-reading.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/ngram-requests.json",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/ngram-requests.json",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/data/provider-citations.md",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/data/provider-citations.md",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/code/make-charts.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/code/make-charts.py",
+      "class": "1",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-literally-pet-peeve-redo/code/reproduce.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-literally-pet-peeve-redo/code/reproduce.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/data/alternative-dates.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/alternative-dates.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/data/boundaries.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/boundaries.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/data/cases.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/cases.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/data/egypt-survey-inputs.csv",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/egypt-survey-inputs.csv",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/data/navco-1.3.tab",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/data/navco-1.3.tab",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/code/charts.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/code/charts.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/code/reproduce.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/code/reproduce.py",
+      "class": "",
+      "attempts": 1
+    },
+    {
+      "path": "/2026-11-19-revolution-speed-2011-redo/code/session_usage_codex.py",
+      "status": 302,
+      "location": "https://github.com/techczech/research-snacks-data/blob/main/snacks/2026-11-19-revolution-speed-2011-redo/code/session_usage_codex.py",
+      "class": "",
+      "attempts": 1
+    }
+  ],
+  "replacement_locator_assets": [
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/charts/2-sickly-kwic.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/charts/2-sickly-kwic.csv",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/charts/2-sickly-kwic.png",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "/2026-11-17-can-a-cake-be-sickly/charts/2-sickly-kwic.vl.json",
+      "status": 200,
+      "matches": true
+    }
+  ],
+  "withdrawal": {
+    "redirects": [
+      {
+        "path": "/2026-11-19-metaphor-use-pilot",
+        "status": 302,
+        "location": "/"
+      },
+      {
+        "path": "/2026-11-19-metaphor-use-pilot/",
+        "status": 302,
+        "location": "/"
+      },
+      {
+        "path": "/2026-11-19-metaphor-use-pilot/index.md",
+        "status": 302,
+        "location": "/"
+      },
+      {
+        "path": "/2026-11-19-metaphor-use-pilot/figures/",
+        "status": 302,
+        "location": "/"
+      },
+      {
+        "path": "/2026-11-19-metaphor-use-pilot/data/pilot-totals.csv",
+        "status": 302,
+        "location": "/"
+      },
+      {
+        "path": "/2026-11-19-metaphor-use-pilot/code/reproduce.py",
+        "status": 302,
+        "location": "/"
+      },
+      {
+        "path": "/2026-11-19-metaphor-use-pilot/charts/1-cognitive-use.png",
+        "status": 302,
+        "location": "/"
+      }
+    ],
+    "routes_excluding_pilot": [
+      "/llms.txt",
+      "/rss.xml",
+      "/",
+      "/search-index.json",
+      "/index.md",
+      "/sitemap.xml",
+      "/2026-11-17-can-a-cake-be-sickly/",
+      "/2026-11-17-can-a-cake-be-sickly/index.md",
+      "/2026-11-19-literally-pet-peeve-redo/",
+      "/2026-11-19-literally-pet-peeve-redo/index.md",
+      "/2026-11-17-pace-of-change-1900-2026/",
+      "/2026-11-17-pace-of-change-1900-2026/index.md",
+      "/about/",
+      "/about/index.md",
+      "/2026-11-19-hawks-and-doves/",
+      "/2026-11-19-hawks-and-doves/index.md",
+      "/search/",
+      "/search/index.md",
+      "/2026-11-19-revolution-speed-2011-redo/",
+      "/2026-11-19-revolution-speed-2011-redo/index.md",
+      "/2026-11-19-canals-nuclear-investment-booms/",
+      "/2026-11-19-canals-nuclear-investment-booms/index.md",
+      "/2026-11-16-one-in-270-jobs/",
+      "/2026-11-16-one-in-270-jobs/index.md",
+      "/2026-11-19-decipherment-methods-and-agents/",
+      "/2026-11-19-decipherment-methods-and-agents/index.md",
+      "/2026-11-19-ai-capex-historical-booms/",
+      "/2026-11-19-ai-capex-historical-booms/index.md",
+      "/2026-11-17-ai-wealth-control-2035/",
+      "/2026-11-17-ai-wealth-control-2035/index.md",
+      "/2026-11-17-ai-wealth-control-2035/figures/",
+      "/2026-11-17-ai-wealth-control-2035/figures/index.md",
+      "/2026-11-19-ai-capex-historical-booms/figures/",
+      "/2026-11-19-ai-capex-historical-booms/figures/index.md",
+      "/2026-11-19-decipherment-methods-and-agents/figures/",
+      "/2026-11-19-decipherment-methods-and-agents/figures/index.md",
+      "/2026-11-16-one-in-270-jobs/charts/4-headline-new-work.html",
+      "/2026-11-16-one-in-270-jobs/figures/",
+      "/2026-11-16-one-in-270-jobs/figures/index.md",
+      "/2026-11-19-canals-nuclear-investment-booms/figures/",
+      "/2026-11-19-canals-nuclear-investment-booms/figures/index.md",
+      "/2026-11-19-revolution-speed-2011-redo/figures/",
+      "/2026-11-19-revolution-speed-2011-redo/figures/index.md",
+      "/tags/Research/",
+      "/tags/Research/index.md",
+      "/tags/literally/",
+      "/tags/literally/index.md",
+      "/tags/metaphor/",
+      "/tags/metaphor/index.md",
+      "/tags/monetary-policy/",
+      "/tags/monetary-policy/index.md",
+      "/tags/Civil resistance/",
+      "/tags/Civil resistance/index.md",
+      "/tags/Checking my old writing/",
+      "/tags/Checking my old writing/index.md",
+      "/tags/sickly/",
+      "/tags/sickly/index.md",
+      "/tags/retrospective/",
+      "/tags/retrospective/index.md",
+      "/tags/Political change/",
+      "/tags/Political change/index.md",
+      "/tags/politics/",
+      "/tags/politics/index.md",
+      "/tags/ancient languages/",
+      "/tags/ancient languages/index.md",
+      "/tags/decipherment/",
+      "/tags/decipherment/index.md",
+      "/tags/Internet/",
+      "/tags/Internet/index.md",
+      "/tags/Ars Inquirendi/",
+      "/tags/Ars Inquirendi/index.md",
+      "/tags/History/",
+      "/tags/History/index.md",
+      "/tags/linguistics/",
+      "/tags/linguistics/index.md",
+      "/tags/corpus-linguistics/",
+      "/tags/corpus-linguistics/index.md",
+      "/tags/research methods/",
+      "/tags/research methods/index.md",
+      "/tags/English-usage/",
+      "/tags/English-usage/index.md",
+      "/tags/AI agents/",
+      "/tags/AI agents/index.md",
+      "/2026-11-19-hawks-and-doves/figures/",
+      "/2026-11-19-hawks-and-doves/figures/index.md",
+      "/2026-11-17-pace-of-change-1900-2026/figures/",
+      "/2026-11-17-pace-of-change-1900-2026/figures/index.md",
+      "/2026-11-19-literally-pet-peeve-redo/figures/",
+      "/2026-11-19-literally-pet-peeve-redo/figures/index.md",
+      "/2026-11-17-can-a-cake-be-sickly/charts/2-sickly-kwic.html",
+      "/2026-11-17-can-a-cake-be-sickly/figures/",
+      "/2026-11-17-can-a-cake-be-sickly/figures/index.md"
+    ],
+    "feed_entries": 10,
+    "search_entries": 10,
+    "rss_entries": 10
+  }
+}
