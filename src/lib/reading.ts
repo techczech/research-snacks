@@ -46,6 +46,15 @@ export function readingSurfaces(html:string,entryId:string):Reading {
         if(data.some(isNumericText)&&data.every(v=>isNumericText(v)||/^[—–-]$/.test(v)))cells.forEach(r=>r[i]?.classList.add('num'));
         cells.slice(1).forEach(r=>{const v=plain(r[i]);if(isNumericText(v)||isShortCode(v)||/^[—–-]$/.test(v))r[i].classList.add('nowrap');if(/^\d{1,2} [A-Za-z]+ \d{4}$/.test(v))r[i].classList.add('full-date');});
       });
+      // The examples table uses the owner's content-proportional fallback.
+      // Native auto layout still respects complete-word/date minima; these are
+      // relative preferences, calculated from the source rather than fixed widths.
+      if(entryId==='2026-11-19-hawks-and-doves'&&headers.join('|')==='Date|Source|What the passage does|Judgement'){
+        const weights=headers.map((_,i)=>Math.sqrt(Math.max(...values.map(row=>[...row[i]].length))));
+        const total=weights.reduce((sum,value)=>sum+value,0),group=document.createElement('colgroup');group.className='content-proportions';
+        for(const weight of weights){const col=document.createElement('col');col.style.width=`${weight/total*100}%`;group.append(col);}
+        node.prepend(group);
+      }
       // A slash between words is a legitimate wrapping boundary, not a split within a word.
       for(const cell of cells.flat()){
         const walker=document.createTreeWalker(cell,4),texts:any[]=[];while(walker.nextNode())texts.push(walker.currentNode);

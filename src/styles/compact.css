@@ -12,7 +12,7 @@ header.site .wrap{gap:8px}.logo{flex-shrink:0}nav.main{align-items:center}
 .table-tools :is(button,a){font:inherit;padding:3px 5px;white-space:nowrap;background:transparent;border:1px solid transparent;color:var(--primary);border-radius:3px}.table-tools button:hover{border-color:var(--bd);background:var(--sec)}.table-tools input{font:inherit;width:10rem;min-width:6rem;max-width:36%;padding:4px 6px;border-color:var(--mut)}.table-count{color:var(--mut);white-space:nowrap}
 .table-scroll{max-width:100%;overflow-x:auto;overflow-y:hidden;border:1px solid var(--bd);isolation:isolate;overscroll-behavior-inline:contain}
 .entry .reader-table table{display:table;width:auto;max-width:100%;margin:0;overflow:visible;font:1rem/1.35 Inter,system-ui,sans-serif;border-collapse:separate;border-spacing:0;background:var(--bg)}
-.entry .reader-table :is(th,td){padding:5px .25rem;border:0;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);vertical-align:top;text-align:left;background:var(--bg);overflow-wrap:normal;word-break:normal;hyphens:none;max-width:none;min-width:0;font-weight:400}
+.entry .reader-table :is(th,td){padding:5px .6rem;border:0;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);vertical-align:top;text-align:left;background:var(--bg);overflow-wrap:normal;word-break:normal;hyphens:none;max-width:none;min-width:0;font-weight:400}
 .entry .reader-table tr>:last-child{border-right:0}.entry .reader-table tbody tr:last-child>*{border-bottom:0}
 .entry .reader-table th{font-weight:600;background:var(--table-head)}.entry .reader-table tbody tr:nth-child(even)>*{background:var(--table-stripe)}
 .entry .reader-table thead th{position:static;vertical-align:bottom}.entry .reader-table.wide-table thead tr>:first-child{z-index:4}
@@ -70,5 +70,4 @@ figure.infographic{--mut:inherit;--primary:inherit;--card:inherit;--fg:inherit;c
 
 .entry .reader-table.wrap-dates td.full-date{white-space:normal}.date-day-month{white-space:nowrap}
 
-/* Size short columns to their word/value minima; prose takes the remaining room. */
-.entry .reader-table table:has(.prose-col) .short-col{width:1%}
+/* Native auto layout shares width between complete text columns. */

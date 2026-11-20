@@ -69,13 +69,16 @@ export async function checkCompact(browser:Browser,base:string){
  await page.goto(base+'/2026-11-19-hawks-and-doves/');
  assert(await page.locator('#table-1 .table-scroll').evaluate(e=>e.scrollWidth<=e.clientWidth+1),'linked sources wrap and all four examples columns fit');
  assert.equal(await page.locator('#table-1 tbody tr').count(),7);
- const passageLines=await page.locator('#table-1 tbody tr td:nth-child(3)').evaluateAll(cells=>cells.map(c=>{
+ const exampleLines=await page.locator('#table-1 tbody td').evaluateAll(cells=>cells.map(c=>{
   const walker=document.createTreeWalker(c,NodeFilter.SHOW_TEXT),ys=new Set<number>();
   while(walker.nextNode()){const node=walker.currentNode;for(let i=0;i<(node.textContent||'').length;i++){
    if(!node.textContent![i].trim())continue;const range=document.createRange();range.setStart(node,i);range.setEnd(node,i+1);ys.add(Math.round(range.getBoundingClientRect().top));
   }}return ys.size;
  }));
- assert(passageLines.every(n=>n>=2&&n<=3),`hawks passage lines: ${passageLines}`);
+ const sourceLines=exampleLines.filter((_,i)=>i%4===1),judgementLines=exampleLines.filter((_,i)=>i%4===3);
+ assert(sourceLines.every(n=>n<=3),`hawks sources are no longer squeezed: ${sourceLines}`);
+ assert(judgementLines.every(n=>n<=4),`hawks judgements are no longer squeezed: ${judgementLines}`);
+ assert.equal(await page.locator('colgroup[data-content-widths]').count(),0,'spare-width redistribution is removed');
  await page.goto(base+'/2026-11-19-decipherment-methods-and-agents/figures/');
  assert.equal(await page.locator('h1').innerText(),'Figures and tables');
  assert((await page.locator('.figure-index a').first().innerText()).startsWith('Table 1: '));
