@@ -12,7 +12,7 @@ const servers:any[]=[];
 function serve(root:string){const s=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(req){let p=decodeURIComponent(new URL(req.url).pathname);if(p.endsWith('/'))p+='index.html';const f=Bun.file(join(root,p));return await f.exists()?new Response(f):new Response('Not found',{status:404});}});servers.push(s);return `http://127.0.0.1:${s.port}`;}
 const current=process.argv[2] || serve(join(ROOT,'site'));
 const baseline=existsSync(join(ROOT,'.check/old-site/index.html'))?serve(join(ROOT,'.check/old-site')):undefined;
-const executablePath=join(homedir(),'Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell');
+const executablePath=process.env.CHROMIUM || join(homedir(),'Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell');
 const browser=await chromium.launch({headless:true,...(existsSync(executablePath)?{executablePath}:{})});
 const records:Record<string,any>={target:current,checks:[],comparisons:[]};
 const passed=(name:string,detail:any=true)=>{records.checks.push({name,passed:true,detail});console.log(`PASS ${name}`);};

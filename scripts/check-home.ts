@@ -1,8 +1,11 @@
 import assert from 'node:assert/strict';
 import type {Browser} from 'playwright-core';
 import {getEntries,names} from '../src/lib/content';
+import {getHomeData} from '../src/lib/home';
 export async function checkHome(browser:Browser,base:string,shots?:string){
  const entries=getEntries(),expected=entries.map(x=>x.id);
+ const items=getHomeData(entries).items;
+ const inSubject=(subject:string)=>items.filter(x=>x.subject===subject).length;
  const context=await browser.newContext({colorScheme:'light',reducedMotion:'reduce'});
  const page=await context.newPage();const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
  const ids=()=>page.locator('[data-home-card]:visible').evaluateAll(es=>es.map(e=>e.getAttribute('data-entry-id')));
@@ -11,13 +14,13 @@ export async function checkHome(browser:Browser,base:string,shots?:string){
    await page.setViewportSize({width,height:width===390?844:800});await page.goto(base+'/');await page.locator('.home-enhanced').waitFor();
    assert.deepEqual(await ids(),expected,'All is complete, chronological and not duplicated');
    const sort=page.locator('[data-home-sort]');assert.equal(await sort.count(),1,'Home has an order selector');
-   assert.equal(await page.locator('#home-list-title').innerText(),'All');assert.equal(await page.locator('[data-home-count]').innerText(),'10');
+   assert.equal(await page.locator('#home-list-title').innerText(),'All');assert.equal(await page.locator('[data-home-count]').innerText(),String(entries.length));
    await sort.selectOption('oldest');assert.equal((await ids())[0],'2026-11-16-one-in-270-jobs');
    assert.equal(new URL(page.url()).searchParams.get('sort'),'oldest');await page.reload();assert.equal((await ids())[0],'2026-11-16-one-in-270-jobs');if(shots&&width===950)await page.screenshot({path:`${shots}/preview-oldest-950.png`});
    await sort.selectOption('title');assert.equal((await ids())[0],'2026-11-17-can-a-cake-be-sickly');if(shots&&width===950)await page.screenshot({path:`${shots}/preview-title-950.png`});
    await page.goBack();assert.equal(await sort.inputValue(),'oldest');assert.equal((await ids())[0],'2026-11-16-one-in-270-jobs');
-   await page.locator('[data-home-subject=economic-history]').click();assert.equal((await ids())[0],'2026-11-16-one-in-270-jobs');assert.equal((await ids()).length,5);
-   await page.locator('[data-home-subject=all]').click();assert.equal((await ids()).length,10);assert.equal(await sort.inputValue(),'oldest');
+   await page.locator('[data-home-subject=economic-history]').click();assert.equal((await ids())[0],'2026-11-16-one-in-270-jobs');assert.equal((await ids()).length,inSubject('economic-history'));
+   await page.locator('[data-home-subject=all]').click();assert.equal((await ids()).length,entries.length);assert.equal(await sort.inputValue(),'oldest');
    await sort.selectOption('newest');assert.deepEqual(await ids(),expected);
 
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`home overflow at ${width}`);
@@ -25,11 +28,11 @@ export async function checkHome(browser:Browser,base:string,shots?:string){
    if(shots){await page.screenshot({path:`${shots}/preview-home-${width}.png`});if(width===950)await page.screenshot({path:`${shots}/preview-home-${width}-full.png`,fullPage:true});}
    if(width===390){await page.locator('[data-home-topics] summary').click();if(shots)await page.screenshot({path:`${shots}/preview-topics-390.png`});}
    assert.equal(await page.locator('[data-topic-tag]:visible').count(),new Set(entries.flatMap(x=>[...(x.category?[String(x.category)]:[]),...names(x.tags)])).size);
-   await page.locator('[data-home-subject=economic-history]').click();assert.equal((await ids()).length,5);
+   await page.locator('[data-home-subject=economic-history]').click();assert.equal((await ids()).length,inSubject('economic-history'));
    assert(new URL(page.url()).searchParams.get('cat')==='economic-history');
-   await page.locator('[data-home-subject=linguistics]').click();assert.equal((await ids()).length,4);
-   await page.goBack();assert.equal((await ids()).length,5);
-   await page.reload();assert.equal((await ids()).length,5);if(shots&&width===950)await page.screenshot({path:`${shots}/preview-economic-history-950.png`});
+   await page.locator('[data-home-subject=linguistics]').click();assert.equal((await ids()).length,inSubject('linguistics'));
+   await page.goBack();assert.equal((await ids()).length,inSubject('economic-history'));
+   await page.reload();assert.equal((await ids()).length,inSubject('economic-history'));if(shots&&width===950)await page.screenshot({path:`${shots}/preview-economic-history-950.png`});
    await page.locator('[data-home-subject=all]').click();assert.deepEqual(await ids(),expected);
    await page.locator('#home-search-input').fill('cake');await page.locator('#home-search-input').press('Enter');
    assert(await page.locator('#search-dlg').evaluate((d:HTMLDialogElement)=>d.open));assert.equal(await page.locator('#search-input').inputValue(),'cake');
