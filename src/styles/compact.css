@@ -71,3 +71,6 @@ figure.infographic{--mut:inherit;--primary:inherit;--card:inherit;--fg:inherit;c
 .entry .reader-table.wrap-dates td.full-date{white-space:normal}.date-day-month{white-space:nowrap}
 
 /* Native auto layout shares width between complete text columns. */
+
+/* Allow the shared theme controls to reflow when a reader enlarges text. */
+.theme-switch{flex-wrap:wrap;max-width:100%}

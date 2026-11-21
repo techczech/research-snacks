@@ -1,0 +1,1505 @@
+[
+  {
+    "id": "boe-millennium",
+    "title": "A millennium of macroeconomic data",
+    "provider": "Bank of England",
+    "url": "https://www.bankofengland.co.uk/statistics/research-datasets",
+    "access": "open",
+    "licence": {
+      "name": "Bank of England research-resource terms",
+      "url": "https://www.bankofengland.co.uk/legal"
+    },
+    "data": "A spreadsheet of United Kingdom macroeconomic and financial series, some extending to the thirteenth century, with benchmark estimates for 1086. The provider describes version 3.1 as updated through 2016.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      },
+      {
+        "title": "Canals and nuclear: smaller booms, long earnings and expensive failures",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The general research-resource terms differ from the Open Government Licence for the Bank’s statistical Database. Historical Great Britain and United Kingdom boundaries, market-price and factor-cost GDP are not interchangeable."
+  },
+  {
+    "id": "epoch-ai-chip-imports",
+    "title": "AI chip imports",
+    "provider": "Epoch AI",
+    "url": "https://epoch.ai/data/ai-chip-imports",
+    "access": "open",
+    "licence": {
+      "name": "Creative Commons Attribution; source-specific notices",
+      "url": "https://epoch.ai/data/ai-chip-imports"
+    },
+    "data": "Country-level estimates of AI chip arrivals constructed from customs records and domestic production data. The provider offers CSV and ZIP downloads, geographic and chip filters, and documentation distinguishing hardware trade values from estimates of AI chip allocation.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider page assigns a Creative Commons Attribution licence and includes source-specific notices. Customs arrivals do not measure installed capacity, utilisation or domestic movements; modelled allocation adds assumptions."
+  },
+  {
+    "id": "archigos",
+    "title": "Archigos political leaders data",
+    "provider": "H. E. Goemans, Kristian Skrede Gleditsch and Giacomo Chiozza",
+    "url": "https://www.rochester.edu/college/faculty/hgoemans/data.htm",
+    "access": "open",
+    "licence": {
+      "name": "Public download; no explicit open reuse licence found",
+      "url": "https://www.rochester.edu/college/faculty/hgoemans/data.htm"
+    },
+    "data": "Political leadership spells with entry and exit information, leader characteristics and case descriptions. The provider offers version 4.1 through 31 December 2015 in Stata 14 format, alongside older leader-spell and leader-year versions.",
+    "citation": "https://www.rochester.edu/college/faculty/hgoemans/data.htm",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Leadership-date cross-check considered for Revolution speed and a 2011 claim"
+    },
+    "checked": "2026-11-21",
+    "notes": "Inspected as a possible cross-check for the revolution analysis but not merged or used as its dataset. The provider requests citation of the Archigos introduction paper; the page does not state an unrestricted redistribution licence."
+  },
+  {
+    "id": "babelstone-jurchen",
+    "title": "BabelStone Jurchen script resources",
+    "provider": "Andrew West / BabelStone",
+    "url": "https://www.babelstone.co.uk/Jurchen/",
+    "access": "open",
+    "licence": {
+      "name": "Provider copyright; no uniform corpus reuse licence found",
+      "url": "https://www.babelstone.co.uk/Jurchen/"
+    },
+    "data": "Reference resources for the historical Jurchen script. The provider lists dictionary and character resources, inscriptions, manuscript material and related script tools.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "No universal corpus reuse licence was found on the provider page. Character and font resources need to be distinguished from rights in manuscript images and published transcriptions."
+  },
+  {
+    "id": "babelstone-khitan",
+    "title": "BabelStone Khitan script resources",
+    "provider": "Andrew West / BabelStone",
+    "url": "https://www.babelstone.co.uk/Khitan/",
+    "access": "open",
+    "licence": {
+      "name": "Provider copyright; no uniform corpus reuse licence found",
+      "url": "https://www.babelstone.co.uk/Khitan/"
+    },
+    "data": "Khitan large- and small-script resources, including character indices, inscription references and sample texts. The provider links script materials and fonts for research on the historical Khitan writing systems.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider page was read, but no uniform licence for all source texts was established. A font’s licence does not license the inscription or source publication used with it."
+  },
+  {
+    "id": "bnc1994",
+    "title": "British National Corpus (BNC1994)",
+    "provider": "BNC Consortium; University of Oxford",
+    "url": "https://www.natcorp.ox.ac.uk/",
+    "access": "licensed",
+    "licence": {
+      "name": "BNC User Licence",
+      "url": "https://www.natcorp.ox.ac.uk/docs/licence.html"
+    },
+    "data": "A 100-million-word collection of late-twentieth-century British written and spoken English. The provider offers the full BNC1994 and a four-million-word Baby sample, with XML documentation and links to online search services.",
+    "citation": "https://www.natcorp.ox.ac.uk/cpr.xml?ID=reference",
+    "snacks": [
+      {
+        "title": "Can a cake be sickly?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-can-a-cake-be-sickly/"
+      },
+      {
+        "title": "Literally: how close was I in 2011?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-literally-pet-peeve-redo/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Can a cake be sickly?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Download and search-service conditions differ. The user licence restricts distribution of corpus text; statistical results do not grant rights in the underlying passages."
+  },
+  {
+    "id": "ukwac",
+    "title": "British Web 2007 (ukWaC)",
+    "provider": "Adriano Ferraresi; Sketch Engine",
+    "url": "https://www.sketchengine.eu/ukwac-british-web-corpus/",
+    "access": "paid",
+    "licence": {
+      "name": "Sketch Engine service terms; underlying text rights remain separate",
+      "url": "https://www.sketchengine.eu/terms-of-use/"
+    },
+    "data": "English texts collected from the .uk web domain for the British Web 2007 corpus. Sketch Engine provides tagged and lemmatised text, concordance searches, word sketches and a version with supersense annotation.",
+    "citation": "https://www.sketchengine.eu/ukwac-british-web-corpus/",
+    "snacks": [
+      {
+        "title": "Can a cake be sickly?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-can-a-cake-be-sickly/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Can a cake be sickly?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The old /ukwac/ provider link returns 404; this is its current descriptive page. Domain selection favours British English but does not guarantee that every text is British. A service subscription does not license bulk republication of web text."
+  },
+  {
+    "id": "childes",
+    "title": "CHILDES (Child Language Data Exchange System)",
+    "provider": "TalkBank, Carnegie Mellon University",
+    "url": "https://talkbank.org/childes/",
+    "access": "free registration",
+    "licence": {
+      "name": "TalkBank Ground Rules (CC BY-NC-SA, except where otherwise indicated)",
+      "url": "https://talkbank.org/0share/rules.html"
+    },
+    "data": "Transcripts of child language and child-directed speech, many with linked audio or video, in the CHAT format. The index groups corpora by language and type, covering English (North American, African American and UK), Chinese, Japanese, Germanic, Romance, Slavic (including Czech) and other languages, plus bilingual, clinical and narrative collections and derived frequency corpora. The CLAN program and the browsable TalkBankDB search work with the transcripts.",
+    "citation": "https://talkbank.org/childes/access/",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-21",
+      "context": "Suggested for a future snack"
+    },
+    "checked": "2026-11-21",
+    "notes": "Transcripts and media need a free TalkBank account; clinical corpora need approved access. Each use must cite at least one corpus reference from the corpus page and acknowledge the CHILDES grant (NICHD HD082736). The Ground Rules forbid use in commercial products, including language models. In November 2026 the home page said the repository was \"under review for potential modification in compliance with Administration directives\", so record the date and version of any download."
+  },
+  {
+    "id": "classicmayan",
+    "title": "ClassicMayan sign catalogue",
+    "provider": "Text Database and Dictionary of Classic Mayan, University of Bonn",
+    "url": "https://www.classicmayan.org/portal/",
+    "access": "open",
+    "licence": {
+      "name": "University of Bonn copyright; permission required for reuse",
+      "url": "https://www.classicmayan.org/portal/imprint"
+    },
+    "data": "An online sign catalogue associated with the Text Database and Dictionary of Classic Mayan. The portal also links archaeological sites, museums, calendar tools and three-dimensional artefact resources.",
+    "citation": null,
+    "snacks": [],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Known-language corpus comparisons considered for the decipherment survey"
+    },
+    "checked": "2026-11-21",
+    "notes": "Considered as a known-language comparator; no corpus records were analysed. A visible sign catalogue does not establish that a complete machine-readable text corpus is available. The imprint reserves reuse rights."
+  },
+  {
+    "id": "congressional-record",
+    "title": "Congressional Record, bound edition",
+    "provider": "U.S. Government Publishing Office / GovInfo",
+    "url": "https://www.govinfo.gov/help/crecb",
+    "access": "open",
+    "licence": {
+      "name": "U.S. government information; third-party copyright may apply",
+      "url": "https://www.govinfo.gov/about/policies"
+    },
+    "data": "Proceedings and debates of the United States Congress in the bound Congressional Record collection, beginning in 1873. GovInfo supplies searchable metadata and PDF records, with different search and document granularity for digitised older volumes and more recent editions.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Do political hawks kill political doves?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-hawks-and-doves/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Do political hawks kill political doves?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Congressional insertion of a newspaper column does not remove that column’s copyright. Bound and daily editions differ in pagination and editorial arrangement."
+  },
+  {
+    "id": "cdli",
+    "title": "Cuneiform Digital Library Initiative (CDLI)",
+    "provider": "CDLI contributors",
+    "url": "https://cdli.earth/",
+    "access": "open",
+    "licence": {
+      "name": "CDLI text reuse and separate image rights",
+      "url": "https://cdli.earth/terms-of-use"
+    },
+    "data": "A searchable collection of cuneiform artefact records, with metadata, transliterations, translations and images where available. The collection includes Mesopotamian and Iranian material, including Proto-Elamite records, and provides citation formats for pages.",
+    "citation": "https://cdli.earth/terms-of-use",
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The terms permit text aggregation and reuse under fair academic practice with acknowledgement. Images and drawings retain institution or author rights, including non-commercial restrictions; text and image access must be assessed separately."
+  },
+  {
+    "id": "cuneiml",
+    "title": "CuneiML",
+    "provider": "Danlu Chen and collaborators",
+    "url": "https://github.com/taineleau/CuneiML/",
+    "access": "open",
+    "licence": {
+      "name": "Repository CC0; source images require separate acquisition",
+      "url": "https://github.com/taineleau/CuneiML/blob/main/LICENSE"
+    },
+    "data": "A machine-learning dataset resource for cuneiform artefacts with metadata, transliterations and code for preparing image-derived representations. The repository supplies cutout bounding boxes and instructions for obtaining the underlying images separately.",
+    "citation": "https://github.com/taineleau/CuneiML/",
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The current repository is dehydrated: users must obtain original images themselves because of copyright. The repository licence does not clear those image rights."
+  },
+  {
+    "id": "bea-fixed-assets",
+    "title": "Detailed fixed assets and consumer durable goods",
+    "provider": "U.S. Bureau of Economic Analysis",
+    "url": "https://apps.bea.gov/national/FA2004/Details/Index.htm",
+    "access": "open",
+    "licence": {
+      "name": "Public domain unless otherwise stated; BEA reuse policy",
+      "url": "https://www.bea.gov/help/faq/145"
+    },
+    "data": "Detailed United States fixed-asset estimates for non-residential assets, residential assets and consumer durable goods. XLSX downloads include investment, stocks, depreciation and related measures at current or fixed cost.",
+    "citation": "https://www.bea.gov/help/guidelines-for-citing-bea",
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider permits reuse without specific permission unless otherwise stated, and requests source acknowledgement. Preserve asset definitions and the distinction between current-cost and fixed-cost estimates."
+  },
+  {
+    "id": "metaphor-dictionary-comparison",
+    "title": "Dictionary-comparison metaphor replication data",
+    "provider": "Susan Nacey and Tina Krennmayr / DataverseNO",
+    "url": "https://dataverse.no/dataset.xhtml?persistentId=doi:10.18710/RIQXRD",
+    "access": "open",
+    "licence": {
+      "name": "CC0 1.0; underlying BNC excerpts have their own provenance",
+      "url": "https://dataverse.no/dataset.xhtml?persistentId=doi:10.18710/RIQXRD"
+    },
+    "data": "Metaphor judgements for 2,068 tokens from four BNC-Baby registers, assessed with four learner’s dictionaries by two analysts. The 2026 deposit includes individual decisions, reconciled decisions, disagreement scores, analysis scripts and text files.",
+    "citation": "https://doi.org/10.18710/RIQXRD",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-20",
+      "context": "Metaphor identification and discourse-use dataset scoping"
+    },
+    "checked": "2026-11-21",
+    "notes": "The deposit explicitly identifies BNC End User Licence source material. Its CC0 metadata and annotations do not erase the provenance of the quoted corpus fragments."
+  },
+  {
+    "id": "etruscan-concordance",
+    "title": "Digital concordance of Etruscan, Faliscan and Early Latin inscriptions",
+    "provider": "Robert Burman / Zenodo",
+    "url": "https://zenodo.org/records/13784774",
+    "access": "open",
+    "licence": {
+      "name": "Other (Public Domain), as stated by the depositor",
+      "url": "https://zenodo.org/records/13784774"
+    },
+    "data": "A digital concordance linking identifiers across editions of Etruscan, Faliscan and Early Latin inscriptions from Etruscan-speaking territories. It includes Trismegistos identifiers, multiple epigraphic corpora and an accompanying bibliography.",
+    "citation": "https://zenodo.org/records/13784774",
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The depositor’s public-domain rights statement covers the deposited concordance. A mapping between editions is not a complete licensed corpus of inscription texts or images."
+  },
+  {
+    "id": "dmip-materials",
+    "title": "DMIP reliability materials",
+    "provider": "DMIP researchers / Open Science Framework",
+    "url": "https://osf.io/9wh6r/",
+    "access": "open",
+    "licence": {
+      "name": "No project licence assigned in provider metadata",
+      "url": "https://api.osf.io/v2/nodes/9wh6r/"
+    },
+    "data": "Data and procedures for two reliability tests of the Deliberate Metaphor Identification Procedure. The provider’s public file listing contains two SPSS SAV datasets, an SPS syntax file and an SPV output file.",
+    "citation": null,
+    "snacks": [],
+    "found": {
+      "date": "2026-11-20",
+      "context": "Metaphor identification and discourse-use dataset scoping"
+    },
+    "checked": "2026-11-21",
+    "notes": "The public provider API verified the project description and filenames on 21 November 2026. Its node_license field is null; no reuse licence was established, and the files were not downloaded. The browser-facing project page requires JavaScript."
+  },
+  {
+    "id": "damos",
+    "title": "DĀMOS: Database of Mycenaean at Oslo",
+    "provider": "University of Oslo",
+    "url": "https://damos.hf.uio.no/",
+    "access": "open",
+    "licence": {
+      "name": "CC BY-NC-SA 4.0 for content",
+      "url": "https://damos.hf.uio.no/"
+    },
+    "data": "An annotated electronic corpus of published Mycenaean Greek texts in Linear B, dating approximately to the fifteenth–twelfth centuries BCE. The database imports transliterated editions and tags epigraphic context, with morphology, syntax, translation and lexical information added through annotation.",
+    "citation": "https://damos.hf.uio.no/about/database/",
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Content is CC BY-NC-SA 4.0; software is GPL-3.0. This is a Linear B resource and does not provide a deciphered Linear A corpus."
+  },
+  {
+    "id": "ebl",
+    "title": "Electronic Babylonian Library (eBL)",
+    "provider": "Ludwig Maximilian University of Munich",
+    "url": "https://www.assyriologie.uni-muenchen.de/forschung/ebl/index.html",
+    "access": "unclear",
+    "licence": {
+      "name": "Current application terms unverified; separate image rights may apply",
+      "url": "https://www.ebl.lmu.de/terms"
+    },
+    "data": "An online corpus of Babylonian literary editions and a Fragmentarium of transliterations and images of cuneiform fragments. The provider describes lemmatised editions, translations and continually updated manuscript comparisons for literature of the first millennium BCE.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The institutional project description was read. The application returned a JavaScript shell, and its terms route could not be verified; this entry does not assign a complete-corpus reuse licence."
+  },
+  {
+    "id": "ententen",
+    "title": "English Web corpora (enTenTen13 and enTenTen21)",
+    "provider": "Lexical Computing / Sketch Engine",
+    "url": "https://www.sketchengine.eu/ententen-english-corpus/",
+    "access": "paid",
+    "licence": {
+      "name": "Sketch Engine service terms; underlying text rights remain separate",
+      "url": "https://www.sketchengine.eu/terms-of-use/"
+    },
+    "data": "English web corpora with part-of-speech and lemma annotation for concordances and frequency analysis. The provider lists 19 billion words in enTenTen13 and over 52 billion in enTenTen21, whose texts were collected in late 2021 and early 2022.",
+    "citation": "https://www.sketchengine.eu/ententen-english-corpus/",
+    "snacks": [
+      {
+        "title": "Can a cake be sickly?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-can-a-cake-be-sickly/"
+      },
+      {
+        "title": "Literally: how close was I in 2011?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-literally-pet-peeve-redo/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Can a cake be sickly?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The cake check uses enTenTen13; the literally check uses enTenTen21. Keep the exact corpus identifier, processing version and word/token denominator with a query."
+  },
+  {
+    "id": "eurostat",
+    "title": "Eurostat statistical database",
+    "provider": "Eurostat / European Commission",
+    "url": "https://ec.europa.eu/eurostat/web/main/data/database",
+    "access": "open",
+    "licence": {
+      "name": "Eurostat statistical-data reuse with attribution",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    "data": "European statistical tables covering countries, regions and subject areas such as national accounts, population and industry. The database provides downloadable data and metadata; coverage and units depend on the selected table.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Canals and nuclear: smaller booms, long earnings and expensive failures",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Canals and nuclear: smaller booms, long earnings and expensive failures"
+    },
+    "checked": "2026-11-21",
+    "notes": "The snack uses France’s 1983 quarterly nominal GDP, accessed through FRED series CPMNACNSAB1GQFR. Current national-currency euros are not historical ECU exchange-rate values; check the series units and seasonal adjustment."
+  },
+  {
+    "id": "fed-payments-study",
+    "title": "Federal Reserve Payments Study",
+    "provider": "Federal Reserve Board",
+    "url": "https://www.federalreserve.gov/paymentsystems/fr-payments-study.htm",
+    "access": "open",
+    "licence": {
+      "name": "Federal Reserve public-information policy; third-party exceptions",
+      "url": "https://www.federalreserve.gov/disclaimer.htm"
+    },
+    "data": "United States non-cash payment statistics from the Federal Reserve Payments Study. Release tables describe payment numbers and values across instruments such as cards, ACH and cheques, with survey and methodology documentation.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Could AI control more wealth by 2035 than humans do today?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-ai-wealth-control-2035/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Could AI control more wealth by 2035 than humans do today?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The snack uses the December 2021 findings for 2019 and 2020. Shares by transaction count differ greatly from shares by value; payment categories and revisions require checking."
+  },
+  {
+    "id": "fed-financial-accounts",
+    "title": "Financial Accounts of the United States",
+    "provider": "Federal Reserve Board",
+    "url": "https://www.federalreserve.gov/releases/z1/",
+    "access": "open",
+    "licence": {
+      "name": "Federal Reserve public-information policy; third-party exceptions",
+      "url": "https://www.federalreserve.gov/disclaimer.htm"
+    },
+    "data": "United States financial accounts recording sector balance sheets, financial flows and asset positions. The Z.1 releases include households and nonprofit organisations, with tables and machine-readable data.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Could AI control more wealth by 2035 than humans do today?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-ai-wealth-control-2035/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Could AI control more wealth by 2035 than humans do today?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The snack cites household and nonprofit balance sheet B.101. Stocks of wealth and annual flows of payments or income measure different things."
+  },
+  {
+    "id": "gdelt",
+    "title": "GDELT event and news data",
+    "provider": "GDELT Project",
+    "url": "https://www.gdeltproject.org/data.html",
+    "access": "open",
+    "licence": {
+      "name": "Provider unrestricted-data-use statement",
+      "url": "https://www.gdeltproject.org/about.html"
+    },
+    "data": "Global machine-coded news event data and related knowledge-graph collections. The provider offers bulk files, BigQuery access and API services; its historical event collection extends back to 1979.",
+    "citation": null,
+    "snacks": [],
+    "found": {
+      "date": "2026-11-19",
+      "context": "News-search dataset considered for Do political hawks kill political doves?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Vetted for the hawks-and-doves check, but requests failed and returned HTTP 429, so it supplied no analysed observations. Event data, document API coverage and the copyright of linked news articles are separate matters."
+  },
+  {
+    "id": "powell-thyne-coups",
+    "title": "Global instances of coups",
+    "provider": "Jonathan Powell and Clayton Thyne",
+    "url": "https://jonathanmpowell.com/coups/",
+    "access": "open",
+    "licence": {
+      "name": "Public download; no explicit open reuse licence found",
+      "url": "https://jonathanmpowell.com/coups/"
+    },
+    "data": "A global dataset of attempted and successful coups from 1950 onwards. The provider offers data, documentation and updates for identifying events that meet its coup definition.",
+    "citation": "https://jonathanmpowell.com/coups/",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Coup-boundary and alternative-dataset check for Revolution speed and a 2011 claim"
+    },
+    "checked": "2026-11-21",
+    "notes": "Considered during the revolution analysis; its definition informed a boundary discussion, but its event records were not merged into the calculations. The public page does not establish an unrestricted reuse licence."
+  },
+  {
+    "id": "google-books-ngram",
+    "title": "Google Books Ngram",
+    "provider": "Google Books",
+    "url": "https://storage.googleapis.com/books/ngrams/books/datasetsv3.html",
+    "access": "open",
+    "licence": {
+      "name": "CC BY 3.0",
+      "url": "https://storage.googleapis.com/books/ngrams/books/datasetsv3.html"
+    },
+    "data": "Annual word and phrase counts from digitised books in several languages, with separate British and American English collections. Downloadable compressed tab-separated files contain n-grams, years and occurrence counts; the provider preserves distinct release identifiers.",
+    "citation": "https://books.google.com/ngrams/info",
+    "snacks": [
+      {
+        "title": "Did work change more from 1900 to 1969 than from 1957 to 2026?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-pace-of-change-1900-2026/"
+      },
+      {
+        "title": "Do political hawks kill political doves?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-hawks-and-doves/"
+      },
+      {
+        "title": "Literally: how close was I in 2011?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-literally-pet-peeve-redo/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Did work change more from 1900 to 1969 than from 1957 to 2026?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The literally check pins the 2019 corpora, generated in February 2020. OCR errors, corpus composition, minimum-frequency thresholds and smoothing affect comparisons."
+  },
+  {
+    "id": "hansard",
+    "title": "Hansard parliamentary debates",
+    "provider": "UK Parliament",
+    "url": "https://hansard.parliament.uk/",
+    "access": "open",
+    "licence": {
+      "name": "Open Parliament Licence",
+      "url": "https://www.parliament.uk/site-information/copyright-parliament/open-parliament-licence/"
+    },
+    "data": "The official record of debates in the United Kingdom Parliament, with contributions organised by chamber, date, speaker and topic. Online search and APIs expose debate texts and metadata for historical and current proceedings.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Do political hawks kill political doves?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-hawks-and-doves/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Do political hawks kill political doves?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The main landing page blocked a direct request with HTTP 403; the Open Parliament Licence was read. Historical and current search interfaces have different coverage and search behaviour."
+  },
+  {
+    "id": "hsus",
+    "title": "Historical Statistics of the United States",
+    "provider": "Cambridge University Press",
+    "url": "https://hsus.cambridge.org/HSUSWeb/toc/treeTablePathIdDf865-873.html",
+    "access": "paid",
+    "licence": {
+      "name": "Cambridge terms and table-specific rights",
+      "url": "https://hsus.cambridge.org/HSUSWeb/toc/help/TermsOfUse.html"
+    },
+    "data": "Historical United States statistical tables, including railroad investment by region in 1828–1860. Table Df865–873 separates gross and net investment, current and 1860 dollars, and regional totals.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      },
+      {
+        "title": "Canals and nuclear: smaller booms, long earnings and expensive failures",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider says this website is retained as an archive and is no longer updated as of 2026. Its specific terms allow personal use or internal circulation, reserve other rights and prohibit systematic copying; table access and functionality can be limited."
+  },
+  {
+    "id": "icit",
+    "title": "Interactive Corpus of Indus Texts (ICIT)",
+    "provider": "Bryan K. Wells and Andreas Fuls",
+    "url": "https://epigraphica.de/indus/menueindus.htm",
+    "access": "on request",
+    "licence": {
+      "name": "Administrator-approved access; no open reuse licence stated",
+      "url": "https://epigraphica.de/indus/menueindus.htm"
+    },
+    "data": "A database of Indus sign lists and digital text records, with statistical and spatial analysis tools. The provider describes searches for sign patterns and mapping of inscribed artefacts and supplies documentation links.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Researchers must ask the administrator for database access. The publicly visible description does not establish bulk export or redistribution rights."
+  },
+  {
+    "id": "ipums-usa",
+    "title": "IPUMS USA",
+    "provider": "IPUMS, University of Minnesota",
+    "url": "https://usa.ipums.org/usa/",
+    "access": "free registration",
+    "licence": {
+      "name": "IPUMS USA Terms of Use",
+      "url": "https://usa.ipums.org/usa/terms.shtml"
+    },
+    "data": "Harmonised United States census microdata, with decennial censuses from 1790–2010 and American Community Survey records from 2000 onwards. Variables describe people and households, with documentation and custom extracts for comparison across time.",
+    "citation": "https://usa.ipums.org/usa/cite.shtml",
+    "snacks": [
+      {
+        "title": "Is only 1 of 270 jobs from 1950 obsolete?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-16-one-in-270-jobs/"
+      },
+      {
+        "title": "Did work change more from 1900 to 1969 than from 1957 to 2026?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-pace-of-change-1900-2026/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-16",
+      "context": "Is only 1 of 270 jobs from 1950 obsolete?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The snacks use version 16.0. Registration is free; full-count microdata may not be redistributed. Occupation codes, sample weights and population filters change the denominator."
+  },
+  {
+    "id": "itu-datahub",
+    "title": "ITU DataHub",
+    "provider": "International Telecommunication Union",
+    "url": "https://datahub.itu.int/",
+    "access": "open",
+    "licence": {
+      "name": "CC BY-NC-SA 3.0 IGO",
+      "url": "https://beta.datahub.itu.int/about/"
+    },
+    "data": "International information and communication technology indicators, including internet use and connectivity. The provider describes country and regional statistics with indicator definitions and downloadable data for monitoring digital development.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Could AI control more wealth by 2035 than humans do today?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-ai-wealth-control-2035/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Could AI control more wealth by 2035 than humans do today?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The landing page blocked direct requests with HTTP 403; the provider’s DataHub about/terms page was read. Its non-commercial and share-alike conditions apply to the data; a public dashboard is not an unrestricted licence."
+  },
+  {
+    "id": "lcc-metaphor",
+    "title": "LCC Metaphor Datasets",
+    "provider": "Language Computer Corporation",
+    "url": "https://github.com/lcc-api/metaphor",
+    "access": "open",
+    "licence": {
+      "name": "CC BY-NC-SA 4.0",
+      "url": "https://github.com/lcc-api/metaphor"
+    },
+    "data": "English, Spanish, Russian and Farsi metaphor datasets compiled in 2012–2014. XML files contain source–target pairs and annotations for metaphoricity, conceptual mappings and affect, with small and large collections for some languages.",
+    "citation": "https://github.com/lcc-api/metaphor",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-20",
+      "context": "Metaphor identification and discourse-use dataset scoping"
+    },
+    "checked": "2026-11-21",
+    "notes": "Annotation types measure different aspects of metaphor. The non-commercial and share-alike conditions apply; these labels are not direct judgements of a metaphor’s function across a whole text."
+  },
+  {
+    "id": "lingoly",
+    "title": "LingOly linguistic reasoning benchmark",
+    "provider": "Andrew Bean and collaborators",
+    "url": "https://huggingface.co/datasets/ambean/lingOly",
+    "access": "free registration",
+    "licence": {
+      "name": "CC BY-NC-ND 4.0 and provider acceptable-use conditions",
+      "url": "https://huggingface.co/datasets/ambean/lingOly"
+    },
+    "data": "A benchmark of linguistic reasoning puzzles drawn from language olympiads, including low-resource and extinct languages. The dataset card provides collection documentation, citation information and controlled access to the dataset.",
+    "citation": "https://huggingface.co/datasets/ambean/lingOly",
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Downloading requires agreement to share account information and to the provider conditions. These are designed puzzles with clues, not an archaeological corpus with unknown amounts of missing evidence."
+  },
+  {
+    "id": "maya-hieroglyphic-database",
+    "title": "Maya Hieroglyphic Database",
+    "provider": "Maya Hieroglyphic Database project",
+    "url": "https://www.mayadatabase.org/",
+    "access": "unclear",
+    "licence": {
+      "name": "Current terms unverified; no open reuse licence established",
+      "url": "https://www.mayadatabase.org/"
+    },
+    "data": "A research database of Maya hieroglyphic inscriptions. Its provider site is the access point for the project’s records and documentation.",
+    "citation": null,
+    "snacks": [],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Additional Maya corpus considered during the decipherment survey source review"
+    },
+    "checked": "2026-11-21",
+    "notes": "A possible comparator identified during the decipherment survey’s source review. Current retrieval returned only a minimal site shell; record coverage, export formats and terms could not be verified. No corpus was downloaded or analysed."
+  },
+  {
+    "id": "mipvu-lexical-units",
+    "title": "MIPVU lexical-unit replication data",
+    "provider": "Susan Nacey, Tina Krennmayr, Aletta Dorst and Gudrun Reijnierse / DataverseNO",
+    "url": "https://dataverse.no/dataset.xhtml?persistentId=doi:10.18710/F04UW5",
+    "access": "open",
+    "licence": {
+      "name": "CC0 1.0; source-text rights need separate attention",
+      "url": "https://dataverse.no/dataset.xhtml?persistentId=doi:10.18710/F04UW5"
+    },
+    "data": "Two datasets of metaphor-identification decisions on approximately 1,500 words from two English newspaper articles. Three researchers coded the texts before and after joint comparison; the deposit supplies plain-text data and descriptive documentation.",
+    "citation": "https://doi.org/10.18710/F04UW5",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-20",
+      "context": "Metaphor identification and discourse-use dataset scoping"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider assigns CC0 to the deposit. The second coding round follows discussion of the same texts; it is not an untouched test set, and newspaper-text rights should still be checked."
+  },
+  {
+    "id": "moh-metaphor-emotion",
+    "title": "MOH metaphor and emotion datasets",
+    "provider": "Saif Mohammad, Ekaterina Shutova and Peter Turney / NRC Canada",
+    "url": "https://saifmohammad.com/WebPages/metaphor.html",
+    "access": "open",
+    "licence": {
+      "name": "Provider permits research use and requests no redistribution",
+      "url": "https://saifmohammad.com/WebPages/metaphor.html"
+    },
+    "data": "Datasets accompanying research on metaphor and emotion. The provider supplies downloadable annotated material and papers describing how metaphor and its emotional associations were studied.",
+    "citation": "https://saifmohammad.com/WebPages/metaphor.html",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-20",
+      "context": "Metaphor identification and discourse-use dataset scoping"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider permits free research use, requests citation and credit, and asks users to link to the provider rather than redistribute the files. No unrestricted open-data licence is inferred."
+  },
+  {
+    "id": "navco-1-3",
+    "title": "NAVCO 1.3 campaign list",
+    "provider": "Erica Chenoweth and Christopher Wiley Shay / Harvard Dataverse",
+    "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ON9XND",
+    "access": "open",
+    "licence": {
+      "name": "CC0 1.0",
+      "url": "https://dataverse.harvard.edu/api/datasets/export?exporter=dataverse_json&persistentId=doi:10.7910/DVN/ON9XND"
+    },
+    "data": "A preliminary list of 622 global maximalist campaigns that began in 1900–2019, with outcomes through 2019. Harvard Dataverse distributes a tabular campaign list and codebook; the provider warns that coding is subject to revision.",
+    "citation": "https://doi.org/10.7910/DVN/ON9XND",
+    "snacks": [
+      {
+        "title": "Revolution speed and a 2011 claim",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-revolution-speed-2011-redo/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Revolution speed and a 2011 claim"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider metadata API verified the dataset description and CC0 assignment; the HTML landing response was an empty HTTP 202. The public release is preliminary; rows and repeated campaign identifiers must not be silently merged."
+  },
+  {
+    "id": "obi-bench",
+    "title": "OBI-Bench oracle bone inscription benchmark",
+    "provider": "Zijian Chen and collaborators",
+    "url": "https://github.com/OBI-Future/OBI-Bench",
+    "access": "open",
+    "licence": {
+      "name": "No complete dataset reuse licence established",
+      "url": "https://github.com/OBI-Future/OBI-Bench"
+    },
+    "data": "A collection of 5,523 oracle bone inscription images from eleven sources for recognition, rejoining, classification, retrieval and character interpretation tasks. The provider repository links a released test dataset and describes its image sources and benchmark tasks.",
+    "citation": "https://github.com/OBI-Future/OBI-Bench",
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The repository describes the test-data release but retains “to be released” notices for two components. Availability of a download does not establish rights to every constituent image."
+  },
+  {
+    "id": "oanc",
+    "title": "Open American National Corpus (OANC)",
+    "provider": "American National Corpus Project",
+    "url": "https://anc.org/data/oanc/",
+    "access": "open",
+    "licence": {
+      "name": "Provider permits unrestricted use and redistribution",
+      "url": "https://anc.org/data/oanc/"
+    },
+    "data": "A roughly 15-million-word subset of the American National Corpus Second Release. The provider supplies downloads and linguistic annotations and explicitly permits use and redistribution, including commercial use.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Can a cake be sickly?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-can-a-cake-be-sickly/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Can a cake be sickly?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider statement covers OANC; it should not be applied to every ANC release or to other corpora in the same search service."
+  },
+  {
+    "id": "open-khipu",
+    "title": "Open Khipu Repository",
+    "provider": "Khipu Lab and OKR contributors",
+    "url": "https://github.com/khipulab/open-khipu-repository",
+    "access": "open",
+    "licence": {
+      "name": "Repository MIT licence; contributor/source rights need checking",
+      "url": "https://github.com/khipulab/open-khipu-repository/blob/master/LICENSE"
+    },
+    "data": "A digital archive of data and metadata on surviving Inka-style khipus from Andean archaeological contexts and museum collections worldwide. Its SQLite database contains published records through 2017 and later additions, alongside a master CSV of KH identifiers.",
+    "citation": "https://github.com/khipulab/open-khipu-repository",
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The repository carries an MIT licence. Do not assume that all museum images or contributing source material share that licence; the snack links it as a comparator rather than analysing knot records."
+  },
+  {
+    "id": "oracc",
+    "title": "Open Richly Annotated Cuneiform Corpus (ORACC)",
+    "provider": "ORACC project contributors",
+    "url": "https://oracc.museum.upenn.edu/",
+    "access": "open",
+    "licence": {
+      "name": "Default CC BY-SA 3.0; project and image exceptions",
+      "url": "https://build-oracc.museum.upenn.edu/doc/Help/VisitingOracc/ReusingOracc/index.html"
+    },
+    "data": "A collection of online projects publishing annotated cuneiform texts and related scholarly resources. Its provider documentation describes project-level reuse, with separate terms possible for texts reproduced from earlier publications.",
+    "citation": null,
+    "snacks": [],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Known-language corpus comparisons considered for the decipherment survey"
+    },
+    "checked": "2026-11-21",
+    "notes": "Named as a known-language comparator, without analysis of its corpus records. Direct verification failed on the main host’s certificate chain and the documentation host timed out; indexed provider documentation states the default licence and exceptions. Current page contents were not fully verified."
+  },
+  {
+    "id": "openetruscan",
+    "title": "OpenEtruscan",
+    "provider": "OpenEtruscan contributors",
+    "url": "https://github.com/Eddy1919/openEtruscan",
+    "access": "open",
+    "licence": {
+      "name": "Maintainer states corpus CC BY 4.0; code MIT",
+      "url": "https://raw.githubusercontent.com/Eddy1919/openEtruscan/main/README.md"
+    },
+    "data": "A digital platform and NLP collection for Etruscan epigraphy. The maintainer describes a corpus of inscriptions, linguistic analysis tools and downloadable software and data components.",
+    "citation": "https://github.com/Eddy1919/openEtruscan",
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The README assigns different licences to corpus, code and models. The maintainer’s corpus licence is recorded as a claim; upstream compilation rights have not been independently audited."
+  },
+  {
+    "id": "apollo-costs",
+    "title": "Project Apollo cost dataset",
+    "provider": "The Planetary Society",
+    "url": "https://www.planetary.org/space-policy/cost-of-apollo",
+    "access": "open",
+    "licence": {
+      "name": "Provider copyright; no open dataset reuse licence established",
+      "url": "https://www.planetary.org/space-policy/cost-of-apollo"
+    },
+    "data": "Historical cost tables and downloadable source data for Project Apollo and related United States lunar programmes. The provider separates Apollo, launch vehicles and associated programmes, with nominal and inflation-adjusted comparisons for the 1960–1973 programme period.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "This entry covers the underlying cost data linked by the provider, rather than a single report. The page retains provider copyright; no unrestricted dataset licence was found."
+  },
+  {
+    "id": "rib",
+    "title": "Roman Inscriptions of Britain",
+    "provider": "RIB Online / University of Nottingham",
+    "url": "https://romaninscriptionsofbritain.org/",
+    "access": "open",
+    "licence": {
+      "name": "CC BY 4.0 for text and TEI XML; separate image rights",
+      "url": "https://romaninscriptionsofbritain.org/about/terms-of-use"
+    },
+    "data": "A searchable collection of inscriptions and writing tablets from Roman Britain, with transcriptions, translations and commentary. The site includes stone inscriptions published in RIB volumes I and III and nearly 780 Vindolanda writing-tablet texts.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "How do you read Roman numerals across periods?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-21-roman-numerals-across-periods/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-21",
+      "context": "How do you read Roman numerals across periods?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Text and TEI XML are CC BY 4.0; photographs and images retain their own rights. The numeral reader uses individual inscription records rather than a statistically representative sample."
+  },
+  {
+    "id": "rongorongo-corpus",
+    "title": "Rongorongo digitised corpus",
+    "provider": "CEIPP / Kohaumotu",
+    "url": "https://kohaumotu.org/rongorongo_org/corpus/digit.html",
+    "access": "unclear",
+    "licence": {
+      "name": "Research access described; current terms unverified",
+      "url": "https://kohaumotu.org/rongorongo_org/corpus/digit.html"
+    },
+    "data": "A provider catalogue for a numerical transliteration of Rongorongo inscriptions. Its corpus page is intended to give researchers access to digitised sign sequences.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Current verification failed because the HTTPS certificate has expired; it was not bypassed. The description is limited to the provider’s previously indexed title and research-access description; current contents and terms could not be verified on 21 November 2026. Do not infer open redistribution rights."
+  },
+  {
+    "id": "seshat",
+    "title": "Seshat: Global History Databank",
+    "provider": "Seshat Global History Databank",
+    "url": "https://seshatdatabank.info/data",
+    "access": "free registration",
+    "licence": {
+      "name": "CC BY-SA 4.0 (Public Data, under the Seshat User Agreement)",
+      "url": "https://seshat-db.com/terms/current/"
+    },
+    "data": "Coded variables on the social and political organisation of past societies, recorded per polity and period. The database lists 867 polities in 47 regions, with general, social complexity, warfare, religion and economy variables, plus crisis and instability datasets. Public releases include replication datasets, the Polaris-2026 snapshot (spreadsheet, on GitHub), the earlier Equinox-2020 spreadsheet and an API with Python packages.",
+    "citation": null,
+    "snacks": [],
+    "found": {
+      "date": "2026-11-21",
+      "context": "Suggested for a future snack"
+    },
+    "checked": "2026-11-21",
+    "notes": "Browsing needs no account; downloading CSV or JSON needs a free account and acceptance of the User Agreement. Work-in-progress (Private) data may be visible but must not be shared. Values are expert codings with stated uncertainty, so results depend on the release used; cite the release."
+  },
+  {
+    "id": "sibol",
+    "title": "SiBol English newspaper corpus",
+    "provider": "Universities of Siena and Bologna; Sketch Engine",
+    "url": "https://www.sketchengine.eu/sibol-corpus/",
+    "access": "paid",
+    "licence": {
+      "name": "Sketch Engine service terms; newspaper rights remain separate",
+      "url": "https://www.sketchengine.eu/terms-of-use/"
+    },
+    "data": "Around 850 million words in two million articles from 18 English-language newspapers, covering selected years from 1993–2021. Searches can be restricted by year, newspaper, author and date, with part-of-speech annotation.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Do political hawks kill political doves?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-hawks-and-doves/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Do political hawks kill political doves?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Year coverage and newspaper composition are uneven. The provider says 2011, 2012 and 2014 together account for less than 0.1% of the collection; the full date span is not a continuous annual sample."
+  },
+  {
+    "id": "sigla",
+    "title": "SigLA: the signs of Linear A",
+    "provider": "Ester Salgarella and Simon Castellan",
+    "url": "https://sigla.phis.me/",
+    "access": "open",
+    "licence": {
+      "name": "CC BY-NC-SA 4.0",
+      "url": "https://sigla.phis.me/"
+    },
+    "data": "A palaeographical database of Linear A inscriptions from Bronze Age Greece. Online views organise the material by sign, sequence, document and map, with searchable sign lists and drawings.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider assigns CC BY-NC-SA 4.0 to the dataset and drawings. Sign shape, transliteration and proposed sound value are different kinds of information."
+  },
+  {
+    "id": "sketch-engine",
+    "title": "Sketch Engine corpus collection",
+    "provider": "Lexical Computing CZ s.r.o.",
+    "url": "https://www.sketchengine.eu/corpora-and-languages/corpus-list/",
+    "access": "paid",
+    "licence": {
+      "name": "Sketch Engine Terms of Use",
+      "url": "https://www.sketchengine.eu/terms-of-use/"
+    },
+    "data": "An online corpus service that hosts about 800 ready-to-use corpora in over 100 languages, about one trillion words in all, including web corpora such as enTenTen and ukWaC. It offers concordances, word sketches, collocations and frequency lists, and users can build corpora from their own texts.",
+    "citation": "https://www.sketchengine.eu/bibliography-of-sketch-engine/",
+    "snacks": [
+      {
+        "title": "Can a cake be sickly?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-17-can-a-cake-be-sickly/"
+      },
+      {
+        "title": "Do political hawks kill political doves?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-hawks-and-doves/"
+      },
+      {
+        "title": "Literally: how close was I in 2011?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-literally-pet-peeve-redo/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-17",
+      "context": "Can a cake be sickly?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Each corpus has its own access tier (open, trial, subscribers only, or on request), shown in the corpus list. A 30-day free trial exists; academic and non-academic subscriptions are priced separately, and academic accounts may not be used for lexicography or commercial work. Access to the service does not license the hosted corpora themselves."
+  },
+  {
+    "id": "spoken-bnc2014",
+    "title": "Spoken British National Corpus 2014",
+    "provider": "Lancaster University and Cambridge University Press",
+    "url": "https://corpora.lancs.ac.uk/bnc2014/",
+    "access": "free registration",
+    "licence": {
+      "name": "Spoken BNC2014 User Licence; non-commercial research and teaching",
+      "url": "https://corpora.lancs.ac.uk/bnc2014/licence.php"
+    },
+    "data": "Transcribed informal conversations in contemporary British English, collected for the successor to BNC1994. The provider offers public research access through CQPweb and downloadable XML files after licence signup.",
+    "citation": "https://corpora.lancs.ac.uk/bnc2014/faq.php",
+    "snacks": [
+      {
+        "title": "Literally: how close was I in 2011?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-literally-pet-peeve-redo/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Literally: how close was I in 2011?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Registration and licence agreement are required. The licence permits non-commercial research and teaching, restricts redistribution, and prohibits storing corpus copies on external cloud services. Written BNC2014 has separate terms."
+  },
+  {
+    "id": "talkbank",
+    "title": "TalkBank",
+    "provider": "TalkBank, Carnegie Mellon University",
+    "url": "https://talkbank.org/",
+    "access": "free registration",
+    "licence": {
+      "name": "TalkBank Ground Rules (CC BY-NC-SA, except where otherwise indicated)",
+      "url": "https://talkbank.org/0share/rules.html"
+    },
+    "data": "Transcribed spoken-language corpora in 14 research areas and over 42 languages, in the CHAT transcription format, often with linked audio or video. Sub-banks include CHILDES (child language), PhonBank, FluencyBank, HomeBank, BilingBank, SLABank, AphasiaBank and DementiaBank. Analysis programs (CLAN and others) are free.",
+    "citation": "https://talkbank.org/0share/citation.html",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-21",
+      "context": "Suggested for a future snack"
+    },
+    "checked": "2026-11-21",
+    "notes": "Access has four levels. Web pages and programs are open. CHILDES data need a free registration. Clinical banks and most of HomeBank need approved academic access. Some corpora need a controlled-access interview and training. The Ground Rules forbid commercial use, including in language models, and uploading data to web processing services unless non-storage is selected. Cite each corpus as its manual says. The site links a CC BY-NC-SA 3.0 deed while the text says 4.0."
+  },
+  {
+    "id": "tla",
+    "title": "Thesaurus Linguae Aegyptiae (TLA)",
+    "provider": "Berlin-Brandenburg and Saxon Academies of Sciences",
+    "url": "https://thesaurus-linguae-aegyptiae.de/",
+    "access": "unclear",
+    "licence": {
+      "name": "Provider website terms; current full terms unverified",
+      "url": "https://thesaurus-linguae-aegyptiae.de/info/terms-of-use"
+    },
+    "data": "An online text and dictionary resource for the Egyptian language. The provider presents a searchable scholarly corpus and lexical information for research on Egyptian texts.",
+    "citation": null,
+    "snacks": [],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Known-language corpus comparisons considered for the decipherment survey"
+    },
+    "checked": "2026-11-21",
+    "notes": "Considered as a known-language comparator; its corpus was not analysed. Automated retrieval returned the application shell rather than the full terms. Website access and separately released raw-data packages can have different licences; no blanket open licence is assigned here."
+  },
+  {
+    "id": "trofi",
+    "title": "TroFi Example Base",
+    "provider": "Julia Birke and Anoop Sarkar / Simon Fraser University",
+    "url": "https://natlang.cs.sfu.ca/software/trofi.html",
+    "access": "licensed",
+    "licence": {
+      "name": "TroFi licence; valid LDC WSJ Corpus Release 1 licence required",
+      "url": "https://www.cs.sfu.ca/~anoop/students/jbirke/LICENSE.html"
+    },
+    "data": "Literal and nonliteral usage clusters for 50 English verbs. The examples are sentences from the 1987–1989 Wall Street Journal Corpus Release 1, with automatically generated clusters and accompanying research documentation.",
+    "citation": "https://natlang.cs.sfu.ca/software/trofi.html",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-20",
+      "context": "Metaphor identification and discourse-use dataset scoping"
+    },
+    "checked": "2026-11-21",
+    "notes": "The catalogue’s GPL copying-policy label conflicts with the specific Example Base licence. The latter requires relevant LDC rights and prohibits redistribution; retain that restriction when selecting examples."
+  },
+  {
+    "id": "eia-energy",
+    "title": "U.S. Energy Information Administration energy data",
+    "provider": "U.S. Energy Information Administration",
+    "url": "https://www.eia.gov/totalenergy/data/annual/",
+    "access": "open",
+    "licence": {
+      "name": "Public domain with acknowledgement; third-party exceptions",
+      "url": "https://www.eia.gov/about/copyrights_reuse.php"
+    },
+    "data": "United States energy statistics covering production, consumption, prices, electricity and nuclear power in the Annual Energy Review collection. Tables are available as spreadsheets and other downloadable formats, with historical coverage that varies by subject.",
+    "citation": "https://www.eia.gov/about/copyrights_reuse.php",
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      },
+      {
+        "title": "Canals and nuclear: smaller booms, long earnings and expensive failures",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The snacks use nuclear-capacity and construction material. Energy units, installed capacity and expenditure are different quantities; EIA’s public-domain statement excludes protected third-party material."
+  },
+  {
+    "id": "unicode-data",
+    "title": "Unicode Character Database",
+    "provider": "Unicode Consortium",
+    "url": "https://www.unicode.org/ucd/",
+    "access": "open",
+    "licence": {
+      "name": "Unicode License v3",
+      "url": "https://www.unicode.org/license.txt"
+    },
+    "data": "Machine-readable character properties and supporting data for the Unicode Standard. Versioned releases document encoded characters and provide files and technical documentation used to process writing systems.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Unicode encoding data does not amount to a corpus of ancient texts or proof that a language has been deciphered. Photographs and rubbings in repertoire proposals can have separate rights."
+  },
+  {
+    "id": "bea-gdpa",
+    "title": "United States annual gross domestic product (GDPA)",
+    "provider": "U.S. Bureau of Economic Analysis; distributed by FRED",
+    "url": "https://fred.stlouisfed.org/series/GDPA",
+    "access": "open",
+    "licence": {
+      "name": "Public domain unless otherwise stated; BEA reuse policy",
+      "url": "https://www.bea.gov/help/faq/145"
+    },
+    "data": "Annual United States gross domestic product at current prices, distributed as the GDPA series through FRED. The series is measured in billions of dollars and provides observations, downloadable data and release information.",
+    "citation": "https://www.bea.gov/help/guidelines-for-citing-bea",
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      },
+      {
+        "title": "Canals and nuclear: smaller booms, long earnings and expensive failures",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The FRED page was verified through web retrieval; direct requests timed out. Use nominal GDP for nominal spending shares, retain the data vintage, and distinguish calendar-year GDP from fiscal-year GDP."
+  },
+  {
+    "id": "omb-historical-tables",
+    "title": "United States federal budget historical tables",
+    "provider": "Office of Management and Budget",
+    "url": "https://www.whitehouse.gov/omb/information-resources/budget/historical-tables/",
+    "access": "open",
+    "licence": {
+      "name": "Public-domain U.S. government material; third-party exceptions",
+      "url": "https://www.whitehouse.gov/copyright/"
+    },
+    "data": "Historical United States federal receipts, outlays, deficits, debt and economic assumptions in downloadable XLS tables. Coverage varies by table; the collection includes GDP deflators and nominal GDP for fiscal-year comparisons.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The tables include both historical observations and projected budget years. Fiscal-year and calendar-year GDP have different period boundaries."
+  },
+  {
+    "id": "measuringworth-us-gdp",
+    "title": "United States GDP since 1790",
+    "provider": "Louis Johnston and Samuel H. Williamson / MeasuringWorth",
+    "url": "https://www.measuringworth.com/datasets/usgdp/",
+    "access": "open",
+    "licence": {
+      "name": "MeasuringWorth non-profit educational use with credit",
+      "url": "https://www.measuringworth.com/datasets/usgdp/"
+    },
+    "data": "Annual United States nominal and real GDP series linking historical estimates from 1790 to modern Bureau of Economic Analysis data. Nominal GDP is reported in millions of current US dollars; real GDP uses 2017 prices.",
+    "citation": "https://www.measuringworth.com/datasets/usgdp/",
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      },
+      {
+        "title": "Canals and nuclear: smaller booms, long earnings and expensive failures",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The provider permits non-profit educational use with credit and requests permission for other uses. The historical estimates and modern national accounts have different source bases."
+  },
+  {
+    "id": "fhwa-highway-statistics",
+    "title": "United States Highway Statistics",
+    "provider": "Federal Highway Administration",
+    "url": "https://highways.dot.gov/policy/policy-information/highway-statistics-series",
+    "access": "open",
+    "licence": {
+      "name": "Federal statistical information; provider web policies and source notices",
+      "url": "https://www.transportation.gov/web-policies"
+    },
+    "data": "United States highway statistics published annually since 1945, with information on fuel, vehicle registrations, licences, travel, road length and highway finance. Tables and historical archives assemble state, federal and local submissions, including federal expenditure series.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "AI spending, railway booms and the revenue test",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "AI spending, railway booms and the revenue test"
+    },
+    "checked": "2026-11-21",
+    "notes": "The snack uses the historical federal-funds expenditure table for 1949–1995. The provider landing page and web policies were read; no bespoke dataset licence was found. Expenditure by one federal programme is not total national highway investment."
+  },
+  {
+    "id": "vesuvius-data",
+    "title": "Vesuvius Challenge scan data",
+    "provider": "Vesuvius Challenge organisers",
+    "url": "https://scrollprize.org/data",
+    "access": "free registration",
+    "licence": {
+      "name": "Dataset-specific scan licences and competition rules",
+      "url": "https://scrollprize.org/data"
+    },
+    "data": "Volumetric scan data and related surface, fragment and segmentation resources for reading carbonised ancient scrolls. The provider lists dataset downloads and supporting documentation for virtual unwrapping and ink-detection work.",
+    "citation": null,
+    "snacks": [
+      {
+        "title": "Which scripts were deciphered, and where could AI agents help?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/"
+      }
+    ],
+    "found": {
+      "date": "2026-11-19",
+      "context": "Which scripts were deciphered, and where could AI agents help?"
+    },
+    "checked": "2026-11-21",
+    "notes": "Data-use rules differ by object and release. Recovering Greek text from damaged material is a visibility problem, distinct from recovering an unknown language."
+  },
+  {
+    "id": "vuamc",
+    "title": "VU Amsterdam Metaphor Corpus (VUAMC)",
+    "provider": "VU Amsterdam Metaphor Corpus team",
+    "url": "https://www.vismet.org/metcor/",
+    "access": "unclear",
+    "licence": {
+      "name": "Provider’s previously recorded CC BY-SA 3.0; current verification failed",
+      "url": "https://www.vismet.org/metcor/license.html"
+    },
+    "data": "English metaphor-identification annotations for academic writing, conversation, fiction and news from BNC-Baby. The resource is distributed through an online corpus interface and research versions.",
+    "citation": null,
+    "snacks": [],
+    "found": {
+      "date": "2026-11-20",
+      "context": "Metaphor identification and discourse-use dataset scoping"
+    },
+    "checked": "2026-11-21",
+    "notes": "Considered for a metaphor identification study; not used in a published snack. Both provider and terms requests failed certificate validation on 21 November 2026. The description and recorded licence come from the provider documentation inspected during scoping; current verification remains incomplete. BNC-derived text rights must be distinguished from online annotation terms."
+  },
+  {
+    "id": "vua-shared-task",
+    "title": "VUA metaphor shared-task data",
+    "provider": "Educational Testing Service and VUA shared-task organisers",
+    "url": "https://github.com/EducationalTestingService/metaphor/tree/master/VUA-shared-task",
+    "access": "open",
+    "licence": {
+      "name": "Task distribution terms; underlying VUA/BNC rights remain separate",
+      "url": "https://github.com/EducationalTestingService/metaphor/tree/master/VUA-shared-task"
+    },
+    "data": "Metaphor-prediction task material derived from 117 VU Amsterdam Metaphor Corpus texts in four genres. The organisers provide starter kits, training and test token identifiers, and gold labels for verbs and all parts of speech.",
+    "citation": "https://github.com/EducationalTestingService/metaphor/tree/master/VUA-shared-task",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-20",
+      "context": "Metaphor identification and discourse-use dataset scoping"
+    },
+    "checked": "2026-11-21",
+    "notes": "The repository documentation was read. Software or task-package licensing does not by itself relicense the underlying BNC text; online and archive versions need to be identified."
+  },
+  {
+    "id": "world-values-survey",
+    "title": "World Values Survey (WVS) and EVS/WVS trend file",
+    "provider": "World Values Survey Association",
+    "url": "https://www.worldvaluessurvey.org/WVSEVStrend.jsp",
+    "access": "free registration",
+    "licence": {
+      "name": "WVS Conditions of Use (non-profit use, citation, no redistribution)",
+      "url": "https://www.worldvaluessurvey.org/AJDownloadLicense.jsp"
+    },
+    "data": "Repeated cross-national surveys of values and beliefs, released by wave (wave 1, 1981-1984, to wave 7, 2017-2022) and as a WVS time-series 1981-2022 (v4.1, June 2024). Merged with the EVS Trend File 1981-2017, it forms the Integrated Values Surveys, 452 surveys from 115 countries and territories. Files come with SPSS and Stata merge syntax and a common EVS-WVS dictionary.",
+    "citation": "https://www.worldvaluessurvey.org/WVSEVStrend.jsp",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-21",
+      "context": "Suggested for a future snack"
+    },
+    "checked": "2026-11-21",
+    "notes": "Each download asks for a short form (name, institution, purpose) and agreement to the Conditions of Use. Data are for non-profit use, must not be redistributed, and publications must cite the data and send the citation to the WVS Association. Respondent-level data need the survey weights; question wording and country coverage differ by wave."
+  }
+]

@@ -32,7 +32,7 @@ const jsonld = {'@context':'https://schema.org','@type': entry ? 'Article' : 'We
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site"><div class="wrap"><a class="logo" href="/"><b>RS</b><span>{NAME}</span></a><nav class="main" aria-label="Main">
-    <a class:list={[{on:active==='entries'}]} href="/">Entries</a><a class:list={[{on:active==='about'}]} href="/about/">About</a><a href="https://datapoints.semanticmachines.fyi">Model Data Points</a>
+    <a class:list={[{on:active==='entries'}]} href="/">Entries</a><a class:list={[{on:active==='data-sources'}]} href="/data-sources/">Data sources</a><a class:list={[{on:active==='about'}]} href="/about/">About</a><a href="https://datapoints.semanticmachines.fyi">Model Data Points</a>
   <a class="search-trigger" href="/search/" data-open-search aria-label="Search (/ or ⌘K)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg><span>Search</span><kbd>/</kbd></a></nav></div></header>
   <slot />
   {cite && <div class="wrap page-cite"><Fragment set:html={citeBlockHtml(citation)} /></div>}

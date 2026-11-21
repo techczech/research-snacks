@@ -8,6 +8,7 @@
     "build": "bun run prepare:site && astro build",
     "preview": "astro preview",
     "check": "bun run build && tsc --noEmit && bun test && python3 scripts/check-site.py",
+    "check:data-sources": "bun scripts/check-data-sources.ts",
     "check:release": "bun scripts/check-release.ts"
   },
   "dependencies": {
