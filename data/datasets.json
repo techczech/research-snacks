@@ -383,6 +383,26 @@
     "notes": "The public provider API verified the project description and filenames on 21 November 2026. Its node_license field is null; no reuse licence was established, and the files were not downloaded. The browser-facing project page requires JavaScript."
   },
   {
+    "id": "slabank-dresden-czech",
+    "title": "Dresden corpus of early Czech, English and French learning (SLABank)",
+    "provider": "TalkBank SLABank (corpus by Angelika Kubanek-German)",
+    "url": "https://talkbank.org/slabank/access/Czech/Dresden.html",
+    "access": "free registration",
+    "licence": {
+      "name": "TalkBank Ground Rules (CC BY-NC-SA 4.0, except where otherwise indicated)",
+      "url": "https://talkbank.org/0share/rules.html"
+    },
+    "data": "Audio-linked interview transcripts of children aged 8 and 9 in Saxony learning a foreign language four hours a week, from a 2000 to 2002 study of 12 classes and 150 pupils. The Czech part has 19 transcripts of German children speaking Czech; parallel English and French parts exist.",
+    "citation": "https://talkbank.org/slabank/access/Czech/Dresden.html",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-21",
+      "context": "Search of TalkBank for Czech corpora"
+    },
+    "checked": "2026-11-21",
+    "notes": "Cite Kubanek-German (2000) as the corpus page asks. TalkBank Ground Rules apply."
+  },
+  {
     "id": "damos",
     "title": "DĀMOS: Database of Mycenaean at Oslo",
     "provider": "University of Oslo",
@@ -1234,6 +1254,26 @@
     },
     "checked": "2026-11-21",
     "notes": "Considered as a known-language comparator; its corpus was not analysed. Automated retrieval returned the application shell rather than the full terms. Website access and separately released raw-data packages can have different licences; no blanket open licence is assigned here."
+  },
+  {
+    "id": "timss-1999-video-classbank",
+    "title": "TIMSS 1999 Video Study lesson transcripts (ClassBank)",
+    "provider": "TalkBank ClassBank (corpus by James Stigler, UCLA)",
+    "url": "https://talkbank.org/class/access/TIMSS-Math/TIMSS-Math.html",
+    "access": "free registration",
+    "licence": {
+      "name": "TalkBank Ground Rules (CC BY-NC-SA 4.0, except where otherwise indicated)",
+      "url": "https://talkbank.org/0share/rules.html"
+    },
+    "data": "Transcripts of the public-release lessons from the TIMSS 1999 Video Study, in the CHAT format and linked to the recordings. Mathematics has about 20 eighth-grade transcripts per country from Australia, the Czech Republic, Hong Kong, Japan, the Netherlands, Switzerland and the USA, each in the lesson's language. Science has five lessons each from Australia, the Czech Republic, Japan, the Netherlands and the USA.",
+    "citation": "https://talkbank.org/class/access/TIMSS-Math/TIMSS-Math.html",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-21",
+      "context": "Search of TalkBank for Czech corpora"
+    },
+    "checked": "2026-11-21",
+    "notes": "Cite Stigler, Gallimore and Hiebert (2000) as each corpus page asks. Mathematics transcripts keep the original language (English, Czech, Cantonese, Japanese, Dutch, German); the Czech ones lack diacritics. Science transcripts are all in English, so the Czech, Japanese and Dutch lessons are translations even where a file is labelled with the original language. TalkBank Ground Rules apply: no incorporation into language models, and uploads to hosted AI only with the non-storage option selected."
   },
   {
     "id": "trofi",
