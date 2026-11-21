@@ -10,7 +10,7 @@ AI agents change that. A check that once needed a specialist's toolkit can now b
 
 ## How the agents are instructed
 
-There is no long prompt behind each snack. I say what I want checked in a chat with a coordinating agent. It hands the research to other agents and asks models from other companies to review the result. The standing instructions come from skills: instruction files that agents load when a task calls for them. These are the skills behind the research and the writing. Names with links are public.
+There is no long prompt behind each snack. I say what I want checked in a chat with a coordinating agent. It hands the research to other agents. For some snacks, it also asks models from other companies to review the result. The standing instructions come from skills: instruction files that agents load when a task calls for them. These are the skills behind the research and the writing. Names with links are public.
 
 - **[research-snack](https://github.com/techczech/dominiks-agent-skills/tree/main/research/research-snack)**: the house rules (split the claim, find the source, test the word "only", go to the primary data, make every number checkable, show me each snack before it goes live) and the page structure.
 - **[research-reproducibility](https://github.com/techczech/dominiks-agent-skills/tree/main/research/research-reproducibility)**: keeps the sources, scripts and decisions so that the check can be rebuilt.
@@ -22,6 +22,16 @@ There is no long prompt behind each snack. I say what I want checked in a chat w
 - **dominik-lukes-voice (private)**: my voice, for text written in my name.
 
 The agents also use general skills for delegating work, building this site and keeping API keys out of the code; none of them is specific to the snacks. The whole public collection is at [techczech.github.io/dominiks-agent-skills](https://techczech.github.io/dominiks-agent-skills/). The "How this was made" section of each snack lists the models used, what each one did and how many tokens it used.
+
+## Model councils
+
+A model council is a small panel of other AI models asked to review the same work independently. It brings in another view so the model that did the research does not grade its own work.
+
+Each member gets the same packet with the question, the work to review and the relevant evidence. Members come from different model families where possible. They work separately and cannot see each other’s answers. The packet asks them to spot-check important claims against the sources and explain their doubts.
+
+The coordinator compares the answers, weighs the evidence on each point and records each decision and why it was made. The panel gives advice without a vote. Models can agree and still share the same error, so agreement alone leaves the claims unverified.
+
+Each snack that uses a council names its members and links to their packet and answers. The public [model-council skill](https://github.com/techczech/dominiks-agent-skills/tree/main/dev/model-council) gives the full method.
 
 ## Sister site
 

@@ -128,13 +128,9 @@ If a reading needs more than one convention, its weakest convention sets its rat
 
 The ratings are editorial judgements based on partial reading. Only two of the 43 listed references were read in full. No corpus counts underpin the ratings. A specialist should revise them as better examples or frequency evidence become available.
 
-### What a model council is
+### Who reviewed the ratings
 
-A model council is a small panel of other AI models, drawn from different model families where possible, asked the same question independently. Here the council checked the research before it went into the reader so the research model would not grade its own work.
-
-Each member got the research question, the same files and five tasks. Were the ratings supported? Could they check five claims against the sources? What was missing? Which additions belonged in the next build? What would a sceptical palaeographer object to? Members could not see each other’s answers. Gemini 4 Neon and Claude Haiku 5.5 completed the review. A seat started with Claude Sonnet 5.5 on the wrong plan and was cancelled before it answered. [Council packet](data/council/packet.md)
-
-The panel gave advice. The coordinator compared the two answers, kept points both raised and decided each disagreement on the evidence, recording the reasons. Even when the models agreed, they could share an error, so the task included spot-checks against the sources. [Council reconciliation](data/council/reconciliation.md)
+Gemini 4 Neon and Claude Haiku 5.5 reviewed the research independently. A Claude Sonnet 5.5 seat started on the wrong plan and was cancelled before it answered. [How model councils work](/about/#model-councils), [Council packet](data/council/packet.md), [Gemini’s answer](data/council/gemini-4-neon.md), [Haiku’s answer](data/council/claude-haiku-5-5.md)
 
 ## What the council caught
 
@@ -223,6 +219,7 @@ Times are UK time (GMT), rounded to the minute. Searches and build work overlapp
 | 10:45–10:56 | GPT-6.2 Sol built v3 with an answer card, eight starter examples and a gradual reveal of readings and evidence. It added 12 constructed examples and the sourced film misprint. Node passed 44 of 44 checks and the builder’s headless run passed 72 of 72 assertions. The reader matched 46 of 48 reported examples. It had 97 presets in all, including 49 constructed examples. |
 | From 10:57 | GPT-6.2 Sol swapped in the committed v3 reader, updated this article and chart, and regenerated the checking package for the revised preview. |
 | 11:58 | Dominik asked for a clearer explanation of the ratings, their purpose and the model council. GPT-6.2 Sol added that account, reconciled the bibliography with the reader, linked the film example to the copyright frame and fixed the embed spacing and phone placeholder. |
+| 12:08 | Dominik asked to put the general explanation of model councils on About. The snack kept its reviewer names and links to the packet and answers. |
 
 ### Data and method
 
