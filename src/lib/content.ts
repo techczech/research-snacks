@@ -174,7 +174,9 @@ export function withTOC(html: string,title: string,entryId?:string): string {
 export function entryHTML(x: Entry): string {
   const ul = (items: any[]) => '<ul>'+items.map(i => `<li>${String(i).startsWith('http') ? `<a href="${e(i)}">${e(i)}</a>` : e(i)}</li>`).join('')+'</ul>';
   const isTool = x.kind === 'tool';
-  const facts = `<dl class="facts"><dt>${isTool ? 'Request' : 'Claim'}</dt><dd>&ldquo;${e(x.claim)}&rdquo; (<a href="${e(x.claim_source)}">source</a>)</dd><dt>${isTool ? 'Result' : 'Verdict'}</dt><dd>${e(x.verdict)}</dd><dt>Time taken</dt><dd>${e(x.time_taken)}</dd><dt>Human time</dt><dd>${e(x.human_time)}</dd><dt>Tools</dt><dd>${ul(x.tools)}</dd><dt>Data sources</dt><dd>${ul(x.data_sources)}</dd></dl>`;
+  const entryURL = `${BASE}/${x.id}/`;
+  const claimSource = x.claim_source.startsWith(entryURL + '#') ? x.claim_source.slice(entryURL.length) : x.claim_source;
+  const facts = `<dl class="facts"><dt>${isTool ? 'Request' : 'Claim'}</dt><dd>&ldquo;${e(x.claim)}&rdquo; (<a href="${e(claimSource)}">source</a>)</dd><dt>${isTool ? 'Result' : 'Verdict'}</dt><dd>${e(x.verdict)}</dd><dt>Time taken</dt><dd>${e(x.time_taken)}</dd><dt>Human time</dt><dd>${e(x.human_time)}</dd><dt>Tools</dt><dd>${ul(x.tools)}</dd><dt>Data sources</dt><dd>${ul(x.data_sources)}</dd></dl>`;
   let rendered = readingSurfaces(renderMarkdown(x._body,x._folder),x.id).html;
   const split = /<h2[^>]*>How this was made<\/h2>/.exec(rendered);
   let argument = split ? rendered.slice(0,split.index) : rendered;
