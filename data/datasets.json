@@ -1038,6 +1038,26 @@
     "notes": "This entry covers the underlying cost data linked by the provider, rather than a single report. The page retains provider copyright; no unrestricted dataset licence was found."
   },
   {
+    "id": "red-hen-lab",
+    "title": "Red Hen Lab multimodal archive (including the NewsScape library)",
+    "provider": "Distributed Little Red Hen Lab (co-directed by Francis Steen and Mark Turner)",
+    "url": "https://www.redhenlab.org/",
+    "access": "on request",
+    "licence": {
+      "name": "Research access under the Red Hen Access Board; research use relies on section 108 of the US Copyright Act",
+      "url": "https://www.redhenlab.org/access-to-red-hen-tools-and-data"
+    },
+    "data": "A research archive of recorded broadcast media, chiefly television news, with closed captions, transcripts and tagging pipelines, gathered by capture stations in several countries. Files carry time-aligned text in the Red Hen data format (.seg), with tagging for parts of speech, frames, gesture and other features in English, French, German and other languages. The lab also lists open data sets for multimodal communication research.",
+    "citation": "https://www.redhenlab.org/home/how-to-cite-and-credit-red-hen",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-21",
+      "context": "Suggested for future exploration"
+    },
+    "checked": "2026-11-21",
+    "notes": "\"Red Hen is not available to the public.\" Access means joining the research cooperative: email access+bot@redhenlab.org a research proposal and a contribution proposal, and research is supervised by a member of the Red Hen Access Board. Users are expected to give back, for example by returning tagged datasets. Quoting or presenting clips in publications has its own permission rules on the citation page, which also gives the required credit lines."
+  },
+  {
     "id": "rib",
     "title": "Roman Inscriptions of Britain",
     "provider": "RIB Online / University of Nottingham",
