@@ -19,10 +19,10 @@ const l=copy.labels;
  </aside>
  <section class="home-checks" id="all" aria-labelledby="home-list-title">
   {subjects.map(s=><span id={`subject-${s.id}`} class="home-subject-target" data-home-subject-target={s.id} aria-hidden="true"/>)}
-  <div class="home-list-heading"><h2 id="home-list-title"><span data-home-all-label>{l.all_latest}</span>{subjects.map(s=><span data-home-subject-label={s.id}>{s.label}</span>)}</h2><span class="home-result-count" role="status" aria-live="polite" data-home-count>{items.length} {l.results}</span><a href="/rss.xml">{l.subscribe}</a></div>
-  <p class="home-list-description" data-home-description>{l.newest}</p>
+  <div class="home-list-heading"><h2 id="home-list-title"><span data-home-all-label>{l.all}</span>{subjects.map(s=><span data-home-subject-label={s.id}>{s.label}</span>)}</h2><span class="home-result-count" role="status" aria-live="polite" aria-atomic="true" aria-label={`${items.length} ${l.results}`} data-home-count>{items.length}</span><a href="/rss.xml">{l.subscribe}</a></div>
+  <div class="home-list-tools"><select class="home-sort" data-home-sort aria-label={l.sort_label}><option value="newest">{l.newest}</option><option value="oldest">{l.oldest}</option><option value="title">{l.title_order}</option></select><span class="home-sort-fallback" data-home-sort-fallback>{l.newest}</span><p class="home-list-description" data-home-description hidden></p></div>
   <div class="snack-grid">
-   {items.map(x=><article class="snack-card feed-entry" data-home-card data-entry-id={x.id} data-subject={x.subject}>
+   {items.map(x=><article class="snack-card feed-entry" data-home-card data-entry-id={x.id} data-subject={x.subject} data-date={x.date}>
     <h3><a href={`/${x.id}/`}>{x.question}</a></h3>
     <p class="finding"><b>{l.finding}:</b> {x.finding}</p>
     <div class="entry-meta"><span>{subjects.find(s=>s.id===x.subject)?.label}</span><span aria-hidden="true"> · </span><time datetime={x.date}>{dateLabel(x.date,'short')}</time></div>
