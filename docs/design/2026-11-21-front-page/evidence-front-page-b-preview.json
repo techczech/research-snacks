@@ -1,0 +1,32 @@
+{
+  "preview": "https://a341f651.research-snacks.pages.dev/",
+  "code_commit": "0aad511",
+  "widths": [
+    950,
+    1440,
+    390
+  ],
+  "build": {
+    "pages": 43,
+    "tests": 17,
+    "assertions": 716,
+    "passed": true
+  },
+  "local_release": {
+    "passed": true,
+    "checks": 15
+  },
+  "deployed_home_journey": {
+    "passed": true,
+    "checks": [
+      "chronological All and all ten canonical links",
+      "4/5/1 subjects, URL state, reload and Back",
+      "19 topic links and correct tag-route counts",
+      "shared search query, result, no results and focus return",
+      "no-JavaScript subject navigation and GET search",
+      "no page overflow at standard and 200 percent text"
+    ]
+  },
+  "visual_review": "One independent fresh Sol reviewer; no blocking visual defect; same-model expert review, no participant or screen-reader test.",
+  "production_deployed": false
+}

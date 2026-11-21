@@ -2,7 +2,7 @@
 title: Verification of the chosen Research Snacks front-page revision
 date: 2026-11-21
 register: FOR DOMINIK
-status: Local build, browser release checks and independent visual review passed; feature-preview deployment follows
+status: Feature preview deployed and verified; production awaits owner review
 source: Build checks, headless browser journeys and independent screenshot review
 ---
 
@@ -19,3 +19,7 @@ A later whole-site release run was blocked when the shared browser cache disappe
 ## Final local result
 
 bun run check passed: 17 tests, 716 assertions and validation of 43 generated pages. The complete bun run check:release suite passed, including the new home journeys and the original chart, table, citation-copy, contents, dialog, theme, forced-colour, blocked-storage, no-JavaScript and enlarged-text checks. The shared look gate found an existing 14px citation on the home page; its front-page text now uses the existing 16px base. The gate then passed at laptop and phone widths, with minimum visible text at 16px and no horizontal overflow. Preview deployment and its independent URL check follow this local verification.
+
+## Deployed preview
+
+Preview: https://a341f651.research-snacks.pages.dev/ . Deployment code commit: 0aad511. The deployment script passed its fresh build and content checks, then uploaded the named feature branch. The deployed URL passed the same targeted home journey at 950/1440/390px, including chronological All, subject selection/Back/reload, Topics, shared search and focus return, JavaScript-off navigation and enlarged text. The T3 browser also confirmed ten cards, nineteen topic links, the 4/5/1 subjects and no page overflow at 950px. The production domain was not deployed.
