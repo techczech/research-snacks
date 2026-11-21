@@ -54,3 +54,26 @@ The script copies the five browser assets into `scripts/assets/tools/roman-numer
 and records the revision in `source-commit.txt`. Review the resulting diff, build,
 and verify the live iframe and full-page link before deploying another preview.
 The checking repository preserves the reader and data used for the preset counts.
+
+## Update the Data sources catalogue
+
+The `/data-sources/` page and snack appendix links use a committed snapshot of
+[research-datasets](https://github.com/techczech/research-datasets). Builds use
+only the local snapshot, verify its checksums and fail if any catalogue snack
+URL does not match an existing entry. The download files preserve the upstream bytes.
+
+After updating `datasets.yaml` and running `uv run build.py` in the catalogue
+repo, commit its generated JSON and CSV, then run in this site:
+
+```sh
+bun scripts/sync-datasets.ts CATALOGUE_CHECKOUT FULL_COMMIT_SHA
+bun run check
+```
+
+Review and commit `data/datasets.json`, `data/datasets.csv` and
+`data/datasets-source.json` together. The source record pins the commit and
+SHA-256 checksums. Omitting the commit re-reads the already pinned revision;
+it never silently advances to a newer branch tip. Deploy a feature preview
+and review the catalogue before publishing production.
+`bun run check:data-sources [PREVIEW_URL]` checks the catalogue headlessly at
+390, 950 and 1440 pixels, including no JavaScript and 200% text.
