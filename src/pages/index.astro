@@ -1,10 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import EntryFeed from '../components/EntryFeed.astro';
-import CategoryLinks from '../components/CategoryLinks.astro';
-import {getEntries,NAME,TAGLINE} from '../lib/content';
-const entries=getEntries();
+import HomeCollection from '../components/HomeCollection.astro';
+import {NAME} from '../lib/content';
+import {getHomeData} from '../lib/home';
+import '../styles/home.css';
+const {copy}=getHomeData();
 ---
-<BaseLayout title={NAME} description={TAGLINE} active="entries" cite>
- <main id="main" class="wrap"><section class="home-heading"><h1>{NAME}</h1><p>Small research experiments with AI agents, checking claims against primary data.</p></section><section class="home-feed"><div class="feed-heading"><h2 class="sec">Entries</h2><a href="/rss.xml">RSS</a></div><CategoryLinks/><EntryFeed entries={entries}/></section></main>
+<BaseLayout title={NAME} description={copy.intro} active="entries" cite>
+ <main id="main" class="wrap home-page" data-home>
+  <section class="home-heading">
+   <div><h1>{NAME}</h1><p>{copy.intro}</p></div>
+   <form class="home-search" action="/search/" method="get" role="search" data-home-search>
+    <label for="home-search-input">{copy.labels.search_label}</label>
+    <div class="home-search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></svg><input id="home-search-input" name="q" type="search" placeholder={copy.labels.search_placeholder}/><button type="submit">{copy.labels.search_button}</button></div>
+   </form>
+  </section>
+  <HomeCollection/>
+ </main>
 </BaseLayout>

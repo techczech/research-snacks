@@ -28,7 +28,7 @@ async function renderSearch() {
     for(const section of index.sections) {
       const all=index.items.filter(x=>x.s===section.slug && matchesAll(`${x.t} ${x.d} ${x.k || ''}`,ts)).sort((a,b)=>Number(matchesAll(b.t,ts))-Number(matchesAll(a.t,ts)));
       if(!all.length)continue;
-      const group=h('div',{role:'group','aria-label':`${section.name}: ${all.length} results`});
+      const group=h('div',{role:'group','aria-label':`${section.name}: ${all.length} ${all.length===1?'result':'results'}`});
       group.append(h('h3',{},`${section.name} (${all.length})`));
       for(const x of all) {
         const url=safeURL(x.u); if(!url)continue;
@@ -37,7 +37,7 @@ async function renderSearch() {
       }
       results.append(group);
     }
-    status.textContent = count ? q ? `${count} results for “${q}”` : 'Search entry titles, summaries and text. Try “jobs”, “cake” or “wealth”.' : `No results for “${q}”. Try a different search.`;
+    status.textContent = count ? q ? `${count} ${count===1?'result':'results'} for “${q}”` : 'Search entry titles, summaries and text. Try “jobs”, “cake” or “wealth”.' : `No results for “${q}”. Try a different search.`;
     if(!q) {
       const suggestions=h('div',{class:'search-suggestions'});
       for(const word of ['jobs','cake','wealth']) {const b=h('button',{type:'button'},word); b.addEventListener('click',()=>{input.value=word;void renderSearch();input.focus();});suggestions.append(b);}
@@ -58,6 +58,14 @@ input.addEventListener('keydown',e=>{
   if(e.key==='Enter') {const current=nav.current();const url=e.shiftKey ? current?.dataset.source : current?.getAttribute('href');if(url){e.preventDefault();location.assign(url);}}
 });
 document.querySelectorAll('[data-open-search]').forEach(a=>a.addEventListener('click',e=>{if(e instanceof MouseEvent && (e.metaKey||e.ctrlKey||e.altKey||e.shiftKey))return;e.preventDefault();openSearch();}));
+document.querySelectorAll<HTMLFormElement>('[data-home-search]').forEach(form=>form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const query=form.querySelector<HTMLInputElement>('input[name=q]')!;
+  input.value=query.value;
+  // An Enter submission and a button click must each return focus to their actual opener.
+  if(!form.contains(document.activeElement))query.focus();
+  openSearch();
+}));
 document.querySelectorAll('[data-open-keys]').forEach(b=>b.addEventListener('click',openKeys));
 bindSingleKeysSwitch(document.querySelector<HTMLInputElement>('[data-single-keys]')!,toast);
 const actions: Record<string,()=>void>={theme:()=>{cycleTheme();},top:()=>scrollToSafe(window,{top:0})};

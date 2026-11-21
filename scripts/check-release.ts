@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import { getEntries, ROOT } from '../src/lib/content';
 import { inspectEntryCharts } from './check-charts';
 import {checkCompact} from './check-compact';
+import {checkHome} from './check-home';
 const dir=join(ROOT,'.check/release');mkdirSync(dir,{recursive:true});
 const servers:any[]=[];
 function serve(root:string){const s=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(req){let p=decodeURIComponent(new URL(req.url).pathname);if(p.endsWith('/'))p+='index.html';const f=Bun.file(join(root,p));return await f.exists()?new Response(f):new Response('Not found',{status:404});}});servers.push(s);return `http://127.0.0.1:${s.port}`;}
@@ -19,6 +20,7 @@ const paths=['/','/about/',...getEntries().map(x=>`/${x.id}/`)];
 const label=(path:string)=>path==='/'?'home':path.split('/').filter(Boolean)[0];
 try {
   await checkCompact(browser,current);
+  await checkHome(browser,current);
   records.charts = await inspectEntryCharts(browser,current,getEntries().map(entry=>`/${entry.id}/`));
   const chartFailures = records.charts.filter((result:any)=>result.errors.length);
   assert.deepEqual(chartFailures,[],`Vega-Lite chart failures: ${JSON.stringify(chartFailures,null,2)}`);
@@ -65,8 +67,10 @@ try {
   await page.keyboard.press('/');await page.locator('#search-input').fill('cake');await page.waitForFunction(()=>document.querySelectorAll('#search-results [role=option]').length===1);assert((await page.locator('#search-results').innerText()).includes('Can a cake be sickly?'));await page.keyboard.press('ArrowDown');assert(await page.locator('#search-input').getAttribute('aria-activedescendant'));await page.keyboard.press('Escape');
   passed('Build-time search returns grouped results with combobox selection');
   await page.getByRole('navigation',{name:'Categories',exact:true}).getByRole('link',{name:/Linguistics/}).click();
-  assert.equal(await page.locator('.feed-entry').count(),getEntries().filter(x=>x.category==='linguistics').length);
-  await page.goBack();assert.equal(await page.locator('.feed-entry').count(),getEntries().length);passed('Category links work as full pages and Back returns to the feed');
+  assert.equal(await page.locator('.feed-entry:visible').count(),getEntries().filter(x=>x.category==='linguistics').length);
+  await page.goBack();assert.equal(await page.locator('.feed-entry:visible').count(),getEntries().length);
+  await page.goto(current+'/tags/linguistics/');assert.equal(await page.locator('.feed-entry').count(),getEntries().filter(x=>x.category==='linguistics').length);
+  await page.goBack();assert.equal(await page.locator('.feed-entry').count(),getEntries().length);passed('Home subject filters, legacy category pages and Back preserve collection access');
   assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'auto');await page.locator('[data-open-keys]').click();assert.equal(await page.locator('#keys-dlg').evaluate(d=>getComputedStyle(d).animationName),'none');await page.keyboard.press('Escape');
   await page.locator('[data-open-keys]').click();assert.equal(await page.locator('#keys-dlg').evaluate(el=>getComputedStyle(el).animationName),'none');await page.keyboard.press('Escape');passed('Reduced motion: instant scrolling and no dialog animation');
   await page.goto(current+'/2026-11-17-can-a-cake-be-sickly/');

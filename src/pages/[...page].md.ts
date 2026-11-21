@@ -1,11 +1,13 @@
 import {tagLabel} from '../lib/labels';
+import {getHomeData} from '../lib/home';
 import {primaryCategory} from '../lib/feed';
 import {readingSurfaces,figuresMarkdown} from '../lib/reading';
 import { getEntries, getAbout, NAME, TAGLINE, BASE, pageCitation, files, ROOT, names, renderMarkdown, researchFiles } from '../lib/content';
 import { citeText } from '../scripts/kit/citation';
 import { relative } from 'node:path';
 const entries = getEntries();
-const index = `# ${NAME}\n\n${TAGLINE}\n\n`+entries.map(x=>`## [${x.title}](${BASE}/${x.id}/)\n\n${x.date}${x.category ? " · "+x.category : ""}\n\nClaim: ${x.claim}\n\nVerdict: ${x.verdict}\n\nTime taken: ${x.time_taken}\n\n${x.summary}\n`).join('\n');
+const home=getHomeData(entries);
+const index = `# ${NAME}\n\n${home.copy.intro}\n\n## Subjects\n\n${home.subjects.map(s=>`- [${s.label} (${s.count})](${BASE}/?cat=${s.id})`).join('\n')}\n\n## Topics\n\n${home.tags.map(t=>`[${t.label} (${t.count})](${BASE}/tags/${encodeURIComponent(t.tag)}/)`).join(' · ')}\n\n## All checks, newest first\n\n`+entries.map(x=>`## [${x.title}](${BASE}/${x.id}/)\n\n${x.date}${x.category ? " · "+x.category : ""}\n\nClaim: ${x.claim}\n\nVerdict: ${x.verdict}\n\nTime taken: ${x.time_taken}\n\n${x.summary}\n`).join('\n');
 export function getStaticPaths() {
   const pages = [{path:'index',body:index},{path:'about/index',body:getAbout()+'\n\n## Subscribe\n\n[Subscribe (RSS)]('+BASE+'/rss.xml)\n'},{path:'search/index',body:'# Search Research Snacks\n\n'+index}];
   for(const tag of [...new Set(entries.flatMap(x=>[primaryCategory(x),...names(x.tags)]))])pages.push({path:`tags/${tag}/index`,body:`# ${tagLabel(tag)}\n\n`+entries.filter(x=>primaryCategory(x)===tag||names(x.tags).includes(tag)).map(x=>`[${x.title}](/${x.id}/index.md)\n\n${x.summary}`).join('\n\n')});
