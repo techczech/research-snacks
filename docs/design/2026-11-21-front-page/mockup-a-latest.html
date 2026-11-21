@@ -1,0 +1,289 @@
+<!doctype html><html lang="en" data-theme="light"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research Snacks</title><script>document.documentElement.classList.add('js')</script><style>
+:root{--bg:#fbfaf7;--fg:#1d2433;--card:#f6f5f1;--primary:#202f61;--sec:#eee6db;--mut:#626e83;--acc:#f0a830;--bd:#e8e2d9;--open:#2f7a55;--closed:#8a5a1c;--tan:#f7ecda}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3,.serif{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;letter-spacing:-.01em}
+a{color:var(--primary)}
+.wrap{max-width:1072px;margin:0 auto;padding:0 16px}
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.96);border-bottom:1px solid var(--bd)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--fg)}
+.logo b{display:inline-flex;width:36px;height:36px;border-radius:8px;background:var(--primary);color:#fbfaf7;align-items:center;justify-content:center;font:700 1.125rem Georgia,serif}
+.logo span{font:600 1.25rem Georgia,serif}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{padding:8px 14px;border-radius:6px;font-size:0.875rem;font-weight:500;color:var(--mut);text-decoration:none}
+nav.main a.on{background:var(--sec);color:var(--fg)}
+.hero{background:var(--tan);border-bottom:1px solid var(--bd);padding:40px 0}
+.hero h1{margin:0;font-size:2.5rem;line-height:1.1}
+.hero p{margin:12px 0 0;max-width:640px;font-size:1.125rem;color:#3d4659}
+.tools{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:0.875rem}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 8px;align-items:end}
+.filters label{display:flex;flex-direction:column;font-size:0.75rem;color:var(--mut);font-weight:600;gap:3px}
+.filters select{font:0.875rem Inter,system-ui,sans-serif;padding:7px 10px;border:1px solid var(--bd);border-radius:6px;background:#fff;color:var(--fg)}
+h2.sec{font-size:1.5rem;margin:32px 0 12px}
+.list{display:grid;gap:12px}
+.card[hidden]{display:none}
+.card{border:1px solid var(--bd);background:var(--card);border-radius:10px;padding:16px 18px;display:block;text-decoration:none;color:inherit}
+.card:hover{border-color:var(--primary)}
+.card .meta{font-size:0.8125rem;color:var(--mut);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.card h3{margin:4px 0 6px;font-size:1.1875rem;color:var(--primary)}
+.card p{margin:8px 0 0;font-size:0.90625rem}
+.chip{display:inline-block;font-size:0.75rem;padding:2px 8px;border-radius:999px;border:1px solid var(--bd);background:#fff;margin:2px 4px 2px 0;white-space:nowrap}
+.chip.open{border-color:#a9d3bc;background:#edf7f1;color:#205a3d}
+.chip.closed{border-color:#e4cfa8;background:#fbf3e3;color:#6e4510}
+.tag{font-size:0.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:4px;background:var(--sec);color:#3d4659}
+.tag.bm{background:#dfe6f7;color:#202f61}
+.legend{font-size:0.8125rem;color:var(--mut);margin:6px 0 0}
+.models{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.models div{border:1px solid var(--bd);border-radius:8px;padding:10px 14px;background:#fff;font-size:0.875rem}
+.models b{display:block;margin-bottom:3px}
+.models a{display:inline-block;margin-right:8px;font-size:0.8125rem}
+footer{border-top:1px solid var(--bd);margin-top:48px;padding:24px 0;font-size:0.875rem;color:var(--mut)}
+.note{border-left:4px solid var(--acc);background:#fff;padding:10px 14px;margin:20px 0;font-size:0.875rem}
+table{border-collapse:collapse;width:100%;font-size:0.875rem;background:#fff}
+th,td{border:1px solid var(--bd);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+.tw{overflow-x:auto}
+.entry{max-width:760px}
+.entry h1{font-size:2.125rem;line-height:1.15;margin:8px 0}
+.entry h2{font-size:1.375rem;margin:30px 0 8px}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;font-size:0.875rem;margin:12px 0}
+.facts dt{color:var(--mut);font-weight:600}.facts dd{margin:0}
+.headline{background:var(--tan);border-radius:8px;padding:12px 16px;font-size:1.0625rem;margin:12px 0}
+.pending{color:#8a5a1c;font-weight:600}
+@media(max-width:640px){.hero h1{font-size:1.875rem}.logo span{display:none}header.site .wrap{height:auto;padding:10px 16px;flex-wrap:wrap}.facts{grid-template-columns:1fr}}
+.hero{padding-top:48px}
+
+.chip.access{background:#fff}
+.dim{color:var(--mut)}
+.body-md p,.body-md li{font-size:1rem}
+.body-md pre{overflow-x:auto;background:var(--card);padding:10px;border-radius:6px}
+
+/* Research Snacks additions */
+.hero .tagline{font-size:1.25rem;color:#3d4659;margin:10px 0 0;max-width:680px}
+.hero .intro{font-size:1rem}
+.card .claim{font-style:italic;margin:8px 0 0;color:#3d4659;font-size:0.9375rem}
+.card .verdict{margin:8px 0 0;font-size:0.90625rem}
+.card .verdict b,.card .tt b{font-weight:700}
+.card .tt{font-size:0.8125rem;color:var(--mut);margin-top:6px}
+.entry img{max-width:100%;height:auto;display:block;margin:16px 0;border:1px solid var(--bd);border-radius:6px;background:#fff}
+.entry a.imglink{display:block}
+.body-md h2{font-size:1.375rem}
+.assets li{margin:2px 0}
+.facts ul{margin:0;padding-left:18px}
+footer p{margin:4px 0}
+body{overflow-wrap:break-word}
+@media(prefers-color-scheme:dark){
+:root:not([data-theme="light"]){--bg:#14171f;--fg:#e6e8ee;--card:#1b1f2a;--primary:#9db4ff;--sec:#262b38;--mut:#9aa3b5;--acc:#f0a830;--bd:#2d3342;--tan:#1f2431}
+:root:not([data-theme="light"]) header.site{background:rgba(20,23,31,.96)}
+:root:not([data-theme="light"]) .logo b{background:#2a3a73;color:#e6e8ee}
+:root:not([data-theme="light"]) .hero p,:root:not([data-theme="light"]) .hero .tagline,:root:not([data-theme="light"]) .card .claim{color:#c3c9d6}
+:root:not([data-theme="light"]) .filters select,:root:not([data-theme="light"]) table,:root:not([data-theme="light"]) .models div,:root:not([data-theme="light"]) .chip,:root:not([data-theme="light"]) .note{background:#1b1f2a;color:var(--fg)}
+:root:not([data-theme="light"]) .tag{background:var(--sec);color:#c3c9d6}
+:root:not([data-theme="light"]) .entry img{background:#fff}
+:root:not([data-theme="light"]) .body-md pre{background:var(--card)}
+}
+:root[data-theme="dark"]{--bg:#14171f;--fg:#e6e8ee;--card:#1b1f2a;--primary:#9db4ff;--sec:#262b38;--mut:#9aa3b5;--acc:#f0a830;--bd:#2d3342;--tan:#1f2431}
+:root[data-theme="dark"] header.site{background:rgba(20,23,31,.96)}
+:root[data-theme="dark"] .logo b{background:#2a3a73;color:#e6e8ee}
+:root[data-theme="dark"] .hero p,:root[data-theme="dark"] .hero .tagline,:root[data-theme="dark"] .card .claim{color:#c3c9d6}
+:root[data-theme="dark"] .filters select,:root[data-theme="dark"] table,:root[data-theme="dark"] .models div,:root[data-theme="dark"] .chip,:root[data-theme="dark"] .note{background:#1b1f2a;color:var(--fg)}
+:root[data-theme="dark"] .tag{background:var(--sec);color:#c3c9d6}
+:root[data-theme="dark"] .entry img{background:#fff}
+:root[data-theme="dark"] .body-md pre{background:var(--card)}
+
+.entry table{border-collapse:collapse;font-size:0.875rem;margin:12px 0;display:block;overflow-x:auto;max-width:100%;width:max-content;background:none}
+.entry td{background:#fff}
+.entry th,.entry td{border-bottom:1px solid var(--bd);padding:5px 8px;text-align:left;vertical-align:top}
+.entry td.num,.entry th.num{text-align:right;white-space:nowrap}
+.refs{padding-left:20px;font-size:0.875rem}.refs li{margin:6px 0;overflow-wrap:anywhere}
+.cite{border:1px solid var(--bd);border-radius:6px;padding:4px 16px 8px;margin-top:32px;font-size:0.875rem;overflow-wrap:anywhere}
+.cite h2{font-size:1.125rem;margin:12px 0 4px}.cite .hint{color:var(--mut);font-size:0.8125rem}
+
+/* contents sidebar */
+
+.entry h2[id],.entry h3[id]{scroll-margin-top:84px}
+.withtoc{display:grid;grid-template-columns:220px minmax(0,760px);gap:48px;padding-top:40px;justify-content:center}
+.withtoc main.entry{max-width:none;min-width:0}
+.toc{position:sticky;top:88px;align-self:start;max-height:calc(100vh - 110px);overflow-y:auto;font-size:0.84375rem;padding-right:4px}
+.toc-h{font-size:0.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:4px 0 8px}
+.toc ol,.toc-m ol{list-style:none;margin:0;padding:0}
+.toc li a,.toc-m li a{display:block;padding:4px 10px;border-left:2px solid var(--bd);color:var(--mut);text-decoration:none;line-height:1.35}
+.toc li.h3 a,.toc-m li.h3 a{padding-left:22px;font-size:0.78125rem}
+.toc li a:hover{color:var(--fg);border-left-color:var(--mut)}
+.toc li a.on{color:var(--primary);border-left-color:var(--primary);font-weight:600}
+.toc-m{display:none;border:1px solid var(--bd);border-radius:8px;background:var(--card);padding:8px 12px;margin-bottom:16px;font-size:0.875rem}
+.toc-m summary{cursor:pointer;font-weight:600}
+.toc-m ol{margin-top:6px}
+@media(max-width:960px){.withtoc{display:block;padding-top:24px}.toc{display:none}.toc-m{display:block}}
+
+/* interactive charts */
+figure.ichart{margin:20px 0;border:1px solid var(--bd);border-radius:8px;background:#fff;padding:14px 14px 8px}
+figure.ichart .vl{width:100%;min-height:120px}
+figure.ichart .vl .vega-embed{width:100%}
+figure.ichart.live .fallback{display:none}
+figure.ichart:not(.live) .vl{min-height:0}
+figure.ichart .fallback{border:0;margin:0}
+figure.ichart figcaption{font-size:0.78125rem;color:var(--mut);border-top:1px solid var(--bd);margin-top:8px;padding-top:6px}
+#vg-tooltip-element{font:0.8125rem Inter,system-ui,sans-serif}
+figure.ichart .vl{overflow-x:auto}
+
+.cite button{font:inherit;color:var(--primary);background:var(--card);border:1px solid var(--bd);border-radius:4px;padding:6px 12px;cursor:pointer;margin-bottom:8px}
+.cite button:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+#copy-status{font-size:0.875rem;color:var(--mut)}
+
+/* contents: sections, with subsections opened for the section being read */
+.toc li.h2>a{font-weight:600;color:var(--fg)}
+.toc li.top>a{font-weight:400;color:var(--mut)}
+.toc li.h2>ol{display:none;margin:2px 0 6px}
+.toc li.h2.open>ol{display:block}
+.toc li.h3 a{padding-left:22px;font-size:0.78125rem;font-weight:400}
+.toc li.making{margin-top:14px;padding-top:10px;border-top:1px solid var(--bd)}
+.toc-m li.h2>ol{display:none}
+/* the closing "How this was made" part reads as an appendix, not the argument */
+section.making{margin-top:48px;padding:8px 20px 16px;background:var(--card);border:1px solid var(--bd);border-radius:10px;font-size:0.9375rem}
+section.making h2.making-h{margin-top:16px}
+section.making .making-intro{color:var(--mut);margin-top:0}
+section.making h3{font-size:1.125rem;margin:26px 0 6px}
+section.making h4{font-size:0.9375rem;margin:14px 0 4px}
+section.making section.cite{margin-top:26px;background:#fff}
+section.making .body-md p,section.making .body-md li{font-size:0.9375rem}
+.body-md h3{font-size:1.1875rem;margin:26px 0 6px}
+.entry .body-md h2{margin-top:44px;padding-top:16px;border-top:1px solid var(--bd)}
+
+/* HTML infographics */
+figure.infographic{margin:20px 0;border:1px solid var(--bd);border-radius:10px;background:#fff;padding:24px 26px 10px}
+.ig-kicker{font:700 1.3125rem/1.25 Inter,system-ui,sans-serif;margin:0}
+.ig-kicker span{display:block;font-weight:400;color:var(--mut);margin-top:4px}
+.ig-big{display:flex;align-items:center;gap:22px;margin:22px 0;flex-wrap:wrap}
+.ig-num{font:800 4.5rem/1 Inter,system-ui,sans-serif;color:#2a78d6;letter-spacing:-.03em}
+.ig-big p{margin:0;font-size:1.125rem;max-width:380px}
+.ig-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:8px 0 14px}
+.ig-cols div{background:var(--card);border-radius:8px;padding:10px 12px;font-size:0.84375rem;line-height:1.35}
+.ig-cols b{display:block;font:700 1.625rem/1.1 Inter,system-ui,sans-serif;margin-bottom:4px}
+.ig-cols .lost b{color:#1d2433}.ig-cols .shrank b{color:#eb6834}.ig-cols .new b{color:#2a78d6}
+.ig-src{font-size:0.75rem;color:var(--mut);margin:6px 0 0}
+figure.infographic figcaption{font-size:0.78125rem;color:var(--mut);border-top:1px solid var(--bd);margin-top:10px;padding-top:6px}
+@media(max-width:640px){.ig-cols{grid-template-columns:1fr}.ig-num{font-size:3.5rem}}
+
+:root[data-theme="dark"]{color-scheme:dark}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark}}
+.entry td,section.making section.cite{background:var(--bg)}
+figure.ichart,figure.infographic{color:#1d2433;color-scheme:light;--mut:#626e83;--primary:#202f61;--card:#f6f5f1;--fg:#1d2433}
+figure.ichart table,figure.infographic table,figure.infographic td{background:#fff;color:#1d2433}
+:root{color-scheme:light;--header-height:4rem}
+html{scroll-padding-top:calc(var(--header-height) + 1rem)}
+body{min-width:0}h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+.card:has(:focus-visible),.card:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+[hidden]{display:none!important}
+.js-only{display:none}.js .js-only{display:revert}
+.skip{position:fixed;left:1rem;top:-8rem;z-index:100;background:var(--bg);padding:.75rem 1rem;border:2px solid var(--primary)}.skip:focus{top:1rem}
+button,input,select{font:inherit}button{cursor:pointer}input,select{max-width:100%;background:var(--bg);color:var(--fg);border:1px solid var(--mut);border-radius:.3rem;padding:.4rem .6rem}
+button{background:var(--card);color:var(--primary);border:1px solid var(--mut);border-radius:.3rem;padding:.3rem .6rem}
+.house-controls{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-bottom:1rem}.house-controls .theme-switch{display:none}.js .house-controls .theme-switch{display:flex;gap:.2rem}.theme-switch [aria-pressed=true]{background:var(--primary);color:var(--bg)}
+.page-cite{margin-top:2rem}.search-page{padding-top:2.5rem}.search-page form{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.filters.js-only{display:none}.js .filters.js-only{display:flex}.filters input{font-size:.875rem}.no-results{padding:2rem;border:1px solid var(--bd);background:var(--card);border-radius:.6rem}
+.dlg{--kit-dlg-bg:var(--bg);--kit-dlg-fg:var(--fg);--kit-dlg-border:var(--mut);--kit-dlg-radius:.75rem;--kit-dlg-backdrop:rgb(15 24 43 / .65);--kit-dlg-shadow:0 1.5rem 4rem rgb(0 0 0 / .3)}
+.dlg .dialog-head,.dlg .dialog-body,.dlg .dialog-foot{padding:1rem 1.25rem}.dlg .dialog-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--bd)}.dlg h2{margin:0;font-size:1.5rem}.dlg h3{font-size:1rem;margin:1rem 0 .4rem}.dlg p{margin:.5rem 0}.dlg .dialog-foot{font-size:.8rem;border-top:1px solid var(--bd)}.search-input{display:block;width:100%;margin-top:.75rem}
+.search-status{padding:0 1.25rem;color:var(--mut);font-size:.875rem}.search-results{padding:0 1.25rem 1rem}.search-results [role=option]{display:block;text-decoration:none;padding:.6rem;border:1px solid transparent;border-radius:.4rem}.search-results [role=option] span{display:block;color:var(--mut);font-size:.875rem}.search-results [aria-selected=true]{background:var(--sec);border-color:var(--primary)}.search-suggestions{display:flex;gap:.5rem;margin-top:.75rem}
+.key-list div{display:flex;gap:1.5rem;justify-content:space-between;padding:.6rem 0;border-top:1px solid var(--bd)}.key-list dd{margin:0}.key-list dt{min-width:8rem}.keys-switch{display:block;padding:.75rem;background:var(--sec);border:1px solid var(--bd);border-radius:.4rem}
+kbd{font:inherit;font-size:.85em;border:1px solid var(--mut);border-radius:.2rem;padding:0 .25rem}.toast{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);max-width:calc(100% - 2rem);padding:.7rem 1rem;border:1px solid var(--mut);background:var(--fg);color:var(--bg);z-index:100;visibility:hidden}.toast.show{visibility:visible}.toast.error{border-width:2px}
+.toc a[aria-current=location]{color:var(--primary);border-left-color:var(--primary);font-weight:600}
+/* Without enhancement every subsection remains visible and findable. */
+html:not(.js) .toc li.h2>ol{display:block}.toc-m li.h2>ol{display:block}
+.entry{overflow-wrap:anywhere}.entry img{height:auto}.entry table{max-width:100%}
+/* Long-page contents links and in-page anchors must jump immediately. */
+html{scroll-behavior:auto}
+@media(max-width:40rem){.dlg{--kit-dlg-gutter:.75rem;--kit-dlg-top:1rem;--kit-dlg-max-h:calc(100dvh - 2rem)}.house-controls{gap:.7rem}.key-list div{flex-wrap:wrap;gap:.4rem}.entry .facts{grid-template-columns:1fr}}
+@media(forced-colors:active){.card,.keys-switch,.theme-switch [aria-pressed=true],.search-results [aria-selected=true],.no-results{border:1px solid CanvasText}.theme-switch [aria-pressed=true],.search-results [aria-selected=true]{outline:2px solid Highlight}a{color:LinkText}.toc a[aria-current=location]{border-color:Highlight}}
+@media print{header.site,footer,.toc,.toc-m,.skip,dialog,.toast,.house-controls,button,.filters{display:none!important}.withtoc{display:block;padding:0}.entry{max-width:none}a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em}figure,li{break-inside:avoid}figure.ichart .fallback{display:block!important}figure.ichart .vl{display:none}}
+
+:focus-visible{outline:2px solid var(--primary);outline-offset:3px}.card:focus-visible,.card:has(a:focus-visible){outline:2px solid var(--primary);outline-offset:3px}
+h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+/* A compact enhancement of the live cream publication, using reader-table surfaces. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+header.site nav.main a,footer,.house-controls,.toc,.toc-h,.toc li.h3 a,.toc-m,.dlg .dialog-foot,.search-status,.search-results [role=option] span,kbd{font-size:1rem}
+header.site nav.main a{padding:6px 9px}.search-trigger{display:inline-flex;align-items:center;gap:.4rem;white-space:nowrap}.search-trigger svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2}.search-trigger kbd{font:inherit}
+header.site .wrap{gap:8px}.logo{flex-shrink:0}nav.main{align-items:center}
+.dlg .dialog-head{padding:.75rem 1rem}.dlg .dialog-body{padding:.75rem 1rem}.dlg .dialog-foot{padding:.65rem 1rem}.dlg .search-input{font-size:1rem}.dlg .search-results [role=option]{padding:.5rem}.dlg .search-results strong{font-size:1rem}.search-status{margin:.3rem 0}
+/* The original two-level contents tree and marker remain, including at the primary 950px width. */
+.withtoc{display:grid;grid-template-columns:190px minmax(0,760px);gap:24px;padding-top:24px}.toc{display:block;top:calc(var(--header-height) + 16px);max-height:calc(100dvh - var(--header-height) - 32px)}.toc-h{text-transform:none;letter-spacing:0}.toc li.h3 a{font-size:1rem}.toc-m{display:none}.toc .figures-link{margin-top:12px;padding-top:10px;border-top:1px solid var(--bd)}
+.entry .body-md>p,.entry .body-md>ul,.entry .body-md>ol,.entry .body-md>blockquote{max-width:34rem;line-height:1.55}.entry .body-md h2{margin-top:32px;padding-top:12px;margin-bottom:8px}.entry .body-md h3{font-size:1.1875rem;margin-top:24px;margin-bottom:6px}.entry .meta-links{font-size:1rem;margin:6px 0 12px}.entry .meta-links a{margin-right:1rem}
+.reader-table{width:fit-content;max-width:100%;margin:12px 0;min-width:0;color:var(--fg);--table-head:var(--sec);--table-stripe:color-mix(in srgb,var(--sec) 40%,var(--bg))}
+.table-tools{display:flex;align-items:center;gap:.5rem;min-height:36px;padding:0 0 4px;font:1rem/1.35 Inter,system-ui,sans-serif;white-space:nowrap;max-width:100%;overflow-x:auto}
+.table-tools :is(button,a){font:inherit;padding:3px 5px;white-space:nowrap;background:transparent;border:1px solid transparent;color:var(--primary);border-radius:3px}.table-tools button:hover{border-color:var(--bd);background:var(--sec)}.table-tools input{font:inherit;width:10rem;min-width:6rem;max-width:36%;padding:4px 6px;border-color:var(--mut)}.table-count{color:var(--mut);white-space:nowrap}
+.table-scroll{max-width:100%;overflow-x:auto;overflow-y:hidden;border:1px solid var(--bd);isolation:isolate;overscroll-behavior-inline:contain}
+.entry .reader-table table{display:table;width:auto;max-width:100%;margin:0;overflow:visible;font:1rem/1.35 Inter,system-ui,sans-serif;border-collapse:separate;border-spacing:0;background:var(--bg)}
+.entry .reader-table :is(th,td){padding:5px .6rem;border:0;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);vertical-align:top;text-align:left;background:var(--bg);overflow-wrap:normal;word-break:normal;hyphens:none;max-width:none;min-width:0;font-weight:400}
+.entry .reader-table tr>:last-child{border-right:0}.entry .reader-table tbody tr:last-child>*{border-bottom:0}
+.entry .reader-table th{font-weight:600;background:var(--table-head)}.entry .reader-table tbody tr:nth-child(even)>*{background:var(--table-stripe)}
+.entry .reader-table thead th{position:static;vertical-align:bottom}.entry .reader-table.wide-table thead tr>:first-child{z-index:4}
+.entry .reader-table :is(.num,.num button){text-align:right;font-variant-numeric:tabular-nums}.entry .reader-table .nowrap{white-space:nowrap}
+.entry .reader-table .table-sort{display:block;width:100%;padding:0;color:inherit;border:0;border-radius:0;background:transparent;font:inherit;text-align:inherit;line-height:inherit}.sort-arrow{white-space:nowrap;color:var(--mut);font-weight:400}
+.entry .reader-table td.count-cell{background:color-mix(in srgb,var(--primary) var(--cell-tint),var(--bg));color:var(--fg)}
+.table-hint{font:1rem/1.35 Inter,system-ui,sans-serif;color:var(--mut);margin:0;white-space:nowrap}.table-hint[hidden],.table-tools[hidden]{display:none}.table-empty{font-size:1rem;margin:4px 0}.table-empty button{font:inherit;padding:2px 5px}.reader-table mark{background:var(--acc);color:#1d2433}
+.table-columns[popover]{margin:0;max-width:min(280px,calc(100vw - 24px));padding:12px;background:var(--bg);color:var(--fg);border:1px solid var(--mut);border-radius:4px;font:1rem/1.4 Inter,system-ui,sans-serif;box-shadow:0 8px 20px #0002}.table-columns label{display:flex;align-items:center;gap:6px;margin-top:6px}.table-columns input{margin:0}
+.reader-table.table-full[popover]{position:fixed;inset:16px;width:auto;max-width:none;height:auto;max-height:none;margin:0;padding:12px;display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--mut);border-top:3px solid var(--primary);background:var(--bg);color:var(--fg)}.reader-table.table-full::backdrop{background:rgb(0 0 0 / .55)}.reader-table.table-full .table-scroll{flex:1;min-height:0;overflow:auto}.entry .reader-table.table-full thead th{position:sticky;top:0;z-index:3}.reader-table.table-full .table-tools{flex:none}.reader-table.table-full table{max-width:none}
+.figures-page{padding-top:24px}.figures-page h1{font-size:2.125rem}.figure-index{display:flex;flex-direction:column;gap:4px;font-size:1rem;margin:16px 0}.gallery-item{margin-top:24px}.gallery-item h2{font-size:1.375rem;margin:16px 0 8px}.source-note{font-size:1rem;max-width:34rem}.figure-back{font-size:1rem;margin:8px 0 20px}.figures-page .gallery-item .reading-visual{margin-top:8px}
+/* Keep the original charts; bound their existing scroll surface without a new chart design. */
+figure.ichart .vl{max-width:100%;overflow:auto}figure.ichart figcaption,figure.infographic figcaption,.ig-src{font-size:1rem}figure.ichart{max-width:100%;min-width:0}.sickly-kwic{font-size:1rem!important}.sickly-kwic :is(th,td){overflow-wrap:normal!important}.sickly-kwic .controls{font-size:1rem}.sickly-kwic .scroll{max-width:100%}
+.home-heading{padding:14px 0 0}.home-heading h1{font-size:2.125rem;line-height:1.1;margin:0 0 6px}.home-heading p{font-size:1rem;line-height:1.4;margin:0;max-width:none}.home-feed{padding-top:12px}.feed-heading{display:flex;align-items:center;gap:16px}.feed-heading h2.sec{margin:0;font-size:1.375rem}.feed-heading>a{font-size:1rem}.category-links{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:1rem;line-height:1.35;margin:6px 0}.category-links a[aria-current=page]{font-weight:700;text-decoration-thickness:2px}
+.feed{display:block}.feed-entry{border:0;border-bottom:1px solid var(--bd);border-radius:0;background:transparent;padding:10px 0 12px;color:var(--fg)}.feed-entry:first-child{border-top:1px solid var(--bd)}.feed-entry .meta{font-size:1rem;line-height:1.35;color:var(--mut);display:block}.feed-entry h3{font-size:1.1875rem;line-height:1.2;margin:4px 0}.feed-entry h3 a{text-decoration-thickness:1px}.feed-entry p{font-size:1rem;line-height:1.35;margin:4px 0}.feed-entry .claim{font-style:italic;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.feed-entry .verdict{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.feed-entry .tag-links{font-size:1rem;line-height:1.35;display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}.tag-page{padding-top:20px}.tag-page h1{margin:8px 0 16px;font-size:2.125rem}
+@media(min-width:1200px){.withtoc{grid-template-columns:220px minmax(0,760px)}}
+@media(max-width:759px){.withtoc{display:block;padding-top:20px}.toc{display:none}.toc-m{display:block;font-size:1rem;margin-top:12px;margin-bottom:16px}.toc-m li.h3 a{font-size:1rem}.toc-m li.h2>ol{display:block}.table-tools{gap:3px}.table-tools input{width:8rem;max-width:32%}.reader-table.table-full[popover]{inset:8px;padding:8px}header.site nav.main a{padding:4px 6px}.home-heading{padding-top:12px}.logo span{display:none}header.site .wrap{height:auto;min-height:64px;padding-block:8px}.home-feed{padding-top:10px}.table-hint{line-height:1.25}.feed-entry .tag-links{gap:8px}}
+@media(forced-colors:active){.entry .reader-table td.count-cell{background:Canvas;color:CanvasText}.reader-table mark{background:Highlight;color:HighlightText}.entry .reader-table :is(th,td),.table-scroll{border-color:CanvasText}.table-columns[popover],.reader-table.table-full[popover]{border-color:CanvasText}}
+@media print{.table-tools,.table-hint,.table-empty,.figure-back{display:none!important}.table-scroll.long-table,.table-scroll{max-height:none;overflow:visible}.entry .reader-table table{max-width:100%;width:auto}.reader-table .table-sort{pointer-events:none}.sort-arrow{display:none}.feed-entry .claim,.feed-entry .verdict{display:block}}
+
+.cite button{font-size:1rem}.toc .figures-link a{font-size:1rem}.reader-table[popover] .table-hint{flex:none}
+
+/* Prose cells wrap naturally; only atomic values receive nowrap. */
+.entry .reader-table :is(td,th).prose-col{min-width:0;max-width:none}
+.entry .reader-table :is(td,th).text-col{min-width:0;max-width:none}
+
+
+.entry .body-md>p{margin-top:10px;margin-bottom:10px}
+.entry .body-md>ul,.entry .body-md>ol{margin-top:10px;margin-bottom:10px}
+.entry .body-md h2{margin-top:28px;padding-top:10px}
+.entry .body-md h3{margin-top:22px}
+.sickly-kwic table{font-size:1rem!important}
+
+figure.infographic{--mut:inherit;--primary:inherit;--card:inherit;--fg:inherit;color:var(--fg);background:var(--bg);color-scheme:inherit}
+.sickly-kwic{color:var(--fg)!important;color-scheme:inherit}.ig-cols .lost b{color:var(--fg)}
+.sickly-kwic .table-tools{margin:0}.sickly-kwic .table-tools :is(input,select,button){padding:3px 5px;font-size:1rem}.sickly-kwic .table-count{font-size:1rem}.sickly-kwic .table-scroll table{min-width:0;width:auto}.entry .sickly-kwic .reader-table td:nth-child(5){min-width:0}
+
+@media(max-width:759px){header.site nav.main{flex:1;min-width:0}}
+
+.dlg .search-field{gap:.6rem}.search-field>svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:2}.dlg .search-field .search-input{flex:1;min-width:0;width:auto;margin:0}.search-results [role=option] span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.35}.search-results [role=option]{line-height:1.35}.search-results h3{margin:.5rem 0}
+
+.entry .reader-table.count-matrix tbody tr>td.count-cell{background:color-mix(in srgb,var(--primary) var(--cell-tint),var(--bg));color:var(--fg)}
+@media(forced-colors:active){.entry .reader-table.count-matrix tbody tr>td.count-cell{background:Canvas;color:CanvasText}}
+
+/* The sticky publication header must not expose the scrolling article. */
+:root header.site{background:var(--bg)}
+/* One high-contrast match treatment in table filters and site search, in both themes. */
+.reader-table mark,.dlg .search-results mark{background:#f5cf62;color:#20232a}
+@media(forced-colors:active){.reader-table mark,.dlg .search-results mark{background:Highlight;color:HighlightText}}
+
+.entry .reader-table :is(th,td){white-space:normal}
+.entry .reader-table td.nowrap{white-space:nowrap}
+.entry .reader-table th.num{white-space:normal}
+.entry .reader-table.wide-table tr>:first-child{position:sticky;left:0;z-index:2}
+.entry .reader-table.wide-table thead tr>:first-child{z-index:4}
+
+.entry .reader-table.wrap-dates td.full-date{white-space:normal}.date-day-month{white-space:nowrap}
+
+/* Native auto layout shares width between complete text columns. */
+/* Design prototypes only. Reuse the existing publication palette and header. */
+.home-heading{padding-top:16px}.home-heading h1{font-size:2rem;margin-bottom:6px}.home-heading p{max-width:54rem;line-height:1.4}
+.subjects{display:flex;flex-wrap:wrap;gap:6px 18px;padding:12px 0 10px;border-bottom:1px solid var(--bd);line-height:1.4}.subjects a{text-decoration:none;padding:2px 0;border-bottom:2px solid transparent}.subjects a:hover,.subjects a[aria-current=page]{border-color:var(--primary)}.subjects span,.subject-heading h2 span{color:var(--mut);font-weight:400;font-family:Inter,system-ui,sans-serif}
+.section-title{display:flex;align-items:baseline;gap:12px;margin:14px 0 8px}.section-title h2{font-size:1.375rem;margin:0}.section-title>a{margin-left:auto}.section-title>span{color:var(--mut)}
+.column-labels,.check-row{display:grid;grid-template-columns:minmax(0,43fr) minmax(0,57fr);gap:24px}.column-labels{padding:5px 10px;background:var(--sec);font-weight:600}.check-row{padding:12px 10px;border-bottom:1px solid var(--bd)}.check-row h3,.check-card h3{font-size:1.125rem;line-height:1.3;margin:0 0 5px}.check-row h3 a,.check-card h3 a{text-decoration-thickness:1px;text-underline-offset:2px}.entry-meta{color:var(--mut);font-size:1rem;line-height:1.35;margin-top:6px}.finding{margin:0;line-height:1.4;font-size:1rem}.phone-label{display:none}.checks{margin-bottom:28px}
+.subject-section{scroll-margin-top:80px;margin-top:22px}.subject-heading{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--mut);padding-bottom:6px}.subject-heading h2{font-size:1.5rem;margin:0}.subject-heading p{color:var(--mut);margin:0;font-size:1rem}.subject-heading h2 span{font-size:1rem}.subject-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.check-card{padding:12px 0;border-bottom:1px solid var(--bd)}.check-card h3{margin-bottom:7px}.recent{scroll-margin-top:80px}.recent-links{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:10px 12px;background:var(--sec);border:1px solid var(--bd)}.recent-links time{display:block;color:var(--mut);font-size:1rem;line-height:1.3;margin-bottom:4px}.recent-links a{line-height:1.35;display:block}.option-b{padding-bottom:32px}footer{border-top:1px solid var(--bd);padding-top:20px!important;font-size:1rem}footer p{font-size:1rem;margin:6px 0 20px}header.site nav.main{flex-wrap:nowrap}main{overflow-wrap:break-word}
+@media(max-width:600px){.home-heading h1{font-size:1.75rem}.home-heading{padding-top:12px}.home-heading p{line-height:1.4}.subjects{gap:4px 16px;padding-top:10px}.section-title{flex-wrap:wrap;gap:4px 10px}.section-title h2{font-size:1.25rem}.section-title>a{margin-left:auto}.column-labels{display:none}.check-row{grid-template-columns:1fr;gap:8px;padding:12px 0}.check-row h3,.check-card h3{font-size:1.1875rem}.phone-label{display:inline}.subject-grid{grid-template-columns:1fr}.subject-heading{display:block}.subject-heading p{margin-top:3px;line-height:1.35}.recent-links{grid-template-columns:1fr;gap:10px}.recent-links>div{display:grid;grid-template-columns:5rem 1fr;gap:8px}.recent-links time{line-height:1.35;margin:0}.recent-links a{line-height:1.35}.subject-section{margin-top:20px}header.site nav.main{gap:2px;justify-content:flex-end}header.site nav.main a{padding:4px}header.site .logo b{width:30px;height:30px}.search-trigger kbd{display:none}header.site .wrap{gap:6px}footer .house-controls{gap:12px}}
+@media print{.column-labels{background:none}.subjects{display:none}.check-row{break-inside:avoid}}
+
+@media(max-width:600px){header.site nav.main{flex-wrap:wrap}header.site .wrap{align-items:center}header.site nav.main a{overflow-wrap:normal}}
+html:not(.js) .option-a .checks{display:none}
+@media(max-width:600px){.recent-links>div{grid-template-columns:minmax(0,5rem) minmax(0,1fr)}.recent-links>div>*{min-width:0;overflow-wrap:break-word}}
+</style><body><a class="skip" href="#main">Skip to content</a><header class="site"><div class="wrap"><a class="logo" href="https://researchsnacks.semanticmachines.fyi/"><b>RS</b><span>Research Snacks</span></a><nav class="main" aria-label="Main"><a class="on" href="#main">Entries</a><a href="https://researchsnacks.semanticmachines.fyi/about/">About</a><a href="https://datapoints.semanticmachines.fyi">Model Data Points</a><a class="search-trigger" href="https://researchsnacks.semanticmachines.fyi/search/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="m16 16 5 5"></path></svg><span>Search</span><kbd>/</kbd></a></nav></div></header><main id="main" class="wrap option-a"><section class="home-heading"><h1>Research Snacks</h1><p data-source-ref="copy-front-page.md#intro">Public claims checked against evidence, with AI assistance. Each snack gives the finding, sources and method so you can judge the result.</p></section><nav class="subjects" aria-label="Subjects"><a data-subject="all" href="#main" aria-current="page">All <span>10</span></a><a data-subject="linguistics" href="#fallback-linguistics">Linguistics <span>4</span></a><a data-subject="economic-history" href="#fallback-economic-history">Economic history <span>5</span></a><a data-subject="political-change" href="#fallback-political-change">Political change <span>1</span></a></nav><section class="checks"><div class="section-title"><h2 id="list-title">Latest checks</h2><span id="result-count" role="status" aria-live="polite">10 checks</span><a href="https://researchsnacks.semanticmachines.fyi/rss.xml">Subscribe via RSS</a></div><div class="column-labels" aria-hidden="true"><span>Question</span><span>Finding</span></div><article class="check-row" data-subject-row="political-change"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-revolution-speed-2011-redo/">Does faster communication make revolutions faster?</a></h3><div class="entry-meta">Political change · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>The two cases were six days apart. They do not establish whether technology changes the speed of regime collapse.</p></article><article class="check-row" data-subject-row="linguistics"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-literally-pet-peeve-redo/">Is “literally” used mainly for emphasis?</a></h3><div class="entry-meta">Linguistics · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Emphatic usage is well established. Earlier frequency comparisons and claims about confusion remain unproved.</p></article><article class="check-row" data-subject-row="linguistics"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-hawks-and-doves/">Do political hawks kill political doves?</a></h3><div class="entry-meta">Linguistics · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Bird imagery does extend to feathers, calls and flight. Killing or eating political doves was not found in this check.</p></article><article class="check-row" data-subject-row="linguistics"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/">What made decipherment possible, and could AI help?</a></h3><div class="entry-meta">Linguistics · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Readable parallels, names or related languages were key in this sample. An AI agent advantage has not been demonstrated.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/">What can canals and nuclear power tell us about AI investment?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>These were smaller investment booms. Nuclear revenue was substantial at operating plants; revenue alone does not show profitability.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/">Is the AI investment boom unprecedented?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>US railways offer a close precedent. Optimism about AI returns still depends on asset life, costs and future demand.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-17-pace-of-change-1900-2026/">Did work change more before 1970 than since?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-17">17 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>It depends on how jobs are counted. Modern categories and wider social measures show as much change, or more, in the later period.</p></article><article class="check-row" data-subject-row="linguistics"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-17-can-a-cake-be-sickly/">Can a cake be sickly?</a></h3><div class="entry-meta">Linguistics · <time datetime="2026-11-17">17 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Both “a sickly cake” and “the cake is sickly” occur. The American sample cannot establish a British–American difference.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-17-ai-wealth-control-2035/">Could AI control more wealth by 2035 than humans do today?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-17">17 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Plausible as an aggressive scenario for delegated investment decisions. History does not establish a global wealth crossover.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-16-one-in-270-jobs/">Is only one of 270 jobs from 1950 obsolete?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-16">16 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>The original count concerns jobs eliminated by automation. At least 15 more have gone; “obsolete” is a different claim.</p></article></section><noscript><nav class="no-js-subjects"><a href="#fallback-linguistics">Linguistics</a> · <a href="#fallback-economic-history">Economic history</a> · <a href="#fallback-political-change">Political change</a></nav><section id="fallback-linguistics"><h2>Linguistics</h2><article class="check-row" data-subject-row="linguistics"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-literally-pet-peeve-redo/">Is “literally” used mainly for emphasis?</a></h3><div class="entry-meta">Linguistics · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Emphatic usage is well established. Earlier frequency comparisons and claims about confusion remain unproved.</p></article><article class="check-row" data-subject-row="linguistics"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-hawks-and-doves/">Do political hawks kill political doves?</a></h3><div class="entry-meta">Linguistics · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Bird imagery does extend to feathers, calls and flight. Killing or eating political doves was not found in this check.</p></article><article class="check-row" data-subject-row="linguistics"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-decipherment-methods-and-agents/">What made decipherment possible, and could AI help?</a></h3><div class="entry-meta">Linguistics · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Readable parallels, names or related languages were key in this sample. An AI agent advantage has not been demonstrated.</p></article><article class="check-row" data-subject-row="linguistics"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-17-can-a-cake-be-sickly/">Can a cake be sickly?</a></h3><div class="entry-meta">Linguistics · <time datetime="2026-11-17">17 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Both “a sickly cake” and “the cake is sickly” occur. The American sample cannot establish a British–American difference.</p></article></section><section id="fallback-economic-history"><h2>Economic history</h2><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-canals-nuclear-investment-booms/">What can canals and nuclear power tell us about AI investment?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>These were smaller investment booms. Nuclear revenue was substantial at operating plants; revenue alone does not show profitability.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-ai-capex-historical-booms/">Is the AI investment boom unprecedented?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>US railways offer a close precedent. Optimism about AI returns still depends on asset life, costs and future demand.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-17-pace-of-change-1900-2026/">Did work change more before 1970 than since?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-17">17 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>It depends on how jobs are counted. Modern categories and wider social measures show as much change, or more, in the later period.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-17-ai-wealth-control-2035/">Could AI control more wealth by 2035 than humans do today?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-17">17 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>Plausible as an aggressive scenario for delegated investment decisions. History does not establish a global wealth crossover.</p></article><article class="check-row" data-subject-row="economic-history"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-16-one-in-270-jobs/">Is only one of 270 jobs from 1950 obsolete?</a></h3><div class="entry-meta">Economic history · <time datetime="2026-11-16">16 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>The original count concerns jobs eliminated by automation. At least 15 more have gone; “obsolete” is a different claim.</p></article></section><section id="fallback-political-change"><h2>Political change</h2><article class="check-row" data-subject-row="political-change"><div class="question-cell"><h3><a href="https://researchsnacks.semanticmachines.fyi/2026-11-19-revolution-speed-2011-redo/">Does faster communication make revolutions faster?</a></h3><div class="entry-meta">Political change · <time datetime="2026-11-19">19 Nov 2026</time></div></div><p class="finding"><b class="phone-label">Finding: </b>The two cases were six days apart. They do not establish whether technology changes the speed of regime collapse.</p></article></section></noscript></main><footer class="wrap"><div class="house-controls"><a href="https://researchsnacks.semanticmachines.fyi/rss.xml">Subscribe via RSS</a><a href="https://researchsnacks.semanticmachines.fyi/#cite">Cite this page</a><a href="https://researchsnacks.semanticmachines.fyi/index.md">Markdown version</a><a href="https://researchsnacks.semanticmachines.fyi/llms.txt">For agents</a></div><p>Content CC BY 4.0, code MIT.</p></footer><script>const links=[...document.querySelectorAll('[data-subject]')];function filter(){const raw=new URL(location.href).searchParams.get('cat')||'all';const cat=links.some(a=>a.dataset.subject===raw)?raw:'all';let n=0;document.querySelectorAll('[data-subject-row]').forEach(row=>{row.hidden=cat!=='all'&&row.dataset.subjectRow!==cat;if(!row.hidden)n++});links.forEach(a=>a.setAttribute('aria-current',a.dataset.subject===cat?'page':'false'));document.querySelector('#result-count').textContent=n+' checks';document.querySelector('#list-title').textContent=cat==='all'?"Latest checks":links.find(a=>a.dataset.subject===cat).childNodes[0].textContent.trim();}links.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();history.pushState(null,'','?cat='+a.dataset.subject);filter()}));addEventListener('popstate',filter);filter();</script></body></html>

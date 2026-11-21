@@ -1,0 +1,213 @@
+{
+  "mode": "score",
+  "date": "2026-11-21",
+  "subjects": [
+    {
+      "id": "P",
+      "kind": "comparator",
+      "name": "Current page"
+    },
+    {
+      "id": "Q",
+      "kind": "option",
+      "name": "A: Latest checks"
+    },
+    {
+      "id": "R",
+      "kind": "option",
+      "name": "B: Subject sections"
+    }
+  ],
+  "rubric": "packet-front-page-scoring.md",
+  "rounds": [
+    {
+      "seats": [
+        {
+          "seat": "one",
+          "scores": [
+            {
+              "subject": "R",
+              "criteria": [
+                {
+                  "id": 1,
+                  "score": 9,
+                  "reason": "The introduction explains what is checked and what readers receive. Questions and explicit findings make individual checks understandable without earlier posts or AI knowledge."
+                },
+                {
+                  "id": 2,
+                  "score": 8,
+                  "reason": "Named subject sections and short descriptions support subject seeking, with readable question/finding cards. However, b-subjects-390.png spends approximately y=303–507 on three latest links before the first full finding begins at y=668. This delays comparison on a phone. At 950px, the two-column cards provide useful density."
+                },
+                {
+                  "id": 3,
+                  "score": 7,
+                  "reason": "The latest-three strip, dates and prominent RSS link provide a clear return route. The complete collection is then ordered by subject, so comparing recent work beyond those three requires visiting separate sections. In b-subjects-950-full.png, the newest political-change entry is repeated near the bottom after the older economic-history entries."
+                }
+              ],
+              "overall": 8,
+              "strongest_objection": "The duplicated latest strip adds substantial phone scrolling while providing no findings there. In b-subjects-390.png, the first complete check starts around y=613, and subsequent newest checks are separated by subject."
+            },
+            {
+              "subject": "P",
+              "criteria": [
+                {
+                  "id": 1,
+                  "score": 6,
+                  "reason": "The introduction states that claims are checked against primary data, but several titles and quotations assume interest in the author's earlier writing. In live-950.png, 'Literally: how close was I in 2011?' and its first-person quotation require extra reading before an outsider can identify the actual research question."
+                },
+                {
+                  "id": 2,
+                  "score": 5,
+                  "reason": "Chronological entries are readable, but quotations, verdicts and long tag lists compete for attention. The Research category conceals half the collection's actual subject. In live-390.png, the first claim and verdict both end in ellipses, and the second verdict is also truncated, weakening comparison precisely where phone readers need concise complete findings."
+                },
+                {
+                  "id": 3,
+                  "score": 8,
+                  "reason": "Chronology, dates, entry links and RSS support returning readers. The five Research entries have no useful subject route."
+                }
+              ],
+              "overall": 6.33,
+              "strongest_objection": "On a phone, the summaries consume considerable space while still withholding their endings. The truncation in live-390.png makes the first two checks harder to assess, and author-centred titles compound the problem for new readers."
+            },
+            {
+              "subject": "Q",
+              "criteria": [
+                {
+                  "id": 1,
+                  "score": 9,
+                  "reason": "The first screen explains the purpose and presents a concrete question beside a bounded finding. The language describes the evidence and its limits without requiring familiarity with the author or AI."
+                },
+                {
+                  "id": 2,
+                  "score": 9,
+                  "reason": "The aligned question/finding rows at 950px enable quick comparison across checks, and the subject labels expose meaningful routes. In a-latest-390.png, stacked rows preserve complete findings and clear separators. The measured filtering and restoration behaviour supports focused browsing without losing the collection."
+                },
+                {
+                  "id": 3,
+                  "score": 9,
+                  "reason": "Latest checks, visible dates, RSS and a single chronological sequence make returning easy. All and the subject controls remain near the top, and the measured Back restoration preserves a reader's chosen subject. All ten canonical entry routes remain available."
+                }
+              ],
+              "overall": 9,
+              "strongest_objection": "The phone header for the list uses more vertical space than necessary: in a-latest-390.png, Subscribe via RSS sits on its own line around y=344, separating the Latest checks heading from the first question around y=381. This is a modest density cost."
+            }
+          ],
+          "pairwise": {
+            "winner": "Q",
+            "reason": "Q offers the strongest balance across the three journeys. It gives outsiders complete questions and findings, gives subject seekers meaningful filters, and preserves one clear chronology for returning readers. R improves subject overview but spends scarce phone space repeating recent links and fragments chronology. P preserves recency but makes readers decode author-centred claims and incomplete phone summaries."
+          },
+          "missing_evidence": [
+            "No observed reader performance is supplied; these scores are an independent expert judgement rather than user-testing results.",
+            "The screenshots do not establish keyboard focus visibility or screen-reader interpretation of Q's question/finding relationship and subject-state changes.",
+            "The packet explicitly leaves integration with the existing search dialog and shared shell unproven."
+          ],
+          "raw_evidence": "Full reply retained in DTC review evidence, seat one"
+        },
+        {
+          "seat": "two",
+          "scores": [
+            {
+              "subject": "Q",
+              "criteria": [
+                {
+                  "id": 1,
+                  "score": 9,
+                  "reason": "The introductory sentence explains the offer immediately. Question titles and concise findings make individual checks understandable without knowing the author's earlier work."
+                },
+                {
+                  "id": 2,
+                  "score": 9,
+                  "reason": "At 950px, aligned Question/Finding columns support comparison across several checks. At 390px, each title retains its finding directly underneath, and visible subject filters provide a short route to relevant material. The measured filter counts and Back behaviour support that route."
+                },
+                {
+                  "id": 3,
+                  "score": 9,
+                  "reason": "Latest checks, dates, Subscribe via RSS and All 10 are plainly visible. The chronological sequence supports returning readers, while the measured subject restoration and canonical-link checks preserve access."
+                }
+              ],
+              "overall": 9,
+              "strongest_objection": "In a-latest-390.png, the heading, filters and separate RSS line occupy the first approximately 360px, so only two complete checks fit in the initial phone viewport. This limits initial breadth, although both include usable findings."
+            },
+            {
+              "subject": "R",
+              "criteria": [
+                {
+                  "id": 1,
+                  "score": 9,
+                  "reason": "The plain introductory sentence establishes the purpose, and each subject section adds a useful description. Question titles paired with findings give an outsider enough context to choose."
+                },
+                {
+                  "id": 2,
+                  "score": 8,
+                  "reason": "Subject sections and their descriptions make browsing by discipline clear. Two columns work well at 950px, and measured jump-link behaviour supports subject seekers. In b-subjects-390.png, the repeated latest-links strip delays the first finding until roughly 670px down the page, reducing the useful content visible on arrival."
+                },
+                {
+                  "id": 3,
+                  "score": 7,
+                  "reason": "Latest additions and RSS are prominent, and all entries remain accessible. However, b-subjects-950-full.png shows only three checks in the latest strip despite six checks carrying the latest displayed date, 19 November. A returning reader must also inspect the subject sections to discover the rest of that day's work."
+                }
+              ],
+              "overall": 8,
+              "strongest_objection": "The three-item latest strip gives incomplete coverage of the latest day's additions and repeats links encountered again below. This is visible in b-subjects-950-full.png; on b-subjects-390.png, that repetition also consumes much of the first screen."
+            },
+            {
+              "subject": "P",
+              "criteria": [
+                {
+                  "id": 1,
+                  "score": 6,
+                  "reason": "The introduction communicates claim checking against primary data, but several titles and verdicts assume familiarity with earlier author claims. In live-950.png, 'Literally: how close was I in 2011?' and the verdict 'Right about...' require reading surrounding prose to identify the actual question."
+                },
+                {
+                  "id": 2,
+                  "score": 5,
+                  "reason": "Long quotations, verdicts and tag lists compete for attention. The category Research does little to expose economic-history material. In live-390.png, both the first claim and its verdict are visibly truncated, weakening the evidence available for choosing a check."
+                },
+                {
+                  "id": 3,
+                  "score": 8,
+                  "reason": "The feed has an obvious chronological order, dates, entry links and an RSS route near the top. Subject access is weaker because five entries fall under Research, and the initial RSS label describes the format less clearly than Subscribe via RSS."
+                }
+              ],
+              "overall": 6.3333333333,
+              "strongest_objection": "In live-390.png, truncation removes part of the claim and verdict while multiple tag links remain visible. Readers spend substantial first-screen space on surrounding metadata without seeing the complete finding."
+            }
+          ],
+          "pairwise": {
+            "winner": "Q",
+            "reason": "Q combines the clearest comparison structure at 950px with complete findings on phone and one chronological sequence for returning readers. R offers stronger persistent subject grouping but spends valuable first-screen space repeating recent links and shows only three latest additions. P requires substantially more reading and prior context."
+          },
+          "missing_evidence": [
+            "The supplied measurements establish navigation behaviour, but these are independent expert judgements rather than observations of outside readers completing the three journeys.",
+            "The prototypes do not demonstrate integration with the original search dialog and shell; that limitation is stated in the packet."
+          ],
+          "raw_evidence": "Full reply retained in DTC review evidence, seat two"
+        }
+      ],
+      "response": {
+        "acted_on": [],
+        "declined": [],
+        "escalated": [
+          "Owner chooses A, B or revised design. Phone RSS row improvement is recorded for the chosen implementation; mockups are unchanged after scoring."
+        ]
+      }
+    }
+  ],
+  "agents": {
+    "implementer": "gpt-6.1-sol",
+    "seats": 2,
+    "family": "OpenAI",
+    "independence": "Fresh context per seat; no implementation recommendations; shuffled order. Same-model evidence only."
+  },
+  "usage": {
+    "tokens": null,
+    "cost": null,
+    "basis": "Subscription usage not separately metered for these two native calls."
+  },
+  "outcome": {
+    "judge_preference": "Q",
+    "proposer_preference": "Q",
+    "owner_verdict": null,
+    "status": "Awaiting owner choice"
+  }
+}
