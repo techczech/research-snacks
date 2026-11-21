@@ -9,6 +9,23 @@ import { h, terms, matchesAll, highlight, listboxNav, loadJSON } from './kit/sea
 import { keyMap } from '../lib/keys';
 
 initDialogs(); initCopy(); initTables();
+
+const toolFrames = Array.from(document.querySelectorAll<HTMLIFrameElement>('iframe.tool-embed'));
+if (toolFrames.length) {
+  window.addEventListener('message', ({origin, source, data}) => {
+    // The bundled iframe is sandboxed without allow-same-origin.
+    if (origin !== 'null' || data?.type !== 'research-snack:tool-height'
+        || !Number.isInteger(data.height) || data.height < 1 || data.height > 100_000) return;
+    const frame = toolFrames.find(tool => tool.contentWindow === source);
+    if (frame) frame.style.height = `${data.height + frame.offsetHeight - frame.clientHeight}px`;
+  });
+  for (const frame of toolFrames) {
+    // The frame may have sent its initial size before this script loaded.
+    const measure = () => frame.contentWindow?.postMessage('research-snack:measure-tool', '*');
+    frame.addEventListener('load', measure);
+    measure();
+  }
+}
 const search = document.querySelector<HTMLDialogElement>('#search-dlg')!;
 const keys = document.querySelector<HTMLDialogElement>('#keys-dlg')!;
 const input = search.querySelector<HTMLInputElement>('input')!;

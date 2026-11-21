@@ -2,7 +2,7 @@ import { test, expect } from 'bun:test';
 import { mkdtempSync, cpSync, writeFileSync, rmSync, readFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { getEntries, parseEntry, privacyErrors, referencesRIS, entryHTML, renderMarkdown, ROOT } from '../src/lib/content';
-const entry=getEntries()[0];
+const entry=getEntries().find(x=>x.id==='2026-11-16-one-in-270-jobs')!;
 test('RIS preserves repeated authors and all fields',()=>{
  const text=referencesRIS([{type:'article',authors:['Jane Smith','Doe, John'],title:'A study',container:'Journal',date:'2024-02-03',volume:2,issue:1,pages:'10–20',publisher:'Press',url:'https://example.org/',doi:'10.1234/example'}]);
  for(const line of ['TY  - JOUR','AU  - Smith, Jane','AU  - Doe, John','TI  - A study','T2  - Journal','PY  - 2024','DA  - 2024/02/03','VL  - 2','IS  - 1','SP  - 10','EP  - 20','PB  - Press','UR  - https://example.org/','DO  - 10.1234/example','ER  - '])expect(text.split('\n')).toContain(line);

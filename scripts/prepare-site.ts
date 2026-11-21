@@ -6,6 +6,7 @@ const entries = getEntries(); getAbout(); // Fail before touching the previous o
 const dest = join(ROOT,'.generated/public');
 rmSync(dest,{recursive:true,force:true}); mkdirSync(dest,{recursive:true});
 for (const asset of ['style.css','copy.js','_headers','_redirects']) cpSync(join(ROOT,'scripts/assets',asset),join(dest,asset));
+cpSync(join(ROOT,'scripts/assets/tools'),join(dest,'tools'),{recursive:true});
 for(const name of ['house','compact'])cpSync(join(ROOT,'src/styles',name+'.css'),join(dest,name+'.css'));
 for (const x of entries) {
   const unexpected=readdirSync(x._folder).filter(n=>!['index.md','charts','.DS_Store'].includes(n));

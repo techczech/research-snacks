@@ -28,3 +28,5 @@ html{scroll-behavior:auto}
 
 :focus-visible{outline:2px solid var(--primary);outline-offset:3px}.card:focus-visible,.card:has(a:focus-visible){outline:2px solid var(--primary);outline-offset:3px}
 h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+
+.tool-embed { display: block; width: 100%; height: clamp(32rem, 82vh, 56rem); border: 1px solid var(--bd); border-radius: 0.5rem; }

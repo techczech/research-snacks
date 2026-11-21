@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "charts/preset-coverage.csv"
+  },
+  "width": "container",
+  "height": {
+    "step": 27
+  },
+  "title": {
+    "text": "Preset matches by source period",
+    "anchor": "start"
+  },
+  "params": [
+    {
+      "name": "pick",
+      "select": {
+        "type": "point",
+        "fields": [
+          "result"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "presets",
+      "type": "quantitative",
+      "title": "Presets",
+      "axis": {
+        "tickMinStep": 1
+      }
+    },
+    "y": {
+      "field": "period",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Classical",
+        "Early medieval",
+        "Late medieval",
+        "Early modern",
+        "Modern"
+      ]
+    },
+    "color": {
+      "field": "result",
+      "type": "nominal",
+      "legend": {
+        "title": null,
+        "orient": "top"
+      },
+      "scale": {
+        "domain": [
+          "Matched",
+          "Mismatch"
+        ],
+        "range": [
+          "#20717b",
+          "#a44626"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "pick",
+        "value": 1
+      },
+      "value": 0.25
+    },
+    "order": {
+      "field": "result",
+      "sort": "ascending"
+    },
+    "tooltip": [
+      {
+        "field": "period",
+        "title": "Period"
+      },
+      {
+        "field": "result",
+        "title": "Outcome"
+      },
+      {
+        "field": "presets",
+        "type": "quantitative",
+        "title": "Presets"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

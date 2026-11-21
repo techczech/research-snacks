@@ -190,5 +190,31 @@
     "code/charts.py": "snacks/2026-11-19-revolution-speed-2011-redo/code/charts.py",
     "code/reproduce.py": "snacks/2026-11-19-revolution-speed-2011-redo/code/reproduce.py",
     "code/session_usage_codex.py": "snacks/2026-11-19-revolution-speed-2011-redo/code/session_usage_codex.py"
+  },
+  "2026-11-21-roman-numerals-across-periods": {
+    "data/conventions.json": "snacks/2026-11-21-roman-numerals-across-periods/data/conventions.json",
+    "data/council/claude-haiku-5-5.md": "snacks/2026-11-21-roman-numerals-across-periods/data/council/claude-haiku-5-5.md",
+    "data/council/gemini-4-neon.md": "snacks/2026-11-21-roman-numerals-across-periods/data/council/gemini-4-neon.md",
+    "data/council/packet.md": "snacks/2026-11-21-roman-numerals-across-periods/data/council/packet.md",
+    "data/council/reconciliation.md": "snacks/2026-11-21-roman-numerals-across-periods/data/council/reconciliation.md",
+    "data/examples.json": "snacks/2026-11-21-roman-numerals-across-periods/data/examples.json",
+    "data/findings.md": "snacks/2026-11-21-roman-numerals-across-periods/data/findings.md",
+    "data/first-version-ratings.json": "snacks/2026-11-21-roman-numerals-across-periods/data/first-version-ratings.json",
+    "data/preset-check.md": "snacks/2026-11-21-roman-numerals-across-periods/data/preset-check.md",
+    "data/ratings.json": "snacks/2026-11-21-roman-numerals-across-periods/data/ratings.json",
+    "data/references.json": "snacks/2026-11-21-roman-numerals-across-periods/data/references.json",
+    "data/search-log.md": "snacks/2026-11-21-roman-numerals-across-periods/data/search-log.md",
+    "code/build-data.mjs": "snacks/2026-11-21-roman-numerals-across-periods/code/build-data.mjs",
+    "code/data/conventions.json": "snacks/2026-11-21-roman-numerals-across-periods/code/data/conventions.json",
+    "code/data/glossary.json": "snacks/2026-11-21-roman-numerals-across-periods/code/data/glossary.json",
+    "code/data/letters.json": "snacks/2026-11-21-roman-numerals-across-periods/code/data/letters.json",
+    "code/data/research.js": "snacks/2026-11-21-roman-numerals-across-periods/code/data/research.js",
+    "code/data/teaching.json": "snacks/2026-11-21-roman-numerals-across-periods/code/data/teaching.json",
+    "code/index.html": "snacks/2026-11-21-roman-numerals-across-periods/code/index.html",
+    "code/reader.css": "snacks/2026-11-21-roman-numerals-across-periods/code/reader.css",
+    "code/reader.js": "snacks/2026-11-21-roman-numerals-across-periods/code/reader.js",
+    "code/reproduce.py": "snacks/2026-11-21-roman-numerals-across-periods/code/reproduce.py",
+    "code/roman.js": "snacks/2026-11-21-roman-numerals-across-periods/code/roman.js",
+    "code/test.mjs": "snacks/2026-11-21-roman-numerals-across-periods/code/test.mjs"
   }
 }
