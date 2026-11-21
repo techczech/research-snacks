@@ -10,7 +10,7 @@ test('research links share one mapping in authored text, HTML and Files lists',(
  expect(researchAssetURL(url,id)).toBe(url);
  expect(()=>researchAssetURL('data/not-published.csv',id)).toThrow('no public research-file mapping');
  expect(renderMarkdown('[Totals](data/source-totals.csv)','entries/'+id)).toContain(`href="${url}"`);
- expect(getEntries().flatMap(x=>researchFiles(x.id))).toHaveLength(172);
+ expect(getEntries().flatMap(x=>researchFiles(x.id))).toHaveLength(195);
  const redirects=readFileSync('scripts/assets/_redirects','utf8');
  const rules=redirects.trim().split('\n').map(line=>line.split(' '));
  expect(rules.length).toBeLessThanOrEqual(100);

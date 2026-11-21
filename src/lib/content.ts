@@ -173,10 +173,19 @@ export function withTOC(html: string,title: string,entryId?:string): string {
 }
 export function entryHTML(x: Entry): string {
   const ul = (items: any[]) => '<ul>'+items.map(i => `<li>${String(i).startsWith('http') ? `<a href="${e(i)}">${e(i)}</a>` : e(i)}</li>`).join('')+'</ul>';
-  const facts = `<dl class="facts"><dt>Claim</dt><dd>&ldquo;${e(x.claim)}&rdquo; (<a href="${e(x.claim_source)}">source</a>)</dd><dt>Verdict</dt><dd>${e(x.verdict)}</dd><dt>Time taken</dt><dd>${e(x.time_taken)}</dd><dt>Human time</dt><dd>${e(x.human_time)}</dd><dt>Tools</dt><dd>${ul(x.tools)}</dd><dt>Data sources</dt><dd>${ul(x.data_sources)}</dd></dl>`;
+  const isTool = x.kind === 'tool';
+  const facts = `<dl class="facts"><dt>${isTool ? 'Request' : 'Claim'}</dt><dd>&ldquo;${e(x.claim)}&rdquo; (<a href="${e(x.claim_source)}">source</a>)</dd><dt>${isTool ? 'Result' : 'Verdict'}</dt><dd>${e(x.verdict)}</dd><dt>Time taken</dt><dd>${e(x.time_taken)}</dd><dt>Human time</dt><dd>${e(x.human_time)}</dd><dt>Tools</dt><dd>${ul(x.tools)}</dd><dt>Data sources</dt><dd>${ul(x.data_sources)}</dd></dl>`;
   let rendered = readingSurfaces(renderMarkdown(x._body,x._folder),x.id).html;
   const split = /<h2[^>]*>How this was made<\/h2>/.exec(rendered);
-  const argument = split ? rendered.slice(0,split.index) : rendered;
+  let argument = split ? rendered.slice(0,split.index) : rendered;
+  if (isTool) {
+    // Only an explicitly marked link to a bundled tool can become an iframe.
+    argument = argument.replace(/(<p><a href="(\/tools\/[a-z0-9-]+\/)" title="Embed interactive tool">([^<>]+)<\/a><\/p>)/g,
+      (link, _, path: string, label: string) => {
+        if (!existsSync(join(ROOT, 'scripts/assets', path, 'index.html'))) throw new Error(`${x.id}: missing bundled tool ${path}`);
+        return `${link}<iframe class="tool-embed" title="${label.replace(/^Open the /, '').replace(/ full-page$/, '')}" src="${path}?embed=1" loading="lazy" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>`;
+      });
+  }
   const making = split ? rendered.slice(split.index+split[0].length) : '';
   const refs = (x.references || []).map((r: any) => `<li>${referenceText(r)}</li>`).join('');
   const assets = [['data','Data'],['code','Code']].map(([sub,label]) => {
