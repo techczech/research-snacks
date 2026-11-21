@@ -1,0 +1,42 @@
+{
+  "source": "Owner annotated screenshot: introduction too small and collection too near left edge",
+  "measurements": [
+    {
+      "width": 950,
+      "introSize": 18,
+      "gutter": 32.3,
+      "introLineHeight": "27px",
+      "firstCardBottom": 527.5,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "introSize": 18,
+      "gutter": 40,
+      "introLineHeight": "27px",
+      "firstCardBottom": 500.5,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "introSize": 18,
+      "gutter": 24,
+      "introLineHeight": "27px",
+      "firstCardBottom": 718.78125,
+      "height": 844,
+      "overflow": false
+    }
+  ],
+  "checks": {
+    "build": true,
+    "tests": 17,
+    "assertions": 716,
+    "pages": 43,
+    "home_journeys_at_all_widths": true,
+    "enlarged_text_no_overflow": true
+  },
+  "scope": "Front-page introductory text and horizontal reading gutter only",
+  "production_deployed": false
+}
