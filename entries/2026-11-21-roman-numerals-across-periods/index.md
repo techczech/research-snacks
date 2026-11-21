@@ -5,12 +5,12 @@ date: "2026-11-21"
 kind: tool
 claim: "A calculator for translating Roman numerals across historical periods."
 claim_source: "https://researchsnacks.semanticmachines.fyi/2026-11-21-roman-numerals-across-periods/#what-dominik-asked-for"
-verdict: "The reader compares possible values using the period, the writing and the kind of document. The checked build returned the reported value for 45 of 47 selected historical examples."
-time_taken: "Reader request at 09:31, evidence-based build committed at 10:42 on 21 November (UK time, GMT). The article and preview followed."
+verdict: "The reader compares possible values using the period, the writing and the kind of document. The checked build returned the reported value for 46 of 48 selected historical examples."
+time_taken: "Reader request at 09:31, evidence-based build committed at 10:42 and the audience update at 10:56 on 21 November (UK time, GMT). The revised preview followed."
 human_time: "A few minutes, estimated from the brief and follow-ups. Reading and preview review time were not measured."
 tools: ["Claude Opus 5.5", "GPT-6.2 Sol", "Claude Haiku 5.5", "Gemini 4 Neon", "Web search and source retrieval", "JavaScript and Node.js", "Python, Vega-Lite and vl-convert"]
 data_sources: ["Inscription editions and catalogues, archive transcriptions, handbooks and dated printed examples"]
-summary: "Roman numerals can have several readings. Two strokes before X can subtract together, a bar can mark a numeral or multiply it, and raised letters can change the value of the group before them. Try 84 presets in a reader that ranks possible interpretations by source period. Its editorial ratings come from partial reading, and the checked build returned the documented value somewhere in the results for 45 of 47 reported examples."
+summary: "Roman numerals can have several readings. Two strokes before X can subtract together, a bar can mark a numeral or multiply it, and raised letters can change the value of the group before them. Try 97 presets in a reader that starts with one answer and lets you explore alternatives by source period. Its editorial ratings come from partial reading, and the checked build returned the documented value somewhere in the results for 46 of 48 reported examples."
 category: linguistics
 tags: ["Roman numerals", "palaeography", "historical dates", "research methods"]
 references:
@@ -57,6 +57,8 @@ references:
   - {"type": "webpage", "title": "Introduction to Manuscript Studies", "url": "https://discover.library.unt.edu/catalog/b3451328", "authors": ["Raymond Clemens", "Timothy Graham"], "year": 2007, "publisher": "Cornell University Press", "note": "Partial access · Chapter 6, p. 91, passage on Roman and Arabic numbers, OCR has glyph errors"}
   - {"type": "webpage", "title": "Anais da Biblioteca Nacional, vol. 140", "url": "https://www.gov.br/bn/pt-br/central-de-conteudos/producao/publicacoes/colecoes/anais-biblioteca-nacional/copy_of_anais-da-biblioteca-nacional-vol-140/anais-da-biblioteca-nacional-vol-140/an140_digital-9094.pdf", "authors": ["Biblioteca Nacional (Brazil)"], "corporate": true, "year": 2020, "publisher": "Fundação Biblioteca Nacional", "note": "Partial access · Date of imprint, p. 31; table and Wells clock example"}
   - {"type": "webpage", "title": "Diplomatics: The Science of Reading Medieval Documents. A Handbook", "url": "https://www.academia.edu/123756218/Diplomatics_The_Science_of_Reading_Medieval_Documents_A_Handbook_Milano_2024", "authors": ["Federico Gallo"], "year": 2024, "publisher": "Milano University Press", "note": "Partial access · Chapter XII, pp. 85–87; AUC, regnal, Spanish era, Anno Mundi and indictions"}
+  - {"type": "webpage", "title": "The Last Time I Saw Paris, copyright title card", "url": "https://www.copyrightdata.com/chart/ch02.html", "authors": ["Metro-Goldwyn-Mayer"], "corporate": true, "year": 1954, "publisher": "Title-card reproduction, CopyrightData.com", "note": "Partial access · Errors or Absence of Year"}
+  - {"type": "webpage", "title": "The Last Time I Saw Paris (1954), AFI Catalog of Feature Films", "url": "https://catalog.afi.com/Film/51256-THE-LAST-TIME-I-SAW-PARIS?cxt=filmography", "authors": ["American Film Institute"], "corporate": true, "publisher": "American Film Institute", "note": "Partial access · History and copyright details"}
 ---
 
 ## The request
@@ -77,7 +79,11 @@ Enter a numeral as written and choose its source period. Roman inscriptions some
 
 ### Try the calculator
 
-Start with `IIX` in a Classical Roman source, or try `Mᵒiiijᶜlvj` in a late medieval source. Keep dots, spaces and raised letters when you copy a numeral. You can filter the 84 presets by period, convention or origin. Choose **Passage** for a transcription containing more than one number, **Chronogram** for a date made from selected letters, or a date reckoning when the source gives one.
+Enter `MCMXCIX`, `2026` or `Henry VIII`, or choose one of eight **Start here** examples. The answer card shows the leading reading with a short explanation. Open the reading details to compare alternatives, then open **Evidence and sources** on a reading to see what supports it. You can copy a reading and its references as a note.
+
+Open **More tools** to choose a source period or date reckoning. The **Read as** menu also has **Passage** for texts with more than one numeral and **Chronogram** for dates made from selected letters. **Browse all examples** gives you 97 presets to filter by period, convention or origin. The glossary explains terms such as *vinculum* and *indiction*.
+
+The reader has three layers for four kinds of reader. Someone checking a date on a building, film or clock can stop at the **answer**. Students and curious readers can open **readings** to see how the result changes with the convention. Researchers checking a transcription can open the **evidence**, follow the sources and keep a note.
 
 [Open the Roman Numeral Reader full-page](/tools/roman-numeral-reader/ "Embed interactive tool")
 
@@ -122,7 +128,9 @@ Even within a period, check the type of document. A 3 for counting in scores ref
 
 ### What the presets check
 
-The reader returned the reported value somewhere among the candidates for **45 of 47 examples reported in sources**. The remaining 37 presets were constructed to illustrate conventions. They are outside this check.
+The reader returned the reported value somewhere among the candidates for **46 of 48 examples reported in sources**. The remaining 49 presets were constructed to illustrate conventions. They are outside this check.
+
+The new sourced preset comes from the 1954 film *The Last Time I Saw Paris*. Its copyright notice reads `MCMXLIV`, or 1944. The distinction matters here. The converter reads the numeral as printed, and the catalogue identifies the film’s release year. [Title-card reproduction](https://www.copyrightdata.com/chart/ch02.html), [AFI catalogue](https://catalog.afi.com/Film/51256-THE-LAST-TIME-I-SAW-PARIS?cxt=filmography)
 
 ![Number of selected source examples by period and whether the reported value appeared among the reader’s candidates](charts/preset-coverage.png)
 
@@ -150,7 +158,7 @@ The research pass used zero both for an unlikely reading and for some searches t
 
 ### Partial reading and selected examples
 
-Only **2 of the initial 45 references** were read in full. The cleaned bibliography has **43 references**, with the same two full readings, Scotland’s People’s date guide and the National Park Service’s Statue of Liberty page. Other records were consulted through passages, search excerpts, scans or catalogue entries. Haiku could not retrieve three sources on the day. The 14 presets that depend on those sources carry a note about that review. Gemini reported reaching some evidence Haiku could not. Neither review was by a human specialist. [Reference register](data/references.json), [Preset sources and access notes](data/examples.json)
+Only **2 of the initial 45 references** were read in full. The clean-up left 43 references. The film example added two citations, bringing the v3 bibliography to **45 references**, with the same two full readings, Scotland’s People’s date guide and the National Park Service’s Statue of Liberty page. Other records were consulted through passages, search excerpts, scans or catalogue entries. Haiku could not retrieve three sources on the day. The 14 presets that depend on those sources carry a note about that review. Gemini reported reaching some evidence Haiku could not. Neither review was by a human specialist. [Reference register](data/references.json), [Preset sources and access notes](data/examples.json)
 
 The source material leans towards Roman inscriptions, English, Scottish and French records, Iberian inscriptions and early printing. Several presets come from one source. Matching a value checks coverage of the selected examples, including examples used to design the reader. It says little about which candidate should come first, how common a convention was, or whether the tool will read a fresh transcription correctly.
 
@@ -176,24 +184,30 @@ Times are UK time (GMT), rounded to the minute. Searches and build work overlapp
 | 10:28 | Gemini returned its review. It reported six matches in eight source spot checks, flagged the multiplier bug and the unconfirmed `XLVIII`, and questioned several ratings of either zero or typical. |
 | 10:29–10:35 | GPT-6.2 Sol started v2 at 10:29. The coordinator recorded the combined decisions at 10:35. Add explicit AUC, Spanish-era and indiction selectors. Give medieval letter numerals a sourced gloss. Offer a simple passage finder. Defer automatic regnal years and Byzantine Anno Mundi. |
 | 10:42 | The v2 commit fixed the multiplier, distinction bar, framed apostrophus, dotted scores, and the treatment of W in chronograms and the two historic signs for fifty and six. The build included 84 presets. It passed 40 regression and data checks and matched 45 of 47 reported examples. The agent checked file and iframe use headlessly at phone and desktop widths. |
-| 10:43–10:53 | GPT-6.2 Sol built this article, packaged the checking data (committed at 10:51), generated the chart and checked the embedded reader headlessly before preparing the preview. At 10:45 Dominik asked that the article lead with how to read numerals and that the site copy be easy to refresh for a separate audience-facing update. |
+| 10:42 | Dominik asked how the reader could serve quick converters, students, researchers and people curious about numerals. |
+| 10:43–10:54 | GPT-6.2 Sol drafted the article, packaged the v2 checking data, generated the chart and checked the first preview headlessly. |
+| 10:44 | Dominik chose the first option. It put a short answer, Arabic-to-Roman conversion, names with numerals, everyday examples, a glossary and copyable notes in this build. Practice exercises and list conversion could wait. |
+| 10:45 | Dominik confirmed that the snack should help people understand numerals and that the embedded reader should ease them into more detail. |
+| 10:45–10:56 | GPT-6.2 Sol built v3 with an answer card, eight starter examples and a gradual reveal of readings and evidence. It added 12 constructed examples and the sourced film misprint. Node passed 44 of 44 checks and the builder’s headless run passed 72 of 72 assertions. The reader matched 46 of 48 reported examples. It had 97 presets in all, including 49 constructed examples. |
+| From 10:57 | GPT-6.2 Sol swapped in the committed v3 reader, updated this article and chart, and regenerated the checking package for the revised preview. |
 
 ### Data and method
 
 The research judgement steps were selecting sources and examples, transcribing or normalising signs, identifying the date of the writing and the date or quantity the writing refers to, mapping each case to a period and convention, and assigning ratings. The council checked some of those choices and the coordinator reconciled the reviews. The source register records the part consulted for each work.
 
-In normal use, the engine calculates candidate values, merges equivalent readings and ranks a reading by the lowest rating among its conventions for the selected period. With no period selected, it uses the best period rating for each candidate. The check reruns each documented preset with its saved settings and asks whether the documented value appears. The checking repository preserves the research build, its settings and all expected and returned values. The chart counts presets by period and outcome.
+In normal use, the engine calculates candidate values, merges equivalent readings and ranks a reading by the lowest rating among its conventions for the selected period. With no period selected, it uses the best period rating for each candidate. The check reruns each documented preset with its saved settings and asks whether the documented value appears. The checking repository preserves the v3 reader, its settings and all expected and returned values. The chart counts presets by period and outcome.
 
 ### Models, tools and tokens
 
 | Model | Role | Calls | Tokens read | Tokens written |
 |---|---|---:|---:|---:|
-| Claude Opus 5.5 | Coordinator and first build | 47 | 7,315,217 | 81,840 |
+| Claude Opus 5.5 | Coordinator and first build | 59 | 9,907,999 | 88,657 |
 | GPT-6.2 Sol | Source research | not measured | not measured | not measured |
 | Claude Haiku 5.5 | Council review | not measured | not measured | not measured |
 | Gemini 4 Neon | Council review | not measured | not measured | not measured |
 | Claude Sonnet 5.5 | Cancelled council seat | not measured | not measured | not measured |
 | GPT-6.2 Sol | v2 build and checks | 29 | 3,130,079 | 33,706 |
-| GPT-6.2 Sol | Article and checking package, pre-deployment snapshot | 34 | 4,390,208 | 21,775 |
+| GPT-6.2 Sol | v3 audience update and checks | 37 | 4,081,499 | 30,752 |
+| GPT-6.2 Sol | Article, checking package and revisions, pre-deployment snapshot | 63 | 10,265,890 | 38,413 |
 
-The Claude Code count covers the coordinator’s available session log. The Codex v2 count covers its run. The article count is a snapshot before preview deployment. Both exclude separate approval-review sessions. Tokens read include cached history. The table gives the available counts, so it is not a project-wide token total. Other research tools were web search and source retrieval, JavaScript and Node.js for the reader and tests, Python for the comparison tables, and Vega-Lite and vl-convert for the chart.
+The Claude Code count covers the coordinator’s available session log. The Codex v2 and v3 counts cover their respective runs. The article count is a snapshot before the revised preview deployment. These counts exclude separate approval-review sessions. Tokens read include cached history. The table gives the available counts, so it is not a project-wide token total. Other research tools were web search and source retrieval, JavaScript and Node.js for the reader and tests, Python for the comparison tables, and Vega-Lite and vl-convert for the chart.

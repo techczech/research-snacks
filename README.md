@@ -53,4 +53,4 @@ Run `scripts/copy-roman-numeral-reader.sh TOOL-REPOSITORY REVISION` with a revie
 The script copies the five browser assets into `scripts/assets/tools/roman-numeral-reader/`
 and records the revision in `source-commit.txt`. Review the resulting diff, build,
 and verify the live iframe and full-page link before deploying another preview.
-The checking repository preserves the research build used for the preset counts.
+The checking repository preserves the reader and data used for the preset counts.
