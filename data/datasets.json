@@ -184,7 +184,7 @@
     "url": "https://talkbank.org/childes/",
     "access": "free registration",
     "licence": {
-      "name": "TalkBank Ground Rules (CC BY-NC-SA, except where otherwise indicated)",
+      "name": "TalkBank Ground Rules (CC BY-NC-SA 4.0, except where otherwise indicated)",
       "url": "https://talkbank.org/0share/rules.html"
     },
     "data": "Transcripts of child language and child-directed speech, many with linked audio or video, in the CHAT format. The index groups corpora by language and type, covering English (North American, African American and UK), Chinese, Japanese, Germanic, Romance, Slavic (including Czech) and other languages, plus bilingual, clinical and narrative collections and derived frequency corpora. The CLAN program and the browsable TalkBankDB search work with the transcripts.",
@@ -195,7 +195,7 @@
       "context": "Suggested for a future snack"
     },
     "checked": "2026-11-21",
-    "notes": "Transcripts and media need a free TalkBank account; clinical corpora need approved access. Each use must cite at least one corpus reference from the corpus page and acknowledge the CHILDES grant (NICHD HD082736). The Ground Rules forbid use in commercial products, including language models. In November 2026 the home page said the repository was \"under review for potential modification in compliance with Administration directives\", so record the date and version of any download."
+    "notes": "Transcripts and media need a free TalkBank account; clinical corpora need approved access. Each use must cite at least one corpus reference from the corpus page and acknowledge the CHILDES grant (NICHD HD082736). The TalkBank Ground Rules license the data under CC BY-NC-SA 4.0, which \"precludes the incorporation of the data in commercial products, including systems such as large language models (LLMs) such as ChatGPT\". On web processing, data \"can only be uploaded for processing by OpenAI, Anthropic, Google, Rev-AI and similar systems if the user has specifically selected the option for non-storage of data\": \"Help improve Claude\" off for Anthropic, \"improve the model for everyone\" off for OpenAI, Gemini Apps Activity off for Google. Local analysis has no such limit. Identifiable data may \"only be stored on a local device for analysis and cannot be circulated further\". In November 2026 the CHILDES home page said the repository was \"under review for potential modification in compliance with Administration directives\", so record the date and version of any download."
   },
   {
     "id": "classicmayan",
