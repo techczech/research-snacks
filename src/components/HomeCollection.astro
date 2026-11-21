@@ -1,0 +1,34 @@
+---
+import {dateLabel} from '../lib/content';
+import {getHomeData} from '../lib/home';
+const {copy,items,subjects,tags}=getHomeData();
+const l=copy.labels;
+---
+<nav class="home-subjects" aria-label="Categories">
+ <a href="#all" data-home-subject="all" aria-current="page">{l.all} <span>{items.length}</span></a>
+ {subjects.map(s=><a href={`#subject-${s.id}`} data-home-subject={s.id} data-label={s.label} data-description={s.description}>{s.label} <span>{s.count}</span></a>)}
+</nav>
+<div class="home-collection">
+ <aside class="home-topics">
+  <details data-home-topics>
+   <summary>{l.topics} <span>{tags.length} {l.topic_count}</span></summary>
+   <nav class="tag-cloud" aria-label="Topics">
+    {tags.map(t=><a href={`/tags/${encodeURIComponent(t.tag)}/`} data-topic-tag={t.tag} data-count={t.count} style={`--tag-level:${Math.min(3,t.count-1)}`} aria-label={`${t.label}: ${t.count} ${t.count===1?'check':'checks'}`}>{t.label} <span>{t.count}</span></a>)}
+   </nav>
+  </details>
+ </aside>
+ <section class="home-checks" id="all" aria-labelledby="home-list-title">
+  {subjects.map(s=><span id={`subject-${s.id}`} class="home-subject-target" data-home-subject-target={s.id} aria-hidden="true"/>)}
+  <div class="home-list-heading"><h2 id="home-list-title"><span data-home-all-label>{l.all}</span>{subjects.map(s=><span data-home-subject-label={s.id}>{s.label}</span>)}</h2><span class="home-result-count" role="status" aria-live="polite" aria-atomic="true" aria-label={`${items.length} ${l.results}`} data-home-count>{items.length}</span><a href="/rss.xml">{l.subscribe}</a></div>
+  <div class="home-list-tools"><select class="home-sort" data-home-sort aria-label={l.sort_label}><option value="newest">{l.newest}</option><option value="oldest">{l.oldest}</option><option value="title">{l.title_order}</option></select><span class="home-sort-fallback" data-home-sort-fallback>{l.newest}</span><p class="home-list-description" data-home-description hidden></p></div>
+  <div class="snack-grid">
+   {items.map(x=><article class="snack-card feed-entry" data-home-card data-entry-id={x.id} data-subject={x.subject} data-date={x.date}>
+    <h3><a href={`/${x.id}/`}>{x.question}</a></h3>
+    <p class="finding"><b>{l.finding}:</b> {x.finding}</p>
+    <div class="entry-meta"><span>{subjects.find(s=>s.id===x.subject)?.label}</span><span aria-hidden="true"> · </span><time datetime={x.date}>{dateLabel(x.date,'short')}</time></div>
+   </article>)}
+  </div>
+ </section>
+</div>
+{subjects.map(s=><style is:inline set:html={`.home-page:not(.home-enhanced):has(#subject-${s.id}:target) [data-home-card]:not([data-subject="${s.id}"]){display:none}.home-page:not(.home-enhanced):has(#subject-${s.id}:target) [data-home-all-label]{display:none}.home-page:not(.home-enhanced):has(#subject-${s.id}:target) [data-home-subject-label="${s.id}"]{display:inline}.home-page:not(.home-enhanced):has(#subject-${s.id}:target) .home-result-count{display:none}`} />)}
+<script>import {initHome} from '../scripts/home';initHome();</script>

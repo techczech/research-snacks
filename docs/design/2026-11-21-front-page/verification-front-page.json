@@ -1,0 +1,108 @@
+{
+  "capturedAt": "2026-11-21T11:35:43.586Z",
+  "browser": "Playwright chrome-headless-shell 1228",
+  "widths": [
+    950,
+    1440,
+    390
+  ],
+  "pages": [
+    {
+      "label": "live",
+      "width": 950,
+      "overflow": false,
+      "height": 2474,
+      "headingY": 79,
+      "firstQuestionY": 261.0625,
+      "questionsOnFirstScreen": 3,
+      "minFont": 16
+    },
+    {
+      "label": "live",
+      "width": 1440,
+      "overflow": false,
+      "height": 2366,
+      "headingY": 79,
+      "firstQuestionY": 261.0625,
+      "questionsOnFirstScreen": 3,
+      "minFont": 16
+    },
+    {
+      "label": "live",
+      "width": 390,
+      "overflow": false,
+      "height": 3230,
+      "headingY": 100.59375,
+      "firstQuestionY": 303.046875,
+      "questionsOnFirstScreen": 3,
+      "minFont": 16
+    },
+    {
+      "label": "a-latest",
+      "width": 950,
+      "overflow": false,
+      "height": 1367,
+      "headingY": 81,
+      "firstQuestionY": 321.25,
+      "questionsOnFirstScreen": 5,
+      "minFont": 16
+    },
+    {
+      "label": "a-latest",
+      "width": 1440,
+      "overflow": false,
+      "height": 1297,
+      "headingY": 81,
+      "firstQuestionY": 321.25,
+      "questionsOnFirstScreen": 6,
+      "minFont": 16
+    },
+    {
+      "label": "a-latest",
+      "width": 390,
+      "overflow": false,
+      "height": 2305,
+      "headingY": 96.59375,
+      "firstQuestionY": 376.140625,
+      "questionsOnFirstScreen": 3,
+      "minFont": 16
+    },
+    {
+      "label": "b-subjects",
+      "width": 950,
+      "overflow": false,
+      "height": 1696,
+      "headingY": 81,
+      "firstQuestionY": 442.625,
+      "questionsOnFirstScreen": 4,
+      "minFont": 16
+    },
+    {
+      "label": "b-subjects",
+      "width": 1440,
+      "overflow": false,
+      "height": 1537,
+      "headingY": 81,
+      "firstQuestionY": 442.625,
+      "questionsOnFirstScreen": 5,
+      "minFont": 16
+    },
+    {
+      "label": "b-subjects",
+      "width": 390,
+      "overflow": false,
+      "height": 2708,
+      "headingY": 96.59375,
+      "firstQuestionY": 607.6875,
+      "questionsOnFirstScreen": 2,
+      "minFont": 16
+    }
+  ],
+  "checks": [
+    "A: ten entries; subjects 4/5/1; All restores ten; Back restores previous subject; unknown subject shows all.",
+    "B: subject links jump to the correct section; all 4/5/1 entries are present.",
+    "Both: all ten unique canonical entry links; no overflow with 200% text at 950 and 390.",
+    "Both: all ten entries available with JavaScript off. A adds subject jump groups; B retains subject jumps."
+  ],
+  "passed": true
+}
