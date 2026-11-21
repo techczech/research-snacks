@@ -47,7 +47,6 @@ references:
   - {"type": "webpage", "title": "Statue Front", "url": "https://www.nps.gov/places/000/statue-front.htm", "authors": ["National Park Service"], "corporate": true, "year": 2021, "publisher": "US National Park Service", "note": "Read in full · Tablet inscription and monument date"}
   - {"type": "webpage", "title": "Alice’s Little Parade Struts with Restoration and New Music Score", "url": "https://davidbossert.com/assets/article-alice-s-litte-parade-article.pdf", "authors": ["Dave Bossert"], "year": "n.d.", "publisher": "Author's restoration account", "note": "Partial access · p. 1 reproduced copyright frame and first release information"}
   - {"type": "article", "title": "Lápidas medievales del Museo de León (España)", "url": "https://www.academia.edu/170401993/L%C3%A1pidas_medievales_del_Museo_de_Le%C3%B3n_Espa%C3%B1a_", "authors": ["Author", "editorial status unverified"], "year": "n.d.", "container": "Academia.edu upload", "note": "Partial access · Search extract only, fragment cccc liij; opening returned cache miss"}
-  - {"type": "webpage", "title": "Corpus des inscriptions de la France médiévale 1.1: Ville de Poitiers", "url": "https://www.persee.fr/doc/cifm_0000-0000_1974_cat_1_1?pageId=T2_16", "authors": ["Robert Favreau", "Jean Michaud"], "year": 1974, "publisher": "CNRS; Persée", "note": "Partial access · No. 82, Epitaphe de Madalfredus; reported dates 802 or 808"}
   - {"type": "article", "title": "Der karolingische Kalender der Handschrift Ambros. M 12 sup⁸", "url": "https://www.mgh-bibliothek.de/dokumente/a/a089822.pdf", "authors": ["Joseph Prinz"], "year": 1972, "container": "Vandenhoeck & Ruprecht, Festschrift für Hermann Heimpel III; MGH library scan", "note": "Partial access · p. 294, October entries and n. 23"}
   - {"type": "webpage", "title": "Iscrizioni delle chiese e d’altri edificii di Roma, vol. VII", "url": "https://resources.warburg.sas.ac.uk/pdf/hnh5600b2797976v7.pdf", "authors": ["Vincenzo Forcella"], "year": 1876, "publisher": "Tipografia delle Scienze Matematiche e Fisiche; Warburg Institute scan", "note": "Partial access · Nos. 239 (1464), 313 (1499, p. 169, from Vatican cod. 7919), 350 (1515, p. 172)"}
   - {"type": "webpage", "title": "Monuments in St James’s Park", "url": "https://www.royalparks.org.uk/visit/parks/st-jamess-park/monuments", "authors": ["The Royal Parks"], "corporate": true, "year": "n.d.", "publisher": "The Royal Parks", "note": "Partial access · Admiralty Arch inscription and 1912 completion"}
@@ -57,8 +56,7 @@ references:
   - {"type": "webpage", "title": "Introduction to Manuscript Studies", "url": "https://discover.library.unt.edu/catalog/b3451328", "authors": ["Raymond Clemens", "Timothy Graham"], "year": 2007, "publisher": "Cornell University Press", "note": "Partial access · Chapter 6, p. 91, passage on Roman and Arabic numbers, OCR has glyph errors"}
   - {"type": "webpage", "title": "Anais da Biblioteca Nacional, vol. 140", "url": "https://www.gov.br/bn/pt-br/central-de-conteudos/producao/publicacoes/colecoes/anais-biblioteca-nacional/copy_of_anais-da-biblioteca-nacional-vol-140/anais-da-biblioteca-nacional-vol-140/an140_digital-9094.pdf", "authors": ["Biblioteca Nacional (Brazil)"], "corporate": true, "year": 2020, "publisher": "Fundação Biblioteca Nacional", "note": "Partial access · Date of imprint, p. 31; table and Wells clock example"}
   - {"type": "webpage", "title": "Diplomatics: The Science of Reading Medieval Documents. A Handbook", "url": "https://www.academia.edu/123756218/Diplomatics_The_Science_of_Reading_Medieval_Documents_A_Handbook_Milano_2024", "authors": ["Federico Gallo"], "year": 2024, "publisher": "Milano University Press", "note": "Partial access · Chapter XII, pp. 85–87; AUC, regnal, Spanish era, Anno Mundi and indictions"}
-  - {"type": "webpage", "title": "The Last Time I Saw Paris, copyright title card", "url": "https://www.copyrightdata.com/chart/ch02.html", "authors": ["Metro-Goldwyn-Mayer"], "corporate": true, "year": 1954, "publisher": "Title-card reproduction, CopyrightData.com", "note": "Partial access · Errors or Absence of Year"}
-  - {"type": "webpage", "title": "The Last Time I Saw Paris (1954), AFI Catalog of Feature Films", "url": "https://catalog.afi.com/Film/51256-THE-LAST-TIME-I-SAW-PARIS?cxt=filmography", "authors": ["American Film Institute"], "corporate": true, "publisher": "American Film Institute", "note": "Partial access · History and copyright details"}
+  - {"type": "webpage", "title": "The Last Time I Saw Paris, copyright title card", "url": "https://www.copyrightdata.com/chart/LastParis.jpg", "authors": ["Metro-Goldwyn-Mayer"], "corporate": true, "year": 1954, "publisher": "Title-card reproduction, CopyrightData.com", "note": "Frame reproduction · Copyright notice"}
 ---
 
 ## The request
@@ -99,6 +97,55 @@ A bar over `V` can give 5,000 if it multiplies by a thousand, or leave the value
 
 An Augsburg colophon uses `XCij` for the year 1492. The numeral itself can be read as 92. The century comes from other evidence in the book. For the Spanish era, the Córdoba epitaph's `DCLXXXIII` gives era year 683, which converts to 645 CE. An indiction, a position in a repeating 15-year cycle, gives several possible years if the range includes several cycles. [Pollard, p. 183](https://www.gutenberg.org/files/56628/56628-h/56628-h.htm), [Santiago Fernández, pp. 632–634](https://revistas.ucm.es/index.php/GERI/article/download/71951/4564456554709/4564456599554), [Cheney and Jones, pp. 1–5](https://assets.cambridge.org/97805217/70958/sample/9780521770958wsc00.pdf)
 
+## Where the ratings come from
+
+### What a rating is for
+
+The same marks can produce several values, and the reader has to put them in some order. It uses a starting assumption, or prior, about how usual each convention was in the source period you choose. Open the readings to see the ratings next to each candidate. The source still determines which reading fits.
+
+- **Typical** means usual in the period and kind of writing named in the evidence.
+- **Attested** means the sources document it in that context.
+- **Rare** means usage appears limited, or the evidence supports it as a possible exception.
+- **Unlikely** means the available evidence gives reason to prefer a different reading.
+- **No evidence found** means the search left the question open. The convention may still have been used.
+
+If a reading needs more than one convention, its weakest convention sets its rating. For sorting, **no evidence found** has the same weight as **rare**. With no period selected, the reader uses each candidate’s best period rating.
+
+### How the ratings were made
+
+1. **09:31–09:38 GMT.** The coordinating model, Claude Opus 5.5, wrote the first ratings from general knowledge and marked them unverified in the reader. [First-version ratings](data/first-version-ratings.json)
+2. **09:50–10:06.** GPT-6.2 Sol searched handbooks, editions and catalogues. It proposed a rating for each convention in each period and recorded citations and dated examples. [Proposed ratings](data/ratings.json), [Sourced examples](data/examples.json)
+3. **10:08–10:28.** The model council reviewed the research proposals. The two completed reviews came back separately.
+4. **10:35.** The coordinator compared the reviews and recorded decisions, including why a gap in searching should have its own label and why some ratings needed local or genre-specific notes. [Council reconciliation](data/council/reconciliation.md)
+5. **10:42.** The build turned those decisions into a data file. Each reading links to the sources for the conventions it uses through **Evidence and sources**. [Convention data](data/conventions.json), [Reference register](data/references.json)
+
+| Convention and period | First version | Revised | Why it changed |
+|---|---|---|---|
+| Repeated subtraction, Classical | Rare | Attested | Inscriptions support the forms `IIX` and `XIIX`. |
+| Two numbers run together, all periods | Attested | No evidence found | A final j can mark the end of a numeral, but the research found too little support for treating it as a general separator. |
+| Raised multiplier, late antiquity and early Middle Ages | Rare | No evidence found | The research found too little evidence for a rating in this period. |
+| Omitted millennium, late Middle Ages | Typical | Attested | The reader permits the reading provisionally. The León fragment remains unverified, and several apparent examples spell out the thousand. |
+
+The ratings are editorial judgements based on partial reading. Only two of the 43 listed references were read in full. No corpus counts underpin the ratings. A specialist should revise them as better examples or frequency evidence become available.
+
+### What a model council is
+
+A model council is a small panel of other AI models, drawn from different model families where possible, asked the same question independently. Here the council checked the research before it went into the reader so the research model would not grade its own work.
+
+Each member got the research question, the same files and five tasks. Were the ratings supported? Could they check five claims against the sources? What was missing? Which additions belonged in the next build? What would a sceptical palaeographer object to? Members could not see each other’s answers. Gemini 4 Neon and Claude Haiku 5.5 completed the review. A seat started with Claude Sonnet 5.5 on the wrong plan and was cancelled before it answered. [Council packet](data/council/packet.md)
+
+The panel gave advice. The coordinator compared the two answers, kept points both raised and decided each disagreement on the evidence, recording the reasons. Even when the models agreed, they could share an error, so the task included spot-checks against the sources. [Council reconciliation](data/council/reconciliation.md)
+
+## What the council caught
+
+### Changes to the readings and ratings
+
+Claude Haiku 5.5 found that several proposed ratings of **typical** rested on at most one example in the relevant period. It also caught the mix-up between 196 and the document date 1231, and found no support for calling the late six Merovingian. [Haiku’s review](data/council/claude-haiku-5-5.md)
+
+Gemini 4 Neon found that the reader applied the raised c in `Mᵒiiijᶜlvj` to the preceding thousand as well as to the four. It gave 100,456 instead of 1,456. Gemini also found evidence for W = VV in a [chronogram source already cited](https://www.maphistory.info/chronograms.html), flagged an unconfirmed `XLVIII` transcription and identified two unofficial book-copy links. [Gemini’s review](data/council/gemini-4-neon.md)
+
+The build fixed the multiplier, removed the unconfirmed `XLVIII` preset and changed how gaps in the evidence are rated. It also distinguishes a bar that marks a number from one that multiplies it, and puts chronograms behind an explicit mode. [Council reconciliation](data/council/reconciliation.md)
+
 ## What the sources show across periods
 
 ### Five periods, different kinds of records
@@ -111,9 +158,9 @@ An Augsburg colophon uses `XCij` for the year 1492. The numeral itself can be re
 | Early modern, c. 1500–1800 | `Lxxxxj` = 91 | Terminal j is the last i in a Scottish inventory. The same record also uses subtractive notation in other amounts. [National Records of Scotland, document 4](https://scottishrecordsassociation.org/documents/NRS-Scottish_handwriting_self-help_kit-web.pdf) |
 | Modern, 1800 onwards | `MDCCCCX` = 1910 | The Admiralty Arch inscription uses additive hundreds. Monumental lettering preserves a practice seen much earlier. [Royal Parks](https://www.royalparks.org.uk/visit/parks/st-jamess-park/monuments) |
 
-### What the ratings say
+### How ratings vary by period
 
-The ratings are editorial judgements from partial reading. They use four levels, 0 unlikely, 1 rare, 2 attested and 3 typical in the stated context. A dash means no evidence found. These are aids for sorting readings, and the complete table is in **Conventions and evidence** in the reader.
+These are some of the ratings the reader uses. A dash marks a gap in the evidence consulted.
 
 | Selected convention in v2 | Classical | Early medieval | Late medieval | Early modern | Modern |
 |---|---:|---:|---:|---:|---:|
@@ -124,13 +171,13 @@ The ratings are editorial judgements from partial reading. They use four levels,
 | Spanish-era reckoning, in Iberian documents | – | 3 | 2 | 0 | 0 |
 | Chronograms, in deliberate letter-dates | – | – | 1 | 3 | 1 |
 
-Even within a period, check the type of document. A 3 for counting in scores refers especially to French and British accounts and some French-language print. The main table’s Spanish-era ratings refer to Iberian inscriptions and charters. [Conventions and evidence notes](data/conventions.json)
+Even within a period, check the type of document. A 3 for counting in scores refers especially to French and British accounts and some French-language print. The Spanish-era ratings refer to Iberian inscriptions and charters. [Conventions and evidence notes](data/conventions.json)
 
 ### What the presets check
 
 The reader returned the reported value somewhere among the candidates for **46 of 48 examples reported in sources**. The remaining 49 presets were constructed to illustrate conventions. They are outside this check.
 
-The new sourced preset comes from the 1954 film *The Last Time I Saw Paris*. Its copyright notice reads `MCMXLIV`, or 1944. The distinction matters here. The converter reads the numeral as printed, and the catalogue identifies the film’s release year. [Title-card reproduction](https://www.copyrightdata.com/chart/ch02.html), [AFI catalogue](https://catalog.afi.com/Film/51256-THE-LAST-TIME-I-SAW-PARIS?cxt=filmography)
+The new sourced preset comes from the 1954 film *The Last Time I Saw Paris*. Its copyright notice reads `MCMXLIV`, or 1944. The example links to the film frame. [Copyright frame](https://www.copyrightdata.com/chart/LastParis.jpg)
 
 ![Number of selected source examples by period and whether the reported value appeared among the reader’s candidates](charts/preset-coverage.png)
 
@@ -139,26 +186,11 @@ The new sourced preset comes from the 1954 film *The Last Time I Saw Paris*. Its
 | `IIII CĐXI` | 4,411 | 113, 107, 411, 115 | The inscription needs a source-specific reading of the struck Đ and the implied thousands. [RIB 2208](https://romaninscriptionsofbritain.org/inscriptions/2208) |
 | `IIIIˣˣ et huit` | 88 | 83, 86 | The four scores give 80 and the final eight is written out in French. The reader does not add the word as a number. [Chrisomalis, table 4.13](https://www.cambridge.org/core/books/numerical-notation/4C3107573159D539D04DD7307423FA36) |
 
-## What the council caught
-
-### Changes to the readings and ratings
-
-Claude Haiku 5.5 found that several proposed ratings of 3 rested on at most one example in the relevant period. It caught the mix-up between 196 and the document date 1231, and found no support for calling the late six Merovingian. Gemini 4 Neon found that a raised c was applied to the preceding thousand as well as to the four, which made `Mᵒiiijᶜlvj` come out as 100,456. It also found support for W = VV in a [chronogram source already cited](https://www.maphistory.info/chronograms.html), flagged an unconfirmed `XLVIII` transcription and identified two unofficial book-copy links. [Haiku’s review](data/council/claude-haiku-5-5.md), [Gemini’s review](data/council/gemini-4-neon.md)
-
-| Convention and period | First version | Second version | Why |
-|---|---:|---:|---|
-| Repeated subtraction, Classical | 1 | 2 | Inscriptions support the specific `IIX` and `XIIX` forms. |
-| Raised multiplier, late antiquity and early Middle Ages | 1 | – | The search found too little evidence to assign a historical rating. |
-| Counting in scores, late Middle Ages | 3 | 3 | The same score now carries a regional and genre note about the evidence behind it. |
-| Omitted millennium, late Middle Ages | 3 | 2 | The build allows a candidate provisionally. The León fragment remains unverified and some printed dates spell out the thousand. |
-
-The research pass used zero both for an unlikely reading and for some searches that had yielded no example. The revised reader keeps a separate “no evidence found” label and ranks it like “rare”. It treats a bar that distinguishes a number separately from one that multiplies it and requires an explicit mode for chronograms. The bibliography was cleaned and the disputed `XLVIII` preset was removed. [First-version ratings](data/first-version-ratings.json), [Council reconciliation](data/council/reconciliation.md)
-
 ## Limits of this check
 
 ### Partial reading and selected examples
 
-Only **2 of the initial 45 references** were read in full. The clean-up left 43 references. The film example added two citations, bringing the v3 bibliography to **45 references**, with the same two full readings, Scotland’s People’s date guide and the National Park Service’s Statue of Liberty page. Other records were consulted through passages, search excerpts, scans or catalogue entries. Haiku could not retrieve three sources on the day. The 14 presets that depend on those sources carry a note about that review. Gemini reported reaching some evidence Haiku could not. Neither review was by a human specialist. [Reference register](data/references.json), [Preset sources and access notes](data/examples.json)
+The two references read in full were Scotland’s People’s date guide and the National Park Service’s Statue of Liberty page. Other records were consulted through passages, search excerpts, scans or catalogue entries. Haiku could not retrieve three sources on the day. The 14 presets that depend on those sources carry a note about that review. Gemini reported reaching some evidence Haiku could not. Neither review was by a human specialist. [Reference register](data/references.json), [Preset sources and access notes](data/examples.json)
 
 The source material leans towards Roman inscriptions, English, Scottish and French records, Iberian inscriptions and early printing. Several presets come from one source. Matching a value checks coverage of the selected examples, including examples used to design the reader. It says little about which candidate should come first, how common a convention was, or whether the tool will read a fresh transcription correctly.
 
@@ -190,12 +222,13 @@ Times are UK time (GMT), rounded to the minute. Searches and build work overlapp
 | 10:45 | Dominik confirmed that the snack should help people understand numerals and that the embedded reader should ease them into more detail. |
 | 10:45–10:56 | GPT-6.2 Sol built v3 with an answer card, eight starter examples and a gradual reveal of readings and evidence. It added 12 constructed examples and the sourced film misprint. Node passed 44 of 44 checks and the builder’s headless run passed 72 of 72 assertions. The reader matched 46 of 48 reported examples. It had 97 presets in all, including 49 constructed examples. |
 | From 10:57 | GPT-6.2 Sol swapped in the committed v3 reader, updated this article and chart, and regenerated the checking package for the revised preview. |
+| 11:58 | Dominik asked for a clearer explanation of the ratings, their purpose and the model council. GPT-6.2 Sol added that account, reconciled the bibliography with the reader, linked the film example to the copyright frame and fixed the embed spacing and phone placeholder. |
 
 ### Data and method
 
 The research judgement steps were selecting sources and examples, transcribing or normalising signs, identifying the date of the writing and the date or quantity the writing refers to, mapping each case to a period and convention, and assigning ratings. The council checked some of those choices and the coordinator reconciled the reviews. The source register records the part consulted for each work.
 
-In normal use, the engine calculates candidate values, merges equivalent readings and ranks a reading by the lowest rating among its conventions for the selected period. With no period selected, it uses the best period rating for each candidate. The check reruns each documented preset with its saved settings and asks whether the documented value appears. The checking repository preserves the v3 reader, its settings and all expected and returned values. The chart counts presets by period and outcome.
+The engine calculates candidate values and merges equivalent readings. The check reruns each documented preset with its saved settings and asks whether the documented value appears. The checking repository preserves the v3 reader, its settings and all expected and returned values. The chart counts presets by period and outcome.
 
 ### Models, tools and tokens
 

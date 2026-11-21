@@ -18,6 +18,46 @@ const passed=(name:string,detail:any=true)=>{records.checks.push({name,passed:tr
 const paths=['/','/about/',...getEntries().map(x=>`/${x.id}/`)];
 const label=(path:string)=>path==='/'?'home':path.split('/').filter(Boolean)[0];
 try {
+  const readerPage = await browser.newPage({colorScheme:'light', reducedMotion:'reduce'});
+  for (const width of [390, 1200]) {
+    await readerPage.setViewportSize({width, height:900});
+    assert.equal((await readerPage.goto(current+'/2026-11-21-roman-numerals-across-periods/'))?.status(), 200);
+    const iframe = readerPage.locator('iframe.tool-embed');
+    await iframe.scrollIntoViewIfNeeded();
+    const reader = iframe.contentFrame();
+    const fitFrame = async () => {
+      const contentHeight = await reader.locator('main').evaluate(el=>Math.ceil(el.getBoundingClientRect().height));
+      await readerPage.waitForFunction(height=>Math.abs(document.querySelector('iframe.tool-embed')!.clientHeight-height)<=1, contentHeight);
+      return contentHeight;
+    };
+    const input = reader.locator('#q');
+    await input.waitFor();
+    assert(await input.evaluate((el: HTMLTextAreaElement)=>{
+      const style = getComputedStyle(el);
+      const canvas = document.createElement('canvas').getContext('2d')!;
+      canvas.font = style.font;
+      return canvas.measureText(el.placeholder).width <= el.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+    }), `Reader placeholder clips at ${width}px`);
+    assert.equal(await reader.locator('#source-summary').innerText(),'Sources · 43 listed, 2 read in full');
+    assert.equal(await reader.locator('#source-list li').count(),43);
+    const initialHeight = await fitFrame();
+    await iframe.screenshot({path:join(dir,`roman-reader-${width}.png`)});
+    const tools = reader.locator('#tools > summary');
+    await tools.click();
+    assert(await fitFrame() > initialHeight);
+    await tools.click();
+    assert.equal(await fitFrame(), initialHeight);
+    await reader.getByRole('button',{name:/MCMXLIV/}).click();
+    const film = reader.getByRole('link',{name:'View the film’s copyright frame',exact:true});
+    assert.equal(await film.getAttribute('href'),'https://www.copyrightdata.com/chart/LastParis.jpg');
+    assert.match(await reader.locator('.answer-value').innerText(),/1,944/);
+    assert(await fitFrame() > initialHeight);
+    await readerPage.locator('#where-the-ratings-come-from').evaluate(el=>el.scrollIntoView({block:'start'}));
+    await readerPage.screenshot({path:join(dir,`roman-ratings-${width}.png`)});
+  }
+  await readerPage.close();
+  passed('Roman reader at 390px and 1200px: placeholder fits, frame grows and shrinks, source count and film frame agree');
+
   await checkCompact(browser,current);
   records.charts = await inspectEntryCharts(browser,current,getEntries().map(entry=>`/${entry.id}/`));
   const chartFailures = records.charts.filter((result:any)=>result.errors.length);
