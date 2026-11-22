@@ -769,6 +769,26 @@
     "notes": "Researchers must ask the administrator for database access. The publicly visible description does not establish bulk export or redistribution rights."
   },
   {
+    "id": "international-social-survey-programme",
+    "title": "International Social Survey Programme (ISSP)",
+    "provider": "International Social Survey Programme, with data archived at GESIS – Leibniz Institute for the Social Sciences",
+    "url": "https://issp.org/data-download/by-year/",
+    "access": "free registration",
+    "licence": {
+      "name": "GESIS Data Usage Terms",
+      "url": "https://www.gesis.org/en/institute/data-usage-terms"
+    },
+    "data": "Annual cross-national survey modules since 1985, each on one topic repeated about every ten years so that answers can be compared across countries and over time. Topics include role of government, social networks, social inequality, family and changing gender roles, work orientations, religion, environment, national identity, citizenship, health and health care, and (from 2024) digital societies. The programme has 41 member countries, the Czech Republic among them, and over one million respondents in total. The newest released modules are National Identity and Citizenship (2023) and Digital Societies I (2024, ZA10020, v2.0.0, 2026); 2025 to 2027 modules are in preparation.",
+    "citation": "https://issp.org/data-download/by-year/",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Suggested for a future snack alongside the World Values Survey, European Values Study and European Social Survey"
+    },
+    "checked": "2026-11-22",
+    "notes": "The ISSP says all its data and documentation are \"available free of charge\". Downloads come from the GESIS data catalogue after creating a free user account, under the GESIS Data Usage Terms. Cite the module file with its ZA number, version and DOI. Some country releases appear as separate national files. Cumulative files join some repeated topics (for example National Identity I-III, 1995-2003-2013). The GESIS terms page refused automated reading on 22 Nov 2026, so the access category of each file should be confirmed in a browser before use."
+  },
+  {
     "id": "ipums-usa",
     "title": "IPUMS USA",
     "provider": "IPUMS, University of Minnesota",
