@@ -44,9 +44,9 @@ export_filename: medicine-training-stages.csv
 source_export_label: Export source register (JSON)
 source_export_filename: medicine-training-sources.json
 note_heading: What is being compared
-note_text: First registration can permit supervised work only. Full registration can precede completion of residency. Independent general practice, a GP specialty credential and permission to manage a clinic are different endpoints. Markers with the same shape indicate a category, not identical legal rights.
-provisional_heading: India needs a further source check
-provisional_text: The preview retains indexed NMC passages and official corroboration, but several original NMC PDFs could not be retrieved. Full-document checks and current NExT implementation status remain open before publication.
+note_text: First registration can permit supervised work only. Full registration can precede completion of residency. Independent general practice, a GP specialty credential and permission to manage a clinic are different endpoints. Markers show conditional eligibility on a continuous successful route, not observed issue dates or processing times. Markers with the same shape indicate a category, not identical legal rights.
+provisional_heading: India’s original regulations checked
+provisional_text: The NMC curriculum confirms four and a half academic years followed by a rotating internship of at least twelve months. The original 13 July 2023 NExT notice defers the examination until further directions. No later commencement notice was found in the current rules index and bounded news search on 22 November 2026; future cohort rules can change.
 detail_heading: Selected stage
 detail_initial: Select a route stage to inspect its evidence.
 detail_labels:

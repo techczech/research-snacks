@@ -100,7 +100,7 @@ await page.locator('.timeline').screenshot({path:join(here,'verification-phone-t
 await page.setViewportSize({width:1400,height:1000});
 await page.locator('.timeline').screenshot({path:join(here,'verification-desktop-timeline.png')});
 const nojs=await browser.newContext({javaScriptEnabled:false});const np=await nojs.newPage();await np.goto('file://'+join(here,'medicine-timeline.html'));
-assert.equal(await np.locator('.route-row').count(),6);assert.equal(await np.locator('.static-record').count(),55);assert.equal(await np.locator('#all-sources .source').count(),30);
+assert.equal(await np.locator('.route-row').count(),6);assert.equal(await np.locator('.static-record').count(),55);assert.equal(await np.locator('#all-sources .source').count(),32);
 assert.equal(network.length,0);assert.deepEqual(failures,[]);
-console.log(JSON.stringify({routes:6,stages:55,sources:30,eu_records:32,gp_rows:27,clock_modes:3,viewport_widths:[390,728,1024,1400],offline:true,mobile_page_overflow:false,mobile_timeline_overflow:false,family_practice_routes:true,download:true,no_js_records:true,console_errors:failures}));
+console.log(JSON.stringify({routes:6,stages:55,sources:32,eu_records:32,gp_rows:27,clock_modes:3,viewport_widths:[390,728,1024,1400],offline:true,mobile_page_overflow:false,mobile_timeline_overflow:false,family_practice_routes:true,download:true,no_js_records:true,console_errors:failures}));
 await browser.close();

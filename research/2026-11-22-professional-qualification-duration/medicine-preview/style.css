@@ -30,3 +30,5 @@
  .milestone-name{flex:1;overflow-wrap:anywhere}
  .role-track .phase{padding:2px 5px;font-size:1rem}
 }
+
+.embedded header,.embedded footer,.embedded .standalone-context,.embedded main>details.provisional{display:none}.embedded main{padding:12px;max-width:none}.embedded #timeline>h2{margin-top:0}

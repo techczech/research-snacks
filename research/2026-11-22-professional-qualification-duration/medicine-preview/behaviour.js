@@ -20,3 +20,12 @@ document.querySelector('#export').addEventListener('click',()=>download(data.csv
 document.querySelector('#export-sources').addEventListener('click',()=>download(JSON.stringify(data.sources,null,2),'application/json',data.copy.source_export_filename));
 const theme=document.querySelector('#theme');
 if(theme)theme.addEventListener('change',()=>{document.documentElement.dataset.theme=theme.value;});
+
+// Match the host site's sandboxed tool-height protocol without reading its DOM.
+if(new URLSearchParams(location.search).get('embed')==='1'){
+ document.documentElement.classList.add('embedded');
+ const measure=()=>parent.postMessage({type:'research-snack:tool-height',height:Math.ceil(document.querySelector('main').getBoundingClientRect().height)+32},'*');
+ new ResizeObserver(measure).observe(document.querySelector('main'));
+ addEventListener('message',event=>{if(event.source===parent&&event.data==='research-snack:measure-tool')measure();});
+ measure();
+}

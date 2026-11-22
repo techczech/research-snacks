@@ -36,3 +36,8 @@ The expanded headless check verifies each complete timeline fits at 390px in all
 The coordinator found that the 700px breakpoint still cropped the axis at 728px. The two-column chart has a 1100px minimum width, so the stacked layout now applies at 1100px and below. The headless check exercises 390, 728, 1024 and 1400px in all three clock modes. At every width it checks the whole page and timeline for horizontal overflow and every training bar for viewport containment; it also checks stacked versus side-by-side label placement. All twelve width/clock combinations pass. Current 728px output was inspected visually. The full site check and structural single-HTML audit pass. No source data or route durations changed.
 
 The separate ReportScout distribution failure is recorded in the private coordination task log; external delivery remains unverified. The local preview and its inline T3 presentation remain available.
+
+
+## Source-closure amendment, 22 November 2026
+
+The unavailable-India-originals limitation above is superseded by original PDF retrieval. The source register now has 32 records and retains 55 stages. All six first-registration milestones received a separate qualified source check; see `source-spot-check.md`. The markers explicitly show conditional eligibility, not issue dates. The former source-count expectation was updated to 32. Current NExT future-cohort status retains a dated bounded-search caveat. The public-snack build and release evidence is recorded separately after checking the embedded version.
