@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "data": {
+    "url": "charts/1-men-political-leaders.csv"
+  },
+  "width": 600,
+  "height": 320,
+  "title": {
+    "text": "\"Men make better political leaders than women do\"",
+    "subtitle": [
+      "Share agreeing or strongly agreeing, weighted",
+      "Joint EVS/WVS 2017-2022 v5.0; each survey shown separately"
+    ],
+    "anchor": "start"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "params": [
+    {
+      "name": "pick",
+      "select": {
+        "type": "point",
+        "fields": [
+          "survey"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "country",
+      "type": "nominal",
+      "sort": [
+        "Czechia",
+        "Slovakia",
+        "Poland",
+        "Austria",
+        "Germany",
+        "United States",
+        "Canada"
+      ],
+      "title": null,
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": "% agree",
+      "scale": {
+        "domain": [
+          0,
+          100
+        ]
+      }
+    },
+    "color": {
+      "field": "survey",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "range": [
+          "#1f5fa8",
+          "#d9822b",
+          "#2a9d8f",
+          "#9aa3ad"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "pick",
+        "value": 1
+      },
+      "value": 0.25
+    },
+    "tooltip": [
+      {
+        "field": "country",
+        "type": "nominal"
+      },
+      {
+        "field": "survey",
+        "type": "nominal"
+      },
+      {
+        "field": "percent",
+        "type": "quantitative"
+      },
+      {
+        "field": "lo",
+        "type": "quantitative"
+      },
+      {
+        "field": "hi",
+        "type": "quantitative"
+      },
+      {
+        "field": "n",
+        "type": "quantitative"
+      }
+    ],
+    "xOffset": {
+      "field": "survey"
+    }
+  }
+}

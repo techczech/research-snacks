@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "data": {
+    "url": "charts/2-issp-sociability.csv"
+  },
+  "title": {
+    "text": "Czechs go out and make new friends less often than Slovaks or Americans",
+    "subtitle": [
+      "ISSP 2017 Social Networks and Social Resources, weighted",
+      "Close to Germany and Austria on all three"
+    ],
+    "anchor": "start"
+  },
+  "facet": {
+    "row": {
+      "field": "measure",
+      "type": "nominal",
+      "title": null,
+      "header": {
+        "labelAngle": 0,
+        "labelOrient": "top",
+        "labelAnchor": "start",
+        "labelFontSize": 12,
+        "labelFontWeight": "bold"
+      }
+    }
+  },
+  "spec": {
+    "width": 600,
+    "height": 160,
+    "mark": {
+      "type": "bar"
+    },
+    "encoding": {
+      "x": {
+        "field": "country",
+        "type": "nominal",
+        "sort": [
+          "Czechia",
+          "Slovakia",
+          "Hungary",
+          "Germany",
+          "Austria",
+          "United States"
+        ],
+        "title": null,
+        "axis": {
+          "labelAngle": 0
+        }
+      },
+      "y": {
+        "field": "percent",
+        "type": "quantitative",
+        "title": "% of adults",
+        "scale": {
+          "domain": [
+            0,
+            60
+          ]
+        }
+      },
+      "color": {
+        "field": "country",
+        "type": "nominal",
+        "title": null,
+        "scale": {
+          "domain": [
+            "Czechia",
+            "Slovakia",
+            "Hungary",
+            "Germany",
+            "Austria",
+            "United States"
+          ],
+          "range": [
+            "#1f5fa8",
+            "#9aa3ad",
+            "#9aa3ad",
+            "#9aa3ad",
+            "#9aa3ad",
+            "#9aa3ad"
+          ]
+        },
+        "legend": null
+      },
+      "tooltip": [
+        {
+          "field": "measure",
+          "type": "nominal"
+        },
+        {
+          "field": "country",
+          "type": "nominal"
+        },
+        {
+          "field": "percent",
+          "type": "quantitative"
+        },
+        {
+          "field": "lo",
+          "type": "quantitative"
+        },
+        {
+          "field": "hi",
+          "type": "quantitative"
+        },
+        {
+          "field": "n",
+          "type": "quantitative"
+        }
+      ]
+    }
+  }
+}
