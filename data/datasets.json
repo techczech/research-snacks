@@ -482,6 +482,26 @@
     "notes": "The cake check uses enTenTen13; the literally check uses enTenTen21. Keep the exact corpus identifier, processing version and word/token denominator with a query."
   },
   {
+    "id": "european-social-survey",
+    "title": "European Social Survey (ESS)",
+    "provider": "European Social Survey European Research Infrastructure Consortium (ESS ERIC); data distributed by Sikt, Norway",
+    "url": "https://www.europeansocialsurvey.org/data-portal",
+    "access": "free registration",
+    "licence": {
+      "name": "ESS data availability policy (free, not-for-profit use, simple registration)",
+      "url": "https://www.europeansocialsurvey.org/methodology/data-and-documentation-availability"
+    },
+    "data": "Cross-national survey of attitudes, beliefs and behaviour, fielded every two years since 2002 (Round 1, 2002/03, to Round 11, 2023/24; first Round 12 data are scheduled for early 2027). Every round asks about trust, democracy and government, immigration, climate change, religion, values, identity, wellbeing and media use, plus rotating modules (Round 11 covered gender and health inequalities). The Data Portal offers integrated files per round, a cumulative file builder, multilevel contextual data for rounds 4 to 11, and the CRONOS self-completion panels. Czechia takes part; its Round 11 data were collected by self-completion and are released only as a country-specific file.",
+    "citation": "https://www.europeansocialsurvey.org/data/data-citation-requirements",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Suggested for a future snack alongside the World Values Survey and European Values Study"
+    },
+    "checked": "2026-11-22",
+    "notes": "The ESS says its data \"are available without restrictions, for not-for-profit purposes, pending only a very simple registration procedure\". Downloads go through the ESS Data Portal (ess.sikt.no). Publications must cite the exact file and edition in the footnotes or references, for example \"ESS ERIC (2025) ESS11 - integrated file, edition 4.1 [Data set]. Sikt. https://doi.org/10.21338/ess11e04_1\". Use the design and post-stratification weights; the portal lists data alerts such as the November 2026 error in Iceland's Round 11 weights."
+  },
+  {
     "id": "european-values-study",
     "title": "European Values Study (EVS)",
     "provider": "European Values Study, with data archived at GESIS – Leibniz Institute for the Social Sciences",
