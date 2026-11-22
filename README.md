@@ -77,3 +77,20 @@ it never silently advances to a newer branch tip. Deploy a feature preview
 and review the catalogue before publishing production.
 `bun run check:data-sources [PREVIEW_URL]` checks the catalogue headlessly at
 390, 950 and 1440 pixels, including no JavaScript and 200% text.
+
+## Update the medicine training timeline
+
+The medicine snack bundles a self-contained tool in
+`scripts/assets/tools/medicine-training-routes/index.html`. Its original route
+coding, renderer input and portable builder live in the corresponding
+[checking package](https://github.com/techczech/research-snacks-data/tree/main/snacks/2026-11-22-medicine-training-routes).
+Rebuild from a reviewed data revision with `code/timeline/build.ts`, supplying
+the snack data directory and this output path. Record the revision and output
+hash in `source-commit.txt`. Keep registration eligibility, clinical training
+and family-practice credential endpoints distinct when changing the coding.
+
+Run `bun run check`, `bun scripts/check-medicine.ts` and the normal release
+check. The medicine check exercises the sandboxed embedded tool at 390, 728,
+1024 and 1400 pixels, all three clocks, CSV download, source records, dynamic
+frame height and no-JavaScript access. A feature preview is required before
+any publication approval.

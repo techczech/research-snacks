@@ -36,7 +36,9 @@ export async function checkHome(browser:Browser,base:string,shots?:string){
    await page.locator('[data-home-subject=all]').click();assert.deepEqual(await ids(),expected);
    await page.locator('#home-search-input').fill('cake');await page.locator('#home-search-input').press('Enter');
    assert(await page.locator('#search-dlg').evaluate((d:HTMLDialogElement)=>d.open));assert.equal(await page.locator('#search-input').inputValue(),'cake');
-   await page.waitForFunction(()=>document.querySelectorAll('#search-results [role=option]').length===1);
+   // Dataset pages can also mention cake; the requested entry must occur once.
+   const cakeResult=page.locator('#search-results [role=option][href$="/2026-11-17-can-a-cake-be-sickly/"]');
+   await cakeResult.waitFor();assert.equal(await cakeResult.count(),1);
    assert((await page.locator('#search-results').innerText()).includes('Can a cake be sickly?'));if(shots&&width===950)await page.screenshot({path:`${shots}/preview-search-950.png`});
    await page.keyboard.press('Escape');assert(await page.locator('#home-search-input').evaluate(e=>e===document.activeElement));
    await page.locator('[data-home-search] button').click();await page.keyboard.press('Escape');assert(await page.locator('[data-home-search] button').evaluate(e=>e===document.activeElement));
