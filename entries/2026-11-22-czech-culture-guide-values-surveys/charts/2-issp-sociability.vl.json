@@ -5,10 +5,10 @@
     "url": "charts/2-issp-sociability.csv"
   },
   "title": {
-    "text": "Czechs go out and make new friends less often than Slovaks or Americans",
+    "text": "Czechs go out with friends and meet new people there less often than Slovaks or Americans",
     "subtitle": [
       "ISSP 2017 Social Networks and Social Resources, weighted",
-      "Close to Germany and Austria on all three"
+      "Close to Germany and Austria on these three; bars show approximate weight-only 95% intervals"
     ],
     "anchor": "start"
   },
