@@ -247,6 +247,7 @@
     "data/eu-chart.vl.json": "snacks/2026-11-22-medicine-training-routes/data/eu-chart.vl.json",
     "code/chart-eu.py": "snacks/2026-11-22-medicine-training-routes/code/chart-eu.py",
     "data/tool-copy.json": "snacks/2026-11-22-medicine-training-routes/data/tool-copy.json",
-    "data/review/review-response.md": "snacks/2026-11-22-medicine-training-routes/data/review/review-response.md"
+    "data/review/review-response.md": "snacks/2026-11-22-medicine-training-routes/data/review/review-response.md",
+    "data/visual-annotations.json": "snacks/2026-11-22-medicine-training-routes/data/visual-annotations.json"
   }
 }

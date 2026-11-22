@@ -91,6 +91,7 @@ and family-practice credential endpoints distinct when changing the coding.
 
 Run `bun run check`, `bun scripts/check-medicine.ts` and the normal release
 check. The medicine check exercises the sandboxed embedded tool at 390, 728,
-1024 and 1400 pixels, all three clocks, CSV download, source records, dynamic
+1024 and 1400 pixels, both shared-axis views, all three clocks, hover, touch and keyboard details,
+consistent marker visibility, CSV download, source records, sticky axis, dynamic
 frame height and no-JavaScript access. A feature preview is required before
 any publication approval.

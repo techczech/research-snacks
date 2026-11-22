@@ -521,7 +521,7 @@ Some differences are substantial. England's five-year medical degree can lead to
 
 ### Explore the routes
 
-Start at **Leaving school**, **Age 18** or **Primary-school entry**. Select a stage to see what it permits, the rule behind its duration, a short source passage and its date. Later bars compare GP or family-medicine training. The local credentials and practice rights still differ.
+Start at **Leaving school**, **Age 18** or **Primary entry**. Switch between **Training stages**, with six routes on one shared year scale, and **Milestones**, which compares registration and family-training points. Hover, focus or tap a bar or marker for its interval, meaning and source. Open **All stages and sources** for the full records and passages. Later training concerns GP or family medicine; the local credentials and practice rights still differ.
 
 [Open the Medicine Training Timeline full-page](/tools/medicine-training-routes/ "Embed interactive tool")
 
@@ -595,6 +595,8 @@ The UIS workbooks mostly describe 2020–21 structures, the selected World Bank 
 ### Timeline
 
 The recorded medicine-only source pass began at **12:57:37 GMT on 22 November 2026**. Its first data commit was at **13:31:09**, an elapsed interval of **33 minutes 32 seconds**; the first packaged timeline was committed at **13:31:24**. The initial scoping phase and later review work are outside that interval. Author review led to two changes: the main later-training bars were matched to family/general practice, and the layout was stacked at intermediate as well as phone widths.
+
+A further preview review requested comparisons on one shared scale and details on hover or tap. The tool now switches between training stages and milestone points; both use the same source-coded durations. Keyboard and touch access accompany the hover details.
 
 The next pass retrieved the migrated NMC originals, replaced the blanket India source warning, independently checked the six first-registration milestones and prepared this snack. These are measured elapsed intervals where timestamps exist; they include activity outside source reading. Human briefing and review time was not timed.
 

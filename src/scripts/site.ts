@@ -12,18 +12,29 @@ initDialogs(); initCopy(); initTables();
 
 const toolFrames = Array.from(document.querySelectorAll<HTMLIFrameElement>('iframe.tool-embed'));
 if (toolFrames.length) {
+  // Opaque-origin tools cannot read their visible bounds in the host page.
+  const sendViewport = (frame: HTMLIFrameElement) => {
+    const box=frame.getBoundingClientRect();
+    const headerBottom=document.querySelector('header.site')?.getBoundingClientRect().bottom || 0;
+    frame.contentWindow?.postMessage({type:'research-snack:tool-viewport',
+      top:Math.max(0,headerBottom-box.top-frame.clientTop),
+      bottom:Math.min(frame.clientHeight,innerHeight-box.top-frame.clientTop),
+      theme:document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')},'*');
+  };
   window.addEventListener('message', ({origin, source, data}) => {
-    // The bundled iframe is sandboxed without allow-same-origin.
     if (origin !== 'null' || data?.type !== 'research-snack:tool-height'
         || !Number.isInteger(data.height) || data.height < 1 || data.height > 100_000) return;
     const frame = toolFrames.find(tool => tool.contentWindow === source);
-    if (frame) frame.style.height = `${data.height + frame.offsetHeight - frame.clientHeight}px`;
+    if (frame) {frame.style.height = `${data.height + frame.offsetHeight - frame.clientHeight}px`;sendViewport(frame);}
   });
+  let viewportFrame=0;
+  const updateViewport=()=>{if(viewportFrame)return;viewportFrame=requestAnimationFrame(()=>{viewportFrame=0;toolFrames.forEach(sendViewport);});};
+  window.addEventListener('scroll',updateViewport,{passive:true});window.addEventListener('resize',updateViewport);
+  new MutationObserver(updateViewport).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+  matchMedia('(prefers-color-scheme:dark)').addEventListener('change',updateViewport);
   for (const frame of toolFrames) {
-    // The frame may have sent its initial size before this script loaded.
-    const measure = () => frame.contentWindow?.postMessage('research-snack:measure-tool', '*');
-    frame.addEventListener('load', measure);
-    measure();
+    const measure = () => {frame.contentWindow?.postMessage('research-snack:measure-tool', '*');sendViewport(frame);};
+    frame.addEventListener('load', measure);measure();
   }
 }
 const search = document.querySelector<HTMLDialogElement>('#search-dlg')!;
