@@ -64,20 +64,29 @@ for(const route of data.routes){const main=route.stages.filter((s:any)=>['prereq
 await page.setViewportSize({width:390,height:844});
 assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
 await page.locator('#specialties').check();
-for(const mode of ['leaving','age18','school']){
+for(const width of [390,728,1024,1400]){
+ await page.setViewportSize({width,height:1000});
+ for(const mode of ['leaving','age18','school']){
  await page.locator(`[name=clock][value=${mode}]`).check();
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  assert(await page.locator('.timeline-scroll').evaluate(e=>e.scrollWidth<=e.clientWidth+1));
  for(const row of await page.locator('.route-row').all()){
   const label=await row.locator('.route-name').boundingBox(),bar=await row.locator('.phases').first().boundingBox();
-  assert(label&&bar&&bar.y>=label.y+label.height);
+  assert(label&&bar);
+  if(width<=1100)assert(bar.y>=label.y+label.height);
+  else assert(bar.x>label.x+label.width);
   assert(bar.width>330);
   const axis=await row.locator('.row-axis').boundingBox();
-  assert(axis&&axis.width>330);
+  if(width<=1100)assert(axis&&axis.width>330);
   for(const phase of await row.locator('.phase').all()){
-   const bounds=await phase.boundingBox();assert(bounds&&bounds.x>=0&&bounds.x+bounds.width<=390);
+   const bounds=await phase.boundingBox();assert(bounds&&bounds.x>=0&&bounds.x+bounds.width<=width);
   }
  }
+ }
+ await page.locator('[name=clock][value=leaving]').check();
+ await page.locator('.timeline').screenshot({path:join(here,`verification-timeline-${width}.png`)});
 }
+await page.setViewportSize({width:390,height:844});
 await page.locator('[name=clock][value=leaving]').check();
 await page.locator('[data-route=singapore] .phases-list [data-stage=sg-family]').click();
 assert((await page.locator('#evidence').innerText()).includes('3-year'));
@@ -93,5 +102,5 @@ await page.locator('.timeline').screenshot({path:join(here,'verification-desktop
 const nojs=await browser.newContext({javaScriptEnabled:false});const np=await nojs.newPage();await np.goto('file://'+join(here,'medicine-timeline.html'));
 assert.equal(await np.locator('.route-row').count(),6);assert.equal(await np.locator('.static-record').count(),55);assert.equal(await np.locator('#all-sources .source').count(),30);
 assert.equal(network.length,0);assert.deepEqual(failures,[]);
-console.log(JSON.stringify({routes:6,stages:55,sources:30,eu_records:32,gp_rows:27,clock_modes:3,offline:true,mobile_page_overflow:false,mobile_timeline_overflow:false,family_practice_routes:true,download:true,no_js_records:true,console_errors:failures}));
+console.log(JSON.stringify({routes:6,stages:55,sources:30,eu_records:32,gp_rows:27,clock_modes:3,viewport_widths:[390,728,1024,1400],offline:true,mobile_page_overflow:false,mobile_timeline_overflow:false,family_practice_routes:true,download:true,no_js_records:true,console_errors:failures}));
 await browser.close();
