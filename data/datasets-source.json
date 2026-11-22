@@ -1,8 +1,8 @@
 {
   "repository": "https://github.com/techczech/research-datasets",
-  "commit": "50b391f7b152f2ef5d72d34ffa075ece8f45f0b9",
+  "commit": "a292f2cc13ea9c9d7c30302eaa0b21ce30f52e17",
   "sha256": {
-    "datasets.json": "ddb987c943be95eea70ebf11d89cc961addcd90f8f3abf2c91a1a608776189db",
-    "datasets.csv": "7a4d1ee8c0ae0dd64f0f8239071727e7baedc11cabf8e502ca2112bc16675502"
+    "datasets.json": "673ab76ba0dfed90110dd03a0cdd0566de383757afc95b24f32469c4e0e16d54",
+    "datasets.csv": "494e200a92d62b75e4a08c664bd9cc1e0ed302c9e9a171323252c776a375ae88"
   }
 }

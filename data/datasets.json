@@ -54,6 +54,26 @@
     "notes": "The provider page assigns a Creative Commons Attribution licence and includes source-specific notices. Customs arrivals do not measure installed capacity, utilisation or domestic movements; modelled allocation adds assumptions."
   },
   {
+    "id": "ami-meeting-corpus",
+    "title": "AMI Meeting Corpus",
+    "provider": "AMI Consortium; hosted by the University of Edinburgh",
+    "url": "https://groups.inf.ed.ac.uk/ami/corpus/",
+    "access": "open",
+    "licence": {
+      "name": "CC BY 4.0 (signals, transcription and some annotations)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "data": "100 hours of English meeting recordings, about two-thirds from a scenario in which four participants play a design team and the rest from real meetings. Synchronised close-talking and far-field microphones, individual and room-view cameras, slides, whiteboard and pen data, with orthographic transcripts and annotations such as dialogue acts and head movement.",
+    "citation": "https://groups.inf.ed.ac.uk/ami/corpus/",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Searched for downloadable interview audio and video for analysis"
+    },
+    "checked": "2026-11-22",
+    "notes": "Files download per meeting without an account; the website videos suit most purposes and higher resolution video is available to video-processing researchers. Annotations come as a separate NXT XML package (ami_public_manual_1.6.2.zip). The Edinburgh server returned \"service unavailable\" at times on 22 Nov 2026."
+  },
+  {
     "id": "archigos",
     "title": "Archigos political leaders data",
     "provider": "H. E. Goemans, Kristian Skrede Gleditsch and Giacomo Chiozza",
@@ -176,6 +196,26 @@
     },
     "checked": "2026-11-21",
     "notes": "The old /ukwac/ provider link returns 404; this is its current descriptive page. Domain selection favours British English but does not guarantee that every text is British. A service subscription does not license bulk republication of web text."
+  },
+  {
+    "id": "candor-corpus",
+    "title": "CANDOR corpus of naturalistic conversation",
+    "provider": "BetterUp Labs",
+    "url": "https://huggingface.co/datasets/betterup/candor-raw",
+    "access": "on request",
+    "licence": {
+      "name": "CANDOR Corpus License, Version 2.1",
+      "url": "https://huggingface.co/datasets/betterup/candor-raw#candor-corpus-license"
+    },
+    "data": "1,656 unscripted video-call conversations between pairs of strangers in the United States, recorded in 2020 with 1,460 participants, about 860 hours in total (median 29 minutes). Released as raw recordings (about 950 GB), processed files (about 350 GB) and tables (about 11 GB) with transcripts, audio and video features, and participants' post-conversation surveys.",
+    "citation": "https://doi.org/10.1126/sciadv.adf3197",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Searched for downloadable interview audio and video for analysis"
+    },
+    "checked": "2026-11-22",
+    "notes": "Access is by a short Hugging Face form (affiliation and planned use), approved by hand; one approval covers all three versions and does not expire. The licence allows research, development and commercial use but forbids redistribution, sharing derived or synthetic versions, identifying or contacting participants, biometric identifiers and synthetic media of participants; users must cite the corpus and delete anything BetterUp removes. Version 1.1 corrected video timing and survey scores."
   },
   {
     "id": "childes",
@@ -908,6 +948,26 @@
     "notes": "A possible comparator identified during the decipherment survey’s source review. Current retrieval returned only a minimal site shell; record coverage, export formats and terms could not be verified. No corpus was downloaded or analysed."
   },
   {
+    "id": "memory-of-nations",
+    "title": "Memory of Nations (Paměť národa) oral history archive",
+    "provider": "Post Bellum, with Czech Radio and the Institute for the Study of Totalitarian Regimes",
+    "url": "https://www.pametnaroda.cz/en",
+    "access": "unclear",
+    "licence": {
+      "name": "Terms for reuse of recordings not published on the open pages",
+      "url": "https://www.pametnaroda.cz/cs/ochrana-osobnich-udaju-podminky-uziti"
+    },
+    "data": "Recorded life-story interviews with witnesses of 20th-century history, mostly in Czech. On 22 Nov 2026 the site listed 22,315 witnesses in the database, 12,723 published witness stories, 74,219 clips and 189,954 photographs. Published stories combine audio or video clips with written summaries.",
+    "citation": "https://www.pametnaroda.cz/en",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Searched for downloadable interview audio and video for analysis"
+    },
+    "checked": "2026-11-22",
+    "notes": "Clips play on the public site. Full recordings are offered through a researcher area (e-badatelna) that needs a login; 23,101 researchers were registered. The open pages hold only a privacy notice, so the terms for downloading recordings and analysing them with models need to be asked of Post Bellum before use. Interviews contain personal life histories; treat them as personal data."
+  },
+  {
     "id": "mipvu-lexical-units",
     "title": "MIPVU lexical-unit replication data",
     "provider": "Susan Nacey, Tina Krennmayr, Aletta Dorst and Gudrun Reijnierse / DataverseNO",
@@ -1093,6 +1153,26 @@
     "notes": "The README assigns different licences to corpus, code and models. The maintainer’s corpus licence is recorded as a claim; upstream compilation rights have not been independently audited."
   },
   {
+    "id": "ortofon-spoken-czech",
+    "title": "ORTOFON corpus of informal spoken Czech",
+    "provider": "Czech National Corpus, Charles University; distributed through LINDAT/CLARIAH-CZ",
+    "url": "http://hdl.handle.net/11234/1-5686",
+    "access": "licensed",
+    "licence": {
+      "name": "License Agreement for Czech National Corpus Data (audio); CC BY-NC-SA 4.0 (transcripts only)",
+      "url": "https://lindat.mff.cuni.cz/repository/static/license-cnc-data.html"
+    },
+    "data": "697 recordings of informal spoken Czech from 2012 to 2020 across the Czech Republic, with 1,121 speakers and about 2.4 million words, partly balanced by gender, age, education and region. Transcripts have orthographic, phonetic and metalanguage tiers in ELAN format, linked to anonymised audio. The version with audio (v3) is about 62 GB.",
+    "citation": "http://hdl.handle.net/11234/1-5686",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Searched for downloadable Czech spoken audio for analysis"
+    },
+    "checked": "2026-11-22",
+    "notes": "The transcript-only release (http://hdl.handle.net/11234/1-5687) is CC BY-NC-SA 4.0. The audio release requires signing the Czech National Corpus data licence in LINDAT. Recordings are informal conversations, not interviews."
+  },
+  {
     "id": "apollo-costs",
     "title": "Project Apollo cost dataset",
     "provider": "The Planetary Society",
@@ -1186,6 +1266,46 @@
     },
     "checked": "2026-11-21",
     "notes": "Current verification failed because the HTTPS certificate has expired; it was not bypassed. The description is limited to the provider’s previously indexed title and research-access description; current contents and terms could not be verified on 21 November 2026. Do not infer open redistribution rights."
+  },
+  {
+    "id": "santa-barbara-corpus",
+    "title": "Santa Barbara Corpus of Spoken American English (SBCSAE)",
+    "provider": "University of California, Santa Barbara (John W. Du Bois); audio hosted by TalkBank",
+    "url": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+    "access": "open",
+    "licence": {
+      "name": "CC BY-ND 3.0 US",
+      "url": "https://creativecommons.org/licenses/by-nd/3.0/us/"
+    },
+    "data": "Recordings of naturally occurring spoken interaction from across the United States, about 249,000 words in parts 1 to 4, with transcripts time-aligned to the audio at the level of intonation units. Audio is available as WAV and MP3.",
+    "citation": "https://www.linguistics.ucsb.edu/research/santa-barbara-corpus-spoken-american-english",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Searched for downloadable interview audio and video for analysis"
+    },
+    "checked": "2026-11-22",
+    "notes": "Transcripts download free from UCSB; audio files from talkbank.org/media/CABank/SBCSAE/. The No Derivatives licence allows sharing unchanged copies with credit but not adapted versions, so publish analyses and short quotations rather than edited audio."
+  },
+  {
+    "id": "seamless-interaction",
+    "title": "Seamless Interaction dataset",
+    "provider": "Meta (FAIR)",
+    "url": "https://huggingface.co/datasets/facebook/seamless-interaction",
+    "access": "open",
+    "licence": {
+      "name": "CC BY-NC 4.0",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    "data": "Over 4,000 hours of face-to-face conversation between more than 4,000 participants, recorded as one video and audio track per participant, in naturalistic and improvised (role-played) sessions. Each file comes with a transcript, voice-activity timing and extracted movement, face and body-pose features. Distributed as WebDataset archives of about 1 GB; a sample set is about 1 GB and the whole dataset about 27 TB.",
+    "citation": "https://huggingface.co/datasets/facebook/seamless-interaction",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Searched for downloadable interview audio and video for analysis"
+    },
+    "checked": "2026-11-22",
+    "notes": "No account is needed. Non-commercial use with attribution. Participants were recruited through vendors in several sites, and the card notes variation in production quality and in the accuracy of annotated time stamps. Pair the two participant files of an interaction to see both sides."
   },
   {
     "id": "seshat",
