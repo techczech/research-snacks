@@ -1,0 +1,226 @@
+# Drafts only. The Research Snacks coordinator owns catalogue edits and site sync.
+# No public microdata were downloaded. Standards/guides are identified as such.
+- id: unesco-uis-education-structures
+  title: "UNESCO UIS education structures and ISCED mappings"
+  provider: "UNESCO Institute for Statistics"
+  url: "https://www.uis.unesco.org/en/methods-and-tools/isced/mapping-and-diagrams"
+  access: "open country documents and Data Browser; export and country coverage to verify"
+  licence:
+    name: "UIS Data Browser CC BY-SA 4.0; verify individual mapping asset terms"
+    url: "https://databrowser.uis.unesco.org/terms-and-conditions"
+  data: "National programme and qualification mappings to ISCED; education structures and scheduled durations. Includes Asian systems. Does not describe full professional licensing routes."
+  citation: "https://databrowser.uis.unesco.org/terms-and-conditions"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Landing page and Data Browser terms checked. No bulk extraction. Preserve asset year and terms; the general UNESCO website terms should not replace a specific data licence."
+- id: world-bank-edstats-duration
+  title: "World Bank EdStats and UIS-derived education duration indicators"
+  provider: "World Bank; underlying duration data from UNESCO UIS"
+  url: "https://datatopics.worldbank.org/education/html/index.aspx"
+  access: "open DataBank and documented CSV/Excel downloads"
+  licence:
+    name: "CC BY 4.0 on checked WDI secondary-duration indicator; verify other series"
+    url: "https://data.worldbank.org/indicator/SE.SEC.DURS"
+  data: "Country education indicators including compulsory education duration (SE.COM.DURS) and secondary duration (SE.SEC.DURS); query documentation describes more than 200 countries."
+  citation: "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SE.COM.DURS"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Portal warns that some indicators may not be current while EdStats is revamped. UIS-derived series are not independent corroboration. Country-by-year missingness and actual API responses not tested."
+- id: oecd-education-at-a-glance
+  title: "OECD Education at a Glance"
+  provider: "OECD"
+  url: "https://doi.org/10.1787/1c0d9c79-en"
+  access: "open report, linked tables and country notes"
+  licence:
+    name: "CC BY 4.0 for checked 2025 edition; third-party exceptions apply"
+    url: "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/09/education-at-a-glance-2025_c58fc9ae/1c0d9c79-en.pdf"
+  data: "Education structures, theoretical programme duration and completion measures for OECD and selected partner systems. The 2025 tertiary completion chapter documents programme-duration variation."
+  citation: "https://doi.org/10.1787/1c0d9c79-en"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "2026 edition also located (doi:10.1787/b4968bbc-en); equivalent tertiary-duration tables not verified. Pin edition, table, country notes and applicable licence before extraction. Not profession-to-practice data."
+- id: eurydice-education-structures
+  title: "Eurydice structures of European education systems"
+  provider: "European Education and Culture Executive Agency; Eurydice Network"
+  url: "https://op.europa.eu/en/publication-detail/-/publication/b82d1d07-abf4-11f1-b9e5-01aa75ed71a1/language-en"
+  access: "open interactive diagrams and reading guide"
+  licence:
+    name: "Asset-specific reuse terms not verified"
+    url: "https://op.europa.eu/en/publication-detail/-/publication/b82d1d07-abf4-11f1-b9e5-01aa75ed71a1/language-en"
+  data: "2026/27 diagrams for 42 education systems in 40 countries, from early education through tertiary levels; mainstream and notional routes."
+  citation: "https://doi.org/10.2797/4814414"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Reading guide excludes specialist medical and other restricted-field postgraduate programmes. Not all professional degrees are drawn separately. Not actual elapsed completion durations."
+- id: barro-lee-educational-attainment
+  title: "Barro–Lee Educational Attainment Dataset"
+  provider: "Robert J. Barro and Jong-Wha Lee"
+  url: "https://barrolee.github.io/BarroLeeDataSet/BLv3.html"
+  access: "downloadable XLS, CSV and Stata files"
+  licence:
+    name: "Redistribution licence not established; provider retains copyright"
+    url: "https://barrolee.github.io/BarroLeeDataSet/"
+  data: "Estimated attained schooling by population age group; 2021 update covers 146 countries, 1950–2015."
+  citation: "https://barrolee.github.io/BarroLeeDataSet/"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Seriously considered and set aside for the main question: attainment is not legally required education or professional preparation. No raw files copied. Do not infer an open licence from public download."
+- id: world-directory-medical-schools
+  title: "World Directory of Medical Schools"
+  provider: "World Federation for Medical Education and FAIMER, a division of Intealth"
+  url: "https://www.wdoms.org/"
+  access: "free public search; paid annual subscription for daily CSV/XML database downloads"
+  licence:
+    name: "Restricted subscription licence; not open data"
+    url: "https://www.wdoms.org/subscription-terms/"
+  data: "Medical-school and programme records; the subscription dictionary includes CurriculumDuration in years and country identifiers."
+  citation: "https://www.wdoms.org/data-dictionary-world-directory.pdf"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Dictionary and access/licence pages checked. No subscription purchased or database downloaded. Not a complete route to practice; listing is not accreditation. Public aggregation rights and field completeness require confirmation before a broad dataset project."
+- id: iea-engineering-recognition-standards
+  title: "IEA Washington Accord and professional competence agreements"
+  provider: "International Engineering Alliance"
+  url: "https://www.internationalengineeringalliance.org/accords/washington-accord"
+  access: "public standards, signatory and qualification resources"
+  licence:
+    name: "Copyright IEA; bulk redistribution terms not verified"
+    url: "https://www.internationalengineeringalliance.org/accords/washington-accord"
+  data: "Recognition of substantial academic equivalence among accredited professional engineering programmes; the separate IPEA specifies independent professional competence."
+  citation: "https://www.internationalengineeringalliance.org/documents-public/ipea"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Reference framework, not a duration microdataset or universal licence. Signatory and programme coverage varies by accreditation date. Keep academic and experienced-professional recognition separate. Catalogue inclusion as a standards resource is the curator's decision."
+- id: enaee-eur-ace-standards
+  title: "EUR-ACE Framework Standards and Guidelines"
+  provider: "European Network for Accreditation of Engineering Education"
+  url: "https://www.enaee.eu/eur-ace-system/standards-and-guidelines/"
+  access: "public standards text"
+  licence:
+    name: "Redistribution terms not verified"
+    url: "https://www.enaee.eu/eur-ace-system/standards-and-guidelines/"
+  data: "Bachelor's and master's engineering programme workload ranges, programme outcomes and accreditation requirements."
+  citation: "https://www.enaee.eu/eur-ace-system/standards-and-guidelines/"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Standards text checked, including 180/210/240 ECTS bachelor's workloads. Not a licensing-duration dataset and not automatic Washington Accord equivalence. Curator may classify as reference documentation."
+- id: ncbe-aba-bar-admission-guide
+  title: "Comprehensive Guide to Bar Admission Requirements"
+  provider: "National Conference of Bar Examiners and ABA Section of Legal Education and Admissions to the Bar"
+  url: "https://reports.ncbex.org/"
+  access: "public jurisdiction guides and comparison charts"
+  licence:
+    name: "Publisher copyright; reuse terms not verified"
+    url: "https://reports.ncbex.org/"
+  data: "US jurisdiction admission requirements, including legal education and foreign qualifications; a structured regional comparison, not global qualification duration."
+  citation: "https://reports.ncbex.org/"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Guide landing page and ABA documentation located. State-specific source rules remain authoritative; all charts have not been audited. Curator may classify as a comparative reference rather than a statistical dataset."
+- id: ncses-survey-earned-doctorates
+  title: "Survey of Earned Doctorates"
+  provider: "National Center for Science and Engineering Statistics, U.S. National Science Foundation"
+  url: "https://ncses.nsf.gov/surveys/earned-doctorates/2025"
+  access: "open aggregate Excel/PDF tables; detailed respondent data restricted"
+  licence:
+    name: "US federal statistical tables; product-specific reuse notice not separately verified"
+    url: "https://ncses.nsf.gov/surveys/earned-doctorates/2025"
+  data: "Annual census of US research-doctorate recipients; time to degree, field, education history and other characteristics. Tables 1-12, 3-5 and 3-6 support time-to-degree comparisons."
+  citation: "https://ncses.nsf.gov/surveys/earned-doctorates/2025"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "2025 data released 25 September 2026. Methods and table catalogue checked; no numerical duration series extracted. Doctoral-entry clock can include an associated/prerequisite master's; professional doctorates and non-completers require separate treatment. Copy the provider's suggested citation verbatim when used."
+- id: oecd-doctorate-careers-observatory
+  title: "OECD Careers of Doctorate Holders and Research and Innovation Careers Observatory"
+  provider: "OECD; legacy CDH collaboration with Eurostat and UNESCO UIS"
+  url: "https://www.oecd.org/en/publications/research-and-innovation-careers-observatory-2026_138ed294-en/full-report/working-in-research-and-innovation_c838d5bf.html"
+  access: "public report and linked statistics"
+  licence:
+    name: "Selected product terms not verified"
+    url: "https://www.oecd.org/en/publications/research-and-innovation-careers-observatory-2026_138ed294-en/full-report/working-in-research-and-innovation_c838d5bf.html"
+  data: "International doctorate-holder careers, employment and mobility context."
+  citation: "https://www.oecd.org/en/publications/research-and-innovation-careers-observatory-2026_138ed294-en.html"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Seriously considered; checked career chapter does not establish a ready current elapsed doctorate-duration table by country and field. Exact series, countries and years need verifying before use."
+- id: eurodoc-doctoral-structures
+  title: "Eurodoc survey on the structure of doctorates across Europe"
+  provider: "Eurodoc Doctoral Training Working Group and national associations"
+  url: "https://www.eurodoc.net/doctoral-training-wg/doctorates-across-europe"
+  access: "public country profile PDFs"
+  licence:
+    name: "Reuse licence not verified"
+    url: "https://www.eurodoc.net/doctoral-training-wg/doctorates-across-europe"
+  data: "Formal doctoral length, admission, candidate status, training and defence structures; visible profiles dated 2018–2020."
+  citation: "https://www.eurodoc.net/doctoral-training-wg/doctorates-across-europe"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Landing page read; individual profiles not fully appraised. National-association descriptions acknowledge within-country variation. Formal length is not observed completion duration; current rules require rechecking."
+- id: eurodoc-survey-one
+  title: "Eurodoc Survey I"
+  provider: "Eurodoc and International Centre for Higher Education Research, University of Kassel"
+  url: "https://www.eurodoc.net/eurodoc-survey-i"
+  access: "public report"
+  licence:
+    name: "Redistribution licence not verified"
+    url: "https://www.eurodoc.net/eurodoc-survey-i"
+  data: "Doctoral-candidate experiences and conditions in twelve European countries; survey conducted in 2008/09 and report published in 2011."
+  citation: "https://www.eurodoc.net/eurodoc-survey-i"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Landing page and indexed report description checked; full report not read. Candidate experience is not a recent completer-duration census. Sampling and exact duration questions unverified."
+- id: hesa-research-degree-duration-candidate
+  title: "HESA UK student and qualification data — doctoral duration candidate"
+  provider: "Higher Education Statistics Agency, Jisc"
+  url: "https://www.hesa.ac.uk/data-and-analysis"
+  access: "public summaries; tailored longitudinal extraction may need a request"
+  licence:
+    name: "Exact product licence unresolved; no duration product selected"
+    url: "https://www.hesa.ac.uk/data-and-analysis"
+  data: "UK student, qualification and graduate data; candidate source for linking commencement, study mode, field and award dates."
+  citation: null
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Feasibility lead only. Bounded search did not find a ready public median elapsed doctoral-duration table by field. No longitudinal extract, access approval or price established. Do not advertise this as a verified downloadable duration dataset."
+- id: nistep-japan-doctoral-surveys
+  title: "NISTEP Japanese doctoral-graduate surveys"
+  provider: "National Institute of Science and Technology Policy, Japan"
+  url: "https://www.nistep.go.jp/wp/wp-content/uploads/NISTEP-NR174-FullJ.pdf"
+  access: "public reports and some survey instruments; underlying individual data access unverified"
+  licence:
+    name: "Selected report/data reuse terms not verified"
+    url: "https://www.nistep.go.jp/"
+  data: "Doctoral-graduate education experiences, careers and education-history information in Japan."
+  citation: "https://www.nistep.go.jp/wp/wp-content/uploads/NISTEP-NR174-FullJ.pdf"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "Indexed national report and earlier survey instrument located; no compatible current time-to-degree table verified. Identify cohort, degree-award versus course-completion population and exact clock before comparison. No full Japanese report appraisal completed."
+- id: usmle-performance-data
+  title: "USMLE examination performance data"
+  provider: "United States Medical Licensing Examination; National Board of Medical Examiners"
+  url: "https://www.usmle.org/performance-data"
+  access: "public aggregate tables"
+  licence:
+    name: "Publisher copyright; table redistribution terms not verified"
+    url: "https://www.usmle.org/performance-data"
+  data: "Annual Step examination numbers tested and pass rates by medical-school category and first/repeat attempt."
+  citation: "https://www.usmle.org/performance-data"
+  snacks: []
+  found: {date: '2026-11-22', context: Scoping international professional qualification duration}
+  checked: '2026-11-22'
+  notes: "2025 Step 1 values and category footnotes checked. Canadian schools changed grouping in 2025. School location is not citizenship or programme duration; aggregate pass rates cannot identify the effect of training years."

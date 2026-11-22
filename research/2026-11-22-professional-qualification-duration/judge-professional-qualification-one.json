@@ -1,0 +1,89 @@
+{
+  "register": "FOR AGENTS",
+  "date": "2026-11-22",
+  "model_identity": "unknown",
+  "judgement_status": "Independent rubric judgement; scores are not empirical validation.",
+  "option_order": ["Education explorer", "Timeline", "Evidence comparison"],
+  "calibration": {
+    "passed": true,
+    "better_warranted_claim": "Different authorised pathways exist, with outcomes considered separately.",
+    "reason": "Variation in authorised routes is descriptive evidence. A shorter national degree cannot establish that additional years in every longer system are unnecessary, because selection, prerequisites, supervised work, endpoints and outcomes may differ."
+  },
+  "scores": [
+    {
+      "option": "Education explorer",
+      "fit": {
+        "score": 4,
+        "reason": "International education structures provide useful background, but professional preparation, independent practice and the conventional-minimum hypothesis remain follow-up questions. Doctoral structures add breadth without resolving the main professional comparison."
+      },
+      "warranted_inference": {
+        "score": 8,
+        "reason": "The bounded descriptive claim about non-universal education structures fits the available structural sources. Separating scheduled study from actual completion is essential; the uncertainty over international doctoral completion prevents a higher score."
+      },
+      "preview_feasibility": {
+        "score": 8,
+        "reason": "Existing structural sources offer a proportionate route to a useful bounded preview. Selected national definitions and doctoral comparability still require curation, so source availability does not itself establish a ready dataset."
+      },
+      "overall": 6.6666666667
+    },
+    {
+      "option": "Timeline",
+      "fit": {
+        "score": 9,
+        "reason": "It preserves all three professions, international variation and named Asian systems, while exposing prerequisites and supervised stages that simple degree-length comparisons miss. Its descriptive treatment engages the convention hypothesis by locating variation, although it cannot determine whether extra years are necessary."
+      },
+      "warranted_inference": {
+        "score": 8,
+        "reason": "Matched stages can warrant a comparison of authorised routes without implying a causal optimum. Engineering title recognition and medical or legal practice milestones may still be unlike endpoints; narrowing must be substantive if those definitions fail."
+      },
+      "preview_feasibility": {
+        "score": 5,
+        "reason": "Six systems across three professions create substantial primary-source and endpoint work without a unified dataset. Multiple starting clocks and route variation increase the burden, and the packet has not verified every route value. A useful first preview is plausible but depends on successful narrowing."
+      },
+      "overall": 7.3333333333
+    },
+    {
+      "option": "Evidence comparison",
+      "fit": {
+        "score": 7,
+        "reason": "It directly tests the value-of-extra-years hypothesis and preserves some international context. Restricting the central analysis to medicine sacrifices much of the requested cross-profession and Asian-system comparison; the packet does not establish Asian coverage in the outcome evidence."
+      },
+      "warranted_inference": {
+        "score": 8,
+        "reason": "Located accelerated-versus-conventional studies can support setting-specific comparisons if selection, later training and different outcome domains remain explicit. Similar selected early outcomes and differing examination results must both survive appraisal. The packet does not yet establish causal identification, long-term patient outcomes or a universal minimum."
+      },
+      "preview_feasibility": {
+        "score": 8,
+        "reason": "Located studies and a deliberately small contextual route table make a source-traceable first preview proportionate. Full-paper appraisal may reduce the defensible claims, but this is a bounded evidence task rather than an attempt to curate eighteen professional routes."
+      },
+      "overall": 7.6666666667
+    }
+  ],
+  "pairwise_preferences": [
+    {
+      "preferred": "Timeline",
+      "over": "Education explorer",
+      "reason": "The timeline's greater curation burden buys a much closer answer to the professional preparation question."
+    },
+    {
+      "preferred": "Evidence comparison",
+      "over": "Education explorer",
+      "reason": "The evidence comparison can examine the central hypothesis in bounded settings, whereas structural education data chiefly establish background variation."
+    },
+    {
+      "preferred": "Evidence comparison",
+      "over": "Timeline",
+      "reason": "For a first preview, its direct engagement with outcomes and more manageable evidence scope narrowly outweigh the timeline's stronger breadth and Asian coverage. This preference is close and depends on accepting medicine as the first slice."
+    }
+  ],
+  "top_option": "Evidence comparison",
+  "strongest_argument_against_top_option": "The narrowing may replace the author's intended international comparison of law, engineering and medicine with a medical education literature review. A small route table does not remedy weak Asian coverage or establish that results from selected accelerated programmes transfer to national systems. If broad professional and Asian coverage is a condition of the first output, the Timeline should take precedence.",
+  "evidence_limits": [
+    "Only the supplied packet was used; no route values or papers were independently verified in this scoring task.",
+    "No unified global professional-route dataset was located, and source-existence checks do not establish all route facts.",
+    "WDOMS bulk data access has paid or licensed constraints.",
+    "International observed doctorate-duration clocks remain unverified.",
+    "Country route differences cannot identify the effect of years on competence.",
+    "Medical comparisons require full-paper appraisal, with selection, later training, mixed examination findings and limited early outcomes retained."
+  ]
+}

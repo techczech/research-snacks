@@ -1,0 +1,95 @@
+{
+  "mode": "score",
+  "date": "2026-11-22",
+  "register": "FOR AGENTS",
+  "rubric": "packet-professional-qualification-options.md",
+  "judges": [
+    {
+      "file": "judge-professional-qualification-one.json",
+      "requested_model": "inherited parent model",
+      "returned_model": "unknown: native tool did not report resolved model"
+    },
+    {
+      "file": "judge-professional-qualification-two.json",
+      "requested_model": "inherited parent model",
+      "returned_model": "unknown: native tool did not report resolved model"
+    }
+  ],
+  "model_family": "Both seats use the same inherited provider/model configuration. This is not cross-family confirmation.",
+  "rounds": [
+    {
+      "subjects": [
+        {
+          "name": "Timeline",
+          "kind": "option",
+          "criterion_scores": [
+            [
+              9,
+              8,
+              5
+            ],
+            [
+              9,
+              8,
+              5
+            ]
+          ],
+          "overall_mean": 7.333333333333333,
+          "overall_range": [
+            7.333333333333333,
+            7.333333333333333
+          ]
+        },
+        {
+          "name": "Evidence comparison",
+          "kind": "option",
+          "criterion_scores": [
+            [
+              7,
+              8,
+              8
+            ],
+            [
+              7,
+              8,
+              8
+            ]
+          ],
+          "overall_mean": 7.666666666666667,
+          "overall_range": [
+            7.666666666666667,
+            7.666666666666667
+          ]
+        },
+        {
+          "name": "Education explorer",
+          "kind": "option",
+          "criterion_scores": [
+            [
+              4,
+              8,
+              8
+            ],
+            [
+              4,
+              8,
+              8
+            ]
+          ],
+          "overall_mean": 6.666666666666667,
+          "overall_range": [
+            6.666666666666667,
+            6.666666666666667
+          ]
+        }
+      ],
+      "calibration": "Both judges passed the descriptive-route versus universal-causal-claim comparison."
+    }
+  ],
+  "owner_verdict": "pending",
+  "proposer_recommendation": "Timeline, preserving the requested breadth; evidence comparison is the narrower alternative.",
+  "disagreement": "Both judges prefer Evidence comparison for inference/feasibility, while the proposer gives greater practical priority to breadth across professions and Asian systems.",
+  "token_usage": "not reported by native child tool",
+  "cost": "unknown",
+  "validation_limit": "Judges read a source-feasibility packet, not original datasets or full studies. Scores do not validate facts."
+}

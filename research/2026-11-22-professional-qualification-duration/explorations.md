@@ -1,0 +1,73 @@
+---
+title: Exploration record — professional qualification duration scope
+date: 2026-11-22
+register: FOR AGENTS
+status: scoping evidence and outstanding checks
+provenance: Local catalogue and learning-log searches; primary web search/retrieval in this session.
+---
+
+# Scope and reconstruction target
+
+Reconstruct the choice of a feasible Research Snack, not an empirical international comparison. All notes are source-linked agent paraphrases. No medical-school database, student microdata, completed route dataset or analysis code has been acquired. Unknown access, licences and coverage remain unknown.
+
+## Local discovery
+
+The learning log was searched before web searching. A broad education/profession keyword search produced excessive unrelated matches, so a narrower search used Barro–Lee, Washington Accord, time-to-degree, Bologna process, World Directory of Medical Schools, professional licensing and duration of education, excluding archived source folders. No directly relevant prior research entry was located. This was lossy keyword retrieval, not a semantic audit of the log.
+
+The local research-datasets catalogue was searched for UNESCO, EdStats, Barro–Lee, Eurydice, earned doctorates, medical schools, Washington Accord, Education at a Glance, Eurodoc and HESA. No relevant catalogue entry was located. New candidates are in the companion draft YAML. The catalogue and public Data sources page were not edited.
+
+## Search coverage
+
+The web searches checked the named families of sources individually: UIS mappings and education-duration metadata; World Bank EdStats/WDI; OECD Education at a Glance; Eurydice; Barro–Lee; WDOMS; Washington Accord/IPEA; ENAEE/EUR-ACE; SED; OECD doctorate-holder work; Eurodoc; HESA; and Japanese NISTEP.
+
+Professional route searches covered UK medical and solicitor regulation, US medical training guidance and state law/engineering examples, Japan's medicine and legal training, Indian MBBS regulation, Singapore's undergraduate and graduate medicine routes, and Chinese medical reform. Outcome searches covered common US licensing exams, UK postgraduate-exam attainment, international medical-graduate patient outcomes, and accelerated medical-programme comparisons. Broader law and engineering outcome studies were not systematically searched or appraised.
+
+Queries were adapted when multi-topic searches failed to return a relevant source. The report records illustrative selected systems, not representative samples or a completed global search. Other Asian regions and Africa, Latin America and the Middle East have not been audited.
+
+## What was actually read
+
+| Source | Reading depth and usable finding | Unchecked part |
+| --- | --- | --- |
+| [UIS mappings](https://www.uis.unesco.org/en/methods-and-tools/isced/mapping-and-diagrams) | Landing page introduction and country links; Asian coverage exists. [Data Browser terms](https://databrowser.uis.unesco.org/terms-and-conditions) read. | Individual country mappings and export completeness. |
+| [EdStats](https://datatopics.worldbank.org/education/html/index.aspx), [all-indicator query](https://datatopics.worldbank.org/education/wQueries/qfull), [compulsory-duration metadata](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SE.COM.DURS) | Provider descriptions, freshness warning, definition and download documentation. | API/download execution and per-country missingness. |
+| [OECD 2025 tertiary chapter](https://www.oecd.org/en/publications/education-at-a-glance-2025_1c0d9c79-en/full-report/who-is-expected-to-complete-tertiary-education_a1099e2e.html) | Selected duration/definition passages and publication licence. | Whole report, all table cells and equivalent 2026 tertiary table. |
+| [Eurydice 2026/27 publication](https://op.europa.eu/en/publication-detail/-/publication/b82d1d07-abf4-11f1-b9e5-01aa75ed71a1/language-en), [guide](https://doi.org/10.2797/7270983) | Publication metadata and the substantive tertiary-diagram inclusion/exclusion guidance. | Every national diagram and asset redistribution licence. |
+| [Barro–Lee](https://barrolee.github.io/BarroLeeDataSet/BLv3.html) | Update description, file availability, coverage and variable purpose. | Downloaded data, all variable definitions and redistribution permission. |
+| [WDOMS](https://www.wdoms.org/subscription/), [dictionary](https://www.wdoms.org/data-dictionary-world-directory.pdf), [licence](https://www.wdoms.org/subscription-terms/), [about page](https://www.wdoms.org/about/) | Access conditions, subscription licence opening provisions, curriculum-duration field and explicit listing-is-not-accreditation disclaimer. | Complete licence appraisal, public-search field completeness, price quote and bulk data. |
+| [Washington Accord](https://www.internationalengineeringalliance.org/accords/washington-accord), [IPEA](https://www.internationalengineeringalliance.org/documents-public/ipea), [EUR-ACE](https://www.enaee.eu/eur-ace-system/standards-and-guidelines/) | Recognition, educational/professional distinction and workload/outcome passages. | All accreditor rules and local licence entitlements. |
+| [SED 2025](https://ncses.nsf.gov/surveys/earned-doctorates/2025) | Release metadata, census/response description, clock definition and table catalogue. | Actual duration table extraction and reconstruction; raw respondent data. |
+| [Eurodoc structures](https://www.eurodoc.net/doctoral-training-wg/doctorates-across-europe) | Full substantive landing-page explanation and dated profile list. | Individual profile contents and current national changes. |
+| [Eurodoc Survey I](https://www.eurodoc.net/eurodoc-survey-i) | Landing-page/report-description evidence. | Full report and sampling/variable appraisal. |
+| [HESA glossary](https://www.hesa.ac.uk/definitions/glossary), [NISTEP report](https://www.nistep.go.jp/wp/wp-content/uploads/NISTEP-NR174-FullJ.pdf) and [older instrument](https://www.nistep.go.jp/wp/wp-content/uploads/NISTEP-RM217-FullJ.pdf) | Search/landing evidence that relevant national data resources exist. | A usable duration table, matching clocks and current cohort. No full report read. |
+| [GMC doctor route](https://www.gmc-uk.org/education/becoming-a-doctor-in-the-uk), [SRA training](https://www.sra.org.uk/become-solicitor/sqe/sqe-training-options/), [SRA work experience](https://www.sra.org.uk/qwe) | Relevant route and overlapping-stage guidance. | Complete contemporary route audits and specialist milestones. |
+| [NCBE guide](https://reports.ncbex.org/), [California rules](https://www.calbar.ca.gov/legal-professionals/rules/rules-state-bar/title-4-admissions-and-educational-standards/division-1-admission-practice-law-california), [NCEES licensure](https://ncees.org/Licensure) | Guide availability and selected admissions/licensing passages. | All jurisdiction charts, every exception and actual completion outcomes. |
+| [Japan medicine](https://www.mhlw.go.jp/content/10800000/000479934.pdf), [Japan law](https://www.courts.go.jp/english/institute_01/institute/index.html), [India MBBS](https://www.nmc.org.in/MCIRest/open/getDocument?path=%2FDocuments%2FPublic%2FPortal%2FLatestNews%2FPublicNotice_higherFee.pdf) | Official diagram or directly relevant indexed passages. | Current consolidated rules and complete independent-practice totals. |
+| [NUS](https://medicine.nus.edu.sg/our-leadership/), [Duke-NUS](https://www.nus.edu.sg/nusbulletin/ay202526/programmes/duke-nus-medical-school/graduate-education/), [China reform](https://www.moe.gov.cn/jyb_xxgk/xxgk_jyta/jyta_gaojiaosi/201611/t20161104_287656.html) | Programme descriptions and historical reform passage. | Current registration/service/clinical-scope rules and China implementation. |
+| [NYU accelerated study](https://pubmed.ncbi.nlm.nih.gov/39402713/) | Full abstract read: sample sizes, selection differences, overall and contrary assessment findings. | Publisher full text failed to load; no full-paper appraisal. |
+| [2026 accelerated intern study](https://link.springer.com/article/10.1007/s11606-026-10290-0) | Methods, main results, discussion/limitations and data-availability section read. | Detailed supplementary appraisal, independent data reconstruction and long-term outcomes. Data are available on reasonable request, not an open download. |
+| [USMLE performance](https://www.usmle.org/performance-data) | 2025 Step 1/2/3 tables and Canadian-grouping footnotes read. | Every historical table and individual-level duration covariates. |
+| [GMC PLAB study summary](https://www.gmc-uk.org/about/what-we-do-and-why/data-and-research/research-and-insight-archive/assessing-the-equivalence-of-plab-graduates-to-uk-graduates) | Full substantive commissioner summary read. | Full linked study/report, present-day assessment applicability and causal duration effect. |
+| [International graduate patient outcomes](https://www.bmj.com/content/bmj/356/bmj.j273.full.pdf) | Primary abstract/result available in indexed text. | Publisher returned 403; PMC later served a browser challenge. No full-text reading or detailed bias appraisal claimed. |
+| [EU directive, 29 October 2025 consolidation](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02005L0036-20251029) | PDF Article 24 and start of Article 25 read; basic-training years/hours checked. | Complete legal text, full GP/specialty minima and national implementation. |
+
+## Dead ends and interpretation changes
+
+1. WDOMS turned out to be a paid licensed bulk source, not a ready open global dataset. Retain it as a candidate, but a small route audit can use regulators without buying the database.
+2. Barro–Lee answers attained schooling, not required professional duration. Set it aside for the core comparison.
+3. A ready internationally harmonised doctorate-duration table was not verified. OECD/HESA/Eurodoc/NISTEP cannot be promised as interchangeable SED substitutes.
+4. US and international medical graduates have different pass rates, yet a patient-outcome study reports no corresponding international-graduate disadvantage on its mortality measure. These are distinct populations and endpoints, not a contradiction to average away.
+5. The accelerated-route literature offers a more direct test of calendar duration. It also reports lower scores on some assessments, so a blanket claim of identical outcomes would omit evidence.
+6. The EU directive search initially surfaced the original six-years-or-hours wording. A newer consolidation confirms five years AND 5,500 hours. The report uses the dated consolidation.
+7. The public Washington Accord overview did not state one universal number of course years. Its equivalence purpose and the separate competence agreement are the defensible statements at this stage.
+
+## Timing and usage
+
+All times are UTC, also UK local time on this date. Tool timestamps measured the following milestones: local/project orientation was in progress by 08:29:24; first web source checks followed; the primary-source feasibility pass was still running at 08:33:41. The initial map and brief were saved after that pass. A later completion timestamp will close the scoping interval; individual thinking time, human review time and token usage are not inferred. The report's future working-day estimates are estimates, not measured run durations. No human review time has been observed in this thread.
+
+At 08:47:47 the report, 16 draft catalogue records, two independent scoring answers, baseline editorial critique and repair response had been saved. The measured interval from the first recorded clock reading is 18 minutes 23 seconds; it excludes earlier setup and later final-review/Git administration. It includes source discovery, drafting, review and repairs, not exclusively literature searching. A targeted repair rereview was pending at that milestone. The native tools did not expose child token usage or resolved model identities, so these remain unknown.
+
+At 08:49:50 the targeted rereview had resolved all three findings and independently checked score arithmetic. The interval from the first clock reading is 20 minutes 26 seconds, excluding later Git/handoff administration. The final [verification record](verification-professional-qualification-scope.md) identifies the current report and remaining evidence boundaries.
+
+## Next authorised boundary
+
+Return the scope and draft catalogue entries to the coordinator and author. Ask one author-level question about which output to pursue. Subsequent interview questions and a confirmed brief precede an empirical research run. The author must see a preview before any snack publication.

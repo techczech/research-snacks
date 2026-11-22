@@ -1,0 +1,114 @@
+{
+  "register": "FOR AGENTS",
+  "purpose": "Independent rubric judgement of first Research Snack shapes; no author selection.",
+  "model_identity": "GPT-6 (harness); more specific model identity unknown",
+  "option_order": [
+    "Evidence comparison",
+    "Education explorer",
+    "Timeline"
+  ],
+  "calibration": {
+    "result": "passed",
+    "better_warranted_claim": "Different authorised pathways exist, with outcomes considered separately.",
+    "reason": "Route differences can establish institutional variation. They do not isolate the contribution of additional years, and differing entry, selection, supervision and licensing prevent a national degree-length comparison from proving that extra years are universally unnecessary."
+  },
+  "criteria": [
+    "Fit to the author's question",
+    "Strength of warranted inference",
+    "Feasibility of the first preview"
+  ],
+  "weighting": "Equal weights; overall is the arithmetic mean.",
+  "options": [
+    {
+      "option": "Evidence comparison",
+      "scores": [
+        {
+          "criterion": "Fit to the author's question",
+          "score": 7,
+          "reason": "Directly tests the conventional-minimum hypothesis through outcome evidence. The smaller route table preserves some international context, but medicine dominates and Asian coverage is not guaranteed by the specified shape."
+        },
+        {
+          "criterion": "Strength of warranted inference",
+          "score": 8,
+          "reason": "Located comparative studies can support bounded conclusions about particular accelerated courses. Separating examinations, workplace assessment and patient outcomes, while recording selection and subsequent training, keeps contrary findings visible. Full-paper appraisal is still needed before accepting any equivalence claim."
+        },
+        {
+          "criterion": "Feasibility of the first preview",
+          "score": 8,
+          "reason": "A focused appraisal and small table offer a useful preview within the stated one to two days. The evidence has been located, although study quality, access and outcome comparability remain to be established."
+        }
+      ],
+      "overall": 7.666666666666667
+    },
+    {
+      "option": "Education explorer",
+      "scores": [
+        {
+          "criterion": "Fit to the author's question",
+          "score": 4,
+          "reason": "Shows international educational variation, but formal school and degree structures do not answer the central question about preparation for professional practice or the value of additional years."
+        },
+        {
+          "criterion": "Strength of warranted inference",
+          "score": 8,
+          "reason": "Located structural sources can warrant a bounded description when legal requirements, scheduled study and actual completion remain distinct. The advertised exclusions of competence and independent practice are appropriate; observed international doctorate duration remains unresolved."
+        },
+        {
+          "criterion": "Feasibility of the first preview",
+          "score": 8,
+          "reason": "A bounded structural explorer has plausible source coverage and a stated one to two day route to preview. Doctoral completion data should not become a dependency, and located sources do not by themselves verify each value."
+        }
+      ],
+      "overall": 6.666666666666667
+    },
+    {
+      "option": "Timeline",
+      "scores": [
+        {
+          "criterion": "Fit to the author's question",
+          "score": 9,
+          "reason": "Best preserves the requested three professions, international comparison and named Asian systems. Separating prior study, supervised work and recognition addresses matched endpoints. It exposes conventional variation but cannot directly test the necessity of extra years."
+        },
+        {
+          "criterion": "Strength of warranted inference",
+          "score": 8,
+          "reason": "A carefully curated timeline can establish differences in authorised routes without claiming a causal optimum. Multiple starting points and distinct stages improve comparability, but endpoints and route values remain unverified and may require narrowing."
+        },
+        {
+          "criterion": "Feasibility of the first preview",
+          "score": 5,
+          "reason": "Six systems across three professions create substantial primary-source and endpoint-matching work without a unified dataset. The longer two to four day estimate and possible narrowing make the first preview materially less predictable."
+        }
+      ],
+      "overall": 7.333333333333333
+    }
+  ],
+  "pairwise_preference": [
+    {
+      "preferred": "Evidence comparison",
+      "over": "Education explorer",
+      "reason": "A bounded empirical test engages the hypothesis more directly while retaining comparable preview feasibility."
+    },
+    {
+      "preferred": "Evidence comparison",
+      "over": "Timeline",
+      "reason": "A slight preference: stronger access to outcome evidence and a smaller first preview outweigh reduced breadth under equal weighting."
+    },
+    {
+      "preferred": "Timeline",
+      "over": "Education explorer",
+      "reason": "Its professional milestones and explicit Asian systems better preserve the actual question despite greater curation effort."
+    }
+  ],
+  "top_option": "Evidence comparison",
+  "strongest_argument_against_top_option": "It could change the subject from international professional preparation to a small medical-education literature. Similar early outcomes in selected accelerated cohorts, possibly followed by compensating training, may say little about law, engineering or Asian national routes. If breadth across the requested professions and systems is essential to the first output, Timeline is the better fit.",
+  "evidence_limits": [
+    "Packet-only judgement; no independent source inspection or paper appraisal was conducted.",
+    "No unified global professional-route dataset was located; source-existence checks do not verify route values.",
+    "National route durations cannot identify a causal effect of years on competence.",
+    "Located medical comparisons have mixed outcome types and potential selection and subsequent-training differences.",
+    "International observed doctorate-duration comparability remains unverified.",
+    "Effort estimates are supplied estimates, not measured completion times.",
+    "Scores express judgement about scope and feasibility; they are not empirical validation or the author's selection."
+  ]
+}
