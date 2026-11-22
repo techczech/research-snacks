@@ -186,7 +186,7 @@ export function entryHTML(x: Entry): string {
     argument = argument.replace(/(<p><a href="(\/tools\/[a-z0-9-]+\/)" title="Embed interactive tool">([^<>]+)<\/a><\/p>)/g,
       (link, _, path: string, label: string) => {
         if (!existsSync(join(ROOT, 'scripts/assets', path, 'index.html'))) throw new Error(`${x.id}: missing bundled tool ${path}`);
-        return `${link}<iframe class="tool-embed" title="${label.replace(/^Open the /, '').replace(/ full-page$/, '')}" src="${path}?embed=1" loading="lazy" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>`;
+        return `${link}<iframe class="tool-embed" title="${label.replace(/^Open the /, '').replace(/ full-page$/, '')}" src="${path}?embed=1" loading="lazy" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox${path === '/tools/medicine-training-routes/' ? ' allow-downloads' : ''}"></iframe>`;
       });
   }
   const making = split ? rendered.slice(split.index+split[0].length) : '';

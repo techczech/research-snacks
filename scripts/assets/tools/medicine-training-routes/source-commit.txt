@@ -1,0 +1,4 @@
+https://github.com/techczech/research-snacks-data
+3d40066a5158733390ba56dfac78b401f9836d04
+snacks/2026-11-22-medicine-training-routes/code/timeline/build.ts
+Generated tool SHA-256: bf51415ed3297a7a237ec44994710d1d54e3e7589a7ecbb38a52660580a9babe
