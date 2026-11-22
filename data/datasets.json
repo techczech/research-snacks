@@ -144,6 +144,26 @@
     "notes": "The provider page was read, but no uniform licence for all source texts was established. A font’s licence does not license the inscription or source publication used with it."
   },
   {
+    "id": "barro-lee-educational-attainment",
+    "title": "Barro-Lee Educational Attainment Dataset",
+    "provider": "Robert J. Barro and Jong-Wha Lee",
+    "url": "https://barrolee.github.io/BarroLeeDataSet/BLv3.html",
+    "access": "open",
+    "licence": {
+      "name": "Licence not stated; the authors retain copyright",
+      "url": "https://barrolee.github.io/BarroLeeDataSet/"
+    },
+    "data": "Estimates of educational attainment by age group of the population, in the 2021 update covering 146 countries from 1950 to 2015. Downloadable as XLS, CSV and Stata files.",
+    "citation": "https://barrolee.github.io/BarroLeeDataSet/",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Measures the schooling people have attained, not the education required by law or the preparation needed for a profession. Free download does not imply permission to redistribute."
+  },
+  {
     "id": "bnc1994",
     "title": "British National Corpus (BNC1994)",
     "provider": "BNC Consortium; University of Oxford",
@@ -256,6 +276,26 @@
     },
     "checked": "2026-11-21",
     "notes": "Considered as a known-language comparator; no corpus records were analysed. A visible sign catalogue does not establish that a complete machine-readable text corpus is available. The imprint reserves reuse rights."
+  },
+  {
+    "id": "ncbe-aba-bar-admission-guide",
+    "title": "Comprehensive Guide to Bar Admission Requirements",
+    "provider": "National Conference of Bar Examiners; American Bar Association Section of Legal Education and Admissions to the Bar",
+    "url": "https://reports.ncbex.org/",
+    "access": "open",
+    "licence": {
+      "name": "Publisher copyright; reuse terms not stated",
+      "url": "https://reports.ncbex.org/"
+    },
+    "data": "Admission requirements for each United States jurisdiction, including legal education requirements and the treatment of foreign qualifications, as jurisdiction guides and comparison charts. Free to read.",
+    "citation": "https://reports.ncbex.org/",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Covers United States jurisdictions only, so it gives no global comparison of qualification duration. It is a comparative reference rather than a statistical dataset; the rules of each state remain authoritative."
   },
   {
     "id": "congressional-record",
@@ -522,6 +562,46 @@
     "notes": "The cake check uses enTenTen13; the literally check uses enTenTen21. Keep the exact corpus identifier, processing version and word/token denominator with a query."
   },
   {
+    "id": "eurodoc-survey-one",
+    "title": "Eurodoc Survey I",
+    "provider": "Eurodoc; International Centre for Higher Education Research, University of Kassel",
+    "url": "https://www.eurodoc.net/eurodoc-survey-i",
+    "access": "open",
+    "licence": {
+      "name": "Licence not stated",
+      "url": "https://www.eurodoc.net/eurodoc-survey-i"
+    },
+    "data": "Survey of the experiences and conditions of doctoral candidates in twelve European countries, conducted in 2008/09 and reported in 2011. The report is free to read.",
+    "citation": "https://www.eurodoc.net/eurodoc-survey-i",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Describes candidates during their studies, not a recent census of completers, so it gives no up-to-date time to degree. Sampling and the wording of the duration questions should be checked in the report."
+  },
+  {
+    "id": "eurodoc-doctoral-structures",
+    "title": "Eurodoc survey on the structure of doctorates across Europe",
+    "provider": "Eurodoc Doctoral Training Working Group and national associations",
+    "url": "https://www.eurodoc.net/doctoral-training-wg/doctorates-across-europe",
+    "access": "open",
+    "licence": {
+      "name": "Licence not stated",
+      "url": "https://www.eurodoc.net/doctoral-training-wg/doctorates-across-europe"
+    },
+    "data": "Country profiles, as PDFs, of formal doctoral length, admission, candidate status, training and defence arrangements across Europe. The profiles are dated 2018 to 2020.",
+    "citation": "https://www.eurodoc.net/doctoral-training-wg/doctorates-across-europe",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Profiles give the formal length of a doctorate, not the time candidates take to finish, and the national associations note variation within countries. Rules may have changed since 2018 to 2020."
+  },
+  {
     "id": "european-social-survey",
     "title": "European Social Survey (ESS)",
     "provider": "European Social Survey European Research Infrastructure Consortium (ESS ERIC); data distributed by Sikt, Norway",
@@ -585,6 +665,26 @@
     },
     "checked": "2026-11-21",
     "notes": "The snack uses France’s 1983 quarterly nominal GDP, accessed through FRED series CPMNACNSAB1GQFR. Current national-currency euros are not historical ECU exchange-rate values; check the series units and seasonal adjustment."
+  },
+  {
+    "id": "eurydice-education-structures",
+    "title": "Eurydice structures of European education systems",
+    "provider": "European Education and Culture Executive Agency; Eurydice Network",
+    "url": "https://op.europa.eu/en/publication-detail/-/publication/b82d1d07-abf4-11f1-b9e5-01aa75ed71a1/language-en",
+    "access": "open",
+    "licence": {
+      "name": "Licence not stated for the diagrams; see the publication page",
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/b82d1d07-abf4-11f1-b9e5-01aa75ed71a1/language-en"
+    },
+    "data": "Interactive diagrams of 42 education systems in 40 countries for 2026/27, from early childhood education through tertiary level, showing mainstream and notional routes, with a reading guide.",
+    "citation": "https://doi.org/10.2797/4814414",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "The reading guide excludes specialist medical and other restricted-field postgraduate programmes, and not every professional degree is drawn separately. The diagrams show formal structure, not the time students actually take to finish."
   },
   {
     "id": "fed-payments-study",
@@ -1033,6 +1133,26 @@
     "notes": "The provider metadata API verified the dataset description and CC0 assignment; the HTML landing response was an empty HTTP 202. The public release is preliminary; rows and repeated campaign identifiers must not be silently merged."
   },
   {
+    "id": "nistep-japan-doctoral-surveys",
+    "title": "NISTEP Japanese doctoral-graduate surveys",
+    "provider": "National Institute of Science and Technology Policy, Japan",
+    "url": "https://www.nistep.go.jp/wp/wp-content/uploads/NISTEP-NR174-FullJ.pdf",
+    "access": "open",
+    "licence": {
+      "name": "Licence not stated for the reports and survey instruments",
+      "url": "https://www.nistep.go.jp/"
+    },
+    "data": "Reports, in Japanese, on the education experiences, careers and education histories of people who gained doctorates in Japan, with some of the survey instruments. Access to individual-level data is not described.",
+    "citation": "https://www.nistep.go.jp/wp/wp-content/uploads/NISTEP-NR174-FullJ.pdf",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "No current time-to-degree table comparable with other countries is identified. Before any comparison, establish the cohort, whether it counts degree awards or course completion, and when the time is counted from."
+  },
+  {
     "id": "obi-bench",
     "title": "OBI-Bench oracle bone inscription benchmark",
     "provider": "Zijian Chen and collaborators",
@@ -1056,6 +1176,46 @@
     },
     "checked": "2026-11-21",
     "notes": "The repository describes the test-data release but retains “to be released” notices for two components. Availability of a download does not establish rights to every constituent image."
+  },
+  {
+    "id": "oecd-doctorate-careers-observatory",
+    "title": "OECD Careers of Doctorate Holders and Research and Innovation Careers Observatory",
+    "provider": "OECD; earlier Careers of Doctorate Holders work with Eurostat and UNESCO Institute for Statistics",
+    "url": "https://www.oecd.org/en/publications/research-and-innovation-careers-observatory-2026_138ed294-en/full-report/working-in-research-and-innovation_c838d5bf.html",
+    "access": "open",
+    "licence": {
+      "name": "Licence not stated for the individual products",
+      "url": "https://www.oecd.org/en/publications/research-and-innovation-careers-observatory-2026_138ed294-en/full-report/working-in-research-and-innovation_c838d5bf.html"
+    },
+    "data": "International statistics on the careers, employment and mobility of doctorate holders, published as a report with linked statistics.",
+    "citation": "https://www.oecd.org/en/publications/research-and-innovation-careers-observatory-2026_138ed294-en.html",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Focuses on careers after the doctorate. It does not provide a current table of elapsed time to doctorate by country and field, and the series, countries and years vary."
+  },
+  {
+    "id": "oecd-education-at-a-glance",
+    "title": "OECD Education at a Glance",
+    "provider": "OECD",
+    "url": "https://doi.org/10.1787/1c0d9c79-en",
+    "access": "open",
+    "licence": {
+      "name": "CC BY 4.0 for the 2025 edition; third-party material excepted",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/09/education-at-a-glance-2025_c58fc9ae/1c0d9c79-en.pdf"
+    },
+    "data": "Annual report on education structures, theoretical programme duration and completion for OECD and selected partner countries. The 2025 chapter on tertiary completion documents variation in programme duration. The report, linked tables and country notes are free to read.",
+    "citation": "https://doi.org/10.1787/1c0d9c79-en",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "The 2026 edition is also published (doi:10.1787/b4968bbc-en). Licence and table coverage differ by edition, so cite the edition and table used. It does not describe the route from degree to professional practice."
   },
   {
     "id": "oanc",
@@ -1436,6 +1596,26 @@
     "notes": "Registration and licence agreement are required. The licence permits non-commercial research and teaching, restricts redistribution, and prohibits storing corpus copies on external cloud services. Written BNC2014 has separate terms."
   },
   {
+    "id": "ncses-survey-earned-doctorates",
+    "title": "Survey of Earned Doctorates",
+    "provider": "National Center for Science and Engineering Statistics, U.S. National Science Foundation",
+    "url": "https://ncses.nsf.gov/surveys/earned-doctorates/2025",
+    "access": "open",
+    "licence": {
+      "name": "United States federal statistical publication; reuse notice for the tables not stated separately",
+      "url": "https://ncses.nsf.gov/surveys/earned-doctorates/2025"
+    },
+    "data": "Annual census of people receiving research doctorates from United States institutions, with field, time to degree, education history and other characteristics. The 2025 data were released on 25 September 2026. Aggregate tables are free in Excel and PDF; detailed respondent data are restricted.",
+    "citation": "https://ncses.nsf.gov/surveys/earned-doctorates/2025",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Time to degree can include an associated or prerequisite master's degree. Professional doctorates and people who did not complete need separate treatment. The provider supplies a suggested citation, which should be used as written."
+  },
+  {
     "id": "talkbank",
     "title": "TalkBank",
     "provider": "TalkBank, Carnegie Mellon University",
@@ -1543,6 +1723,26 @@
     },
     "checked": "2026-11-21",
     "notes": "The snacks use nuclear-capacity and construction material. Energy units, installed capacity and expenditure are different quantities; EIA’s public-domain statement excludes protected third-party material."
+  },
+  {
+    "id": "unesco-uis-education-structures",
+    "title": "UNESCO UIS education structures and ISCED mappings",
+    "provider": "UNESCO Institute for Statistics",
+    "url": "https://www.uis.unesco.org/en/methods-and-tools/isced/mapping-and-diagrams",
+    "access": "open",
+    "licence": {
+      "name": "UIS Data Browser terms (CC BY-SA 4.0); individual mapping documents may carry their own terms",
+      "url": "https://databrowser.uis.unesco.org/terms-and-conditions"
+    },
+    "data": "National education programmes and qualifications mapped to the International Standard Classification of Education (ISCED), with education structures and scheduled durations by country, including Asian systems. Country documents and the Data Browser are free to use.",
+    "citation": "https://databrowser.uis.unesco.org/terms-and-conditions",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Describes scheduled programme structures, not full routes to professional licensing. Check the year and terms of each mapping document before reuse; the general UNESCO website terms do not replace a data licence."
   },
   {
     "id": "unicode-data",
@@ -1678,6 +1878,26 @@
     "notes": "The snack uses the historical federal-funds expenditure table for 1949–1995. The provider landing page and web policies were read; no bespoke dataset licence was found. Expenditure by one federal programme is not total national highway investment."
   },
   {
+    "id": "usmle-performance-data",
+    "title": "USMLE examination performance data",
+    "provider": "United States Medical Licensing Examination; National Board of Medical Examiners",
+    "url": "https://www.usmle.org/performance-data",
+    "access": "open",
+    "licence": {
+      "name": "Publisher copyright; terms for redistributing the tables not stated",
+      "url": "https://www.usmle.org/performance-data"
+    },
+    "data": "Annual aggregate tables of the numbers of candidates tested and pass rates for each Step of the United States medical licensing examination, by medical-school category and by first or repeat attempt.",
+    "citation": "https://www.usmle.org/performance-data",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Canadian schools were grouped differently from 2025. School location is not citizenship or programme length, and aggregate pass rates cannot show the effect of years of training."
+  },
+  {
     "id": "vesuvius-data",
     "title": "Vesuvius Challenge scan data",
     "provider": "Vesuvius Challenge organisers",
@@ -1741,6 +1961,46 @@
     },
     "checked": "2026-11-21",
     "notes": "The repository documentation was read. Software or task-package licensing does not by itself relicense the underlying BNC text; online and archive versions need to be identified."
+  },
+  {
+    "id": "world-bank-edstats-duration",
+    "title": "World Bank EdStats and education duration indicators",
+    "provider": "World Bank; underlying duration data from UNESCO Institute for Statistics",
+    "url": "https://datatopics.worldbank.org/education/html/index.aspx",
+    "access": "open",
+    "licence": {
+      "name": "CC BY 4.0 for the secondary-duration indicator (SE.SEC.DURS); other series may differ",
+      "url": "https://data.worldbank.org/indicator/SE.SEC.DURS"
+    },
+    "data": "Country education indicators, including the duration of compulsory education (SE.COM.DURS) and of secondary education (SE.SEC.DURS), covering more than 200 countries. DataBank and documented CSV and Excel downloads are available.",
+    "citation": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SE.COM.DURS",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "The portal warns that some indicators may not be current while EdStats is being revised. Duration series derived from UNESCO data are not independent of the UNESCO source. Coverage varies by country and year."
+  },
+  {
+    "id": "world-directory-medical-schools",
+    "title": "World Directory of Medical Schools",
+    "provider": "World Federation for Medical Education; FAIMER, a division of Intealth",
+    "url": "https://www.wdoms.org/",
+    "access": "paid",
+    "licence": {
+      "name": "Restricted subscription licence; not open data",
+      "url": "https://www.wdoms.org/subscription-terms/"
+    },
+    "data": "Records of medical schools and their programmes worldwide. The public search is free; daily CSV and XML downloads of the database require a paid annual subscription. The data dictionary lists fields including curriculum duration in years and country identifiers.",
+    "citation": "https://www.wdoms.org/data-dictionary-world-directory.pdf",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Scoping international professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "Not a complete account of the route to medical practice, and a listing is not accreditation. Field completeness and the right to republish aggregated data need confirming with the provider."
   },
   {
     "id": "world-values-survey",
