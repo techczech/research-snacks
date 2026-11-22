@@ -573,7 +573,12 @@
     },
     "data": "Each country's regulated professions, with qualification levels, competent authorities, recognition statistics and structured education and traineeship durations in the screening-information records. The public search is free to use.",
     "citation": "https://single-market-economy.ec.europa.eu/single-market/services/free-movement-professionals/database-regulated-professions_en",
-    "snacks": [],
+    "snacks": [
+      {
+        "title": "How long before a doctor can practise?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-22-medicine-training-routes/"
+      }
+    ],
     "found": {
       "date": "2026-11-22",
       "context": "Source check for professional qualification duration"
@@ -1756,7 +1761,12 @@
     },
     "data": "National education programmes and qualifications mapped to the International Standard Classification of Education (ISCED), with education structures and scheduled durations by country, including Asian systems. Country documents and the Data Browser are free to use.",
     "citation": "https://databrowser.uis.unesco.org/terms-and-conditions",
-    "snacks": [],
+    "snacks": [
+      {
+        "title": "How long before a doctor can practise?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-22-medicine-training-routes/"
+      }
+    ],
     "found": {
       "date": "2026-11-22",
       "context": "Scoping international professional qualification duration"
@@ -2014,7 +2024,12 @@
     },
     "data": "Country education indicators, including the duration of compulsory education (SE.COM.DURS) and of secondary education (SE.SEC.DURS), covering more than 200 countries. DataBank and documented CSV and Excel downloads are available.",
     "citation": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SE.COM.DURS",
-    "snacks": [],
+    "snacks": [
+      {
+        "title": "How long before a doctor can practise?",
+        "url": "https://researchsnacks.semanticmachines.fyi/2026-11-22-medicine-training-routes/"
+      }
+    ],
     "found": {
       "date": "2026-11-22",
       "context": "Scoping international professional qualification duration"
