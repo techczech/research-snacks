@@ -612,9 +612,24 @@ The checking script rebuilds the milestone table, every stage and clock transfor
 
 ### Models, tools and tokens
 
-| Model | Role | Calls | Tokens read | Tokens written |
-|---|---|---|---|---|
-| GPT-6.1 Sol | Source research, route coding, tool construction and a separate six-milestone source check | Not available | Not available | Not available |
-| Claude Sonnet 5.5 | One independent factual review with further primary-source spot checks | Not available | Not available | Not available |
+Token use is counted separately for ten research, review and catalogue agent instances, from the records each harness keeps, through 16:17 UK time on 22 November 2026 (the main thread was still open). The snapshot includes publication preparation; usage-tool development, final integration and live verification are outside its coverage. The instances were found through the thread record of the agent app that ran them (T3 Code), which links the research thread to its Codex session, its six Codex subagents and the delegated Claude review (each Codex child also names the research thread as its parent), plus the coordinating session's two Claude Code subagents that added the catalogue entries; the coordinating session itself is not counted because it also covered unrelated work.
 
-The available handoff record does not provide a complete usage export for this multi-stage run. No token total is inferred from document length. A read-token total, if available, would include cached conversation history; no such total is asserted here. Web search and direct source retrieval located the rules; Python and JavaScript extracted structured facts and calculated clocks; Vega-Lite and vl-convert produced the EU chart.
+| Agent | Harness | Model | Calls | Input (uncached) | Cached read | Cache write | Reasoning | Output | Total |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Main research thread | Codex | gpt-6.1-sol | 385 | 1,060,359 | 101,266,560 | 0 | 134,921 | 353,720 | 102,680,639 |
+| Scope options judge one | Codex | gpt-6.1-sol | 3 | 37,576 | 74,752 | 0 | 179 | 1,960 | 114,288 |
+| Scope options judge two | Codex | gpt-6.1-sol | 4 | 4,631 | 151,936 | 0 | 158 | 2,108 | 158,675 |
+| Scope report critic | Codex | gpt-6.1-sol | 22 | 85,918 | 1,993,600 | 0 | 4,024 | 21,196 | 2,100,714 |
+| Medicine registration source check | Codex | gpt-6.1-sol | 30 | 108,028 | 3,169,664 | 0 | 1,229 | 13,701 | 3,291,393 |
+| Independent medicine snack factual spot review | Claude Code | claude-sonnet-5-5 | 34 | 68 | 4,782,432 | 163,744 | 21,305 | 39,111 | 4,985,355 |
+| Medicine comparison visual review | Codex | gpt-6.1-sol | 11 | 26,968 | 3,804,416 | 0 | 3,694 | 7,428 | 3,838,812 |
+| Medicine comparison visual recheck | Codex | gpt-6.1-sol | 10 | 24,349 | 3,608,832 | 0 | 2,933 | 7,358 | 3,640,539 |
+| Add REGPROF and WHO NHWA to catalogue | Claude Code | claude-sonnet-5-5 | 10 | 20 | 274,058 | 35,477 | 524 | 4,495 | 314,050 |
+| Add qualification datasets to catalogue | Claude Code | claude-sonnet-5-5 | 11 | 22 | 385,761 | 47,439 | 416 | 8,059 | 441,281 |
+| Subtotal gpt-6.1-sol |  | gpt-6.1-sol | 465 | 1,347,829 | 114,069,760 | 0 | 147,138 | 407,471 | 115,825,060 |
+| Subtotal claude-sonnet-5-5 |  | claude-sonnet-5-5 | 55 | 110 | 5,442,251 | 246,660 | 22,245 | 51,665 | 5,740,686 |
+| Total |  |  | 520 | 1,347,939 | 119,512,011 | 246,660 | 169,383 | 459,136 | 121,565,746 |
+
+Input (uncached) excludes cached reads and cache writes. Total = input (uncached) + cached read + cache write + output. Reasoning is part of Output and is not added again. Totals add recorded values only. Codex reports input including cached tokens; uncached = input - cached read - cache write. Codex calls are model responses, including context-compaction calls. Cached read is conversation history re-read on each call, so it dominates the totals; it is not a count of new text. The rows are produced by the site's `scripts/agent-usage.py` and stored in [usage.json](data/usage.json).
+
+Web search and direct source retrieval located the rules; Python and JavaScript extracted structured facts and calculated clocks; Vega-Lite and vl-convert produced the EU chart.
