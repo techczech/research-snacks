@@ -224,3 +224,31 @@
   found: {date: '2026-11-22', context: Scoping international professional qualification duration}
   checked: '2026-11-22'
   notes: "2025 Step 1 values and category footnotes checked. Canadian schools changed grouping in 2025. School location is not citizenship or programme duration; aggregate pass rates cannot identify the effect of training years."
+- id: european-commission-regulated-professions-database
+  title: "EU Regulated Professions Database — qualification and training requirements"
+  provider: "European Commission; national competent authorities"
+  url: "https://ec.europa.eu/growth/tools-databases/regprof/"
+  access: "Public search and working unauthenticated JSON service used by the frontend; documented stable API and functioning bulk export not verified"
+  licence:
+    name: "Default Commission CC BY 4.0 for EU-owned content; database/member-state contribution and bulk-extraction scope unresolved"
+    url: "https://commission.europa.eu/legal-notice_en"
+  data: "Regulated activities, qualification levels, competent authorities, recognition statistics, and structured education/traineeship duration fields in screening-information records."
+  citation: "https://single-market-economy.ec.europa.eu/single-market/services/free-movement-professionals/database-regulated-professions_en"
+  snacks: []
+  found: {date: '2026-11-22', context: Additional medicine route source check requested by author}
+  checked: '2026-11-22'
+  notes: "Public API base https://api.tech.ec.europa.eu/regprof20/prodmigration discovered in application config. Doctor of Medicine returned 1523 records including specialties; exact Basic medical training filter yielded 32 jurisdictions including archived UK. Duration fields present but incomplete, undated and not necessarily additive. Germany illustrates overlap with an embedded practical year. Tested export returned null. Do not portray records as uniformly current or sum education and traineeship durations. Related SWD(2026)64 section 4.3 contains a separate 27-entry published GP-duration table."
+- id: who-national-health-workforce-accounts
+  title: "WHO National Health Workforce Accounts — education and training indicators"
+  provider: "World Health Organization and national reporting authorities"
+  url: "https://apps.who.int/nhwaportal/"
+  access: "Public portal shell and indicator PDFs; working medical-duration raw export/API not obtained"
+  licence:
+    name: "NHWA portal-specific data licence not established; data.who.int CC BY 4.0 cannot automatically be transferred to this product"
+    url: "https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions"
+  data: "NHWA second-edition indicator 2-05 measures programme duration in years, excluding specialisations and optional extra certifications; annual intended reporting."
+  citation: "World Health Organization. National health workforce accounts: a handbook, second edition. Geneva: World Health Organization; 2023."
+  snacks: []
+  found: {date: '2026-11-22', context: Additional medicine route source check requested by author}
+  checked: '2026-11-22'
+  notes: "Indicator definition downloaded. Separate 2025 nursing report publishes latest 2018–2023 duration summaries, with 140 countries in body and 139 in figure note. Nursing evidence is not medical-programme coverage. Medical duration observations, country-years and raw access remain unverified; portal shell showed a technical-issue message. Older handbook used another indicator number. No global medical comparison justified from currently obtained NHWA material."
