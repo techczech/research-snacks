@@ -1,6 +1,6 @@
 ---
 date: "2026-11-22"
-status: "Preview ready, publication not authorised"
+status: "Initial preview receipt; revised preview verified separately"
 provenance: "Targeted headless checks and source-coding audit by the building agent"
 title: "Medicine training routes — six-place preview"
 kind: "visualisation"
@@ -30,3 +30,6 @@ A representative temporary edit to `preview.md` was rebuilt and checked for prop
 - No author acceptance, production build, release check or deployment is claimed.
 
 The preview carries selected route assumptions and the source access limits. It is ready for author review of the comparison and interaction; publication still requires the missing source checks and review.
+
+
+This receipt preserves the initial preview check. The coordinator-requested phone and family-practice corrections, current 55-stage/30-source counts and full site-check result are recorded in `medicine-preview/verification.md`. The artefact path points to the current rebuilt preview.

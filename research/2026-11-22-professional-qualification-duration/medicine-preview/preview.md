@@ -23,7 +23,7 @@ clock_notes:
   school: Years after theoretical entry to ISCED 1 primary education. Reception, nursery and other pre-primary education are excluded.
 clock_unit: Years from selected starting point
 route_heading: Six routes, several different endpoints
-route_help: Select a bar or milestone for its rule, source passage and date. On a small screen the timeline scrolls sideways.
+route_help: Select a bar or milestone for its rule, source passage and date. On a phone each route uses the full-width axis; numbers inside the bars are years in that stage.
 legend:
   school: School before university
   prerequisite: Prior undergraduate degree
@@ -69,6 +69,7 @@ detail_labels:
   school_duration: School years before university
   leaving_age: Modelled school-leaving age
   back: Return to timeline
+  year: year
   years: years
   months: months
   until: to
@@ -120,7 +121,7 @@ who_source_label: Read the NHWA duration definition
 who_source: https://apps.who.int/nhwaportal/Files/2%20%E2%80%93%2005%20Duration%20of%20education%20and%20training.pdf
 method_heading: How the clocks were built
 method_text: School structures come from selected UNESCO UIS workbook rows, mostly 2020–21, with World Bank theoretical-entry-age indicators from 2025. Bavaria uses its current nine-year Gymnasium. Singapore includes junior college, which UIS classifies after secondary education. The model joins these structures to rules checked on 22 November 2026; it does not follow a single historical cohort. Compulsory schooling and the route to university are kept separate.
-method_limits: Calculations assume continuous full-time study, successful examinations and no admission gaps. Service bonds, Singapore National Service, part-time training and individual recognition decisions can extend elapsed time. Later specialties shown for Japan, India and Singapore are examples with different scopes of practice; they are not ranked as equivalent GP credentials.
+method_limits: Calculations assume continuous full-time study, successful examinations and no admission gaps. Service bonds, Singapore National Service, part-time training and individual recognition decisions can extend elapsed time. The main later-training bars all concern general practice or family medicine. The credentials and registration rights still differ; completing a training period is not automatically the award of a qualification, accreditation or permission to run a practice.
 claim_text: Variation in route length does not establish that shorter routes are equally effective, or that longer routes are necessary. This preview maps requirements. It does not estimate a causal effect on competence.
 research_label: Data, coding and reproduction files
 research_url: https://github.com/techczech/research-snacks-data/tree/main/snacks/2026-11-22-medicine-training-routes
