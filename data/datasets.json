@@ -562,6 +562,26 @@
     "notes": "The cake check uses enTenTen13; the literally check uses enTenTen21. Keep the exact corpus identifier, processing version and word/token denominator with a query."
   },
   {
+    "id": "eu-regulated-professions-database",
+    "title": "EU Regulated Professions Database",
+    "provider": "European Commission; national competent authorities",
+    "url": "https://ec.europa.eu/growth/tools-databases/regprof/",
+    "access": "open",
+    "licence": {
+      "name": "Licence not stated for the database itself; the Commission legal notice sets CC BY 4.0 for EU-owned content by default",
+      "url": "https://commission.europa.eu/legal-notice_en"
+    },
+    "data": "Each country's regulated professions, with qualification levels, competent authorities, recognition statistics and structured education and traineeship durations in the screening-information records. The public search is free to use.",
+    "citation": "https://single-market-economy.ec.europa.eu/single-market/services/free-movement-professionals/database-regulated-professions_en",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Source check for professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "A documented stable API or bulk export was not confirmed. Duration fields are incomplete, undated and not necessarily additive, because a traineeship may already be counted inside the education period. Records can include archived data, for example for the UK. Check the date and status of each record before reuse."
+  },
+  {
     "id": "eurodoc-survey-one",
     "title": "Eurodoc Survey I",
     "provider": "Eurodoc; International Centre for Higher Education Research, University of Kassel",
@@ -1961,6 +1981,26 @@
     },
     "checked": "2026-11-21",
     "notes": "The repository documentation was read. Software or task-package licensing does not by itself relicense the underlying BNC text; online and archive versions need to be identified."
+  },
+  {
+    "id": "who-national-health-workforce-accounts",
+    "title": "WHO National Health Workforce Accounts",
+    "provider": "World Health Organization; national reporting authorities",
+    "url": "https://apps.who.int/nhwaportal/",
+    "access": "open",
+    "licence": {
+      "name": "Licence not stated for the NHWA portal; WHO data terms apply to the publications",
+      "url": "https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions"
+    },
+    "data": "Country-reported health workforce indicators, including the duration in years of each education programme (indicator 2-05, which excludes specialisations and optional extra certifications). Published data were confirmed for nursing; medical observations were not.",
+    "citation": "https://apps.who.int/nhwaportal/Files/2%20%E2%80%93%2005%20Duration%20of%20education%20and%20training.pdf",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-22",
+      "context": "Source check for professional qualification duration"
+    },
+    "checked": "2026-11-22",
+    "notes": "A downloadable data file or API for programme duration was not confirmed. Coverage varies by country and year, and the nursing figures do not stand in for medical programmes. The portal's CC BY status is not established; the CC BY 4.0 terms of data.who.int cannot be assumed to apply to it."
   },
   {
     "id": "world-bank-edstats-duration",
