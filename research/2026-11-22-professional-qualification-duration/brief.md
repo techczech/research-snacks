@@ -2,7 +2,7 @@
 title: Scoping brief — education and professional qualification duration
 date: 2026-11-22
 register: FOR DOMINIK
-status: provisional; author confirmation pending
+status: medicine-only option A approved; preview built, author review pending
 provenance: Relayed scoping instructions and original author question checked on 22 November 2026.
 ---
 
@@ -44,3 +44,10 @@ The coordinator explicitly authorised the following scoping searches before the 
 | Synthesis and source/licence handoff | Up to 20 minutes | A source-linked decision report and draft catalogue entries. |
 
 These are agent-set bounds within the authorised scoping task, not a research budget agreed by the author. Further research and build time are proposals until selected. Actual milestones and dead ends belong in `explorations.md`.
+
+
+## Confirmed continuation — 22 November 2026
+
+The coordinator relayed the author's choice of option A, restricted initially to medicine, and approval for a short check of the EU Regulated Professions Database and WHO NHWA before building. The confirmed cases are one US state, England, one continental European country selected with a reason, Japan, India and Singapore. Every professional stage carries a source passage and date. The clocks start at primary-school entry, leaving school or age 18. Registration and residency/GP training completion are separate milestones. A local or preview-only page is authorised; production publication is not. Law, engineering and doctorates wait until the author sees the medicine preview.
+
+The original provisional brief above records the earlier scoping stage and is superseded by this confirmed continuation for the medicine preview. The delivered preview selects California, Bavaria and Singapore's NTU domestic undergraduate route. Additional source findings and reading limits are recorded in `explorations.md`; the preview has a visible provisional India row where full NMC originals could not be retrieved. The author has not yet reviewed or accepted this page.

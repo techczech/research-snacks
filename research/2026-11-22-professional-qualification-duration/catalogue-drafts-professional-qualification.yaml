@@ -252,3 +252,17 @@
   found: {date: '2026-11-22', context: Additional medicine route source check requested by author}
   checked: '2026-11-22'
   notes: "Indicator definition downloaded. Separate 2025 nursing report publishes latest 2018–2023 duration summaries, with 140 countries in body and 139 in figure note. Nursing evidence is not medical-programme coverage. Medical duration observations, country-years and raw access remain unverified; portal shell showed a technical-issue message. Older handbook used another indicator number. No global medical comparison justified from currently obtained NHWA material."
+- id: ec-2026-general-practice-training-duration-table
+  title: "Training duration for family doctors and general practitioners — SWD(2026)64"
+  provider: "European Commission; table attributed to EC survey and WONCA Europe/UEMO"
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026SC0064"
+  access: "Public HTML/PDF report; 27 printed entries in section 4.3, transcribed for the preview; no survey microdata obtained"
+  licence:
+    name: "Commission default CC BY 4.0 for EU-owned report content; underlying survey not obtained or relicensed"
+    url: "https://commission.europa.eu/legal-notice_en"
+  data: "Reported postgraduate GP/family-medicine training lengths, separate from degree or total qualification duration."
+  citation: "European Commission. Commission staff working document SWD(2026)64 final, section 4.3, Training duration – family doctors / general practitioners."
+  snacks: []
+  found: {date: '2026-11-22', context: EU source check for medicine training route preview}
+  checked: '2026-11-22'
+  notes: "27 printed entries, including Luxembourg 3 or 4 years and ambiguous printed code SL retained without mapping. Values span 3–6 years. Report publication year is not a verified common observation year. Published aggregate table, not an individual-level dataset or independently checked current national rule in every country."
