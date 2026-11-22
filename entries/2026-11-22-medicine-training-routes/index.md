@@ -474,6 +474,30 @@
       "year": 2026,
       "publisher": "World Health Organization",
       "note": "Indicator definition only; no medical-duration observations used"
+    },
+    {
+      "type": "webpage",
+      "title": "Physicians and Surgeons — licensing overview",
+      "url": "https://www.mbc.ca.gov/Licensing/Physicians-and-Surgeons/default.aspx",
+      "authors": [
+        "Medical Board of California"
+      ],
+      "corporate": true,
+      "year": "n.d.",
+      "publisher": "Medical Board of California",
+      "note": "PTL or P&S licence within 180 days of residency start; live guidance accessed 22 November 2026"
+    },
+    {
+      "type": "webpage",
+      "title": "Rules and Regulations, NMC — current index",
+      "url": "https://nmc.org.in/page/rules-regulations-rules-regulations-nmc",
+      "authors": [
+        "National Medical Commission, India"
+      ],
+      "corporate": true,
+      "year": "n.d.",
+      "publisher": "National Medical Commission, India",
+      "note": "Current index still links NExT deferral at item 1.1; checked 22 November 2026"
     }
   ]
 }
