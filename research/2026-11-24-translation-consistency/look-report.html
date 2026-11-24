@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2026-11-24" />
+  <title>Translation consistency: scoping report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <style>body{max-width:44em;margin:2em auto;padding:0 16px;font:17px/1.55 -apple-system,sans-serif;color:#1d1c1a;background:#fbfaf7}@media(prefers-color-scheme:dark){body{color:#e9e7e2;background:#17171a}a{color:#7fb2f0}}table{border-collapse:collapse;font-size:14px}td,th{border:1px solid #8884;padding:4px 6px;vertical-align:top}</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Which survey translation study should come first?</h1>
+<p class="date">2026-11-24</p>
+</header>
+<h1 id="decision-required-choose-the-first-translation-study">Decision
+required: choose the first translation study</h1>
+<p><strong>I recommend a series, starting with a small comparison of the
+questionnaires already downloaded.</strong> Check three item families in
+Czech, Slovak and Polish first, then use corpus evidence to investigate
+the differences that survive a careful reading. German can join once its
+fielded questionnaire has been retrieved and checked. This gives the
+broader work a tested method without making the first snack carry every
+question.</p>
+<p>There are sources for all three strands you proposed. <strong>The
+strongest immediate result would be a documented account of which
+selected questions differ in meaning.</strong> A change in wording
+alongside a change in answers could identify a problem worth
+investigating. It would not establish that the wording caused the
+response change.</p>
+<p>The first question has been sent to the coordinator for your to-do
+page. The choices are a series starting with neighbouring languages, a
+series starting with changes between waves, one combined snack, or an
+education-survey comparison first. Please also confirm whether “tims”
+means TIMSS. No answer or agreed research brief is recorded yet.</p>
+<h2 id="what-is-ready-and-what-still-needs-access-work">What is ready,
+and what still needs access work?</h2>
+<p>The existing local collection contains the following questionnaires.
+This pass checked that each file exists, has a PDF header and has a
+recorded checksum. <strong>It did not re-audit their wording or
+establish their exact fielded version.</strong> The <a
+href="inventory-translation-questionnaires.json">inventory</a> preserves
+that distinction.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Survey material</th>
+<th>Already present</th>
+<th>What it permits next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EVS 2017 national questionnaires</td>
+<td>Czech, Slovak, Polish, Russian and Ukrainian PDFs are present.</td>
+<td>Start a same-programme comparison after matching the source, pages,
+response options and actual fieldwork version.</td>
+</tr>
+<tr>
+<td>WVS wave 7, national 2022 questionnaires</td>
+<td>Czech and Slovak PDFs are present.</td>
+<td>Recheck the candidate differences against EVS, keeping the programme
+and period differences visible.</td>
+</tr>
+<tr>
+<td>ISSP 2017 national questionnaire</td>
+<td>A Czech PDF is present.</td>
+<td>Investigate the previously flagged trust wording as a separate
+cross-programme case.</td>
+</tr>
+<tr>
+<td>German-language EVS 2017 questionnaire</td>
+<td>The official country table lists German questionnaires for Germany
+and Austria; no local PDF was verified.</td>
+<td>Add one named country’s version after retrieval and provenance
+checks. German is a neighbouring language, rather than a close
+linguistic relative of Czech.</td>
+</tr>
+<tr>
+<td>Earlier waves</td>
+<td>No earlier-wave national questionnaire was verified locally.</td>
+<td>Establish an item-by-wave source inventory before promising a
+translation history.</td>
+</tr>
+</tbody>
+</table>
+<p>The <a
+href="https://europeanvaluesstudy.eu/surveys/surveys-evs/evs-2017/participating-countries-and-country-information-survey-2017/">EVS
+country table</a> provides links to field questionnaires and showcards,
+languages, modes and dates. <a
+href="https://www.gesis.org/en/european-values-study/data-and-documentation/joint-evs/wvs-2017-2022-dataset">GESIS
+documents the joint EVS/WVS file</a> as a combination of two programmes.
+An EVS 2017 versus WVS 2022 comparison must therefore retain both
+distinctions, even where harmonised variable labels look identical.</p>
+<p>The earlier working notes suggest three useful starting families:
+industriousness or hard work; responsibility or obligation towards
+society; and care for parents with different conditions. They also
+record a corrected mistake: a preschool qualifier appeared in a
+harmonised working-mother label but not in the two checked Czech
+questionnaires. These are <strong>leads for a new audit</strong>, not
+translation verdicts from this scoping. The large response gaps in those
+notes are deliberately not repeated as results here.</p>
+<p>For tracing those leads, the earlier analysis used joint-file
+variables <code>A030</code> (hard work as a child quality),
+<code>D026_03</code> (having children as a social duty),
+<code>D026_05</code> (care for parents) and <code>C039</code> (work as a
+social duty). Those are harmonised dataset identifiers, not verified
+national questionnaire item numbers. In particular, the earlier
+care-for-parents analysis label itself contains an illness condition;
+the new audit must establish the exact condition from each fielded
+instrument.</p>
+<h2 id="what-would-corpus-evidence-add">What would corpus evidence
+add?</h2>
+<p><strong>Parallel corpora can locate translation alternatives;
+monolingual corpora can show how each expression is used.</strong> Both
+need context reading. Neither demonstrates that survey respondents
+understood two items equivalently.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Access checked here</th>
+<th>Best use and limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://wiki.korpus.cz/doku.php/en:kurz:zaciname">Czech
+National Corpus, InterCorp and Treq</a></td>
+<td>Official guidance describes limited public access and free
+registration for full access. No authenticated query was attempted; the
+Treq homepage failed through the web tool.</td>
+<td>InterCorp supports aligned comparisons; a selected SYN corpus
+supports Czech usage. Pin release and genre. The <a
+href="https://wiki.korpus.cz/doku.php/en:cnk:intercorp">InterCorp
+description</a> distinguishes fiction core, automated collections and a
+Czech pivot; the English page is marked as an old revision.</td>
+</tr>
+<tr>
+<td><a
+href="https://www.sketchengine.eu/corpora-and-languages/corpus-list/">Sketch
+Engine</a></td>
+<td>The connected catalogue returned metadata for Czech, Slovak, Polish,
+German and English web corpora, with Arabic and Japanese candidates too.
+No concordance or word-sketch query was run.</td>
+<td>Word sketches and concordances can test competing readings.
+Different crawl dates, genres and tagging systems prevent treating
+cross-language scores as a common semantic scale.</td>
+</tr>
+<tr>
+<td><a href="https://opus.nlpl.eu/">OPUS</a></td>
+<td>Its public collection listing and query/download routes are
+accessible. No corpus package was downloaded.</td>
+<td>Select one named collection/version with the required language
+overlap. OPUS is a collection portal; constituent rights, domains and
+alignment quality differ. Exclude synthetic translations from
+natural-usage evidence.</td>
+</tr>
+<tr>
+<td><a href="https://tatoeba.org/en/terms_of_use">Tatoeba</a></td>
+<td>Current terms were accessible and describe text licensing.</td>
+<td>An openly licensed source of illustrative translated sentences, with
+sentence attribution. Its contributed examples cannot supply
+representative collocation frequencies.</td>
+</tr>
+<tr>
+<td><a
+href="https://api.wortschatz-leipzig.de/ws/swagger-ui/index.html">Leipzig
+Corpora Collection</a></td>
+<td>API documentation was accessible. The download-terms page returned
+an anti-bot challenge; no bypass was attempted.</td>
+<td>A potential monolingual fallback. The specific archive, language,
+genre and licence remain unverified; the API documentation’s licence
+label alone does not clear every corpus archive.</td>
+</tr>
+</tbody>
+</table>
+<p>For a pilot, compare full expressions as well as their component
+words, include alternative translations, and read a reproducible sample
+of concordances. Separate original texts from translations where
+metadata permit. Record the query, corpus version, grammatical relation
+or window, frequency threshold and association measure. Sparse evidence
+should produce an unresolved judgement, rather than a claim that an
+expression is equivalent or absent.</p>
+<h2 id="can-the-same-check-be-done-in-education-surveys">Can the same
+check be done in education surveys?</h2>
+<p><strong>Yes, there are credible starting sources.</strong> The <a
+href="https://www.oecd.org/en/data/datasets/pisa-2022-database.html">PISA
+2022 database</a> explicitly lists both master and national
+questionnaires, including Czechia, Slovakia, Poland and Germany. This is
+the most direct international listing found for the proposed
+national-language comparison. It remains necessary to match item
+identifiers, mode, grade or target population, national additions and
+source changes across cycles.</p>
+<p>For TIMSS, the <a
+href="https://www.iea.nl/data-tools/repository/timss">IEA repository</a>
+provides international data and documentation by cycle and grade. The <a
+href="https://www.csicr.cz/cz/Mezinarodni-setreni/TIMSS/Datove-soubory-a-dotazniky/TIMSS-2023">Czech
+provider’s 2023 page</a> lists student, teacher, school and parent
+questionnaires. <a
+href="https://www.iqs.gv.at/downloads/internationale-studien/timss/timss-2023">Austria’s
+national page</a> also lists questionnaires, while warning that their
+generated PDF layout differs from the participant view. An indexed
+excerpt of the <a
+href="https://www.iea.nl/sites/default/files/2025-02/T23_UG-International-Database.pdf">TIMSS
+database guide</a> describes national adaptation records; those records
+do not replace the complete national text. The full guide exceeded the
+retrieval tool’s size limit and was not read. No national TIMSS file was
+downloaded or aligned here.</p>
+<p><a
+href="https://www.europeansocialsurvey.org/sites/default/files/2024-09/ESS10_Quality_Report.pdf">ESS
+translation documentation</a> provides a methodological reference,
+including TRAPD and pretesting. Its recurring core items are candidates
+for a later within-programme history. <a
+href="https://www.gesis.org/en/issp/data-and-documentation/module-development">ISSP
+documentation</a> includes source and national questionnaires; its
+archive says data download follows registration. Language and item
+coverage for a selected repeat module still need checking. The ESS
+portal and disclaimer fetches failed in this pass, so current access and
+exact licence text remain unresolved here.</p>
+<h2 id="three-possible-first-snacks">Three possible first snacks</h2>
+<p>These are proposed research slices, not approved work. The effort
+ranges are agent planning estimates, including source checking, analysis
+records and a draft for preview. They exclude waiting for access,
+specialist review and your preview decision. They are not measurements
+or delivery promises.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Shape</th>
+<th>What would be checked</th>
+<th>What it could honestly show</th>
+<th>Main limit and estimated effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Do neighbouring-language questionnaires ask the same
+thing?</strong></td>
+<td>Three candidate families in Czech, Slovak and Polish EVS 2017; add
+the Czech/Slovak WVS contrast as a clearly separate comparison. Use a
+focused corpus check for one disputed expression.</td>
+<td>Which selected fielded items preserve or change the proposition,
+conditions, force or answer task; what corpus usage adds to those
+readings.</td>
+<td>Selected cases cannot estimate a general error rate. Language
+judgements need review before a strong public verdict. Allow roughly one
+to two agent working days, conditional on access. This is the
+recommended start of a series.</td>
+</tr>
+<tr>
+<td><strong>Does an item change meaning between waves?</strong></td>
+<td>Two families in two languages across up to three waves of one
+programme, conditional on questionnaire availability. Align source and
+translations before inspecting response trends.</td>
+<td>A documented translation history, followed by descriptive response
+changes with weighted uncertainty and administration notes.</td>
+<td>Changes may coincide without being causal. If earlier fielded texts
+cannot be established, stop at a documented availability gap. Allow
+roughly two to four agent working days.</td>
+</tr>
+<tr>
+<td><strong>Do education questionnaires preserve the same
+meaning?</strong></td>
+<td>Two recurring context-item families in three languages across two
+cycles of PISA, or TIMSS if that is your intended study and matching
+sources exist.</td>
+<td>Whether apparently comparable education attitudes or experiences are
+asked equivalently, including national adaptations.</td>
+<td>Grade, age, mode and cycle changes need explicit treatment; rights
+for excerpts must be resolved. This first slice would not audit
+achievement test items or explain country score differences. Allow
+roughly two to four agent working days.</td>
+</tr>
+</tbody>
+</table>
+<p>The corpus strand fits naturally after the neighbouring-language
+audit establishes a real linguistic question. A later distant-language
+extension can then ask whether the same proposed distinction survives
+different lexical systems. Choosing Arabic or Japanese now merely
+because the corpus catalogue lists them would get ahead of your research
+question and available language expertise.</p>
+<p>No independent option scores were commissioned: this thread was
+instructed to work without subagents. The recommendation above is the
+scoping agent’s judgement.</p>
+<h2 id="rights-and-publication-decisions">Rights and publication
+decisions</h2>
+<p>The <a
+href="https://www.worldvaluessurvey.org/AJDownloadLicense.jsp">WVS
+conditions</a> state “that they are used for non-profit purposes;” and
+“the data files themselves are not redistributed;”. The full citation
+clauses remain at that source. <strong>The session’s stricter handling
+instruction is separate:</strong> no WVS files or questionnaire texts go
+in a public repository; short item quotations in a write-up are allowed.
+No new registration or download was attempted.</p>
+<p>The <a
+href="https://www.iqs.gv.at/downloads/internationale-studien/timss/timss-2023">Austrian
+TIMSS page</a> states: “Abdruck und Nutzung der Fragebögen nur mit
+ausdrücklicher Genehmigung der IEA:”. The <a
+href="https://www.iea.nl/sites/default/files/2019-05/Disclaimer%20and%20License%20Agreement.pdf">IEA
+agreement</a>, clauses 2.1 and 2.2, must be considered together for
+reproduction and quotation. This scoping does not convert that notice
+into a ban on reading public questionnaires or assume that access grants
+republication rights. No permission request has been sent.</p>
+<p>Corpus rights remain attached to the selected corpus and examples.
+Service access is not a licence for the underlying texts. The <a
+href="catalogue-drafts-translation-sources.md">catalogue draft</a>
+records checked sources and unresolved rights for the coordinator; it
+does not update the public catalogue. Every new snack still requires
+your preview before going live.</p>
+<h2 id="what-happens-after-your-answer">What happens after your
+answer?</h2>
+<p>The next interview step will establish what finding would change your
+mind, then settle the item families, languages, acceptable judgement
+methods, your contribution and permitted attribution. The completed
+brief needs your confirmation before empirical work. For now,
+<strong>choose the overall shape and first strand on your to-do page,
+and confirm whether TIMSS is what you meant</strong>. The report remains
+provisional until that answer arrives.</p>
+<h2 id="work-record-and-token-use">Work record and token use</h2>
+<p>The domain map, source-access record, questionnaire metadata
+inventory and catalogue proposals sit beside this report. Restricted
+sources stayed in their existing location. No respondent file was read
+in this pass. No corpus query, new translation experiment, analysis
+build or publication was run. No first-person wording has been drafted
+for the author.</p>
+<p>The <a href="usage.json">usage snapshot</a> covers the single Codex
+scoping instance found through this thread’s records, from 07:50:03 to
+07:58:35 on 24 November 2026 (Tuesday, UK time / UTC): eight minutes and
+32 seconds of elapsed transcript time. It excludes subsequent
+verification, commits and the final handoff. Reasoning is included
+within output, not added again. There are no child agents or reviewer
+instances. Human scoping time has not been measured or estimated because
+no interview answer has arrived.</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Harness</th>
+<th>Model</th>
+<th style="text-align: right;">Calls</th>
+<th style="text-align: right;">Input, uncached</th>
+<th style="text-align: right;">Cached read</th>
+<th style="text-align: right;">Cache write</th>
+<th style="text-align: right;">Reasoning, within output</th>
+<th style="text-align: right;">Output</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scoping agent</td>
+<td>Codex</td>
+<td>gpt-6.1-sol</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">186,238</td>
+<td style="text-align: right;">2,685,824</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2,657</td>
+<td style="text-align: right;">17,764</td>
+<td style="text-align: right;">2,889,826</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
