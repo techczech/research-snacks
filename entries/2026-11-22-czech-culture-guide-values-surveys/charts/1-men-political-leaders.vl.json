@@ -1,111 +1,276 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "background": "white",
+  "padding": {
+    "left": 8,
+    "right": 16,
+    "top": 8,
+    "bottom": 8
+  },
   "data": {
     "url": "charts/1-men-political-leaders.csv"
   },
-  "width": 600,
-  "height": 320,
   "title": {
     "text": "\"Men make better political leaders than women do\"",
     "subtitle": [
-      "Share agreeing or strongly agreeing, weighted",
-      "Joint EVS/WVS 2017-2022 v5.0; each survey shown separately"
+      "Share agreeing or strongly agreeing, weighted. Each survey shown separately.",
+      "Lines show approximate 95% intervals (survey weights only)"
     ],
-    "anchor": "start"
+    "anchor": "start",
+    "subtitlePadding": 6
   },
-  "mark": {
-    "type": "bar"
-  },
-  "params": [
+  "spacing": 36,
+  "vconcat": [
     {
-      "name": "pick",
-      "select": {
-        "type": "point",
-        "fields": [
-          "survey"
+      "title": {
+        "text": "European Values Study",
+        "anchor": "start",
+        "fontSize": 13,
+        "offset": 6
+      },
+      "transform": [
+        {
+          "filter": "datum.programme === 'EVS'"
+        }
+      ],
+      "width": 420,
+      "height": {
+        "step": 22
+      },
+      "encoding": {
+        "y": {
+          "field": "label",
+          "type": "nominal",
+          "sort": [
+            "Czechia 2017",
+            "Slovakia 2017",
+            "Poland 2017",
+            "Austria 2018",
+            "Germany 2017"
+          ],
+          "title": null,
+          "axis": {
+            "labelLimit": 160
+          }
+        },
+        "tooltip": [
+          {
+            "field": "label",
+            "type": "nominal",
+            "title": "country"
+          },
+          {
+            "field": "percent",
+            "type": "quantitative",
+            "title": "%"
+          },
+          {
+            "field": "lo",
+            "type": "quantitative",
+            "title": "interval low"
+          },
+          {
+            "field": "hi",
+            "type": "quantitative",
+            "title": "interval high"
+          },
+          {
+            "field": "n",
+            "type": "quantitative"
+          }
         ]
       },
-      "bind": "legend"
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "height": 15
+          },
+          "encoding": {
+            "x": {
+              "field": "percent",
+              "type": "quantitative",
+              "title": null,
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ]
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "datum.country === 'Czechia'",
+                "value": "#1f5fa8"
+              },
+              "value": "#9aa3ad"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#333333",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "x": {
+              "field": "lo",
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "hi"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "fontSize": 11
+          },
+          "encoding": {
+            "x": {
+              "field": "hi",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "percent",
+              "type": "quantitative",
+              "format": ".0f"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "World Values Survey",
+        "anchor": "start",
+        "fontSize": 13,
+        "offset": 6
+      },
+      "transform": [
+        {
+          "filter": "datum.programme === 'WVS'"
+        }
+      ],
+      "width": 420,
+      "height": {
+        "step": 22
+      },
+      "encoding": {
+        "y": {
+          "field": "label",
+          "type": "nominal",
+          "sort": [
+            "Czechia 2022",
+            "Slovakia 2022",
+            "Germany 2018",
+            "United States 2017",
+            "Canada 2020"
+          ],
+          "title": null,
+          "axis": {
+            "labelLimit": 160
+          }
+        },
+        "tooltip": [
+          {
+            "field": "label",
+            "type": "nominal",
+            "title": "country"
+          },
+          {
+            "field": "percent",
+            "type": "quantitative",
+            "title": "%"
+          },
+          {
+            "field": "lo",
+            "type": "quantitative",
+            "title": "interval low"
+          },
+          {
+            "field": "hi",
+            "type": "quantitative",
+            "title": "interval high"
+          },
+          {
+            "field": "n",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "height": 15
+          },
+          "encoding": {
+            "x": {
+              "field": "percent",
+              "type": "quantitative",
+              "title": "% of adults",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ]
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "datum.country === 'Czechia'",
+                "value": "#1f5fa8"
+              },
+              "value": "#9aa3ad"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#333333",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "x": {
+              "field": "lo",
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "hi"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "fontSize": 11
+          },
+          "encoding": {
+            "x": {
+              "field": "hi",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "percent",
+              "type": "quantitative",
+              "format": ".0f"
+            }
+          }
+        }
+      ]
     }
   ],
-  "encoding": {
-    "x": {
-      "field": "country",
-      "type": "nominal",
-      "sort": [
-        "Czechia",
-        "Slovakia",
-        "Poland",
-        "Austria",
-        "Germany",
-        "United States",
-        "Canada"
-      ],
-      "title": null,
-      "axis": {
-        "labelAngle": 0
-      }
-    },
-    "y": {
-      "field": "percent",
-      "type": "quantitative",
-      "title": "% agree",
-      "scale": {
-        "domain": [
-          0,
-          100
-        ]
-      }
-    },
-    "color": {
-      "field": "survey",
-      "type": "nominal",
-      "title": null,
-      "scale": {
-        "range": [
-          "#1f5fa8",
-          "#d9822b",
-          "#2a9d8f",
-          "#9aa3ad"
-        ]
-      }
-    },
-    "opacity": {
-      "condition": {
-        "param": "pick",
-        "value": 1
-      },
-      "value": 0.25
-    },
-    "tooltip": [
-      {
-        "field": "country",
-        "type": "nominal"
-      },
-      {
-        "field": "survey",
-        "type": "nominal"
-      },
-      {
-        "field": "percent",
-        "type": "quantitative"
-      },
-      {
-        "field": "lo",
-        "type": "quantitative"
-      },
-      {
-        "field": "hi",
-        "type": "quantitative"
-      },
-      {
-        "field": "n",
-        "type": "quantitative"
-      }
-    ],
-    "xOffset": {
-      "field": "survey"
+  "config": {
+    "view": {
+      "stroke": null
     }
   }
 }

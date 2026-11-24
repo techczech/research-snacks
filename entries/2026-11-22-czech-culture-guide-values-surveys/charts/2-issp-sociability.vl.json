@@ -1,71 +1,47 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "background": "white",
+  "padding": {
+    "left": 8,
+    "right": 16,
+    "top": 8,
+    "bottom": 8
+  },
   "data": {
     "url": "charts/2-issp-sociability.csv"
   },
   "title": {
-    "text": "Czechs go out with friends and meet new people there less often than Slovaks or Americans",
+    "text": "Czechs go out with friends more often than Americans, but rarely meet new people there",
     "subtitle": [
-      "ISSP 2017 Social Networks and Social Resources, weighted",
-      "Close to Germany and Austria on these three; bars show approximate weight-only 95% intervals"
+      "ISSP 2017, % of all adults, weighted. People who never go out count as not meeting anyone new.",
+      "Lines show approximate 95% intervals (survey weights only)"
     ],
-    "anchor": "start"
+    "anchor": "start",
+    "subtitlePadding": 6
   },
-  "facet": {
-    "row": {
-      "field": "measure",
-      "type": "nominal",
-      "title": null,
-      "header": {
-        "labelAngle": 0,
-        "labelOrient": "top",
-        "labelAnchor": "start",
-        "labelFontSize": 12,
-        "labelFontWeight": "bold"
-      }
-    }
-  },
-  "spec": {
-    "width": 600,
-    "height": 160,
-    "mark": {
-      "type": "bar"
-    },
-    "encoding": {
-      "x": {
-        "field": "country",
-        "type": "nominal",
-        "sort": [
-          "Czechia",
-          "Slovakia",
-          "Hungary",
-          "Germany",
-          "Austria",
-          "United States"
-        ],
-        "title": null,
-        "axis": {
-          "labelAngle": 0
-        }
+  "spacing": 36,
+  "vconcat": [
+    {
+      "title": {
+        "text": "Goes out to eat or drink with three or more friends at least weekly",
+        "anchor": "start",
+        "fontSize": 13,
+        "offset": 6
       },
-      "y": {
-        "field": "percent",
-        "type": "quantitative",
-        "title": "% of adults",
-        "scale": {
-          "domain": [
-            0,
-            60
-          ]
+      "transform": [
+        {
+          "filter": "datum.measure === 'Goes out to eat or drink with three or more friends at least weekly'"
         }
+      ],
+      "width": 420,
+      "height": {
+        "step": 22
       },
-      "color": {
-        "field": "country",
-        "type": "nominal",
-        "title": null,
-        "scale": {
-          "domain": [
+      "encoding": {
+        "y": {
+          "field": "label",
+          "type": "nominal",
+          "sort": [
             "Czechia",
             "Slovakia",
             "Hungary",
@@ -73,43 +49,230 @@
             "Austria",
             "United States"
           ],
-          "range": [
-            "#1f5fa8",
-            "#9aa3ad",
-            "#9aa3ad",
-            "#9aa3ad",
-            "#9aa3ad",
-            "#9aa3ad"
-          ]
+          "title": null,
+          "axis": {
+            "labelLimit": 160
+          }
         },
-        "legend": null
+        "tooltip": [
+          {
+            "field": "label",
+            "type": "nominal",
+            "title": "country"
+          },
+          {
+            "field": "percent",
+            "type": "quantitative",
+            "title": "%"
+          },
+          {
+            "field": "lo",
+            "type": "quantitative",
+            "title": "interval low"
+          },
+          {
+            "field": "hi",
+            "type": "quantitative",
+            "title": "interval high"
+          },
+          {
+            "field": "n",
+            "type": "quantitative"
+          }
+        ]
       },
-      "tooltip": [
+      "layer": [
         {
-          "field": "measure",
-          "type": "nominal"
+          "mark": {
+            "type": "bar",
+            "height": 15
+          },
+          "encoding": {
+            "x": {
+              "field": "percent",
+              "type": "quantitative",
+              "title": null,
+              "scale": {
+                "domain": [
+                  0,
+                  60
+                ]
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "datum.country === 'Czechia'",
+                "value": "#1f5fa8"
+              },
+              "value": "#9aa3ad"
+            }
+          }
         },
         {
-          "field": "country",
-          "type": "nominal"
+          "mark": {
+            "type": "rule",
+            "color": "#333333",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "x": {
+              "field": "lo",
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "hi"
+            }
+          }
         },
         {
-          "field": "percent",
-          "type": "quantitative"
-        },
-        {
-          "field": "lo",
-          "type": "quantitative"
-        },
-        {
-          "field": "hi",
-          "type": "quantitative"
-        },
-        {
-          "field": "n",
-          "type": "quantitative"
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "fontSize": 11
+          },
+          "encoding": {
+            "x": {
+              "field": "hi",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "percent",
+              "type": "quantitative",
+              "format": ".0f"
+            }
+          }
         }
       ]
+    },
+    {
+      "title": {
+        "text": "Often gets to know new people at such outings",
+        "anchor": "start",
+        "fontSize": 13,
+        "offset": 6
+      },
+      "transform": [
+        {
+          "filter": "datum.measure === 'Often gets to know new people at such outings'"
+        }
+      ],
+      "width": 420,
+      "height": {
+        "step": 22
+      },
+      "encoding": {
+        "y": {
+          "field": "label",
+          "type": "nominal",
+          "sort": [
+            "Czechia",
+            "Slovakia",
+            "Hungary",
+            "Germany",
+            "Austria",
+            "United States"
+          ],
+          "title": null,
+          "axis": {
+            "labelLimit": 160
+          }
+        },
+        "tooltip": [
+          {
+            "field": "label",
+            "type": "nominal",
+            "title": "country"
+          },
+          {
+            "field": "percent",
+            "type": "quantitative",
+            "title": "%"
+          },
+          {
+            "field": "lo",
+            "type": "quantitative",
+            "title": "interval low"
+          },
+          {
+            "field": "hi",
+            "type": "quantitative",
+            "title": "interval high"
+          },
+          {
+            "field": "n",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "height": 15
+          },
+          "encoding": {
+            "x": {
+              "field": "percent",
+              "type": "quantitative",
+              "title": "% of adults",
+              "scale": {
+                "domain": [
+                  0,
+                  60
+                ]
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "datum.country === 'Czechia'",
+                "value": "#1f5fa8"
+              },
+              "value": "#9aa3ad"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#333333",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "x": {
+              "field": "lo",
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "hi"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "fontSize": 11
+          },
+          "encoding": {
+            "x": {
+              "field": "hi",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "percent",
+              "type": "quantitative",
+              "format": ".0f"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
     }
   }
 }

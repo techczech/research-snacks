@@ -137,7 +137,8 @@ function interactiveFigure(folder: string, path: string, name: string, alt: stri
   if (!existsSync(join(folder,'charts',name+'.vl.json'))) return null;
   const links = existsSync(join(folder,'charts',name+'.csv')) ? [`<a href="charts/${name}.csv" download>Data (CSV)</a>`] : [];
   links.push(`<a href="${path}.png">Image (PNG)</a>`,`<a href="charts/${name}.vl.json">Chart spec (Vega-Lite)</a>`);
-  return `<figure class="ichart"><div class="vl" data-spec="charts/${name}.vl.json" data-name="${name}" role="img" aria-label="${alt}"></div><img class="fallback" src="${path}.png" alt="${alt}" loading="lazy"><figcaption>Interactive: hover for numbers; click the legend to pick a group; ⋯ menu saves SVG or PNG. ${links.join(' · ')}</figcaption></figure>`;
+  const legendPick = /"bind"\s*:\s*"legend"/.test(readFileSync(join(folder,'charts',name+'.vl.json'),'utf8')) ? ' click the legend to pick a group;' : '';
+  return `<figure class="ichart"><div class="vl" data-spec="charts/${name}.vl.json" data-name="${name}" role="img" aria-label="${alt}"></div><img class="fallback" src="${path}.png" alt="${alt}" loading="lazy"><figcaption>Interactive: hover for numbers;${legendPick} ⋯ menu saves SVG or PNG. ${links.join(' · ')}</figcaption></figure>`;
 }
 export function renderMarkdown(text: string,folder?: string): string {
   text = text.replaceAll('&','&amp;').replaceAll('<','&lt;');

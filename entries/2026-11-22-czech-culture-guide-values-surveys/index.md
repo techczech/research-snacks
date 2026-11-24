@@ -7,23 +7,23 @@ category: social-science
 tags: ["values surveys", "Czech Republic", "culture", "survey translation", "World Values Survey"]
 claim: "Old culture guides for visitors to the Czech Republic say that Czechs join fewer professional and interest groups than Americans and West Europeans, keep a strong boundary between people they know and strangers, and expect women to work but still carry the family and rarely lead."
 claim_source: "https://researchsnacks.semanticmachines.fyi/2026-11-22-czech-culture-guide-values-surveys/#what-the-guides-say"
-verdict: "The claim about women as leaders holds in three surveys. Czechs go out with groups of friends and meet new people there less often than Slovaks or Americans, and in the 2022 survey they belong to far fewer groups than Germans or North Americans, yet they trust strangers about as much as Americans do. Several large differences between the 2017 and 2022 Czech surveys coincide with changes in the Czech wording or in how the questions were asked."
-time_taken: "About 55 minutes of recorded analysis and drafting on 22 November 2026 (01:14 to 01:27 and 08:57 to 09:45 UK time), plus an earlier scoping session on 21 and 22 November that is not measured here."
+verdict: "Three surveys agree that Czechs are far more likely than Germans, Austrians or North Americans to say men make better leaders and that earning is a man's job. Czechs go out with groups of friends more often than Americans but rarely meet new people there. They trust people they meet for the first time about as much as Americans do, but trust people of other nationalities less. On group membership the two values surveys disagree, so that part of the claim stays open."
+time_taken: "About 55 minutes of analysis and drafting on 22 November 2026 (01:14 to 01:27 and 08:57 to 09:45 UK time), about 10 minutes for a two-model review on 22 November (14:55 to 15:05), and TIME_24 of revision on 24 November. An earlier scoping session on 21 and 22 November is not measured."
 human_time: "Estimated 20 minutes for Dominik: choosing the claims and countries, restating the friendship claim, and downloading six data and documentation files behind registration forms."
 tools:
   - "Claude Code (claude-opus-5-5)"
   - "Claude Code subagent (claude-sonnet-5-5) for coverage checks"
-  - "Codex (gpt-6.2-sol) for review"
+  - "Codex (gpt-6.2-sol) for review of scripts and claims"
+  - "Gemini 4 Neon and GPT-6.2 Astra for a review of the draft"
   - "Python (pandas, matplotlib)"
   - "pdftotext"
   - "Vega-Lite"
 data_sources:
   - "Joint EVS/WVS 2017-2022 dataset v5.0"
-  - "European Social Survey round 10, edition 3.3"
   - "ISSP 2017 Social Networks and Social Resources (ZA6980 v2.0.0)"
   - "ISSP 2022 Family and Changing Gender Roles V (ZA10000 v2.0.0)"
-  - "Czech and Slovak national questionnaires (WVS 2022, EVS 2017, ISSP 2017)"
-summary: "Old culture guides for visitors claim that Czechs join few groups, keep strangers at a distance and hold traditional views of women's roles. Three international surveys agree that Czechs are far more likely than Germans, Austrians or North Americans to say men make better leaders. Czechs go out with groups of friends and meet new people there less often than Slovaks or Americans, yet they trust strangers about as much as Americans do, so reserve is not the same as distrust. Large shifts between the 2017 and 2022 Czech surveys coincide with changes in the Czech wording, such as 'pracovitost' becoming 'tvrdá práce' for hard work."
+  - "Czech national questionnaires (WVS 2022, EVS 2017)"
+summary: "Old culture guides for visitors claim that Czechs join few groups, keep strangers at a distance and expect women to carry the family rather than lead. Three surveys agree on the gender roles. Czechs go out with friends more often than Americans but meet new people there less than half as often. They trust first-time acquaintances about as much as Americans do, so reserve is not the same as distrust. The 2017 and 2022 values surveys disagree on Czech group membership and on several family items, and the Czech wording changed between them; those items are left for a separate check of survey translations."
 references:
   - type: dataset
     authors: ["EVS/WVS"]
@@ -33,13 +33,6 @@ references:
     publisher: "JD Systems Institute and WVSA"
     note: "Dataset Version 5.0.0. Citation to be copied verbatim from the provider before publication."
     url: "https://www.worldvaluessurvey.org/WVSEVSjoint2017.jsp"
-  - type: dataset
-    authors: ["ESS ERIC"]
-    corporate: true
-    title: "ESS10 - integrated file, edition 3.3"
-    publisher: "Sikt"
-    note: "Citation to be copied verbatim from the ESS Data Portal before publication."
-    url: "https://ess.sikt.no/en/"
   - type: dataset
     authors: ["ISSP Research Group"]
     corporate: true
@@ -72,9 +65,9 @@ references:
 
 ### What the guides say
 
-Dominik keeps a set of old culture guides for visitors to the Czech Republic. He wrote some of the material himself and collected the rest; parts go back to the 1990s, and he used them again in a 2023 briefing. The guides are private, so this page paraphrases them rather than quoting them.
+Dominik keeps a set of old culture guides for visitors to the Czech Republic. He wrote some of the material himself and collected the rest; parts go back to the 1990s, and he used them again in a 2023 briefing. The guides are private, so this page paraphrases them rather than quoting them. They describe the experience of foreigners living in the country and do not cite surveys.
 
-The guides make many claims. Dominik picked three that a values survey could test:
+Dominik picked three claims that a values survey could test:
 
 1. Czechs take part in professional and interest groups less than Americans and West Europeans.
 2. The boundary between people Czechs know and strangers is strong, and friendships take a long time to form.
@@ -82,167 +75,103 @@ The guides make many claims. Dominik picked three that a values survey could tes
 
 He chose to compare Czechia with the United States, Canada and the neighbouring countries, and later added Hungary and Ukraine.
 
-### Where the claims come from
-
-The guides do not cite surveys. They describe the experience of foreigners living in the country. Most of what they say about etiquette (greetings, shoes indoors, tipping) is outside what any of these surveys ask.
-
 ## The answer
 
 ### In short
 
-- **Women as leaders: the claim holds.** In three surveys Czechs say men make better political or business leaders far more often than Germans, Austrians, Americans or Canadians.
-- **Strangers: the claim needed restating.** Czechs do not report less trust in strangers than Americans, Austrians or Germans. When Dominik looked at the trust result, he said that the guides meant something else: how readily people make friends, share and start working with people outside their circle. The closest survey measure is about going out with groups of friends. Czechs do that, and meet new people there, less often than Slovaks or Americans, and about as often as Germans and Austrians.
-- **Groups: the claim holds against the US, Germany and Canada in the 2022 survey.** The 2017 survey asks the question differently and puts Czechia close to Germany and Austria.
+- **Women and family: the claim holds for attitudes.** In three surveys Czechs say men make better leaders far more often than Germans, Austrians or Americans, and in the ISSP 2022 38% agree that earning money is a man's job and looking after the home a woman's, against 8% in Germany. The surveys measure attitudes, not how many women actually lead.
+- **Strangers: the claim needed restating.** Czechs trust people they meet for the first time about as much as Americans do. When Dominik saw that result, he said the guides meant something else: how readily people make friends and start working with people outside their circle. The closest survey measure is about going out with friends. Czechs do that more often than Americans, but only 5% often meet new people there, against 12% of Americans.
+- **Groups: open.** The 2022 World Values Survey puts Czechs far below Germans and Americans; the 2017 European Values Study puts them close to Germany. The surveys asked differently, and this check cannot say which is right.
 
-### The two values surveys disagree
-
-Czechia was surveyed by the European Values Study (EVS) in 2017 and by the World Values Survey (WVS) in 2022. On several questions the two give very different answers. The Czech questionnaires show changes in wording or in how the question was asked for most of these items (see [Wording changes the answer](#wording-changes-the-answer)). Because of this, the tables below show the two surveys separately and compare countries only within the same survey.
+Countries are compared only within the same survey, because the 2017 and 2022 values surveys often give different answers for Czechia (see [The surveys disagree](#the-surveys-disagree)).
 
 ## Women and leadership
 
-### Leaders and jobs
+![Share agreeing that men make better political leaders, by survey](charts/1-men-political-leaders.png)
 
-| European Values Study, % agreeing | Czechia 2017 | Slovakia 2017 | Poland 2017 | Germany 2017 | Austria 2018 |
-|---|---:|---:|---:|---:|---:|
-| men make better political leaders | 41 | 52 | 30 | 10 | 20 |
-| men should have more right to a job when jobs are scarce | 22 | 37 | 24 | 7 | 14 |
-| children suffer when the mother works | 32 | 37 | 51 | 34 | 47 |
+Czechs and Slovaks give similar answers in both values surveys, far above Germany, Austria, the US and Canada, with Poland in between. The ISSP 2022 survey on family and gender roles asks related questions:
 
-| World Values Survey, % agreeing | Czechia 2022 | Slovakia 2022 | Germany 2018 | US 2017 | Canada 2020 |
-|---|---:|---:|---:|---:|---:|
-| men make better political leaders | 50 | 49 | 8 | 16 | 15 |
-| men should have more right to a job when jobs are scarce | 27 | 42 | 9 | 5 | 6 |
-| children suffer when the mother works | 32 | 25 | 29 | 21 | 21 |
+| ISSP 2022, % agreeing | Czechia | Slovakia | Poland | Hungary | Germany | Austria | US |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Men are better suited than women to serve in the national government | 26 | 44 | 17 | 31 | 9 | 13 | 8 |
+| Men are better suited than women to be senior executives of large companies | 31 | 49 | 19 | 37 | 11 | 14 | 8 |
+| A man's job is to earn money; a woman's job is to look after the home and family | 38 | 52 | 30 | 44 | 8 | 16 | 15 |
 
-Weighted percentages agreeing or strongly agreeing. The jobs item is collapsed to agree, neither or disagree. Both Czech versions of the working-mother item ask about children in general; the master questionnaire mentions pre-school children.
-
-![Share agreeing that men make better political leaders, by country and survey](charts/1-men-political-leaders.png)
-
-Czechs and Slovaks give similar answers about political leaders. On jobs, Slovaks are about 15 points more traditional than Czechs in both surveys.
-
-A third source agrees. In the ISSP 2022 survey on family and gender roles, 26% of Czechs say men are better suited to serve in the national government and 31% to be a senior executive of a large company. The figures are 8–14% in Germany, Austria and the US, 44–49% in Slovakia and 17–19% in Poland.
-
-The working-mother question is the exception: Czechs agree less often than Austrians or Poles.
+One item points the other way. Asked whether children suffer when their mother works, Czechs agree less often than Austrians or Poles in the European Values Study (32% against 47% and 51%).
 
 ## Making friends and working with strangers
 
 ### Trust is not the same as reserve
 
-| European Values Study, % trusting completely or somewhat | Czechia | Slovakia | Poland | Hungary | Ukraine | Germany | Austria |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| people met for the first time | 37 | 33 | 27 | 39 | 21 | 30 | 40 |
-| people of another nationality | 45 | 41 | 51 | 57 | 46 | 63 | 59 |
-
-| World Values Survey, % trusting completely or somewhat | Czechia | Slovakia | Ukraine | Germany | US | Canada |
-|---|---:|---:|---:|---:|---:|---:|
-| people met for the first time | 39 | 30 | 29 | 35 | 40 | 50 |
-| people of another nationality | 46 | 43 | 50 | 64 | 74 | 82 |
-
-In both surveys Czechs report trusting people they meet for the first time at least as often as Germans, and as often as Americans or Austrians. They report trusting people of another nationality less often than Germans, Austrians or North Americans.
+In the World Values Survey, 39% of Czechs trust people they meet for the first time completely or somewhat, against 35% of Germans and 40% of Americans. In the European Values Study the figure is 37%, against 30% of Germans and 40% of Austrians. People of another nationality are different: 45–46% of Czechs trust them, against 59–64% of Germans and Austrians and 74–82% of Americans and Canadians.
 
 ### Going out and meeting new people
 
-The ISSP 2017 survey on social networks asks about behaviour. One question asks how often people go out to eat or drink with three or more friends or acquaintances who are not family. The next asks how often they get to know new people on those occasions. The survey covers Czechia, Slovakia, Hungary, Germany, Austria and the US, but not Poland, Canada or Ukraine.
+The ISSP 2017 survey on social networks asks how often people go out to eat or drink with three or more friends or acquaintances who are not family, and how often they get to know new people on those occasions. It covers Czechia, Slovakia, Hungary, Germany, Austria and the US.
+
+![Going out with friends and meeting new people, ISSP 2017](charts/2-issp-sociability.png)
 
 | ISSP 2017, % of adults | Czechia | Slovakia | Hungary | Germany | Austria | US |
 |---|---:|---:|---:|---:|---:|---:|
 | Goes out to eat or drink with three or more friends at least weekly | 25 | 47 | 19 | 22 | 28 | 17 |
 | Often or very often gets to know new people at such outings | 5 | 11 | 6 | 5 | 5 | 13 |
 | Takes part in leisure, sport or culture group activities at least monthly | 32 | 39 | 22 | 43 | 40 | 32 |
-| Would turn first to family or close friends for help finding a job | 25 | 44 | 47 | 29 | 22 | 41 |
 
-The second row counts people who never go out as not meeting new people; among those who do go out, the figures are 6, 12, 8, 5, 6 and 15.
+The second row counts people who never go out as not meeting new people; among those who go out, the figures are 6, 12, 8, 5, 6 and 15.
 
-![Three sociability measures from ISSP 2017](charts/2-issp-sociability.png)
+Czechs go out with groups of friends more often than Americans, but meet new people there less than half as often. That fits the guides' picture of a closed circle when compared with Americans. Against Germans and Austrians, Czechs answer much the same.
 
-Czechs meet new people at these outings less often than Americans or Slovaks, which fits the guides' comparison with Americans. On this and on going out, Czechs answer like Germans and Austrians. The other two measures point elsewhere: Czechs take part in group activities less often than Germans or Austrians, about as often as Americans, and fewer turn first to family or close friends for job help than in Slovakia or Hungary.
+## Groups and joint action
 
-### Groups and joint action
+| % of adults | Belongs to a civic group, EVS | Belongs to a civic group, WVS | Has taken part in joint public action, EVS | Has taken part in joint public action, WVS |
+|---|---:|---:|---:|---:|
+| Czechia | 54 | 25 | 48 | 24 |
+| Slovakia | 16 | 37 | 42 | 49 |
+| Poland | 18 | – | 40 | – |
+| Hungary | 25 | – | 21 | – |
+| Ukraine | 16 | 30 | 16 | 22 |
+| Germany | 62 | 64 | 70 | 73 |
+| Austria | 48 | – | 62 | – |
+| US | – | 64 | – | 64 |
+| Canada | – | 55 | – | 73 |
 
-| European Values Study, % of adults | Czechia | Slovakia | Poland | Hungary | Ukraine | Germany | Austria |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Belongs to at least one civic group | 54 | 16 | 18 | 25 | 16 | 62 | 48 |
-| Belongs to two or more civic groups | 28 | 3 | 5 | 11 | 6 | 29 | 19 |
-| Has ever signed a petition, joined a boycott or attended a lawful demonstration | 48 | 42 | 40 | 21 | 16 | 70 | 62 |
+Civic groups are eight types of organisation, excluding churches, unions and parties; the World Values Survey counts active and inactive members together. Joint public action means having ever signed a petition, joined a boycott or attended a lawful demonstration. EVS fieldwork ran from 2017 to 2020 and WVS from 2017 to 2022; Czechia was surveyed in 2017 (EVS) and 2022 (WVS).
 
-| World Values Survey, % of adults | Czechia | Slovakia | Ukraine | Germany | US | Canada |
-|---|---:|---:|---:|---:|---:|---:|
-| Belongs to at least one civic group | 25 | 37 | 30 | 64 | 64 | 55 |
-| Belongs to two or more civic groups | 9 | 18 | 17 | 32 | 46 | 34 |
-| Has ever signed a petition, joined a boycott or attended a lawful demonstration | 24 | 49 | 22 | 73 | 64 | 73 |
+In the 2022 World Values Survey, Czechs belong to groups and take part in joint action far less often than Germans, Americans or Canadians. In the 2017 European Values Study, Czechs are close to Germany and Austria. The Czech 2017 figure is itself uncertain: 10.5% of Czech respondents could not be classified, and counting them all as members or all as non-members moves the figure between about 49% and 59%.
 
-Civic groups here are eight types of organisation, excluding churches, unions and parties. The World Values Survey counts active and inactive members together.
-
-The two surveys tell different stories for Czechia. In the 2022 World Values Survey, Czechs belong to groups and take part in joint public action far less often than Germans, Americans or Canadians, and less often than Slovaks. In the 2017 European Values Study, Czechs are close to Germany and Austria on membership and well above Slovakia, Poland and Hungary. The two surveys asked about membership in different ways (see [Wording changes the answer](#wording-changes-the-answer)).
+The two surveys asked differently. The European Values Study showed a card and asked which groups people belong to; the World Values Survey read each organisation out and asked whether the person is an active member, an inactive member or not a member. That difference does not explain the Czech drop, though: Slovakia and Ukraine went the other way, from 16% to 37% and 30%. Which Czech figure is closer to the truth stays open.
 
 ## Family and work
 
-### Duties to family
+This section compares countries only within one survey, and leaves out family items whose Czech wording changed between the two values surveys (see below).
 
-| European Values Study, % agreeing | Czechia | Slovakia | Poland | Hungary | Germany | Austria |
-|---|---:|---:|---:|---:|---:|---:|
-| When a parent is ill long term, it is the adult child's duty to look after them | 70 | 73 | 74 | 60 | 45 | 41 |
-| Lives with own parents or parents-in-law | 16 | 23 | 27 | 23 | 13 | 13 |
-
-| World Values Survey, % agreeing | Czechia | Slovakia | Germany | US | Canada |
-|---|---:|---:|---:|---:|---:|
-| Adult children have the duty to provide long-term care for their parents | 55 | 59 | 48 | 40 | 36 |
-| Lives with own parents or parents-in-law | 15 | 16 | 10 | 11 | 14 |
-
-In the ISSP 2017, 75% of Czechs agree that adult children have a duty to look after elderly parents, against 79% of Slovaks, 55% of Germans and 51% of Austrians. In the ISSP 2022, 56% of Czechs say they can rely more on close relatives than on close friends, close to Slovakia (58%) and Croatia (58%) and well above Germany (32%) and Austria (34%).
-
-On duties to parents Czechs agree slightly less often than Slovaks in all three surveys and much more often than Germans or Austrians.
-
-### Duties to work
-
-| European Values Study, % agreeing | Czechia | Slovakia | Poland | Hungary | Ukraine | Germany | Austria |
+| % agreeing | Czechia | Slovakia | Poland | Hungary | Germany | Austria | US |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Work is a duty towards society | 60 | 66 | 74 | 69 | 43 | 78 | 74 |
-| People who don't work turn lazy | 78 | 79 | 82 | 79 | 66 | 60 | 57 |
+| Adult children have a duty to look after elderly parents (ISSP 2017) | 75 | 79 | – | 60 | 55 | 51 | 73 |
+| Can rely more on close relatives than on close friends (ISSP 2022) | 56 | 58 | 42 | 48 | 32 | 34 | 46 |
+| Work is a duty towards society (EVS 2017–18) | 60 | 66 | 74 | 69 | 78 | 74 | – |
 
-| World Values Survey, % agreeing | Czechia | Slovakia | Ukraine | Germany | US | Canada |
-|---|---:|---:|---:|---:|---:|---:|
-| Work is a duty towards society | 49 | 58 | 40 | 75 | 59 | 54 |
-| People who don't work turn lazy | 68 | 79 | 64 | 56 | 44 | 40 |
+Czechs see duties to parents much as Slovaks and Americans do, and far more strongly than Germans or Austrians. Fewer Czechs than their neighbours call work a duty towards society. In the World Values Survey, which uses the same Czech wording, the Czech figure is 49%, against 58% in Slovakia, 75% in Germany and 59% in the US.
 
-Fewer Czechs than Slovaks, Poles, Hungarians, Germans or Austrians call work a duty towards society; only Ukrainians agree less often. Yet most Czechs agree that people who don't work turn lazy, as Slovaks, Poles and Hungarians do.
+### The surveys disagree
 
-## Wording changes the answer
-
-### What the Czech questionnaires say
+On several family items the 2017 and 2022 Czech values surveys give very different answers, and the Czech wording changed between them:
 
 | Question | Czech EVS 2017 | Czech WVS 2022 | Czech answers |
 |---|---|---|---:|
-| Hard work as a quality for children | "pracovitost" (industriousness) | "tvrdá práce" (hard work; the phrase can suggest toil) | 81% → 23% |
-| Having children and society | "zodpovědnost" (a responsibility) | "povinnost" (a duty or obligation) | 58% → 28% |
+| Hard work as a quality for children | "pracovitost" (industriousness) | "tvrdá práce" (hard work; can suggest toil) | 81% → 23% |
+| Having children and society | "zodpovědnost" (a responsibility) | "povinnost" (a duty) | 58% → 28% |
 | Caring for parents | duty to look after a parent who is ill long term | duty to provide long-term care for parents | 70% → 55% |
-| Group membership | show card: which of these do you belong to? | read out one by one: active member, inactive member or not a member | 54% → 25% |
 
-The Slovak WVS 2022 questionnaire uses "pracovitosť" for hard work, and 63% of Slovaks chose it.
-
-![Czech and Slovak answers in 2017 and 2022 on four questions](charts/3-wording-effects.png)
-
-The questionnaires show that the wording or the format changed. They cannot show how much of each gap the change caused.
-
-Two more points:
-
-- In the Czech EVS 2017, 18% of respondents have more than five child qualities recorded, although the questionnaire asked for at most five. Among those with five or fewer, 78% chose hard work, which still leaves a gap of about 55 points to 2022.
-- The general trust question is framed differently. Both Czech values surveys contrast trusting most people with having to be very careful in dealing with people. The Czech ISSP 2017 version offers four answers from "people can almost always be trusted" to "people can almost never be trusted", without the caution framing of the English original. The Czech figures are 22% (EVS 2017, trusting answer), 37% (WVS 2022, trusting answer), 59% (ISSP 2017, almost always or usually) and 50% (ESS 2021, 6–10 on a 0–10 scale). The framing is a possible explanation for the high ISSP figure; it was not tested.
-
-### Change or wording?
-
-If a gap comes from wording, it should be about the same size in every group of people. For hard work (52 to 62 points), duty to have children (25 to 33 points) and group membership (26 to 32 points), the gap between 2017 and 2022 is similar across age and education groups. For trust and for the duty to care for parents, the gap varies between groups, so part of it may be real change. The Czech WVS interviews took place between 11 February and 13 May 2022; 101 of the 1,200 interviews were done before the Russian invasion of Ukraine on 24 February.
+These items are left out of the comparisons above. The questionnaires show that the wording changed; they cannot show how much of each gap the change caused, and other things changed too, including the year and the start of the Russian invasion of Ukraine during the Czech 2022 fieldwork. How values surveys translate the same question into Czech, Slovak, Polish and other languages is worth a check of its own.
 
 ## Limits of this check
 
-- These are national averages. They say nothing about any individual Czech, and the differences within each country are larger than those between countries.
-- The surveys ask about attitudes and a few reported behaviours. The ISSP outing question covers one kind of occasion; none of these surveys observes how people actually behave with strangers or how readily they start working together.
-- Countries are compared only within the same survey. Surveys were carried out in different years and modes (see [Data and method](#data-and-method)), and the US and Canadian WVS samples answered mostly online.
-- The ISSP 2017 module does not cover Poland, Canada or Ukraine; Hungary and Ukraine are not neighbours of Czechia but were added for regional context.
+- These are national averages of attitudes and a few reported behaviours. They say nothing about any individual Czech, and none of these surveys observes how people actually behave with strangers.
+- Surveys were carried out in different years and modes (see [Data and method](#data-and-method)); the US and Canadian WVS samples answered mostly online, the Czech ones face to face.
 - The intervals in the charts account for the survey weights only, not for clustering or stratification, so they are approximate. Overlapping intervals do not show that two countries are the same.
-- The translation findings rest on reading the Czech and Slovak questionnaires. The German, Austrian, Polish and English versions were not compared item by item.
 - Each guide claim was turned into survey items by judgement. A different choice of items could give a different picture.
-- The guides contain material written by other people, some of it from the 1990s. This page tests the claims, not who made them.
+- The guides contain material written by other people, some of it from the 1990s. This page tests whether the claims fit recent survey answers, not whether they were true when written or who made them.
 
 ## How this was made
 
@@ -250,28 +179,24 @@ If a gap comes from wording, it should be about the same size in every group of 
 
 All times UK time (GMT).
 
-- **21–22 November, scoping (not measured here):** an agent searched for the guides, wrote a short map of the main models of national culture, and matched claims in the guides to survey questions. Dominik picked group membership, trust and gender roles.
-- **22 November 01:14:** Dominik chose the countries: the US, Canada and the neighbours.
-- **01:18–01:22:** Dominik downloaded the joint EVS/WVS and ESS files.
-- **01:24–01:27:** first weighted tables for the three claims.
-- **08:57:** Dominik restated the friendship claim: it was about patterns of contact and cooperation, not trust. He added Hungary and Ukraine.
-- **08:59:** he asked about duties to family and work.
-- **09:04:** he asked for the disagreements to be checked against the question wording, including the Czech translations.
-- **09:06–09:14:** Dominik downloaded the ISSP 2017 and 2022 files and the Czech and Slovak EVS questionnaires; the agent downloaded the WVS questionnaires and the Czech WVS technical report.
-- **09:27–09:34:** Codex reviewed the scripts and claims; it reproduced every table and found errors in the membership measure, the description of the outing question and the labelling of surveys, all corrected here.
+- **21–22 November, scoping (not measured here):** an agent searched the guides and matched their claims to survey questions. Dominik picked group membership, trust and gender roles, and chose the countries.
+- **22 November 01:14–01:27:** Dominik downloaded the joint EVS/WVS and ESS files; first weighted tables.
+- **08:57–09:14:** Dominik restated the friendship claim as being about contact and cooperation, not trust, added Hungary and Ukraine, and asked about duties to family and work and about the Czech question wording. He downloaded the ISSP files and the Czech EVS questionnaire; the agent downloaded the WVS questionnaires and the Czech WVS technical report.
+- **09:27–09:45:** Codex reviewed the scripts and claims, reproduced every table and found errors in the membership measure, the description of the outing question and the labelling of surveys. All were corrected.
+- **14:55–15:05:** Gemini 4 Neon and GPT-6.2 Astra reviewed the draft independently. Both found that it had reversed the Czech–US comparison on going out, and both asked for a shorter page and clearer charts.
+- **24 November 07:49:** Dominik decided to drop the family items whose wording differs between surveys and to leave translation for a separate check. The page was revised.
 
 ### Data and method
 
 | Survey | Fieldwork used here | Mode |
 |---|---|---|
 | European Values Study 2017 | CZ, SK, PL 2017; DE 2017–18; AT, HU 2018; UA 2020 | face to face; Germany also web and mail |
-| World Values Survey wave 7 | US 2017; DE 2018; CA, UA 2020; CZ, SK 2022 | CZ face to face (CAPI); US mainly and Canada entirely web |
+| World Values Survey wave 7 | US 2017; DE 2018; CA, UA 2020; CZ, SK 2022 | CZ face to face; US mainly and Canada entirely web |
 | ISSP 2017 Social Networks | CZ, SK, HU 2017; DE, AT, US 2018 | CZ face to face; DE mainly self-completion |
-| ISSP 2022 Family and Gender Roles | CZ, SK, PL, US 2022; DE, AT 2023; HR 2024 | as documented by each country |
-| European Social Survey round 10 | CZ July–September 2021 | face to face |
+| ISSP 2022 Family and Gender Roles | CZ, SK, PL 2022; US 2022–23; DE, AT, HU 2023 | as documented by each country |
 
-- All figures are weighted percentages of adults with valid answers ("don't know" and no answer excluded). Weights: `gwght` (EVS/WVS), `anweight` (ESS), `WEIGHT` (ISSP 2017), `WEIGHT_COM` (ISSP 2022).
-- Membership uses every respondent who can be classified: a yes if they named enough groups, a no only if their missing answers could not change the result.
+- All figures are weighted percentages of adults with valid answers ("don't know" and no answer excluded). Weights: `gwght` (EVS/WVS), `WEIGHT` (ISSP 2017), `WEIGHT_COM` (ISSP 2022).
+- Membership uses every respondent who can be classified: a yes if they named at least one group, a no only if their missing answers could not change the result.
 - Judgement steps: which survey items stand for each guide claim; collapsing strongly agree and agree; which organisation types count as civic groups; treating 1–3 on the ISSP 2022 seven-point scale as leaning towards relatives.
 - The survey microdata are not redistributed. Derived tables, the code and the item definitions will be published in the data repository before this page goes live.
 
@@ -281,8 +206,9 @@ All times UK time (GMT).
 |---|---|---:|---:|---:|
 | claude-opus-5-5 | analysis, questionnaire reading, drafting | 139 | 26,080,258 | 111,346 |
 | claude-sonnet-5-5 | survey coverage check | 12 | 796,323 | 6,833 |
-| gpt-6.2-sol (Codex) | independent review of scripts and claims | – | – | – |
+| gpt-6.2-sol (Codex) | review of scripts and claims | – | – | – |
+| gemini-4-neon, gpt-6.2-astra | review of the draft | – | – | – |
 
-Claude counts cover the Claude Code session of 22 November from 01:14 to 09:37 UK time, from `scripts/session-usage.py`. Tokens read include the cached conversation history re-read on each call. The earlier scoping session and the Codex review's usage are not included yet.
+Claude counts cover the Claude Code session of 22 November from 01:14 to 09:37 UK time. Tokens read include the cached conversation history re-read on each call. The scoping session, the reviews and the 24 November revision are not included yet.
 
 Other tools: Python with pandas and matplotlib for the analysis, pdftotext for the questionnaires, Vega-Lite for the interactive charts.
