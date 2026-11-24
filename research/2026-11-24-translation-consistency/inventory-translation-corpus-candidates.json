@@ -1,6 +1,6 @@
 {
   "checked_date": "2026-11-24",
-  "status": "Candidate metadata; selected 2023 Czech/Slovak and 2019 Polish corpus-info requests succeeded on 2026-11-24; no linguistic queries",
+  "status": "Four-language main corpus metadata verified; German rft4 selected; no linguistic queries",
   "corpora": [
     {
       "corpname": "preloaded/cztenten12_9",
@@ -12,7 +12,9 @@
       "corpname": "preloaded/detenten23_rft3",
       "name": "German Web 2023 (deTenTen23)",
       "language_name": "German",
-      "infohref": "http://www.sketchengine.co.uk/detenten-german-corpus"
+      "infohref": "http://www.sketchengine.co.uk/detenten-german-corpus",
+      "corpus_info_checked": "2026-11-24",
+      "role": "Earlier verified candidate; rft4 selected for the study before results"
     },
     {
       "corpname": "preloaded/sktenten23_rft1",
@@ -52,6 +54,14 @@
       "language_name": "Czech",
       "infohref": "https://www.sketchengine.eu/cstenten-czech-corpus/",
       "corpus_info_checked": "2026-11-24"
+    },
+    {
+      "corpname": "preloaded/detenten23_rft4",
+      "name": "German Web 2023 (deTenTen23), rft4 annotation",
+      "language_name": "German",
+      "infohref": "https://www.sketchengine.eu/detenten-german-corpus/",
+      "corpus_info_checked": "2026-11-24",
+      "role": "Selected German main corpus before linguistic results"
     }
   ]
 }

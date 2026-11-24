@@ -1,0 +1,40 @@
+{
+  "selection": "The single Codex instance in the translation-scoping thread, selecting recorded responses from 08:20 UTC on 24 November 2026; no children.",
+  "since": "2026-11-24T08:20:00Z",
+  "until": null,
+  "rows": [
+    {
+      "agent": "Snacks ▸ Are survey questionnaires translated consistently? scoping",
+      "harness": "Codex",
+      "model": "gpt-6.1-sol",
+      "start": "2026-11-24T08:21:33.184Z",
+      "end": "2026-11-24T08:29:10.524Z",
+      "calls": 18,
+      "input_uncached": 74927,
+      "cached_read": 6160512,
+      "cache_write": 0,
+      "reasoning": 4213,
+      "output": 16905,
+      "total": 6252344,
+      "not_recorded": []
+    }
+  ],
+  "subtotals": [],
+  "total": {
+    "agent": "Total",
+    "harness": "",
+    "model": "",
+    "calls": 18,
+    "input_uncached": 74927,
+    "cached_read": 6160512,
+    "cache_write": 0,
+    "reasoning": 4213,
+    "output": 16905,
+    "total": 6252344
+  },
+  "notes": [
+    "Input (uncached) excludes cached reads and cache writes. Total = input (uncached) + cached read + cache write + output. Reasoning is part of Output and is not added again. Totals add recorded values only.",
+    "Codex reports input including cached tokens; uncached = input - cached read - cache write. Codex calls are model responses, including context-compaction calls."
+  ],
+  "coverage_note": "Snapshot for German source retrieval and full-brief preparation; excludes subsequent checks, commit and handoff. Reasoning is within output."
+}

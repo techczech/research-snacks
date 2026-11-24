@@ -2,13 +2,13 @@
 title: Which survey translation study should come first?
 date: 2026-11-24
 register: FOR DOMINIK
-status: lexical-focus-confirmed-sample-proposed
+status: four-language-sample-confirmed-full-brief-ready
 provenance: Source and access check on 24 November 2026; existing questionnaire inventory and earlier working notes.
 ---
 
 # A translation series beginning with neighbouring languages
 
-**The first snack will examine equivalent key words and their associations in ordinary use, through linguistic judgement with corpus support.** This is your focus choice, relayed at 08:08 UK time on 24 November, and it supersedes the earlier whole-question-first recommendation. The [current sample proposal](proposal-neighbouring-language-keywords.md) recommends Czech, Slovak and Polish, with word groups for industriousness/hard work, responsibility and duty/obligation drawn from the downloaded questionnaires.
+**The first snack will examine equivalent key words and their associations in ordinary use, through linguistic judgement with corpus support.** This is your focus choice, relayed at 08:08 UK time on 24 November, and it supersedes the earlier whole-question-first recommendation. At 08:20 you selected Czech, Slovak, Polish and German, with the three word groups for industriousness/hard work, responsibility and duty/obligation. The [sample record](proposal-neighbouring-language-keywords.md) now includes verified German questionnaire forms; the [full research brief](brief.md) is ready for confirmation of the detailed method and judgement role.
 
 There are sources for all three strands you proposed. **The first result would describe whether the selected lexical equivalents carry similar or different associations in the chosen written corpora.** Full questions retain the context for selecting the words. Whole-item equivalence and changes in survey answers remain possible later questions; neither is the first snack's main outcome.
 
@@ -23,7 +23,7 @@ The existing local collection contains the following questionnaires. This pass c
 | EVS 2017 national questionnaires | Czech, Slovak, Polish, Russian and Ukrainian PDFs are present. | Start a same-programme comparison after matching the source, pages, response options and actual fieldwork version. |
 | WVS wave 7, national 2022 questionnaires | Czech and Slovak PDFs are present. | Recheck the candidate differences against EVS, keeping the programme and period differences visible. |
 | ISSP 2017 national questionnaire | A Czech PDF is present. | Investigate the previously flagged trust wording as a separate cross-programme case. |
-| German-language EVS 2017 questionnaire | The official country table lists German questionnaires for Germany and Austria; no local PDF was verified. | Add one named country's version after retrieval and provenance checks. German is a neighbouring language, rather than a close linguistic relative of Czech. |
+| German EVS 2017 questionnaires | Germany's official archive has now been retrieved, with CAPI and four web/postal instruments. Selected CAPI pages were checked visually; chosen lexical forms were located in all five. | Use Germany CAPI as the main German source: `Fleiß`, `Verantwortungsgefühl`, `Pflicht` for children and `Verpflichtung` for work. The [source receipt](evidence-german-questionnaire-wording.md) records provenance and version limits. |
 | Earlier waves | No earlier-wave national questionnaire was verified locally. | Establish an item-by-wave source inventory before promising a translation history. |
 
 The [EVS country table](https://europeanvaluesstudy.eu/surveys/surveys-evs/evs-2017/participating-countries-and-country-information-survey-2017/) provides links to field questionnaires and showcards, languages, modes and dates. [GESIS documents the joint EVS/WVS file](https://www.gesis.org/en/european-values-study/data-and-documentation/joint-evs/wvs-2017-2022-dataset) as a combination of two programmes. An EVS 2017 versus WVS 2022 comparison must therefore retain both distinctions, even where harmonised variable labels look identical.
@@ -82,7 +82,7 @@ Corpus rights remain attached to the selected corpus and examples. Service acces
 
 ## What still needs deciding?
 
-The next question is the [sample choice](proposal-neighbouring-language-keywords.md): Czech/Slovak/Polish with the three proposed word groups, a smaller Czech/Slovak pilot, or those three languages plus German. The recommendation is the three-language sample using existing questionnaire sources. Later questions will settle existing expectations, detailed judgement methods, your contribution and permitted attribution. The completed brief needs your confirmation before empirical work; the series direction, TIMSS identification and lexical/corpus focus are already settled.
+The language/word-group sample is settled. The next question presents the [completed research brief](brief.md) and asks whether the agent should make provisional semantic readings for your inspection, or retrieve evidence for you to label throughout. The recommendation is provisional agent readings with your inspection of representative, contradictory and uncertain examples. No author prediction or first-person quotation is assumed. Confirmation settles the brief and judgement role before the corpus pilot; the series direction, TIMSS, lexical focus and four-language sample will not be asked again.
 
 ## Work record and token use
 

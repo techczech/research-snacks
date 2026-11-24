@@ -1,6 +1,6 @@
 {
   "checked_date": "2026-11-24",
-  "status": "metadata-only; title pages, fielded version and item mapping not rechecked",
+  "status": "Metadata inventory; German selected lexical forms checked across five instruments, CAPI pages visually checked; no corpus or full semantic audit",
   "files": [
     {
       "file": "ZA7500_q_cz.pdf",
@@ -81,6 +81,76 @@
       "pdf_header": true,
       "sha256": "2e1e4f5531ad97ef3956815ec35b80ae5488718cfdedd3b6ec17b81b9a0ea612",
       "semantic_audit_this_run": false
+    },
+    {
+      "file": "ZA7500_q_de_CAPI.PDF",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "German",
+      "country": "Germany",
+      "bytes": 1219272,
+      "pdf_header": true,
+      "sha256": "70b3c95d1ad46bd906a3a1e31834c0f578966a381727cd0f7ec4571bfa60f429",
+      "source_url": "https://access.gesis.org/dbk/66247",
+      "semantic_audit_this_run": false,
+      "selected_lexical_forms_checked": true,
+      "visual_check": true
+    },
+    {
+      "file": "ZA7500_q_de_CAWI_full.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "German",
+      "country": "Germany",
+      "bytes": 943771,
+      "pdf_header": true,
+      "sha256": "a0f13d71a49ab116f5a2248af985e59dbeee0f2a7c2b22b8432061cf61d3d80d",
+      "source_url": "https://access.gesis.org/dbk/66247",
+      "semantic_audit_this_run": false,
+      "selected_lexical_forms_checked": true,
+      "visual_check": false
+    },
+    {
+      "file": "ZA7500_q_de_CAWI_matrix.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "German",
+      "country": "Germany",
+      "bytes": 938336,
+      "pdf_header": true,
+      "sha256": "a07561ac649dbb152a54226a53e56688b3146aefbb02f5d3a220950ab460dbe7",
+      "source_url": "https://access.gesis.org/dbk/66247",
+      "semantic_audit_this_run": false,
+      "selected_lexical_forms_checked": true,
+      "visual_check": false
+    },
+    {
+      "file": "ZA7500_q_de_Mail_full.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "German",
+      "country": "Germany",
+      "bytes": 752804,
+      "pdf_header": true,
+      "sha256": "796c3a2c02f3977958c2c7886e51ca9c005889ee8bea20248b3bdd64fd330a21",
+      "source_url": "https://access.gesis.org/dbk/66247",
+      "semantic_audit_this_run": false,
+      "selected_lexical_forms_checked": true,
+      "visual_check": false
+    },
+    {
+      "file": "ZA7500_q_de_Mail_matrix.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "German",
+      "country": "Germany",
+      "bytes": 751185,
+      "pdf_header": true,
+      "sha256": "5ae34a362f6e0aa5f09d84f90c7fec906095f65ccb192d0ebe28b518e3d169c7",
+      "source_url": "https://access.gesis.org/dbk/66247",
+      "semantic_audit_this_run": false,
+      "selected_lexical_forms_checked": true,
+      "visual_check": false
     }
   ]
 }

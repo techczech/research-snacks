@@ -14,6 +14,8 @@ This is an initial orientation, prepared before an agreed research brief. It ide
 
 The later focus decision, relayed at 08:08 on 24 November, makes the first snack a key-word association comparison through judgement with corpus support. The [current proposal](proposal-neighbouring-language-keywords.md) supersedes this initial map's whole-item-first sequencing. Broader questionnaire and response-analysis methods below remain context for later strands.
 
+At 08:20 the author selected German alongside Czech, Slovak and Polish. Germany's EVS questionnaire archive has now been retrieved and its selected lexical forms checked; see the [German source receipt](evidence-german-questionnaire-wording.md). The earlier availability description below records the initial pass, not the current German retrieval status. The [current full brief](brief.md) is the authority for the proposed pilot and remaining judgement-role decision.
+
 ## Terms and competing interpretations
 
 - **Literal similarity** concerns words and syntax. It does not establish that respondents answer the same question.
