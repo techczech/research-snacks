@@ -11,19 +11,26 @@
     "url": "charts/1-men-political-leaders.csv"
   },
   "title": {
-    "text": "\"Men make better political leaders than women do\"",
+    "text": [
+      "\"Men make better political leaders than",
+      "women do\""
+    ],
     "subtitle": [
-      "Share agreeing or strongly agreeing, weighted. Each survey shown separately.",
+      "Share agreeing or strongly agreeing, weighted. Each survey",
+      "shown separately.",
       "Lines show approximate 95% intervals (survey weights only)"
     ],
     "anchor": "start",
-    "subtitlePadding": 6
+    "subtitlePadding": 6,
+    "offset": 16
   },
   "spacing": 36,
   "vconcat": [
     {
       "title": {
-        "text": "European Values Study",
+        "text": [
+          "European Values Study"
+        ],
         "anchor": "start",
         "fontSize": 13,
         "offset": 6
@@ -33,7 +40,7 @@
           "filter": "datum.programme === 'EVS'"
         }
       ],
-      "width": 420,
+      "width": 210,
       "height": {
         "step": 22
       },
@@ -50,7 +57,7 @@
           ],
           "title": null,
           "axis": {
-            "labelLimit": 160
+            "labelLimit": 110
           }
         },
         "tooltip": [
@@ -146,7 +153,9 @@
     },
     {
       "title": {
-        "text": "World Values Survey",
+        "text": [
+          "World Values Survey"
+        ],
         "anchor": "start",
         "fontSize": 13,
         "offset": 6
@@ -156,7 +165,7 @@
           "filter": "datum.programme === 'WVS'"
         }
       ],
-      "width": 420,
+      "width": 210,
       "height": {
         "step": 22
       },
@@ -173,7 +182,7 @@
           ],
           "title": null,
           "axis": {
-            "labelLimit": 160
+            "labelLimit": 110
           }
         },
         "tooltip": [

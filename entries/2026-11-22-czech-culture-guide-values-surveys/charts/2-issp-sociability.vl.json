@@ -11,19 +11,28 @@
     "url": "charts/2-issp-sociability.csv"
   },
   "title": {
-    "text": "Czechs go out with friends more often than Americans, but rarely meet new people there",
+    "text": [
+      "Czechs go out with friends more often than",
+      "Americans, but rarely meet new people",
+      "there"
+    ],
     "subtitle": [
-      "ISSP 2017, % of all adults, weighted. People who never go out count as not meeting anyone new.",
+      "ISSP 2017, % of all adults, weighted. People who never go",
+      "out count as not meeting anyone new.",
       "Lines show approximate 95% intervals (survey weights only)"
     ],
     "anchor": "start",
-    "subtitlePadding": 6
+    "subtitlePadding": 6,
+    "offset": 16
   },
   "spacing": 36,
   "vconcat": [
     {
       "title": {
-        "text": "Goes out to eat or drink with three or more friends at least weekly",
+        "text": [
+          "Goes out to eat or drink with three or",
+          "more friends at least weekly"
+        ],
         "anchor": "start",
         "fontSize": 13,
         "offset": 6
@@ -33,7 +42,7 @@
           "filter": "datum.measure === 'Goes out to eat or drink with three or more friends at least weekly'"
         }
       ],
-      "width": 420,
+      "width": 210,
       "height": {
         "step": 22
       },
@@ -51,7 +60,7 @@
           ],
           "title": null,
           "axis": {
-            "labelLimit": 160
+            "labelLimit": 110
           }
         },
         "tooltip": [
@@ -147,7 +156,10 @@
     },
     {
       "title": {
-        "text": "Often gets to know new people at such outings",
+        "text": [
+          "Often gets to know new people at such",
+          "outings"
+        ],
         "anchor": "start",
         "fontSize": 13,
         "offset": 6
@@ -157,7 +169,7 @@
           "filter": "datum.measure === 'Often gets to know new people at such outings'"
         }
       ],
-      "width": 420,
+      "width": 210,
       "height": {
         "step": 22
       },
@@ -175,7 +187,7 @@
           ],
           "title": null,
           "axis": {
-            "labelLimit": 160
+            "labelLimit": 110
           }
         },
         "tooltip": [
