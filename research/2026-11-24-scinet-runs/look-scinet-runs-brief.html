@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do the Research Snacks’ own runs match SciNet’s ratings?</title>
+<style>
+  :root { color-scheme: light dark; --ink: #182a29; --muted: #435856; --paper: #f7faf8; --accent: #145c51; --line: #cbdad4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e2efea; --muted: #bacdc4; --paper: #152622; --accent: #87d5bd; --line: #436057; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 1.075rem/1.55 system-ui, sans-serif; }
+  main { max-width: 46rem; margin: auto; padding: clamp(1.25rem, 5vw, 3rem); }
+  h1 { font-size: clamp(1.75rem, 6vw, 2.85rem); line-height: 1.12; margin: 0 0 1.2rem; letter-spacing: -.035em; }
+  h2 { font-size: 1.25rem; margin: 1.65rem 0 .3rem; }
+  p { margin: 0 0 .85rem; }
+  .decision { padding: .9rem 0 .9rem 1rem; border-inline-start: .25rem solid var(--accent); }
+  .decision p { margin: 0; }
+  a { color: var(--accent); text-underline-offset: .18em; }
+  .links { color: var(--muted); border-top: 1px solid var(--line); padding-top: .8rem; margin-top: 1.4rem; font-size: .95rem; }
+  ul { margin: .25rem 0 0; padding-left: 1.35rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Do the Research Snacks’ own runs match SciNet’s ratings?</h1>
+  <div class="decision">
+    <p data-source-ref="brief.md#do-the-research-snacks-own-runs-match-scinets-ratings"><strong>Decision required.</strong> Approve a small comparison of SciNet’s task rankings with the records of past Research Snacks. The proposed cap is <strong>60 agent minutes</strong>, with a stop after <strong>25 minutes</strong> if too few comparable cases survive. You can spend <strong>up to 10 minutes</strong> checking linguistics matches, or leave that to a second reader.</p>
+  </div>
+  <h2>What the first look found</h2>
+  <p>Of <strong>24 candidate steps</strong> across 11 snacks, ten were tried against the SciNet descriptions. Four looked like whole tasks, five covered part of a task and one had no clear match. The four close matches still need outcome checks.</p>
+  <h2>What a comparison could show</h2>
+  <p>SciNet’s Elo scores rank tasks by one model’s judgement of how likely Claude Opus 5 is to complete them. The comparison asks whether that order holds in these records. A lower-rated task that reached a checked standard while a higher-rated task needed a material fix would go against the ranking.</p>
+  <p>A second reader would check the matches with the scores hidden. The brief counts material fixes separately from retries, help getting access and changes to the question.</p>
+  <h2>Choose one</h2>
+  <ul>
+    <li>Approve the comparison with a second reader.</li>
+    <li>Approve and check up to five linguistics matches yourself as well.</li>
+    <li>Park the comparison.</li>
+  </ul>
+  <p class="links"><a href="brief.md">Full approval brief</a> · <a href="evidence-scinet-runs.md">Run inventory and ten trial matches</a> · <a href="https://github.com/lukasalthoff/scinet/blob/69973ad2cf21a34298b1f7f600f2c3820989113e/TASK_DIMENSIONS.md#elo-ratings-for-claude-opus-5">SciNet ratings method</a></p>
+</main>
+</body>
+</html>

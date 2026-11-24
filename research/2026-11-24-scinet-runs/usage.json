@@ -1,0 +1,39 @@
+{
+  "selection": "One Codex agent, identified from the local rollout for this scoping request.",
+  "since": null,
+  "until": null,
+  "rows": [
+    {
+      "agent": "SciNet scoping agent",
+      "harness": "Codex",
+      "model": "gpt-6.2-sol",
+      "start": "2026-11-24T22:55:34.809Z",
+      "end": "2026-11-24T23:02:37.147Z",
+      "calls": 19,
+      "input_uncached": 102412,
+      "cached_read": 1843072,
+      "cache_write": 0,
+      "reasoning": 3819,
+      "output": 17936,
+      "total": 1963420,
+      "not_recorded": []
+    }
+  ],
+  "subtotals": [],
+  "total": {
+    "agent": "Total",
+    "harness": "",
+    "model": "",
+    "calls": 19,
+    "input_uncached": 102412,
+    "cached_read": 1843072,
+    "cache_write": 0,
+    "reasoning": 3819,
+    "output": 17936,
+    "total": 1963420
+  },
+  "notes": [
+    "Input (uncached) excludes cached reads and cache writes. Total = input (uncached) + cached read + cache write + output. Reasoning is part of Output and is not added again. Totals add recorded values only.",
+    "Codex reports input including cached tokens; uncached = input - cached read - cache write. Codex calls are model responses, including context-compaction calls."
+  ]
+}

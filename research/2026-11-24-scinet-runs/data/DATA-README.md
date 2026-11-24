@@ -1,0 +1,34 @@
+# SciNet data
+
+The files of the SciNet release. The [main README](../README.md) describes every column; [TIME_USE.md](../TIME_USE.md), [TASK_DIMENSIONS.md](../TASK_DIMENSIONS.md) and [WORK_ACTIVITIES.md](../WORK_ACTIVITIES.md) cover the hours a year, the scores and the work activities.
+
+| File | Contents | Columns |
+|------|----------|---------|
+| `tasks.csv` | Every task (7,262 rows) | `task`, `category`, `level`, `domain`, `field`, `subfield`, `expert_input` |
+| `substeps.csv.gz` | The steps of each task (90,583 rows, compressed) | `level`, `domain`, `field`, `subfield`, `task`, `substep_id`, `substep` |
+| `task_time.csv` | Hours per task, per subfield where it is performed | `task`, `level`, `domain`, `field`, `subfield`, `n_substeps`, `researcher_hours`, `elapsed_hours`, `confidence` |
+| `task_ratings.csv` | Importance (1–5), share of researchers (0–100), frequency (1–7), per subfield | `task`, `level`, `domain`, `field`, `subfield`, `importance`, `pct_researchers`, `frequency`, `classification` |
+| `task_prevalence.csv` | Share of papers that perform each task: subfield tasks in their subfield; universal, domain, and field tasks by field, by domain, and for all of science (9,259 rows) | `task`, `level`, `scope` (`subfield`, `field`, `domain`, `all`), `domain`, `field`, `subfield`, `n_papers`, `n_involved`, `prevalence`, `se`, `source` (`judged`: fixed sample of about 100 papers; `expansion`: from the expansion's scoring, leaving out the papers that proposed the task), `judge` (the model), `text` (what the model read of each paper) |
+| `task_hours_per_year.csv` | Hours a year a researcher spends on each task, per subfield where it is performed (26,803 rows) | `domain`, `field`, `subfield`, `level`, `task`, `task_type`, `hours_per_year`, the components of the formula and their parts, `retimed`, `capped`; see TIME_USE.md |
+| `task_dimensions.csv` | Descriptive scores for every task, same rows and order as `tasks.csv`, including the RL feasibility index (`rl_index`, `rl_index_equal`, `rl_index_core`) and the Elo rating for Claude Opus 5 (`elo_opus5`, `elo_opus5_se`; empty for one task) | See TASK_DIMENSIONS.md |
+| `substep_dimensions.csv.gz` | The step-by-step scores, same rows and order as `substeps.csv.gz` (scores empty for the 43 steps of four universal task-field pairs; see TASK_DIMENSIONS.md) | Keys as in `substeps.csv.gz`, plus the score columns |
+| `work_activities.csv` | The 140 work activities | `activity_id`, `universal_task_id`, `universal_task`, `category`, `activity_name`, `activity_description`, `n_tasks` |
+| `task_activity_assignments.csv` | The work activity of each task, one row per task statement and level (6,956 rows) | `task`, `level`, `activity_id`, `universal_task_id` |
+| `work_activity_dimensions.csv` | The scores averaged per work activity | `activity_id`, `universal_task_id`, `universal_task`, `category`, `activity_name`, `n_tasks`, the numeric score columns of `task_dimensions.csv` (all but `pasteur_applies`, `pasteur_quadrant`, `elo_opus5_se` and `cdr_rl_source`), `pasteur_applies_share`, `n_tasks_scored` |
+| `rl_index_subfields.csv` | The index per subfield, averaged over each task's hours a year (318 rows) | `domain`, `field`, `subfield`, `task_placements`, `paper_task_placements`, `hours_per_year`, `paper_hours_per_year`, `rl_index`, `rl_index_equal`, `rl_verification`, `rl_simulability`, `rl_feedback_density`, `rl_physical_gate_pass`, the same six scores with `_paper` for paper tasks only, `rl_index_core`, `rl_index_core_paper` |
+| `rl_index_pca.json` | The means, standard deviations, weights and variance shares of the index, and of its core version under `core` | |
+| `openalex_topic_subfield_mapping.csv` | OpenAlex topics mapped to SciNet subfields (4,481 topics) | `topic_id`, `topic_name`, `domain`, `field`, `subfield` |
+| `researchers.csv` | Researchers active in 2020 with at least 5 papers, worldwide and by country, for all research and every domain, field and subfield, estimated from 746,517 researchers whose papers Claude Haiku 5.5 read (43,458 rows) | `country_code`, `country`, `level` (`all`, `domain`, `field`, `subfield`), `domain`, `field`, `subfield`, `researchers` (estimate), `se` (standard error), `labelled_researchers` |
+| `topic_frame_overlay.csv` | Extra topics used to find enough papers for some subfields | `field`, `subfield_slug`, `topic_id`, `topic_name`, `confidence`, `reason`, `n_papers` |
+
+Things to know when joining the files:
+
+- Identify a subfield by `field` and `subfield` together. Two subfield names exist in two fields each.
+- 235 task statements appear in more than one subfield, with their own rows in every file. Match rows on `task`, `level`, `domain`, `field` and `subfield` together, or, for `task_dimensions.csv`, by row position.
+- In `substeps.csv.gz` and `substep_dimensions.csv.gz`, `domain` is filled only for domain-level tasks, and `subfield` is empty for field-level and universal tasks, because those breakdowns apply to the whole field or domain.
+- Universal tasks are timed once per field, so their rows in `task_time.csv` have an empty `subfield`.
+- In `task_hours_per_year.csv` every row has its `domain`, `field` and `subfield` filled: universal tasks have a row in every subfield of a field, and the components that do not apply to a row's `task_type` are empty.
+- In `task_prevalence.csv` a row is identified by `task`, `level`, `scope`, `domain`, `field` and `subfield`. Rows other than subfield rows are weighted by citations, so their `prevalence` can differ from `n_involved` divided by `n_papers`.
+- In `researchers.csv` a row is identified by `country`, `level`, `domain`, `field` and `subfield`; read it with `keep_default_na=False` in pandas so that Namibia's code `NA` is not read as missing.
+- `topic_frame_overlay.csv` names subfields by a slug: lowercase, `&` written as `and`, other punctuation as `_`.
+- Empty cells: apart from the columns above, which are empty where they do not apply, the only empty scores are `pasteur_understanding` and `pasteur_use` for tasks that are not research work (`pasteur_applies` is `no`).
