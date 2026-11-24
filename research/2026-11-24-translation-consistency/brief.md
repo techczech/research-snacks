@@ -2,7 +2,7 @@
 title: Survey translation consistency — provisional scoping brief
 date: 2026-11-24
 register: FOR AGENTS
-status: awaiting-first-author-answer
+status: series-direction-confirmed-interview-open
 provenance: Research Snacks coordinator's scoping commission, 24 November 2026.
 ---
 
@@ -21,13 +21,31 @@ Decision required: one snack or a series, and which strand first?
 - C. One snack combining a few examples from all three strands.
 - D. An education-survey comparison first.
 
-The same response should clarify whether the intended education study is TIMSS. This has not been assumed. The question explains that an initial wording audit establishes what differs before corpus or response analysis.
+The question also asked whether the intended education study was TIMSS. It explained that an initial wording audit establishes what differs before corpus or response analysis.
 
-Answer: pending. These choices are proposals, not approved decisions. No next interview question has been sent.
+Answer received directly from the author on 24 November 2026 (Tuesday): a series beginning with neighbouring languages; TIMSS was the intended education study. The exact first-study items, languages, methods and full brief remain open. This confirms the series direction, not every detail of the agent's proposed pilot.
+
+## Potential investigations in the series
+
+1. **Neighbouring-language questionnaire wording comes first.** Compare selected whole items, including response options and instructions; the exact language and item sample still needs agreement.
+2. **Corpus collocations in more distant languages remain a proposed extension.** Investigate whether candidate equivalents carry comparable associations and uses.
+3. **Consistency across survey iterations remains a proposed extension.** Separate translation changes from source-item changes and examine any response shifts descriptively.
+4. **TIMSS questionnaire translations are a confirmed topic of interest.** PISA, ESS and ISSP remain possible comparison sources rather than substitutes already selected by the author.
+5. **Official EU translations are a new potential investigation requested on 24 November.** Compare how selected terms or expressions are officially rendered in different languages and how the renderings differ. A possible method is to align the same passage and document version across languages, then compare institutional usage with ordinary corpus usage. Specific institutions, document types, terms, languages, sources and access/licensing have not been selected or checked. Record this as a future candidate, not an authorised research run.
+
+## Next question for the coordinator's to-do page
+
+What should the first neighbouring-language snack mainly establish?
+
+- A. Whether the whole questionnaire items ask the same thing, using corpus evidence where useful. This is the agent's recommendation because it directly tests comparability.
+- B. Whether selected key words carry the same associations in ordinary usage. This would make the first snack primarily a lexical/corpus investigation.
+- C. Whether a few suspected wording differences coincide with different response patterns. This would add descriptive response analysis and require more control of survey-design differences.
+
+This is a focus question, not a request to authorise a build. Its answer should guide the later item/language choices. Answer: pending.
 
 ## Remaining interview branches, in order
 
-After the first answer, ask one question at a time through the coordinator. Establish what the author already knows and what finding would surprise them; the exact item families and languages; acceptable semantic/corpus methods; relevant data/access ideas; their role judging borderline translations and the time available; permitted public attribution; and confirmation of the completed brief. Reuse any answers that arrive with the first response.
+Continue one question at a time through the coordinator. Establish what the author already knows and what finding would surprise them; the exact item families and languages; acceptable semantic/corpus methods; relevant data/access ideas; their role judging borderline translations and the time available; permitted public attribution; and confirmation of the completed brief. Reuse answers already supplied. The series/first-strand decision and TIMSS identification are settled and must not be asked again.
 
 ## Exploration space
 

@@ -2,17 +2,17 @@
 title: Which survey translation study should come first?
 date: 2026-11-24
 register: FOR DOMINIK
-status: provisional-scoping-report-awaiting-author-brief
+status: series-direction-confirmed-awaiting-full-brief
 provenance: Source and access check on 24 November 2026; existing questionnaire inventory and earlier working notes.
 ---
 
-# Decision required: choose the first translation study
+# A translation series beginning with neighbouring languages
 
 **I recommend a series, starting with a small comparison of the questionnaires already downloaded.** Check three item families in Czech, Slovak and Polish first, then use corpus evidence to investigate the differences that survive a careful reading. German can join once its fielded questionnaire has been retrieved and checked. This gives the broader work a tested method without making the first snack carry every question.
 
 There are sources for all three strands you proposed. **The strongest immediate result would be a documented account of which selected questions differ in meaning.** A change in wording alongside a change in answers could identify a problem worth investigating. It would not establish that the wording caused the response change.
 
-The first question has been sent to the coordinator for your to-do page. The choices are a series starting with neighbouring languages, a series starting with changes between waves, one combined snack, or an education-survey comparison first. Please also confirm whether “tims” means TIMSS. No answer or agreed research brief is recorded yet.
+**You confirmed this direction on 24 November 2026 (Tuesday): a series starting with neighbouring languages, with TIMSS as the education-survey topic.** You also added official EU translations to the potential investigations. The exact first-study sample and complete research brief still need agreement; the study shapes below remain proposals for that discussion.
 
 ## What is ready, and what still needs access work?
 
@@ -62,11 +62,15 @@ These are proposed research slices, not approved work. The effort ranges are age
 |---|---|---|---|
 | **Do neighbouring-language questionnaires ask the same thing?** | Three candidate families in Czech, Slovak and Polish EVS 2017; add the Czech/Slovak WVS contrast as a clearly separate comparison. Use a focused corpus check for one disputed expression. | Which selected fielded items preserve or change the proposition, conditions, force or answer task; what corpus usage adds to those readings. | Selected cases cannot estimate a general error rate. Language judgements need review before a strong public verdict. Allow roughly one to two agent working days, conditional on access. This is the recommended start of a series. |
 | **Does an item change meaning between waves?** | Two families in two languages across up to three waves of one programme, conditional on questionnaire availability. Align source and translations before inspecting response trends. | A documented translation history, followed by descriptive response changes with weighted uncertainty and administration notes. | Changes may coincide without being causal. If earlier fielded texts cannot be established, stop at a documented availability gap. Allow roughly two to four agent working days. |
-| **Do education questionnaires preserve the same meaning?** | Two recurring context-item families in three languages across two cycles of PISA, or TIMSS if that is your intended study and matching sources exist. | Whether apparently comparable education attitudes or experiences are asked equivalently, including national adaptations. | Grade, age, mode and cycle changes need explicit treatment; rights for excerpts must be resolved. This first slice would not audit achievement test items or explain country score differences. Allow roughly two to four agent working days. |
+| **Do education questionnaires preserve the same meaning?** | Two recurring context-item families in three languages across two TIMSS cycles, conditional on matching sources. PISA remains an alternative source if useful. | Whether apparently comparable education attitudes or experiences are asked equivalently, including national adaptations. | Grade, age, mode and cycle changes need explicit treatment; rights for excerpts must be resolved. This first slice would not audit achievement test items or explain country score differences. Allow roughly two to four agent working days. |
 
 The corpus strand fits naturally after the neighbouring-language audit establishes a real linguistic question. A later distant-language extension can then ask whether the same proposed distinction survives different lexical systems. Choosing Arabic or Japanese now merely because the corpus catalogue lists them would get ahead of your research question and available language expertise.
 
 No independent option scores were commissioned: this thread was instructed to work without subagents. The recommendation above is the scoping agent's judgement.
+
+## Official EU translations are a potential later investigation
+
+You proposed examining how the EU officially translates selected terms or expressions into different languages, and how those renderings differ. This has been added to the [series investigation list](brief.md). A possible study would compare the same passage and document version across languages, then investigate how institutional usage relates to ordinary corpus usage. The terms, document types, institutions, language sample and source/access checks remain open. This is a recorded candidate, not a study already started.
 
 ## Rights and publication decisions
 
@@ -76,15 +80,15 @@ The [Austrian TIMSS page](https://www.iqs.gv.at/downloads/internationale-studien
 
 Corpus rights remain attached to the selected corpus and examples. Service access is not a licence for the underlying texts. The [catalogue draft](catalogue-drafts-translation-sources.md) records checked sources and unresolved rights for the coordinator; it does not update the public catalogue. Every new snack still requires your preview before going live.
 
-## What happens after your answer?
+## What still needs deciding?
 
-The next interview step will establish what finding would change your mind, then settle the item families, languages, acceptable judgement methods, your contribution and permitted attribution. The completed brief needs your confirmation before empirical work. For now, **choose the overall shape and first strand on your to-do page, and confirm whether TIMSS is what you meant**. The report remains provisional until that answer arrives.
+The next question asks what the neighbouring-language snack should mainly establish: whether whole items ask the same thing, whether key words carry comparable associations, or whether suspected wording differences coincide with response patterns. The recommendation is to start with whole-item equivalence and use corpus evidence where useful. Later questions will settle existing expectations, the item families, languages, acceptable judgement methods, your contribution and permitted attribution. The completed brief needs your confirmation before empirical work; the overall series direction and TIMSS identification are already settled.
 
 ## Work record and token use
 
 The domain map, source-access record, questionnaire metadata inventory and catalogue proposals sit beside this report. Restricted sources stayed in their existing location. No respondent file was read in this pass. No corpus query, new translation experiment, analysis build or publication was run. No first-person wording has been drafted for the author.
 
-The [usage snapshot](usage.json) covers the single Codex scoping instance found through this thread's records, from 07:50:03 to 07:58:35 on 24 November 2026 (Tuesday, UK time / UTC): eight minutes and 32 seconds of elapsed transcript time. It excludes subsequent verification, commits and the final handoff. Reasoning is included within output, not added again. There are no child agents or reviewer instances. Human scoping time has not been measured or estimated because no interview answer has arrived.
+The [usage snapshot](usage.json) covers the single Codex scoping instance found through this thread's records, from 07:50:03 to 07:58:35 on 24 November 2026 (Tuesday, UK time / UTC): eight minutes and 32 seconds of elapsed transcript time. It excludes subsequent verification, commits, handoff and this decision update. Reasoning is included within output, not added again. There are no child agents or reviewer instances. At that snapshot no interview answer had arrived, so human scoping time was not measured or estimated.
 
 | Agent | Harness | Model | Calls | Input, uncached | Cached read | Cache write | Reasoning, within output | Output | Total |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|

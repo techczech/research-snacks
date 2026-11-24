@@ -8,7 +8,7 @@ provenance: Author request relayed by the Research Snacks coordinator; official 
 
 # What can a questionnaire translation audit establish?
 
-The proposed work asks whether key survey items use equivalent wording across neighbouring languages, whether corpus collocations help interpret more distant equivalents, and whether translations remain consistent between survey iterations. An education-survey extension is also proposed; whether the intended study is TIMSS awaits confirmation.
+The proposed work asks whether key survey items use equivalent wording across neighbouring languages, whether corpus collocations help interpret more distant equivalents, and whether translations remain consistent between survey iterations. On 24 November 2026 the author confirmed a series beginning with neighbouring languages, confirmed TIMSS as the intended education-survey extension, and added official EU translations as a potential later investigation. EU sources and the exact first-study sample remain unscoped.
 
 This is an initial orientation, prepared before an agreed research brief. It identifies accessible sources and a defensible design; it contains no new survey estimates, translation verdicts or corpus results.
 
