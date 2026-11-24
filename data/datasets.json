@@ -1473,6 +1473,26 @@
     "notes": "Transcripts download free from UCSB; audio files from talkbank.org/media/CABank/SBCSAE/. The No Derivatives licence allows sharing unchanged copies with credit but not adapted versions, so publish analyses and short quotations rather than edited audio."
   },
   {
+    "id": "scinet-anatomy-of-science",
+    "title": "SciNet: The Anatomy of Science",
+    "provider": "Cristian Alamos and Lukas Althoff, Stanford University",
+    "url": "https://www.anatomyofscience.com/",
+    "access": "open",
+    "licence": {
+      "name": "CC BY 4.0",
+      "url": "https://github.com/lukasalthoff/scinet/blob/main/LICENSE"
+    },
+    "data": "A task database for scientific research modelled on O*NET, with 7,262 tasks across 6 domains, 34 fields and 318 subfields. Each task has steps, researcher and elapsed hours, hours per year, importance, frequency, complexity and physical-work scores, and a rating of how likely a frontier model is to complete it; further files give 140 work activities, the share of papers showing each task, and 2020 researcher counts by country and field from OpenAlex. Downloadable as CSV files from the GitHub repository (release v1.10.0).",
+    "citation": "https://github.com/lukasalthoff/scinet",
+    "snacks": [],
+    "found": {
+      "date": "2026-11-24",
+      "context": "Suggested by Dominik as a source for snacks on research work and AI"
+    },
+    "checked": "2026-11-24",
+    "notes": "Most ratings, time estimates and step breakdowns are single language-model outputs checked against papers, protocols and O*NET, not survey responses. Paper prevalence is near zero for domain and universal tasks, and grant writing is understated. Researcher counts come from a model-labelled OpenAlex sample and cannot be rebuilt from the repository. The README names the rated model inconsistently (Claude Opus 5 and Claude Opus 5.5). Funding acknowledged from Stanford Impact Labs and Anthropic. METHODOLOGY.md not yet read."
+  },
+  {
     "id": "seamless-interaction",
     "title": "Seamless Interaction dataset",
     "provider": "Meta (FAIR)",
