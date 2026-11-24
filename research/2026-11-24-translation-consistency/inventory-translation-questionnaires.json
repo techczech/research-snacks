@@ -1,0 +1,86 @@
+{
+  "checked_date": "2026-11-24",
+  "status": "metadata-only; title pages, fielded version and item mapping not rechecked",
+  "files": [
+    {
+      "file": "ZA7500_q_cz.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "Czech",
+      "bytes": 692332,
+      "pdf_header": true,
+      "sha256": "293988d4f3402a2eca422d89674f702ce9fe8d1053bedb3d4c465d75cb9d269d",
+      "semantic_audit_this_run": false
+    },
+    {
+      "file": "ZA7500_q_sk.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "Slovak",
+      "bytes": 1136774,
+      "pdf_header": true,
+      "sha256": "4e1958c7d38df9a7c648f98904de06247335f78765afcebc58d8b5b2dae54675",
+      "semantic_audit_this_run": false
+    },
+    {
+      "file": "ZA7500_q_pl.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "Polish",
+      "bytes": 660254,
+      "pdf_header": true,
+      "sha256": "68797979d78ab2a2913cc55993a4187aa8f4317e5f295f4fcbd16c6ab22aa26b",
+      "semantic_audit_this_run": false
+    },
+    {
+      "file": "ZA7500_q_ru.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "Russian",
+      "bytes": 597235,
+      "pdf_header": true,
+      "sha256": "eed1bc0705fc9417abe7f2f7124d7c40034722ad9e8e86fa33f33d01e7c2b72d",
+      "semantic_audit_this_run": false
+    },
+    {
+      "file": "ZA7539_q_ua.pdf",
+      "programme": "EVS",
+      "wave_label": "2017",
+      "language": "Ukrainian",
+      "bytes": 1080145,
+      "pdf_header": true,
+      "sha256": "1e396ff3810839e33e3f000e23a8f87fd18b471e6924a13a84b7b156ca40956b",
+      "semantic_audit_this_run": false
+    },
+    {
+      "file": "wvs7_questionnaire_cz_2022.pdf",
+      "programme": "WVS",
+      "wave_label": "wave 7 / 2022",
+      "language": "Czech",
+      "bytes": 899028,
+      "pdf_header": true,
+      "sha256": "52c27441b2a4436a015ea7a0d5d4c968f37d83dd3153dae1ca6876248b4484c1",
+      "semantic_audit_this_run": false
+    },
+    {
+      "file": "wvs7_questionnaire_sk_2022.pdf",
+      "programme": "WVS",
+      "wave_label": "wave 7 / 2022",
+      "language": "Slovak",
+      "bytes": 749139,
+      "pdf_header": true,
+      "sha256": "71664be8aab8ca08d6c5e196f7e599c351a56a612d794b7ae458632e80a4d20c",
+      "semantic_audit_this_run": false
+    },
+    {
+      "file": "ZA6980_q_cz.pdf",
+      "programme": "ISSP",
+      "wave_label": "2017",
+      "language": "Czech",
+      "bytes": 8201555,
+      "pdf_header": true,
+      "sha256": "2e1e4f5531ad97ef3956815ec35b80ae5488718cfdedd3b6ec17b81b9a0ea612",
+      "semantic_audit_this_run": false
+    }
+  ]
+}

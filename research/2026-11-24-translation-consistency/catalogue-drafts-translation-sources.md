@@ -1,0 +1,32 @@
+---
+title: Questionnaire translation study — dataset catalogue proposals
+date: 2026-11-24
+register: FOR AGENTS
+status: drafts-for-coordinator
+provenance: Official provider pages checked on 24 November 2026; no new dataset downloads.
+---
+
+# Catalogue changes for the coordinator
+
+These are proposed records, not edits to the dataset catalogue. Existing catalogue identifiers were checked for WVS, EVS, ESS, ISSP and Sketch Engine; update those records rather than duplicating them. The other resources need a coordinator duplicate check before addition. All coverage below is candidate coverage, not evidence that the chosen items have been aligned.
+
+| Name | Publisher and URL | Access observed | Licence evidence and unresolved points | Coverage relevant here |
+|---|---|---|---|---|
+| PISA 2022 questionnaire collection | OECD; https://www.oecd.org/en/data/datasets/pisa-2022-database.html | Public index explicitly lists master and national questionnaires; no questionnaire downloaded. | Exact terms of selected questionnaire assets not read; leave licence pending rather than assigning a general OECD licence. | Student, school and optional questionnaires; Czechia, Slovakia, Poland, Germany and distant-language candidates listed. Earlier cycles are separate provenance records. |
+| TIMSS international database and context questionnaires | IEA / TIMSS & PIRLS International Study Center; https://www.iea.nl/data-tools/repository/timss | Public repository lists cycle/grade packages behind stated terms. No agreement accepted or package downloaded. | https://www.iea.nl/sites/default/files/2019-05/Disclaimer%20and%20License%20Agreement.pdf ; read clauses 1.3, 2.1, 2.2 together. Do not confuse software-specific terms with corpus/data terms. | 2023 and prior cycles; grades 4 and 8; student, home, teacher, school and curriculum context. National adaptation metadata is not full national text. |
+| TIMSS 2023 Czech national questionnaires | Czech School Inspectorate; https://www.csicr.cz/cz/Mezinarodni-setreni/TIMSS/Datove-soubory-a-dotazniky/TIMSS-2023 | Public listing provides PDF and electronic-publication links. | Asset-specific terms not resolved; retain IEA rights notice rather than infer permission from downloadability. | Student, teacher and school for grades 4 and 8, plus grade 4 parent questionnaire and national codebooks. |
+| TIMSS 2023 Austrian national questionnaires | IQS; https://www.iqs.gv.at/downloads/internationale-studien/timss/timss-2023 | Public questionnaire listing read; PDFs not downloaded. | Exact notice: “Abdruck und Nutzung der Fragebögen nur mit ausdrücklicher Genehmigung der IEA:”. Rights for excerpts remain to be settled. | German-language student, mathematics teacher, science teacher and school questionnaires. Generated PDF layout differs from participant view. |
+| InterCorp / CNC query resources | Institute of the Czech National Corpus, Charles University; https://intercorp.korpus.cz/?lang=en ; https://wiki.korpus.cz/doku.php/en:kurz:zaciname | Provider guidance: limited public functions; free registration for full access. No authenticated query. | Corpus-specific terms not fully retrieved; do not assign the wiki's text licence to corpus contents. No corpus export/republication decision made. | Czech-pivot aligned multilingual collections; original-language and genre coverage must be pinned. English overview marked old revision. Treq public homepage fetch failed. |
+| OPUS parallel collections | OPUS / University of Helsinki; https://opus.nlpl.eu/ | Public index and query/download routes visible. | Per-constituent rights must be checked. No blanket OPUS licence assigned. | Named collections offer selected parallel language pairs; synthetic collections must be excluded from natural-usage evidence. |
+| Tatoeba sentence collection | Tatoeba Association; https://tatoeba.org/en/terms_of_use | Public terms read; no bulk download. | Section 6.2 names “Creative Commons Attribution 2.0France license (CC-BY 2.0 FR)”; sections 6.3–6.5 cover sentence-specific licensing and reuse. Verify each exported sentence and attribution. | Contributed sentences and translations; useful illustrations, not a representative collocation sample. Audio rights are separate and irrelevant to this study. |
+| Leipzig Corpora Collection | Leipzig University / Wortschatz Leipzig; https://api.wortschatz-leipzig.de/ws/swagger-ui/index.html ; https://wortschatz-leipzig.de/en/usage | Public API documentation read; usage page returned Anubis challenge. No bypass or download. | API documentation displays CC BY 4.0; the exact downloadable corpus licence is unresolved. Conflicting third-party labels were not used to settle it. | Monolingual examples and co-occurrence routes; specific language, year and genre package not selected. |
+
+## Existing records to annotate rather than duplicate
+
+- **world-values-survey:** add a translation-study use case only after the brief is approved. Current conditions: https://www.worldvaluessurvey.org/AJDownloadLicense.jsp . Session restrictions on public WVS material are separate from the provider's quoted data-file clause. No new downloads are authorised here.
+- **European Values Study:** the official 2017 country table links field questionnaires and showcards in fielded languages: https://europeanvaluesstudy.eu/surveys/surveys-evs/evs-2017/participating-countries-and-country-information-survey-2017/ . Existing local PDFs do not by themselves establish republication rights. Recheck selected document terms.
+- **European Social Survey:** national/source questionnaire history and TRAPD documentation are relevant. Quality report: https://www.europeansocialsurvey.org/sites/default/files/2024-09/ESS10_Quality_Report.pdf . Portal/disclaimer retrieval failed; do not replace the current catalogue's terms with unverified recollection.
+- **International Social Survey Programme:** GESIS describes national questionnaires and module documentation at https://www.gesis.org/en/issp/data-and-documentation/module-development . Archive registration is described at https://issp.org/data-download/archive/ . Item/module-specific asset terms still need reading.
+- **sketch-engine:** the connected catalogue returned public corpus identifiers for candidate languages. Service terms: https://www.sketchengine.eu/terms-of-use/ . No account identifiers, access entitlements or raw connector metadata belong in a public catalogue record.
+
+No snack link is available: this is source feasibility work before a confirmed brief.

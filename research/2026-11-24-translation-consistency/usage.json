@@ -1,0 +1,40 @@
+{
+  "selection": "One Codex scoping instance resolved from the exact T3 thread; no children were started.",
+  "since": null,
+  "until": null,
+  "rows": [
+    {
+      "agent": "Snacks ▸ Are survey questionnaires translated consistently? scoping",
+      "harness": "Codex",
+      "model": "gpt-6.1-sol",
+      "start": "2026-11-24T07:50:03.364Z",
+      "end": "2026-11-24T07:58:35.486Z",
+      "calls": 22,
+      "input_uncached": 186238,
+      "cached_read": 2685824,
+      "cache_write": 0,
+      "reasoning": 2657,
+      "output": 17764,
+      "total": 2889826,
+      "not_recorded": []
+    }
+  ],
+  "subtotals": [],
+  "total": {
+    "agent": "Total",
+    "harness": "",
+    "model": "",
+    "calls": 22,
+    "input_uncached": 186238,
+    "cached_read": 2685824,
+    "cache_write": 0,
+    "reasoning": 2657,
+    "output": 17764,
+    "total": 2889826
+  },
+  "notes": [
+    "Input (uncached) excludes cached reads and cache writes. Total = input (uncached) + cached read + cache write + output. Reasoning is part of Output and is not added again. Totals add recorded values only.",
+    "Codex reports input including cached tokens; uncached = input - cached read - cache write. Codex calls are model responses, including context-compaction calls."
+  ],
+  "coverage_note": "Snapshot through the last recorded response; later verification, commits and handoff are excluded."
+}

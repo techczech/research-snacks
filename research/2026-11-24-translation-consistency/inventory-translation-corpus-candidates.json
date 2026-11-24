@@ -1,0 +1,48 @@
+{
+  "checked_date": "2026-11-24",
+  "status": "public metadata from connected catalogue; no concordance query or entitlement assertion",
+  "corpora": [
+    {
+      "corpname": "preloaded/cztenten12_9",
+      "name": "Czech Web 2012 (csTenTen12 v9)",
+      "language_name": "Czech",
+      "infohref": "http://www.sketchengine.co.uk/cztenten-czech-corpus/"
+    },
+    {
+      "corpname": "preloaded/detenten23_rft3",
+      "name": "German Web 2023 (deTenTen23)",
+      "language_name": "German",
+      "infohref": "http://www.sketchengine.co.uk/detenten-german-corpus"
+    },
+    {
+      "corpname": "preloaded/sktenten23_rft1",
+      "name": "Slovak Web 2023 (skTenTen23)",
+      "language_name": "Slovak",
+      "infohref": "https://www.sketchengine.eu/sktenten-slovak-corpus/"
+    },
+    {
+      "corpname": "preloaded/artenten24_cml1",
+      "name": "Arabic Web 2024 (arTenTen24)",
+      "language_name": "Arabic",
+      "infohref": "https://www.sketchengine.eu/artenten-arabic-corpus"
+    },
+    {
+      "corpname": "preloaded/pltenten19_rft3",
+      "name": "Polish Web 2019 (plTenTen19)",
+      "language_name": "Polish",
+      "infohref": "http://www.sketchengine.co.uk/pltenten-polish-corpus"
+    },
+    {
+      "corpname": "preloaded/ententen21_tt31",
+      "name": "English Web 2021 (enTenTen21)",
+      "language_name": "English",
+      "infohref": "https://www.sketchengine.eu/ententen-english-corpus"
+    },
+    {
+      "corpname": "preloaded/jptenten11_suw_comainu_v2",
+      "name": "Japanese Web 2011 (jaTenTen11)",
+      "language_name": "Japanese",
+      "infohref": "http://www.sketchengine.co.uk/jptenten-japanese-corpus/"
+    }
+  ]
+}
