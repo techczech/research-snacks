@@ -16,9 +16,10 @@
       "women do\""
     ],
     "subtitle": [
-      "Share agreeing or strongly agreeing, weighted. Each survey",
-      "shown separately.",
-      "Lines show approximate 95% intervals (survey weights only)"
+      "Share agreeing or strongly agreeing, weighted.",
+      "Each survey shown separately.",
+      "Lines show approximate 95% intervals (survey",
+      "weights only)"
     ],
     "anchor": "start",
     "subtitlePadding": 6,
