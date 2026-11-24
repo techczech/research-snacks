@@ -37,3 +37,11 @@ The scout capture saved a file and manifest receipt but reported no registered c
 ## Author decision, 24 November 2026 (Tuesday)
 
 The author directly confirmed a series beginning with neighbouring-language questionnaires and clarified that the education-survey reference meant TIMSS. Added the author's new official-EU-translation comparison idea to the potential investigations in brief.md. No EU source search or research run was started. Updated the report and domain map so neither repeats the answered scope question. The next focus question is recorded in brief.md for the coordinator's to-do page; the full brief remains unconfirmed.
+
+## Lexical-focus decision and sample proposal, 24 November 2026 (Tuesday)
+
+The coordinator relayed the 08:08 answer: key words and ordinary associations, using equivalent words, judgement and corpus support. Updated the brief, report and domain map to retire the whole-item-first recommendation. Whole questions remain source context; no response-pattern analysis is proposed for the first snack.
+
+Inspected selected EVS Czech, Slovak and Polish PDF pages and short WVS lexical passages using pdftotext from Python with -I; scripts were not placed beside downloaded data. Corrupt accent extraction in the EVS documents prompted visual checking of four EVS pages. Confirmed the proposed lexical forms and locators recorded in proposal-neighbouring-language-keywords.md. This source-selection check does not establish equivalence or translation quality. No WVS image or full extract was saved to this repository. Four EVS page images remain in ignored generated output for provenance; no delete command was run.
+
+Read official Czech, Slovak and Polish TenTen documentation and selected CNC/Slovak reference-corpus documentation. Exact corpus-info metadata requests succeeded for cstenten23_mj2, sktenten23_rft1 and pltenten19_rft3. The Czech 2023 corpus improves the initial proposal's 2012-era temporal match to Slovak 2023; Polish remains 2019/2020 text. No concordance, word-sketch or collocation query was run. The recommended first sample is Czech, Slovak and Polish; alternatives are a Czech/Slovak pilot or adding German. Detailed judgement rules, author contribution and full brief remain open.

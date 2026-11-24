@@ -1,6 +1,6 @@
 {
   "checked_date": "2026-11-24",
-  "status": "public metadata from connected catalogue; no concordance query or entitlement assertion",
+  "status": "Candidate metadata; selected 2023 Czech/Slovak and 2019 Polish corpus-info requests succeeded on 2026-11-24; no linguistic queries",
   "corpora": [
     {
       "corpname": "preloaded/cztenten12_9",
@@ -18,7 +18,8 @@
       "corpname": "preloaded/sktenten23_rft1",
       "name": "Slovak Web 2023 (skTenTen23)",
       "language_name": "Slovak",
-      "infohref": "https://www.sketchengine.eu/sktenten-slovak-corpus/"
+      "infohref": "https://www.sketchengine.eu/sktenten-slovak-corpus/",
+      "corpus_info_checked": "2026-11-24"
     },
     {
       "corpname": "preloaded/artenten24_cml1",
@@ -30,7 +31,8 @@
       "corpname": "preloaded/pltenten19_rft3",
       "name": "Polish Web 2019 (plTenTen19)",
       "language_name": "Polish",
-      "infohref": "http://www.sketchengine.co.uk/pltenten-polish-corpus"
+      "infohref": "http://www.sketchengine.co.uk/pltenten-polish-corpus",
+      "corpus_info_checked": "2026-11-24"
     },
     {
       "corpname": "preloaded/ententen21_tt31",
@@ -43,6 +45,13 @@
       "name": "Japanese Web 2011 (jaTenTen11)",
       "language_name": "Japanese",
       "infohref": "http://www.sketchengine.co.uk/jptenten-japanese-corpus/"
+    },
+    {
+      "corpname": "preloaded/cstenten23_mj2",
+      "name": "Czech Web 2023 (csTenTen23)",
+      "language_name": "Czech",
+      "infohref": "https://www.sketchengine.eu/cstenten-czech-corpus/",
+      "corpus_info_checked": "2026-11-24"
     }
   ]
 }

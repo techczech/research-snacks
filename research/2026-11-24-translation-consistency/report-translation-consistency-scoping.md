@@ -2,15 +2,15 @@
 title: Which survey translation study should come first?
 date: 2026-11-24
 register: FOR DOMINIK
-status: series-direction-confirmed-awaiting-full-brief
+status: lexical-focus-confirmed-sample-proposed
 provenance: Source and access check on 24 November 2026; existing questionnaire inventory and earlier working notes.
 ---
 
 # A translation series beginning with neighbouring languages
 
-**I recommend a series, starting with a small comparison of the questionnaires already downloaded.** Check three item families in Czech, Slovak and Polish first, then use corpus evidence to investigate the differences that survive a careful reading. German can join once its fielded questionnaire has been retrieved and checked. This gives the broader work a tested method without making the first snack carry every question.
+**The first snack will examine equivalent key words and their associations in ordinary use, through linguistic judgement with corpus support.** This is your focus choice, relayed at 08:08 UK time on 24 November, and it supersedes the earlier whole-question-first recommendation. The [current sample proposal](proposal-neighbouring-language-keywords.md) recommends Czech, Slovak and Polish, with word groups for industriousness/hard work, responsibility and duty/obligation drawn from the downloaded questionnaires.
 
-There are sources for all three strands you proposed. **The strongest immediate result would be a documented account of which selected questions differ in meaning.** A change in wording alongside a change in answers could identify a problem worth investigating. It would not establish that the wording caused the response change.
+There are sources for all three strands you proposed. **The first result would describe whether the selected lexical equivalents carry similar or different associations in the chosen written corpora.** Full questions retain the context for selecting the words. Whole-item equivalence and changes in survey answers remain possible later questions; neither is the first snack's main outcome.
 
 **You confirmed this direction on 24 November 2026 (Tuesday): a series starting with neighbouring languages, with TIMSS as the education-survey topic.** You also added official EU translations to the potential investigations. The exact first-study sample and complete research brief still need agreement; the study shapes below remain proposals for that discussion.
 
@@ -60,11 +60,11 @@ These are proposed research slices, not approved work. The effort ranges are age
 
 | Shape | What would be checked | What it could honestly show | Main limit and estimated effort |
 |---|---|---|---|
-| **Do neighbouring-language questionnaires ask the same thing?** | Three candidate families in Czech, Slovak and Polish EVS 2017; add the Czech/Slovak WVS contrast as a clearly separate comparison. Use a focused corpus check for one disputed expression. | Which selected fielded items preserve or change the proposition, conditions, force or answer task; what corpus usage adds to those readings. | Selected cases cannot estimate a general error rate. Language judgements need review before a strong public verdict. Allow roughly one to two agent working days, conditional on access. This is the recommended start of a series. |
+| **Do questionnaire key words carry the same associations?** | Proposed Czech, Slovak and Polish lexical groups from EVS 2017, with the Czech/Slovak WVS hard-work contrast as additional lexical context. Inspect monolingual usage, plausible alternatives and supporting parallel examples. | A corpus-supported linguistic judgement about the selected candidate equivalents, including overlap, differences and unresolved readings. | Selected written corpora cannot establish every speaker's associations or respondent interpretation. The sample still needs agreement. Allow roughly one to two agent working days, conditional on access and review needs. This is the selected direction for the first snack. |
 | **Does an item change meaning between waves?** | Two families in two languages across up to three waves of one programme, conditional on questionnaire availability. Align source and translations before inspecting response trends. | A documented translation history, followed by descriptive response changes with weighted uncertainty and administration notes. | Changes may coincide without being causal. If earlier fielded texts cannot be established, stop at a documented availability gap. Allow roughly two to four agent working days. |
 | **Do education questionnaires preserve the same meaning?** | Two recurring context-item families in three languages across two TIMSS cycles, conditional on matching sources. PISA remains an alternative source if useful. | Whether apparently comparable education attitudes or experiences are asked equivalently, including national adaptations. | Grade, age, mode and cycle changes need explicit treatment; rights for excerpts must be resolved. This first slice would not audit achievement test items or explain country score differences. Allow roughly two to four agent working days. |
 
-The corpus strand fits naturally after the neighbouring-language audit establishes a real linguistic question. A later distant-language extension can then ask whether the same proposed distinction survives different lexical systems. Choosing Arabic or Japanese now merely because the corpus catalogue lists them would get ahead of your research question and available language expertise.
+The neighbouring-language lexical comparison is now the first corpus investigation. A later distant-language extension can ask whether the same proposed distinction survives different lexical systems. Choosing Arabic or Japanese now merely because the corpus catalogue lists them would get ahead of your research question and available language expertise.
 
 No independent option scores were commissioned: this thread was instructed to work without subagents. The recommendation above is the scoping agent's judgement.
 
@@ -82,7 +82,7 @@ Corpus rights remain attached to the selected corpus and examples. Service acces
 
 ## What still needs deciding?
 
-The next question asks what the neighbouring-language snack should mainly establish: whether whole items ask the same thing, whether key words carry comparable associations, or whether suspected wording differences coincide with response patterns. The recommendation is to start with whole-item equivalence and use corpus evidence where useful. Later questions will settle existing expectations, the item families, languages, acceptable judgement methods, your contribution and permitted attribution. The completed brief needs your confirmation before empirical work; the overall series direction and TIMSS identification are already settled.
+The next question is the [sample choice](proposal-neighbouring-language-keywords.md): Czech/Slovak/Polish with the three proposed word groups, a smaller Czech/Slovak pilot, or those three languages plus German. The recommendation is the three-language sample using existing questionnaire sources. Later questions will settle existing expectations, detailed judgement methods, your contribution and permitted attribution. The completed brief needs your confirmation before empirical work; the series direction, TIMSS identification and lexical/corpus focus are already settled.
 
 ## Work record and token use
 

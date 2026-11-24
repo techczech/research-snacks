@@ -12,6 +12,8 @@ The proposed work asks whether key survey items use equivalent wording across ne
 
 This is an initial orientation, prepared before an agreed research brief. It identifies accessible sources and a defensible design; it contains no new survey estimates, translation verdicts or corpus results.
 
+The later focus decision, relayed at 08:08 on 24 November, makes the first snack a key-word association comparison through judgement with corpus support. The [current proposal](proposal-neighbouring-language-keywords.md) supersedes this initial map's whole-item-first sequencing. Broader questionnaire and response-analysis methods below remain context for later strands.
+
 ## Terms and competing interpretations
 
 - **Literal similarity** concerns words and syntax. It does not establish that respondents answer the same question.

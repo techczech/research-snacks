@@ -30,3 +30,12 @@ These are proposed records, not edits to the dataset catalogue. Existing catalog
 - **sketch-engine:** the connected catalogue returned public corpus identifiers for candidate languages. Service terms: https://www.sketchengine.eu/terms-of-use/ . No account identifiers, access entitlements or raw connector metadata belong in a public catalogue record.
 
 No snack link is available: this is source feasibility work before a confirmed brief.
+
+## Additions from the lexical sample proposal
+
+The proposed main Sketch Engine corpora are now Czech Web 2023 (`preloaded/cstenten23_mj2`), Slovak Web 2023 (`preloaded/sktenten23_rft1`) and Polish Web 2019 (`preloaded/pltenten19_rft3`). Each exact corpus-info request succeeded; no linguistic query was run. Official descriptions: https://www.sketchengine.eu/cstenten-czech-corpus/ , https://www.sketchengine.eu/sktenten-slovak-corpus/ , https://www.sketchengine.eu/pltenten-polish-corpus/ . These are collection-specific additions to the existing Sketch Engine record; service and text rights remain separate. The Polish page documents the later rft3 annotation revision without changing the crawl date into 2026.
+
+| Name | Publisher and URL | Access observed | Licence status | Coverage relevant here |
+|---|---|---|---|---|
+| SYN2020 reference corpus | Institute of the Czech National Corpus, Charles University; https://wiki.korpus.cz/doku.php/en:cnk:syn2020 | Public documentation read; no authenticated query. | Selected corpus terms not retrieved; do not assign the documentation licence to corpus text. | Optional Czech printed-language sensitivity check. The provider calls it representative, not balanced; it includes genre design and a 2015–2019 focus. Verify original/translated text metadata before using that distinction. |
+| Slovak National Corpus prim | Ľ. Štúr Institute of Linguistics, Slovak Academy of Sciences; https://korpus.sk/korpusy-a-databazy/korpusy-snk/ | Public documentation describes free research searching after registration; no registration or query attempted. | End-user and excerpt/export terms not read; pending. A licence for contributors supplying texts would not establish researcher reuse rights. | Optional Slovak written-language sensitivity check. The provider lists prim-11.0 as current in the checked page; exact subcorpus, genre and text-period choices remain open. |
