@@ -190,15 +190,16 @@ and ordinary associations</h1>
 <p class="date">2026-11-24</p>
 </header>
 <h1
-id="start-with-czech-slovak-and-polish-words-for-work-and-obligation">Start
-with Czech, Slovak and Polish words for work and obligation</h1>
-<p><strong>I recommend Czech, Slovak and Polish, using the EVS 2017
-questionnaires already available.</strong> The first snack would ask
+id="czech-slovak-polish-and-german-words-for-work-and-obligation">Czech,
+Slovak, Polish and German words for work and obligation</h1>
+<p><strong>You chose Czech, Slovak, Polish and German on 24 November
+2026, with the three proposed word groups.</strong> The German EVS 2017
+questionnaire has now been retrieved and checked. The first snack asks
 whether the words chosen as equivalents carry comparable associations in
-ordinary written use. It would use linguistic judgement with corpus
-support, as you requested. Full questions supply the context for
-selecting the words; whole-question equivalence and response differences
-would be separate later investigations.</p>
+ordinary written use, through linguistic judgement with corpus support.
+Full questions supply the context for selecting the words;
+whole-question equivalence and response differences would be separate
+later investigations.</p>
 <p>The proposed core has three related word groups: industriousness/hard
 work, responsibility, and duty/obligation. They occur in the
 child-quality list and statements about duties towards society. This
@@ -208,19 +209,20 @@ that a different choice is wrong.</p>
 <h2 id="languages-and-questionnaire-words">Languages and questionnaire
 words</h2>
 <p>Czech and Slovak give the closest-language comparison. Polish adds
-another neighbouring language with a questionnaire already in the
-collection. English can help explain candidate meanings, but the glosses
-below are orientation labels, not newly verified quotations from the
-English master questionnaire. German would widen the first comparison
-beyond the three Slavic languages, but its questionnaire and key-word
-extraction still need retrieval and checking. Russian and Ukrainian
-remain available for a later extension.</p>
+another neighbouring language; German widens the comparison beyond the
+three Slavic languages. The named German national source is Germany’s
+CAPI instrument, rather than an unspecified German-language version.
+English can help explain candidate meanings, but the glosses below are
+orientation labels, not newly verified quotations from the English
+master questionnaire. Russian and Ukrainian remain available for a later
+extension.</p>
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
 <thead>
 <tr>
@@ -228,6 +230,7 @@ remain available for a later extension.</p>
 <th>Czech</th>
 <th>Slovak</th>
 <th>Polish</th>
+<th>German, Germany CAPI</th>
 </tr>
 </thead>
 <tbody>
@@ -236,18 +239,21 @@ remain available for a later extension.</p>
 <td><code>pracovitost</code></td>
 <td><code>pracovitosť</code></td>
 <td><code>pracowitość</code></td>
+<td><code>Fleiß</code></td>
 </tr>
 <tr>
 <td>A sense of responsibility, in the same child-quality list</td>
 <td><code>pocit odpovědnosti</code></td>
 <td><code>pocit zodpovednosti</code></td>
 <td><code>poczucie odpowiedzialności</code></td>
+<td><code>Verantwortungsgefühl</code></td>
 </tr>
 <tr>
 <td>Having children as a duty/responsibility towards society</td>
 <td><code>zodpovědnost</code></td>
 <td><code>povinnosť</code></td>
 <td><code>obowiązek</code></td>
+<td><code>Pflicht</code></td>
 </tr>
 <tr>
 <td>Work as a duty towards society, providing a second context for the
@@ -255,6 +261,7 @@ same lexical group</td>
 <td><code>povinnost</code></td>
 <td><code>povinnosť</code></td>
 <td><code>obowiązek</code></td>
+<td><code>Verpflichtung</code></td>
 </tr>
 </tbody>
 </table>
@@ -278,6 +285,17 @@ rendered pages, rather than reconstructed from that damaged extraction.
 File hashes are in the <a
 href="inventory-translation-questionnaires.json">existing
 inventory</a>.</p>
+<p>German source: <code>ZA7500_q_de_CAPI.PDF</code>, PDF page 8 Q12/v49
+(<code>Verpflichtung</code>), page 14 Q27/v83 (<code>Pflicht</code>),
+and page 15 Q28/v87–v88 (<code>Fleiß</code>,
+<code>Verantwortungsgefühl</code>). All three pages were checked
+visually. The <a href="evidence-german-questionnaire-wording.md">German
+source receipt</a> records the official download, checksums, web/postal
+variants and selected-word checks. The two German duty words are
+distinct query candidates. <code>Verantwortung</code>,
+<code>Verantwortungsbewusstsein</code> and <code>harte Arbeit</code>
+would be proposed corpus comparison alternatives, not replacements for
+the verified questionnaire forms.</p>
 <p>The previously downloaded Czech WVS questionnaire supplies the
 contrasting expression <code>tvrdá práce</code> in Q9, PDF page 3; the
 Slovak WVS Q9 uses <code>pracovitosť</code>, PDF page 5. Those two short
@@ -337,10 +355,19 @@ tagging-pipeline revision. Exact metadata retrieval succeeded. Its text
 period differs from the two 2023 corpora.</td>
 </tr>
 <tr>
+<td>Main German usage</td>
+<td><a href="https://www.sketchengine.eu/detenten-german-corpus/">German
+Web 2023, deTenTen23</a>, <code>preloaded/detenten23_rft4</code></td>
+<td>Exact metadata retrieval succeeded. The provider describes the rft4
+correction as the same texts with updated annotation; web crawl is 2023
+and the Wikipedia component is 2024. The newer pipeline was selected
+before linguistic results.</td>
+</tr>
+<tr>
 <td>Parallel support</td>
 <td><a
 href="https://wiki.korpus.cz/doku.php/en:cnk:intercorp">InterCorp</a>,
-using shared Czech/Slovak/Polish texts where available</td>
+using shared Czech/Slovak/Polish/German texts where available</td>
 <td>The overview distinguishes manually checked fiction alignment from
 automated collections and a Czech pivot. Pin the release and shared
 document intersection before use. Authentication and selected-language
@@ -360,7 +387,7 @@ the first pilot.</td>
 </tr>
 </tbody>
 </table>
-<p>The three successful metadata calls establish that these corpus
+<p>Successful metadata calls establish that all four main corpus
 identifiers resolve through the connector. They do not establish that
 every linguistic query, export or word-sketch operation will succeed. No
 linguistic queries have been run. Corpus terms and rights for selected
@@ -399,27 +426,25 @@ could not establish their meaning for all speakers, spoken-language
 associations, survey respondents’ actual interpretation, or the cause of
 response differences. Similar-looking cognates are candidates for
 checking, not a guarantee of equivalence.</p>
-<h2 id="the-next-choice">The next choice</h2>
-<p><strong>Which first sample should be scoped in detail?</strong></p>
-<ul>
-<li><strong>Three languages and the three word groups above is the
-recommendation.</strong> It uses questionnaires already available and
-gives related lexical contrasts without adding a retrieval step.</li>
-<li><strong>Czech and Slovak with the same word groups would make a
-smaller pilot.</strong> It gives less geographical breadth but lets us
-develop and inspect the judgement method sooner.</li>
-<li><strong>Add German to Czech, Slovak and Polish for a broader first
-comparison.</strong> It would test a more different language, while
-adding questionnaire retrieval, exact-word checking and another set of
-linguistic judgements.</li>
-</ul>
+<h2
+id="the-sample-is-settled-the-full-brief-is-ready-for-confirmation">The
+sample is settled; the full brief is ready for confirmation</h2>
+<p>The author selected the four-language sample at 08:20 UK time on 24
+November. The <a href="brief.md">full brief</a> now specifies the source
+forms, four main corpora, a bounded pilot, judgement provenance, limits,
+intended preview and publication boundary. Its next single question asks
+the author to approve the brief and choose whether the agent should make
+provisional readings for inspection or the author should assign all
+final semantic labels. The recommended role is provisional agent
+readings with author inspection of representative, contradictory and
+uncertain examples.</p>
 <p>The groups refer to lexical questions, not a claim that whole survey
 items or response percentages are comparable. TIMSS, official EU
 translations, distant-language extensions and wave consistency stay on
 the series list.</p>
 <p>This proposal is based on source selection and metadata checks only.
-The lexical focus is agreed; the language/word sample, annotation
-method, author contribution and final brief are not yet confirmed.
+The lexical focus and four-language/three-group sample are agreed; the
+detailed method, author contribution and final brief await confirmation.
 Nothing goes live before the author has looked at its preview.</p>
 <h2 id="scoping-work-and-recorded-usage">Scoping work and recorded
 usage</h2>
@@ -431,6 +456,11 @@ checks, commit and coordinator handoff. The original <a
 href="usage.json">initial-scoping snapshot</a> remains unchanged. No
 subagents or independent reviewers were used. Human time for the to-do
 answer has not been estimated.</p>
+<p>The later German retrieval and full-brief stage has its own <a
+href="usage-german-brief.json">usage snapshot</a>, with coverage
+recorded in the <a
+href="evidence-german-questionnaire-wording.md">German source
+receipt</a>; it is not included in the table below.</p>
 <table>
 <colgroup>
 <col style="width: 8%" />
